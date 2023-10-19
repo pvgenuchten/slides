@@ -4,5 +4,19 @@ format:
   revealjs: 
     slide-number: true
     incremental: true
+    theme: league
+
+
+#beige
+#blood
+#dark
+#default
+#league
+#moon
+#night
+#serif
+#simple
+#sky
+#solarized
 
 

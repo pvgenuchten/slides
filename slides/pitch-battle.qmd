@@ -1,37 +1,50 @@
 ---
-title: "pitch-battle"
+title: Document your model data at minimal effort
+subtitle: "A pitch battle at digital innovation expo @WUR"
+author: Paul van Genuchten, Giulio Genova 
+date: 2023-10-19
 ---
 
 ## Setting: Data management in predictive modelling
 
-- In soil modelling, we have many source and output data
+- In `soil modelling`, we have many source and output data
     - field survey and lab data
     - covariates, eg. earth observation grids
     - model outputs
 - These files are stored on a network drive accessible by HPC
-    - The models are configured using workflows versioned on GIT
-    - The metadata of the sources and outputs used to be unclear
-- Metadata management according to standards is hard/dull/****, but it is needed for `reproducability` and `discovery`
+    - The models are configured using workflows `versioned on GIT`
+- Metadata management is `hard/dull/****`
 
 ## Concept: the sidecar file
 
-- Use where possible embedded metadata on your data files 
-- Add additional metadata on a sidecar file
+:::: {.columns}
 
-- At times a crawler extracts metadata from your file repositories
-- Crawled records are placed in a searchable index
+::: {.column width="70%"}
 
-- Sidecar files inherit from parent folders 
-- Sidecar files are a starting point for data harmonisation
+- Use where possible `embedded metadata` on your data files 
+    - Add additional metadata on a sidecar file
+- Set up a crawler which extracts metadata from your file repositories
+    - Crawled records are placed in a searchable index
 
-## Tools: pygeometa and geodatacrawler
+
+:::
+
+::: {.column width="30%"}
+
+![dbeamer_jpg@unsplash](./img/sidecar-unsplash.png)
+
+:::
+
+::::
+
+## Tools: pygeometa & geodatacrawler
 
 - [pygeometa](https://github.com/geopython/pygeometa)'s MCF is a minimal subset of iso19115, encoded in yaml (optimal for Git versioning)
-- [geodatecrawler](https://pypi.org/project/geodatacrawler/) extends pygeometa to: 
+- [geodatacrawler](https://pypi.org/project/geodatacrawler/) extends pygeometa to: 
     - extract metadata from data formats
-    - inherits from parent folders
-    - imports metadata from csv and remote sources
-    - creates data api's from metadata
-- [pycsw](https://pycsw.org) is a catalogue application, with wide standards support, enabling discovery in multiple communities 
+    - inherit metadata from parent folders
+    - import metadata from csv and remote sources
+    - create data api's based on metadata
+- [![](./img/pycsw-logo.png){height="50" style="vertical-align:middle"}](https://pycsw.org) is a pythonic catalogue web app. Wide standards support enables discovery in multiple communities.
 
 - Read more at the [EJPSoil cookbook](https://ejpsoil.github.io/soildata-assimilation-guidance/cookbook/pygeometa.html)
