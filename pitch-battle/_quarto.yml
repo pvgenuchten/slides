@@ -1,0 +1,9 @@
+project:
+  title: "pitch-battle"
+  output-dir: _output
+format:
+  revealjs: 
+    slide-number: true
+    incremental: true
+
+
