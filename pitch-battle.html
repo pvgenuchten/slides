@@ -7,10 +7,12 @@
 <link href="pitch-battle_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="pitch-battle_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="pitch-battle_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="pitch-battle_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="pitch-battle_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.450">
 
-  <title>pitch-battle</title>
+  <meta name="author" content="Paul van Genuchten, Giulio Genova">
+  <meta name="dcterms.date" content="2023-10-19">
+  <title>Document your model data at minimal effort</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -319,21 +321,28 @@
     }
   </style>
 </head>
-<body class="quarto-light">
+<body class="quarto-dark">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">pitch-battle</h1>
+  <h1 class="title">Document your model data at minimal effort</h1>
+  <p class="subtitle">A pitch battle at digital innovation expo <span class="citation" data-cites="WUR">@WUR</span></p>
 
 <div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Paul van Genuchten, Giulio Genova 
+</div>
+</div>
 </div>
 
+  <p class="date">2023-10-19</p>
 </section>
 <section id="setting-data-management-in-predictive-modelling" class="slide level2">
 <h2>Setting: Data management in predictive modelling</h2>
 <ul>
-<li class="fragment">In soil modelling, we have many source and output data
+<li class="fragment">In <code>soil modelling</code>, we have many source and output data
 <ul>
 <li class="fragment">field survey and lab data</li>
 <li class="fragment">covariates, eg. earth observation grids</li>
@@ -341,35 +350,47 @@
 </ul></li>
 <li class="fragment">These files are stored on a network drive accessible by HPC
 <ul>
-<li class="fragment">The models are configured using workflows versioned on GIT</li>
-<li class="fragment">The metadata of the sources and outputs used to be unclear</li>
+<li class="fragment">The models are configured using workflows <code>versioned on GIT</code></li>
 </ul></li>
-<li class="fragment">Metadata management according to standards is hard/dull/****, but it is needed for <code>reproducability</code> and <code>discovery</code></li>
+<li class="fragment">Metadata management is <code>hard/dull/****</code></li>
 </ul>
 </section>
 <section id="concept-the-sidecar-file" class="slide level2">
 <h2>Concept: the sidecar file</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
 <ul>
-<li class="fragment"><p>Use where possible embedded metadata on your data files</p></li>
-<li class="fragment"><p>Add additional metadata on a sidecar file</p></li>
-<li class="fragment"><p>At times a crawler extracts metadata from your file repositories</p></li>
-<li class="fragment"><p>Crawled records are placed in a searchable index</p></li>
-<li class="fragment"><p>Sidecar files inherit from parent folders</p></li>
-<li class="fragment"><p>Sidecar files are a starting point for data harmonisation</p></li>
+<li class="fragment">Use where possible <code>embedded metadata</code> on your data files
+<ul>
+<li class="fragment">Add additional metadata on a sidecar file</li>
+</ul></li>
+<li class="fragment">Set up a crawler which extracts metadata from your file repositories
+<ul>
+<li class="fragment">Crawled records are placed in a searchable index</li>
+</ul></li>
 </ul>
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./img/sidecar-unsplash.png"></p>
+<figcaption>dbeamer_jpg@unsplash</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="tools-pygeometa-and-geodatacrawler" class="slide level2">
-<h2>Tools: pygeometa and geodatacrawler</h2>
+<section id="tools-pygeometa-geodatacrawler" class="slide level2">
+<h2>Tools: pygeometa &amp; geodatacrawler</h2>
 <ul>
 <li class="fragment"><p><a href="https://github.com/geopython/pygeometa">pygeometa</a>’s MCF is a minimal subset of iso19115, encoded in yaml (optimal for Git versioning)</p></li>
-<li class="fragment"><p><a href="https://pypi.org/project/geodatacrawler/">geodatecrawler</a> extends pygeometa to:</p>
+<li class="fragment"><p><a href="https://pypi.org/project/geodatacrawler/">geodatacrawler</a> extends pygeometa to:</p>
 <ul>
 <li class="fragment">extract metadata from data formats</li>
-<li class="fragment">inherits from parent folders</li>
-<li class="fragment">imports metadata from csv and remote sources</li>
-<li class="fragment">creates data api’s from metadata</li>
+<li class="fragment">inherit metadata from parent folders</li>
+<li class="fragment">import metadata from csv and remote sources</li>
+<li class="fragment">create data api’s based on metadata</li>
 </ul></li>
-<li class="fragment"><p><a href="https://pycsw.org">pycsw</a> is a catalogue application, with wide standards support, enabling discovery in multiple communities</p></li>
+<li class="fragment"><p><a href="https://pycsw.org"><img data-src="./img/pycsw-logo.png" style="vertical-align:middle" height="50"></a> is a pythonic catalogue web app. Wide standards support enables discovery in multiple communities.</p></li>
 <li class="fragment"><p>Read more at the <a href="https://ejpsoil.github.io/soildata-assimilation-guidance/cookbook/pygeometa.html">EJPSoil cookbook</a></p></li>
 </ul>
 <div class="footer footer-default">
