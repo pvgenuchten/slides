@@ -16,20 +16,20 @@ date: 2023-10-19
 ## Setting & Concept
 
 - Setting: Data management in predictive modelling
-    - In `soil modelling` we have many source and output data
+    - In `soil modelling` we handle many data sources
     - These files are stored on a network drive
     - Metadata management is `complex/dull/****`
 - The sidecar concept
-    - Add metadata on a sidecar file
+    - Add minimal metadata on a sidecar file
     - A crawler extracts metadata from a file repository
     - Crawled records are placed in a searchable index
 
-## pygeometa & geodatacrawler
+## pygeometa, geodatacrawler & pycsw
 
-- [pygeometa](https://github.com/geopython/pygeometa)'s MCF is a minimal subset of iso19115, encoded in yaml 
+- [pygeometa](https://github.com/geopython/pygeometa)'s MCF is a minimal subset of ISO19115, encoded in yaml 
 - [geodatacrawler](https://pypi.org/project/geodatacrawler/) extends pygeometa to: 
     - extract metadata from data formats
     - inherit metadata from parent folders
     - import metadata from csv and remote sources
     - create data api's based on metadata
-- [![](https://demo.pycsw.org/gisdata/static/logo-horizontal.png){height="50" style="vertical-align:middle"}](https://pycsw.org) is a pythonic catalogue web app. Wide standards support enables discovery in multiple communities.
+- [![](https://demo.pycsw.org/gisdata/static/logo-horizontal.png){height="50" style="vertical-align:middle"}](https://pycsw.org) is a pythonic catalogue web app. Wide standards support enables findability in multiple communities.
