@@ -352,22 +352,22 @@ Paul van Genuchten, Giulio Genova
 <ul>
 <li class="fragment">Setting: Data management in predictive modelling
 <ul>
-<li class="fragment">In <code>soil modelling</code> we have many source and output data</li>
+<li class="fragment">In <code>soil modelling</code> we handle many data sources</li>
 <li class="fragment">These files are stored on a network drive</li>
 <li class="fragment">Metadata management is <code>complex/dull/****</code></li>
 </ul></li>
 <li class="fragment">The sidecar concept
 <ul>
-<li class="fragment">Add metadata on a sidecar file</li>
+<li class="fragment">Add minimal metadata on a sidecar file</li>
 <li class="fragment">A crawler extracts metadata from a file repository</li>
 <li class="fragment">Crawled records are placed in a searchable index</li>
 </ul></li>
 </ul>
 </section>
-<section id="pygeometa-geodatacrawler" class="slide level2">
-<h2>pygeometa &amp; geodatacrawler</h2>
+<section id="pygeometa-geodatacrawler-pycsw" class="slide level2">
+<h2>pygeometa, geodatacrawler &amp; pycsw</h2>
 <ul>
-<li class="fragment"><a href="https://github.com/geopython/pygeometa">pygeometa</a>’s MCF is a minimal subset of iso19115, encoded in yaml</li>
+<li class="fragment"><a href="https://github.com/geopython/pygeometa">pygeometa</a>’s MCF is a minimal subset of ISO19115, encoded in yaml</li>
 <li class="fragment"><a href="https://pypi.org/project/geodatacrawler/">geodatacrawler</a> extends pygeometa to:
 <ul>
 <li class="fragment">extract metadata from data formats</li>
@@ -375,7 +375,7 @@ Paul van Genuchten, Giulio Genova
 <li class="fragment">import metadata from csv and remote sources</li>
 <li class="fragment">create data api’s based on metadata</li>
 </ul></li>
-<li class="fragment"><a href="https://pycsw.org"><img data-src="https://demo.pycsw.org/gisdata/static/logo-horizontal.png" style="vertical-align:middle" height="50"></a> is a pythonic catalogue web app. Wide standards support enables discovery in multiple communities.</li>
+<li class="fragment"><a href="https://pycsw.org"><img data-src="https://demo.pycsw.org/gisdata/static/logo-horizontal.png" style="vertical-align:middle" height="50"></a> is a pythonic catalogue web app. Wide standards support enables findability in multiple communities.</li>
 </ul>
 <div class="footer footer-default">
 
