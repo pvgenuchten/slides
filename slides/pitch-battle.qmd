@@ -5,46 +5,31 @@ author: Paul van Genuchten, Giulio Genova
 date: 2023-10-19
 ---
 
-## Setting: Data management in predictive modelling
+## What, Why, What's next?
 
-- In `soil modelling`, we have many source and output data
-    - field survey and lab data
-    - covariates, eg. earth observation grids
-    - model outputs
-- These files are stored on a network drive accessible by HPC
-    - The models are configured using workflows `versioned on GIT`
-- Metadata management is `hard/dull/****`
+- What: Document your modelling data with minimal effort
 
-## Concept: the sidecar file
+- Why: Better findability and usability of data
 
-:::: {.columns}
+- What's next: Adopt the efforts in ongoing projects & extend the user community
 
-::: {.column width="70%"}
+## Setting & Concept
 
-- Use where possible `embedded metadata` on your data files 
+- Setting: Data management in predictive modelling
+    - In `soil modelling` we have many source and output data
+    - These files are stored on a network drive
+    - Metadata management is `complex/dull/****`
+- The sidecar concept
     - Add additional metadata on a sidecar file
-- Set up a crawler which extracts metadata from your file repositories
+    - A crawler extracts metadata from a file repository
     - Crawled records are placed in a searchable index
 
+## pygeometa & geodatacrawler
 
-:::
-
-::: {.column width="30%"}
-
-![dbeamer_jpg@unsplash](./img/sidecar-unsplash.png)
-
-:::
-
-::::
-
-## Tools: pygeometa & geodatacrawler
-
-- [pygeometa](https://github.com/geopython/pygeometa)'s MCF is a minimal subset of iso19115, encoded in yaml (optimal for Git versioning)
+- [pygeometa](https://github.com/geopython/pygeometa)'s MCF is a minimal subset of iso19115, encoded in yaml 
 - [geodatacrawler](https://pypi.org/project/geodatacrawler/) extends pygeometa to: 
     - extract metadata from data formats
     - inherit metadata from parent folders
     - import metadata from csv and remote sources
     - create data api's based on metadata
-- [![](./img/pycsw-logo.png){height="50" style="vertical-align:middle"}](https://pycsw.org) is a pythonic catalogue web app. Wide standards support enables discovery in multiple communities.
-
-- Read more at the [EJPSoil cookbook](https://ejpsoil.github.io/soildata-assimilation-guidance/cookbook/pygeometa.html)
+- [![](https://demo.pycsw.org/gisdata/static/logo-horizontal.png){height="50" style="vertical-align:middle"}](https://pycsw.org) is a pythonic catalogue web app. Wide standards support enables discovery in multiple communities.
