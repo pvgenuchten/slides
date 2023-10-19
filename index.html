@@ -339,59 +339,43 @@ Paul van Genuchten, Giulio Genova
 
   <p class="date">2023-10-19</p>
 </section>
-<section id="setting-data-management-in-predictive-modelling" class="slide level2">
-<h2>Setting: Data management in predictive modelling</h2>
+<section id="what-why-whats-next" class="slide level2">
+<h2>What, Why, What’s next?</h2>
 <ul>
-<li class="fragment">In <code>soil modelling</code>, we have many source and output data
-<ul>
-<li class="fragment">field survey and lab data</li>
-<li class="fragment">covariates, eg. earth observation grids</li>
-<li class="fragment">model outputs</li>
-</ul></li>
-<li class="fragment">These files are stored on a network drive accessible by HPC
-<ul>
-<li class="fragment">The models are configured using workflows <code>versioned on GIT</code></li>
-</ul></li>
-<li class="fragment">Metadata management is <code>hard/dull/****</code></li>
+<li class="fragment"><p>What: Document your modelling data with minimal effort</p></li>
+<li class="fragment"><p>Why: Better findability and usability of data</p></li>
+<li class="fragment"><p>What’s next: Adopt the efforts in ongoing projects &amp; extend the user community</p></li>
 </ul>
 </section>
-<section id="concept-the-sidecar-file" class="slide level2">
-<h2>Concept: the sidecar file</h2>
-<div class="columns">
-<div class="column" style="width:70%;">
+<section id="setting-concept" class="slide level2">
+<h2>Setting &amp; Concept</h2>
 <ul>
-<li class="fragment">Use where possible <code>embedded metadata</code> on your data files
+<li class="fragment">Setting: Data management in predictive modelling
+<ul>
+<li class="fragment">In <code>soil modelling</code> we have many source and output data</li>
+<li class="fragment">These files are stored on a network drive</li>
+<li class="fragment">Metadata management is <code>complex/dull/****</code></li>
+</ul></li>
+<li class="fragment">The sidecar concept
 <ul>
 <li class="fragment">Add additional metadata on a sidecar file</li>
-</ul></li>
-<li class="fragment">Set up a crawler which extracts metadata from your file repositories
-<ul>
+<li class="fragment">A crawler extracts metadata from a file repository</li>
 <li class="fragment">Crawled records are placed in a searchable index</li>
 </ul></li>
 </ul>
-</div><div class="column" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="./img/sidecar-unsplash.png"></p>
-<figcaption>dbeamer_jpg@unsplash</figcaption>
-</figure>
-</div>
-</div>
-</div>
 </section>
-<section id="tools-pygeometa-geodatacrawler" class="slide level2">
-<h2>Tools: pygeometa &amp; geodatacrawler</h2>
+<section id="pygeometa-geodatacrawler" class="slide level2">
+<h2>pygeometa &amp; geodatacrawler</h2>
 <ul>
-<li class="fragment"><p><a href="https://github.com/geopython/pygeometa">pygeometa</a>’s MCF is a minimal subset of iso19115, encoded in yaml (optimal for Git versioning)</p></li>
-<li class="fragment"><p><a href="https://pypi.org/project/geodatacrawler/">geodatacrawler</a> extends pygeometa to:</p>
+<li class="fragment"><a href="https://github.com/geopython/pygeometa">pygeometa</a>’s MCF is a minimal subset of iso19115, encoded in yaml</li>
+<li class="fragment"><a href="https://pypi.org/project/geodatacrawler/">geodatacrawler</a> extends pygeometa to:
 <ul>
 <li class="fragment">extract metadata from data formats</li>
 <li class="fragment">inherit metadata from parent folders</li>
 <li class="fragment">import metadata from csv and remote sources</li>
 <li class="fragment">create data api’s based on metadata</li>
 </ul></li>
-<li class="fragment"><p><a href="https://pycsw.org"><img data-src="./img/pycsw-logo.png" style="vertical-align:middle" height="50"></a> is a pythonic catalogue web app. Wide standards support enables discovery in multiple communities.</p></li>
-<li class="fragment"><p>Read more at the <a href="https://ejpsoil.github.io/soildata-assimilation-guidance/cookbook/pygeometa.html">EJPSoil cookbook</a></p></li>
+<li class="fragment"><a href="https://pycsw.org"><img data-src="https://demo.pycsw.org/gisdata/static/logo-horizontal.png" style="vertical-align:middle" height="50"></a> is a pythonic catalogue web app. Wide standards support enables discovery in multiple communities.</li>
 </ul>
 <div class="footer footer-default">
 
