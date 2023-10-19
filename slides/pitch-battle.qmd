@@ -5,11 +5,11 @@ author: Paul van Genuchten, Giulio Genova
 date: 2023-10-19
 ---
 
-## What, Why, What's next?
+## Improving findability - devops style 
 
 - What: Document your modelling data with minimal effort
 
-- Why: Better findability and usability of data
+- Why: Better findability and (re)usability of data
 
 - What's next: Adopt the efforts in ongoing projects & extend the user community
 
@@ -20,7 +20,7 @@ date: 2023-10-19
     - These files are stored on a network drive
     - Metadata management is `complex/dull/****`
 - The sidecar concept
-    - Add additional metadata on a sidecar file
+    - Add metadata on a sidecar file
     - A crawler extracts metadata from a file repository
     - Crawled records are placed in a searchable index
 
