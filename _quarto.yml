@@ -1,6 +1,5 @@
 project:
-  title: "pitch-battle"
-  output-dir: _output
+  title: "Some slide decks"
 format:
   revealjs: 
     slide-number: true
