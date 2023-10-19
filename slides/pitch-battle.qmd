@@ -1,0 +1,37 @@
+---
+title: "pitch-battle"
+---
+
+## Setting: Data management in predictive modelling
+
+- In soil modelling, we have many source and output data
+    - field survey and lab data
+    - covariates, eg. earth observation grids
+    - model outputs
+- These files are stored on a network drive accessible by HPC
+    - The models are configured using workflows versioned on GIT
+    - The metadata of the sources and outputs used to be unclear
+- Metadata management according to standards is hard/dull/****, but it is needed for `reproducability` and `discovery`
+
+## Concept: the sidecar file
+
+- Use where possible embedded metadata on your data files 
+- Add additional metadata on a sidecar file
+
+- At times a crawler extracts metadata from your file repositories
+- Crawled records are placed in a searchable index
+
+- Sidecar files inherit from parent folders 
+- Sidecar files are a starting point for data harmonisation
+
+## Tools: pygeometa and geodatacrawler
+
+- [pygeometa](https://github.com/geopython/pygeometa)'s MCF is a minimal subset of iso19115, encoded in yaml (optimal for Git versioning)
+- [geodatecrawler](https://pypi.org/project/geodatacrawler/) extends pygeometa to: 
+    - extract metadata from data formats
+    - inherits from parent folders
+    - imports metadata from csv and remote sources
+    - creates data api's from metadata
+- [pycsw](https://pycsw.org) is a catalogue application, with wide standards support, enabling discovery in multiple communities 
+
+- Read more at the [EJPSoil cookbook](https://ejpsoil.github.io/soildata-assimilation-guidance/cookbook/pygeometa.html)
