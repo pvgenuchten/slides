@@ -1,5 +1,5 @@
 # Some slide decks using quarto
 
-View at https://pvgenuchten.github.io/pitch-battle-wur
+View at https://pvgenuchten.github.io/slides
 
-- A pitch to present metadata workflow
+- A [pitch](https://pvgenuchten.github.io/slides/pitch-battle) to present metadata workflow
