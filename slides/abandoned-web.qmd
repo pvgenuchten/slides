@@ -12,12 +12,12 @@ date: 2023-11-04
 - website builders should show ownership of domains they create
 - report writers should not link to dodgy locations (aka project websites)
 
-## A initiative to recover lost content
+## An initiative to recover lost content
 
 - Identify which websites with usefull information are lost
-- Recover the content from archive.net or organisation backups
+- Recover the content from [archive.org](https://web.archive.org) or organisation backups
 - Reclaim the domains (restore linkage)
-- Join the efforts at https://github.com/soil-on-web/abandoned-webs
+- Join the efforts at [github.com/soil-on-web/abandoned-webs](https://github.com/soil-on-web/abandoned-webs)
 
 ## Good practices on url persistence of project websites
 
