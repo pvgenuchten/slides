@@ -1,1 +1,5 @@
+---
+title: some slide decks
+---
 
+- [pitch](./slides/pitch-battle)
