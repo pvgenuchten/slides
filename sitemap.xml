@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/pvgenuchten/slides/slides/abandoned-web.html</loc>
-    <lastmod>2023-11-04T16:16:48.435Z</lastmod>
+    <loc>https://github.com/pvgenuchten/slides/slides/index.html</loc>
+    <lastmod>2023-11-04T16:18:32.945Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/pvgenuchten/slides/index.html</loc>
-    <lastmod>2023-11-04T16:16:47.755Z</lastmod>
+    <lastmod>2023-11-04T16:18:32.129Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/pvgenuchten/slides/slides/abandoned-web.html</loc>
+    <lastmod>2023-11-04T16:18:32.701Z</lastmod>
   </url>
 </urlset>
