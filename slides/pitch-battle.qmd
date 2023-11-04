@@ -3,6 +3,9 @@ title: Document your model data at minimal effort
 subtitle: "A pitch battle at digital innovation expo @WUR"
 author: Paul van Genuchten, Giulio Genova 
 date: 2023-10-19
+format:
+  revealjs: 
+    theme: league
 ---
 
 ## Improving findability - devops style 
