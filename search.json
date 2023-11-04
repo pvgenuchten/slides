@@ -7,13 +7,6 @@
     "text": "pitch\nfoo"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "some slide decks",
-    "section": "",
-    "text": "pitch"
-  },
-  {
     "objectID": "slides/abandoned-web.html",
     "href": "slides/abandoned-web.html",
     "title": "Abandonded Project Websites -> no",
@@ -40,5 +33,33 @@
     "title": "Abandonded Project Websites -> no",
     "section": "Good practices on url persistence of project websites",
     "text": "Good practices on url persistence of project websites\n\nuse a subdomain of an established organisation\nuse a persistent identifier framework, when linking to external sources\nset up rewrite rules at website cancelation\nuse minimal technology, yes: html; no: wordpress, liferay, …\nkeep the content minimal, link to external (persistent) resources\npre-pay the domain ownership for at least the upcoming 10 years"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "some slide decks",
+    "section": "",
+    "text": "pitch"
+  },
+  {
+    "objectID": "slides/pitch-battle.html#improving-findability---devops-style",
+    "href": "slides/pitch-battle.html#improving-findability---devops-style",
+    "title": "Document your model data at minimal effort",
+    "section": "Improving findability - devops style",
+    "text": "Improving findability - devops style\n\nWhat: Document your modelling data with minimal effort\nWhy: Better findability and (re)usability of data\nWhat’s next: Adopt the efforts in ongoing projects & extend the user community"
+  },
+  {
+    "objectID": "slides/pitch-battle.html#setting-concept",
+    "href": "slides/pitch-battle.html#setting-concept",
+    "title": "Document your model data at minimal effort",
+    "section": "Setting & Concept",
+    "text": "Setting & Concept\n\nSetting: Data management in predictive modelling\n\nIn soil modelling we handle many data sources\nThese files are stored on a network drive\nMetadata management is complex/dull/****\n\nThe sidecar concept\n\nAdd minimal metadata on a sidecar file\nA crawler extracts metadata from a file repository\nCrawled records are placed in a searchable index"
+  },
+  {
+    "objectID": "slides/pitch-battle.html#pygeometa-geodatacrawler-pycsw",
+    "href": "slides/pitch-battle.html#pygeometa-geodatacrawler-pycsw",
+    "title": "Document your model data at minimal effort",
+    "section": "pygeometa, geodatacrawler & pycsw",
+    "text": "pygeometa, geodatacrawler & pycsw\n\npygeometa’s MCF is a minimal subset of ISO19115, encoded in yaml\ngeodatacrawler extends pygeometa to:\n\nextract metadata from data formats\ninherit metadata from parent folders\nimport metadata from csv and remote sources\ncreate data api’s based on metadata\n\n is a pythonic catalogue web app. Wide standards support enables findability in multiple communities."
   }
 ]
