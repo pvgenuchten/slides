@@ -1,12 +1,22 @@
 project:
-  title: "Some slide decks"
+  type: website
+
+website:
+  title: "some slide decks"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+
 format:
-  revealjs: 
-    slide-number: true
-    incremental: true
-    theme: league
+  html:
+    theme: cosmo
+    toc: true
+  
 
 
+
+    
 #beige
 #blood
 #dark
