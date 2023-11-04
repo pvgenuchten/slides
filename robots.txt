@@ -1,0 +1,1 @@
+Sitemap: https://github.com/pvgenuchten/slides/sitemap.xml
