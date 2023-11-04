@@ -26,5 +26,12 @@
     "title": "Abandonded Project Websites -> no",
     "section": "Good practices on url persistence of project websites",
     "text": "Good practices on url persistence of project websites\n\nuse a subdomain of an established organisation\nuse a persistent identifier framework, when linking to external sources\nset up rewrite rules at website cancelation\nuse minimal technology, yes: html; no: wordpress, liferay, …\nkeep the content minimal, link to external (persistent) resources\npre-pay the domain ownership for at least the upcoming 10 years"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "some slide decks",
+    "section": "",
+    "text": "pitch"
   }
 ]
