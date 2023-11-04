@@ -2,4 +2,5 @@
 title: some slide decks
 ---
 
-- [pitch](./slides/pitch-battle)
+- [embedded metadata](./slides/pitch-battle)
+- [abandoned webs](./slides/abandoned-web)
