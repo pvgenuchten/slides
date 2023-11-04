@@ -3,6 +3,9 @@ title: Abandonded Project Websites -> no
 subtitle: an initiative to increase awareness on (not) abandoning websites at project finish
 author: Paul van Genuchten
 date: 2023-11-04
+format:
+  revealjs: 
+    theme: league
 ---
 
 ## A broken link from a report?
