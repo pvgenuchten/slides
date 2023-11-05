@@ -1,6 +1,8 @@
 ---
-title: some slide decks
+title: "Select your deck:"
 ---
 
-- [embedded metadata](./pitch-battle)
-- [abandoned webs](./abandoned-web)
+---
+listing:
+  type: default
+---
