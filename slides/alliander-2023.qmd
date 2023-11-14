@@ -1,0 +1,40 @@
+---
+title: Workshop pygeoapi 
+subtitle: "Alliander OS Event"
+author: Paul van Genuchten
+date: 2023-11-13
+format:
+  revealjs: 
+    theme: league
+---
+
+## About
+
+- 90's Bodemkunde Wageningen
+- 00's Nieuwland GeoInformatie
+  - WebGIS at Alliander (OpenLayers, tilecache, Smallworld)
+- 10's GeoCat BV, GeoNetwork/GeoServer
+  - Provincie Zeeland
+- 20's ISRIC - World Soil Information
+
+## Soil Museum
+
+![](https://wsm.isric.org/images/background/bg5.jpg)
+
+## Soilgrids
+
+![](https://www.researchgate.net/publication/313817639/figure/fig4/AS:462883822804995@1487371512248/Examples-of-covariates-used-to-generate-SoilGrids-TWI-is-the-Topographic-Wetness-Index_Q320.jpg)
+
+## SoilWise-HE
+
+![](https://soilwise-he.eu/wp-content/uploads/2023/11/soilwise-white-logo.png)
+
+- EU research project met als doel om data rond bodem beter te gebruiken / behouden (FAIR)
+- Start met onderzoeken van user stories vanuit 5 werkvelden (landbouw, onderzoek, overheid, breder publiek, business)
+
+[soilwise-he.eu](https://soilwise-he.eu]
+
+## pygeoapi
+
+- [Presentation](https://pygeoapi.io/presentations/foss4g2023)
+- [dive.pygeoapi.io](https://dive.pygeoapi.io)
