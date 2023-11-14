@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/pvgenuchten/slides/slides/index.html</loc>
-    <lastmod>2023-11-05T16:20:40.782Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/pvgenuchten/slides/slides/abandoned-web.html</loc>
-    <lastmod>2023-11-05T16:20:37.418Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/pvgenuchten/slides/index.html</loc>
-    <lastmod>2023-11-05T16:20:35.946Z</lastmod>
+    <loc>https://github.com/pvgenuchten/slides/slides/alliander-2023.html</loc>
+    <lastmod>2023-11-14T10:55:49.266Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/pvgenuchten/slides/slides/pitch-battle.html</loc>
-    <lastmod>2023-11-05T16:20:38.862Z</lastmod>
+    <lastmod>2023-11-14T10:55:48.402Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/pvgenuchten/slides/index.html</loc>
+    <lastmod>2023-11-14T10:55:47.750Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/pvgenuchten/slides/slides/abandoned-web.html</loc>
+    <lastmod>2023-11-14T10:55:48.094Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/pvgenuchten/slides/slides/index.html</loc>
+    <lastmod>2023-11-14T10:55:49.042Z</lastmod>
   </url>
 </urlset>

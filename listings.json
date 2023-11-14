@@ -1,17 +1,19 @@
 [
   {
-    "listing": "/slides/index.html",
-    "items": [
-      "/slides/abandoned-web.html",
-      "/slides/pitch-battle.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/slides/abandoned-web.html",
       "/slides/pitch-battle.html",
-      "/slides/index.html"
+      "/slides/index.html",
+      "/slides/alliander-2023.html"
+    ]
+  },
+  {
+    "listing": "/slides/index.html",
+    "items": [
+      "/slides/abandoned-web.html",
+      "/slides/pitch-battle.html",
+      "/slides/alliander-2023.html"
     ]
   }
 ]
