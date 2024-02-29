@@ -25,9 +25,7 @@ format:
 
 ![](https://www.researchgate.net/publication/313817639/figure/fig4/AS:462883822804995@1487371512248/Examples-of-covariates-used-to-generate-SoilGrids-TWI-is-the-Topographic-Wetness-Index_Q320.jpg)
 
-## SoilWise-HE
-
-![](https://soilwise-he.eu/wp-content/uploads/2023/11/soilwise-white-logo.png){width="20%" .nostretch}
+## ![](https://soilwise-he.eu/wp-content/uploads/2023/11/soilwise-white-logo.png){width="20%"}
 
 - EU research project met als doel om data rond bodem beter te gebruiken / behouden (FAIR)
 - Start met onderzoeken van user stories vanuit 5 werkvelden (landbouw, onderzoek, overheid, breder publiek, business)
