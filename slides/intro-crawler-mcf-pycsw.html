@@ -390,7 +390,7 @@ Paul van Genuchten, Tom Kralidis, Giulio Genova
 <pre class="mermaid mermaid-js">flowchart TB
     P[Project folder] --&gt;|Files| CI{{crawler}}
     CI --&gt;|Extract metadata| P
-    CI --&gt; G[fa:fa-code-compare Git] 
+    CI --&gt; G[Git] 
     G --&gt; PYCSW
 </pre>
 </div>
@@ -413,7 +413,7 @@ Paul van Genuchten, Tom Kralidis, Giulio Genova
 <p></p><figure class=""><p></p>
 <div>
 <pre class="mermaid mermaid-js">flowchart TB
-    G[fa:fa-code-compare Git] --&gt;|mcf| CI{{crawler}} 
+    G[Git] --&gt;|mcf| CI{{crawler}} 
     CI --&gt;|mapfiles| MS[Mapserver]
     Metadata --&gt; OWS
     MS --&gt; OWS[WMS/WFS]
@@ -450,13 +450,13 @@ Paul van Genuchten, Tom Kralidis, Giulio Genova
 <p></p><figure class=""><p></p>
 <div>
 <pre class="mermaid mermaid-js">flowchart TB
-    G[fa:fa-code-compare Git] --&gt;|mcf| CI{{pygeometa}} 
-    CI --&gt;|iso19139| DB[(fa:fa-database Database)]
+    G[Git] --&gt;|mcf| CI{{pygeometa}} 
+    CI --&gt;|iso19139| DB[(Database)]
     DB --&gt; C(Catalogue)
     C --&gt; G
-    C --&gt; CSW(fa:fa-gear CSW)
-    C --&gt; OAR(fa:fa-gear OGCAPI Records)
-    C --&gt; OAI(fa:fa-gear OAI-PMH)
+    C --&gt; CSW(CSW)
+    C --&gt; OAR(OGCAPI Records)
+    C --&gt; OAI(OAI-PMH)
 </pre>
 </div>
 <p></p></figure><p></p>
