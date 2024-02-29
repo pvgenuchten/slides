@@ -27,12 +27,12 @@ format:
 
 ## SoilWise-HE
 
-![](https://soilwise-he.eu/wp-content/uploads/2023/11/soilwise-white-logo.png)
+![](https://soilwise-he.eu/wp-content/uploads/2023/11/soilwise-white-logo.png){width="20%" .nostretch}
 
 - EU research project met als doel om data rond bodem beter te gebruiken / behouden (FAIR)
 - Start met onderzoeken van user stories vanuit 5 werkvelden (landbouw, onderzoek, overheid, breder publiek, business)
 
-[soilwise-he.eu](https://soilwise-he.eu]
+[soilwise-he.eu](https://soilwise-he.eu)
 
 ## pygeoapi
 
