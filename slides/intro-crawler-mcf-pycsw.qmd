@@ -44,7 +44,7 @@ extracts embedded metadata from data to create initial mcf
 flowchart TB
     P[Project folder] -->|Files| CI{{crawler}}
     CI -->|Extract metadata| P
-    CI --> G[fa:fa-code-compare Git] 
+    CI --> G[Git] 
     G --> PYCSW
 ```
 
@@ -61,7 +61,7 @@ The mcf content is used to create the mapserver configuration, the metadata is u
 
 ```{mermaid}
 flowchart TB
-    G[fa:fa-code-compare Git] -->|mcf| CI{{crawler}} 
+    G[Git] -->|mcf| CI{{crawler}} 
     CI -->|mapfiles| MS[Mapserver]
     Metadata --> OWS
     MS --> OWS[WMS/WFS]
@@ -85,13 +85,13 @@ flowchart TB
 
 ```{mermaid}
 flowchart TB
-    G[fa:fa-code-compare Git] -->|mcf| CI{{pygeometa}} 
-    CI -->|iso19139| DB[(fa:fa-database Database)]
+    G[Git] -->|mcf| CI{{pygeometa}} 
+    CI -->|iso19139| DB[(Database)]
     DB --> C(Catalogue)
     C --> G
-    C --> CSW(fa:fa-gear CSW)
-    C --> OAR(fa:fa-gear OGCAPI Records)
-    C --> OAI(fa:fa-gear OAI-PMH)
+    C --> CSW(CSW)
+    C --> OAR(OGCAPI Records)
+    C --> OAI(OAI-PMH)
 ```
 
 ## Oh, but this is too technical!
