@@ -94,6 +94,15 @@ flowchart TB
     C --> OAI(fa:fa-gear OAI-PMH)
 ```
 
+## Oh, but this is too technical!
+
+- Is it?
+- ISO19139 and DCAT and their tools (GeoNetwork, CKAN, Dataverse) also have their peculiarities
+- Not everybody will be able to create a pull request in GIT, use git issues instead and let others in the community fix
+- YAML has its caveats (indenting, reserved characters), use YAML check in text editor
+- We created a web-form for mcf editing, [mdme](https://osgeo.github.io/mdme)
+
+
 ## Read more?
 
 - [pygeometa in the EJPSoil soil data assimilation cookbook](https://ejpsoil.github.io/soildata-assimilation-guidance/cookbook/pygeometa.html)
