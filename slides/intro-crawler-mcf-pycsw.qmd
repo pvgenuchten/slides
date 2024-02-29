@@ -1,0 +1,105 @@
+---
+title: Metadata for the rest of us
+subtitle: Intro to a set of metadata conventions and tools
+author: Paul van Genuchten, Tom Kralidis, Giulio Genova
+date: 2024-02-29
+format:
+  revealjs: 
+    theme: league
+---
+
+## What 
+
+- A set of conventions and tools to create and share metadata of datasets.
+- Metadata should own metadata records, because they are the knowledgable party.
+- So, stay close to the tools that they already use: Python, Git, Excel.
+- Focus on TC211 and academia standards, because we're in the academic spatial domain
+
+## Some principles
+
+- based on existing standards/conventions 
+- (meta)data at the source
+- simple in maintenance
+- persistent/traceable over time
+- Fixed (extendible) data model for metadata 
+
+## 3 use cases
+
+- A team of data scientists understands/describes their source data, models and data outputs, for tracability and future re-use 
+- An organisation aims to share a subset of their resources as open access data
+- A community aims to collect relevant remote resources in a thematic catalogue
+
+## Describe resources at the source
+
+- Builds on a convention of placing a README.md file in a project folder with source and result data of a model run, describing the source, attribution, date of the source data. 
+- Suggestion is to use a structured format, so also machines can understand this information
+- [Metadata control file](https://geopython.github.io/pygeometa/reference/mcf/) (mcf) is a convention of the geopython community, a YAML encoded subset of ISO19115.
+- A [crawler tool](https://pypi.org/project/geodatacrawler/)
+extracts embedded metadata from data to create initial mcf
+- A [crawler tool](https://pypi.org/project/geodatacrawler/) fetches from a set of project folders the mcf files and stores it in a central index, [pycsw](https://pycsw.org)
+
+## Schematic I
+
+```{mermaid}
+flowchart LR
+    P[Project folder] -->|Files| CI{{crawler}}
+    CI -->|Extract metadata| P
+    CI --> G[fa:fa-code-compare Git] 
+    G --> PYCSW
+```
+
+## Share as open access data
+
+Builds on the previous case, data scientists store and describe their data outputs on a central folder, a sharable subset is shared via pycsw.
+
+For spatial assets OGC data api's are created, sharing the data as WMS, WFS, WCS using [mapserver](https://mapserver.org)
+
+The mcf content is used to create the mapserver configuration, the metadata is updated with the relevant OWS endpoints
+
+
+## Schematic II
+
+```{mermaid}
+flowchart LR
+    G[fa:fa-code-compare Git] -->|mcf| CI{{crawler}} 
+    CI -->|mapfiles| MS[Mapserver]
+    Metadata --> OWS
+    MS --> OWS[WMS/WFS]
+    CI -->|OWS Linkage| G
+```
+
+## A thematic participatory data portal
+
+Metadata from external sources can be harvested to the central index
+
+- a generic query to a remote catalogue endpoint
+- a excel sheet of records (each column is a metadata property)
+- a list of DOI's
+
+A challenge with existing data portals is the lack of user interaction, users often can't flag problems in metadata or suggest new content
+
+This approach improves that by storing the MCF in GIT, and add a 'edit me on git' link on each metadata page, also the harvest definition is stored on git
+
+Imports are managed as CI-CD actions in Git
+
+
+
+## Schematic III
+
+```{mermaid}
+flowchart LR
+    G[fa:fa-code-compare Git] -->|mcf| CI{{pygeometa}} 
+    CI -->|iso19139| DB[(fa:fa-database Database)]
+    DB --> C(Catalogue)
+    C --> G
+    C --> CSW(fa:fa-gear CSW)
+    C --> OAR(fa:fa-gear OGCAPI Records)
+    C --> OAI(fa:fa-gear OAI-PMH)
+```
+
+## Read more?
+
+- [pygeometa in the EJPSoil soil data assimilation cookbook](https://ejpsoil.github.io/soildata-assimilation-guidance/cookbook/pygeometa.html)
+- [LSC Hubs data workshop](https://lsc-hubs.github.io/hub-core/docs/developer/tutorial-data-management/)
+- [pygeometa](https://geopython.github.io/pygeometa)
+- [GeoDataCrawler](https://pypi.org/project/geodatacrawler)

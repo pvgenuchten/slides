@@ -1,0 +1,33 @@
+---
+title: Abandonded Project Websites -> no
+subtitle: an initiative to increase awareness on (not) abandoning websites at project finish
+author: Paul van Genuchten
+date: 2023-11-04
+format:
+  revealjs: 
+    theme: league
+---
+
+## A broken link from a report?
+
+- or worse, arrive in an online casino from a link in a report?
+- many websites are abandoned few years after project finish
+- website builders should show ownership of domains they create
+- report writers should not link to dodgy locations (aka project websites)
+
+## An initiative to recover lost content
+
+- Identify which websites with usefull information are lost
+- Recover the content from [archive.org](https://web.archive.org) or organisation backups
+- Reclaim the domains (restore linkage)
+- Join the efforts at [github.com/soil-on-web/abandoned-webs](https://github.com/soil-on-web/abandoned-webs)
+
+## Good practices on url persistence of project websites
+
+- use a subdomain of an established organisation
+- use a persistent identifier framework, when linking to external sources
+- set up rewrite rules at website cancelation
+- use minimal technology, yes: html; no: wordpress, liferay, ...
+- keep the content minimal, link to external (persistent) resources 
+- pre-pay the domain ownership for at least the upcoming 10 years
+

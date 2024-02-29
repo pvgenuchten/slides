@@ -1,0 +1,36 @@
+---
+title: Document your model data at minimal effort
+subtitle: "A pitch battle at digital innovation expo @WUR"
+author: Paul van Genuchten, Giulio Genova 
+date: 2023-10-19
+format:
+  revealjs: 
+    theme: league
+---
+
+## Improving findability - devops style 
+
+- What: Document your modelling data with minimal effort
+- Why: Better findability and (re)usability of data
+- What's next: Adopt the efforts in ongoing projects & extend the user community
+
+## Setting & Concept
+
+- Setting: Data management in predictive modelling
+    - In `soil modelling` we handle many data sources
+    - These files are stored on a network drive
+    - Metadata management is `complex/dull/****`
+- The sidecar concept
+    - Add minimal metadata on a sidecar file
+    - A crawler extracts metadata from a file repository
+    - Crawled records are placed in a searchable index
+
+## pygeometa, geodatacrawler & pycsw
+
+- [pygeometa](https://github.com/geopython/pygeometa)'s MCF is a minimal subset of ISO19115, encoded in yaml 
+- [geodatacrawler](https://pypi.org/project/geodatacrawler/) extends pygeometa to: 
+    - extract metadata from data formats
+    - inherit metadata from parent folders
+    - import metadata from csv and remote sources
+    - create data api's based on metadata
+- [![](https://demo.pycsw.org/gisdata/static/logo-horizontal.png){height="50" style="vertical-align:middle"}](https://pycsw.org) is a pythonic catalogue web app. Wide standards support enables findability in multiple communities.
