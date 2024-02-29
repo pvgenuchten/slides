@@ -370,12 +370,12 @@ Paul van Genuchten, Tom Kralidis, Giulio Genova
 <li>A community aims to collect relevant remote resources in a thematic catalogue</li>
 </ul>
 </section>
-<section id="describe-resources-at-the-source" class="slide level2">
-<h2>Describe resources at the source</h2>
+<section id="describe-resources-at-their-source" class="slide level2">
+<h2>Describe resources at their source</h2>
 <ul>
 <li>Builds on a convention of placing a README.md file in a project folder, describing the source, attribution.</li>
 <li>Suggestion is to use a structured format, so also machines can understand this information</li>
-<li><a href="https://geopython.github.io/pygeometa/reference/mcf/">Metadata control file</a> (mcf) is a convention of the geopython community, a YAML encoded subset of ISO19115.</li>
+<li><a href="https://geopython.github.io/pygeometa/reference/mcf/">Metadata control file</a> (mcf) is a convention of the geopython community (in YAML)</li>
 <li>A <a href="https://pypi.org/project/geodatacrawler/">crawler tool</a> extracts embedded metadata from data to create initial mcf</li>
 <li>A <a href="https://pypi.org/project/geodatacrawler/">crawler tool</a> fetches from a set of project folders the metadata and stores it in a central index, <a href="https://pycsw.org">pycsw</a></li>
 </ul>
@@ -401,9 +401,11 @@ Paul van Genuchten, Tom Kralidis, Giulio Genova
 </section>
 <section id="share-as-open-access-data" class="slide level2">
 <h2>Share as open access data</h2>
-<p>Builds on the previous case, data scientists store and describe their data outputs on a central folder, a sharable subset is shared via pycsw.</p>
-<p>For spatial assets OGC data api’s are created, sharing the data as WMS, WFS, WCS using <a href="https://mapserver.org">mapserver</a></p>
-<p>The mcf content is used to create the mapserver configuration, the metadata is updated with the relevant OWS endpoints</p>
+<ul>
+<li>Builds on the previous case, data scientists store and describe their data outputs on a central folder, a sharable subset is shared via pycsw.</li>
+<li>For spatial assets OGC data api’s are created, sharing the data as WMS, WFS, WCS using <a href="https://mapserver.org">mapserver</a></li>
+<li>The mcf content is used to create the mapserver configuration, the metadata is updated with the relevant OWS endpoints</li>
+</ul>
 </section>
 <section id="schematic-ii" class="slide level2">
 <h2>Schematic II</h2>

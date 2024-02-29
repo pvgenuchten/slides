@@ -112,11 +112,11 @@
     "text": "3 use cases\n\nA team of data scientists understands/describes their source data, models and data outputs, for tracability and future re-use\nAn organisation aims to share a subset of their resources as open access data\nA community aims to collect relevant remote resources in a thematic catalogue"
   },
   {
-    "objectID": "slides/intro-crawler-mcf-pycsw.html#describe-resources-at-the-source",
-    "href": "slides/intro-crawler-mcf-pycsw.html#describe-resources-at-the-source",
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#describe-resources-at-their-source",
+    "href": "slides/intro-crawler-mcf-pycsw.html#describe-resources-at-their-source",
     "title": "Metadata for the rest of us",
-    "section": "Describe resources at the source",
-    "text": "Describe resources at the source\n\nBuilds on a convention of placing a README.md file in a project folder, describing the source, attribution.\nSuggestion is to use a structured format, so also machines can understand this information\nMetadata control file (mcf) is a convention of the geopython community, a YAML encoded subset of ISO19115.\nA crawler tool extracts embedded metadata from data to create initial mcf\nA crawler tool fetches from a set of project folders the metadata and stores it in a central index, pycsw"
+    "section": "Describe resources at their source",
+    "text": "Describe resources at their source\n\nBuilds on a convention of placing a README.md file in a project folder, describing the source, attribution.\nSuggestion is to use a structured format, so also machines can understand this information\nMetadata control file (mcf) is a convention of the geopython community (in YAML)\nA crawler tool extracts embedded metadata from data to create initial mcf\nA crawler tool fetches from a set of project folders the metadata and stores it in a central index, pycsw"
   },
   {
     "objectID": "slides/intro-crawler-mcf-pycsw.html#schematic-i",
@@ -130,7 +130,7 @@
     "href": "slides/intro-crawler-mcf-pycsw.html#share-as-open-access-data",
     "title": "Metadata for the rest of us",
     "section": "Share as open access data",
-    "text": "Share as open access data\nBuilds on the previous case, data scientists store and describe their data outputs on a central folder, a sharable subset is shared via pycsw.\nFor spatial assets OGC data api’s are created, sharing the data as WMS, WFS, WCS using mapserver\nThe mcf content is used to create the mapserver configuration, the metadata is updated with the relevant OWS endpoints"
+    "text": "Share as open access data\n\nBuilds on the previous case, data scientists store and describe their data outputs on a central folder, a sharable subset is shared via pycsw.\nFor spatial assets OGC data api’s are created, sharing the data as WMS, WFS, WCS using mapserver\nThe mcf content is used to create the mapserver configuration, the metadata is updated with the relevant OWS endpoints"
   },
   {
     "objectID": "slides/intro-crawler-mcf-pycsw.html#schematic-ii",
