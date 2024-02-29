@@ -1,5 +1,8 @@
 project:
   type: website
+  render: 
+    - "*.md"
+    - "*.qmd"
 
 website:
   title: "some slide decks"
