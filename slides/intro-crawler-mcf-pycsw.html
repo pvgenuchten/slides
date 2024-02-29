@@ -347,8 +347,8 @@ Paul van Genuchten, Tom Kralidis, Giulio Genova
 <h2>What</h2>
 <ul>
 <li>A set of conventions and tools to create and share metadata of datasets.</li>
-<li>Metadata should own metadata records, because they are the knowledgable party.</li>
-<li>So, stay close to the tools that they already use: Python, Git, Excel.</li>
+<li>Data scientists should <code>own</code> metadata records, because they are the knowledgeable party.</li>
+<li>So: integrate in their environment, stay close to the tools they already use: Python, Git, Excel.</li>
 <li>Focus on TC211 and academia standards, because we’re in the academic spatial domain</li>
 </ul>
 </section>
@@ -373,11 +373,11 @@ Paul van Genuchten, Tom Kralidis, Giulio Genova
 <section id="describe-resources-at-the-source" class="slide level2">
 <h2>Describe resources at the source</h2>
 <ul>
-<li>Builds on a convention of placing a README.md file in a project folder with source and result data of a model run, describing the source, attribution, date of the source data.</li>
+<li>Builds on a convention of placing a README.md file in a project folder, describing the source, attribution.</li>
 <li>Suggestion is to use a structured format, so also machines can understand this information</li>
 <li><a href="https://geopython.github.io/pygeometa/reference/mcf/">Metadata control file</a> (mcf) is a convention of the geopython community, a YAML encoded subset of ISO19115.</li>
 <li>A <a href="https://pypi.org/project/geodatacrawler/">crawler tool</a> extracts embedded metadata from data to create initial mcf</li>
-<li>A <a href="https://pypi.org/project/geodatacrawler/">crawler tool</a> fetches from a set of project folders the mcf files and stores it in a central index, <a href="https://pycsw.org">pycsw</a></li>
+<li>A <a href="https://pypi.org/project/geodatacrawler/">crawler tool</a> fetches from a set of project folders the metadata and stores it in a central index, <a href="https://pycsw.org">pycsw</a></li>
 </ul>
 </section>
 <section id="schematic-i" class="slide level2">
@@ -387,7 +387,7 @@ Paul van Genuchten, Tom Kralidis, Giulio Genova
 <div>
 <p></p><figure class=""><p></p>
 <div>
-<pre class="mermaid mermaid-js">flowchart LR
+<pre class="mermaid mermaid-js">flowchart TB
     P[Project folder] --&gt;|Files| CI{{crawler}}
     CI --&gt;|Extract metadata| P
     CI --&gt; G[fa:fa-code-compare Git] 
@@ -412,7 +412,7 @@ Paul van Genuchten, Tom Kralidis, Giulio Genova
 <div>
 <p></p><figure class=""><p></p>
 <div>
-<pre class="mermaid mermaid-js">flowchart LR
+<pre class="mermaid mermaid-js">flowchart TB
     G[fa:fa-code-compare Git] --&gt;|mcf| CI{{crawler}} 
     CI --&gt;|mapfiles| MS[Mapserver]
     Metadata --&gt; OWS
@@ -427,15 +427,20 @@ Paul van Genuchten, Tom Kralidis, Giulio Genova
 </section>
 <section id="a-thematic-participatory-data-portal" class="slide level2">
 <h2>A thematic participatory data portal</h2>
-<p>Metadata from external sources can be harvested to the central index</p>
 <ul>
-<li>a generic query to a remote catalogue endpoint</li>
+<li>metadata from external sources can be harvested to the central index</li>
+<li>by storing MCF in GIT, and add a ‘edit me on git’ link on each metadata page, so users can flag problems in metadata or suggest new content</li>
+<li>also the harvest definition is stored on git</li>
+<li>Imports are managed as CI-CD actions in Git</li>
+</ul>
+</section>
+<section id="metadata-harvest" class="slide level2">
+<h2>Metadata harvest</h2>
+<ul>
+<li>a generic query to a remote catalogue endpoint (csw, oai-pmh)</li>
 <li>a excel sheet of records (each column is a metadata property)</li>
 <li>a list of DOI’s</li>
 </ul>
-<p>A challenge with existing data portals is the lack of user interaction, users often can’t flag problems in metadata or suggest new content</p>
-<p>This approach improves that by storing the MCF in GIT, and add a ‘edit me on git’ link on each metadata page, also the harvest definition is stored on git</p>
-<p>Imports are managed as CI-CD actions in Git</p>
 </section>
 <section id="schematic-iii" class="slide level2">
 <h2>Schematic III</h2>
@@ -444,7 +449,7 @@ Paul van Genuchten, Tom Kralidis, Giulio Genova
 <div>
 <p></p><figure class=""><p></p>
 <div>
-<pre class="mermaid mermaid-js">flowchart LR
+<pre class="mermaid mermaid-js">flowchart TB
     G[fa:fa-code-compare Git] --&gt;|mcf| CI{{pygeometa}} 
     CI --&gt;|iso19139| DB[(fa:fa-database Database)]
     DB --&gt; C(Catalogue)

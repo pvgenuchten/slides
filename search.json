@@ -95,7 +95,7 @@
     "href": "slides/intro-crawler-mcf-pycsw.html#what",
     "title": "Metadata for the rest of us",
     "section": "What",
-    "text": "What\n\nA set of conventions and tools to create and share metadata of datasets.\nMetadata should own metadata records, because they are the knowledgable party.\nSo, stay close to the tools that they already use: Python, Git, Excel.\nFocus on TC211 and academia standards, because we’re in the academic spatial domain"
+    "text": "What\n\nA set of conventions and tools to create and share metadata of datasets.\nData scientists should own metadata records, because they are the knowledgeable party.\nSo: integrate in their environment, stay close to the tools they already use: Python, Git, Excel.\nFocus on TC211 and academia standards, because we’re in the academic spatial domain"
   },
   {
     "objectID": "slides/intro-crawler-mcf-pycsw.html#some-principles",
@@ -116,14 +116,14 @@
     "href": "slides/intro-crawler-mcf-pycsw.html#describe-resources-at-the-source",
     "title": "Metadata for the rest of us",
     "section": "Describe resources at the source",
-    "text": "Describe resources at the source\n\nBuilds on a convention of placing a README.md file in a project folder with source and result data of a model run, describing the source, attribution, date of the source data.\nSuggestion is to use a structured format, so also machines can understand this information\nMetadata control file (mcf) is a convention of the geopython community, a YAML encoded subset of ISO19115.\nA crawler tool extracts embedded metadata from data to create initial mcf\nA crawler tool fetches from a set of project folders the mcf files and stores it in a central index, pycsw"
+    "text": "Describe resources at the source\n\nBuilds on a convention of placing a README.md file in a project folder, describing the source, attribution.\nSuggestion is to use a structured format, so also machines can understand this information\nMetadata control file (mcf) is a convention of the geopython community, a YAML encoded subset of ISO19115.\nA crawler tool extracts embedded metadata from data to create initial mcf\nA crawler tool fetches from a set of project folders the metadata and stores it in a central index, pycsw"
   },
   {
     "objectID": "slides/intro-crawler-mcf-pycsw.html#schematic-i",
     "href": "slides/intro-crawler-mcf-pycsw.html#schematic-i",
     "title": "Metadata for the rest of us",
     "section": "Schematic I",
-    "text": "Schematic I\n\n\n\n\n\nflowchart LR\n    P[Project folder] --&gt;|Files| CI{{crawler}}\n    CI --&gt;|Extract metadata| P\n    CI --&gt; G[fa:fa-code-compare Git] \n    G --&gt; PYCSW"
+    "text": "Schematic I\n\n\n\n\n\nflowchart TB\n    P[Project folder] --&gt;|Files| CI{{crawler}}\n    CI --&gt;|Extract metadata| P\n    CI --&gt; G[fa:fa-code-compare Git] \n    G --&gt; PYCSW"
   },
   {
     "objectID": "slides/intro-crawler-mcf-pycsw.html#share-as-open-access-data",
@@ -137,21 +137,28 @@
     "href": "slides/intro-crawler-mcf-pycsw.html#schematic-ii",
     "title": "Metadata for the rest of us",
     "section": "Schematic II",
-    "text": "Schematic II\n\n\n\n\n\nflowchart LR\n    G[fa:fa-code-compare Git] --&gt;|mcf| CI{{crawler}} \n    CI --&gt;|mapfiles| MS[Mapserver]\n    Metadata --&gt; OWS\n    MS --&gt; OWS[WMS/WFS]\n    CI --&gt;|OWS Linkage| G"
+    "text": "Schematic II\n\n\n\n\n\nflowchart TB\n    G[fa:fa-code-compare Git] --&gt;|mcf| CI{{crawler}} \n    CI --&gt;|mapfiles| MS[Mapserver]\n    Metadata --&gt; OWS\n    MS --&gt; OWS[WMS/WFS]\n    CI --&gt;|OWS Linkage| G"
   },
   {
     "objectID": "slides/intro-crawler-mcf-pycsw.html#a-thematic-participatory-data-portal",
     "href": "slides/intro-crawler-mcf-pycsw.html#a-thematic-participatory-data-portal",
     "title": "Metadata for the rest of us",
     "section": "A thematic participatory data portal",
-    "text": "A thematic participatory data portal\nMetadata from external sources can be harvested to the central index\n\na generic query to a remote catalogue endpoint\na excel sheet of records (each column is a metadata property)\na list of DOI’s\n\nA challenge with existing data portals is the lack of user interaction, users often can’t flag problems in metadata or suggest new content\nThis approach improves that by storing the MCF in GIT, and add a ‘edit me on git’ link on each metadata page, also the harvest definition is stored on git\nImports are managed as CI-CD actions in Git"
+    "text": "A thematic participatory data portal\n\nmetadata from external sources can be harvested to the central index\nby storing MCF in GIT, and add a ‘edit me on git’ link on each metadata page, so users can flag problems in metadata or suggest new content\nalso the harvest definition is stored on git\nImports are managed as CI-CD actions in Git"
+  },
+  {
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#metadata-harvest",
+    "href": "slides/intro-crawler-mcf-pycsw.html#metadata-harvest",
+    "title": "Metadata for the rest of us",
+    "section": "Metadata harvest",
+    "text": "Metadata harvest\n\na generic query to a remote catalogue endpoint (csw, oai-pmh)\na excel sheet of records (each column is a metadata property)\na list of DOI’s"
   },
   {
     "objectID": "slides/intro-crawler-mcf-pycsw.html#schematic-iii",
     "href": "slides/intro-crawler-mcf-pycsw.html#schematic-iii",
     "title": "Metadata for the rest of us",
     "section": "Schematic III",
-    "text": "Schematic III\n\n\n\n\n\nflowchart LR\n    G[fa:fa-code-compare Git] --&gt;|mcf| CI{{pygeometa}} \n    CI --&gt;|iso19139| DB[(fa:fa-database Database)]\n    DB --&gt; C(Catalogue)\n    C --&gt; G\n    C --&gt; CSW(fa:fa-gear CSW)\n    C --&gt; OAR(fa:fa-gear OGCAPI Records)\n    C --&gt; OAI(fa:fa-gear OAI-PMH)"
+    "text": "Schematic III\n\n\n\n\n\nflowchart TB\n    G[fa:fa-code-compare Git] --&gt;|mcf| CI{{pygeometa}} \n    CI --&gt;|iso19139| DB[(fa:fa-database Database)]\n    DB --&gt; C(Catalogue)\n    C --&gt; G\n    C --&gt; CSW(fa:fa-gear CSW)\n    C --&gt; OAR(fa:fa-gear OGCAPI Records)\n    C --&gt; OAI(fa:fa-gear OAI-PMH)"
   },
   {
     "objectID": "slides/intro-crawler-mcf-pycsw.html#read-more",
