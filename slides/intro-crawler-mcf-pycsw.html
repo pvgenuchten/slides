@@ -10,9 +10,9 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.550">
 
-  <meta name="author" content="Paul van Genuchten">
-  <meta name="dcterms.date" content="2023-11-04">
-  <title>some slide decks - Abandonded Project Websites -&gt; no</title>
+  <meta name="author" content="Paul van Genuchten, Tom Kralidis, Giulio Genova">
+  <meta name="dcterms.date" content="2024-02-29">
+  <title>some slide decks - Metadata for the rest of us</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -321,52 +321,151 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-dark">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Abandonded Project Websites -&gt; no</h1>
-  <p class="subtitle">an initiative to increase awareness on (not) abandoning websites at project finish</p>
+  <h1 class="title">Metadata for the rest of us</h1>
+  <p class="subtitle">Intro to a set of metadata conventions and tools</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Paul van Genuchten 
+Paul van Genuchten, Tom Kralidis, Giulio Genova 
 </div>
 </div>
 </div>
 
-  <p class="date">2023-11-04</p>
+  <p class="date">2024-02-29</p>
 </section>
-<section id="a-broken-link-from-a-report" class="slide level2">
-<h2>A broken link from a report?</h2>
+<section id="what" class="slide level2">
+<h2>What</h2>
 <ul>
-<li>or worse, arrive in an online casino from a link in a report?</li>
-<li>many websites are abandoned few years after project finish</li>
-<li>website builders should show ownership of domains they create</li>
-<li>report writers should not link to dodgy locations (aka project websites)</li>
+<li>A set of conventions and tools to create and share metadata of datasets.</li>
+<li>Metadata should own metadata records, because they are the knowledgable party.</li>
+<li>So, stay close to the tools that they already use: Python, Git, Excel.</li>
+<li>Focus on TC211 and academia standards, because we’re in the academic spatial domain</li>
 </ul>
 </section>
-<section id="an-initiative-to-recover-lost-content" class="slide level2">
-<h2>An initiative to recover lost content</h2>
+<section id="some-principles" class="slide level2">
+<h2>Some principles</h2>
 <ul>
-<li>Identify which websites with usefull information are lost</li>
-<li>Recover the content from <a href="https://web.archive.org">archive.org</a> or organisation backups</li>
-<li>Reclaim the domains (restore linkage)</li>
-<li>Join the efforts at <a href="https://github.com/soil-on-web/abandoned-webs">github.com/soil-on-web/abandoned-webs</a></li>
+<li>based on existing standards/conventions</li>
+<li>(meta)data at the source</li>
+<li>simple in maintenance</li>
+<li>persistent/traceable over time</li>
+<li>Fixed (extendible) data model for metadata</li>
 </ul>
 </section>
-<section id="good-practices-on-url-persistence-of-project-websites" class="slide level2">
-<h2>Good practices on url persistence of project websites</h2>
+<section id="use-cases" class="slide level2">
+<h2>3 use cases</h2>
 <ul>
-<li>use a subdomain of an established organisation</li>
-<li>use a persistent identifier framework, when linking to external sources</li>
-<li>set up rewrite rules at website cancelation</li>
-<li>use minimal technology, yes: html; no: wordpress, liferay, …</li>
-<li>keep the content minimal, link to external (persistent) resources</li>
-<li>pre-pay the domain ownership for at least the upcoming 10 years</li>
+<li>A team of data scientists understands/describes their source data, models and data outputs, for tracability and future re-use</li>
+<li>An organisation aims to share a subset of their resources as open access data</li>
+<li>A community aims to collect relevant remote resources in a thematic catalogue</li>
+</ul>
+</section>
+<section id="describe-resources-at-the-source" class="slide level2">
+<h2>Describe resources at the source</h2>
+<ul>
+<li>Builds on a convention of placing a README.md file in a project folder with source and result data of a model run, describing the source, attribution, date of the source data.</li>
+<li>Suggestion is to use a structured format, so also machines can understand this information</li>
+<li><a href="https://geopython.github.io/pygeometa/reference/mcf/">Metadata control file</a> (mcf) is a convention of the geopython community, a YAML encoded subset of ISO19115.</li>
+<li>A <a href="https://pypi.org/project/geodatacrawler/">crawler tool</a> extracts embedded metadata from data to create initial mcf</li>
+<li>A <a href="https://pypi.org/project/geodatacrawler/">crawler tool</a> fetches from a set of project folders the mcf files and stores it in a central index, <a href="https://pycsw.org">pycsw</a></li>
+</ul>
+</section>
+<section id="schematic-i" class="slide level2">
+<h2>Schematic I</h2>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    P[Project folder] --&gt;|Files| CI{{crawler}}
+    CI --&gt;|Extract metadata| P
+    CI --&gt; G[fa:fa-code-compare Git] 
+    G --&gt; PYCSW
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="share-as-open-access-data" class="slide level2">
+<h2>Share as open access data</h2>
+<p>Builds on the previous case, data scientists store and describe their data outputs on a central folder, a sharable subset is shared via pycsw.</p>
+<p>For spatial assets OGC data api’s are created, sharing the data as WMS, WFS, WCS using <a href="https://mapserver.org">mapserver</a></p>
+<p>The mcf content is used to create the mapserver configuration, the metadata is updated with the relevant OWS endpoints</p>
+</section>
+<section id="schematic-ii" class="slide level2">
+<h2>Schematic II</h2>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    G[fa:fa-code-compare Git] --&gt;|mcf| CI{{crawler}} 
+    CI --&gt;|mapfiles| MS[Mapserver]
+    Metadata --&gt; OWS
+    MS --&gt; OWS[WMS/WFS]
+    CI --&gt;|OWS Linkage| G
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="a-thematic-participatory-data-portal" class="slide level2">
+<h2>A thematic participatory data portal</h2>
+<p>Metadata from external sources can be harvested to the central index</p>
+<ul>
+<li>a generic query to a remote catalogue endpoint</li>
+<li>a excel sheet of records (each column is a metadata property)</li>
+<li>a list of DOI’s</li>
+</ul>
+<p>A challenge with existing data portals is the lack of user interaction, users often can’t flag problems in metadata or suggest new content</p>
+<p>This approach improves that by storing the MCF in GIT, and add a ‘edit me on git’ link on each metadata page, also the harvest definition is stored on git</p>
+<p>Imports are managed as CI-CD actions in Git</p>
+</section>
+<section id="schematic-iii" class="slide level2">
+<h2>Schematic III</h2>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    G[fa:fa-code-compare Git] --&gt;|mcf| CI{{pygeometa}} 
+    CI --&gt;|iso19139| DB[(fa:fa-database Database)]
+    DB --&gt; C(Catalogue)
+    C --&gt; G
+    C --&gt; CSW(fa:fa-gear CSW)
+    C --&gt; OAR(fa:fa-gear OGCAPI Records)
+    C --&gt; OAI(fa:fa-gear OAI-PMH)
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="read-more" class="slide level2">
+<h2>Read more?</h2>
+<ul>
+<li><a href="https://ejpsoil.github.io/soildata-assimilation-guidance/cookbook/pygeometa.html">pygeometa in the EJPSoil soil data assimilation cookbook</a></li>
+<li><a href="https://lsc-hubs.github.io/hub-core/docs/developer/tutorial-data-management/">LSC Hubs data workshop</a></li>
+<li><a href="https://geopython.github.io/pygeometa">pygeometa</a></li>
+<li><a href="https://pypi.org/project/geodatacrawler">GeoDataCrawler</a></li>
 </ul>
 
 <div class="quarto-auto-generated-content">

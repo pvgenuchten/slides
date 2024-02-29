@@ -1,5 +1,61 @@
 [
   {
+    "objectID": "slides/pitch-battle.html#improving-findability---devops-style",
+    "href": "slides/pitch-battle.html#improving-findability---devops-style",
+    "title": "Document your model data at minimal effort",
+    "section": "Improving findability - devops style",
+    "text": "Improving findability - devops style\n\nWhat: Document your modelling data with minimal effort\nWhy: Better findability and (re)usability of data\nWhat’s next: Adopt the efforts in ongoing projects & extend the user community"
+  },
+  {
+    "objectID": "slides/pitch-battle.html#setting-concept",
+    "href": "slides/pitch-battle.html#setting-concept",
+    "title": "Document your model data at minimal effort",
+    "section": "Setting & Concept",
+    "text": "Setting & Concept\n\nSetting: Data management in predictive modelling\n\nIn soil modelling we handle many data sources\nThese files are stored on a network drive\nMetadata management is complex/dull/****\n\nThe sidecar concept\n\nAdd minimal metadata on a sidecar file\nA crawler extracts metadata from a file repository\nCrawled records are placed in a searchable index"
+  },
+  {
+    "objectID": "slides/pitch-battle.html#pygeometa-geodatacrawler-pycsw",
+    "href": "slides/pitch-battle.html#pygeometa-geodatacrawler-pycsw",
+    "title": "Document your model data at minimal effort",
+    "section": "pygeometa, geodatacrawler & pycsw",
+    "text": "pygeometa, geodatacrawler & pycsw\n\npygeometa’s MCF is a minimal subset of ISO19115, encoded in yaml\ngeodatacrawler extends pygeometa to:\n\nextract metadata from data formats\ninherit metadata from parent folders\nimport metadata from csv and remote sources\ncreate data api’s based on metadata\n\n is a pythonic catalogue web app. Wide standards support enables findability in multiple communities."
+  },
+  {
+    "objectID": "slides/index.html",
+    "href": "slides/index.html",
+    "title": "Select your deck:",
+    "section": "",
+    "text": "Abandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata for the rest of us\n\n\nIntro to a set of metadata conventions and tools\n\n\n\n\n\n\n\n\nFeb 29, 2024\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/abandoned-web.html#a-broken-link-from-a-report",
+    "href": "slides/abandoned-web.html#a-broken-link-from-a-report",
+    "title": "Abandonded Project Websites -> no",
+    "section": "A broken link from a report?",
+    "text": "A broken link from a report?\n\nor worse, arrive in an online casino from a link in a report?\nmany websites are abandoned few years after project finish\nwebsite builders should show ownership of domains they create\nreport writers should not link to dodgy locations (aka project websites)"
+  },
+  {
+    "objectID": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
+    "href": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
+    "title": "Abandonded Project Websites -> no",
+    "section": "An initiative to recover lost content",
+    "text": "An initiative to recover lost content\n\nIdentify which websites with usefull information are lost\nRecover the content from archive.org or organisation backups\nReclaim the domains (restore linkage)\nJoin the efforts at github.com/soil-on-web/abandoned-webs"
+  },
+  {
+    "objectID": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
+    "href": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
+    "title": "Abandonded Project Websites -> no",
+    "section": "Good practices on url persistence of project websites",
+    "text": "Good practices on url persistence of project websites\n\nuse a subdomain of an established organisation\nuse a persistent identifier framework, when linking to external sources\nset up rewrite rules at website cancelation\nuse minimal technology, yes: html; no: wordpress, liferay, …\nkeep the content minimal, link to external (persistent) resources\npre-pay the domain ownership for at least the upcoming 10 years"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Select your deck:",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nNov 4, 2023\n\n\nAbandonded Project Websites -&gt; no\n\n\nPaul van Genuchten\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\nFeb 29, 2024\n\n\nMetadata for the rest of us\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n \n\n\nSelect your deck:\n\n\n \n\n\n\n\nNov 13, 2023\n\n\nWorkshop pygeoapi\n\n\nPaul van Genuchten\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "slides/alliander-2023.html#about",
     "href": "slides/alliander-2023.html#about",
     "title": "Workshop pygeoapi",
@@ -35,59 +91,73 @@
     "text": "pygeoapi\n\nPresentation\ndive.pygeoapi.io"
   },
   {
-    "objectID": "slides/pitch-battle.html#improving-findability---devops-style",
-    "href": "slides/pitch-battle.html#improving-findability---devops-style",
-    "title": "Document your model data at minimal effort",
-    "section": "Improving findability - devops style",
-    "text": "Improving findability - devops style\n\nWhat: Document your modelling data with minimal effort\nWhy: Better findability and (re)usability of data\nWhat’s next: Adopt the efforts in ongoing projects & extend the user community"
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#what",
+    "href": "slides/intro-crawler-mcf-pycsw.html#what",
+    "title": "Metadata for the rest of us",
+    "section": "What",
+    "text": "What\n\nA set of conventions and tools to create and share metadata of datasets.\nMetadata should own metadata records, because they are the knowledgable party.\nSo, stay close to the tools that they already use: Python, Git, Excel.\nFocus on TC211 and academia standards, because we’re in the academic spatial domain"
   },
   {
-    "objectID": "slides/pitch-battle.html#setting-concept",
-    "href": "slides/pitch-battle.html#setting-concept",
-    "title": "Document your model data at minimal effort",
-    "section": "Setting & Concept",
-    "text": "Setting & Concept\n\nSetting: Data management in predictive modelling\n\nIn soil modelling we handle many data sources\nThese files are stored on a network drive\nMetadata management is complex/dull/****\n\nThe sidecar concept\n\nAdd minimal metadata on a sidecar file\nA crawler extracts metadata from a file repository\nCrawled records are placed in a searchable index"
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#some-principles",
+    "href": "slides/intro-crawler-mcf-pycsw.html#some-principles",
+    "title": "Metadata for the rest of us",
+    "section": "Some principles",
+    "text": "Some principles\n\nbased on existing standards/conventions\n(meta)data at the source\nsimple in maintenance\npersistent/traceable over time\nFixed (extendible) data model for metadata"
   },
   {
-    "objectID": "slides/pitch-battle.html#pygeometa-geodatacrawler-pycsw",
-    "href": "slides/pitch-battle.html#pygeometa-geodatacrawler-pycsw",
-    "title": "Document your model data at minimal effort",
-    "section": "pygeometa, geodatacrawler & pycsw",
-    "text": "pygeometa, geodatacrawler & pycsw\n\npygeometa’s MCF is a minimal subset of ISO19115, encoded in yaml\ngeodatacrawler extends pygeometa to:\n\nextract metadata from data formats\ninherit metadata from parent folders\nimport metadata from csv and remote sources\ncreate data api’s based on metadata\n\n is a pythonic catalogue web app. Wide standards support enables findability in multiple communities."
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#use-cases",
+    "href": "slides/intro-crawler-mcf-pycsw.html#use-cases",
+    "title": "Metadata for the rest of us",
+    "section": "3 use cases",
+    "text": "3 use cases\n\nA team of data scientists understands/describes their source data, models and data outputs, for tracability and future re-use\nAn organisation aims to share a subset of their resources as open access data\nA community aims to collect relevant remote resources in a thematic catalogue"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Select your deck:",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nNov 4, 2023\n\n\nAbandonded Project Websites -&gt; no\n\n\nPaul van Genuchten\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\nundefined\n\n\nSelect your deck:\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nWorkshop pygeoapi\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNo matching items"
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#describe-resources-at-the-source",
+    "href": "slides/intro-crawler-mcf-pycsw.html#describe-resources-at-the-source",
+    "title": "Metadata for the rest of us",
+    "section": "Describe resources at the source",
+    "text": "Describe resources at the source\n\nBuilds on a convention of placing a README.md file in a project folder with source and result data of a model run, describing the source, attribution, date of the source data.\nSuggestion is to use a structured format, so also machines can understand this information\nMetadata control file (mcf) is a convention of the geopython community, a YAML encoded subset of ISO19115.\nA crawler tool extracts embedded metadata from data to create initial mcf\nA crawler tool fetches from a set of project folders the mcf files and stores it in a central index, pycsw"
   },
   {
-    "objectID": "slides/abandoned-web.html#a-broken-link-from-a-report",
-    "href": "slides/abandoned-web.html#a-broken-link-from-a-report",
-    "title": "Abandonded Project Websites -> no",
-    "section": "A broken link from a report?",
-    "text": "A broken link from a report?\n\nor worse, arrive in an online casino from a link in a report?\nmany websites are abandoned few years after project finish\nwebsite builders should show ownership of domains they create\nreport writers should not link to dodgy locations (aka project websites)"
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#schematic-i",
+    "href": "slides/intro-crawler-mcf-pycsw.html#schematic-i",
+    "title": "Metadata for the rest of us",
+    "section": "Schematic I",
+    "text": "Schematic I\n\n\n\n\n\nflowchart LR\n    P[Project folder] --&gt;|Files| CI{{crawler}}\n    CI --&gt;|Extract metadata| P\n    CI --&gt; G[fa:fa-code-compare Git] \n    G --&gt; PYCSW"
   },
   {
-    "objectID": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
-    "href": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
-    "title": "Abandonded Project Websites -> no",
-    "section": "An initiative to recover lost content",
-    "text": "An initiative to recover lost content\n\nIdentify which websites with usefull information are lost\nRecover the content from archive.org or organisation backups\nReclaim the domains (restore linkage)\nJoin the efforts at github.com/soil-on-web/abandoned-webs"
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#share-as-open-access-data",
+    "href": "slides/intro-crawler-mcf-pycsw.html#share-as-open-access-data",
+    "title": "Metadata for the rest of us",
+    "section": "Share as open access data",
+    "text": "Share as open access data\nBuilds on the previous case, data scientists store and describe their data outputs on a central folder, a sharable subset is shared via pycsw.\nFor spatial assets OGC data api’s are created, sharing the data as WMS, WFS, WCS using mapserver\nThe mcf content is used to create the mapserver configuration, the metadata is updated with the relevant OWS endpoints"
   },
   {
-    "objectID": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
-    "href": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
-    "title": "Abandonded Project Websites -> no",
-    "section": "Good practices on url persistence of project websites",
-    "text": "Good practices on url persistence of project websites\n\nuse a subdomain of an established organisation\nuse a persistent identifier framework, when linking to external sources\nset up rewrite rules at website cancelation\nuse minimal technology, yes: html; no: wordpress, liferay, …\nkeep the content minimal, link to external (persistent) resources\npre-pay the domain ownership for at least the upcoming 10 years"
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#schematic-ii",
+    "href": "slides/intro-crawler-mcf-pycsw.html#schematic-ii",
+    "title": "Metadata for the rest of us",
+    "section": "Schematic II",
+    "text": "Schematic II\n\n\n\n\n\nflowchart LR\n    G[fa:fa-code-compare Git] --&gt;|mcf| CI{{crawler}} \n    CI --&gt;|mapfiles| MS[Mapserver]\n    Metadata --&gt; OWS\n    MS --&gt; OWS[WMS/WFS]\n    CI --&gt;|OWS Linkage| G"
   },
   {
-    "objectID": "slides/index.html",
-    "href": "slides/index.html",
-    "title": "Select your deck:",
-    "section": "",
-    "text": "Abandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n  \n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n  \n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNo matching items"
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#a-thematic-participatory-data-portal",
+    "href": "slides/intro-crawler-mcf-pycsw.html#a-thematic-participatory-data-portal",
+    "title": "Metadata for the rest of us",
+    "section": "A thematic participatory data portal",
+    "text": "A thematic participatory data portal\nMetadata from external sources can be harvested to the central index\n\na generic query to a remote catalogue endpoint\na excel sheet of records (each column is a metadata property)\na list of DOI’s\n\nA challenge with existing data portals is the lack of user interaction, users often can’t flag problems in metadata or suggest new content\nThis approach improves that by storing the MCF in GIT, and add a ‘edit me on git’ link on each metadata page, also the harvest definition is stored on git\nImports are managed as CI-CD actions in Git"
+  },
+  {
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#schematic-iii",
+    "href": "slides/intro-crawler-mcf-pycsw.html#schematic-iii",
+    "title": "Metadata for the rest of us",
+    "section": "Schematic III",
+    "text": "Schematic III\n\n\n\n\n\nflowchart LR\n    G[fa:fa-code-compare Git] --&gt;|mcf| CI{{pygeometa}} \n    CI --&gt;|iso19139| DB[(fa:fa-database Database)]\n    DB --&gt; C(Catalogue)\n    C --&gt; G\n    C --&gt; CSW(fa:fa-gear CSW)\n    C --&gt; OAR(fa:fa-gear OGCAPI Records)\n    C --&gt; OAI(fa:fa-gear OAI-PMH)"
+  },
+  {
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#read-more",
+    "href": "slides/intro-crawler-mcf-pycsw.html#read-more",
+    "title": "Metadata for the rest of us",
+    "section": "Read more?",
+    "text": "Read more?\n\npygeometa in the EJPSoil soil data assimilation cookbook\nLSC Hubs data workshop\npygeometa\nGeoDataCrawler"
   }
 ]
