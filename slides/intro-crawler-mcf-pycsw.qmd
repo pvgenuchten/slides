@@ -11,8 +11,8 @@ format:
 ## What 
 
 - A set of conventions and tools to create and share metadata of datasets.
-- Metadata should own metadata records, because they are the knowledgable party.
-- So, stay close to the tools that they already use: Python, Git, Excel.
+- Data scientists should `own` metadata records, because they are the knowledgeable party.
+- So: integrate in their environment, stay close to the tools they already use: Python, Git, Excel.
 - Focus on TC211 and academia standards, because we're in the academic spatial domain
 
 ## Some principles
@@ -31,17 +31,17 @@ format:
 
 ## Describe resources at the source
 
-- Builds on a convention of placing a README.md file in a project folder with source and result data of a model run, describing the source, attribution, date of the source data. 
+- Builds on a convention of placing a README.md file in a project folder, describing the source, attribution. 
 - Suggestion is to use a structured format, so also machines can understand this information
 - [Metadata control file](https://geopython.github.io/pygeometa/reference/mcf/) (mcf) is a convention of the geopython community, a YAML encoded subset of ISO19115.
 - A [crawler tool](https://pypi.org/project/geodatacrawler/)
 extracts embedded metadata from data to create initial mcf
-- A [crawler tool](https://pypi.org/project/geodatacrawler/) fetches from a set of project folders the mcf files and stores it in a central index, [pycsw](https://pycsw.org)
+- A [crawler tool](https://pypi.org/project/geodatacrawler/) fetches from a set of project folders the metadata and stores it in a central index, [pycsw](https://pycsw.org)
 
 ## Schematic I
 
 ```{mermaid}
-flowchart LR
+flowchart TB
     P[Project folder] -->|Files| CI{{crawler}}
     CI -->|Extract metadata| P
     CI --> G[fa:fa-code-compare Git] 
@@ -60,7 +60,7 @@ The mcf content is used to create the mapserver configuration, the metadata is u
 ## Schematic II
 
 ```{mermaid}
-flowchart LR
+flowchart TB
     G[fa:fa-code-compare Git] -->|mcf| CI{{crawler}} 
     CI -->|mapfiles| MS[Mapserver]
     Metadata --> OWS
@@ -70,24 +70,21 @@ flowchart LR
 
 ## A thematic participatory data portal
 
-Metadata from external sources can be harvested to the central index
+- metadata from external sources can be harvested to the central index 
+- by storing MCF in GIT, and add a 'edit me on git' link on each metadata page, so users can flag problems in metadata or suggest new content
+- also the harvest definition is stored on git
+- Imports are managed as CI-CD actions in Git
 
-- a generic query to a remote catalogue endpoint
+## Metadata harvest
+
+- a generic query to a remote catalogue endpoint (csw, oai-pmh)
 - a excel sheet of records (each column is a metadata property)
 - a list of DOI's
-
-A challenge with existing data portals is the lack of user interaction, users often can't flag problems in metadata or suggest new content
-
-This approach improves that by storing the MCF in GIT, and add a 'edit me on git' link on each metadata page, also the harvest definition is stored on git
-
-Imports are managed as CI-CD actions in Git
-
-
 
 ## Schematic III
 
 ```{mermaid}
-flowchart LR
+flowchart TB
     G[fa:fa-code-compare Git] -->|mcf| CI{{pygeometa}} 
     CI -->|iso19139| DB[(fa:fa-database Database)]
     DB --> C(Catalogue)
