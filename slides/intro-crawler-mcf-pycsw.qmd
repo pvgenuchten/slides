@@ -29,11 +29,11 @@ format:
 - An organisation aims to share a subset of their resources as open access data
 - A community aims to collect relevant remote resources in a thematic catalogue
 
-## Describe resources at the source
+## Describe resources at their source
 
 - Builds on a convention of placing a README.md file in a project folder, describing the source, attribution. 
 - Suggestion is to use a structured format, so also machines can understand this information
-- [Metadata control file](https://geopython.github.io/pygeometa/reference/mcf/) (mcf) is a convention of the geopython community, a YAML encoded subset of ISO19115.
+- [Metadata control file](https://geopython.github.io/pygeometa/reference/mcf/) (mcf) is a convention of the geopython community (in YAML)
 - A [crawler tool](https://pypi.org/project/geodatacrawler/)
 extracts embedded metadata from data to create initial mcf
 - A [crawler tool](https://pypi.org/project/geodatacrawler/) fetches from a set of project folders the metadata and stores it in a central index, [pycsw](https://pycsw.org)
@@ -50,11 +50,9 @@ flowchart TB
 
 ## Share as open access data
 
-Builds on the previous case, data scientists store and describe their data outputs on a central folder, a sharable subset is shared via pycsw.
-
-For spatial assets OGC data api's are created, sharing the data as WMS, WFS, WCS using [mapserver](https://mapserver.org)
-
-The mcf content is used to create the mapserver configuration, the metadata is updated with the relevant OWS endpoints
+- Builds on the previous case, data scientists store and describe their data outputs on a central folder, a sharable subset is shared via pycsw.
+- For spatial assets OGC data api's are created, sharing the data as WMS, WFS, WCS using [mapserver](https://mapserver.org)
+- The mcf content is used to create the mapserver configuration, the metadata is updated with the relevant OWS endpoints
 
 
 ## Schematic II
