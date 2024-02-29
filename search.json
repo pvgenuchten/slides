@@ -161,6 +161,13 @@
     "text": "Schematic III\n\n\n\n\n\nflowchart TB\n    G[fa:fa-code-compare Git] --&gt;|mcf| CI{{pygeometa}} \n    CI --&gt;|iso19139| DB[(fa:fa-database Database)]\n    DB --&gt; C(Catalogue)\n    C --&gt; G\n    C --&gt; CSW(fa:fa-gear CSW)\n    C --&gt; OAR(fa:fa-gear OGCAPI Records)\n    C --&gt; OAI(fa:fa-gear OAI-PMH)"
   },
   {
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#oh-but-this-is-too-technical",
+    "href": "slides/intro-crawler-mcf-pycsw.html#oh-but-this-is-too-technical",
+    "title": "Metadata for the rest of us",
+    "section": "Oh, but this is too technical!",
+    "text": "Oh, but this is too technical!\n\nIs it?\nISO19139 and DCAT and their tools (GeoNetwork, CKAN, Dataverse) also have their peculiarities\nNot everybody will be able to create a pull request in GIT, use git issues instead and let others in the community fix\nYAML has its caveats (indenting, reserved characters), use YAML check in text editor\nWe created a web-form for mcf editing, mdme"
+  },
+  {
     "objectID": "slides/intro-crawler-mcf-pycsw.html#read-more",
     "href": "slides/intro-crawler-mcf-pycsw.html#read-more",
     "title": "Metadata for the rest of us",
