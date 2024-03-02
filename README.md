@@ -1,5 +1,8 @@
-# Some slide decks using quarto
+# Some slide decks using [quarto](https://quarto.org)
 
 View at https://pvgenuchten.github.io/slides
 
-- A [pitch](https://pvgenuchten.github.io/slides/pitch-battle) to present metadata workflow
+slides are prepared in markdown, quarto renders markdown to [revealjs]() in a github action.
+
+
+support for [mermaidjs]() for rendering diagrams
