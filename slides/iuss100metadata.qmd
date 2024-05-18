@@ -1,0 +1,107 @@
+---
+title: "Participatory soil, land, crop data catalog to facilitate informed decision-making"
+author: Paul van Genuchten
+date: 2024-05-20
+format:
+  revealjs:
+    incremental: true
+    logo: https://centennialiuss2024.org/wp-content/uploads/thegem-logos/logo_5a1b6ef19d24be2d25d0c8de8ee6a108_2x.png
+    footer: "IUSS Centenial, Florence, Italy"
+---
+
+# Intro
+
+- Data Standards in the soil domain are quite elaborate, but adoption is low
+- Standards for metadata, data model (iso28258) and code lists
+- Tools shoud be easy to use 
+
+# Metadata
+
+- Data describing data
+- Title, Author, Usage constraints, Temporal extent, Provenance, Data model, ...
+
+## Metadata and the soil domain
+
+- Prediction of spatio temporal variation, soil degradation and crop yields require many types of data
+- Data should be well documented to understand the relevance and the usage constraints of the derived products 
+
+## Metadata Current situation
+
+- Not existing
+- Not standardised; in a report or readme.txt file 
+- Maintained in a catalogue; disconnected from data
+
+## pygeometa, metadata for the rest of us
+
+- A convention of the geopython community
+- YAML, easy to read by humans and machines
+- A subset of the ISO19115 standard for metadata
+- Exportable to variety of metadata standards (iso, dcat, stac)
+
+## Tooling around the pygeometa library
+
+- Scan a network folder for (meta)data
+- Export metadata to a catalogue
+- Store metadata in a git repository
+- Generate conveniance api's to data
+
+## Developed and used in a series of research projects
+
+- [EJPSoil](https://ejpsoil.eu)
+- [Soilwise](https://soilwise-he.eu)
+- [Marvic](https://project-marvic.eu)
+- [Land Soil Crop Hubs](https://lsc-hubs.org) (Desira)
+- [Space 2 Place]()
+- [Soils for Africa]()
+
+# Data standardisation
+
+- Various initiatives developed models for interoperable soil observation data.
+- Globalsoilmap, eSoter, iso28258, INSPIRE, Glosis-ld, SoilThings.
+- For various reasons adoption has been low.
+- Many initiatives are actually compatible, because they contain similar concepts. 
+- The importance of standardisation seems more known these days.
+
+## SoilGPKG; A use case designed to facilitate soil data interoperability
+
+Challenge: 
+
+- The INSPIRE UML models and their GML serialisation are incompatible with the soil community, both for data providers and consumers
+
+Solution: 
+
+- A relational database model has been developed representing the UML classes of the INSPIRE schema. 
+- This database can be shared as portable GeoPackage (SQLite) database file. 
+- A transformation solution is provided which can transform the data into the GML serialisation (Hale Studio).
+
+## SoilGPKG
+
+- Developed by Crea (IT) and Epsilon in the scope of EJPSoil
+- Crea has loaded 1250 profiles into a GeoPackage
+- Suggested as a good practice for sharing soil data in INSPIRE
+- The relational model can also be used in PostGreSQL as a backend for actual applications.
+
+# Common code lists
+
+- Common referencable code lists are important, to facilitate interoperability in the soil domain
+- Code lists for soil types, soil properties, soil property classes, soil analyses procedures, ... 
+
+
+## Challenges with current code list repositories
+
+- Agrovoc adopted an old version of WRB
+- WRB itself does not host a code list repository
+- INSPIRE registry did not populate the soil code lists 
+- Glosis-ld codelists are not widely known and adopted (and not easy to use)
+
+## At this conference
+
+Design mechanisms to establish soil code list repositories which are recognised and easy to use.
+
+# References
+
+- EJPSoil
+- Soilwise
+- LSC-hubs
+- pygeometa
+- [SoilGPKG](https://github.com/ejpsoil/inspire_soil_gpkg_template)
