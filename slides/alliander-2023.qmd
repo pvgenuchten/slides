@@ -5,7 +5,7 @@ author: Paul van Genuchten
 date: 2023-11-13
 format:
   revealjs: 
-    theme: league
+    theme: default
 ---
 
 ## About

@@ -5,7 +5,7 @@ date: 2024-05-20
 format:
   revealjs:
     incremental: true
-    theme: serif
+    theme: default
     logo: https://centennialiuss2024.org/wp-content/uploads/thegem-logos/logo_5a1b6ef19d24be2d25d0c8de8ee6a108_2x.png
     footer: "IUSS Centenial, Florence, Italy"
 ---
@@ -31,6 +31,7 @@ The tools shoud be open source, supporting standards and easy to use.
 
 - Prediction of spatio temporal variation, soil degradation and crop yields require many types of data
 - Data should be well documented to understand the relevance and the usage constraints of the derived products 
+- Many data products have a spatio temporal aspect, so the standards of the Open GeoSpatial Consortium are most relevant. But compatibility with other standards is relevant also. 
 
 ## Metadata Current situation
 
@@ -40,12 +41,13 @@ The tools shoud be open source, supporting standards and easy to use.
 
 ## pygeometa, metadata for the rest of us
 
-- A convention of the geopython community
+- A software library of the geopython community
+- Every data file is accompanied by a structured metadata file
 - YAML, easy to read by humans and machines
 - A subset of the ISO19115 standard for metadata
 - Exportable to variety of metadata standards (iso, dcat, stac)
 
-## Tooling around the pygeometa library
+## Tooling around the pygeometa library; pyGeoDataCrawler
 
 - Scan a network folder for (meta)data
 - Export metadata to a catalogue
