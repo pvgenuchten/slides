@@ -5,6 +5,7 @@ date: 2024-05-20
 format:
   revealjs:
     incremental: true
+    theme: serif
     logo: https://centennialiuss2024.org/wp-content/uploads/thegem-logos/logo_5a1b6ef19d24be2d25d0c8de8ee6a108_2x.png
     footer: "IUSS Centenial, Florence, Italy"
 ---
