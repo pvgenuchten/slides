@@ -10,7 +10,7 @@ format:
     footer: "IUSS Centenial, Florence, Italy"
 ---
 
-## Overview
+# Overview
 
 Data Standards in the soil domain are quite elaborate, but adoption is low. 
 
@@ -22,24 +22,24 @@ The tools shoud be open source, supporting standards and easy to use.
 
 # Metadata
 
-## Which metadata?
+# Which metadata?
 
 - Data describing datasets
 - Title, Author, Usage constraints, Temporal extent, Provenance, Data model, ...
 
-## Metadata and the soil domain
+# Metadata and the soil domain
 
 - Prediction of spatio temporal variation, soil degradation and crop yields require many types of data
 - Data should be well documented to understand the relevance and the usage constraints of the derived products 
 - Many data products have a spatio temporal aspect, so the standards of the Open GeoSpatial Consortium are most relevant. But compatibility with other standards is relevant also. 
 
-## Metadata Current situation
+# Metadata Current situation
 
 - Not existing
 - Not standardised; in a report or readme.txt file 
 - Maintained in a catalogue; disconnected from data
 
-## pygeometa, metadata for the rest of us
+# pygeometa, metadata for the rest of us
 
 - A software library of the geopython community
 - Every data file is accompanied by a structured metadata file
@@ -47,46 +47,40 @@ The tools shoud be open source, supporting standards and easy to use.
 - A subset of the ISO19115 standard for metadata
 - Exportable to variety of metadata standards (iso, dcat, stac)
 
-## Tooling around the pygeometa library; pyGeoDataCrawler
+# Tooling around the pygeometa library; pyGeoDataCrawler
 
 - Scan a network folder for (meta)data
-- Export metadata to a catalogue
 - Store metadata in a git repository
 - Import metadata from excel or remote sources (harvest)
 
-## Schematic
+# Import into a catalogue; pycsw
 
-```{mermaid}
-flowchart TB
-    G[Git] --> CI{{pygeometa}} 
-    CI --> DB[(Database)]
-    DB --> C(Catalogue)
-    C --> G
-    C --> CSW(CSW)
-    C --> OAR(OGCAPI Records)
-    C --> OAI(OAI-PMH)
-```
+- Metadata can be imported into a catalogue
+- pycsw is a mid-size OGC reference catalog implementation
+- pycsw uses a database backend (PostGreSQL)
+- Various standardised API's (CSW, STAC, OAI-PMH) and models (Dublin Core, iso19115, Datacite)
 
-## Developed and used in a series of research projects
+
+# Developed and used in a series of research projects
 
 :::: {.columns}
 ::: {.column width="50%"}
 
-- [EJP Soil](https://ejpsoil.eu)
-- [Soilwise](https://soilwise-he.eu)
-- [Marvic](https://project-marvic.eu)
+[EJP Soil](https://ejpsoil.eu)<br/>
+[Soilwise](https://soilwise-he.eu)<br/>
+[Marvic](https://project-marvic.eu)
 
 :::
 ::: {.column width="50%"}
 
-- [Land Soil Crop Hubs](https://lsc-hubs.org) (Desira)
-- [Space to Place](https://ifdc.org/projects/soils-space-to-place/)
-- [Soils for Africa](https://www.soils4africa-h2020.eu/)
+[Land Soil Crop Hubs](https://lsc-hubs.org) (Desira)<br/>
+[Space to Place](https://ifdc.org/projects/soils-space-to-place/)<br/>
+[Soils for Africa](https://www.soils4africa-h2020.eu/)
 
 :::
 ::::
 
-## Screen shots
+# Screen shots
 
 ::: {.r-stack}
 ![](./img/iuss100/ejpsoil-catalogue.png){.fragment width="600" }
@@ -98,7 +92,7 @@ flowchart TB
 
 # Data standardisation
 
-## Initiatives
+# Initiatives
 
 - Various initiatives developed models for interoperable soil observation data.
 - Globalsoilmap, eSoter, iso28258, INSPIRE, Glosis-ld, SoilThings.
@@ -106,7 +100,7 @@ flowchart TB
 - Many initiatives are actually compatible, because they contain similar concepts. 
 - Standardisation awareness is rising.
 
-## SoilGPKG; A use case designed to facilitate soil data interoperability
+# SoilGPKG; A use case of soil data interoperability
 
 Challenge: 
 
@@ -116,14 +110,14 @@ Solution:
 
 - A relational database model has been developed representing the UML classes of the INSPIRE schema. 
 
-## SoilGPKG
+# SoilGPKG Usage
 
 - The Geopackage can be shared as a portable database file. 
 - A transformation solution is provided which can transform the data into the GML serialisation (Hale Studio).
 - The resulting GML can be validated in the INSPIRE data validator
 - The Geopackage can be easily displayed in Desktop GIS tools, such as QGIS
 
-## SoilGPKG
+# SoilGPKG in EJP Soil
 
 - Developed by Crea (IT) and Epsilon in the scope of EJPSoil
 - Crea has loaded 1250 profiles into a GeoPackage
@@ -132,7 +126,7 @@ Solution:
 
 # Common code lists
 
-## Why endorse common code lists?
+# Why endorse common code lists?
 
 - Common referencable code lists are important, to facilitate interoperability in the soil domain
 - Different providers can reference a universal definition of an entity
@@ -140,14 +134,14 @@ Solution:
 - References can be made from metadata as well as data
 
 
-## Challenges with current code list repositories
+# Challenges with current code list repositories
 
 - Agrovoc adopted an older version of WRB
 - WRB itself does not host a code list repository
 - INSPIRE registry did not populate the soil code lists 
 - Glosis-ld codelists are not widely known and adopted (and not easy to use)
 
-## At this conference
+# At this conference
 
 We hope to speak to you to design mechanisms to establish soil code list repositories which are recognised and easy to use.
 
@@ -155,28 +149,27 @@ We hope to speak to you to design mechanisms to establish soil code list reposit
 
 Questions/comments?
 
-## References
+# References
 
 :::: {.columns}
 ::: {.column width="50%"}
 
-- [iso28258](https://www.iso.org/standard/44595.html)
-- [eSoter](https://esoter.net/)
-- [Glosis-ld](https://github.com/glosis-ld/glosis)
-- [Soilthings](https://api4inspire.k8s.ilt-dmz.iosb.fraunhofer.de/servlet/is/203/)
-- [WRB](https://wrb.isric.org/)
-- [Agrovoc](https://agrovoc.fao.org/browse/agrovoc/en/page/c_89f35c33)
+[iso28258](https://www.iso.org/standard/44595.html)<br/>
+[eSoter](https://esoter.net/)<br/>
+[Glosis-ld](https://github.com/glosis-ld/glosis)<br/>
+[Soilthings](https://api4inspire.k8s.ilt-dmz.iosb.fraunhofer.de/servlet/is/203/)<br/>
+[WRB](https://wrb.isric.org/)<br/>[Agrovoc](https://agrovoc.fao.org/browse/agrovoc/en/page/c_89f35c33)
 
 
 :::
 ::: {.column width="50%"}
 
-- [INSPIRE Registry](https://inspire.ec.europa.eu/registry)
-- [INSPIRE Soil](https://knowledge-base.inspire.ec.europa.eu/soil_en)
-- [pygeometa](https://geopython.github.io/pygeometa/)
-- [pygeodatecrawler](https://pypi.org/project/geodatacrawler/)
-- [pycsw](https://pycsw.org)
-- [SoilGPKG](https://github.com/ejpsoil/inspire_soil_gpkg_template)
+[INSPIRE Registry](https://inspire.ec.europa.eu/registry)<br/>
+[INSPIRE Soil](https://knowledge-base.inspire.ec.europa.eu/soil_en)<br/>
+[pygeometa](https://geopython.github.io/pygeometa/)<br/>
+[pygeodatecrawler](https://pypi.org/project/geodatacrawler/)<br/>
+[pycsw](https://pycsw.org)<br/>
+[SoilGPKG](https://github.com/ejpsoil/inspire_soil_gpkg_template)
 
 :::
 ::::
