@@ -144,7 +144,7 @@
     "href": "index.html",
     "title": "Select your deck:",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nNov 4, 2023\n\n\nAbandonded Project Websites -&gt; no\n\n\nPaul van Genuchten\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\nFeb 29, 2024\n\n\nMetadata for the rest of us\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\nMay 20, 2024\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n \n\n\nSelect your deck:\n\n\n \n\n\n\n\nNov 13, 2023\n\n\nWorkshop pygeoapi\n\n\nPaul van Genuchten\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nNov 4, 2023\n\n\nAbandonded Project Websites -&gt; no\n\n\nPaul van Genuchten\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\nFeb 29, 2024\n\n\nMetadata for the rest of us\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\nMay 20, 2024\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\nNov 13, 2023\n\n\nWorkshop pygeoapi\n\n\nPaul van Genuchten\n\n\n\n\n \n\n\ntype: default\n\n\n \n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/abandoned-web.html#a-broken-link-from-a-report",
@@ -170,7 +170,7 @@
   {
     "objectID": "slides/index.html",
     "href": "slides/index.html",
-    "title": "Select your deck:",
+    "title": "some slide decks",
     "section": "",
     "text": "Abandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata for the rest of us\n\n\nIntro to a set of metadata conventions and tools\n\n\n\n\n\n\n\n\nFeb 29, 2024\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\n\n\n\n\n\n\n\n\n\nMay 20, 2024\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNo matching items"
   },
@@ -193,7 +193,7 @@
     "href": "slides/iuss100metadata.html#metadata-and-the-soil-domain",
     "title": "Participatory data catalogs to facilitate informed decision-making",
     "section": "Metadata and the soil domain",
-    "text": "Metadata and the soil domain\n\nPrediction of spatio temporal variation, soil degradation and crop yields require many types of data\nData should be well documented to understand the relevance and the usage constraints of the derived products"
+    "text": "Metadata and the soil domain\n\nPrediction of spatio temporal variation, soil degradation and crop yields require many types of data\nData should be well documented to understand the relevance and the usage constraints of the derived products\nMany data products have a spatio temporal aspect, so the standards of the Open GeoSpatial Consortium are most relevant. But compatibility with other standards is relevant also."
   },
   {
     "objectID": "slides/iuss100metadata.html#metadata-current-situation",
@@ -207,14 +207,14 @@
     "href": "slides/iuss100metadata.html#pygeometa-metadata-for-the-rest-of-us",
     "title": "Participatory data catalogs to facilitate informed decision-making",
     "section": "pygeometa, metadata for the rest of us",
-    "text": "pygeometa, metadata for the rest of us\n\nA convention of the geopython community\nYAML, easy to read by humans and machines\nA subset of the ISO19115 standard for metadata\nExportable to variety of metadata standards (iso, dcat, stac)"
+    "text": "pygeometa, metadata for the rest of us\n\nA software library of the geopython community\nEvery data file is accompanied by a structured metadata file\nYAML, easy to read by humans and machines\nA subset of the ISO19115 standard for metadata\nExportable to variety of metadata standards (iso, dcat, stac)"
   },
   {
-    "objectID": "slides/iuss100metadata.html#tooling-around-the-pygeometa-library",
-    "href": "slides/iuss100metadata.html#tooling-around-the-pygeometa-library",
+    "objectID": "slides/iuss100metadata.html#tooling-around-the-pygeometa-library-pygeodatacrawler",
+    "href": "slides/iuss100metadata.html#tooling-around-the-pygeometa-library-pygeodatacrawler",
     "title": "Participatory data catalogs to facilitate informed decision-making",
-    "section": "Tooling around the pygeometa library",
-    "text": "Tooling around the pygeometa library\n\nScan a network folder for (meta)data\nExport metadata to a catalogue\nStore metadata in a git repository\nImport metadata from excel or remote sources (harvest)"
+    "section": "Tooling around the pygeometa library; pyGeoDataCrawler",
+    "text": "Tooling around the pygeometa library; pyGeoDataCrawler\n\nScan a network folder for (meta)data\nExport metadata to a catalogue\nStore metadata in a git repository\nImport metadata from excel or remote sources (harvest)"
   },
   {
     "objectID": "slides/iuss100metadata.html#schematic",
