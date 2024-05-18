@@ -7,12 +7,12 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.554">
 
   <meta name="author" content="Paul van Genuchten">
-  <meta name="dcterms.date" content="2023-11-13">
-  <title>some slide decks - Workshop pygeoapi</title>
+  <meta name="dcterms.date" content="2024-05-20">
+  <title>some slide decks - Participatory soil, land, crop data catalog to facilitate informed decision-making</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -322,13 +322,12 @@
     }
   </style>
 </head>
-<body class="quarto-dark">
+<body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Workshop pygeoapi</h1>
-  <p class="subtitle">Alliander OS Event</p>
+  <h1 class="title">Participatory soil, land, crop data catalog to facilitate informed decision-making</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -338,49 +337,137 @@ Paul van Genuchten
 </div>
 </div>
 
-  <p class="date">2023-11-13</p>
+  <p class="date">2024-05-20</p>
 </section>
-<section id="about" class="slide level2">
-<h2>About</h2>
+<section id="intro" class="title-slide slide level1 center">
+<h1>Intro</h1>
 <ul>
-<li>90’s Bodemkunde Wageningen</li>
-<li>00’s Nieuwland GeoInformatie
-<ul>
-<li>WebGIS at Alliander (OpenLayers, tilecache, Smallworld)</li>
-</ul></li>
-<li>10’s GeoCat BV, GeoNetwork/GeoServer
-<ul>
-<li>Provincie Zeeland</li>
-</ul></li>
-<li>20’s ISRIC - World Soil Information</li>
+<li class="fragment">Data Standards in the soil domain are quite elaborate, but adoption is low</li>
+<li class="fragment">Standards for metadata, data model (iso28258) and code lists</li>
+<li class="fragment">Tools shoud be easy to use</li>
 </ul>
 </section>
-<section id="soil-museum" class="slide level2">
-<h2>Soil Museum</h2>
 
-<img data-src="https://wsm.isric.org/images/background/bg5.jpg" class="r-stretch"></section>
-<section id="soilgrids" class="slide level2">
-<h2>Soilgrids</h2>
-
-<img data-src="https://www.researchgate.net/publication/313817639/figure/fig4/AS:462883822804995@1487371512248/Examples-of-covariates-used-to-generate-SoilGrids-TWI-is-the-Topographic-Wetness-Index_Q320.jpg" class="r-stretch"></section>
-<section id="section" class="slide level2">
-<h2><img data-src="https://soilwise-he.eu/wp-content/uploads/2023/11/soilwise-white-logo.png" style="width:20.0%"></h2>
+<section>
+<section id="metadata" class="title-slide slide level1 center">
+<h1>Metadata</h1>
 <ul>
-<li>EU research project met als doel om data rond bodem beter te gebruiken / behouden (FAIR)</li>
-<li>Start met onderzoeken van user stories vanuit 5 werkvelden (landbouw, onderzoek, overheid, breder publiek, business)</li>
+<li class="fragment">Data describing data</li>
+<li class="fragment">Title, Author, Usage constraints, Temporal extent, Provenance, Data model, …</li>
 </ul>
-<p><a href="https://soilwise-he.eu">soilwise-he.eu</a></p>
 </section>
-<section id="pygeoapi" class="slide level2">
-<h2>pygeoapi</h2>
+<section id="metadata-and-the-soil-domain" class="slide level2">
+<h2>Metadata and the soil domain</h2>
 <ul>
-<li><a href="https://pygeoapi.io/presentations/foss4g2023">Presentation</a></li>
-<li><a href="https://dive.pygeoapi.io">dive.pygeoapi.io</a></li>
+<li class="fragment">Prediction of spatio temporal variation, soil degradation and crop yields require many types of data</li>
+<li class="fragment">Data should be well documented to understand the relevance and the usage constraints of the derived products</li>
+</ul>
+</section>
+<section id="metadata-current-situation" class="slide level2">
+<h2>Metadata Current situation</h2>
+<ul>
+<li class="fragment">Not existing</li>
+<li class="fragment">Not standardised; in a report or readme.txt file</li>
+<li class="fragment">Maintained in a catalogue; disconnected from data</li>
+</ul>
+</section>
+<section id="pygeometa-metadata-for-the-rest-of-us" class="slide level2">
+<h2>pygeometa, metadata for the rest of us</h2>
+<ul>
+<li class="fragment">A convention of the geopython community</li>
+<li class="fragment">YAML, easy to read by humans and machines</li>
+<li class="fragment">A subset of the ISO19115 standard for metadata</li>
+<li class="fragment">Exportable to variety of metadata standards (iso, dcat, stac)</li>
+</ul>
+</section>
+<section id="tooling-around-the-pygeometa-library" class="slide level2">
+<h2>Tooling around the pygeometa library</h2>
+<ul>
+<li class="fragment">Scan a network folder for (meta)data</li>
+<li class="fragment">Export metadata to a catalogue</li>
+<li class="fragment">Store metadata in a git repository</li>
+<li class="fragment">Generate conveniance api’s to data</li>
+</ul>
+</section>
+<section id="developed-and-used-in-a-series-of-research-projects" class="slide level2">
+<h2>Developed and used in a series of research projects</h2>
+<ul>
+<li class="fragment"><a href="https://ejpsoil.eu">EJPSoil</a></li>
+<li class="fragment"><a href="https://soilwise-he.eu">Soilwise</a></li>
+<li class="fragment"><a href="https://project-marvic.eu">Marvic</a></li>
+<li class="fragment"><a href="https://lsc-hubs.org">Land Soil Crop Hubs</a> (Desira)</li>
+<li class="fragment"><a href="">Space 2 Place</a></li>
+<li class="fragment"><a href="">Soils for Africa</a></li>
+</ul>
+</section></section>
+<section>
+<section id="data-standardisation" class="title-slide slide level1 center">
+<h1>Data standardisation</h1>
+<ul>
+<li class="fragment">Various initiatives developed models for interoperable soil observation data.</li>
+<li class="fragment">Globalsoilmap, eSoter, iso28258, INSPIRE, Glosis-ld, SoilThings.</li>
+<li class="fragment">For various reasons adoption has been low.</li>
+<li class="fragment">Many initiatives are actually compatible, because they contain similar concepts.</li>
+<li class="fragment">The importance of standardisation seems more known these days.</li>
+</ul>
+</section>
+<section id="soilgpkg-a-use-case-designed-to-facilitate-soil-data-interoperability" class="slide level2">
+<h2>SoilGPKG; A use case designed to facilitate soil data interoperability</h2>
+<p>Challenge:</p>
+<ul>
+<li class="fragment">The INSPIRE UML models and their GML serialisation are incompatible with the soil community, both for data providers and consumers</li>
+</ul>
+<p>Solution:</p>
+<ul>
+<li class="fragment">A relational database model has been developed representing the UML classes of the INSPIRE schema.</li>
+<li class="fragment">This database can be shared as portable GeoPackage (SQLite) database file.</li>
+<li class="fragment">A transformation solution is provided which can transform the data into the GML serialisation (Hale Studio).</li>
+</ul>
+</section>
+<section id="soilgpkg" class="slide level2">
+<h2>SoilGPKG</h2>
+<ul>
+<li class="fragment">Developed by Crea (IT) and Epsilon in the scope of EJPSoil</li>
+<li class="fragment">Crea has loaded 1250 profiles into a GeoPackage</li>
+<li class="fragment">Suggested as a good practice for sharing soil data in INSPIRE</li>
+<li class="fragment">The relational model can also be used in PostGreSQL as a backend for actual applications.</li>
+</ul>
+</section></section>
+<section>
+<section id="common-code-lists" class="title-slide slide level1 center">
+<h1>Common code lists</h1>
+<ul>
+<li class="fragment">Common referencable code lists are important, to facilitate interoperability in the soil domain</li>
+<li class="fragment">Code lists for soil types, soil properties, soil property classes, soil analyses procedures, …</li>
+</ul>
+</section>
+<section id="challenges-with-current-code-list-repositories" class="slide level2">
+<h2>Challenges with current code list repositories</h2>
+<ul>
+<li class="fragment">Agrovoc adopted an old version of WRB</li>
+<li class="fragment">WRB itself does not host a code list repository</li>
+<li class="fragment">INSPIRE registry did not populate the soil code lists</li>
+<li class="fragment">Glosis-ld codelists are not widely known and adopted (and not easy to use)</li>
+</ul>
+</section>
+<section id="at-this-conference" class="slide level2">
+<h2>At this conference</h2>
+<p>Design mechanisms to establish soil code list repositories which are recognised and easy to use.</p>
+</section></section>
+<section id="references" class="title-slide slide level1 center">
+<h1>References</h1>
+<ul>
+<li class="fragment">EJPSoil</li>
+<li class="fragment">Soilwise</li>
+<li class="fragment">LSC-hubs</li>
+<li class="fragment">pygeometa</li>
+<li class="fragment"><a href="https://github.com/ejpsoil/inspire_soil_gpkg_template">SoilGPKG</a></li>
 </ul>
 
 <div class="quarto-auto-generated-content">
+<p><img src="https://centennialiuss2024.org/wp-content/uploads/thegem-logos/logo_5a1b6ef19d24be2d25d0c8de8ee6a108_2x.png" class="slide-logo"></p>
 <div class="footer footer-default">
-
+<p>IUSS Centenial, Florence, Italy</p>
 </div>
 </div>
 </section>

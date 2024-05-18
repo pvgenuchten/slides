@@ -21,76 +21,6 @@
     "text": "pygeometa, geodatacrawler & pycsw\n\npygeometa’s MCF is a minimal subset of ISO19115, encoded in yaml\ngeodatacrawler extends pygeometa to:\n\nextract metadata from data formats\ninherit metadata from parent folders\nimport metadata from csv and remote sources\ncreate data api’s based on metadata\n\n is a pythonic catalogue web app. Wide standards support enables findability in multiple communities."
   },
   {
-    "objectID": "slides/index.html",
-    "href": "slides/index.html",
-    "title": "Select your deck:",
-    "section": "",
-    "text": "Abandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata for the rest of us\n\n\nIntro to a set of metadata conventions and tools\n\n\n\n\n\n\n\n\nFeb 29, 2024\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "slides/abandoned-web.html#a-broken-link-from-a-report",
-    "href": "slides/abandoned-web.html#a-broken-link-from-a-report",
-    "title": "Abandonded Project Websites -> no",
-    "section": "A broken link from a report?",
-    "text": "A broken link from a report?\n\nor worse, arrive in an online casino from a link in a report?\nmany websites are abandoned few years after project finish\nwebsite builders should show ownership of domains they create\nreport writers should not link to dodgy locations (aka project websites)"
-  },
-  {
-    "objectID": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
-    "href": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
-    "title": "Abandonded Project Websites -> no",
-    "section": "An initiative to recover lost content",
-    "text": "An initiative to recover lost content\n\nIdentify which websites with usefull information are lost\nRecover the content from archive.org or organisation backups\nReclaim the domains (restore linkage)\nJoin the efforts at github.com/soil-on-web/abandoned-webs"
-  },
-  {
-    "objectID": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
-    "href": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
-    "title": "Abandonded Project Websites -> no",
-    "section": "Good practices on url persistence of project websites",
-    "text": "Good practices on url persistence of project websites\n\nuse a subdomain of an established organisation\nuse a persistent identifier framework, when linking to external sources\nset up rewrite rules at website cancelation\nuse minimal technology, yes: html; no: wordpress, liferay, …\nkeep the content minimal, link to external (persistent) resources\npre-pay the domain ownership for at least the upcoming 10 years"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Select your deck:",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nNov 4, 2023\n\n\nAbandonded Project Websites -&gt; no\n\n\nPaul van Genuchten\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\nFeb 29, 2024\n\n\nMetadata for the rest of us\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n \n\n\nSelect your deck:\n\n\n \n\n\n\n\nNov 13, 2023\n\n\nWorkshop pygeoapi\n\n\nPaul van Genuchten\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "slides/alliander-2023.html#about",
-    "href": "slides/alliander-2023.html#about",
-    "title": "Workshop pygeoapi",
-    "section": "About",
-    "text": "About\n\n90’s Bodemkunde Wageningen\n00’s Nieuwland GeoInformatie\n\nWebGIS at Alliander (OpenLayers, tilecache, Smallworld)\n\n10’s GeoCat BV, GeoNetwork/GeoServer\n\nProvincie Zeeland\n\n20’s ISRIC - World Soil Information"
-  },
-  {
-    "objectID": "slides/alliander-2023.html#soil-museum",
-    "href": "slides/alliander-2023.html#soil-museum",
-    "title": "Workshop pygeoapi",
-    "section": "Soil Museum",
-    "text": "Soil Museum"
-  },
-  {
-    "objectID": "slides/alliander-2023.html#soilgrids",
-    "href": "slides/alliander-2023.html#soilgrids",
-    "title": "Workshop pygeoapi",
-    "section": "Soilgrids",
-    "text": "Soilgrids"
-  },
-  {
-    "objectID": "slides/alliander-2023.html#section",
-    "href": "slides/alliander-2023.html#section",
-    "title": "Workshop pygeoapi",
-    "section": "",
-    "text": "EU research project met als doel om data rond bodem beter te gebruiken / behouden (FAIR)\nStart met onderzoeken van user stories vanuit 5 werkvelden (landbouw, onderzoek, overheid, breder publiek, business)\n\nsoilwise-he.eu"
-  },
-  {
-    "objectID": "slides/alliander-2023.html#pygeoapi",
-    "href": "slides/alliander-2023.html#pygeoapi",
-    "title": "Workshop pygeoapi",
-    "section": "pygeoapi",
-    "text": "pygeoapi\n\nPresentation\ndive.pygeoapi.io"
-  },
-  {
     "objectID": "slides/intro-crawler-mcf-pycsw.html#what",
     "href": "slides/intro-crawler-mcf-pycsw.html#what",
     "title": "Metadata for the rest of us",
@@ -173,5 +103,138 @@
     "title": "Metadata for the rest of us",
     "section": "Read more?",
     "text": "Read more?\n\npygeometa in the EJPSoil soil data assimilation cookbook\nLSC Hubs data workshop\npygeometa\nGeoDataCrawler"
+  },
+  {
+    "objectID": "slides/alliander-2023.html#about",
+    "href": "slides/alliander-2023.html#about",
+    "title": "Workshop pygeoapi",
+    "section": "About",
+    "text": "About\n\n90’s Bodemkunde Wageningen\n00’s Nieuwland GeoInformatie\n\nWebGIS at Alliander (OpenLayers, tilecache, Smallworld)\n\n10’s GeoCat BV, GeoNetwork/GeoServer\n\nProvincie Zeeland\n\n20’s ISRIC - World Soil Information"
+  },
+  {
+    "objectID": "slides/alliander-2023.html#soil-museum",
+    "href": "slides/alliander-2023.html#soil-museum",
+    "title": "Workshop pygeoapi",
+    "section": "Soil Museum",
+    "text": "Soil Museum"
+  },
+  {
+    "objectID": "slides/alliander-2023.html#soilgrids",
+    "href": "slides/alliander-2023.html#soilgrids",
+    "title": "Workshop pygeoapi",
+    "section": "Soilgrids",
+    "text": "Soilgrids"
+  },
+  {
+    "objectID": "slides/alliander-2023.html#section",
+    "href": "slides/alliander-2023.html#section",
+    "title": "Workshop pygeoapi",
+    "section": "",
+    "text": "EU research project met als doel om data rond bodem beter te gebruiken / behouden (FAIR)\nStart met onderzoeken van user stories vanuit 5 werkvelden (landbouw, onderzoek, overheid, breder publiek, business)\n\nsoilwise-he.eu"
+  },
+  {
+    "objectID": "slides/alliander-2023.html#pygeoapi",
+    "href": "slides/alliander-2023.html#pygeoapi",
+    "title": "Workshop pygeoapi",
+    "section": "pygeoapi",
+    "text": "pygeoapi\n\nPresentation\ndive.pygeoapi.io"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Select your deck:",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nNov 4, 2023\n\n\nAbandonded Project Websites -&gt; no\n\n\nPaul van Genuchten\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\nFeb 29, 2024\n\n\nMetadata for the rest of us\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\nMay 20, 2024\n\n\nParticipatory soil, land, crop data catalog to facilitate informed decision-making\n\n\nPaul van Genuchten\n\n\n\n\n \n\n\nSelect your deck:\n\n\n \n\n\n\n\nNov 13, 2023\n\n\nWorkshop pygeoapi\n\n\nPaul van Genuchten\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/abandoned-web.html#a-broken-link-from-a-report",
+    "href": "slides/abandoned-web.html#a-broken-link-from-a-report",
+    "title": "Abandonded Project Websites -> no",
+    "section": "A broken link from a report?",
+    "text": "A broken link from a report?\n\nor worse, arrive in an online casino from a link in a report?\nmany websites are abandoned few years after project finish\nwebsite builders should show ownership of domains they create\nreport writers should not link to dodgy locations (aka project websites)"
+  },
+  {
+    "objectID": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
+    "href": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
+    "title": "Abandonded Project Websites -> no",
+    "section": "An initiative to recover lost content",
+    "text": "An initiative to recover lost content\n\nIdentify which websites with usefull information are lost\nRecover the content from archive.org or organisation backups\nReclaim the domains (restore linkage)\nJoin the efforts at github.com/soil-on-web/abandoned-webs"
+  },
+  {
+    "objectID": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
+    "href": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
+    "title": "Abandonded Project Websites -> no",
+    "section": "Good practices on url persistence of project websites",
+    "text": "Good practices on url persistence of project websites\n\nuse a subdomain of an established organisation\nuse a persistent identifier framework, when linking to external sources\nset up rewrite rules at website cancelation\nuse minimal technology, yes: html; no: wordpress, liferay, …\nkeep the content minimal, link to external (persistent) resources\npre-pay the domain ownership for at least the upcoming 10 years"
+  },
+  {
+    "objectID": "slides/index.html",
+    "href": "slides/index.html",
+    "title": "Select your deck:",
+    "section": "",
+    "text": "Abandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata for the rest of us\n\n\nIntro to a set of metadata conventions and tools\n\n\n\n\n\n\n\n\nFeb 29, 2024\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nParticipatory soil, land, crop data catalog to facilitate informed decision-making\n\n\n\n\n\n\n\n\n\n\n\nMay 20, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/iuss100metadata.html#metadata-and-the-soil-domain",
+    "href": "slides/iuss100metadata.html#metadata-and-the-soil-domain",
+    "title": "Participatory soil, land, crop data catalog to facilitate informed decision-making",
+    "section": "Metadata and the soil domain",
+    "text": "Metadata and the soil domain\n\nPrediction of spatio temporal variation, soil degradation and crop yields require many types of data\nData should be well documented to understand the relevance and the usage constraints of the derived products"
+  },
+  {
+    "objectID": "slides/iuss100metadata.html#metadata-current-situation",
+    "href": "slides/iuss100metadata.html#metadata-current-situation",
+    "title": "Participatory soil, land, crop data catalog to facilitate informed decision-making",
+    "section": "Metadata Current situation",
+    "text": "Metadata Current situation\n\nNot existing\nNot standardised; in a report or readme.txt file\nMaintained in a catalogue; disconnected from data"
+  },
+  {
+    "objectID": "slides/iuss100metadata.html#pygeometa-metadata-for-the-rest-of-us",
+    "href": "slides/iuss100metadata.html#pygeometa-metadata-for-the-rest-of-us",
+    "title": "Participatory soil, land, crop data catalog to facilitate informed decision-making",
+    "section": "pygeometa, metadata for the rest of us",
+    "text": "pygeometa, metadata for the rest of us\n\nA convention of the geopython community\nYAML, easy to read by humans and machines\nA subset of the ISO19115 standard for metadata\nExportable to variety of metadata standards (iso, dcat, stac)"
+  },
+  {
+    "objectID": "slides/iuss100metadata.html#tooling-around-the-pygeometa-library",
+    "href": "slides/iuss100metadata.html#tooling-around-the-pygeometa-library",
+    "title": "Participatory soil, land, crop data catalog to facilitate informed decision-making",
+    "section": "Tooling around the pygeometa library",
+    "text": "Tooling around the pygeometa library\n\nScan a network folder for (meta)data\nExport metadata to a catalogue\nStore metadata in a git repository\nGenerate conveniance api’s to data"
+  },
+  {
+    "objectID": "slides/iuss100metadata.html#developed-and-used-in-a-series-of-research-projects",
+    "href": "slides/iuss100metadata.html#developed-and-used-in-a-series-of-research-projects",
+    "title": "Participatory soil, land, crop data catalog to facilitate informed decision-making",
+    "section": "Developed and used in a series of research projects",
+    "text": "Developed and used in a series of research projects\n\nEJPSoil\nSoilwise\nMarvic\nLand Soil Crop Hubs (Desira)\nSpace 2 Place\nSoils for Africa"
+  },
+  {
+    "objectID": "slides/iuss100metadata.html#soilgpkg-a-use-case-designed-to-facilitate-soil-data-interoperability",
+    "href": "slides/iuss100metadata.html#soilgpkg-a-use-case-designed-to-facilitate-soil-data-interoperability",
+    "title": "Participatory soil, land, crop data catalog to facilitate informed decision-making",
+    "section": "SoilGPKG; A use case designed to facilitate soil data interoperability",
+    "text": "SoilGPKG; A use case designed to facilitate soil data interoperability\nChallenge:\n\nThe INSPIRE UML models and their GML serialisation are incompatible with the soil community, both for data providers and consumers\n\nSolution:\n\nA relational database model has been developed representing the UML classes of the INSPIRE schema.\nThis database can be shared as portable GeoPackage (SQLite) database file.\nA transformation solution is provided which can transform the data into the GML serialisation (Hale Studio)."
+  },
+  {
+    "objectID": "slides/iuss100metadata.html#soilgpkg",
+    "href": "slides/iuss100metadata.html#soilgpkg",
+    "title": "Participatory soil, land, crop data catalog to facilitate informed decision-making",
+    "section": "SoilGPKG",
+    "text": "SoilGPKG\n\nDeveloped by Crea (IT) and Epsilon in the scope of EJPSoil\nCrea has loaded 1250 profiles into a GeoPackage\nSuggested as a good practice for sharing soil data in INSPIRE\nThe relational model can also be used in PostGreSQL as a backend for actual applications."
+  },
+  {
+    "objectID": "slides/iuss100metadata.html#challenges-with-current-code-list-repositories",
+    "href": "slides/iuss100metadata.html#challenges-with-current-code-list-repositories",
+    "title": "Participatory soil, land, crop data catalog to facilitate informed decision-making",
+    "section": "Challenges with current code list repositories",
+    "text": "Challenges with current code list repositories\n\nAgrovoc adopted an old version of WRB\nWRB itself does not host a code list repository\nINSPIRE registry did not populate the soil code lists\nGlosis-ld codelists are not widely known and adopted (and not easy to use)"
+  },
+  {
+    "objectID": "slides/iuss100metadata.html#at-this-conference",
+    "href": "slides/iuss100metadata.html#at-this-conference",
+    "title": "Participatory soil, land, crop data catalog to facilitate informed decision-making",
+    "section": "At this conference",
+    "text": "At this conference\nDesign mechanisms to establish soil code list repositories which are recognised and easy to use."
   }
 ]

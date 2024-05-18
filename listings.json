@@ -1,20 +1,22 @@
 [
   {
-    "listing": "/slides/index.html",
-    "items": [
-      "/slides/abandoned-web.html",
-      "/slides/pitch-battle.html",
-      "/slides/intro-crawler-mcf-pycsw.html",
-      "/slides/alliander-2023.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/slides/abandoned-web.html",
       "/slides/pitch-battle.html",
       "/slides/intro-crawler-mcf-pycsw.html",
+      "/slides/iuss100metadata.html",
       "/slides/index.html",
+      "/slides/alliander-2023.html"
+    ]
+  },
+  {
+    "listing": "/slides/index.html",
+    "items": [
+      "/slides/abandoned-web.html",
+      "/slides/pitch-battle.html",
+      "/slides/intro-crawler-mcf-pycsw.html",
+      "/slides/iuss100metadata.html",
       "/slides/alliander-2023.html"
     ]
   }
