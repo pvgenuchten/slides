@@ -1,6 +1,6 @@
 ---
 title: Soilwise & Metadata
-subtitle: an initiative to increase awareness on metadata
+subtitle: Metadata in Horizon Europe projects (Soil Mission)
 author: Paul van Genuchten
 date: 2024-06-03
 format:
@@ -26,15 +26,15 @@ format:
 
 ## Where can you store metadata?
 
-- Alongside a data file/table (sidecar)
-- During registration in a repository
+- Alongside a data file/table/report (sidecar) or embedded (.doc, .xsl, .pdf)
+- Produced during registration and stored in a repository
 - In a catalogue
 
 ## How is metadata generated/enriched?
 
 - Systems generate metadata while data is produced
 - Authors provide metadata 
-- Systems enrich metadata with performance indicators
+- Systems enrich metadata with for example performance indicators, translations or linkages
 
 ## How do you standardise metadata?
 
@@ -48,7 +48,7 @@ format:
 - Your organisation shares your project repository online
 - You post your metadata to a catalogue
 
-## How become Cordis and EUSO aware of metadata?
+## How become Cordis and EUSO aware of my metadata?
 
 - You register your project outputs in REA portal
 - You register project outputs in dedicated catalogues
@@ -62,11 +62,13 @@ format:
 
 ## How to adopt the profile?
 
-- Many repositories (including Zenodo) have an option to provide `subjects`, which is a combination of thesaurus + keyword.
+- Many repositories (including Zenodo, Dataverse) have an option to provide `subjects`, which is a combination of thesaurus + keyword.
 - EUSO endorses to select 1 or multiple keywords from 10-ish thesauri.
 
 ## What is the benefit of adopting the profile?
 
-- Your metadata will be harvested and your project output being found
-- Your project output will be included in aggregated statistics
+- No risk of `forgetting` important elements
+- Your metadata (included by a filter) will be harvested 
+- Project output are found, when users apply filters
+- Project outputs will be included in aggregated statistics
 
