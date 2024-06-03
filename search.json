@@ -1,24 +1,143 @@
 [
   {
-    "objectID": "slides/pitch-battle.html#improving-findability---devops-style",
-    "href": "slides/pitch-battle.html#improving-findability---devops-style",
-    "title": "Document your model data at minimal effort",
-    "section": "Improving findability - devops style",
-    "text": "Improving findability - devops style\n\nWhat: Document your modelling data with minimal effort\nWhy: Better findability and (re)usability of data\nWhat’s next: Adopt the efforts in ongoing projects & extend the user community"
+    "objectID": "slides/soilwise-metadata.html#what-is-metadata",
+    "href": "slides/soilwise-metadata.html#what-is-metadata",
+    "title": "Soilwise & Metadata",
+    "section": "What is metadata",
+    "text": "What is metadata\n\nData about data\nSupports findability (where, what, who)\nSupports interoperability (use standards and common vocabularies)\nSupports reusability (data license, data provenance)"
   },
   {
-    "objectID": "slides/pitch-battle.html#setting-concept",
-    "href": "slides/pitch-battle.html#setting-concept",
-    "title": "Document your model data at minimal effort",
-    "section": "Setting & Concept",
-    "text": "Setting & Concept\n\nSetting: Data management in predictive modelling\n\nIn soil modelling we handle many data sources\nThese files are stored on a network drive\nMetadata management is complex/dull/****\n\nThe sidecar concept\n\nAdd minimal metadata on a sidecar file\nA crawler extracts metadata from a file repository\nCrawled records are placed in a searchable index"
+    "objectID": "slides/soilwise-metadata.html#findability",
+    "href": "slides/soilwise-metadata.html#findability",
+    "title": "Soilwise & Metadata",
+    "section": "Findability",
+    "text": "Findability\n\nWhen was this file created, by who, why?\nDidn’t project XX create a report about YY?\nHow many articles have been published on ZZ in period TT?\nHow many times has this article been cited?\nWhich datasets were used to generate this prediction?\nHow can this dataset be uniquely referenced?"
   },
   {
-    "objectID": "slides/pitch-battle.html#pygeometa-geodatacrawler-pycsw",
-    "href": "slides/pitch-battle.html#pygeometa-geodatacrawler-pycsw",
-    "title": "Document your model data at minimal effort",
-    "section": "pygeometa, geodatacrawler & pycsw",
-    "text": "pygeometa, geodatacrawler & pycsw\n\npygeometa’s MCF is a minimal subset of ISO19115, encoded in yaml\ngeodatacrawler extends pygeometa to:\n\nextract metadata from data formats\ninherit metadata from parent folders\nimport metadata from csv and remote sources\ncreate data api’s based on metadata\n\n is a pythonic catalogue web app. Wide standards support enables findability in multiple communities."
+    "objectID": "slides/soilwise-metadata.html#where-can-you-store-metadata",
+    "href": "slides/soilwise-metadata.html#where-can-you-store-metadata",
+    "title": "Soilwise & Metadata",
+    "section": "Where can you store metadata?",
+    "text": "Where can you store metadata?\n\nAlongside a data file/table (sidecar)\nDuring registration in a repository\nIn a catalogue"
+  },
+  {
+    "objectID": "slides/soilwise-metadata.html#how-is-metadata-generatedenriched",
+    "href": "slides/soilwise-metadata.html#how-is-metadata-generatedenriched",
+    "title": "Soilwise & Metadata",
+    "section": "How is metadata generated/enriched?",
+    "text": "How is metadata generated/enriched?\n\nSystems generate metadata while data is produced\nAuthors provide metadata\nSystems enrich metadata with performance indicators"
+  },
+  {
+    "objectID": "slides/soilwise-metadata.html#how-do-you-standardise-metadata",
+    "href": "slides/soilwise-metadata.html#how-do-you-standardise-metadata",
+    "title": "Soilwise & Metadata",
+    "section": "How do you standardise metadata?",
+    "text": "How do you standardise metadata?\n\nCreate metadata using common metadata tools\nPrefer keywords from common thesauri\nAgree on and comply with a metadata profile for your community"
+  },
+  {
+    "objectID": "slides/soilwise-metadata.html#how-do-you-share-metadata",
+    "href": "slides/soilwise-metadata.html#how-do-you-share-metadata",
+    "title": "Soilwise & Metadata",
+    "section": "How do you share metadata?",
+    "text": "How do you share metadata?\n\nYou register your artifact in a repository, including metadata\nYour organisation shares your project repository online\nYou post your metadata to a catalogue"
+  },
+  {
+    "objectID": "slides/soilwise-metadata.html#how-become-cordis-and-euso-aware-of-metadata",
+    "href": "slides/soilwise-metadata.html#how-become-cordis-and-euso-aware-of-metadata",
+    "title": "Soilwise & Metadata",
+    "section": "How become Cordis and EUSO aware of metadata?",
+    "text": "How become Cordis and EUSO aware of metadata?\n\nYou register your project outputs in REA portal\nYou register project outputs in dedicated catalogues\nCatalogues harvest at intervals from relevant repositories"
+  },
+  {
+    "objectID": "slides/soilwise-metadata.html#euso-metadata-profile",
+    "href": "slides/soilwise-metadata.html#euso-metadata-profile",
+    "title": "Soilwise & Metadata",
+    "section": "EUSO metadata profile",
+    "text": "EUSO metadata profile\n\n75% generic metadata properties (title, keywords, date, author)\n15% specific soil related keywords (properties, threads, functions)\n10% EUSO related keywords (EUSO working group, Horizon Europe funding)"
+  },
+  {
+    "objectID": "slides/soilwise-metadata.html#how-to-adopt-the-profile",
+    "href": "slides/soilwise-metadata.html#how-to-adopt-the-profile",
+    "title": "Soilwise & Metadata",
+    "section": "How to adopt the profile?",
+    "text": "How to adopt the profile?\n\nMany repositories (including Zenodo) have an option to provide subjects, which is a combination of thesaurus + keyword.\nEUSO endorses to select 1 or multiple keywords from 10-ish thesauri."
+  },
+  {
+    "objectID": "slides/soilwise-metadata.html#what-is-the-benefit-of-adopting-the-profile",
+    "href": "slides/soilwise-metadata.html#what-is-the-benefit-of-adopting-the-profile",
+    "title": "Soilwise & Metadata",
+    "section": "What is the benefit of adopting the profile?",
+    "text": "What is the benefit of adopting the profile?\n\nYour metadata will be harvested and your project output being found\nYour project output will be included in aggregated statistics"
+  },
+  {
+    "objectID": "slides/index.html",
+    "href": "slides/index.html",
+    "title": "some slide decks",
+    "section": "",
+    "text": "Abandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata for the rest of us\n\n\nIntro to a set of metadata conventions and tools\n\n\n\n\n\n\n\n\nFeb 29, 2024\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\n\n\n\n\n\n\n\n\n\nMay 20, 2024\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\n\n\n\n\n\n\nSoilwise & Metadata\n\n\nan initiative to increase awareness on metadata\n\n\n\n\n\n\n\n\nJun 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/abandoned-web.html#a-broken-link-from-a-report",
+    "href": "slides/abandoned-web.html#a-broken-link-from-a-report",
+    "title": "Abandonded Project Websites -> no",
+    "section": "A broken link from a report?",
+    "text": "A broken link from a report?\n\nor worse, arrive in an online casino from a link in a report?\nmany websites are abandoned few years after project finish\nwebsite builders should show ownership of domains they create\nreport writers should not link to dodgy locations (aka project websites)"
+  },
+  {
+    "objectID": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
+    "href": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
+    "title": "Abandonded Project Websites -> no",
+    "section": "An initiative to recover lost content",
+    "text": "An initiative to recover lost content\n\nIdentify which websites with usefull information are lost\nRecover the content from archive.org or organisation backups\nReclaim the domains (restore linkage)\nJoin the efforts at github.com/soil-on-web/abandoned-webs"
+  },
+  {
+    "objectID": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
+    "href": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
+    "title": "Abandonded Project Websites -> no",
+    "section": "Good practices on url persistence of project websites",
+    "text": "Good practices on url persistence of project websites\n\nuse a subdomain of an established organisation\nuse a persistent identifier framework, when linking to external sources\nset up rewrite rules at website cancelation\nuse minimal technology, yes: html; no: wordpress, liferay, …\nkeep the content minimal, link to external (persistent) resources\npre-pay the domain ownership for at least the upcoming 10 years"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Select your deck:",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nNov 4, 2023\n\n\nAbandonded Project Websites -&gt; no\n\n\nPaul van Genuchten\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\nFeb 29, 2024\n\n\nMetadata for the rest of us\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\nMay 20, 2024\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\nJun 3, 2024\n\n\nSoilwise & Metadata\n\n\nPaul van Genuchten\n\n\n\n\nNov 13, 2023\n\n\nWorkshop pygeoapi\n\n\nPaul van Genuchten\n\n\n\n\n \n\n\ntype: default\n\n\n \n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/alliander-2023.html#about",
+    "href": "slides/alliander-2023.html#about",
+    "title": "Workshop pygeoapi",
+    "section": "About",
+    "text": "About\n\n90’s Bodemkunde Wageningen\n00’s Nieuwland GeoInformatie\n\nWebGIS at Alliander (OpenLayers, tilecache, Smallworld)\n\n10’s GeoCat BV, GeoNetwork/GeoServer\n\nProvincie Zeeland\n\n20’s ISRIC - World Soil Information"
+  },
+  {
+    "objectID": "slides/alliander-2023.html#soil-museum",
+    "href": "slides/alliander-2023.html#soil-museum",
+    "title": "Workshop pygeoapi",
+    "section": "Soil Museum",
+    "text": "Soil Museum"
+  },
+  {
+    "objectID": "slides/alliander-2023.html#soilgrids",
+    "href": "slides/alliander-2023.html#soilgrids",
+    "title": "Workshop pygeoapi",
+    "section": "Soilgrids",
+    "text": "Soilgrids"
+  },
+  {
+    "objectID": "slides/alliander-2023.html#section",
+    "href": "slides/alliander-2023.html#section",
+    "title": "Workshop pygeoapi",
+    "section": "",
+    "text": "EU research project met als doel om data rond bodem beter te gebruiken / behouden (FAIR)\nStart met onderzoeken van user stories vanuit 5 werkvelden (landbouw, onderzoek, overheid, breder publiek, business)\n\nsoilwise-he.eu"
+  },
+  {
+    "objectID": "slides/alliander-2023.html#pygeoapi",
+    "href": "slides/alliander-2023.html#pygeoapi",
+    "title": "Workshop pygeoapi",
+    "section": "pygeoapi",
+    "text": "pygeoapi\n\nPresentation\ndive.pygeoapi.io"
   },
   {
     "objectID": "slides/intro-crawler-mcf-pycsw.html#what",
@@ -105,73 +224,24 @@
     "text": "Read more?\n\npygeometa in the EJPSoil soil data assimilation cookbook\nLSC Hubs data workshop\npygeometa\nGeoDataCrawler"
   },
   {
-    "objectID": "slides/alliander-2023.html#about",
-    "href": "slides/alliander-2023.html#about",
-    "title": "Workshop pygeoapi",
-    "section": "About",
-    "text": "About\n\n90’s Bodemkunde Wageningen\n00’s Nieuwland GeoInformatie\n\nWebGIS at Alliander (OpenLayers, tilecache, Smallworld)\n\n10’s GeoCat BV, GeoNetwork/GeoServer\n\nProvincie Zeeland\n\n20’s ISRIC - World Soil Information"
+    "objectID": "slides/pitch-battle.html#improving-findability---devops-style",
+    "href": "slides/pitch-battle.html#improving-findability---devops-style",
+    "title": "Document your model data at minimal effort",
+    "section": "Improving findability - devops style",
+    "text": "Improving findability - devops style\n\nWhat: Document your modelling data with minimal effort\nWhy: Better findability and (re)usability of data\nWhat’s next: Adopt the efforts in ongoing projects & extend the user community"
   },
   {
-    "objectID": "slides/alliander-2023.html#soil-museum",
-    "href": "slides/alliander-2023.html#soil-museum",
-    "title": "Workshop pygeoapi",
-    "section": "Soil Museum",
-    "text": "Soil Museum"
+    "objectID": "slides/pitch-battle.html#setting-concept",
+    "href": "slides/pitch-battle.html#setting-concept",
+    "title": "Document your model data at minimal effort",
+    "section": "Setting & Concept",
+    "text": "Setting & Concept\n\nSetting: Data management in predictive modelling\n\nIn soil modelling we handle many data sources\nThese files are stored on a network drive\nMetadata management is complex/dull/****\n\nThe sidecar concept\n\nAdd minimal metadata on a sidecar file\nA crawler extracts metadata from a file repository\nCrawled records are placed in a searchable index"
   },
   {
-    "objectID": "slides/alliander-2023.html#soilgrids",
-    "href": "slides/alliander-2023.html#soilgrids",
-    "title": "Workshop pygeoapi",
-    "section": "Soilgrids",
-    "text": "Soilgrids"
-  },
-  {
-    "objectID": "slides/alliander-2023.html#section",
-    "href": "slides/alliander-2023.html#section",
-    "title": "Workshop pygeoapi",
-    "section": "",
-    "text": "EU research project met als doel om data rond bodem beter te gebruiken / behouden (FAIR)\nStart met onderzoeken van user stories vanuit 5 werkvelden (landbouw, onderzoek, overheid, breder publiek, business)\n\nsoilwise-he.eu"
-  },
-  {
-    "objectID": "slides/alliander-2023.html#pygeoapi",
-    "href": "slides/alliander-2023.html#pygeoapi",
-    "title": "Workshop pygeoapi",
-    "section": "pygeoapi",
-    "text": "pygeoapi\n\nPresentation\ndive.pygeoapi.io"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Select your deck:",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nNov 4, 2023\n\n\nAbandonded Project Websites -&gt; no\n\n\nPaul van Genuchten\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\nFeb 29, 2024\n\n\nMetadata for the rest of us\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\nMay 20, 2024\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\nNov 13, 2023\n\n\nWorkshop pygeoapi\n\n\nPaul van Genuchten\n\n\n\n\n \n\n\ntype: default\n\n\n \n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "slides/abandoned-web.html#a-broken-link-from-a-report",
-    "href": "slides/abandoned-web.html#a-broken-link-from-a-report",
-    "title": "Abandonded Project Websites -> no",
-    "section": "A broken link from a report?",
-    "text": "A broken link from a report?\n\nor worse, arrive in an online casino from a link in a report?\nmany websites are abandoned few years after project finish\nwebsite builders should show ownership of domains they create\nreport writers should not link to dodgy locations (aka project websites)"
-  },
-  {
-    "objectID": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
-    "href": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
-    "title": "Abandonded Project Websites -> no",
-    "section": "An initiative to recover lost content",
-    "text": "An initiative to recover lost content\n\nIdentify which websites with usefull information are lost\nRecover the content from archive.org or organisation backups\nReclaim the domains (restore linkage)\nJoin the efforts at github.com/soil-on-web/abandoned-webs"
-  },
-  {
-    "objectID": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
-    "href": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
-    "title": "Abandonded Project Websites -> no",
-    "section": "Good practices on url persistence of project websites",
-    "text": "Good practices on url persistence of project websites\n\nuse a subdomain of an established organisation\nuse a persistent identifier framework, when linking to external sources\nset up rewrite rules at website cancelation\nuse minimal technology, yes: html; no: wordpress, liferay, …\nkeep the content minimal, link to external (persistent) resources\npre-pay the domain ownership for at least the upcoming 10 years"
-  },
-  {
-    "objectID": "slides/index.html",
-    "href": "slides/index.html",
-    "title": "some slide decks",
-    "section": "",
-    "text": "Abandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata for the rest of us\n\n\nIntro to a set of metadata conventions and tools\n\n\n\n\n\n\n\n\nFeb 29, 2024\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\n\n\n\n\n\n\n\n\n\nMay 20, 2024\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNo matching items"
+    "objectID": "slides/pitch-battle.html#pygeometa-geodatacrawler-pycsw",
+    "href": "slides/pitch-battle.html#pygeometa-geodatacrawler-pycsw",
+    "title": "Document your model data at minimal effort",
+    "section": "pygeometa, geodatacrawler & pycsw",
+    "text": "pygeometa, geodatacrawler & pycsw\n\npygeometa’s MCF is a minimal subset of ISO19115, encoded in yaml\ngeodatacrawler extends pygeometa to:\n\nextract metadata from data formats\ninherit metadata from parent folders\nimport metadata from csv and remote sources\ncreate data api’s based on metadata\n\n is a pythonic catalogue web app. Wide standards support enables findability in multiple communities."
   }
 ]
