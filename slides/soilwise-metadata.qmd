@@ -1,0 +1,72 @@
+---
+title: Soilwise & Metadata
+subtitle: an initiative to increase awareness on metadata
+author: Paul van Genuchten
+date: 2024-06-03
+format:
+  revealjs: 
+    theme: default
+---
+
+## What is metadata
+
+- Data about data
+- Supports findability (where, what, who)
+- Supports interoperability (use standards and common vocabularies)
+- Supports reusability (data license, data provenance)
+
+## Findability
+
+- When was this file created, by who, why?
+- Didn't project XX create a report about YY?
+- How many articles have been published on ZZ in period TT?
+- How many times has this article been cited?
+- Which datasets were used to generate this prediction?
+- How can this dataset be uniquely referenced?
+
+## Where can you store metadata?
+
+- Alongside a data file/table (sidecar)
+- During registration in a repository
+- In a catalogue
+
+## How is metadata generated/enriched?
+
+- Systems generate metadata while data is produced
+- Authors provide metadata 
+- Systems enrich metadata with performance indicators
+
+## How do you standardise metadata?
+
+- Create metadata using common metadata tools
+- Prefer keywords from common thesauri
+- Agree on and comply with a metadata profile for your community
+
+## How do you share metadata?
+
+- You register your artifact in a repository, including metadata
+- Your organisation shares your project repository online
+- You post your metadata to a catalogue
+
+## How become Cordis and EUSO aware of metadata?
+
+- You register your project outputs in REA portal
+- You register project outputs in dedicated catalogues
+- Catalogues harvest at intervals from relevant repositories
+
+## EUSO metadata profile
+
+- 75% generic metadata properties (title, keywords, date, author)
+- 15% specific soil related keywords (properties, threads, functions)
+- 10% EUSO related keywords (EUSO working group, Horizon Europe funding)
+
+## How to adopt the profile?
+
+- Many repositories (including Zenodo) have an option to provide `subjects`, which is a combination of thesaurus + keyword.
+- EUSO endorses to select 1 or multiple keywords from 10-ish thesauri.
+
+## What is the benefit of adopting the profile?
+
+- Your metadata will be harvested and your project output being found
+- Your project output will be included in aggregated statistics
+
