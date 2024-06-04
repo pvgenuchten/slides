@@ -18,14 +18,14 @@
     "href": "slides/soilwise-metadata.html#where-can-you-store-metadata",
     "title": "Soilwise & Metadata",
     "section": "Where can you store metadata?",
-    "text": "Where can you store metadata?\n\nAlongside a data file/table (sidecar)\nDuring registration in a repository\nIn a catalogue"
+    "text": "Where can you store metadata?\n\nAlongside a data file/table/report (sidecar) or embedded (.doc, .xsl, .pdf)\nProduced during registration and stored in a repository\nIn a catalogue"
   },
   {
     "objectID": "slides/soilwise-metadata.html#how-is-metadata-generatedenriched",
     "href": "slides/soilwise-metadata.html#how-is-metadata-generatedenriched",
     "title": "Soilwise & Metadata",
     "section": "How is metadata generated/enriched?",
-    "text": "How is metadata generated/enriched?\n\nSystems generate metadata while data is produced\nAuthors provide metadata\nSystems enrich metadata with performance indicators"
+    "text": "How is metadata generated/enriched?\n\nSystems generate metadata while data is produced\nAuthors provide metadata\nSystems enrich metadata with for example performance indicators, translations or linkages"
   },
   {
     "objectID": "slides/soilwise-metadata.html#how-do-you-standardise-metadata",
@@ -42,11 +42,11 @@
     "text": "How do you share metadata?\n\nYou register your artifact in a repository, including metadata\nYour organisation shares your project repository online\nYou post your metadata to a catalogue"
   },
   {
-    "objectID": "slides/soilwise-metadata.html#how-become-cordis-and-euso-aware-of-metadata",
-    "href": "slides/soilwise-metadata.html#how-become-cordis-and-euso-aware-of-metadata",
+    "objectID": "slides/soilwise-metadata.html#how-become-cordis-and-euso-aware-of-my-metadata",
+    "href": "slides/soilwise-metadata.html#how-become-cordis-and-euso-aware-of-my-metadata",
     "title": "Soilwise & Metadata",
-    "section": "How become Cordis and EUSO aware of metadata?",
-    "text": "How become Cordis and EUSO aware of metadata?\n\nYou register your project outputs in REA portal\nYou register project outputs in dedicated catalogues\nCatalogues harvest at intervals from relevant repositories"
+    "section": "How become Cordis and EUSO aware of my metadata?",
+    "text": "How become Cordis and EUSO aware of my metadata?\n\nYou register your project outputs in REA portal\nYou register project outputs in dedicated catalogues\nCatalogues harvest at intervals from relevant repositories"
   },
   {
     "objectID": "slides/soilwise-metadata.html#euso-metadata-profile",
@@ -60,21 +60,21 @@
     "href": "slides/soilwise-metadata.html#how-to-adopt-the-profile",
     "title": "Soilwise & Metadata",
     "section": "How to adopt the profile?",
-    "text": "How to adopt the profile?\n\nMany repositories (including Zenodo) have an option to provide subjects, which is a combination of thesaurus + keyword.\nEUSO endorses to select 1 or multiple keywords from 10-ish thesauri."
+    "text": "How to adopt the profile?\n\nMany repositories (including Zenodo, Dataverse) have an option to provide subjects, which is a combination of thesaurus + keyword.\nEUSO endorses to select 1 or multiple keywords from 10-ish thesauri."
   },
   {
     "objectID": "slides/soilwise-metadata.html#what-is-the-benefit-of-adopting-the-profile",
     "href": "slides/soilwise-metadata.html#what-is-the-benefit-of-adopting-the-profile",
     "title": "Soilwise & Metadata",
     "section": "What is the benefit of adopting the profile?",
-    "text": "What is the benefit of adopting the profile?\n\nYour metadata will be harvested and your project output being found\nYour project output will be included in aggregated statistics"
+    "text": "What is the benefit of adopting the profile?\n\nNo risk of forgetting important elements\nYour metadata (included by a filter) will be harvested\nProject output are found, when users apply filters\nProject outputs will be included in aggregated statistics"
   },
   {
     "objectID": "slides/index.html",
     "href": "slides/index.html",
     "title": "some slide decks",
     "section": "",
-    "text": "Abandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata for the rest of us\n\n\nIntro to a set of metadata conventions and tools\n\n\n\n\n\n\n\n\nFeb 29, 2024\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\n\n\n\n\n\n\n\n\n\nMay 20, 2024\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\n\n\n\n\n\n\nSoilwise & Metadata\n\n\nan initiative to increase awareness on metadata\n\n\n\n\n\n\n\n\nJun 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNo matching items"
+    "text": "Abandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata for the rest of us\n\n\nIntro to a set of metadata conventions and tools\n\n\n\n\n\n\n\n\nFeb 29, 2024\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\n\n\n\n\n\n\n\n\n\nMay 20, 2024\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\n\n\n\n\n\n\nSoilwise & Metadata\n\n\nMetadata in Horizon Europe projects (Soil Mission)\n\n\n\n\n\n\n\n\nJun 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/abandoned-web.html#a-broken-link-from-a-report",
