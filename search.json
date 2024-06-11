@@ -175,6 +175,20 @@
     "text": "Land Soil Crop hubs\n\nAn example of a catalogue using the MCF approach\nCollect resources which are relevant to agriculture in East Africa\nUsers initially provided metadata as lists in excel\nMetadata is hosted in Github, users contribute content (and register issues)"
   },
   {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#metadata-as-a-source-for-mapserver-configuration",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#metadata-as-a-source-for-mapserver-configuration",
+    "title": "A fun way to do spatial cataloguing",
+    "section": "Metadata as a source for Mapserver configuration",
+    "text": "Metadata as a source for Mapserver configuration\n\nUse the metadata to generate map configuration\nAdd the generated map endpoint to the metadata\nMapserver is fully aligned with the catalogue"
+  },
+  {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#terriajs-a-webbased-gis",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#terriajs-a-webbased-gis",
+    "title": "A fun way to do spatial cataloguing",
+    "section": "TerriaJS, a webbased GIS",
+    "text": "TerriaJS, a webbased GIS\n\nThe project uses TerriaJS as a data viewer (react + leaflet/cesium)\nTerriaJS includes a Catalogue search as CSW and links back to the catalogue via wms capabilities\nExtra integration via ‘Add data to viewer’ from catalogue page"
+  },
+  {
     "objectID": "slides/fun-way-of-spatial-cataloguing.html#wmo-information-system-wis2",
     "href": "slides/fun-way-of-spatial-cataloguing.html#wmo-information-system-wis2",
     "title": "A fun way to do spatial cataloguing",
