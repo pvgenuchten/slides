@@ -2,6 +2,7 @@
   {
     "listing": "/slides/index.html",
     "items": [
+      "/slides/fun-way-of-spatial-cataloguing.html",
       "/slides/abandoned-web.html",
       "/slides/pitch-battle.html",
       "/slides/intro-crawler-mcf-pycsw.html",
@@ -13,6 +14,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/slides/fun-way-of-spatial-cataloguing.html",
       "/slides/abandoned-web.html",
       "/slides/pitch-battle.html",
       "/slides/intro-crawler-mcf-pycsw.html",

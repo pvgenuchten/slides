@@ -74,35 +74,7 @@
     "href": "slides/index.html",
     "title": "some slide decks",
     "section": "",
-    "text": "Abandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata for the rest of us\n\n\nIntro to a set of metadata conventions and tools\n\n\n\n\n\n\n\n\nFeb 29, 2024\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\n\n\n\n\n\n\n\n\n\nMay 20, 2024\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\n\n\n\n\n\n\nSoilwise & Metadata\n\n\nMetadata in Horizon Europe projects (Soil Mission)\n\n\n\n\n\n\n\n\nJun 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "slides/abandoned-web.html#a-broken-link-from-a-report",
-    "href": "slides/abandoned-web.html#a-broken-link-from-a-report",
-    "title": "Abandonded Project Websites -> no",
-    "section": "A broken link from a report?",
-    "text": "A broken link from a report?\n\nor worse, arrive in an online casino from a link in a report?\nmany websites are abandoned few years after project finish\nwebsite builders should show ownership of domains they create\nreport writers should not link to dodgy locations (aka project websites)"
-  },
-  {
-    "objectID": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
-    "href": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
-    "title": "Abandonded Project Websites -> no",
-    "section": "An initiative to recover lost content",
-    "text": "An initiative to recover lost content\n\nIdentify which websites with usefull information are lost\nRecover the content from archive.org or organisation backups\nReclaim the domains (restore linkage)\nJoin the efforts at github.com/soil-on-web/abandoned-webs"
-  },
-  {
-    "objectID": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
-    "href": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
-    "title": "Abandonded Project Websites -> no",
-    "section": "Good practices on url persistence of project websites",
-    "text": "Good practices on url persistence of project websites\n\nuse a subdomain of an established organisation\nuse a persistent identifier framework, when linking to external sources\nset up rewrite rules at website cancelation\nuse minimal technology, yes: html; no: wordpress, liferay, …\nkeep the content minimal, link to external (persistent) resources\npre-pay the domain ownership for at least the upcoming 10 years"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Select your deck:",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nNov 4, 2023\n\n\nAbandonded Project Websites -&gt; no\n\n\nPaul van Genuchten\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\nFeb 29, 2024\n\n\nMetadata for the rest of us\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\nMay 20, 2024\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\nJun 3, 2024\n\n\nSoilwise & Metadata\n\n\nPaul van Genuchten\n\n\n\n\nNov 13, 2023\n\n\nWorkshop pygeoapi\n\n\nPaul van Genuchten\n\n\n\n\n \n\n\ntype: default\n\n\n \n\n\n\n\n\nNo matching items"
+    "text": "A fun way to do spatial cataloguing\n\n\ncataloguing and publishing using pygeometa and mdme\n\n\n\n\n\n\n\n\nJul 3, 2024\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\n\n\n\n\n\n\n\n\nAbandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata for the rest of us\n\n\nIntro to a set of metadata conventions and tools\n\n\n\n\n\n\n\n\nFeb 29, 2024\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\n\n\n\n\n\n\n\n\n\nMay 20, 2024\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\n\n\n\n\n\n\nSoilwise & Metadata\n\n\nMetadata in Horizon Europe projects (Soil Mission)\n\n\n\n\n\n\n\n\nJun 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/alliander-2023.html#about",
@@ -138,6 +110,90 @@
     "title": "Workshop pygeoapi",
     "section": "pygeoapi",
     "text": "pygeoapi\n\nPresentation\ndive.pygeoapi.io"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Select your deck:",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nJul 3, 2024\n\n\nA fun way to do spatial cataloguing\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\nNov 4, 2023\n\n\nAbandonded Project Websites -&gt; no\n\n\nPaul van Genuchten\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\nFeb 29, 2024\n\n\nMetadata for the rest of us\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\nMay 20, 2024\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\nJun 3, 2024\n\n\nSoilwise & Metadata\n\n\nPaul van Genuchten\n\n\n\n\nNov 13, 2023\n\n\nWorkshop pygeoapi\n\n\nPaul van Genuchten\n\n\n\n\n \n\n\ntype: default\n\n\n \n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/abandoned-web.html#a-broken-link-from-a-report",
+    "href": "slides/abandoned-web.html#a-broken-link-from-a-report",
+    "title": "Abandonded Project Websites -> no",
+    "section": "A broken link from a report?",
+    "text": "A broken link from a report?\n\nor worse, arrive in an online casino from a link in a report?\nmany websites are abandoned few years after project finish\nwebsite builders should show ownership of domains they create\nreport writers should not link to dodgy locations (aka project websites)"
+  },
+  {
+    "objectID": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
+    "href": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
+    "title": "Abandonded Project Websites -> no",
+    "section": "An initiative to recover lost content",
+    "text": "An initiative to recover lost content\n\nIdentify which websites with usefull information are lost\nRecover the content from archive.org or organisation backups\nReclaim the domains (restore linkage)\nJoin the efforts at github.com/soil-on-web/abandoned-webs"
+  },
+  {
+    "objectID": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
+    "href": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
+    "title": "Abandonded Project Websites -> no",
+    "section": "Good practices on url persistence of project websites",
+    "text": "Good practices on url persistence of project websites\n\nuse a subdomain of an established organisation\nuse a persistent identifier framework, when linking to external sources\nset up rewrite rules at website cancelation\nuse minimal technology, yes: html; no: wordpress, liferay, …\nkeep the content minimal, link to external (persistent) resources\npre-pay the domain ownership for at least the upcoming 10 years"
+  },
+  {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#a-fun-way-to-do-spatial-cataloguing",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#a-fun-way-to-do-spatial-cataloguing",
+    "title": "A fun way to do spatial cataloguing",
+    "section": "A fun way to do spatial cataloguing",
+    "text": "A fun way to do spatial cataloguing\n\nwe all know the edit-me-on-git link in modern websites/wikis\nanybody can contribute, contributions are traceable, easily restore if things break\nwe want that experience for spatial cataloguing"
+  },
+  {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#some-screenshots",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#some-screenshots",
+    "title": "A fun way to do spatial cataloguing",
+    "section": "Some screenshots",
+    "text": "Some screenshots"
+  },
+  {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#intro-to-mcf-pygeometa",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#intro-to-mcf-pygeometa",
+    "title": "A fun way to do spatial cataloguing",
+    "section": "Intro to mcf / pygeometa",
+    "text": "Intro to mcf / pygeometa"
+  },
+  {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#ci-cd-to-publish-to-pycsw",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#ci-cd-to-publish-to-pycsw",
+    "title": "A fun way to do spatial cataloguing",
+    "section": "CI-CD to publish to pycsw",
+    "text": "CI-CD to publish to pycsw"
+  },
+  {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#how-is-this-percieved-by-the-less-techy",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#how-is-this-percieved-by-the-less-techy",
+    "title": "A fun way to do spatial cataloguing",
+    "section": "How is this percieved by the less-techy?",
+    "text": "How is this percieved by the less-techy?\n\nTypical users expect shiny webforms, like linked-in, facebook\nNot used to YAML syntax and git CI-CD workflows\nThat’s where the MDME initiative came up"
+  },
+  {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#land-soil-crop-hubs",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#land-soil-crop-hubs",
+    "title": "A fun way to do spatial cataloguing",
+    "section": "Land Soil Crop hubs",
+    "text": "Land Soil Crop hubs\n\nAn example of a catalogue using the MCF approach\nCollect resources which are relevant to agriculture in East Africa\nUsers initially provided metadata as lists in excel\nMetadata is hosted in Github, users contribute content (and register issues)"
+  },
+  {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#wmo-information-system-wis2",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#wmo-information-system-wis2",
+    "title": "A fun way to do spatial cataloguing",
+    "section": "WMO Information System (WIS2)",
+    "text": "WMO Information System (WIS2)\n\nSet of tools adopted by regional weather offices to build up a global system"
+  },
+  {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#take-aways",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#take-aways",
+    "title": "A fun way to do spatial cataloguing",
+    "section": "Take aways",
+    "text": "Take aways\n\nMCF is an interesting metadata format for embedded metadata in local file repositories\nGit storage and CI-CD workflows are traceable, participatory approach for metadata management\nOGCAPI records (in for example pycsw) offers a clean machine and human friendly interfaceto metadata"
   },
   {
     "objectID": "slides/intro-crawler-mcf-pycsw.html#what",
