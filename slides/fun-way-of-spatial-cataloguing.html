@@ -321,6 +321,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -348,17 +351,34 @@ Paul van Genuchten, Tom Kralidis
 <li>we want that experience for spatial cataloguing</li>
 </ul>
 </section>
-<section id="some-screenshots" class="slide level2">
-<h2>Some screenshots</h2>
-</section>
 <section id="intro-to-mcf-pygeometa" class="slide level2">
 <h2>Intro to mcf / pygeometa</h2>
 </section>
-<section id="ci-cd-to-publish-to-pycsw" class="slide level2">
-<h2>CI-CD to publish to pycsw</h2>
+<section id="ci-cd-to-publish-to-a-catalogue" class="slide level2">
+<h2>CI-CD to publish to a catalogue</h2>
+<ul>
+<li>pycsw a standards based catalogue component (postgres backend)</li>
+<li>Supports OGC API Records, various metadata models, faceted search</li>
+</ul>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+    P[Project folder] --&gt;|Files| CI{{crawler}}
+    CI --&gt;|Extract metadata| P
+    CI --&gt; G[Git] 
+    G --&gt; PYCSW
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
-<section id="how-is-this-percieved-by-the-less-techy" class="slide level2">
-<h2>How is this percieved by the less-techy?</h2>
+<section id="how-is-mcf-percieved-by-typical-users" class="slide level2">
+<h2>How is MCF percieved by typical users?</h2>
 <ul>
 <li>Typical users expect shiny webforms, like linked-in, facebook</li>
 <li>Not used to YAML syntax and git CI-CD workflows</li>
@@ -387,6 +407,10 @@ Paul van Genuchten, Tom Kralidis
 <li>Git storage and CI-CD workflows are traceable, participatory approach for metadata management</li>
 <li>OGCAPI records (in for example pycsw) offers a clean machine and human friendly interfaceto metadata</li>
 </ul>
+</section>
+<section id="demo-time" class="slide level2">
+<h2>Demo time</h2>
+<p>…</p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
