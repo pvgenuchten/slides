@@ -321,9 +321,6 @@
       margin-right: 0; 
     }
   </style>
-  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -343,97 +340,56 @@ Paul van Genuchten, Tom Kralidis
 
   <p class="date">2024-07-03</p>
 </section>
-<section id="a-fun-way-to-do-spatial-cataloguing" class="slide level2">
-<h2>A fun way to do spatial cataloguing</h2>
+<section>
+<section id="sdi-maintenance-devops-style" class="title-slide slide level1 center">
+<h1>SDI maintenance DevOps style</h1>
+
+</section>
+<section id="about-meus" class="slide level2">
+<h2>About me/us</h2>
+<p>At ISRIC - World Soil Information we maintain a global reference soil sample collection. The foundation, located at Wageningen University, is funded by the Dutch government.</p>
+<p>Soil data is typically collected as samples, being analysed in a lab. Predicting spatio temporal distribution of soil properties to create continuous soil maps is a common challenge in Soil Sciences. We continuously collect soil data from various national intsitutes (and covariates) to improve the global soil map of the world, SoilGrids.</p>
+<p>I’m a DevOps engineer, maintaining the ISRIC SDI. I also train developers at national soil intstitutes in improving their SDI skills.</p>
+</section>
+<section id="sdi-metadata" class="slide level2">
+<h2>SDI &amp; Metadata</h2>
 <ul>
-<li>we all know the edit-me-on-git link in modern websites/wikis</li>
-<li>anybody can contribute, contributions are traceable, easily restore if things break</li>
-<li>we want that experience for spatial cataloguing</li>
+<li>Metadata is data about data, it explains what the data is about, its origin, its usage constraints and how to access it.</li>
+<li>Metadata supports you, your colleagues, up to the wider community.</li>
+<li>Why isn’t metadata the main topic of this conference?</li>
 </ul>
 </section>
-<section id="intro-to-mcf-pygeometa" class="slide level2">
-<h2>Intro to mcf / pygeometa</h2>
-</section>
-<section id="ci-cd-to-publish-to-a-catalogue" class="slide level2">
-<h2>CI-CD to publish to a catalogue</h2>
+<section id="metadata-in-traditional-sdi" class="slide level2">
+<h2>Metadata in traditional SDI</h2>
 <ul>
-<li>pycsw a standards based catalogue component (postgres backend)</li>
-<li>Supports OGC API Records, various metadata models, faceted search</li>
-</ul>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TB
-    P[Project folder] --&gt;|Files| CI{{crawler}}
-    CI --&gt;|Extract metadata| P
-    CI --&gt; G[Git] 
-    G --&gt; PYCSW
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section>
-<section id="how-is-mcf-percieved-by-typical-users" class="slide level2">
-<h2>How is MCF percieved by typical users?</h2>
-<ul>
-<li>Typical users expect shiny webforms, like linked-in, facebook</li>
-<li>Not used to YAML syntax and git CI-CD workflows</li>
-<li>That’s where the MDME initiative came up</li>
+<li>Traditionally Geo teams are placed a bit aside from domain groups, focussing on spatial processing and creating maps</li>
+<li>Geo has a strong focus on stadardisation due to its use of generic analysis tools and interactions with various domain groups</li>
+<li>These are some factors resulting in limited metadata availability, complex formats and low maturity of software around metadata; causing low popularity of metadata</li>
 </ul>
 </section>
-<section id="land-soil-crop-hubs" class="slide level2">
-<h2>Land Soil Crop hubs</h2>
+<section id="metadata-in-soil-science-is-essential" class="slide level2">
+<h2>Metadata in Soil Science is essential</h2>
 <ul>
-<li>An example of a catalogue using the MCF approach</li>
-<li>Collect resources which are relevant to agriculture in East Africa</li>
-<li>Users initially provided metadata as lists in excel</li>
-<li>Metadata is hosted in Github, users contribute content (and register issues)</li>
+<li>Soil data takes a long route as sample from the field up to re-use as a dataset</li>
+<li>Metadata on the applied field and lab procedures is essential</li>
+<li>The boundary where data stops and metadata starts is quite fuzzy</li>
+<li>Applied procedures are often taken for granted, but consider that approaches differ between groups and over time</li>
 </ul>
 </section>
-<section id="metadata-as-a-source-for-mapserver-configuration" class="slide level2">
-<h2>Metadata as a source for Mapserver configuration</h2>
+<section id="metadata-should-originate-from-where-data-is-generated" class="slide level2">
+<h2>Metadata should originate from where data is generated</h2>
 <ul>
-<li>Use the metadata to generate map configuration</li>
-<li>Add the generated map endpoint to the metadata</li>
-<li>Mapserver is fully aligned with the catalogue</li>
+<li>My domain colleagues hardly generate metadata, at most a readme.txt in a folder</li>
+<li>Fortunately they are confortable in storing their R-scripts in Git</li>
+<li>My goal is to lure them into generating metadata, by offering easy to use tools, fitting their workflows, prevent duplicated efforts and show them the benefits</li>
 </ul>
-</section>
-<section id="terriajs-a-webbased-gis" class="slide level2">
-<h2>TerriaJS, a webbased GIS</h2>
-<ul>
-<li>The project uses TerriaJS as a data viewer (react + leaflet/cesium)</li>
-<li>TerriaJS includes a Catalogue search as CSW and links back to the catalogue via wms capabilities</li>
-<li>Extra integration via ‘Add data to viewer’ from catalogue page</li>
-</ul>
-</section>
-<section id="wmo-information-system-wis2" class="slide level2">
-<h2>WMO Information System (WIS2)</h2>
-<ul>
-<li>Set of tools adopted by regional weather offices to build up a global system</li>
-</ul>
-</section>
-<section id="take-aways" class="slide level2">
-<h2>Take aways</h2>
-<ul>
-<li>MCF is an interesting metadata format for embedded metadata in local file repositories</li>
-<li>Git storage and CI-CD workflows are traceable, participatory approach for metadata management</li>
-<li>OGCAPI records (in for example pycsw) offers a clean machine and human friendly interfaceto metadata</li>
-</ul>
-</section>
-<section id="demo-time" class="slide level2">
-<h2>Demo time</h2>
-<p>…</p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
