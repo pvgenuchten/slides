@@ -1,0 +1,134 @@
+---
+title: SDI maintenance DevOps style
+subtitle: Inspired and facilitated by Open Source
+author: Paul van Genuchten
+date: 2024-07-03
+format:
+  revealjs:
+    incremental: true
+    theme: default
+    logo: ./img/logo-foss4g-tartu.png
+    footer: "2024 FOSS4G-Europe, Tartu, Estonia"
+    
+abstract:
+  At ISRIC - World Soil Information we increasingly maintain our data services through CI-CD pipelines configured via GIT. Both from the service as well as content perspective. The starting point are metadata records of our datasets being stored on GIT. With every change of a record, the relevant catalogues (pycsw) get updated and any relevant web services (mapserver) are updated. 
+  These pipelines are reproducable and there are never inconsistencies between catalogue content and the services. On top of that our users can directly report issues (or even improvement suggestions) through git.
+  The stack is build on proven OSGeo components. A tool pyGeoDataCrawler brings the power of GDAL and pygeometa to CI-CD scripting. It crawls files on a folder and extracts relevant metadata, then prepares a mapserver configuration for that folder, while updating the metadata with the relevant service url's.
+  Typical use cases for this stack are; a search interface to any file based data repository or a participatory data catalogue for a project. At the conference we hope to hear from you if any of these components could be relevant to your cases or if there are similar initiatives we can contribute to or benefit from.
+  What's next? At ISRIC we receive and ingest a lot of soil data from partners. To harmonize this data is a huge effort. Via automated pipelines and interaction with the submitters via git comments, we hope to improve also this aspect of the data management cycle.
+---
+
+# About me/us
+
+- At [ISRIC - World Soil Information](https://www.isric.org) we maintain a global reference soil sample collection. The foundation, located at Wageningen University, is funded by Dutch government. 
+- Soil data is typically collected as samples, being analysed in a lab. Predicting spatial distribution between sampling sites is a common challenge in Soil Sciences. 
+- ISRIC continuously collects soil data from various institutes to improve their global soil model of the world: [SoilGrids](https://www.isric.org/explore/soilgrids). 
+- I'm a DevOps engineer, maintaining the ISRIC SDI. I also train developers at national soil institutes in improving their SDI skills. 
+
+# Screen shots
+
+::: {.r-stack}
+![](./img/museum.jpg){.fragment width="800" }
+
+![](./img/collection.jpg){.fragment width="800"}
+
+![](./img/samples.jpg){.fragment width="800" }
+:::
+
+# SDI & Metadata
+
+- Metadata is data about data, it explains what the data is, its origin, its usage constraints and how to access it.
+- Metadata supports you, your colleagues, as well as the wider community.
+- Why isn't metadata the main topic of this conference?
+
+# Metadata in traditional SDI
+
+- Traditionally Geo teams are placed a bit aside from domain groups, focussing on spatial processing and creating maps
+- Geo has a strong focus on stadardisation due to its use of generic analysis tools and interactions with various domain groups
+- These are some factors resulting in limited metadata availability, complex formats and low maturity of software around metadata; causing low popularity of metadata 
+
+# Metadata in Soil Science, part 1
+
+- Soil data takes a long route as sample from the field up to re-use as a dataset
+- Metadata on the applied field and lab procedures is essential
+- Applied procedures are often taken for granted, but consider that approaches differ between groups and over time
+
+# Metadata in Soil Science, part 2
+
+- We've recently noticed an increased hesitance to share location specific soil data, metadata should clearly state the usage constraints of a dataset   
+- Machine learning models have increased opportunities to bulk load covariates, and assess later which ones best predict soil property distribution
+
+# Metadata should originate from where data is generated
+
+- My domain colleagues hardly generate metadata, at most a readme.txt in a folder
+- Fortunately some are confortable in storing their R-scripts in Git
+- My goal is to lure them into generating metadata, by offering easy to use tools, fitting their workflows, prevent duplicated efforts and show them the benefits
+
+# DevOps principles for tracability
+
+- Main principle of our approach is to extract metadata from a project repository at intervals and store it in GIT.
+- Metadata is extracted from data files, if no metadata for a file is detected
+- Domain experts are notified to update the generated metadata
+- When content is updated in GIT, it triggers ci-cd pipelines, which publish the metadata to an internal catalogue
+- Mapservices are being set up on the discovered data
+
+# Crawl a project repository
+
+- For ease of use, we've adopted the `pygeometa` metadata initiative. A YAML encoded subset of ISO19115.
+- A [geodatacrawler](https://pypi.org/project/geodatacrawler/) tool, builds on top of pygeometa and GDAL, which crawls the file structure at intervals
+- Crawled content is loaded into a searchable catalogue
+
+# pycsw; a catalogue respecting many metadata standards
+
+- You may know pycsw as a catalogue backend for GeoNode and CKAN, but it can also be used standalone
+- From v3.0 pycsw offers a html search interface through its OGCAPI - Records API endpoint
+- HTML is easy customisable using jinja2 templates
+
+# Screen shots
+
+::: {.r-stack}
+![](./img/iuss100/ejpsoil-catalogue.png){.fragment width="600" }
+
+![](./img/iuss100/lsc-hubs.png){.fragment width="500"}
+
+![](./img/iuss100/marvic.png){.fragment width="800" }
+:::
+
+
+# Publish Mapservices
+
+- The crawler tool generates Mapserver mapfiles for discovered files
+- Title, abstract, keywords, crs, bounds from the metadata are used in the mapfiles.
+- A SLD can be provided, which will be used for map styling.
+- Metadata is updated with the mapservice url
+
+# Building a data community?
+
+- All Metadata and ci-cd scripts are available in GIT
+- Anybody can raise an issue or pull request about an incorrect metadata file or mapserver configuration 
+- Personally I dislike feedback options by email, the approach from this presentation facilitates users like me. 
+
+# What's next?
+
+- ISRIC is participaing in the [SoilWise Horizon Europe Project](https://soilwise-he.eu)
+- The projects aims to improve discovery and harmonisation options of soil data between member states and research projects.
+- The project will extend the participatiory devops style SDI with  data harmonisation options:
+- One organisation uploads a dataset, another organisation shares it's ETL configuration to interact with that dataset.
+
+# Take aways
+
+- Git is an interesting platform to cooperate between colleagues and partners on a catalogue of datasets
+- Ci-cd pipelines facilitate bulk validation, harvesting, publication at changes or at intervals
+- An orchestration of micro services facilitates maintainability end flexibility
+- Inspired and facilitated by the open source cummunity
+
+# Read more
+
+- [mapserver.org](https://mapserver.org) v8.2
+- [pycsw.org](https://pycsw.org) v3.0b
+- [pyGeoDataCrawler](https://pypi.org/project/geodatacrawler/) v1.3
+- [OGCAPI - Records](https://ogcapi.org/#records) v1.0
+- [pygeometa](https://github.com/geopython/pygeometa)
+- An [SDI workshop](https://kenya.lsc-hubs.org/docs/developer/tutorial-data-management/) using this approach in the LSC-Hubs project
+
+- The [Soilwise-he](https://soilwise-he.eu) receives funding from the European Union’s HORIZON Innovation Actions 2022 under grant agreement No. 101112838 
