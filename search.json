@@ -105,6 +105,34 @@
     "text": "Read more?\n\npygeometa in the EJPSoil soil data assimilation cookbook\nLSC Hubs data workshop\npygeometa\nGeoDataCrawler"
   },
   {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#flow-chart",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#flow-chart",
+    "title": "A fun way to do spatial cataloguing",
+    "section": "Flow chart",
+    "text": "Flow chart\n\n\n\n\n\nflowchart TB\n    P[Project folder] --&gt;|Files| CI{{crawler}}\n    CI --&gt;|Extract metadata| P\n    CI --&gt; G[Git] \n    G --&gt; PYCSW"
+  },
+  {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#participatory-metadata-management",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#participatory-metadata-management",
+    "title": "A fun way to do spatial cataloguing",
+    "section": "Participatory metadata management",
+    "text": "Participatory metadata management\n\nUsers initially provided metadata as lists in excel\nMetadata is hosted in Github, users contribute content (or register issues)"
+  },
+  {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#metadata-as-a-source-for-mapserver-configuration",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#metadata-as-a-source-for-mapserver-configuration",
+    "title": "A fun way to do spatial cataloguing",
+    "section": "Metadata as a source for Mapserver configuration",
+    "text": "Metadata as a source for Mapserver configuration\n\nUse the metadata to generate map configuration\nAdd the generated map endpoint to the metadata\nMapserver is fully aligned with the catalogue"
+  },
+  {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#terriajs-a-webbased-gis",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#terriajs-a-webbased-gis",
+    "title": "A fun way to do spatial cataloguing",
+    "section": "TerriaJS, a webbased GIS",
+    "text": "TerriaJS, a webbased GIS\n\nThe project uses TerriaJS as a data viewer (react + leaflet/cesium)\nTerriaJS includes a Catalogue search as CSW and links back to the catalogue via wms capabilities\nExtra integration via ‘Add data to viewer’ from catalogue page"
+  },
+  {
     "objectID": "slides/abandoned-web.html#a-broken-link-from-a-report",
     "href": "slides/abandoned-web.html#a-broken-link-from-a-report",
     "title": "Abandonded Project Websites -> no",

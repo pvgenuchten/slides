@@ -354,15 +354,24 @@ Paul van Genuchten, Tom Kralidis
 
 <section id="intro-to-mcf-pygeometa" class="title-slide slide level1 center">
 <h1>Intro to mcf / pygeometa</h1>
-
+<ul>
+<li class="fragment">mcf is a format endorsed by the geopython community, maintained as part of the pygeometa library</li>
+<li class="fragment">It is yaml encoded subset of iso19115</li>
+<li class="fragment">Includes all (less known) aspects of YAML, such as includes and references</li>
+</ul>
 </section>
 
-<section id="ci-cd-to-publish-to-a-catalogue" class="title-slide slide level1 center">
-<h1>CI-CD to publish to a catalogue</h1>
+<section>
+<section id="from-sidecar-yaml-files-to-publications-in-a-catalogue" class="title-slide slide level1 center">
+<h1>From sidecar yaml files to publications in a catalogue</h1>
 <ul>
+<li class="fragment">mcf is converted to iso19115 using pygeometa and then loaded on a catalogue</li>
 <li class="fragment">pycsw a standards based catalogue component (postgres backend)</li>
 <li class="fragment">Supports OGC API Records, various metadata models, faceted search</li>
 </ul>
+</section>
+<section id="flow-chart" class="slide level2">
+<h2>Flow chart</h2>
 <div class="cell" data-reveal="true" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -379,10 +388,9 @@ Paul van Genuchten, Tom Kralidis
 </div>
 </div>
 </div>
-</section>
-
-<section id="how-is-mcf-percieved-by-typical-users" class="title-slide slide level1 center">
-<h1>How is MCF percieved by typical users?</h1>
+</section></section>
+<section id="how-is-mcf-perceived-by-less-tech-oriented-users" class="title-slide slide level1 center">
+<h1>How is MCF perceived by less tech oriented users?</h1>
 <ul>
 <li class="fragment">Typical users expect shiny webforms, like linked-in, facebook</li>
 <li class="fragment">Not used to YAML syntax and git CI-CD workflows</li>
@@ -390,34 +398,55 @@ Paul van Genuchten, Tom Kralidis
 </ul>
 </section>
 
-<section id="land-soil-crop-hubs" class="title-slide slide level1 center">
-<h1>Land Soil Crop hubs</h1>
+<section id="how-is-mcf-perceived-by-tech-oriented-users" class="title-slide slide level1 center">
+<h1>How is MCF perceived by tech oriented users?</h1>
 <ul>
-<li class="fragment">An example of a catalogue using the MCF approach</li>
-<li class="fragment">Collect resources which are relevant to agriculture in East Africa</li>
-<li class="fragment">Users initially provided metadata as lists in excel</li>
-<li class="fragment">Metadata is hosted in Github, users contribute content (and register issues)</li>
+<li class="fragment">YAML is an optimal format for GIT versioning (fixed indents)</li>
+<li class="fragment">Git offers a fully traceable catalogue (who did what when)</li>
+<li class="fragment">File based metadata is easy to update with <code>search-and-replace</code></li>
 </ul>
 </section>
 
-<section id="metadata-as-a-source-for-mapserver-configuration" class="title-slide slide level1 center">
-<h1>Metadata as a source for Mapserver configuration</h1>
+<section id="use-cases" class="title-slide slide level1 center">
+<h1>2 use cases</h1>
+<p>We’ll present 2 use cases, to show the value of this approach</p>
+<ul>
+<li class="fragment">Land Soil Crop Hubs</li>
+<li class="fragment">WMO Information System (WIS2)</li>
+</ul>
+</section>
+
+<section>
+<section id="land-soil-crop-hubs" class="title-slide slide level1 center">
+<h1>Land Soil Crop hubs</h1>
+<ul>
+<li class="fragment">An EU funded project to improve data sharing in the Land Soil Crop domain in East Africa</li>
+<li class="fragment">Collect resources which are relevant to agriculture in East Africa</li>
+</ul>
+</section>
+<section id="participatory-metadata-management" class="slide level2">
+<h2>Participatory metadata management</h2>
+<ul>
+<li class="fragment">Users initially provided metadata as lists in excel</li>
+<li class="fragment">Metadata is hosted in Github, users contribute content (or register issues)</li>
+</ul>
+</section>
+<section id="metadata-as-a-source-for-mapserver-configuration" class="slide level2">
+<h2>Metadata as a source for Mapserver configuration</h2>
 <ul>
 <li class="fragment">Use the metadata to generate map configuration</li>
 <li class="fragment">Add the generated map endpoint to the metadata</li>
 <li class="fragment">Mapserver is fully aligned with the catalogue</li>
 </ul>
 </section>
-
-<section id="terriajs-a-webbased-gis" class="title-slide slide level1 center">
-<h1>TerriaJS, a webbased GIS</h1>
+<section id="terriajs-a-webbased-gis" class="slide level2">
+<h2>TerriaJS, a webbased GIS</h2>
 <ul>
 <li class="fragment">The project uses TerriaJS as a data viewer (react + leaflet/cesium)</li>
 <li class="fragment">TerriaJS includes a Catalogue search as CSW and links back to the catalogue via wms capabilities</li>
 <li class="fragment">Extra integration via ‘Add data to viewer’ from catalogue page</li>
 </ul>
-</section>
-
+</section></section>
 <section id="wmo-information-system-wis2" class="title-slide slide level1 center">
 <h1>WMO Information System (WIS2)</h1>
 <ul>
