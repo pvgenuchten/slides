@@ -6,7 +6,7 @@ date: 2024-07-03
 format:
   revealjs:
     incremental: true
-    theme: default
+    theme: simple
     logo: ./img/logo-foss4g-tartu.png
     footer: "2024 FOSS4G-Europe, Tartu, Estonia"
 ---
@@ -19,12 +19,17 @@ format:
 
 # Intro to mcf / pygeometa
 
+- mcf is a format endorsed by the geopython community, maintained as part of the pygeometa library
+- It is yaml encoded subset of iso19115
+- Includes all (less known) aspects of YAML, such as includes and references
 
+# From sidecar yaml files to publications in a catalogue
 
-# CI-CD to publish to a catalogue
-
+- mcf is converted to iso19115 using pygeometa and then loaded on a catalogue
 - pycsw a standards based catalogue component (postgres backend)
 - Supports OGC API Records, various metadata models, faceted search 
+
+## Flow chart
 ```{mermaid}
 flowchart TB
     P[Project folder] -->|Files| CI{{crawler}}
@@ -34,26 +39,42 @@ flowchart TB
 ```
 
 
-# How is MCF percieved by typical users?
+# How is MCF perceived by less tech oriented users?
 
 - Typical users expect shiny webforms, like linked-in, facebook
 - Not used to YAML syntax and git CI-CD workflows
 - That's  where the MDME initiative came up
 
+# How is MCF perceived by tech oriented users?
+
+- YAML is an optimal format for GIT versioning (fixed indents)
+- Git offers a fully traceable catalogue (who did what when)
+- File based metadata is easy to update with `search-and-replace` 
+
+# 2 use cases
+
+We'll present 2 use cases, to show the value of this approach
+
+- Land Soil Crop Hubs
+- WMO Information System (WIS2)
+
 # Land Soil Crop hubs
 
-- An example of a catalogue using the MCF approach
+- An EU funded project to improve data sharing in the Land Soil Crop domain in East Africa
 - Collect resources which are relevant to agriculture in East Africa
-- Users initially provided metadata as lists in excel
-- Metadata is hosted in Github, users contribute content (and register issues)
 
-# Metadata as a source for Mapserver configuration
+## Participatory metadata management
+
+- Users initially provided metadata as lists in excel
+- Metadata is hosted in Github, users contribute content (or register issues)
+
+## Metadata as a source for Mapserver configuration
 
 - Use the metadata to generate map configuration 
 - Add the generated map endpoint to the metadata
 - Mapserver is fully aligned with the catalogue
 
-# TerriaJS, a webbased GIS
+## TerriaJS, a webbased GIS
 
 - The project uses TerriaJS as a data viewer (react + leaflet/cesium)
 - TerriaJS includes a Catalogue search as CSW and links back to the catalogue via wms capabilities
