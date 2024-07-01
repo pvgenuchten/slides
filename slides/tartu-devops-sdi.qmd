@@ -6,7 +6,7 @@ date: 2024-07-03
 format:
   revealjs:
     incremental: true
-    theme: default
+    theme: sky
     logo: ./img/logo-foss4g-tartu.png
     footer: "2024 FOSS4G-Europe, Tartu, Estonia"
     

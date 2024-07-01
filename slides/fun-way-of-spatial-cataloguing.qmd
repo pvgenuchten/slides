@@ -1,12 +1,12 @@
 ---
 title: A fun way to do spatial cataloguing 
-subtitle: cataloguing and publishing using pygeometa and mdme
+subtitle: data discovery using pygeometa and mdme
 author: Paul van Genuchten, Tom Kralidis
 date: 2024-07-03
 format:
   revealjs:
     incremental: true
-    theme: simple
+    theme: sky
     logo: ./img/logo-foss4g-tartu.png
     footer: "2024 FOSS4G-Europe, Tartu, Estonia"
 ---
