@@ -1,6 +1,6 @@
 ---
 title: A fun way to do spatial cataloguing 
-subtitle: data discovery using pygeometa and mdme
+subtitle: Data discovery using pygeometa and mdme
 author: Paul van Genuchten, Tom Kralidis
 date: 2024-07-03
 format:
@@ -8,7 +8,7 @@ format:
     incremental: true
     theme: sky
     logo: ./img/logo-foss4g-tartu.png
-    footer: "2024 FOSS4G-Europe, Tartu, Estonia"
+    footer: "FOSS4G Europe 2024, Tartu, Estonia"
 ---
 
 # About us
@@ -29,31 +29,23 @@ format:
 
 # Intro to pygeometa
 
-- mcf is a format endorsed by the [pygeometa](https://geopython.github.io/pygeometa/) library
-- A yaml encoded model, inspired by ISO19115
-- pygeometa converts from and to various metadata models
+- [pygeometa](https://geopython.github.io/pygeometa) is a Python package to generate metadata for geospatial datasets 
+- [metadata control file (MCF)](https://geopython.github.io/pygeometa/reference/mcf) is a format endorsed by the geopython community, defined and maintained as part of the pygeometa library
+  - YAML encoded subset of ISO 19115
+  - Supports YAML features such as references and includes
 
-# From MCF to publication in a catalogue
+
+# From MCF to catalogue
 
 - MCF is converted to iso19115 using pygeometa and then loaded on a catalogue
-- pycsw is a standards based catalogue component 
-- pycsw supports OGC API Records, various metadata models, faceted search 
-
-## Flow chart
-```{mermaid}
-flowchart LR
-    P[Project folder] -->|Files| CI{{crawler}}
-    CI -->|Extract metadata| P
-    CI --> G[Git] 
-    G --> PYCSW
-```
-
+- [pycsw](https://pycsw.org) a standards based catalogue component (PostgreSQL backend)
+- Supports [OGC API - Records](), various metadata models, faceted search  
 
 # Colleagues like MCF?
 
 - Some expect shiny webforms, like linked-in, facebook
 - Not used to YAML syntax and git CI-CD workflows
-- That's  where the MDME initiative came up
+- Enter [mdme](https://github.com/osgeo/mdme), the Model Driven Metadata Editor / web application for geospatial metadata editing
 
 # MDME, web editor for MCF
 
@@ -63,13 +55,14 @@ flowchart LR
 
 # Tech colleagues like MCF?
 
-- YAML is an optimal format for GIT versioning 
+- YAML is an optimal format for Git version control 
 - Git offers a fully traceable catalogue
-- File based metadata is easy to update with `search-and-replace` 
+- File based metadata is easy to update with "search and replace"  
+- YAML can be composed and published in memory for automated pipelines
 
-# 2 use cases
+# Metadata publication use cases
 
-We'll present 2 use cases, to show the use of this approach
+We present 2 use cases to demonstrate the value of this approach:
 
 - Land Soil Crop Hubs
 - WMO Information System (WIS2)
@@ -81,19 +74,21 @@ We'll present 2 use cases, to show the use of this approach
 
 ## Participatory metadata management
 
-- Users initially provided metadata as lists in excel
-- Metadata is hosted in Github, users contribute content (or register issues)
+- Users initially provided metadata as lists in Microsoft Excel
+- Metadata is hosted in GitHub
+- Users contribute content (or register issues about content)
 
-## Metadata as a source for Mapserver configuration
+## Metadata for MapServer configuration
 
-- Metadata is used to generate map configuration 
-- The mapserver endpoint is added to the metadata
-- Mapserver is fully aligned with the catalogue
+- Use the metadata to generate [MapServer](https://mapserver.org) mapfile configuration 
+- Add the generated map endpoint to the metadata
+- MapServer is fully aligned with the catalogue
 
-## TerriaJS, a webbased GIS
+## TerriaJS, a web-based GIS
 
-- The project uses TerriaJS as a data viewer
-- TerriaJS includes a Catalogue search as CSW and can link back to the catalogue via wms capabilities
+- The project uses [TerriaJS](https://terria.io) as a data viewer
+- TerriaJS includes a CSW Catalogue search and links back to the catalogue via WMS capabilities
+- Extra integration via 'Add data to viewer' from catalogue page
 
 ## TerriaJS
 
@@ -101,19 +96,34 @@ We'll present 2 use cases, to show the use of this approach
 
 # WMO Information System (WIS2)
 
+- [WMO WIS2](https://community.wmo.int/en/activity-areas/wis/wis2-implementation) is a next generation data exchange system for Earth system data (weather/climate/water)
+- Event driven (Pub/Sub, MQTT), driven by OGC API - Records metadata and publication
 - Set of tools adopted by regional weather offices to build up a global system
+
+## Workflow
+
+"No code": Manage, verify and publish metadata using GitHub as a content management platform.
+
+- Metadata files are managed as pygeometa MCF records
+- GitHub Actions are used to verify, transform and publish notification messages to an MQTT broker
+- From here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by [pygeoapi](https://pygeoapi.io)) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client.
+
+## Workflow
+
+![](./img/wis2-metadata-github-pubsub-workflow.png){.fragment width="600" }
 
 # Take aways
 
-- MCF is an interesting metadata format for local file repositories
-- Git and CI-CD workflows offer a traceable, participatory approach for metadata management
-- OGCAPI records (in for example pycsw) offers a clean machine and human friendly interface to metadata
+- MCF is an interesting and useful metadata format for embedded metadata in local file repositories
+- Git storage and CI-CD workflows are a traceable, reproducible and participatory approach for metadata management
+- OGC API - Records (in for example pycsw) offers a clean machine and human friendly interface to metadata
 
-# Read more
+## References
 
 - [pygeometa](https://github.com/geopython/pygeometa)
 - [pycsw.org](https://pycsw.org) v3.0b
 - [pyGeoDataCrawler](https://pypi.org/project/geodatacrawler/) v1.3
 - [OGCAPI - Records](https://ogcapi.org/#records) v1.0
 - [mapserver.org](https://mapserver.org) v8.2
+- [terria.io](https://terria.io)
 
