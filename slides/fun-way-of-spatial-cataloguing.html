@@ -8,7 +8,7 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.52">
+  <meta name="generator" content="quarto-1.5.53">
 
   <meta name="author" content="Paul van Genuchten, Tom Kralidis">
   <meta name="dcterms.date" content="2024-07-03">
@@ -30,6 +30,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -321,9 +386,6 @@
       margin-right: 0; 
     }
   </style>
-  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -343,21 +405,29 @@ Paul van Genuchten, Tom Kralidis
 
   <p class="date">2024-07-03</p>
 </section>
-<section id="a-fun-way-to-do-spatial-cataloguing" class="title-slide slide level1 center">
-<h1>A fun way to do spatial cataloguing</h1>
+<section id="about-us" class="title-slide slide level1 center">
+<h1>About us</h1>
 <ul>
-<li class="fragment">we all know the edit-me-on-git link in modern websites/wikis</li>
-<li class="fragment">anybody can contribute, contributions are traceable, easily restore if things break</li>
-<li class="fragment">we want that experience for spatial cataloguing</li>
+<li class="fragment">Paul van Genuchten, SDI specialist at <code>ISRIC - World Soil Information</code>, the Netherlands</li>
+<li class="fragment">Tom Kralidis, board member at OSGeo, WMO data scientist at ECCC, Canada</li>
 </ul>
 </section>
 
-<section id="intro-to-mcf-pygeometa" class="title-slide slide level1 center">
-<h1>Intro to mcf / pygeometa</h1>
+<section id="lets-start-with-a-demo-what-if" class="title-slide slide level1 center">
+<h1>Let’s start with a demo, what if…</h1>
+<div class="r-stack">
+<p><img data-src="./img/fun-md/browse.png" class="fragment" width="800"></p>
+<p><img data-src="./img/fun-md/edit.png" class="fragment" width="800"></p>
+<p><img data-src="./img/fun-md/history.png" class="fragment" width="800"></p>
+</div>
+</section>
+
+<section id="intro-to-pygeometamcf" class="title-slide slide level1 center">
+<h1>Intro to pygeometa/mcf</h1>
 <ul>
 <li class="fragment">mcf is a format endorsed by the geopython community, maintained as part of the pygeometa library</li>
-<li class="fragment">It is yaml encoded subset of iso19115</li>
-<li class="fragment">Includes all (less known) aspects of YAML, such as includes and references</li>
+<li class="fragment">It is yaml encoded model, inspired by ISO19115</li>
+<li class="fragment">pygeometa converts from and to various metadata models</li>
 </ul>
 </section>
 
@@ -366,31 +436,20 @@ Paul van Genuchten, Tom Kralidis
 <h1>From sidecar yaml files to publications in a catalogue</h1>
 <ul>
 <li class="fragment">mcf is converted to iso19115 using pygeometa and then loaded on a catalogue</li>
-<li class="fragment">pycsw a standards based catalogue component (postgres backend)</li>
-<li class="fragment">Supports OGC API Records, various metadata models, faceted search</li>
+<li class="fragment">pycsw is a standards based catalogue component</li>
+<li class="fragment">pycsw supports OGC API Records, various metadata models, faceted search</li>
 </ul>
 </section>
 <section id="flow-chart" class="slide level2">
 <h2>Flow chart</h2>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TB
-    P[Project folder] --&gt;|Files| CI{{crawler}}
-    CI --&gt;|Extract metadata| P
-    CI --&gt; G[Git] 
-    G --&gt; PYCSW
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
+<div class="sourceCode" id="cb1" width="800"><pre class="sourceCode numberSource {mermaid} number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a></a>flowchart LR</span>
+<span id="cb1-2"><a></a>    P[Project folder] --&gt;|Files| CI{{crawler}}</span>
+<span id="cb1-3"><a></a>    CI --&gt;|Extract metadata| P</span>
+<span id="cb1-4"><a></a>    CI --&gt; G[Git] </span>
+<span id="cb1-5"><a></a>    G --&gt; PYCSW</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section></section>
-<section id="how-is-mcf-perceived-by-less-tech-oriented-users" class="title-slide slide level1 center">
-<h1>How is MCF perceived by less tech oriented users?</h1>
+<section id="how-is-mcfyaml-perceived-by-non-tech-users" class="title-slide slide level1 center">
+<h1>How is MCF/YAML perceived by non tech users?</h1>
 <ul>
 <li class="fragment">Typical users expect shiny webforms, like linked-in, facebook</li>
 <li class="fragment">Not used to YAML syntax and git CI-CD workflows</li>
@@ -398,11 +457,16 @@ Paul van Genuchten, Tom Kralidis
 </ul>
 </section>
 
+<section id="mdme-a-generic-web-editor-for-mcf" class="title-slide slide level1 center">
+<h1>MDME, a generic web editor for MCF</h1>
+
+<img data-src="./img/fun-md/mdme.png" width="800" class="r-stretch quarto-figure-center"><p class="caption">mdme</p></section>
+
 <section id="how-is-mcf-perceived-by-tech-oriented-users" class="title-slide slide level1 center">
 <h1>How is MCF perceived by tech oriented users?</h1>
 <ul>
-<li class="fragment">YAML is an optimal format for GIT versioning (fixed indents)</li>
-<li class="fragment">Git offers a fully traceable catalogue (who did what when)</li>
+<li class="fragment">YAML is an optimal format for GIT versioning</li>
+<li class="fragment">Git offers a fully traceable catalogue</li>
 <li class="fragment">File based metadata is easy to update with <code>search-and-replace</code></li>
 </ul>
 </section>
@@ -420,8 +484,8 @@ Paul van Genuchten, Tom Kralidis
 <section id="land-soil-crop-hubs" class="title-slide slide level1 center">
 <h1>Land Soil Crop hubs</h1>
 <ul>
-<li class="fragment">An EU funded project to improve data sharing in the Land Soil Crop domain in East Africa</li>
-<li class="fragment">Collect resources which are relevant to agriculture in East Africa</li>
+<li class="fragment">An EU funded research project to improve data sharing in the Land Soil Crop domain in East Africa</li>
+<li class="fragment">Share resources which are relevant to agriculture in East Africa</li>
 </ul>
 </section>
 <section id="participatory-metadata-management" class="slide level2">
@@ -434,19 +498,22 @@ Paul van Genuchten, Tom Kralidis
 <section id="metadata-as-a-source-for-mapserver-configuration" class="slide level2">
 <h2>Metadata as a source for Mapserver configuration</h2>
 <ul>
-<li class="fragment">Use the metadata to generate map configuration</li>
-<li class="fragment">Add the generated map endpoint to the metadata</li>
+<li class="fragment">Metadata is used to generate map configuration</li>
+<li class="fragment">The mapserver endpoint is added to the metadata</li>
 <li class="fragment">Mapserver is fully aligned with the catalogue</li>
 </ul>
 </section>
 <section id="terriajs-a-webbased-gis" class="slide level2">
 <h2>TerriaJS, a webbased GIS</h2>
 <ul>
-<li class="fragment">The project uses TerriaJS as a data viewer (react + leaflet/cesium)</li>
-<li class="fragment">TerriaJS includes a Catalogue search as CSW and links back to the catalogue via wms capabilities</li>
-<li class="fragment">Extra integration via ‘Add data to viewer’ from catalogue page</li>
+<li class="fragment">The project uses TerriaJS as a data viewer</li>
+<li class="fragment">TerriaJS includes a Catalogue search as CSW and can link back to the catalogue via wms capabilities</li>
 </ul>
-</section></section>
+</section>
+<section id="terriajs" class="slide level2">
+<h2>TerriaJS</h2>
+
+<img data-src="./img/fun-md/terria.png" width="800" class="r-stretch quarto-figure-center"><p class="caption">terria</p></section></section>
 <section id="wmo-information-system-wis2" class="title-slide slide level1 center">
 <h1>WMO Information System (WIS2)</h1>
 <ul>
@@ -457,15 +524,21 @@ Paul van Genuchten, Tom Kralidis
 <section id="take-aways" class="title-slide slide level1 center">
 <h1>Take aways</h1>
 <ul>
-<li class="fragment">MCF is an interesting metadata format for embedded metadata in local file repositories</li>
-<li class="fragment">Git storage and CI-CD workflows are traceable, participatory approach for metadata management</li>
-<li class="fragment">OGCAPI records (in for example pycsw) offers a clean machine and human friendly interfaceto metadata</li>
+<li class="fragment">MCF is an interesting metadata format for local file repositories</li>
+<li class="fragment">Git and CI-CD workflows offer a traceable, participatory approach for metadata management</li>
+<li class="fragment">OGCAPI records (in for example pycsw) offers a clean machine and human friendly interface to metadata</li>
 </ul>
 </section>
 
-<section id="demo-time" class="title-slide slide level1 center">
-<h1>Demo time</h1>
-<p>…</p>
+<section id="read-more" class="title-slide slide level1 center">
+<h1>Read more</h1>
+<ul>
+<li class="fragment"><a href="https://github.com/geopython/pygeometa">pygeometa</a></li>
+<li class="fragment"><a href="https://pycsw.org">pycsw.org</a> v3.0b</li>
+<li class="fragment"><a href="https://pypi.org/project/geodatacrawler/">pyGeoDataCrawler</a> v1.3</li>
+<li class="fragment"><a href="https://ogcapi.org/#records">OGCAPI - Records</a> v1.0</li>
+<li class="fragment"><a href="https://mapserver.org">mapserver.org</a> v8.2</li>
+</ul>
 
 <div class="quarto-auto-generated-content">
 <p><img src="./img/logo-foss4g-tartu.png" class="slide-logo"></p>
