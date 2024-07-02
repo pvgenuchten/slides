@@ -30,71 +30,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -386,6 +321,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -413,8 +351,8 @@ Paul van Genuchten, Tom Kralidis
 </ul>
 </section>
 
-<section id="lets-start-with-a-demo-what-if" class="title-slide slide level1 center">
-<h1>Let’s start with a demo, what if…</h1>
+<section id="what-if" class="title-slide slide level1 center">
+<h1>What if…</h1>
 <div class="r-stack">
 <p><img data-src="./img/fun-md/browse.png" class="fragment" width="800"></p>
 <p><img data-src="./img/fun-md/edit.png" class="fragment" width="800"></p>
@@ -422,48 +360,60 @@ Paul van Genuchten, Tom Kralidis
 </div>
 </section>
 
-<section id="intro-to-pygeometamcf" class="title-slide slide level1 center">
-<h1>Intro to pygeometa/mcf</h1>
+<section id="intro-to-pygeometa" class="title-slide slide level1 center">
+<h1>Intro to pygeometa</h1>
 <ul>
-<li class="fragment">mcf is a format endorsed by the geopython community, maintained as part of the pygeometa library</li>
-<li class="fragment">It is yaml encoded model, inspired by ISO19115</li>
+<li class="fragment">mcf is a format endorsed by the <a href="https://geopython.github.io/pygeometa/">pygeometa</a> library</li>
+<li class="fragment">A yaml encoded model, inspired by ISO19115</li>
 <li class="fragment">pygeometa converts from and to various metadata models</li>
 </ul>
 </section>
 
 <section>
-<section id="from-sidecar-yaml-files-to-publications-in-a-catalogue" class="title-slide slide level1 center">
-<h1>From sidecar yaml files to publications in a catalogue</h1>
+<section id="from-mcf-to-publication-in-a-catalogue" class="title-slide slide level1 center">
+<h1>From MCF to publication in a catalogue</h1>
 <ul>
-<li class="fragment">mcf is converted to iso19115 using pygeometa and then loaded on a catalogue</li>
+<li class="fragment">MCF is converted to iso19115 using pygeometa and then loaded on a catalogue</li>
 <li class="fragment">pycsw is a standards based catalogue component</li>
 <li class="fragment">pycsw supports OGC API Records, various metadata models, faceted search</li>
 </ul>
 </section>
 <section id="flow-chart" class="slide level2">
 <h2>Flow chart</h2>
-<div class="sourceCode" id="cb1" width="800"><pre class="sourceCode numberSource {mermaid} number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a></a>flowchart LR</span>
-<span id="cb1-2"><a></a>    P[Project folder] --&gt;|Files| CI{{crawler}}</span>
-<span id="cb1-3"><a></a>    CI --&gt;|Extract metadata| P</span>
-<span id="cb1-4"><a></a>    CI --&gt; G[Git] </span>
-<span id="cb1-5"><a></a>    G --&gt; PYCSW</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    P[Project folder] --&gt;|Files| CI{{crawler}}
+    CI --&gt;|Extract metadata| P
+    CI --&gt; G[Git] 
+    G --&gt; PYCSW
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section></section>
-<section id="how-is-mcfyaml-perceived-by-non-tech-users" class="title-slide slide level1 center">
-<h1>How is MCF/YAML perceived by non tech users?</h1>
+<section id="colleagues-like-mcf" class="title-slide slide level1 center">
+<h1>Colleagues like MCF?</h1>
 <ul>
-<li class="fragment">Typical users expect shiny webforms, like linked-in, facebook</li>
+<li class="fragment">Some expect shiny webforms, like linked-in, facebook</li>
 <li class="fragment">Not used to YAML syntax and git CI-CD workflows</li>
 <li class="fragment">That’s where the MDME initiative came up</li>
 </ul>
 </section>
 
-<section id="mdme-a-generic-web-editor-for-mcf" class="title-slide slide level1 center">
-<h1>MDME, a generic web editor for MCF</h1>
+<section id="mdme-web-editor-for-mcf" class="title-slide slide level1 center">
+<h1>MDME, web editor for MCF</h1>
 
-<img data-src="./img/fun-md/mdme.png" width="800" class="r-stretch quarto-figure-center"><p class="caption">mdme</p></section>
+<img data-src="./img/fun-md/mdme.png" width="800" class="r-stretch quarto-figure-center"><p class="caption">mdme</p><p><a href="https://osgeo.github.io/mdme">osgeo.github.io/mdme</a></p>
+</section>
 
-<section id="how-is-mcf-perceived-by-tech-oriented-users" class="title-slide slide level1 center">
-<h1>How is MCF perceived by tech oriented users?</h1>
+<section id="tech-colleagues-like-mcf" class="title-slide slide level1 center">
+<h1>Tech colleagues like MCF?</h1>
 <ul>
 <li class="fragment">YAML is an optimal format for GIT versioning</li>
 <li class="fragment">Git offers a fully traceable catalogue</li>
@@ -473,7 +423,7 @@ Paul van Genuchten, Tom Kralidis
 
 <section id="use-cases" class="title-slide slide level1 center">
 <h1>2 use cases</h1>
-<p>We’ll present 2 use cases, to show the value of this approach</p>
+<p>We’ll present 2 use cases, to show the use of this approach</p>
 <ul>
 <li class="fragment">Land Soil Crop Hubs</li>
 <li class="fragment">WMO Information System (WIS2)</li>
@@ -513,7 +463,7 @@ Paul van Genuchten, Tom Kralidis
 <section id="terriajs" class="slide level2">
 <h2>TerriaJS</h2>
 
-<img data-src="./img/fun-md/terria.png" width="800" class="r-stretch quarto-figure-center"><p class="caption">terria</p></section></section>
+<img data-src="./img/fun-md/terria.png" width="800" class="r-stretch quarto-figure-center"><p class="caption">TerriaJS</p></section></section>
 <section id="wmo-information-system-wis2" class="title-slide slide level1 center">
 <h1>WMO Information System (WIS2)</h1>
 <ul>
