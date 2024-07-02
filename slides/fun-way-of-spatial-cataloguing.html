@@ -321,9 +321,6 @@
       margin-right: 0; 
     }
   </style>
-  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -331,7 +328,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">A fun way to do spatial cataloguing</h1>
-  <p class="subtitle">data discovery using pygeometa and mdme</p>
+  <p class="subtitle">Data discovery using pygeometa and mdme</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -363,46 +360,30 @@ Paul van Genuchten, Tom Kralidis
 <section id="intro-to-pygeometa" class="title-slide slide level1 center">
 <h1>Intro to pygeometa</h1>
 <ul>
-<li class="fragment">mcf is a format endorsed by the <a href="https://geopython.github.io/pygeometa/">pygeometa</a> library</li>
-<li class="fragment">A yaml encoded model, inspired by ISO19115</li>
-<li class="fragment">pygeometa converts from and to various metadata models</li>
+<li class="fragment"><a href="https://geopython.github.io/pygeometa">pygeometa</a> is a Python package to generate metadata for geospatial datasets</li>
+<li class="fragment"><a href="https://geopython.github.io/pygeometa/reference/mcf">metadata control file (MCF)</a> is a format endorsed by the geopython community, defined and maintained as part of the pygeometa library
+<ul>
+<li class="fragment">YAML encoded subset of ISO 19115</li>
+<li class="fragment">Supports YAML features such as references and includes</li>
+</ul></li>
 </ul>
 </section>
 
-<section>
-<section id="from-mcf-to-publication-in-a-catalogue" class="title-slide slide level1 center">
-<h1>From MCF to publication in a catalogue</h1>
+<section id="from-mcf-to-catalogue" class="title-slide slide level1 center">
+<h1>From MCF to catalogue</h1>
 <ul>
 <li class="fragment">MCF is converted to iso19115 using pygeometa and then loaded on a catalogue</li>
-<li class="fragment">pycsw is a standards based catalogue component</li>
-<li class="fragment">pycsw supports OGC API Records, various metadata models, faceted search</li>
+<li class="fragment"><a href="https://pycsw.org">pycsw</a> a standards based catalogue component (PostgreSQL backend)</li>
+<li class="fragment">Supports <a href="">OGC API - Records</a>, various metadata models, faceted search</li>
 </ul>
 </section>
-<section id="flow-chart" class="slide level2">
-<h2>Flow chart</h2>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-    P[Project folder] --&gt;|Files| CI{{crawler}}
-    CI --&gt;|Extract metadata| P
-    CI --&gt; G[Git] 
-    G --&gt; PYCSW
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section></section>
+
 <section id="colleagues-like-mcf" class="title-slide slide level1 center">
 <h1>Colleagues like MCF?</h1>
 <ul>
 <li class="fragment">Some expect shiny webforms, like linked-in, facebook</li>
 <li class="fragment">Not used to YAML syntax and git CI-CD workflows</li>
-<li class="fragment">That’s where the MDME initiative came up</li>
+<li class="fragment">Enter <a href="https://github.com/osgeo/mdme">mdme</a>, the Model Driven Metadata Editor / web application for geospatial metadata editing</li>
 </ul>
 </section>
 
@@ -415,15 +396,17 @@ Paul van Genuchten, Tom Kralidis
 <section id="tech-colleagues-like-mcf" class="title-slide slide level1 center">
 <h1>Tech colleagues like MCF?</h1>
 <ul>
-<li class="fragment">YAML is an optimal format for GIT versioning</li>
+<li class="fragment">YAML is an optimal format for Git version control</li>
 <li class="fragment">Git offers a fully traceable catalogue</li>
-<li class="fragment">File based metadata is easy to update with <code>search-and-replace</code></li>
+<li class="fragment">File based metadata is easy to update with “search and replace”<br>
+</li>
+<li class="fragment">YAML can be composed and published in memory for automated pipelines</li>
 </ul>
 </section>
 
-<section id="use-cases" class="title-slide slide level1 center">
-<h1>2 use cases</h1>
-<p>We’ll present 2 use cases, to show the use of this approach</p>
+<section id="metadata-publication-use-cases" class="title-slide slide level1 center">
+<h1>Metadata publication use cases</h1>
+<p>We present 2 use cases to demonstrate the value of this approach:</p>
 <ul>
 <li class="fragment">Land Soil Crop Hubs</li>
 <li class="fragment">WMO Information System (WIS2)</li>
@@ -441,62 +424,80 @@ Paul van Genuchten, Tom Kralidis
 <section id="participatory-metadata-management" class="slide level2">
 <h2>Participatory metadata management</h2>
 <ul>
-<li class="fragment">Users initially provided metadata as lists in excel</li>
-<li class="fragment">Metadata is hosted in Github, users contribute content (or register issues)</li>
+<li class="fragment">Users initially provided metadata as lists in Microsoft Excel</li>
+<li class="fragment">Metadata is hosted in GitHub</li>
+<li class="fragment">Users contribute content (or register issues about content)</li>
 </ul>
 </section>
-<section id="metadata-as-a-source-for-mapserver-configuration" class="slide level2">
-<h2>Metadata as a source for Mapserver configuration</h2>
+<section id="metadata-for-mapserver-configuration" class="slide level2">
+<h2>Metadata for MapServer configuration</h2>
 <ul>
-<li class="fragment">Metadata is used to generate map configuration</li>
-<li class="fragment">The mapserver endpoint is added to the metadata</li>
-<li class="fragment">Mapserver is fully aligned with the catalogue</li>
+<li class="fragment">Use the metadata to generate <a href="https://mapserver.org">MapServer</a> mapfile configuration</li>
+<li class="fragment">Add the generated map endpoint to the metadata</li>
+<li class="fragment">MapServer is fully aligned with the catalogue</li>
 </ul>
 </section>
-<section id="terriajs-a-webbased-gis" class="slide level2">
-<h2>TerriaJS, a webbased GIS</h2>
+<section id="terriajs-a-web-based-gis" class="slide level2">
+<h2>TerriaJS, a web-based GIS</h2>
 <ul>
-<li class="fragment">The project uses TerriaJS as a data viewer</li>
-<li class="fragment">TerriaJS includes a Catalogue search as CSW and can link back to the catalogue via wms capabilities</li>
+<li class="fragment">The project uses <a href="https://terria.io">TerriaJS</a> as a data viewer</li>
+<li class="fragment">TerriaJS includes a CSW Catalogue search and links back to the catalogue via WMS capabilities</li>
+<li class="fragment">Extra integration via ‘Add data to viewer’ from catalogue page</li>
 </ul>
 </section>
 <section id="terriajs" class="slide level2">
 <h2>TerriaJS</h2>
 
 <img data-src="./img/fun-md/terria.png" width="800" class="r-stretch quarto-figure-center"><p class="caption">TerriaJS</p></section></section>
+<section>
 <section id="wmo-information-system-wis2" class="title-slide slide level1 center">
 <h1>WMO Information System (WIS2)</h1>
 <ul>
+<li class="fragment"><a href="https://community.wmo.int/en/activity-areas/wis/wis2-implementation">WMO WIS2</a> is a next generation data exchange system for Earth system data (weather/climate/water)</li>
+<li class="fragment">Event driven (Pub/Sub, MQTT), driven by OGC API - Records metadata and publication</li>
 <li class="fragment">Set of tools adopted by regional weather offices to build up a global system</li>
 </ul>
 </section>
+<section id="workflow" class="slide level2">
+<h2>Workflow</h2>
+<p>“No code”: Manage, verify and publish metadata using GitHub as a content management platform.</p>
+<ul>
+<li class="fragment">Metadata files are managed as pygeometa MCF records</li>
+<li class="fragment">GitHub Actions are used to verify, transform and publish notification messages to an MQTT broker</li>
+<li class="fragment">From here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by <a href="https://pygeoapi.io">pygeoapi</a>) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client.</li>
+</ul>
+</section>
+<section id="workflow-1" class="slide level2">
+<h2>Workflow</h2>
 
+<img data-src="./img/wis2-metadata-github-pubsub-workflow.png" class="fragment r-stretch" width="600"></section></section>
+<section>
 <section id="take-aways" class="title-slide slide level1 center">
 <h1>Take aways</h1>
 <ul>
-<li class="fragment">MCF is an interesting metadata format for local file repositories</li>
-<li class="fragment">Git and CI-CD workflows offer a traceable, participatory approach for metadata management</li>
-<li class="fragment">OGCAPI records (in for example pycsw) offers a clean machine and human friendly interface to metadata</li>
+<li class="fragment">MCF is an interesting and useful metadata format for embedded metadata in local file repositories</li>
+<li class="fragment">Git storage and CI-CD workflows are a traceable, reproducible and participatory approach for metadata management</li>
+<li class="fragment">OGC API - Records (in for example pycsw) offers a clean machine and human friendly interface to metadata</li>
 </ul>
 </section>
-
-<section id="read-more" class="title-slide slide level1 center">
-<h1>Read more</h1>
+<section id="references" class="slide level2">
+<h2>References</h2>
 <ul>
 <li class="fragment"><a href="https://github.com/geopython/pygeometa">pygeometa</a></li>
 <li class="fragment"><a href="https://pycsw.org">pycsw.org</a> v3.0b</li>
 <li class="fragment"><a href="https://pypi.org/project/geodatacrawler/">pyGeoDataCrawler</a> v1.3</li>
 <li class="fragment"><a href="https://ogcapi.org/#records">OGCAPI - Records</a> v1.0</li>
 <li class="fragment"><a href="https://mapserver.org">mapserver.org</a> v8.2</li>
+<li class="fragment"><a href="https://terria.io">terria.io</a></li>
 </ul>
 
 <div class="quarto-auto-generated-content">
 <p><img src="./img/logo-foss4g-tartu.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>2024 FOSS4G-Europe, Tartu, Estonia</p>
+<p>FOSS4G Europe 2024, Tartu, Estonia</p>
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
