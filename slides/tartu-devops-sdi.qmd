@@ -52,6 +52,10 @@ abstract:
 - Recently an increased hesitance to share location specific soil data: metadata should clearly state the usage constraints of a dataset   
 - Machine learning models can bulk load `covariates`, and later identify which ones best support a prediction
 
+## Typical soil data in csv
+
+![](./img/fun-md/csvingit.png){ width="800" }
+
 # Metadata as a recipe to guide  lifecycle
 
 - My domain colleagues hardly generate metadata, at most a readme.txt in a folder
