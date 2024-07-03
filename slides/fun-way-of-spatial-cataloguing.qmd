@@ -13,8 +13,8 @@ format:
 
 # About us
 
-- Paul van Genuchten, SDI specialist at `ISRIC - World Soil Information`, the Netherlands
-- Tom Kralidis, Senior Geospatial Architect, Meteorological Service of Canada, OSGeo Board of Directors
+- [Paul van Genuchten](https://github.com/pvgenuchten), SDI specialist at `ISRIC - World Soil Information`, the Netherlands
+- [Tom Kralidis](https://github.com/tomkralidis), Senior Geospatial Architect, Meteorological Service of Canada, OSGeo Board of Directors
 
 # What if...
 
@@ -37,15 +37,15 @@ format:
 
 # From MCF to catalogue
 
-- MCF is converted to iso19115 using pygeometa and then loaded on a catalogue
+- MCF is converted to ISO 19115 using pygeometa and then loaded on a catalogue
 - [pycsw](https://pycsw.org) a standards based catalogue component (PostgreSQL backend)
-- Supports [OGC API - Records](), various metadata models, faceted search  
+- Supports [OGC API - Records](https://ogcapi.ogc.org/records), nuerous metadata models, faceted search  
 
 # Colleagues like MCF?
 
-- Some expect shiny webforms, like linked-in, facebook
-- Not used to YAML syntax and git CI-CD workflows
-- Enter [mdme](https://github.com/osgeo/mdme), the Model Driven Metadata Editor / web application for geospatial metadata editing
+- Some expect shiny webforms, like LinkedIn/Facebook
+- Not used to YAML syntax and Git CI-CD workflows
+- Enter [mdme](https://github.com/osgeo/mdme), the Model Driven Metadata Editor / web application for geospatial metadata
 
 # MDME, web editor for MCF
 
