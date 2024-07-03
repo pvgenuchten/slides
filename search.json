@@ -287,6 +287,13 @@
     "text": "pygeometa, geodatacrawler & pycsw\n\npygeometa’s MCF is a minimal subset of ISO19115, encoded in yaml\ngeodatacrawler extends pygeometa to:\n\nextract metadata from data formats\ninherit metadata from parent folders\nimport metadata from csv and remote sources\ncreate data api’s based on metadata\n\n is a pythonic catalogue web app. Wide standards support enables findability in multiple communities."
   },
   {
+    "objectID": "slides/tartu-devops-sdi.html#some-screenshots",
+    "href": "slides/tartu-devops-sdi.html#some-screenshots",
+    "title": "SDI maintenance DevOps style",
+    "section": "Some screenshots",
+    "text": "Some screenshots"
+  },
+  {
     "objectID": "slides/index.html",
     "href": "slides/index.html",
     "title": "some slide decks",

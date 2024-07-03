@@ -344,14 +344,14 @@ Paul van Genuchten
 <h1>About me/us</h1>
 <ul>
 <li class="fragment">At <a href="https://www.isric.org">ISRIC - World Soil Information</a> we maintain a global reference soil sample collection. The foundation, located at Wageningen University, is funded by Dutch government.</li>
-<li class="fragment">Soil data is typically collected as samples, being analysed in a lab. Predicting spatial distribution between sampling sites is a common challenge in Soil Sciences.</li>
-<li class="fragment">ISRIC continuously collects soil data from various institutes to improve their global soil model of the world: <a href="https://www.isric.org/explore/soilgrids">SoilGrids</a>.</li>
-<li class="fragment">I’m a DevOps engineer, maintaining the ISRIC SDI. I also train developers at national soil institutes in improving their SDI skills.</li>
+<li class="fragment">Soil data is collected as samples, being analysed in a lab. Predicting spatial distribution between sampling sites is a common challenge in Soil Sciences.</li>
+<li class="fragment">ISRIC collects soil data from partners to improve our global soil model of the world: <a href="https://www.isric.org/explore/soilgrids">SoilGrids</a>.</li>
+<li class="fragment">My team maintains the ISRIC SDI and trains developers at national soil institutes in improving their SDI skills.</li>
 </ul>
 </section>
 
-<section id="screen-shots" class="title-slide slide level1 center">
-<h1>Screen shots</h1>
+<section id="isric---world-soil-information" class="title-slide slide level1 center">
+<h1>ISRIC - World Soil Information</h1>
 <div class="r-stack">
 <p><img data-src="./img/museum.jpg" class="fragment" width="800"></p>
 <p><img data-src="./img/collection.jpg" class="fragment" width="800"></p>
@@ -363,17 +363,8 @@ Paul van Genuchten
 <h1>SDI &amp; Metadata</h1>
 <ul>
 <li class="fragment">Metadata is data about data, it explains what the data is, its origin, its usage constraints and how to access it.</li>
-<li class="fragment">Metadata supports you, your colleagues, as well as the wider community.</li>
-<li class="fragment">Why isn’t metadata the main topic of this conference?</li>
-</ul>
-</section>
-
-<section id="metadata-in-traditional-sdi" class="title-slide slide level1 center">
-<h1>Metadata in traditional SDI</h1>
-<ul>
-<li class="fragment">Traditionally Geo teams are placed a bit aside from domain groups, focussing on spatial processing and creating maps</li>
-<li class="fragment">Geo has a strong focus on stadardisation due to its use of generic analysis tools and interactions with various domain groups</li>
-<li class="fragment">These are some factors resulting in limited metadata availability, complex formats and low maturity of software around metadata; causing low popularity of metadata</li>
+<li class="fragment">Metadata supports you, your colleagues, the wider community, search engine crawlers and machine learning models.</li>
+<li class="fragment">Despite the acknowledged benefits, metadata availability is low.</li>
 </ul>
 </section>
 
@@ -389,29 +380,29 @@ Paul van Genuchten
 <section id="metadata-in-soil-science-part-2" class="title-slide slide level1 center">
 <h1>Metadata in Soil Science, part 2</h1>
 <ul>
-<li class="fragment">We’ve recently noticed an increased hesitance to share location specific soil data, metadata should clearly state the usage constraints of a dataset<br>
+<li class="fragment">Recently an increased hesitance to share location specific soil data: metadata should clearly state the usage constraints of a dataset<br>
 </li>
-<li class="fragment">Machine learning models have increased opportunities to bulk load covariates, and assess later which ones best predict soil property distribution</li>
+<li class="fragment">Machine learning models can bulk load <code>covariates</code>, and later identify which ones best support a prediction</li>
 </ul>
 </section>
 
-<section id="metadata-should-originate-from-where-data-is-generated" class="title-slide slide level1 center">
-<h1>Metadata should originate from where data is generated</h1>
+<section id="metadata-as-a-recipe-to-guide-lifecycle" class="title-slide slide level1 center">
+<h1>Metadata as a recipe to guide lifecycle</h1>
 <ul>
 <li class="fragment">My domain colleagues hardly generate metadata, at most a readme.txt in a folder</li>
-<li class="fragment">Fortunately some are confortable in storing their R-scripts in Git</li>
-<li class="fragment">My goal is to lure them into generating metadata, by offering easy to use tools, fitting their workflows, prevent duplicated efforts and show them the benefits</li>
+<li class="fragment">Goal of our efforts is to lure them into generating metadata, by offering easy to use tools, fitting their workflows, prevent duplicated efforts and show them the benefits</li>
+<li class="fragment">So the metadata can be used as a trigger for workflows which guide the data lifecycle of a dataset (creation, review, publication, archival)</li>
 </ul>
 </section>
 
 <section id="devops-principles-for-tracability" class="title-slide slide level1 center">
 <h1>DevOps principles for tracability</h1>
 <ul>
-<li class="fragment">Main principle of our approach is to extract metadata from a project repository at intervals and store it in GIT.</li>
+<li class="fragment">Our approach extracts metadata from project repositories at intervals and stores it in GIT.</li>
 <li class="fragment">Metadata is extracted from data files, if no metadata for a file is detected</li>
 <li class="fragment">Domain experts are notified to update the generated metadata</li>
-<li class="fragment">When content is updated in GIT, it triggers ci-cd pipelines, which publish the metadata to an internal catalogue</li>
-<li class="fragment">Mapservices are being set up on the discovered data</li>
+<li class="fragment">Ci-cd pipelines on metadata changed (un)publish the (meta)data to an internal or external repository</li>
+<li class="fragment">OGC Mapservices are being set up to facilitate access to the data</li>
 </ul>
 </section>
 
@@ -419,29 +410,31 @@ Paul van Genuchten
 <h1>Crawl a project repository</h1>
 <ul>
 <li class="fragment">For ease of use, we’ve adopted the <code>pygeometa</code> metadata initiative. A YAML encoded subset of ISO19115.</li>
-<li class="fragment">A <a href="https://pypi.org/project/geodatacrawler/">geodatacrawler</a> tool, builds on top of pygeometa and GDAL, which crawls the file structure at intervals</li>
+<li class="fragment">A <a href="https://pypi.org/project/geodatacrawler/">geodatacrawler</a> tool, build on top of pygeometa and GDAL, crawls the file structure at intervals</li>
 <li class="fragment">Crawled content is loaded into a searchable catalogue</li>
 </ul>
 </section>
 
-<section id="pycsw-a-catalogue-respecting-many-metadata-standards" class="title-slide slide level1 center">
-<h1>pycsw; a catalogue respecting many metadata standards</h1>
+<section id="pycsw-a-catalogue-based-on-many-standards" class="title-slide slide level1 center">
+<h1>pycsw; a catalogue based on many standards</h1>
 <ul>
-<li class="fragment">You may know pycsw as a catalogue backend for GeoNode and CKAN, but it can also be used standalone</li>
+<li class="fragment">Used as catalogue backend for GeoNode and CKAN, but it can also be used standalone</li>
 <li class="fragment">From v3.0 pycsw offers a html search interface through its OGCAPI - Records API endpoint</li>
 <li class="fragment">HTML is easy customisable using jinja2 templates</li>
 </ul>
 </section>
 
-<section id="screen-shots-1" class="title-slide slide level1 center">
-<h1>Screen shots</h1>
+<section id="some-screen-shots" class="title-slide slide level1 center">
+<h1>Some screen shots</h1>
 <div class="r-stack">
-<p><img data-src="./img/iuss100/ejpsoil-catalogue.png" class="fragment" width="600"></p>
-<p><img data-src="./img/iuss100/lsc-hubs.png" class="fragment" width="500"></p>
-<p><img data-src="./img/iuss100/marvic.png" class="fragment" width="800"></p>
+<p><img data-src="./img/fun-md/browse.png" class="fragment" width="800"></p>
+<p><img data-src="./img/fun-md/edit.png" class="fragment" width="800"></p>
+<p><img data-src="./img/fun-md/mdme.png" class="fragment" width="800"></p>
+<p><img data-src="./img/pipelines.png" class="fragment" width="800"></p>
 </div>
 </section>
 
+<section>
 <section id="publish-mapservices" class="title-slide slide level1 center">
 <h1>Publish Mapservices</h1>
 <ul>
@@ -451,13 +444,21 @@ Paul van Genuchten
 <li class="fragment">Metadata is updated with the mapservice url</li>
 </ul>
 </section>
-
+<section id="some-screenshots" class="slide level2">
+<h2>Some screenshots</h2>
+<div class="r-stack">
+<p><img data-src="./img/fun-md/terria.png" class="fragment" width="800"></p>
+<p><img data-src="./img/fun-md/about.png" class="fragment" width="800"></p>
+<p><img data-src="./img/iuss100/lsc-hubs.png" class="fragment" width="500"></p>
+<p><img data-src="./img/iuss100/marvic.png" class="fragment" width="800"></p>
+</div>
+</section></section>
 <section id="building-a-data-community" class="title-slide slide level1 center">
 <h1>Building a data community?</h1>
 <ul>
 <li class="fragment">All Metadata and ci-cd scripts are available in GIT</li>
 <li class="fragment">Anybody can raise an issue or pull request about an incorrect metadata file or mapserver configuration</li>
-<li class="fragment">Personally I dislike feedback options by email, the approach from this presentation facilitates users like me.</li>
+<li class="fragment">Personally I often don’t find an option for feedback about catalogue content, the approach from this presentation facilitates users like me.</li>
 </ul>
 </section>
 
@@ -465,7 +466,7 @@ Paul van Genuchten
 <h1>What’s next?</h1>
 <ul>
 <li class="fragment">ISRIC is participaing in the <a href="https://soilwise-he.eu">SoilWise Horizon Europe Project</a></li>
-<li class="fragment">The projects aims to improve discovery and harmonisation options of soil data between member states and research projects.</li>
+<li class="fragment">The projects aims to improve discovery and harmonisation options of <code>Soil data</code> between member states and research projects.</li>
 <li class="fragment">The project will extend the participatiory devops style SDI with data harmonisation options:</li>
 <li class="fragment">One organisation uploads a dataset, another organisation shares it’s ETL configuration to interact with that dataset.</li>
 </ul>
@@ -489,7 +490,8 @@ Paul van Genuchten
 <li class="fragment"><p><a href="https://pypi.org/project/geodatacrawler/">pyGeoDataCrawler</a> v1.3</p></li>
 <li class="fragment"><p><a href="https://ogcapi.org/#records">OGCAPI - Records</a> v1.0</p></li>
 <li class="fragment"><p><a href="https://github.com/geopython/pygeometa">pygeometa</a></p></li>
-<li class="fragment"><p>An <a href="https://kenya.lsc-hubs.org/docs/developer/tutorial-data-management/">SDI workshop</a> using this approach in the LSC-Hubs project</p></li>
+<li class="fragment"><p><a href="https://kenya.lsc-hubs.org/docs/developer/tutorial-data-management/">SDI workshop</a></p></li>
+<li class="fragment"><p><a href="https://terria.io">terria.io</a></p></li>
 <li class="fragment"><p>The <a href="https://soilwise-he.eu">Soilwise-he</a> receives funding from the European Union’s HORIZON Innovation Actions 2022 under grant agreement No.&nbsp;101112838</p></li>
 </ul>
 
