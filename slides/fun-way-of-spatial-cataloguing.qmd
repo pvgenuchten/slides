@@ -14,7 +14,7 @@ format:
 # About us
 
 - Paul van Genuchten, SDI specialist at `ISRIC - World Soil Information`, the Netherlands
-- Tom Kralidis, board member at OSGeo, WMO data scientist at ECCC, Canada
+- Tom Kralidis, Senior Geospatial Architect, Meteorological Service of Canada, OSGeo Board of Directors
 
 # What if...
 
@@ -110,7 +110,9 @@ We present 2 use cases to demonstrate the value of this approach:
 
 ## Workflow
 
-![](./img/wis2-metadata-github-pubsub-workflow.png){.fragment width="600" }
+::: {.r-stack}
+![](./img/wis2-metadata-github-pubsub-workflow.png){.fragment width="1000" }
+:::
 
 # Take aways
 
