@@ -1,43 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://pvgenuchten.github.io/slides/slides/intro-crawler-mcf-pycsw.html</loc>
-    <lastmod>2024-07-05T09:07:04.549Z</lastmod>
+    <loc>https://pvgenuchten.github.io/slides/slides/tartu-devops-sdi.html</loc>
+    <lastmod>2024-12-01T18:02:16.846Z</lastmod>
   </url>
   <url>
-    <loc>https://pvgenuchten.github.io/slides/index.html</loc>
-    <lastmod>2024-07-05T09:07:04.509Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pvgenuchten.github.io/slides/slides/soilwise-metadata.html</loc>
-    <lastmod>2024-07-05T09:07:04.549Z</lastmod>
+    <loc>https://pvgenuchten.github.io/slides/slides/pygeometa-foss4g-2024.html</loc>
+    <lastmod>2024-12-01T18:02:16.842Z</lastmod>
   </url>
   <url>
     <loc>https://pvgenuchten.github.io/slides/slides/iuss100metadata.html</loc>
-    <lastmod>2024-07-05T09:07:04.549Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pvgenuchten.github.io/slides/slides/alliander-2023.html</loc>
-    <lastmod>2024-07-05T09:07:04.509Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pvgenuchten.github.io/slides/slides/abandoned-web.html</loc>
-    <lastmod>2024-07-05T09:07:04.509Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pvgenuchten.github.io/slides/slides/fun-way-of-spatial-cataloguing.html</loc>
-    <lastmod>2024-07-05T09:07:04.509Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pvgenuchten.github.io/slides/slides/pitch-battle.html</loc>
-    <lastmod>2024-07-05T09:07:04.549Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pvgenuchten.github.io/slides/slides/tartu-devops-sdi.html</loc>
-    <lastmod>2024-07-05T09:07:04.549Z</lastmod>
+    <lastmod>2024-12-01T18:02:16.842Z</lastmod>
   </url>
   <url>
     <loc>https://pvgenuchten.github.io/slides/slides/index.html</loc>
-    <lastmod>2024-07-05T09:07:04.549Z</lastmod>
+    <lastmod>2024-12-01T18:02:16.842Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pvgenuchten.github.io/slides/slides/alliander-2023.html</loc>
+    <lastmod>2024-12-01T18:02:16.798Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pvgenuchten.github.io/slides/index.html</loc>
+    <lastmod>2024-12-01T18:02:16.798Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pvgenuchten.github.io/slides/slides/abandoned-web.html</loc>
+    <lastmod>2024-12-01T18:02:16.798Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pvgenuchten.github.io/slides/slides/fun-way-of-spatial-cataloguing.html</loc>
+    <lastmod>2024-12-01T18:02:16.798Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pvgenuchten.github.io/slides/slides/intro-crawler-mcf-pycsw.html</loc>
+    <lastmod>2024-12-01T18:02:16.842Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pvgenuchten.github.io/slides/slides/pitch-battle.html</loc>
+    <lastmod>2024-12-01T18:02:16.842Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pvgenuchten.github.io/slides/slides/soilwise-metadata.html</loc>
+    <lastmod>2024-12-01T18:02:16.842Z</lastmod>
   </url>
 </urlset>

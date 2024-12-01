@@ -1,5 +1,201 @@
 [
   {
+    "objectID": "slides/tartu-devops-sdi.html#typical-soil-data-in-csv",
+    "href": "slides/tartu-devops-sdi.html#typical-soil-data-in-csv",
+    "title": "SDI maintenance DevOps style",
+    "section": "Typical soil data in csv",
+    "text": "Typical soil data in csv"
+  },
+  {
+    "objectID": "slides/tartu-devops-sdi.html#some-screenshots",
+    "href": "slides/tartu-devops-sdi.html#some-screenshots",
+    "title": "SDI maintenance DevOps style",
+    "section": "Some screenshots",
+    "text": "Some screenshots"
+  },
+  {
+    "objectID": "slides/pygeometa-foss4g-2024.html#participatory-metadata-management",
+    "href": "slides/pygeometa-foss4g-2024.html#participatory-metadata-management",
+    "title": "pygeometa project status",
+    "section": "Participatory metadata management",
+    "text": "Participatory metadata management\n\nUsers initially provided metadata as lists in Microsoft Excel\nMetadata is hosted in GitHub\nUsers contribute content (or register issues about content)"
+  },
+  {
+    "objectID": "slides/pygeometa-foss4g-2024.html#metadata-for-mapserver-configuration",
+    "href": "slides/pygeometa-foss4g-2024.html#metadata-for-mapserver-configuration",
+    "title": "pygeometa project status",
+    "section": "Metadata for MapServer configuration",
+    "text": "Metadata for MapServer configuration\n\nUse the metadata to generate MapServer mapfile configuration\nAdd the generated map endpoint to the metadata\nMapServer is fully aligned with the catalogue"
+  },
+  {
+    "objectID": "slides/pygeometa-foss4g-2024.html#terriajs-a-web-based-gis",
+    "href": "slides/pygeometa-foss4g-2024.html#terriajs-a-web-based-gis",
+    "title": "pygeometa project status",
+    "section": "TerriaJS, a web-based GIS",
+    "text": "TerriaJS, a web-based GIS\n\nThe project uses TerriaJS as a data viewer\nTerriaJS includes a CSW Catalogue search and links back to the catalogue via WMS capabilities\nExtra integration via ‘Add data to viewer’ from catalogue page"
+  },
+  {
+    "objectID": "slides/pygeometa-foss4g-2024.html#terriajs",
+    "href": "slides/pygeometa-foss4g-2024.html#terriajs",
+    "title": "pygeometa project status",
+    "section": "TerriaJS",
+    "text": "TerriaJS\n\nTerriaJS"
+  },
+  {
+    "objectID": "slides/pygeometa-foss4g-2024.html#workflow",
+    "href": "slides/pygeometa-foss4g-2024.html#workflow",
+    "title": "pygeometa project status",
+    "section": "Workflow",
+    "text": "Workflow\n“No code”: Manage, verify and publish metadata using GitHub as a content management platform.\n\nMetadata files are managed as pygeometa MCF records\nGitHub Actions are used to verify, transform and publish notification messages to an MQTT broker\nFrom here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by pygeoapi) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client."
+  },
+  {
+    "objectID": "slides/pygeometa-foss4g-2024.html#workflow-1",
+    "href": "slides/pygeometa-foss4g-2024.html#workflow-1",
+    "title": "pygeometa project status",
+    "section": "Workflow",
+    "text": "Workflow"
+  },
+  {
+    "objectID": "slides/pygeometa-foss4g-2024.html#composability",
+    "href": "slides/pygeometa-foss4g-2024.html#composability",
+    "title": "pygeometa project status",
+    "section": "Composability",
+    "text": "Composability"
+  },
+  {
+    "objectID": "slides/pygeometa-foss4g-2024.html#references",
+    "href": "slides/pygeometa-foss4g-2024.html#references",
+    "title": "pygeometa project status",
+    "section": "References",
+    "text": "References\n\npygeometa\npycsw\npyGeoDataCrawler\nOGC API - Records\nMapServer\nterria.io"
+  },
+  {
+    "objectID": "slides/index.html",
+    "href": "slides/index.html",
+    "title": "some slide decks",
+    "section": "",
+    "text": "A fun way to do spatial cataloguing\n\n\nData discovery using pygeometa and mdme\n\n\n\n\n\n\n\n\nJul 3, 2024\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\n\n\n\n\n\n\n\n\nAbandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata for the rest of us\n\n\nIntro to a set of metadata conventions and tools\n\n\n\n\n\n\n\n\nFeb 29, 2024\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\n\n\n\n\n\n\n\n\n\nMay 20, 2024\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\n\n\n\n\n\n\nSDI maintenance DevOps style\n\n\nInspired and facilitated by Open Source\n\n\nAt ISRIC - World Soil Information we increasingly maintain our data services through CI-CD pipelines configured via GIT. Both from the service as well as content perspective. The starting point are metadata records of our datasets being stored on GIT. With every change of a record, the relevant catalogues (pycsw) get updated and any relevant web services (mapserver) are updated. These pipelines are reproducable and there are never inconsistencies between catalogue content and the services. On top of that our users can directly report issues (or even improvement suggestions) through git. The stack is build on proven OSGeo components. A tool pyGeoDataCrawler brings the power of GDAL and pygeometa to CI-CD scripting. It crawls files on a folder and extracts relevant metadata, then prepares a mapserver configuration for that folder, while updating the metadata with the relevant service url’s. Typical use cases for this stack are; a search interface to any file based data repository or a participatory data catalogue for a project. At the conference we hope to hear from you if any of these components could be relevant to your cases or if there are similar initiatives we can contribute to or benefit from. What’s next? At ISRIC we receive and ingest a lot of soil data from partners. To harmonize this data is a huge effort. Via automated pipelines and interaction with the submitters via git comments, we hope to improve also this aspect of the data management cycle.\n\n\n\n\n\nJul 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nSoilwise & Metadata\n\n\nMetadata in Horizon Europe projects (Soil Mission)\n\n\n\n\n\n\n\n\nJun 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nDec 6, 2024\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/alliander-2023.html#about",
+    "href": "slides/alliander-2023.html#about",
+    "title": "Workshop pygeoapi",
+    "section": "About",
+    "text": "About\n\n90’s Bodemkunde Wageningen\n00’s Nieuwland GeoInformatie\n\nWebGIS at Alliander (OpenLayers, tilecache, Smallworld)\n\n10’s GeoCat BV, GeoNetwork/GeoServer\n\nProvincie Zeeland\n\n20’s ISRIC - World Soil Information"
+  },
+  {
+    "objectID": "slides/alliander-2023.html#soil-museum",
+    "href": "slides/alliander-2023.html#soil-museum",
+    "title": "Workshop pygeoapi",
+    "section": "Soil Museum",
+    "text": "Soil Museum"
+  },
+  {
+    "objectID": "slides/alliander-2023.html#soilgrids",
+    "href": "slides/alliander-2023.html#soilgrids",
+    "title": "Workshop pygeoapi",
+    "section": "Soilgrids",
+    "text": "Soilgrids"
+  },
+  {
+    "objectID": "slides/alliander-2023.html#section",
+    "href": "slides/alliander-2023.html#section",
+    "title": "Workshop pygeoapi",
+    "section": "",
+    "text": "EU research project met als doel om data rond bodem beter te gebruiken / behouden (FAIR)\nStart met onderzoeken van user stories vanuit 5 werkvelden (landbouw, onderzoek, overheid, breder publiek, business)\n\nsoilwise-he.eu"
+  },
+  {
+    "objectID": "slides/alliander-2023.html#pygeoapi",
+    "href": "slides/alliander-2023.html#pygeoapi",
+    "title": "Workshop pygeoapi",
+    "section": "pygeoapi",
+    "text": "pygeoapi\n\nPresentation\ndive.pygeoapi.io"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Select your deck:",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nJul 3, 2024\n\n\nA fun way to do spatial cataloguing\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\nNov 4, 2023\n\n\nAbandonded Project Websites -&gt; no\n\n\nPaul van Genuchten\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\nFeb 29, 2024\n\n\nMetadata for the rest of us\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\nMay 20, 2024\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\nJul 3, 2024\n\n\nSDI maintenance DevOps style\n\n\nPaul van Genuchten\n\n\n\n\nJun 3, 2024\n\n\nSoilwise & Metadata\n\n\nPaul van Genuchten\n\n\n\n\nNov 13, 2023\n\n\nWorkshop pygeoapi\n\n\nPaul van Genuchten\n\n\n\n\nDec 6, 2024\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n \n\n\ntype: default\n\n\n \n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/abandoned-web.html#a-broken-link-from-a-report",
+    "href": "slides/abandoned-web.html#a-broken-link-from-a-report",
+    "title": "Abandonded Project Websites -> no",
+    "section": "A broken link from a report?",
+    "text": "A broken link from a report?\n\nor worse, arrive in an online casino from a link in a report?\nmany websites are abandoned few years after project finish\nwebsite builders should show ownership of domains they create\nreport writers should not link to dodgy locations (aka project websites)"
+  },
+  {
+    "objectID": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
+    "href": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
+    "title": "Abandonded Project Websites -> no",
+    "section": "An initiative to recover lost content",
+    "text": "An initiative to recover lost content\n\nIdentify which websites with usefull information are lost\nRecover the content from archive.org or organisation backups\nReclaim the domains (restore linkage)\nJoin the efforts at github.com/soil-on-web/abandoned-webs"
+  },
+  {
+    "objectID": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
+    "href": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
+    "title": "Abandonded Project Websites -> no",
+    "section": "Good practices on url persistence of project websites",
+    "text": "Good practices on url persistence of project websites\n\nuse a subdomain of an established organisation\nuse a persistent identifier framework, when linking to external sources\nset up rewrite rules at website cancelation\nuse minimal technology, yes: html; no: wordpress, liferay, …\nkeep the content minimal, link to external (persistent) resources\npre-pay the domain ownership for at least the upcoming 10 years"
+  },
+  {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#participatory-metadata-management",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#participatory-metadata-management",
+    "title": "A fun way to do spatial cataloguing",
+    "section": "Participatory metadata management",
+    "text": "Participatory metadata management\n\nUsers initially provided metadata as lists in Microsoft Excel\nMetadata is hosted in GitHub\nUsers contribute content (or register issues about content)"
+  },
+  {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#metadata-for-mapserver-configuration",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#metadata-for-mapserver-configuration",
+    "title": "A fun way to do spatial cataloguing",
+    "section": "Metadata for MapServer configuration",
+    "text": "Metadata for MapServer configuration\n\nUse the metadata to generate MapServer mapfile configuration\nAdd the generated map endpoint to the metadata\nMapServer is fully aligned with the catalogue"
+  },
+  {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#terriajs-a-web-based-gis",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#terriajs-a-web-based-gis",
+    "title": "A fun way to do spatial cataloguing",
+    "section": "TerriaJS, a web-based GIS",
+    "text": "TerriaJS, a web-based GIS\n\nThe project uses TerriaJS as a data viewer\nTerriaJS includes a CSW Catalogue search and links back to the catalogue via WMS capabilities\nExtra integration via ‘Add data to viewer’ from catalogue page"
+  },
+  {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#terriajs",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#terriajs",
+    "title": "A fun way to do spatial cataloguing",
+    "section": "TerriaJS",
+    "text": "TerriaJS\n\nTerriaJS"
+  },
+  {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#workflow",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#workflow",
+    "title": "A fun way to do spatial cataloguing",
+    "section": "Workflow",
+    "text": "Workflow\n“No code”: Manage, verify and publish metadata using GitHub as a content management platform.\n\nMetadata files are managed as pygeometa MCF records\nGitHub Actions are used to verify, transform and publish notification messages to an MQTT broker\nFrom here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by pygeoapi) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client."
+  },
+  {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#workflow-1",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#workflow-1",
+    "title": "A fun way to do spatial cataloguing",
+    "section": "Workflow",
+    "text": "Workflow"
+  },
+  {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#composability",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#composability",
+    "title": "A fun way to do spatial cataloguing",
+    "section": "Composability",
+    "text": "Composability"
+  },
+  {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#references",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#references",
+    "title": "A fun way to do spatial cataloguing",
+    "section": "References",
+    "text": "References\n\npygeometa\npycsw.org v3.0b\npyGeoDataCrawler v1.3\nOGCAPI - Records v1.0\nmapserver.org v8.2\nterria.io"
+  },
+  {
     "objectID": "slides/intro-crawler-mcf-pycsw.html#what",
     "href": "slides/intro-crawler-mcf-pycsw.html#what",
     "title": "Metadata for the rest of us",
@@ -84,11 +280,25 @@
     "text": "Read more?\n\npygeometa in the EJPSoil soil data assimilation cookbook\nLSC Hubs data workshop\npygeometa\nGeoDataCrawler"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Select your deck:",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nJul 3, 2024\n\n\nA fun way to do spatial cataloguing\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\nNov 4, 2023\n\n\nAbandonded Project Websites -&gt; no\n\n\nPaul van Genuchten\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\nFeb 29, 2024\n\n\nMetadata for the rest of us\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\nMay 20, 2024\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\nJul 3, 2024\n\n\nSDI maintenance DevOps style\n\n\nPaul van Genuchten\n\n\n\n\nJun 3, 2024\n\n\nSoilwise & Metadata\n\n\nPaul van Genuchten\n\n\n\n\nNov 13, 2023\n\n\nWorkshop pygeoapi\n\n\nPaul van Genuchten\n\n\n\n\n \n\n\ntype: default\n\n\n \n\n\n\n\n\nNo matching items"
+    "objectID": "slides/pitch-battle.html#improving-findability---devops-style",
+    "href": "slides/pitch-battle.html#improving-findability---devops-style",
+    "title": "Document your model data at minimal effort",
+    "section": "Improving findability - devops style",
+    "text": "Improving findability - devops style\n\nWhat: Document your modelling data with minimal effort\nWhy: Better findability and (re)usability of data\nWhat’s next: Adopt the efforts in ongoing projects & extend the user community"
+  },
+  {
+    "objectID": "slides/pitch-battle.html#setting-concept",
+    "href": "slides/pitch-battle.html#setting-concept",
+    "title": "Document your model data at minimal effort",
+    "section": "Setting & Concept",
+    "text": "Setting & Concept\n\nSetting: Data management in predictive modelling\n\nIn soil modelling we handle many data sources\nThese files are stored on a network drive\nMetadata management is complex/dull/****\n\nThe sidecar concept\n\nAdd minimal metadata on a sidecar file\nA crawler extracts metadata from a file repository\nCrawled records are placed in a searchable index"
+  },
+  {
+    "objectID": "slides/pitch-battle.html#pygeometa-geodatacrawler-pycsw",
+    "href": "slides/pitch-battle.html#pygeometa-geodatacrawler-pycsw",
+    "title": "Document your model data at minimal effort",
+    "section": "pygeometa, geodatacrawler & pycsw",
+    "text": "pygeometa, geodatacrawler & pycsw\n\npygeometa’s MCF is a minimal subset of ISO19115, encoded in yaml\ngeodatacrawler extends pygeometa to:\n\nextract metadata from data formats\ninherit metadata from parent folders\nimport metadata from csv and remote sources\ncreate data api’s based on metadata\n\n is a pythonic catalogue web app. Wide standards support enables findability in multiple communities."
   },
   {
     "objectID": "slides/soilwise-metadata.html#what-is-metadata",
@@ -159,159 +369,5 @@
     "title": "Soilwise & Metadata",
     "section": "What is the benefit of adopting the profile?",
     "text": "What is the benefit of adopting the profile?\n\nNo risk of forgetting important elements\nYour metadata (included by a filter) will be harvested\nProject output are found, when users apply filters\nProject outputs will be included in aggregated statistics"
-  },
-  {
-    "objectID": "slides/alliander-2023.html#about",
-    "href": "slides/alliander-2023.html#about",
-    "title": "Workshop pygeoapi",
-    "section": "About",
-    "text": "About\n\n90’s Bodemkunde Wageningen\n00’s Nieuwland GeoInformatie\n\nWebGIS at Alliander (OpenLayers, tilecache, Smallworld)\n\n10’s GeoCat BV, GeoNetwork/GeoServer\n\nProvincie Zeeland\n\n20’s ISRIC - World Soil Information"
-  },
-  {
-    "objectID": "slides/alliander-2023.html#soil-museum",
-    "href": "slides/alliander-2023.html#soil-museum",
-    "title": "Workshop pygeoapi",
-    "section": "Soil Museum",
-    "text": "Soil Museum"
-  },
-  {
-    "objectID": "slides/alliander-2023.html#soilgrids",
-    "href": "slides/alliander-2023.html#soilgrids",
-    "title": "Workshop pygeoapi",
-    "section": "Soilgrids",
-    "text": "Soilgrids"
-  },
-  {
-    "objectID": "slides/alliander-2023.html#section",
-    "href": "slides/alliander-2023.html#section",
-    "title": "Workshop pygeoapi",
-    "section": "",
-    "text": "EU research project met als doel om data rond bodem beter te gebruiken / behouden (FAIR)\nStart met onderzoeken van user stories vanuit 5 werkvelden (landbouw, onderzoek, overheid, breder publiek, business)\n\nsoilwise-he.eu"
-  },
-  {
-    "objectID": "slides/alliander-2023.html#pygeoapi",
-    "href": "slides/alliander-2023.html#pygeoapi",
-    "title": "Workshop pygeoapi",
-    "section": "pygeoapi",
-    "text": "pygeoapi\n\nPresentation\ndive.pygeoapi.io"
-  },
-  {
-    "objectID": "slides/abandoned-web.html#a-broken-link-from-a-report",
-    "href": "slides/abandoned-web.html#a-broken-link-from-a-report",
-    "title": "Abandonded Project Websites -> no",
-    "section": "A broken link from a report?",
-    "text": "A broken link from a report?\n\nor worse, arrive in an online casino from a link in a report?\nmany websites are abandoned few years after project finish\nwebsite builders should show ownership of domains they create\nreport writers should not link to dodgy locations (aka project websites)"
-  },
-  {
-    "objectID": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
-    "href": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
-    "title": "Abandonded Project Websites -> no",
-    "section": "An initiative to recover lost content",
-    "text": "An initiative to recover lost content\n\nIdentify which websites with usefull information are lost\nRecover the content from archive.org or organisation backups\nReclaim the domains (restore linkage)\nJoin the efforts at github.com/soil-on-web/abandoned-webs"
-  },
-  {
-    "objectID": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
-    "href": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
-    "title": "Abandonded Project Websites -> no",
-    "section": "Good practices on url persistence of project websites",
-    "text": "Good practices on url persistence of project websites\n\nuse a subdomain of an established organisation\nuse a persistent identifier framework, when linking to external sources\nset up rewrite rules at website cancelation\nuse minimal technology, yes: html; no: wordpress, liferay, …\nkeep the content minimal, link to external (persistent) resources\npre-pay the domain ownership for at least the upcoming 10 years"
-  },
-  {
-    "objectID": "slides/fun-way-of-spatial-cataloguing.html#participatory-metadata-management",
-    "href": "slides/fun-way-of-spatial-cataloguing.html#participatory-metadata-management",
-    "title": "A fun way to do spatial cataloguing",
-    "section": "Participatory metadata management",
-    "text": "Participatory metadata management\n\nUsers initially provided metadata as lists in Microsoft Excel\nMetadata is hosted in GitHub\nUsers contribute content (or register issues about content)"
-  },
-  {
-    "objectID": "slides/fun-way-of-spatial-cataloguing.html#metadata-for-mapserver-configuration",
-    "href": "slides/fun-way-of-spatial-cataloguing.html#metadata-for-mapserver-configuration",
-    "title": "A fun way to do spatial cataloguing",
-    "section": "Metadata for MapServer configuration",
-    "text": "Metadata for MapServer configuration\n\nUse the metadata to generate MapServer mapfile configuration\nAdd the generated map endpoint to the metadata\nMapServer is fully aligned with the catalogue"
-  },
-  {
-    "objectID": "slides/fun-way-of-spatial-cataloguing.html#terriajs-a-web-based-gis",
-    "href": "slides/fun-way-of-spatial-cataloguing.html#terriajs-a-web-based-gis",
-    "title": "A fun way to do spatial cataloguing",
-    "section": "TerriaJS, a web-based GIS",
-    "text": "TerriaJS, a web-based GIS\n\nThe project uses TerriaJS as a data viewer\nTerriaJS includes a CSW Catalogue search and links back to the catalogue via WMS capabilities\nExtra integration via ‘Add data to viewer’ from catalogue page"
-  },
-  {
-    "objectID": "slides/fun-way-of-spatial-cataloguing.html#terriajs",
-    "href": "slides/fun-way-of-spatial-cataloguing.html#terriajs",
-    "title": "A fun way to do spatial cataloguing",
-    "section": "TerriaJS",
-    "text": "TerriaJS\n\nTerriaJS"
-  },
-  {
-    "objectID": "slides/fun-way-of-spatial-cataloguing.html#workflow",
-    "href": "slides/fun-way-of-spatial-cataloguing.html#workflow",
-    "title": "A fun way to do spatial cataloguing",
-    "section": "Workflow",
-    "text": "Workflow\n“No code”: Manage, verify and publish metadata using GitHub as a content management platform.\n\nMetadata files are managed as pygeometa MCF records\nGitHub Actions are used to verify, transform and publish notification messages to an MQTT broker\nFrom here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by pygeoapi) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client."
-  },
-  {
-    "objectID": "slides/fun-way-of-spatial-cataloguing.html#workflow-1",
-    "href": "slides/fun-way-of-spatial-cataloguing.html#workflow-1",
-    "title": "A fun way to do spatial cataloguing",
-    "section": "Workflow",
-    "text": "Workflow"
-  },
-  {
-    "objectID": "slides/fun-way-of-spatial-cataloguing.html#composability",
-    "href": "slides/fun-way-of-spatial-cataloguing.html#composability",
-    "title": "A fun way to do spatial cataloguing",
-    "section": "Composability",
-    "text": "Composability"
-  },
-  {
-    "objectID": "slides/fun-way-of-spatial-cataloguing.html#references",
-    "href": "slides/fun-way-of-spatial-cataloguing.html#references",
-    "title": "A fun way to do spatial cataloguing",
-    "section": "References",
-    "text": "References\n\npygeometa\npycsw.org v3.0b\npyGeoDataCrawler v1.3\nOGCAPI - Records v1.0\nmapserver.org v8.2\nterria.io\n\n\n\n\n\nFOSS4G Europe 2024, Tartu, Estonia"
-  },
-  {
-    "objectID": "slides/pitch-battle.html#improving-findability---devops-style",
-    "href": "slides/pitch-battle.html#improving-findability---devops-style",
-    "title": "Document your model data at minimal effort",
-    "section": "Improving findability - devops style",
-    "text": "Improving findability - devops style\n\nWhat: Document your modelling data with minimal effort\nWhy: Better findability and (re)usability of data\nWhat’s next: Adopt the efforts in ongoing projects & extend the user community"
-  },
-  {
-    "objectID": "slides/pitch-battle.html#setting-concept",
-    "href": "slides/pitch-battle.html#setting-concept",
-    "title": "Document your model data at minimal effort",
-    "section": "Setting & Concept",
-    "text": "Setting & Concept\n\nSetting: Data management in predictive modelling\n\nIn soil modelling we handle many data sources\nThese files are stored on a network drive\nMetadata management is complex/dull/****\n\nThe sidecar concept\n\nAdd minimal metadata on a sidecar file\nA crawler extracts metadata from a file repository\nCrawled records are placed in a searchable index"
-  },
-  {
-    "objectID": "slides/pitch-battle.html#pygeometa-geodatacrawler-pycsw",
-    "href": "slides/pitch-battle.html#pygeometa-geodatacrawler-pycsw",
-    "title": "Document your model data at minimal effort",
-    "section": "pygeometa, geodatacrawler & pycsw",
-    "text": "pygeometa, geodatacrawler & pycsw\n\npygeometa’s MCF is a minimal subset of ISO19115, encoded in yaml\ngeodatacrawler extends pygeometa to:\n\nextract metadata from data formats\ninherit metadata from parent folders\nimport metadata from csv and remote sources\ncreate data api’s based on metadata\n\n is a pythonic catalogue web app. Wide standards support enables findability in multiple communities."
-  },
-  {
-    "objectID": "slides/tartu-devops-sdi.html#typical-soil-data-in-csv",
-    "href": "slides/tartu-devops-sdi.html#typical-soil-data-in-csv",
-    "title": "SDI maintenance DevOps style",
-    "section": "Typical soil data in csv",
-    "text": "Typical soil data in csv"
-  },
-  {
-    "objectID": "slides/tartu-devops-sdi.html#some-screenshots",
-    "href": "slides/tartu-devops-sdi.html#some-screenshots",
-    "title": "SDI maintenance DevOps style",
-    "section": "Some screenshots",
-    "text": "Some screenshots"
-  },
-  {
-    "objectID": "slides/index.html",
-    "href": "slides/index.html",
-    "title": "some slide decks",
-    "section": "",
-    "text": "A fun way to do spatial cataloguing\n\n\nData discovery using pygeometa and mdme\n\n\n\n\n\n\n\n\nJul 3, 2024\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\n\n\n\n\n\n\n\n\nAbandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata for the rest of us\n\n\nIntro to a set of metadata conventions and tools\n\n\n\n\n\n\n\n\nFeb 29, 2024\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\n\n\n\n\n\n\n\n\n\nMay 20, 2024\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\n\n\n\n\n\n\nSDI maintenance DevOps style\n\n\nInspired and facilitated by Open Source\n\n\nAt ISRIC - World Soil Information we increasingly maintain our data services through CI-CD pipelines configured via GIT. Both from the service as well as content perspective. The starting point are metadata records of our datasets being stored on GIT. With every change of a record, the relevant catalogues (pycsw) get updated and any relevant web services (mapserver) are updated. These pipelines are reproducable and there are never inconsistencies between catalogue content and the services. On top of that our users can directly report issues (or even improvement suggestions) through git. The stack is build on proven OSGeo components. A tool pyGeoDataCrawler brings the power of GDAL and pygeometa to CI-CD scripting. It crawls files on a folder and extracts relevant metadata, then prepares a mapserver configuration for that folder, while updating the metadata with the relevant service url’s. Typical use cases for this stack are; a search interface to any file based data repository or a participatory data catalogue for a project. At the conference we hope to hear from you if any of these components could be relevant to your cases or if there are similar initiatives we can contribute to or benefit from. What’s next? At ISRIC we receive and ingest a lot of soil data from partners. To harmonize this data is a huge effort. Via automated pipelines and interaction with the submitters via git comments, we hope to improve also this aspect of the data management cycle.\n\n\n\n\n\nJul 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nSoilwise & Metadata\n\n\nMetadata in Horizon Europe projects (Soil Mission)\n\n\n\n\n\n\n\n\nJun 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNo matching items"
   }
 ]
