@@ -57,7 +57,14 @@ format:
   - On-the-fly generation
   - Ship with or without payload
 
-# say hello to pygeometa
+# Intro to pygeometa
+
+- [pygeometa](https://geopython.github.io/pygeometa) is a Python package to generate metadata for geospatial datasets 
+- [metadata control file (MCF)](https://geopython.github.io/pygeometa/reference/mcf) is a format endorsed by the geopython community, defined and maintained as part of the pygeometa library
+  - YAML encoded subset of ISO 19115
+  - Supports YAML features such as references and includes
+
+# Intro to pygeometa
 
 - Created in 2009
 - Originally named “pygdm” as part of larger internal geospatial data management workflow at Environment Canada
@@ -79,12 +86,9 @@ format:
 
 # Architecture
 
-```{mermaid}
-flowchart LR
-  A(MCF) --> B{pygeometa core\n\n- CLI \n - Python API \n - MCF parser \n - Validation \n - Output schemas \n - Template rendering}
-  style B text-align:left
-  B --> C(Metadata XML, JSON, etc.)
-```
+::: {.r-stack}
+![How pygeometa works](./img/how-pygeometa-works.png){.fragment width="800"}
+:::
 
 # The Metadata Control File (MCF)
 
@@ -106,8 +110,6 @@ flowchart LR
   - in memory pipelines
 - Optimal for CI/CD and Git workflows (edit/publish)
 
-
-
 # Supported formats
 
 - Dataset metadata
@@ -127,35 +129,7 @@ flowchart LR
 - extending `pygeometa.schemas.base.BaseOutputSchema`
 - Generation is encapsulated
   - XML: Jinja2
-  - JSON: Python JSON
-
-
-
-
-# What if...
-
-::: {.r-stack}
-![](./img/fun-md/browse.png){.fragment width="800" }
-
-![](./img/fun-md/edit.png){.fragment width="800"}
-
-![](./img/fun-md/history.png){.fragment width="800" }
-:::
-
-
-# Intro to pygeometa
-
-- [pygeometa](https://geopython.github.io/pygeometa) is a Python package to generate metadata for geospatial datasets 
-- [metadata control file (MCF)](https://geopython.github.io/pygeometa/reference/mcf) is a format endorsed by the geopython community, defined and maintained as part of the pygeometa library
-  - YAML encoded subset of ISO 19115
-  - Supports YAML features such as references and includes
-
-
-# MDME, web editor for MCF
-
-![mdme](./img/fun-md/mdme.png){width="800" }
-
-[osgeo.github.io/mdme](https://osgeo.github.io/mdme)
+  - JSON: Python `json`
 
 # Metadata publication use cases
 
@@ -165,7 +139,7 @@ We present 3 use cases to demonstrate the value of this approach:
 - EOEPCA
 - WMO Information System (WIS2)
 
-# Land Soil Crop hubs
+# Land Soil Crop Hubs
 
 - An EU funded research project to improve data sharing in the Land Soil Crop domain in East Africa
 - Share resources which are relevant to agriculture in East Africa
@@ -175,8 +149,20 @@ We present 3 use cases to demonstrate the value of this approach:
 - Users initially provided metadata as lists in Microsoft Excel
 - Metadata is hosted in GitHub
 - Users contribute content (or register issues about content)
+- Metadata is published to pycsw
+- users can "edit me" from pycsw/OGC API - Records via GitHub
 
-## Metadata for MapServer configuration
+## Participatory metadata management
+
+::: {.r-stack}
+![](./img/fun-md/browse.png){.fragment width="800" }
+
+![](./img/fun-md/edit.png){.fragment width="800"}
+
+![](./img/fun-md/history.png){.fragment width="800" }
+:::
+
+## MCF for MapServer configuration
 
 - Use the metadata to generate [MapServer](https://mapserver.org) mapfile configuration 
 - Add the generated map endpoint to the metadata
@@ -192,8 +178,9 @@ We present 3 use cases to demonstrate the value of this approach:
 
 ![TerriaJS](./img/fun-md/terria.png){width="800" }
 
-# Earth Observation Exploitation Platform Common Architecture (EOEPCA)
+# EOEPCA
 
+- Earth Observation Exploitation Platform Common Architecture (EOEPCA)
 - Resource Catalogue (publishing, discovery and search)
 - Metadata publishing pipeline
   - Collection level metadata
@@ -207,9 +194,9 @@ We present 3 use cases to demonstrate the value of this approach:
   - OGC API - Records
   - STAC
 
-# Earth Observation Exploitation Platform Common Architecture (EOEPCA)
+# EOEPCA
 
-![EOEPCA metadata workflows](./img/eoepca.png){.fragment width="100" .fig-align="left"}
+![EOEPCA metadata workflows](./img/eoepca.png){width="400"}
 
 # WMO Information System (WIS2)
 
@@ -223,13 +210,19 @@ We present 3 use cases to demonstrate the value of this approach:
 
 - Metadata files are managed as pygeometa MCF records
 - GitHub Actions are used to verify, transform and publish notification messages to an MQTT broker
-- From here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by [pygeoapi](https://pygeoapi.io)) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client.
+- From here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by [pygeoapi](https://pygeoapi.io)) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client
 
 ## Workflow
 
 ::: {.r-stack}
 ![](./img/wis2-metadata-github-pubsub-workflow.png){.fragment width="1000" }
 :::
+
+# MDME, web editor for MCF
+
+![mdme](./img/fun-md/mdme.png){width="800" }
+
+[osgeo.github.io/mdme](https://osgeo.github.io/mdme)
 
 # Takeaways
 
@@ -251,3 +244,8 @@ We present 3 use cases to demonstrate the value of this approach:
 - [OGC API - Records](https://ogcapi.org/records)
 - [MapServer](https://mapserver.org)
 - [terria.io](https://terria.io)
+
+# Thanks!
+
+[@tomkralidis](https://noc.social/web/@tomkralidis)
+[@pvgenuchten](https://github.com/pvgenuchten)
