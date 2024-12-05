@@ -18,14 +18,21 @@
     "href": "slides/pygeometa-foss4g-2024.html#participatory-metadata-management",
     "title": "pygeometa project status",
     "section": "Participatory metadata management",
-    "text": "Participatory metadata management\n\nUsers initially provided metadata as lists in Microsoft Excel\nMetadata is hosted in GitHub\nUsers contribute content (or register issues about content)"
+    "text": "Participatory metadata management\n\nUsers initially provided metadata as lists in Microsoft Excel\nMetadata is hosted in GitHub\nUsers contribute content (or register issues about content)\nMetadata is published to pycsw\nusers can “edit me” from pycsw/OGC API - Records via GitHub"
   },
   {
-    "objectID": "slides/pygeometa-foss4g-2024.html#metadata-for-mapserver-configuration",
-    "href": "slides/pygeometa-foss4g-2024.html#metadata-for-mapserver-configuration",
+    "objectID": "slides/pygeometa-foss4g-2024.html#participatory-metadata-management-1",
+    "href": "slides/pygeometa-foss4g-2024.html#participatory-metadata-management-1",
     "title": "pygeometa project status",
-    "section": "Metadata for MapServer configuration",
-    "text": "Metadata for MapServer configuration\n\nUse the metadata to generate MapServer mapfile configuration\nAdd the generated map endpoint to the metadata\nMapServer is fully aligned with the catalogue"
+    "section": "Participatory metadata management",
+    "text": "Participatory metadata management"
+  },
+  {
+    "objectID": "slides/pygeometa-foss4g-2024.html#mcf-for-mapserver-configuration",
+    "href": "slides/pygeometa-foss4g-2024.html#mcf-for-mapserver-configuration",
+    "title": "pygeometa project status",
+    "section": "MCF for MapServer configuration",
+    "text": "MCF for MapServer configuration\n\nUse the metadata to generate MapServer mapfile configuration\nAdd the generated map endpoint to the metadata\nMapServer is fully aligned with the catalogue"
   },
   {
     "objectID": "slides/pygeometa-foss4g-2024.html#terriajs-a-web-based-gis",
@@ -46,7 +53,7 @@
     "href": "slides/pygeometa-foss4g-2024.html#workflow",
     "title": "pygeometa project status",
     "section": "Workflow",
-    "text": "Workflow\n“No code”: Manage, verify and publish metadata using GitHub as a content management platform.\n\nMetadata files are managed as pygeometa MCF records\nGitHub Actions are used to verify, transform and publish notification messages to an MQTT broker\nFrom here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by pygeoapi) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client."
+    "text": "Workflow\n“No code”: Manage, verify and publish metadata using GitHub as a content management platform.\n\nMetadata files are managed as pygeometa MCF records\nGitHub Actions are used to verify, transform and publish notification messages to an MQTT broker\nFrom here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by pygeoapi) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client"
   },
   {
     "objectID": "slides/pygeometa-foss4g-2024.html#workflow-1",

@@ -122,9 +122,6 @@
       margin-right: 0; 
     }
   </style>
-  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -207,8 +204,20 @@ Tom Kralidis, Paul van Genuchten
 </ul>
 </section>
 
-<section id="say-hello-to-pygeometa" class="title-slide slide level1 center">
-<h1>say hello to pygeometa</h1>
+<section id="intro-to-pygeometa" class="title-slide slide level1 center">
+<h1>Intro to pygeometa</h1>
+<ul>
+<li><a href="https://geopython.github.io/pygeometa">pygeometa</a> is a Python package to generate metadata for geospatial datasets</li>
+<li><a href="https://geopython.github.io/pygeometa/reference/mcf">metadata control file (MCF)</a> is a format endorsed by the geopython community, defined and maintained as part of the pygeometa library
+<ul>
+<li>YAML encoded subset of ISO 19115</li>
+<li>Supports YAML features such as references and includes</li>
+</ul></li>
+</ul>
+</section>
+
+<section id="intro-to-pygeometa-1" class="title-slide slide level1 center">
+<h1>Intro to pygeometa</h1>
 <ul>
 <li>Created in 2009</li>
 <li>Originally named “pygdm” as part of larger internal geospatial data management workflow at Environment Canada</li>
@@ -235,19 +244,12 @@ Tom Kralidis, Paul van Genuchten
 
 <section id="architecture" class="title-slide slide level1 center">
 <h1>Architecture</h1>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-  A(MCF) --&gt; B{pygeometa core\n\n- CLI \n - Python API \n - MCF parser \n - Validation \n - Output schemas \n - Template rendering}
-  style B text-align:left
-  B --&gt; C(Metadata XML, JSON, etc.)
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
+<div class="r-stack">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./img/how-pygeometa-works.png" class="fragment" width="800"></p>
+<figcaption>How pygeometa works</figcaption>
+</figure>
 </div>
 </div>
 </section>
@@ -311,36 +313,9 @@ Tom Kralidis, Paul van Genuchten
 <li>Generation is encapsulated
 <ul>
 <li>XML: Jinja2</li>
-<li>JSON: Python JSON</li>
+<li>JSON: Python <code>json</code></li>
 </ul></li>
 </ul>
-</section>
-
-<section id="what-if" class="title-slide slide level1 center">
-<h1>What if…</h1>
-<div class="r-stack">
-<p><img data-src="./img/fun-md/browse.png" class="fragment" width="800"></p>
-<p><img data-src="./img/fun-md/edit.png" class="fragment" width="800"></p>
-<p><img data-src="./img/fun-md/history.png" class="fragment" width="800"></p>
-</div>
-</section>
-
-<section id="intro-to-pygeometa" class="title-slide slide level1 center">
-<h1>Intro to pygeometa</h1>
-<ul>
-<li><a href="https://geopython.github.io/pygeometa">pygeometa</a> is a Python package to generate metadata for geospatial datasets</li>
-<li><a href="https://geopython.github.io/pygeometa/reference/mcf">metadata control file (MCF)</a> is a format endorsed by the geopython community, defined and maintained as part of the pygeometa library
-<ul>
-<li>YAML encoded subset of ISO 19115</li>
-<li>Supports YAML features such as references and includes</li>
-</ul></li>
-</ul>
-</section>
-
-<section id="mdme-web-editor-for-mcf" class="title-slide slide level1 center">
-<h1>MDME, web editor for MCF</h1>
-
-<img data-src="./img/fun-md/mdme.png" width="800" class="r-stretch quarto-figure-center"><p class="caption">mdme</p><p><a href="https://osgeo.github.io/mdme">osgeo.github.io/mdme</a></p>
 </section>
 
 <section id="metadata-publication-use-cases" class="title-slide slide level1 center">
@@ -355,7 +330,7 @@ Tom Kralidis, Paul van Genuchten
 
 <section>
 <section id="land-soil-crop-hubs" class="title-slide slide level1 center">
-<h1>Land Soil Crop hubs</h1>
+<h1>Land Soil Crop Hubs</h1>
 <ul>
 <li>An EU funded research project to improve data sharing in the Land Soil Crop domain in East Africa</li>
 <li>Share resources which are relevant to agriculture in East Africa</li>
@@ -367,10 +342,20 @@ Tom Kralidis, Paul van Genuchten
 <li>Users initially provided metadata as lists in Microsoft Excel</li>
 <li>Metadata is hosted in GitHub</li>
 <li>Users contribute content (or register issues about content)</li>
+<li>Metadata is published to pycsw</li>
+<li>users can “edit me” from pycsw/OGC API - Records via GitHub</li>
 </ul>
 </section>
-<section id="metadata-for-mapserver-configuration" class="slide level2">
-<h2>Metadata for MapServer configuration</h2>
+<section id="participatory-metadata-management-1" class="slide level2">
+<h2>Participatory metadata management</h2>
+<div class="r-stack">
+<p><img data-src="./img/fun-md/browse.png" class="fragment" width="800"></p>
+<p><img data-src="./img/fun-md/edit.png" class="fragment" width="800"></p>
+<p><img data-src="./img/fun-md/history.png" class="fragment" width="800"></p>
+</div>
+</section>
+<section id="mcf-for-mapserver-configuration" class="slide level2">
+<h2>MCF for MapServer configuration</h2>
 <ul>
 <li>Use the metadata to generate <a href="https://mapserver.org">MapServer</a> mapfile configuration</li>
 <li>Add the generated map endpoint to the metadata</li>
@@ -389,9 +374,10 @@ Tom Kralidis, Paul van Genuchten
 <h2>TerriaJS</h2>
 
 <img data-src="./img/fun-md/terria.png" width="800" class="r-stretch quarto-figure-center"><p class="caption">TerriaJS</p></section></section>
-<section id="earth-observation-exploitation-platform-common-architecture-eoepca" class="title-slide slide level1 center">
-<h1>Earth Observation Exploitation Platform Common Architecture (EOEPCA)</h1>
+<section id="eoepca" class="title-slide slide level1 center">
+<h1>EOEPCA</h1>
 <ul>
+<li>Earth Observation Exploitation Platform Common Architecture (EOEPCA)</li>
 <li>Resource Catalogue (publishing, discovery and search)</li>
 <li>Metadata publishing pipeline
 <ul>
@@ -411,10 +397,10 @@ Tom Kralidis, Paul van Genuchten
 </ul>
 </section>
 
-<section id="earth-observation-exploitation-platform-common-architecture-eoepca-1" class="title-slide slide level1 center">
-<h1>Earth Observation Exploitation Platform Common Architecture (EOEPCA)</h1>
-<p><img data-src="./img/eoepca.png" alt="EOEPCA metadata workflows">{.fragment width=“100” .fig-align=“left”}</p>
-</section>
+<section id="eoepca-1" class="title-slide slide level1 center">
+<h1>EOEPCA</h1>
+
+<img data-src="./img/eoepca.png" width="400" class="r-stretch quarto-figure-center"><p class="caption">EOEPCA metadata workflows</p></section>
 
 <section>
 <section id="wmo-information-system-wis2" class="title-slide slide level1 center">
@@ -431,7 +417,7 @@ Tom Kralidis, Paul van Genuchten
 <ul>
 <li>Metadata files are managed as pygeometa MCF records</li>
 <li>GitHub Actions are used to verify, transform and publish notification messages to an MQTT broker</li>
-<li>From here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by <a href="https://pygeoapi.io">pygeoapi</a>) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client.</li>
+<li>From here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by <a href="https://pygeoapi.io">pygeoapi</a>) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client</li>
 </ul>
 </section>
 <section id="workflow-1" class="slide level2">
@@ -440,6 +426,12 @@ Tom Kralidis, Paul van Genuchten
 <p><img data-src="./img/wis2-metadata-github-pubsub-workflow.png" class="fragment" width="1000"></p>
 </div>
 </section></section>
+<section id="mdme-web-editor-for-mcf" class="title-slide slide level1 center">
+<h1>MDME, web editor for MCF</h1>
+
+<img data-src="./img/fun-md/mdme.png" width="800" class="r-stretch quarto-figure-center"><p class="caption">mdme</p><p><a href="https://osgeo.github.io/mdme">osgeo.github.io/mdme</a></p>
+</section>
+
 <section>
 <section id="takeaways" class="title-slide slide level1 center">
 <h1>Takeaways</h1>
@@ -465,9 +457,13 @@ Tom Kralidis, Paul van Genuchten
 <li><a href="https://mapserver.org">MapServer</a></li>
 <li><a href="https://terria.io">terria.io</a></li>
 </ul>
-
-
 </section></section>
+<section id="thanks" class="title-slide slide level1 center">
+<h1>Thanks!</h1>
+<p><a href="https://noc.social/web/@tomkralidis"><span class="citation" data-cites="tomkralidis">@tomkralidis</span></a> <a href="https://github.com/pvgenuchten"><span class="citation" data-cites="pvgenuchten">@pvgenuchten</span></a></p>
+
+
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="./img/logo-foss4g-belem.png" class="slide-logo"></p>
