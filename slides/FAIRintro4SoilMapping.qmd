@@ -6,6 +6,8 @@ date: 2025-03-19
 format:
   revealjs: 
     theme: default
+    logo: https://www.isric.org/themes/custom/basic/logo.svg
+    footer: "FAIR intro for Digital Soil Mapping training - march 2025"
 ---
 
 # FAIR intro for Digital Soil Mapping
@@ -31,7 +33,16 @@ Findable - Accessible - Interoperable - Reusable
   - Use wise names and locations
   - Use an identification proxy (doi.org/handle.net)
 
-## Q. How can one cite a database which is continuously updated?
+## Q. Which URI's are likely more persistent
+
+- https://www.project-marvic.eu/datasets/3265-456-67788?uuid=3265-456-67788
+- https://analisi.transparenciacatalunya.cat/Urbanisme-infraestructures/Classificaci-i-qualificaci-del-s-l-de-les-edificac/qgtr-hfva/about_data
+- https://134.421.56.113:8080/geoserver/wms
+- https://catalegs.ide.cat/geonetwork/srv/dut/catalog.search#/metadata/edafologia-wms
+- https://doi.org/10.5281/zenodo.15050634
+
+
+## Q. How can people cite a database which is continuously updated?
 
 ## Standards for metadata exchange
 
@@ -46,18 +57,11 @@ Findable - Accessible - Interoperable - Reusable
 
 ## Catalogues
 
-- Records are brought into a catalogue, where they can be searched and assessed
-- Catalogues can exchange records to increase discoverability
-- Catalogues can cross borders between communities by transforming metadata to relevant community standards and protocols
+- Catalogues offer a search functionality on sets of records
+- Catalogues exchange records to increase discoverability
+- Catalogues cross borders between communities by transforming metadata to relevant standards and protocols
 
-## Q. What URI's are likely more persistent
-
-- https://www.project-marvic.eu/datasets/3265-456-67788?uuid=3265-456-67788
-- https://analisi.transparenciacatalunya.cat/Urbanisme-infraestructures/Classificaci-i-qualificaci-del-s-l-de-les-edificac/qgtr-hfva/about_data
-- https://134.421.56.113:8080/geoserver/wms
-- https://doi.org/10.5281/zenodo.15050634
-
-## Q. How will google be able to find datasets
+## Q. How is [google](https://datasetsearch.research.google.com/) able to locate datasets
 
 # Accessible
 
