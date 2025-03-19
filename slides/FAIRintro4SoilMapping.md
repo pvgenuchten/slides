@@ -1,0 +1,174 @@
+---
+title: FAIR intro for Digital Soil Mapping
+subtitle: FAIR and Geospatial Standards, a practical exercise
+author: Paul van Genuchten
+date: 2025-03-19
+format:
+  revealjs: 
+    theme: default
+---
+
+# FAIR intro for Digital Soil Mapping
+
+- Intro to FAIR
+- Data challenges in Soil Mapping
+- Voabularies in Soil
+- OGC API's
+
+# ![](https://www.go-fair.org/wp-content/themes/go-fair/images/logo.svg){width=50%} {data-background-image=./isric-style/images/background_title_bottom.png
+data-background-position="top 5px right 0px" 
+data-background-size=100%
+data-background-repeat=repeat-x}
+
+Findable - Accessible - Interoperable - Reusable
+
+[go-fair.org](https://www.go-fair.org/fair-principles)
+
+# Findable
+
+- Metadata and data should be easy to find for both humans and computers. 
+  - human readable (html)
+  - machine readible (xml/json/rdf using a standardised model)
+- Persistent identification
+  - Use wise names and locations
+  - Set up an identification proxy (doi.org/w3id.org)
+  - Metadata are accessible, even when the data are no longer available
+
+Q. How can one cite a database which is continuaously updated?
+
+## Standards for metadata exchange
+
+| Community | Standard | Protocol |
+| --- | --- | --- |
+| Open data/Sematic web | DCAT | SPARQL |
+| Science | Datacite | OAI-PMH | 
+| Geospatial | iso19115 | CSW |
+| Earth observation | STAC | STAC |
+| Search engines | Schema.org | json-ld/microdata |
+| Ecology | EML | |
+
+## Catalogues
+
+- Records are brought into a catalogue, where they can be searched and assessed
+- Catalogues can exchange records to increase discoverability
+- Catalogues can cross borders between communities by transforming metadata to relevant community standards and protocols
+
+Q. How will google be able to find datasets
+
+# Accessible
+
+- Data are retrievable by their identifier using a standardised communications protocol
+- Metadata are accessible, even when the data are no longer available
+
+## Data sovereignty
+
+## Standardised communications protocol
+
+- Generic protocols, http/ftp
+- Standardised (OGC) API's vs tailored REST API's
+  - Traditional WMS, WFS, WCS
+  - OGCAPI-Features / EDR
+  - SensorThings API (SoilThings) 
+
+## Repository software
+
+- Webdav (or webserver software)
+- Zenodo, Dataverse
+- Document Management Systems (DMS)
+- Cloud storage (Github, Dropbox, Youtube, Amazon, Sharepoint)
+
+## Testing tools
+
+- Automated link checking
+- Usage logs
+- Google Search Console notifies broken links 
+- Availability monitoring
+- Content validation
+
+# Interoperable
+
+- (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.
+- (Meta)data use vocabularies that follow FAIR principles
+- (Meta)data include qualified references to other (meta)data
+
+## Universal formats
+
+Facilitates accessing a resource with commonly available tooling
+
+- Proprietary vs Open (eg. ecw vs tiff)
+- De facto vs Formalised (eg. YAML vs XML)
+- Binary vs text based (eg. shapefile vs GeoJSON)
+- Cloud optimised vs Cloud native vs traditional (eg. COG vs GeoZarr vs GeoTiff)
+- Embedded metadata
+
+## Adopt common vocabularies
+
+Adopting a standardised model enables aggregation of data.
+
+- Relational models (INSPIRE GeoPackage)
+- UML/GML models (ISO28258)
+- Semantic web ontologies (Glosis web ontology)
+- Thesauri (WRB, Gemet, Agrovoc)
+
+# Reusable
+
+- (Meta)data are richly described with a plurality of accurate and relevant attributes
+- (Meta)data are released with a clear and accessible data usage license
+- (Meta)data are associated with detailed provenance
+- (Meta)data meet domain-relevant community standards
+
+## What if my repository does not offer extended metadata options?
+
+- Use keywords from [relevant thesauri](https://inspire.ec.europa.eu/metadata-codelist/SpatialScope) to `extend`
+- Add a readme.txt file with extended information
+  - Data model (which property, unit, analysis procedure)
+  - Lineage (which data were used as a source)
+- Use a stuctured format for readme.
+
+# Some tools suggested by ISRIC to increase FAIR at the source 
+
+- A set of conventions and tools to create and share metadata of datasets.
+- Data scientists should `own` metadata records, because they are the knowledgeable party.
+  
+- So: integrate in their environment, stay close to the tools they already use: Python, Git, Excel.
+- Focus on TC211 and academia standards, because we're in the academic spatial domain
+
+## 3 use cases
+
+- A team of data scientists understands/describes their source data, models and data outputs, for tracability and future re-use 
+- An organisation aims to share a subset of their resources as open access data
+- A community aims to collect relevant remote resources in a thematic catalogue
+
+## Describe resources at their source
+
+- Builds on a convention of placing a README.txt file in a project folder, describing the source, attribution. 
+- [Metadata control file](https://geopython.github.io/pygeometa/reference/mcf/) (mcf) is a convention of the geopython community (in YAML)
+- A [crawler tool](https://pypi.org/project/geodatacrawler/) extracts embedded metadata from data to create initial mcf
+- A [crawler tool](https://pypi.org/project/geodatacrawler/) fetches from a set of project folders the metadata and stores it in a central index
+
+## Share as open access data
+
+- Import the indexed records in a catalogue
+- Use metadata to set up OGC data api's, sharing the data as WMS, WFS, WCS 
+- Add the service endpoint back into the catalogue metadata
+
+## A thematic participatory data portal
+
+- Metadata from external sources can be harvested to the central index 
+- By storing MCF in GIT, and add a 'edit me on git' link on each metadata page, so users can flag problems in metadata or suggest new content
+- Imports are managed as CI-CD actions in Git
+
+## Oh, but this is quite technical!
+
+- Is it?
+- ISO19139 and DCAT and their tools (GeoNetwork, CKAN, Dataverse) also have their peculiarities
+- Not everybody will be able to create a pull request in GIT, use git issues instead and let others in the community fix
+- YAML has its caveats (indenting, reserved characters), use YAML check in text editor
+- We created a web-form for mcf editing, [mdme](https://osgeo.github.io/mdme)
+
+# Thank you, read more?
+
+- [pygeometa in the EJPSoil soil data assimilation cookbook](https://ejpsoil.github.io/soildata-assimilation-guidance/cookbook/pygeometa.html)
+- [LSC Hubs data workshop](https://lsc-hubs.github.io/hub-core/docs/developer/tutorial-data-management/)
+- [pygeometa](https://geopython.github.io/pygeometa)
+- [GeoDataCrawler](https://pypi.org/project/geodatacrawler)
