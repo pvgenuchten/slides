@@ -11,9 +11,7 @@ format:
 # FAIR intro for Digital Soil Mapping
 
 - Intro to FAIR
-- Data challenges in Soil Mapping
-- Voabularies in Soil
-- OGC API's
+- Metadata flows, ISRIC style
 
 # ![](https://www.go-fair.org/wp-content/themes/go-fair/images/logo.svg){width=50%} {data-background-image=./isric-style/images/background_title_bottom.png
 data-background-position="top 5px right 0px" 
@@ -31,10 +29,9 @@ Findable - Accessible - Interoperable - Reusable
   - machine readible (xml/json/rdf using a standardised model)
 - Persistent identification
   - Use wise names and locations
-  - Set up an identification proxy (doi.org/w3id.org)
-  - Metadata are accessible, even when the data are no longer available
+  - Use an identification proxy (doi.org/handle.net)
 
-Q. How can one cite a database which is continuaously updated?
+## Q. How can one cite a database which is continuously updated?
 
 ## Standards for metadata exchange
 
@@ -53,7 +50,7 @@ Q. How can one cite a database which is continuaously updated?
 - Catalogues can exchange records to increase discoverability
 - Catalogues can cross borders between communities by transforming metadata to relevant community standards and protocols
 
-Q. How will google be able to find datasets
+## Q. How will google be able to find datasets
 
 # Accessible
 
@@ -62,13 +59,20 @@ Q. How will google be able to find datasets
 
 ## Data sovereignty
 
+- Publish at an acknowledged repository (zenodo, dataverse) provides persistence
+- Use local tools to share data provides full control and trust
+
 ## Standardised communications protocol
 
 - Generic protocols, http/ftp
 - Standardised (OGC) API's vs tailored REST API's
   - Traditional WMS, WFS, WCS
   - OGCAPI-Features / EDR
-  - SensorThings API (SoilThings) 
+  - SensorThings API ([SoilThings](https://github.com/hylkevds/FROST-Server.SoilThings)) 
+
+## Sensorthings
+
+![](https://user-images.githubusercontent.com/731673/198872280-dcee1a05-91f1-4fa5-8280-69d6d8fbe699.png)
 
 ## Repository software
 
@@ -105,9 +109,9 @@ Facilitates accessing a resource with commonly available tooling
 
 Adopting a standardised model enables aggregation of data.
 
-- Relational models (INSPIRE GeoPackage)
-- UML/GML models (ISO28258)
-- Semantic web ontologies (Glosis web ontology)
+- Relational models ([INSPIRE GeoPackage](https://github.com/ejpsoil/inspire_soil_gpkg_template), [iso28258asPostGres](https://github.com/ISRICWorldSoil/iso-28258))
+- UML/GML models ([ISO28258](https://www.iso.org/standard/44595.html) [iso11074](https://www.iso.org/standard/59259.html))
+- Semantic web ontologies ([Glosis-ld](https://github.com/glosis-ld/glosis), [vocabs](https://vocab.isric.org))
 - Thesauri (WRB, Gemet, Agrovoc)
 
 # Reusable
@@ -125,7 +129,7 @@ Adopting a standardised model enables aggregation of data.
   - Lineage (which data were used as a source)
 - Use a stuctured format for readme.
 
-# Some tools suggested by ISRIC to increase FAIR at the source 
+# Metadata flows, ISRIC style
 
 - A set of conventions and tools to create and share metadata of datasets.
 - Data scientists should `own` metadata records, because they are the knowledgeable party.
@@ -168,7 +172,8 @@ Adopting a standardised model enables aggregation of data.
 
 # Thank you, read more?
 
-- [pygeometa in the EJPSoil soil data assimilation cookbook](https://ejpsoil.github.io/soildata-assimilation-guidance/cookbook/pygeometa.html)
+- [FAIR principles](https://www.go-fair.org/fair-principles/)
+- [EJPSoil soil data assimilation cookbook](https://ejpsoil.github.io/soildata-assimilation-guidance)
 - [LSC Hubs data workshop](https://lsc-hubs.github.io/hub-core/docs/developer/tutorial-data-management/)
 - [pygeometa](https://geopython.github.io/pygeometa)
 - [GeoDataCrawler](https://pypi.org/project/geodatacrawler)
