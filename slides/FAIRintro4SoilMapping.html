@@ -145,9 +145,7 @@ Paul van Genuchten
 <h1>FAIR intro for Digital Soil Mapping</h1>
 <ul>
 <li>Intro to FAIR</li>
-<li>Data challenges in Soil Mapping</li>
-<li>Voabularies in Soil</li>
-<li>OGC API’s</li>
+<li>Metadata flows, ISRIC style</li>
 </ul>
 </section>
 
@@ -169,11 +167,12 @@ Paul van Genuchten
 <li>Persistent identification
 <ul>
 <li>Use wise names and locations</li>
-<li>Set up an identification proxy (doi.org/w3id.org)</li>
-<li>Metadata are accessible, even when the data are no longer available</li>
+<li>Use an identification proxy (doi.org/handle.net)</li>
 </ul></li>
 </ul>
-<p>Q. How can one cite a database which is continuaously updated?</p>
+</section>
+<section id="q.-how-can-one-cite-a-database-which-is-continuously-updated" class="slide level2">
+<h2>Q. How can one cite a database which is continuously updated?</h2>
 </section>
 <section id="standards-for-metadata-exchange" class="slide level2">
 <h2>Standards for metadata exchange</h2>
@@ -226,7 +225,9 @@ Paul van Genuchten
 <li>Catalogues can exchange records to increase discoverability</li>
 <li>Catalogues can cross borders between communities by transforming metadata to relevant community standards and protocols</li>
 </ul>
-<p>Q. How will google be able to find datasets</p>
+</section>
+<section id="q.-how-will-google-be-able-to-find-datasets" class="slide level2">
+<h2>Q. How will google be able to find datasets</h2>
 </section></section>
 <section>
 <section id="accessible" class="title-slide slide level1 center">
@@ -238,6 +239,10 @@ Paul van Genuchten
 </section>
 <section id="data-sovereignty" class="slide level2">
 <h2>Data sovereignty</h2>
+<ul>
+<li>Publish at an acknowledged repository (zenodo, dataverse) provides persistence</li>
+<li>Use local tools to share data provides full control and trust</li>
+</ul>
 </section>
 <section id="standardised-communications-protocol" class="slide level2">
 <h2>Standardised communications protocol</h2>
@@ -247,10 +252,14 @@ Paul van Genuchten
 <ul>
 <li>Traditional WMS, WFS, WCS</li>
 <li>OGCAPI-Features / EDR</li>
-<li>SensorThings API (SoilThings)</li>
+<li>SensorThings API (<a href="https://github.com/hylkevds/FROST-Server.SoilThings">SoilThings</a>)</li>
 </ul></li>
 </ul>
 </section>
+<section id="sensorthings" class="slide level2">
+<h2>Sensorthings</h2>
+
+<img data-src="https://user-images.githubusercontent.com/731673/198872280-dcee1a05-91f1-4fa5-8280-69d6d8fbe699.png" class="r-stretch"></section>
 <section id="repository-software" class="slide level2">
 <h2>Repository software</h2>
 <ul>
@@ -294,9 +303,9 @@ Paul van Genuchten
 <h2>Adopt common vocabularies</h2>
 <p>Adopting a standardised model enables aggregation of data.</p>
 <ul>
-<li>Relational models (INSPIRE GeoPackage)</li>
-<li>UML/GML models (ISO28258)</li>
-<li>Semantic web ontologies (Glosis web ontology)</li>
+<li>Relational models (<a href="https://github.com/ejpsoil/inspire_soil_gpkg_template">INSPIRE GeoPackage</a>, <a href="https://github.com/ISRICWorldSoil/iso-28258">iso28258asPostGres</a>)</li>
+<li>UML/GML models (<a href="https://www.iso.org/standard/44595.html">ISO28258</a> <a href="https://www.iso.org/standard/59259.html">iso11074</a>)</li>
+<li>Semantic web ontologies (<a href="https://github.com/glosis-ld/glosis">Glosis-ld</a>, <a href="https://vocab.isric.org">vocabs</a>)</li>
 <li>Thesauri (WRB, Gemet, Agrovoc)</li>
 </ul>
 </section></section>
@@ -323,8 +332,8 @@ Paul van Genuchten
 </ul>
 </section></section>
 <section>
-<section id="some-tools-suggested-by-isric-to-increase-fair-at-the-source" class="title-slide slide level1 center">
-<h1>Some tools suggested by ISRIC to increase FAIR at the source</h1>
+<section id="metadata-flows-isric-style" class="title-slide slide level1 center">
+<h1>Metadata flows, ISRIC style</h1>
 <ul>
 <li><p>A set of conventions and tools to create and share metadata of datasets.</p></li>
 <li><p>Data scientists should <code>own</code> metadata records, because they are the knowledgeable party.</p></li>
@@ -378,7 +387,8 @@ Paul van Genuchten
 <section id="thank-you-read-more" class="title-slide slide level1 center">
 <h1>Thank you, read more?</h1>
 <ul>
-<li><a href="https://ejpsoil.github.io/soildata-assimilation-guidance/cookbook/pygeometa.html">pygeometa in the EJPSoil soil data assimilation cookbook</a></li>
+<li><a href="https://www.go-fair.org/fair-principles/">FAIR principles</a></li>
+<li><a href="https://ejpsoil.github.io/soildata-assimilation-guidance">EJPSoil soil data assimilation cookbook</a></li>
 <li><a href="https://lsc-hubs.github.io/hub-core/docs/developer/tutorial-data-management/">LSC Hubs data workshop</a></li>
 <li><a href="https://geopython.github.io/pygeometa">pygeometa</a></li>
 <li><a href="https://pypi.org/project/geodatacrawler">GeoDataCrawler</a></li>

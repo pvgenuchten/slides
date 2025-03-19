@@ -119,6 +119,13 @@
     "text": "pygeoapi\n\nPresentation\ndive.pygeoapi.io"
   },
   {
+    "objectID": "slides/FAIRintro4SoilMapping.html#q.-how-can-one-cite-a-database-which-is-continuously-updated",
+    "href": "slides/FAIRintro4SoilMapping.html#q.-how-can-one-cite-a-database-which-is-continuously-updated",
+    "title": "FAIR intro for Digital Soil Mapping",
+    "section": "Q. How can one cite a database which is continuously updated?",
+    "text": "Q. How can one cite a database which is continuously updated?"
+  },
+  {
     "objectID": "slides/FAIRintro4SoilMapping.html#standards-for-metadata-exchange",
     "href": "slides/FAIRintro4SoilMapping.html#standards-for-metadata-exchange",
     "title": "FAIR intro for Digital Soil Mapping",
@@ -130,14 +137,21 @@
     "href": "slides/FAIRintro4SoilMapping.html#catalogues",
     "title": "FAIR intro for Digital Soil Mapping",
     "section": "Catalogues",
-    "text": "Catalogues\n\nRecords are brought into a catalogue, where they can be searched and assessed\nCatalogues can exchange records to increase discoverability\nCatalogues can cross borders between communities by transforming metadata to relevant community standards and protocols\n\nQ. How will google be able to find datasets"
+    "text": "Catalogues\n\nRecords are brought into a catalogue, where they can be searched and assessed\nCatalogues can exchange records to increase discoverability\nCatalogues can cross borders between communities by transforming metadata to relevant community standards and protocols"
+  },
+  {
+    "objectID": "slides/FAIRintro4SoilMapping.html#q.-how-will-google-be-able-to-find-datasets",
+    "href": "slides/FAIRintro4SoilMapping.html#q.-how-will-google-be-able-to-find-datasets",
+    "title": "FAIR intro for Digital Soil Mapping",
+    "section": "Q. How will google be able to find datasets",
+    "text": "Q. How will google be able to find datasets"
   },
   {
     "objectID": "slides/FAIRintro4SoilMapping.html#data-sovereignty",
     "href": "slides/FAIRintro4SoilMapping.html#data-sovereignty",
     "title": "FAIR intro for Digital Soil Mapping",
     "section": "Data sovereignty",
-    "text": "Data sovereignty"
+    "text": "Data sovereignty\n\nPublish at an acknowledged repository (zenodo, dataverse) provides persistence\nUse local tools to share data provides full control and trust"
   },
   {
     "objectID": "slides/FAIRintro4SoilMapping.html#standardised-communications-protocol",
@@ -145,6 +159,13 @@
     "title": "FAIR intro for Digital Soil Mapping",
     "section": "Standardised communications protocol",
     "text": "Standardised communications protocol\n\nGeneric protocols, http/ftp\nStandardised (OGC) API’s vs tailored REST API’s\n\nTraditional WMS, WFS, WCS\nOGCAPI-Features / EDR\nSensorThings API (SoilThings)"
+  },
+  {
+    "objectID": "slides/FAIRintro4SoilMapping.html#sensorthings",
+    "href": "slides/FAIRintro4SoilMapping.html#sensorthings",
+    "title": "FAIR intro for Digital Soil Mapping",
+    "section": "Sensorthings",
+    "text": "Sensorthings"
   },
   {
     "objectID": "slides/FAIRintro4SoilMapping.html#repository-software",
@@ -172,7 +193,7 @@
     "href": "slides/FAIRintro4SoilMapping.html#adopt-common-vocabularies",
     "title": "FAIR intro for Digital Soil Mapping",
     "section": "Adopt common vocabularies",
-    "text": "Adopt common vocabularies\nAdopting a standardised model enables aggregation of data.\n\nRelational models (INSPIRE GeoPackage)\nUML/GML models (ISO28258)\nSemantic web ontologies (Glosis web ontology)\nThesauri (WRB, Gemet, Agrovoc)"
+    "text": "Adopt common vocabularies\nAdopting a standardised model enables aggregation of data.\n\nRelational models (INSPIRE GeoPackage, iso28258asPostGres)\nUML/GML models (ISO28258 iso11074)\nSemantic web ontologies (Glosis-ld, vocabs)\nThesauri (WRB, Gemet, Agrovoc)"
   },
   {
     "objectID": "slides/FAIRintro4SoilMapping.html#what-if-my-repository-does-not-offer-extended-metadata-options",
