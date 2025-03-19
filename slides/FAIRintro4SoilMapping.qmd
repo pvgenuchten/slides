@@ -59,7 +59,6 @@ Findable - Accessible - Interoperable - Reusable
 
 ## Q. How will google be able to find datasets
 
-
 # Accessible
 
 - Data are retrievable by their identifier using a standardised communications protocol
@@ -174,6 +173,20 @@ Adopting a standardised model enables aggregation of data.
 - Scientists verifies the generated metadata
 - Metadata is ingested into central index, quarable by colleagues
 
+## Try it out
+
+Linux
+```
+docker run -it --rm -v$(pwd):/tmp \
+ pvgenuchten/geodatacrawler:1.3.5 crawl-metadata \
+ --mode=init --dir=/tmp
+```
+Powershell
+```
+docker run -it --rm -v "${PWD}:/tmp" `
+  pvgenuchten/geodatacrawler:1.3.5 crawl-metadata `
+  --mode=init --dir=/tmp
+```
 
 ## Share as open access data
 
@@ -203,9 +216,8 @@ Adopting a standardised model enables aggregation of data.
 
 ## Oh, but this is quite technical!
 
-- Is it?
 - ISO19139 and DCAT and their tools (GeoNetwork, CKAN, Dataverse) also have their peculiarities
-- Not everybody will be able to create a pull request in GIT, use git issues instead and let others in the community fix
+- Alternative to pull request in GIT? Use git issues and let others in the community fix
 - YAML has its caveats (indenting, reserved characters), use YAML check in text editor
 - We created a web-form for mcf editing, [mdme](https://osgeo.github.io/mdme)
 
