@@ -226,6 +226,15 @@ Paul van Genuchten
 <li>Catalogues can cross borders between communities by transforming metadata to relevant community standards and protocols</li>
 </ul>
 </section>
+<section id="q.-what-uris-are-likely-more-persistent" class="slide level2">
+<h2>Q. What URI’s are likely more persistent</h2>
+<ul>
+<li>https://www.project-marvic.eu/datasets/3265-456-67788?uuid=3265-456-67788</li>
+<li>https://analisi.transparenciacatalunya.cat/Urbanisme-infraestructures/Classificaci-i-qualificaci-del-s-l-de-les-edificac/qgtr-hfva/about_data</li>
+<li>https://134.421.56.113:8080/geoserver/wms</li>
+<li>https://doi.org/10.5281/zenodo.15050634</li>
+</ul>
+</section>
 <section id="q.-how-will-google-be-able-to-find-datasets" class="slide level2">
 <h2>Q. How will google be able to find datasets</h2>
 </section></section>
@@ -242,6 +251,15 @@ Paul van Genuchten
 <ul>
 <li>Publish at an acknowledged repository (zenodo, dataverse) provides persistence</li>
 <li>Use local tools to share data provides full control and trust</li>
+</ul>
+</section>
+<section id="q.-which-uris-are-likely-more-trusted" class="slide level2">
+<h2>Q. Which URI’s are likely more trusted</h2>
+<ul>
+<li>https://www.youtube.com/watch?v=YMsrVpVUyOw</li>
+<li>https://zenodo.org/records/15050634</li>
+<li>https://www.openstreetmap.org/relation/349053</li>
+<li>https://administraciodigital.gencat.cat/ca/dades/dades-obertes/informacio-practica/llicencies/</li>
 </ul>
 </section>
 <section id="standardised-communications-protocol" class="slide level2">
@@ -335,43 +353,74 @@ Paul van Genuchten
 <section id="metadata-flows-isric-style" class="title-slide slide level1 center">
 <h1>Metadata flows, ISRIC style</h1>
 <ul>
-<li><p>A set of conventions and tools to create and share metadata of datasets.</p></li>
-<li><p>Data scientists should <code>own</code> metadata records, because they are the knowledgeable party.</p></li>
-<li><p>So: integrate in their environment, stay close to the tools they already use: Python, Git, Excel.</p></li>
-<li><p>Focus on TC211 and academia standards, because we’re in the academic spatial domain</p></li>
+<li><p>A set of conventions and tools to create and share metadata of datasets</p></li>
+<li><p>Soil scientists know their data, and should prepare the metadata records</p></li>
+<li><p>Integrate in their environment, stay close to the tools they already use: R, Python, Git, Excel…?</p></li>
+<li><p>Focus on spatial standards, because we’re in the spatial domain</p></li>
 </ul>
 </section>
 <section id="use-cases" class="slide level2">
 <h2>3 use cases</h2>
 <ul>
-<li>A team of data scientists understands/describes their source data, models and data outputs, for tracability and future re-use</li>
+<li>A team of soil scientists describes their source data, models and data outputs, for tracability and future re-use</li>
 <li>An organisation aims to share a subset of their resources as open access data</li>
-<li>A community aims to collect relevant remote resources in a thematic catalogue</li>
+<li>A community aims to collect relevant remote resources in a <a href="https://catalogue.ejpsoil.eu">thematic catalogue</a></li>
 </ul>
 </section>
 <section id="describe-resources-at-their-source" class="slide level2">
 <h2>Describe resources at their source</h2>
 <ul>
 <li>Builds on a convention of placing a README.txt file in a project folder, describing the source, attribution.</li>
-<li><a href="https://geopython.github.io/pygeometa/reference/mcf/">Metadata control file</a> (mcf) is a convention of the geopython community (in YAML)</li>
-<li>A <a href="https://pypi.org/project/geodatacrawler/">crawler tool</a> extracts embedded metadata from data to create initial mcf</li>
-<li>A <a href="https://pypi.org/project/geodatacrawler/">crawler tool</a> fetches from a set of project folders the metadata and stores it in a central index</li>
+<li>Based on standards, using <a href="https://geopython.github.io/pygeometa/reference/mcf/">Metadata control file</a> (mcf)</li>
+<li>We’ve built a <a href="https://pypi.org/project/geodatacrawler/">crawler tool</a>, which
+<ul>
+<li>extracts embedded metadata from data to create initial mcf</li>
+<li>extracts metadata from a set of project folders into a central index</li>
+</ul></li>
+</ul>
+</section>
+<section id="example-flow" class="slide level2">
+<h2>Example flow</h2>
+<ul>
+<li>Prepare a set of source data and covariates in a folder, import metadata from external sources</li>
+<li>Model generates a distribution prediction based on inputs, model generates some metadata</li>
+<li>Crawler tool combines generated metadata with embedded metadata (projection, bounds, bands)</li>
+<li>Scientists verifies the generated metadata</li>
+<li>Metadata is ingested into central index, quarable by colleagues</li>
 </ul>
 </section>
 <section id="share-as-open-access-data" class="slide level2">
 <h2>Share as open access data</h2>
 <ul>
 <li>Import the indexed records in a catalogue</li>
-<li>Use metadata to set up OGC data api’s, sharing the data as WMS, WFS, WCS</li>
+<li>Use metadata to set up OGC data api’s (WMS, WFS, WCS)</li>
 <li>Add the service endpoint back into the catalogue metadata</li>
+</ul>
+</section>
+<section id="example-flow-1" class="slide level2">
+<h2>Example flow</h2>
+<ul>
+<li>Subset of records and data files from previous flow are exported to an external catalogue</li>
+<li>Datasets are made available through conveniance API</li>
+<li>Users find the data in the catalogue and access it through the conveniance API</li>
+<li>Users can suggest improvements to the (meta)data thourgh Git (or email)</li>
 </ul>
 </section>
 <section id="a-thematic-participatory-data-portal" class="slide level2">
 <h2>A thematic participatory data portal</h2>
 <ul>
-<li>Metadata from external sources can be harvested to the central index</li>
-<li>By storing MCF in GIT, and add a ‘edit me on git’ link on each metadata page, so users can flag problems in metadata or suggest new content</li>
-<li>Imports are managed as CI-CD actions in Git</li>
+<li>Metadata from external sources is harvested (ingested and harmonised) to the central index</li>
+<li>Harvest definition (url + filter + frequency) is stored on Git</li>
+<li>Havests run at intervals using CI-CD pipelines (Github actions)</li>
+<li>Users can suggest changes to the harvest definition (new url’s)</li>
+</ul>
+</section>
+<section id="example-flow-2" class="slide level2">
+<h2>Example flow</h2>
+<ul>
+<li>A set of relevant records is identified to be harvested</li>
+<li>Definitions are updated in Git</li>
+<li>Users provide feedback on outdated or missing records</li>
 </ul>
 </section>
 <section id="oh-but-this-is-quite-technical" class="slide level2">

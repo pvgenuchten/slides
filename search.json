@@ -140,6 +140,13 @@
     "text": "Catalogues\n\nRecords are brought into a catalogue, where they can be searched and assessed\nCatalogues can exchange records to increase discoverability\nCatalogues can cross borders between communities by transforming metadata to relevant community standards and protocols"
   },
   {
+    "objectID": "slides/FAIRintro4SoilMapping.html#q.-what-uris-are-likely-more-persistent",
+    "href": "slides/FAIRintro4SoilMapping.html#q.-what-uris-are-likely-more-persistent",
+    "title": "FAIR intro for Digital Soil Mapping",
+    "section": "Q. What URI’s are likely more persistent",
+    "text": "Q. What URI’s are likely more persistent\n\nhttps://www.project-marvic.eu/datasets/3265-456-67788?uuid=3265-456-67788\nhttps://analisi.transparenciacatalunya.cat/Urbanisme-infraestructures/Classificaci-i-qualificaci-del-s-l-de-les-edificac/qgtr-hfva/about_data\nhttps://134.421.56.113:8080/geoserver/wms\nhttps://doi.org/10.5281/zenodo.15050634"
+  },
+  {
     "objectID": "slides/FAIRintro4SoilMapping.html#q.-how-will-google-be-able-to-find-datasets",
     "href": "slides/FAIRintro4SoilMapping.html#q.-how-will-google-be-able-to-find-datasets",
     "title": "FAIR intro for Digital Soil Mapping",
@@ -152,6 +159,13 @@
     "title": "FAIR intro for Digital Soil Mapping",
     "section": "Data sovereignty",
     "text": "Data sovereignty\n\nPublish at an acknowledged repository (zenodo, dataverse) provides persistence\nUse local tools to share data provides full control and trust"
+  },
+  {
+    "objectID": "slides/FAIRintro4SoilMapping.html#q.-which-uris-are-likely-more-trusted",
+    "href": "slides/FAIRintro4SoilMapping.html#q.-which-uris-are-likely-more-trusted",
+    "title": "FAIR intro for Digital Soil Mapping",
+    "section": "Q. Which URI’s are likely more trusted",
+    "text": "Q. Which URI’s are likely more trusted\n\nhttps://www.youtube.com/watch?v=YMsrVpVUyOw\nhttps://zenodo.org/records/15050634\nhttps://www.openstreetmap.org/relation/349053\nhttps://administraciodigital.gencat.cat/ca/dades/dades-obertes/informacio-practica/llicencies/"
   },
   {
     "objectID": "slides/FAIRintro4SoilMapping.html#standardised-communications-protocol",
@@ -207,28 +221,49 @@
     "href": "slides/FAIRintro4SoilMapping.html#use-cases",
     "title": "FAIR intro for Digital Soil Mapping",
     "section": "3 use cases",
-    "text": "3 use cases\n\nA team of data scientists understands/describes their source data, models and data outputs, for tracability and future re-use\nAn organisation aims to share a subset of their resources as open access data\nA community aims to collect relevant remote resources in a thematic catalogue"
+    "text": "3 use cases\n\nA team of soil scientists describes their source data, models and data outputs, for tracability and future re-use\nAn organisation aims to share a subset of their resources as open access data\nA community aims to collect relevant remote resources in a thematic catalogue"
   },
   {
     "objectID": "slides/FAIRintro4SoilMapping.html#describe-resources-at-their-source",
     "href": "slides/FAIRintro4SoilMapping.html#describe-resources-at-their-source",
     "title": "FAIR intro for Digital Soil Mapping",
     "section": "Describe resources at their source",
-    "text": "Describe resources at their source\n\nBuilds on a convention of placing a README.txt file in a project folder, describing the source, attribution.\nMetadata control file (mcf) is a convention of the geopython community (in YAML)\nA crawler tool extracts embedded metadata from data to create initial mcf\nA crawler tool fetches from a set of project folders the metadata and stores it in a central index"
+    "text": "Describe resources at their source\n\nBuilds on a convention of placing a README.txt file in a project folder, describing the source, attribution.\nBased on standards, using Metadata control file (mcf)\nWe’ve built a crawler tool, which\n\nextracts embedded metadata from data to create initial mcf\nextracts metadata from a set of project folders into a central index"
+  },
+  {
+    "objectID": "slides/FAIRintro4SoilMapping.html#example-flow",
+    "href": "slides/FAIRintro4SoilMapping.html#example-flow",
+    "title": "FAIR intro for Digital Soil Mapping",
+    "section": "Example flow",
+    "text": "Example flow\n\nPrepare a set of source data and covariates in a folder, import metadata from external sources\nModel generates a distribution prediction based on inputs, model generates some metadata\nCrawler tool combines generated metadata with embedded metadata (projection, bounds, bands)\nScientists verifies the generated metadata\nMetadata is ingested into central index, quarable by colleagues"
   },
   {
     "objectID": "slides/FAIRintro4SoilMapping.html#share-as-open-access-data",
     "href": "slides/FAIRintro4SoilMapping.html#share-as-open-access-data",
     "title": "FAIR intro for Digital Soil Mapping",
     "section": "Share as open access data",
-    "text": "Share as open access data\n\nImport the indexed records in a catalogue\nUse metadata to set up OGC data api’s, sharing the data as WMS, WFS, WCS\nAdd the service endpoint back into the catalogue metadata"
+    "text": "Share as open access data\n\nImport the indexed records in a catalogue\nUse metadata to set up OGC data api’s (WMS, WFS, WCS)\nAdd the service endpoint back into the catalogue metadata"
+  },
+  {
+    "objectID": "slides/FAIRintro4SoilMapping.html#example-flow-1",
+    "href": "slides/FAIRintro4SoilMapping.html#example-flow-1",
+    "title": "FAIR intro for Digital Soil Mapping",
+    "section": "Example flow",
+    "text": "Example flow\n\nSubset of records and data files from previous flow are exported to an external catalogue\nDatasets are made available through conveniance API\nUsers find the data in the catalogue and access it through the conveniance API\nUsers can suggest improvements to the (meta)data thourgh Git (or email)"
   },
   {
     "objectID": "slides/FAIRintro4SoilMapping.html#a-thematic-participatory-data-portal",
     "href": "slides/FAIRintro4SoilMapping.html#a-thematic-participatory-data-portal",
     "title": "FAIR intro for Digital Soil Mapping",
     "section": "A thematic participatory data portal",
-    "text": "A thematic participatory data portal\n\nMetadata from external sources can be harvested to the central index\nBy storing MCF in GIT, and add a ‘edit me on git’ link on each metadata page, so users can flag problems in metadata or suggest new content\nImports are managed as CI-CD actions in Git"
+    "text": "A thematic participatory data portal\n\nMetadata from external sources is harvested (ingested and harmonised) to the central index\nHarvest definition (url + filter + frequency) is stored on Git\nHavests run at intervals using CI-CD pipelines (Github actions)\nUsers can suggest changes to the harvest definition (new url’s)"
+  },
+  {
+    "objectID": "slides/FAIRintro4SoilMapping.html#example-flow-2",
+    "href": "slides/FAIRintro4SoilMapping.html#example-flow-2",
+    "title": "FAIR intro for Digital Soil Mapping",
+    "section": "Example flow",
+    "text": "Example flow\n\nA set of relevant records is identified to be harvested\nDefinitions are updated in Git\nUsers provide feedback on outdated or missing records"
   },
   {
     "objectID": "slides/FAIRintro4SoilMapping.html#oh-but-this-is-quite-technical",
