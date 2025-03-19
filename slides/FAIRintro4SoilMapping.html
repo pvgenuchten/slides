@@ -389,6 +389,17 @@ Paul van Genuchten
 <li>Metadata is ingested into central index, quarable by colleagues</li>
 </ul>
 </section>
+<section id="try-it-out" class="slide level2">
+<h2>Try it out</h2>
+<p>Linux</p>
+<pre><code>docker run -it --rm -v$(pwd):/tmp \
+ pvgenuchten/geodatacrawler:1.3.5 crawl-metadata \
+ --mode=init --dir=/tmp</code></pre>
+<p>Powershell</p>
+<pre><code>docker run -it --rm -v "${PWD}:/tmp" `
+  pvgenuchten/geodatacrawler:1.3.5 crawl-metadata `
+  --mode=init --dir=/tmp</code></pre>
+</section>
 <section id="share-as-open-access-data" class="slide level2">
 <h2>Share as open access data</h2>
 <ul>
@@ -426,9 +437,8 @@ Paul van Genuchten
 <section id="oh-but-this-is-quite-technical" class="slide level2">
 <h2>Oh, but this is quite technical!</h2>
 <ul>
-<li>Is it?</li>
 <li>ISO19139 and DCAT and their tools (GeoNetwork, CKAN, Dataverse) also have their peculiarities</li>
-<li>Not everybody will be able to create a pull request in GIT, use git issues instead and let others in the community fix</li>
+<li>Alternative to pull request in GIT? Use git issues and let others in the community fix</li>
 <li>YAML has its caveats (indenting, reserved characters), use YAML check in text editor</li>
 <li>We created a web-form for mcf editing, <a href="https://osgeo.github.io/mdme">mdme</a></li>
 </ul>

@@ -238,6 +238,13 @@
     "text": "Example flow\n\nPrepare a set of source data and covariates in a folder, import metadata from external sources\nModel generates a distribution prediction based on inputs, model generates some metadata\nCrawler tool combines generated metadata with embedded metadata (projection, bounds, bands)\nScientists verifies the generated metadata\nMetadata is ingested into central index, quarable by colleagues"
   },
   {
+    "objectID": "slides/FAIRintro4SoilMapping.html#try-it-out",
+    "href": "slides/FAIRintro4SoilMapping.html#try-it-out",
+    "title": "FAIR intro for Digital Soil Mapping",
+    "section": "Try it out",
+    "text": "Try it out\nLinux\ndocker run -it --rm -v$(pwd):/tmp \\\n pvgenuchten/geodatacrawler:1.3.5 crawl-metadata \\\n --mode=init --dir=/tmp\nPowershell\ndocker run -it --rm -v \"${PWD}:/tmp\" `\n  pvgenuchten/geodatacrawler:1.3.5 crawl-metadata `\n  --mode=init --dir=/tmp"
+  },
+  {
     "objectID": "slides/FAIRintro4SoilMapping.html#share-as-open-access-data",
     "href": "slides/FAIRintro4SoilMapping.html#share-as-open-access-data",
     "title": "FAIR intro for Digital Soil Mapping",
@@ -270,7 +277,7 @@
     "href": "slides/FAIRintro4SoilMapping.html#oh-but-this-is-quite-technical",
     "title": "FAIR intro for Digital Soil Mapping",
     "section": "Oh, but this is quite technical!",
-    "text": "Oh, but this is quite technical!\n\nIs it?\nISO19139 and DCAT and their tools (GeoNetwork, CKAN, Dataverse) also have their peculiarities\nNot everybody will be able to create a pull request in GIT, use git issues instead and let others in the community fix\nYAML has its caveats (indenting, reserved characters), use YAML check in text editor\nWe created a web-form for mcf editing, mdme"
+    "text": "Oh, but this is quite technical!\n\nISO19139 and DCAT and their tools (GeoNetwork, CKAN, Dataverse) also have their peculiarities\nAlternative to pull request in GIT? Use git issues and let others in the community fix\nYAML has its caveats (indenting, reserved characters), use YAML check in text editor\nWe created a web-form for mcf editing, mdme"
   },
   {
     "objectID": "index.html",
