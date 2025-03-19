@@ -119,11 +119,18 @@
     "text": "pygeoapi\n\nPresentation\ndive.pygeoapi.io"
   },
   {
-    "objectID": "slides/FAIRintro4SoilMapping.html#q.-how-can-one-cite-a-database-which-is-continuously-updated",
-    "href": "slides/FAIRintro4SoilMapping.html#q.-how-can-one-cite-a-database-which-is-continuously-updated",
+    "objectID": "slides/FAIRintro4SoilMapping.html#q.-which-uris-are-likely-more-persistent",
+    "href": "slides/FAIRintro4SoilMapping.html#q.-which-uris-are-likely-more-persistent",
     "title": "FAIR intro for Digital Soil Mapping",
-    "section": "Q. How can one cite a database which is continuously updated?",
-    "text": "Q. How can one cite a database which is continuously updated?"
+    "section": "Q. Which URI’s are likely more persistent",
+    "text": "Q. Which URI’s are likely more persistent\n\nhttps://www.project-marvic.eu/datasets/3265-456-67788?uuid=3265-456-67788\nhttps://analisi.transparenciacatalunya.cat/Urbanisme-infraestructures/Classificaci-i-qualificaci-del-s-l-de-les-edificac/qgtr-hfva/about_data\nhttps://134.421.56.113:8080/geoserver/wms\nhttps://catalegs.ide.cat/geonetwork/srv/dut/catalog.search#/metadata/edafologia-wms\nhttps://doi.org/10.5281/zenodo.15050634"
+  },
+  {
+    "objectID": "slides/FAIRintro4SoilMapping.html#q.-how-can-people-cite-a-database-which-is-continuously-updated",
+    "href": "slides/FAIRintro4SoilMapping.html#q.-how-can-people-cite-a-database-which-is-continuously-updated",
+    "title": "FAIR intro for Digital Soil Mapping",
+    "section": "Q. How can people cite a database which is continuously updated?",
+    "text": "Q. How can people cite a database which is continuously updated?"
   },
   {
     "objectID": "slides/FAIRintro4SoilMapping.html#standards-for-metadata-exchange",
@@ -137,21 +144,14 @@
     "href": "slides/FAIRintro4SoilMapping.html#catalogues",
     "title": "FAIR intro for Digital Soil Mapping",
     "section": "Catalogues",
-    "text": "Catalogues\n\nRecords are brought into a catalogue, where they can be searched and assessed\nCatalogues can exchange records to increase discoverability\nCatalogues can cross borders between communities by transforming metadata to relevant community standards and protocols"
+    "text": "Catalogues\n\nCatalogues offer a search functionality on sets of records\nCatalogues exchange records to increase discoverability\nCatalogues cross borders between communities by transforming metadata to relevant standards and protocols"
   },
   {
-    "objectID": "slides/FAIRintro4SoilMapping.html#q.-what-uris-are-likely-more-persistent",
-    "href": "slides/FAIRintro4SoilMapping.html#q.-what-uris-are-likely-more-persistent",
+    "objectID": "slides/FAIRintro4SoilMapping.html#q.-how-is-google-able-to-locate-datasets",
+    "href": "slides/FAIRintro4SoilMapping.html#q.-how-is-google-able-to-locate-datasets",
     "title": "FAIR intro for Digital Soil Mapping",
-    "section": "Q. What URI’s are likely more persistent",
-    "text": "Q. What URI’s are likely more persistent\n\nhttps://www.project-marvic.eu/datasets/3265-456-67788?uuid=3265-456-67788\nhttps://analisi.transparenciacatalunya.cat/Urbanisme-infraestructures/Classificaci-i-qualificaci-del-s-l-de-les-edificac/qgtr-hfva/about_data\nhttps://134.421.56.113:8080/geoserver/wms\nhttps://doi.org/10.5281/zenodo.15050634"
-  },
-  {
-    "objectID": "slides/FAIRintro4SoilMapping.html#q.-how-will-google-be-able-to-find-datasets",
-    "href": "slides/FAIRintro4SoilMapping.html#q.-how-will-google-be-able-to-find-datasets",
-    "title": "FAIR intro for Digital Soil Mapping",
-    "section": "Q. How will google be able to find datasets",
-    "text": "Q. How will google be able to find datasets"
+    "section": "Q. How is google able to locate datasets",
+    "text": "Q. How is google able to locate datasets"
   },
   {
     "objectID": "slides/FAIRintro4SoilMapping.html#data-sovereignty",
