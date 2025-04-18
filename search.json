@@ -88,7 +88,7 @@
     "href": "slides/egu-fair-25.html#use-cases",
     "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
     "section": "Use Cases",
-    "text": "Use Cases\n\nwhile publishing a dataset of a field campaign, indicate the properties observed, using which procedure, use common ontologies for indicating the properties and procedures\nin data model use the same terms to annotate the columns\nobservations are used to create property distribution maps, use the method and property ontologies to indicate the source data for the map"
+    "text": "Use Cases\n\nWhile publishing a dataset of a field campaign, indicate the properties observed, using which procedure\nUse common ontologies for indicating the properties and procedures\nIn data model metadata use the same terms to annotate the columns\nObservations are used to create property distribution maps, use the method and property ontologies to indicate the source data for the map"
   },
   {
     "objectID": "slides/egu-fair-25.html#ontology-considerations",
@@ -109,28 +109,28 @@
     "href": "slides/egu-fair-25.html#stakeholders",
     "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
     "section": "Stakeholders",
-    "text": "Stakeholders\n\nISO\nLegal texts\nAcademic community"
+    "text": "Stakeholders\n\nStandardisation bodies (ISO11074:2025)\nLegal texts / EU Soil monitoring law (Gemet/Eurovoc)\nAcademic community (IUSS / WRB)\nUN global community (Agrovoc, GSP, Glosolan)"
   },
   {
     "objectID": "slides/egu-fair-25.html#role-of-research-projects",
     "href": "slides/egu-fair-25.html#role-of-research-projects",
     "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
     "section": "Role of research projects",
-    "text": "Role of research projects\n\nCan not own a vocabulary initiatives, due to the temporary character\nCan proove new approaches work nicely\nCan endorse adoption of approaches"
+    "text": "Role of research projects\n\nCan not own a vocabulary initiative, due to the temporary character and lack of authority\nCan proove effectiveness of new approaches\nCan set up and endorse strategy on vocabulary development/adoption"
   },
   {
     "objectID": "slides/egu-fair-25.html#glossary-alignment-a-typical-project-startup-activity",
     "href": "slides/egu-fair-25.html#glossary-alignment-a-typical-project-startup-activity",
     "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
-    "section": "glossary alignment, a typical project startup activity",
-    "text": "glossary alignment, a typical project startup activity\n\nunderstand if terms are already listed in other vocabularies\nif so, reference them as ‘sameAs’ or ‘closeMatch’\nconsider to report back to the common vocabulary if there is not a full match, maybe a narrower term should be defined"
+    "section": "Glossary alignment, a typical project startup activity",
+    "text": "Glossary alignment, a typical project startup activity\n\nUnderstand if terms are already listed in other vocabularies\nIf so, adopt their definition, reference them as ‘sameAs’ or ‘closeMatch’\nConsider to report back to the common vocabulary if there is not a full match, maybe a narrower term should be defined"
   },
   {
-    "objectID": "slides/egu-fair-25.html#current-initiatives",
-    "href": "slides/egu-fair-25.html#current-initiatives",
+    "objectID": "slides/egu-fair-25.html#current-initiatives-aiming-to-align-efforts-on-vocabulary-development",
+    "href": "slides/egu-fair-25.html#current-initiatives-aiming-to-align-efforts-on-vocabulary-development",
     "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
-    "section": "Current initiatives",
-    "text": "Current initiatives\n\nISLANDR\nMarvic\nSoilwise\nEJP Soil"
+    "section": "Current initiatives aiming to align efforts on vocabulary development",
+    "text": "Current initiatives aiming to align efforts on vocabulary development\n\nISLANDR\nMarvic\nSoilwise\nEJP Soil"
   },
   {
     "objectID": "slides/abandoned-web.html#a-broken-link-from-a-report",
