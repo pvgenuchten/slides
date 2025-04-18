@@ -1,0 +1,45 @@
+---
+title: EGU Fair metadata
+subtitle: 
+author: Michael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten
+date: 2025-03-22
+format:
+  revealjs: 
+    theme: default
+---
+
+## vocabularies for metadata and data harmonisation, ideas for EGU presentation
+ 
+##Use Cases
+
+- while publishing a dataset of a field campaign, indicate the properties observed, using which procedure, use common ontologies for indicating the properties and procedures
+- in data model use the same terms to annotate the columns
+- observations are used to create property distribution maps, use the method and property ontologies to indicate the source data for the map
+ 
+## Ontology considerations
+- Governance of a common ontology (authoritative, persistence, versioning)
+- Usability of an ontology (easy search, assess, reference)
+- Interoperability (formats)
+- Linkage to same and similar terms (prevent duplication)
+ 
+## Challenges
+- We have insitutes (iso, gsp, iuss) but they are quite disconnected from IT practices
+- Historically vocabularies were defined as a list with a version number, terms were references by the list version, these days terms are identified individually and can occur in multiple lists
+- The skos ontology is nice but tools to work with it are not widely adopted
+
+## Stakeholders
+
+- ISO
+- Legal texts
+- Academic community
+
+## Role of research projects
+- Can not own a vocabulary initiatives, due to the temporary character
+- Can proove new approaches work nicely
+- Can endorse adoption of approaches
+
+## Current initiatives
+- ISLANDR
+- Marvic
+- Soilwise
+- EJP Soil
