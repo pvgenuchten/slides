@@ -17,12 +17,20 @@ format:
 - In data model metadata use the same terms to annotate the columns
 - Observations are used to create property distribution maps, use the method and property ontologies to indicate the source data for the map
  
-## Ontology considerations
+## [FAIR considerations](https://doi.org/10.1371/journal.pcbi.1009041)
 
-- Governance of a common ontology (authoritative, persistence, versioning)
-- Usability of an ontology (easy search, assess, reference)
-- Interoperability (formats)
-- Linkage to same and similar terms (prevent duplication)
+- Findable 
+  - Register vocabulary in a vocab registry (Dublin Core)
+  - Concepts and Lists should have persistent identifiers (DOI/W3ID)
+- Accessible 
+  - Open format (json/xml/ttl/csv)
+- Interoperable 
+  - SKOS ontology 
+  - Linkage to same and similar terms (prevent duplication)
+- Reusable 
+  - Open License (CC-0, CC-by)
+  - Human friendly browsing (vocbench, skosmos)
+
  
 ## Challenges
 
