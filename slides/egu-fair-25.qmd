@@ -13,14 +13,14 @@ format:
 ## Use Cases
 
 - While publishing a dataset of a field campaign, indicate the properties observed, using which procedure
-- Use common ontologies for indicating the properties and procedures
+- Use common vocabularies for indicating the properties and procedures
 - In data model metadata use the same terms to annotate the columns
-- Observations are used to create property distribution maps, use the method and property ontologies to indicate the source data for the map
+- Observations are used to create property distribution maps, use the method and property vocabularies to indicate the source data for the map
  
 ## [FAIR considerations](https://doi.org/10.1371/journal.pcbi.1009041)
 
 - Findable 
-  - Register vocabulary in a vocab registry (Dublin Core)
+  - Register vocabulary in a vocab registry ([fairsharing.org](https://fairsharing.org))
   - Concepts and Lists should have persistent identifiers (DOI/W3ID)
 - Accessible 
   - Open format (json/xml/ttl/csv)
@@ -34,9 +34,9 @@ format:
  
 ## Challenges
 
-- We have insitutes (iso, gsp, iuss) but they are quite disconnected from IT practices
-- Historically vocabularies were defined as a list with a version number, terms were references by the list version, these days terms are identified individually and can occur in multiple lists
-- The skos ontology is nice but tools to work with it are not widely adopted
+- We have standardisation insitutes (iso, gsp, iuss) but they are quite disconnected from FAIR practices
+- Historically vocabularies were defined as a list with a version number, terms were referenced by the list version. These days terms are identified individually and can occur in multiple lists.
+- The SKOS ontology is highly expressive but tools to work with it are not widely adopted
 
 ## Stakeholders
 
@@ -47,7 +47,8 @@ format:
 
 ## Role of research projects
 
-- Can **not** own a vocabulary initiative, due to the temporary character and lack of authority
+- Can setup initial version of a vocabulary
+- Can **not** own a vocabulary, due to the temporary character and lack of authority
 - Can proove effectiveness of new approaches
 - Can set up and endorse strategy on vocabulary development/adoption
 
@@ -55,7 +56,7 @@ format:
 
 - Understand if terms are already listed in other vocabularies
 - If so, adopt their definition, reference them as 'sameAs' or 'closeMatch'
-- Consider to report back to the common vocabulary if there is not a full match, maybe a narrower term should be defined
+- Consider to report back to the common vocabularies if there is not a full match, maybe a narrower term should be defined
 
 ## Current initiatives aiming to align efforts on vocabulary development
 
