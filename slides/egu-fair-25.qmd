@@ -1,14 +1,14 @@
 ---
-title: EGU Fair metadata
-subtitle: 
-author: Michael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten
-date: 2025-03-22
+title: FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects
+subtitle: "EGU25 ESSI3.2: One decade of FAIR Principles: Data Reusability and Impact in Earth System Sciences"
+author: Mickael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten
+date: 2025-04-30
 format:
   revealjs: 
     theme: default
 ---
 
-## vocabularies for metadata and data harmonisation, ideas for EGU presentation
+
  
 ## Use Cases
 
