@@ -12,9 +12,10 @@ format:
  
 ## Use Cases
 
-- while publishing a dataset of a field campaign, indicate the properties observed, using which procedure, use common ontologies for indicating the properties and procedures
-- in data model use the same terms to annotate the columns
-- observations are used to create property distribution maps, use the method and property ontologies to indicate the source data for the map
+- While publishing a dataset of a field campaign, indicate the properties observed, using which procedure
+- Use common ontologies for indicating the properties and procedures
+- In data model metadata use the same terms to annotate the columns
+- Observations are used to create property distribution maps, use the method and property ontologies to indicate the source data for the map
  
 ## Ontology considerations
 
@@ -31,23 +32,24 @@ format:
 
 ## Stakeholders
 
-- ISO
-- Legal texts
-- Academic community
+- Standardisation bodies (ISO11074:2025)
+- Legal texts / EU Soil monitoring law (Gemet/Eurovoc)
+- Academic community (IUSS / WRB)
+- UN global community (Agrovoc, GSP, Glosolan) 
 
 ## Role of research projects
 
-- Can not own a vocabulary initiatives, due to the temporary character
-- Can proove new approaches work nicely
-- Can endorse adoption of approaches
+- Can **not** own a vocabulary initiative, due to the temporary character and lack of authority
+- Can proove effectiveness of new approaches
+- Can set up and endorse strategy on vocabulary development/adoption
 
-## glossary alignment, a typical project startup activity
+## Glossary alignment, a typical project startup activity
 
-- understand if terms are already listed in other vocabularies
-- if so, reference them as 'sameAs' or 'closeMatch'
-- consider to report back to the common vocabulary if there is not a full match, maybe a narrower term should be defined
+- Understand if terms are already listed in other vocabularies
+- If so, adopt their definition, reference them as 'sameAs' or 'closeMatch'
+- Consider to report back to the common vocabulary if there is not a full match, maybe a narrower term should be defined
 
-## Current initiatives
+## Current initiatives aiming to align efforts on vocabulary development
 
 - ISLANDR
 - Marvic
