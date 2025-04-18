@@ -10,19 +10,21 @@ format:
 
 ## vocabularies for metadata and data harmonisation, ideas for EGU presentation
  
-##Use Cases
+## Use Cases
 
 - while publishing a dataset of a field campaign, indicate the properties observed, using which procedure, use common ontologies for indicating the properties and procedures
 - in data model use the same terms to annotate the columns
 - observations are used to create property distribution maps, use the method and property ontologies to indicate the source data for the map
  
 ## Ontology considerations
+
 - Governance of a common ontology (authoritative, persistence, versioning)
 - Usability of an ontology (easy search, assess, reference)
 - Interoperability (formats)
 - Linkage to same and similar terms (prevent duplication)
  
 ## Challenges
+
 - We have insitutes (iso, gsp, iuss) but they are quite disconnected from IT practices
 - Historically vocabularies were defined as a list with a version number, terms were references by the list version, these days terms are identified individually and can occur in multiple lists
 - The skos ontology is nice but tools to work with it are not widely adopted
@@ -34,11 +36,19 @@ format:
 - Academic community
 
 ## Role of research projects
+
 - Can not own a vocabulary initiatives, due to the temporary character
 - Can proove new approaches work nicely
 - Can endorse adoption of approaches
 
+## glossary alignment, a typical project startup activity
+
+- understand if terms are already listed in other vocabularies
+- if so, reference them as 'sameAs' or 'closeMatch'
+- consider to report back to the common vocabulary if there is not a full match, maybe a narrower term should be defined
+
 ## Current initiatives
+
 - ISLANDR
 - Marvic
 - Soilwise
