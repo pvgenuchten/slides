@@ -91,11 +91,11 @@
     "text": "Use Cases\n\nWhile publishing a dataset of a field campaign, indicate the properties observed, using which procedure\nUse common ontologies for indicating the properties and procedures\nIn data model metadata use the same terms to annotate the columns\nObservations are used to create property distribution maps, use the method and property ontologies to indicate the source data for the map"
   },
   {
-    "objectID": "slides/egu-fair-25.html#ontology-considerations",
-    "href": "slides/egu-fair-25.html#ontology-considerations",
+    "objectID": "slides/egu-fair-25.html#fair-considerations",
+    "href": "slides/egu-fair-25.html#fair-considerations",
     "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
-    "section": "Ontology considerations",
-    "text": "Ontology considerations\n\nGovernance of a common ontology (authoritative, persistence, versioning)\nUsability of an ontology (easy search, assess, reference)\nInteroperability (formats)\nLinkage to same and similar terms (prevent duplication)"
+    "section": "FAIR considerations",
+    "text": "FAIR considerations\n\nFindable\n\nRegister vocabulary in a vocab registry (Dublin Core)\nConcepts and Lists should have persistent identifiers (DOI/W3ID)\n\nAccessible\n\nOpen format (json/xml/ttl/csv)\n\nInteroperable\n\nSKOS ontology\nLinkage to same and similar terms (prevent duplication)\n\nReusable\n\nOpen License (CC-0, CC-by)\nHuman friendly browsing (vocbench, skosmos)"
   },
   {
     "objectID": "slides/egu-fair-25.html#challenges",
