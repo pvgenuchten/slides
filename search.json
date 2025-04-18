@@ -88,21 +88,21 @@
     "href": "slides/egu-fair-25.html#use-cases",
     "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
     "section": "Use Cases",
-    "text": "Use Cases\n\nWhile publishing a dataset of a field campaign, indicate the properties observed, using which procedure\nUse common ontologies for indicating the properties and procedures\nIn data model metadata use the same terms to annotate the columns\nObservations are used to create property distribution maps, use the method and property ontologies to indicate the source data for the map"
+    "text": "Use Cases\n\nWhile publishing a dataset of a field campaign, indicate the properties observed, using which procedure\nUse common vocabularies for indicating the properties and procedures\nIn data model metadata use the same terms to annotate the columns\nObservations are used to create property distribution maps, use the method and property vocabularies to indicate the source data for the map"
   },
   {
     "objectID": "slides/egu-fair-25.html#fair-considerations",
     "href": "slides/egu-fair-25.html#fair-considerations",
     "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
     "section": "FAIR considerations",
-    "text": "FAIR considerations\n\nFindable\n\nRegister vocabulary in a vocab registry (Dublin Core)\nConcepts and Lists should have persistent identifiers (DOI/W3ID)\n\nAccessible\n\nOpen format (json/xml/ttl/csv)\n\nInteroperable\n\nSKOS ontology\nLinkage to same and similar terms (prevent duplication)\n\nReusable\n\nOpen License (CC-0, CC-by)\nHuman friendly browsing (vocbench, skosmos)"
+    "text": "FAIR considerations\n\nFindable\n\nRegister vocabulary in a vocab registry (fairsharing.org)\nConcepts and Lists should have persistent identifiers (DOI/W3ID)\n\nAccessible\n\nOpen format (json/xml/ttl/csv)\n\nInteroperable\n\nSKOS ontology\nLinkage to same and similar terms (prevent duplication)\n\nReusable\n\nOpen License (CC-0, CC-by)\nHuman friendly browsing (vocbench, skosmos)"
   },
   {
     "objectID": "slides/egu-fair-25.html#challenges",
     "href": "slides/egu-fair-25.html#challenges",
     "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
     "section": "Challenges",
-    "text": "Challenges\n\nWe have insitutes (iso, gsp, iuss) but they are quite disconnected from IT practices\nHistorically vocabularies were defined as a list with a version number, terms were references by the list version, these days terms are identified individually and can occur in multiple lists\nThe skos ontology is nice but tools to work with it are not widely adopted"
+    "text": "Challenges\n\nWe have standardisation insitutes (iso, gsp, iuss) but they are quite disconnected from FAIR practices\nHistorically vocabularies were defined as a list with a version number, terms were referenced by the list version. These days terms are identified individually and can occur in multiple lists.\nThe SKOS ontology is highly expressive but tools to work with it are not widely adopted"
   },
   {
     "objectID": "slides/egu-fair-25.html#stakeholders",
@@ -116,14 +116,14 @@
     "href": "slides/egu-fair-25.html#role-of-research-projects",
     "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
     "section": "Role of research projects",
-    "text": "Role of research projects\n\nCan not own a vocabulary initiative, due to the temporary character and lack of authority\nCan proove effectiveness of new approaches\nCan set up and endorse strategy on vocabulary development/adoption"
+    "text": "Role of research projects\n\nCan setup initial version of a vocabulary\nCan not own a vocabulary, due to the temporary character and lack of authority\nCan proove effectiveness of new approaches\nCan set up and endorse strategy on vocabulary development/adoption"
   },
   {
     "objectID": "slides/egu-fair-25.html#glossary-alignment-a-typical-project-startup-activity",
     "href": "slides/egu-fair-25.html#glossary-alignment-a-typical-project-startup-activity",
     "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
     "section": "Glossary alignment, a typical project startup activity",
-    "text": "Glossary alignment, a typical project startup activity\n\nUnderstand if terms are already listed in other vocabularies\nIf so, adopt their definition, reference them as ‘sameAs’ or ‘closeMatch’\nConsider to report back to the common vocabulary if there is not a full match, maybe a narrower term should be defined"
+    "text": "Glossary alignment, a typical project startup activity\n\nUnderstand if terms are already listed in other vocabularies\nIf so, adopt their definition, reference them as ‘sameAs’ or ‘closeMatch’\nConsider to report back to the common vocabularies if there is not a full match, maybe a narrower term should be defined"
   },
   {
     "objectID": "slides/egu-fair-25.html#current-initiatives-aiming-to-align-efforts-on-vocabulary-development",
