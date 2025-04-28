@@ -13,13 +13,18 @@ format:
 ---
 
 
-
-## SoilWise Overview
+## SoilWise Overview (2023-2027)
 
 - (yr1) Preparations and initial prototype development
 - (yr2) In preparation for 2nd software development iteration
 - (yr3) 2nd iteration
 - (yr4) 3rd iteration and wrap up
+
+## Overall findings
+
+- Difficult to identify on which aspects the project can contribute
+- Many technological partners on the project, limited soil researchers
+- Should we focus on improved technology, capacity building or showing where the gaps are
 
 ## Data publication strategy
 
@@ -58,7 +63,7 @@ format:
 
 ## What's in it for ISRIC?
 
-- The resource outcomes publication strategy will be an good input to an updated ISRIC strategy
+- The `resource outcomes publication strategy` will be a good input to an updated ISRIC strategy
 - The data harmonisation efforts and guidance will be an interesting source for future WOSIS and NSIS developments
 - A lot of practical experience in generative AI is collected, which will be of interest to future ISRIC projects
 - The novel catalogue components can be used in subsequent projects (AUSO, LSC)
