@@ -1,21 +1,5 @@
 [
   {
-    "listing": "/slides/index.html",
-    "items": [
-      "/slides/fun-way-of-spatial-cataloguing.html",
-      "/slides/abandoned-web.html",
-      "/slides/pitch-battle.html",
-      "/slides/egu-fair-25.html",
-      "/slides/FAIRintro4SoilMapping.html",
-      "/slides/intro-crawler-mcf-pycsw.html",
-      "/slides/iuss100metadata.html",
-      "/slides/tartu-devops-sdi.html",
-      "/slides/soilwise-metadata.html",
-      "/slides/alliander-2023.html",
-      "/slides/pygeometa-foss4g-2024.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/slides/fun-way-of-spatial-cataloguing.html",
@@ -26,10 +10,28 @@
       "/slides/intro-crawler-mcf-pycsw.html",
       "/slides/iuss100metadata.html",
       "/slides/tartu-devops-sdi.html",
+      "/slides/soilwise-fruifull-may25.html",
       "/slides/soilwise-metadata.html",
       "/slides/alliander-2023.html",
       "/slides/pygeometa-foss4g-2024.html",
       "/slides/index.html"
+    ]
+  },
+  {
+    "listing": "/slides/index.html",
+    "items": [
+      "/slides/fun-way-of-spatial-cataloguing.html",
+      "/slides/abandoned-web.html",
+      "/slides/pitch-battle.html",
+      "/slides/egu-fair-25.html",
+      "/slides/FAIRintro4SoilMapping.html",
+      "/slides/intro-crawler-mcf-pycsw.html",
+      "/slides/iuss100metadata.html",
+      "/slides/tartu-devops-sdi.html",
+      "/slides/soilwise-fruifull-may25.html",
+      "/slides/soilwise-metadata.html",
+      "/slides/alliander-2023.html",
+      "/slides/pygeometa-foss4g-2024.html"
     ]
   }
 ]
