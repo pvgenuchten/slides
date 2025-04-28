@@ -14,11 +14,18 @@
     "text": "Some screenshots"
   },
   {
-    "objectID": "slides/soilwise-fruifull-may25.html#soilwise-overview",
-    "href": "slides/soilwise-fruifull-may25.html#soilwise-overview",
+    "objectID": "slides/soilwise-fruifull-may25.html#soilwise-overview-2023-2027",
+    "href": "slides/soilwise-fruifull-may25.html#soilwise-overview-2023-2027",
     "title": "SoilWise HE progress report",
-    "section": "SoilWise Overview",
-    "text": "SoilWise Overview\n\n(yr1) Preparations and initial prototype development\n(yr2) In preparation for 2nd software development iteration\n(yr3) 2nd iteration\n(yr4) 3rd iteration and wrap up"
+    "section": "SoilWise Overview (2023-2027)",
+    "text": "SoilWise Overview (2023-2027)\n\n(yr1) Preparations and initial prototype development\n(yr2) In preparation for 2nd software development iteration\n(yr3) 2nd iteration\n(yr4) 3rd iteration and wrap up"
+  },
+  {
+    "objectID": "slides/soilwise-fruifull-may25.html#overall-findings",
+    "href": "slides/soilwise-fruifull-may25.html#overall-findings",
+    "title": "SoilWise HE progress report",
+    "section": "Overall findings",
+    "text": "Overall findings\n\nDifficult to identify on which aspects the project can contribute\nMany technological partners on the project, limited soil researchers\nShould we focus on improved technology, capacity building or showing where the gaps are"
   },
   {
     "objectID": "slides/soilwise-fruifull-may25.html#data-publication-strategy",
@@ -67,7 +74,7 @@
     "href": "slides/soilwise-fruifull-may25.html#whats-in-it-for-isric",
     "title": "SoilWise HE progress report",
     "section": "What’s in it for ISRIC?",
-    "text": "What’s in it for ISRIC?\n\nThe resource outcomes publication strategy will be an good input to an updated ISRIC strategy\nThe data harmonisation efforts and guidance will be an interesting source for future WOSIS and NSIS developments\nA lot of practical experience in generative AI is collected, which will be of interest to future ISRIC projects\nThe novel catalogue components can be used in subsequent projects (AUSO, LSC)"
+    "text": "What’s in it for ISRIC?\n\nThe resource outcomes publication strategy will be a good input to an updated ISRIC strategy\nThe data harmonisation efforts and guidance will be an interesting source for future WOSIS and NSIS developments\nA lot of practical experience in generative AI is collected, which will be of interest to future ISRIC projects\nThe novel catalogue components can be used in subsequent projects (AUSO, LSC)"
   },
   {
     "objectID": "slides/pitch-battle.html#improving-findability---devops-style",
