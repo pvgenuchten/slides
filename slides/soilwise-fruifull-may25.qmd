@@ -1,0 +1,64 @@
+---
+title:  SoilWise HE progress report
+subtitle: ISRIC Fruitfull may 6th 2025
+author: Fenny van Egmond, Thaisa van der Woude, Paul van Genuchten, Jiarong Li
+date: 2025-05-06
+format:
+  revealjs: 
+    theme: default
+    logo: https://www.isric.org/themes/custom/basic/logo.svg
+    footer: "ISRIC Fruitfull may 6th 2025"
+  pptx:
+    slide-level: 2
+---
+
+
+
+## SoilWise Overview
+
+- (yr1) Preparations and initial prototype development
+- (yr2) In preparation for 2nd software development iteration
+- (yr3) 2nd iteration
+- (yr4) 3rd iteration and wrap up
+
+## Data publication strategy
+
+- Capacity building on existing REA guidelines
+- Research existing and develop new conventions on top of REA guidelines to facilitate the Soil Data Community
+
+## Existing guidelines
+
+- Publish datasets and articles on endorsed repositories (is it persistent and harvested by OpenAire?)
+- Annotate the funding mechanism (Horizon Europe)
+- Publish supplemental materials (datasets) as individual assets
+- Use terms from common vocabularies (Gemet, AgroVoc, iso11074) as subject in metadata
+
+## Existing and new conventions
+
+- Describe a datamodel (colums of a dataset) using common vocabularies (iso28258, glosolan, glosis-ld, inspire)
+
+## Catalogue vs Repository
+
+- A catalogue typically ingests metadata from various sources on a specific domain
+- A repository archives resources with relevant metadata, typically identified by a DOI
+- Grant agreement claims SoilWise is a repository, we consider it a catalogue
+
+## Catalogue development
+
+- Starting point was the catalogue development for LSC, S4A, EJP
+- Extended with harvesting workflows, metadata is persisted in a postgres database
+- A SOLR backend is used for performance reasons
+- A link checker runs through all links in the catalogue on a weekly basis
+- Metadata is enriched using QA processes, partially based on NLP/LLM
+
+## Soil data harmonisation
+
+- The Soil Health Knowledge Graph aims to provide a standardised vocabulary for SoilHealth related projects
+- Data harmonisation efforts aim to find new approaches for harmonizing soil data, while keeping additional efforts by the soil scientisits at minimum 
+
+## What's in it for ISRIC?
+
+- The resource outcomes publication strategy will be an good input to an updated ISRIC strategy
+- The data harmonisation efforts and guidance will be an interesting source for future WOSIS and NSIS developments
+- A lot of practical experience in generative AI is collected, which will be of interest to future ISRIC projects
+- The novel catalogue components can be used in subsequent projects (AUSO, LSC)
