@@ -494,7 +494,259 @@
     "href": "index.html",
     "title": "Select your deck:",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nJul 3, 2024\n\n\nA fun way to do spatial cataloguing\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\nNov 4, 2023\n\n\nAbandonded Project Websites -&gt; no\n\n\nPaul van Genuchten\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\nApr 30, 2025\n\n\nFAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects\n\n\nMickael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten\n\n\n\n\nMar 19, 2025\n\n\nFAIR intro for Digital Soil Mapping\n\n\nPaul van Genuchten\n\n\n\n\nFeb 29, 2024\n\n\nMetadata for the rest of us\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\nMay 20, 2024\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\nJul 3, 2024\n\n\nSDI maintenance DevOps style\n\n\nPaul van Genuchten\n\n\n\n\nMay 6, 2025\n\n\nSoilWise HE progress report\n\n\nFenny van Egmond, Thaisa van der Woude, Paul van Genuchten, Jiarong Li\n\n\n\n\nJun 3, 2024\n\n\nSoilwise & Metadata\n\n\nPaul van Genuchten\n\n\n\n\nNov 13, 2023\n\n\nWorkshop pygeoapi\n\n\nPaul van Genuchten\n\n\n\n\nDec 6, 2024\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n \n\n\ntype: default\n\n\n \n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nJul 3, 2024\n\n\nA fun way to do spatial cataloguing\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\n\n\nNov 4, 2023\n\n\nAbandonded Project Websites -&gt; no\n\n\nPaul van Genuchten\n\n\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\nApr 30, 2025\n\n\nFAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects\n\n\nMickael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten\n\n\n\n\n\n\nMar 19, 2025\n\n\nFAIR intro for Digital Soil Mapping\n\n\nPaul van Genuchten\n\n\n\n\n\n\nFeb 29, 2024\n\n\nMetadata for the rest of us\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\nJul 3, 2025\n\n\nOpen Source at ISRIC - World Soil Information\n\n\nPaul van Genuchten\n\n\n\n\n\n\nMay 20, 2024\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\nJul 3, 2024\n\n\nSDI maintenance DevOps style\n\n\nPaul van Genuchten\n\n\n\n\n\n\nMay 6, 2025\n\n\nSoilWise HE progress report\n\n\nFenny van Egmond, Thaisa van der Woude, Paul van Genuchten, Jiarong Li\n\n\n\n\n\n\nJun 3, 2024\n\n\nSoilwise & Metadata\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNov 13, 2023\n\n\nWorkshop pygeoapi\n\n\nPaul van Genuchten\n\n\n\n\n\n\nDec 6, 2024\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n \n\n\ntype: default\n\n\n \n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#isric---world-soil-information",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#isric---world-soil-information",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "ISRIC - World Soil Information",
+    "text": "ISRIC - World Soil Information\n\nFoundation funded by Dutch Government to maintain a collection of reference soil samples\nCollects and harmonizes soil observation data from around the globe (WOSIS)\nPredect the distribution of soil properties globally (Soilgrids)\nCapacity building on soil data management at soil institutes around the globe\nParticipate in research projects to innovate the soil sciences"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#soil-museum",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#soil-museum",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Soil museum",
+    "text": "Soil museum\n\nSoil museum by @tinker.nl"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#typical-use-cases-for-osgeo",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#typical-use-cases-for-osgeo",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Typical use cases for OSGEO",
+    "text": "Typical use cases for OSGEO"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#shift-from-open-source-developer-to-customer",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#shift-from-open-source-developer-to-customer",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Shift from open source developer to customer",
+    "text": "Shift from open source developer to customer"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#isric-and-fair",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#isric-and-fair",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "ISRIC and FAIR",
+    "text": "ISRIC and FAIR"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#principles-on-findability",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#principles-on-findability",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Principles on Findability",
+    "text": "Principles on Findability\n\nMetadata and data should be easy to find for both humans and computers.\n\nhuman readable (html)\nmachine readible (xml/json/rdf using a standardised model)\n\nPersistent identification\n\nUse wise names and locations\nUse an identification proxy (doi.org/handle.net)"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#human-readable",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#human-readable",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Human readable",
+    "text": "Human readable"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#machine-readable",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#machine-readable",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Machine readable",
+    "text": "Machine readable\n&lt;script type=\"application/ld+json\"&gt;  \n{\n    \"@context\": \"http://schema.org\",\n    \"@type\": \"Dataset\",\n    \"name\": \"Classificació i qualificació del sòl de les edificacions del topogràfic 1.5.000\",\n    \"description\": \"Edificacions del topogràfic 1.5.000 (polígons) elaborat per  l’Institut cartogràfic i geològic de Catalunya amb l’assignació de la classificació i qualificació del sòl del Mapa urbanístic de Catalunya versió v2022/07, i amb dades de superfície de l’edificació i del municipi i comarca on pertanyen.\",\n    \"keywords\": [\n        \"urbanisme i infraestructures\", ...\n&lt;/script&gt;"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#q.-which-uris-are-likely-more-persistent",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#q.-which-uris-are-likely-more-persistent",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Q. Which URI’s are likely more persistent",
+    "text": "Q. Which URI’s are likely more persistent\n\nhttps://www.project-marvic.eu/datasets/3265-456-67788?uuid=3265-456-67788\nhttps://analisi.transparenciacatalunya.cat/Urbanisme-infraestructures/Classificaci-i-qualificaci-del-s-l-de-les-edificac/qgtr-hfva/about_data\nhttps://134.421.56.113:8080/geoserver/wms\nhttps://catalegs.ide.cat/geonetwork/srv/dut/catalog.search#/metadata/edafologia-wms\nhttps://doi.org/10.5281/zenodo.15050634"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#q.-how-can-people-cite-a-database-which-is-continuously-updated",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#q.-how-can-people-cite-a-database-which-is-continuously-updated",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Q. How can people cite a database which is continuously updated?",
+    "text": "Q. How can people cite a database which is continuously updated?"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#standards-for-metadata-exchange",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#standards-for-metadata-exchange",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Standards for metadata exchange",
+    "text": "Standards for metadata exchange\n\n\n\nCommunity\nStandard\nProtocol\n\n\n\n\nOpen data/Sematic web\nDCAT\nSPARQL\n\n\nScience\nDatacite\nOAI-PMH\n\n\nGeospatial\niso19115\nCSW\n\n\nEarth observation\nSTAC\nSTAC\n\n\nSearch engines\nSchema.org\njson-ld/microdata\n\n\nEcology\nEML"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#catalogues",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#catalogues",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Catalogues",
+    "text": "Catalogues\n\nCatalogues offer a search functionality on sets of records\nCatalogues exchange records to increase discoverability\nCatalogues cross borders between communities by transforming metadata to relevant standards and protocols"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#q.-how-is-google-able-to-locate-datasets",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#q.-how-is-google-able-to-locate-datasets",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Q. How is google able to locate datasets",
+    "text": "Q. How is google able to locate datasets"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#principles-on-accessibility",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#principles-on-accessibility",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Principles on Accessibility",
+    "text": "Principles on Accessibility\n\nData are retrievable by their identifier using a standardised communications protocol\nMetadata are accessible, even when the data are no longer available"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#data-sovereignty",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#data-sovereignty",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Data sovereignty",
+    "text": "Data sovereignty\n\nPublish at an acknowledged repository (zenodo, dataverse) provides persistence\nUse local tools to share data provides full control and trust"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#q.-which-uris-are-likely-more-trusted",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#q.-which-uris-are-likely-more-trusted",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Q. Which URI’s are likely more trusted",
+    "text": "Q. Which URI’s are likely more trusted\n\nhttps://www.youtube.com/watch?v=YMsrVpVUyOw\nhttps://zenodo.org/records/15050634\nhttps://www.openstreetmap.org/relation/349053\nhttps://administraciodigital.gencat.cat/ca/dades/dades-obertes/informacio-practica/llicencies/"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#standardised-communications-protocol",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#standardised-communications-protocol",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Standardised communications protocol",
+    "text": "Standardised communications protocol\n\nGeneric protocols, http/ftp\nStandardised (OGC) API’s vs tailored REST API’s\n\nTraditional WMS, WFS, WCS\nOGCAPI-Features / EDR\nSensorThings API (SoilThings)"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#sensorthings",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#sensorthings",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Sensorthings",
+    "text": "Sensorthings"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#repository-software",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#repository-software",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Repository software",
+    "text": "Repository software\n\nWebdav (or webserver software)\nZenodo, Dataverse\nDocument Management Systems (DMS)\nCloud storage (Github, Dropbox, Youtube, Amazon, Sharepoint)"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#testing-tools",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#testing-tools",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Testing tools",
+    "text": "Testing tools\n\nAutomated link checking\nUsage logs\nGoogle Search Console notifies broken links\nAvailability monitoring\nContent validation"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#principles-on-interoperability",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#principles-on-interoperability",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Principles on Interoperability",
+    "text": "Principles on Interoperability\n\n(Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.\n(Meta)data use vocabularies that follow FAIR principles\n(Meta)data include qualified references to other (meta)data"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#universal-formats",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#universal-formats",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Universal formats",
+    "text": "Universal formats\nFacilitates accessing a resource with commonly available tooling\n\nProprietary vs Open (eg. ecw vs tiff)\nDe facto vs Formalised (eg. YAML vs XML)\nBinary vs text based (eg. shapefile vs GeoJSON)\nCloud optimised vs Cloud native vs traditional (eg. COG vs GeoZarr vs GeoTiff)\nEmbedded metadata"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#adopt-common-vocabularies",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#adopt-common-vocabularies",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Adopt common vocabularies",
+    "text": "Adopt common vocabularies\nAdopting a standardised model enables aggregation of data.\n\nRelational models (INSPIRE GeoPackage, iso28258asPostGres)\nUML/GML models (ISO28258 iso11074)\nSemantic web ontologies (Glosis-ld, vocabs)\nThesauri (WRB, Gemet, Agrovoc)"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#principles-on-re-use",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#principles-on-re-use",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Principles on Re-use",
+    "text": "Principles on Re-use\n\n(Meta)data are richly described with a plurality of accurate and relevant attributes\n(Meta)data are released with a clear and accessible data usage license\n(Meta)data are associated with detailed provenance\n(Meta)data meet domain-relevant community standards"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#what-if-my-repository-does-not-offer-extended-metadata-options",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#what-if-my-repository-does-not-offer-extended-metadata-options",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "What if my repository does not offer extended metadata options?",
+    "text": "What if my repository does not offer extended metadata options?\n\nUse keywords from relevant thesauri to extend\nAdd a readme.txt file with extended information\n\nData model (which property, unit, analysis procedure)\nLineage (which data were used as a source)\n\nUse a stuctured format for readme."
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#design-considerations",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#design-considerations",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Design considerations",
+    "text": "Design considerations\n\nA set of conventions and tools to create and share metadata of datasets\nSoil scientists know their data, and should prepare the metadata records\nIntegrate in their environment, stay close to the tools they already use: R, Python, Git, Excel…?\nFocus on spatial standards, because we’re in the spatial domain"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#use-cases",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#use-cases",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "3 use cases",
+    "text": "3 use cases\n\nA team of soil scientists describes their source data, models and data outputs, for tracability and future re-use\nAn organisation aims to share a subset of their resources as open access data\nA community aims to collect relevant remote resources in a thematic catalogue"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#describe-resources-at-their-source",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#describe-resources-at-their-source",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Describe resources at their source",
+    "text": "Describe resources at their source\n\nBuilds on a convention of placing a README.txt file in a project folder, describing the source, attribution.\nBased on standards, using Metadata control file (mcf)\nWe’ve built a crawler tool, which\n\nextracts embedded metadata from data to create initial mcf\nextracts metadata from a set of project folders into a central index"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#example-flow",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#example-flow",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Example flow",
+    "text": "Example flow\n\nPrepare a set of source data and covariates in a folder, import metadata from external sources\nModel generates a distribution prediction based on inputs, model generates some metadata\nCrawler tool combines generated metadata with embedded metadata (projection, bounds, bands)\nScientists verifies the generated metadata\nMetadata is ingested into central index, quarable by colleagues"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#try-it-out",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#try-it-out",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Try it out",
+    "text": "Try it out\ndocker run -it --rm -v$(pwd):/tmp \\\n pvgenuchten/geodatacrawler:1.3.5 crawl-metadata \\\n --mode=init --dir=/tmp"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#share-as-open-access-data",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#share-as-open-access-data",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Share as open access data",
+    "text": "Share as open access data\n\nImport the indexed records in a catalogue\nUse metadata to set up OGC data api’s (WMS, WFS, WCS)\nAdd the service endpoint back into the catalogue metadata"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#example-flow-1",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#example-flow-1",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Example flow",
+    "text": "Example flow\n\nSubset of records and data files from previous flow are exported to an external catalogue\nDatasets are made available through conveniance API\nUsers find the data in the catalogue and access it through the conveniance API\nUsers can suggest improvements to the (meta)data thourgh Git (or email)"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#a-thematic-participatory-data-portal",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#a-thematic-participatory-data-portal",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "A thematic participatory data portal",
+    "text": "A thematic participatory data portal\n\nMetadata from external sources is harvested (ingested and harmonised) to the central index\nHarvest definition (url + filter + frequency) is stored on Git\nHavests run at intervals using CI-CD pipelines (Github actions)\nUsers can suggest changes to the harvest definition (new url’s)"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#example-flow-2",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#example-flow-2",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Example flow",
+    "text": "Example flow\n\nA set of relevant records is identified to be harvested\nDefinitions are updated in Git\nUsers provide feedback on outdated or missing records"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#oh-but-this-is-quite-technical",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#oh-but-this-is-quite-technical",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Oh, but this is quite technical!",
+    "text": "Oh, but this is quite technical!\n\nISO19139 and DCAT and their tools (GeoNetwork, CKAN, Dataverse) also have their peculiarities\nAlternative to pull request in GIT? Use git issues and let others in the community fix\nYAML has its caveats (indenting, reserved characters), use YAML check in text editor\nWe created a web-form for mcf editing, mdme"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#read-more",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#read-more",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Read more",
+    "text": "Read more\n\nFAIR principles\nEJPSoil soil data assimilation cookbook\nLSC Hubs data workshop\npygeometa\nGeoDataCrawler"
   },
   {
     "objectID": "slides/abandoned-web.html#a-broken-link-from-a-report",
@@ -571,7 +823,7 @@
     "href": "slides/index.html",
     "title": "some slide decks",
     "section": "",
-    "text": "A fun way to do spatial cataloguing\n\n\nData discovery using pygeometa and mdme\n\n\n\n\n\n\n\n\nJul 3, 2024\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\n\n\n\n\n\n\n\n\nAbandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects\n\n\nEGU25 ESSI3.2: One decade of FAIR Principles: Data Reusability and Impact in Earth System Sciences\n\n\n\n\n\n\n\n\nApr 30, 2025\n\n\nMickael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR intro for Digital Soil Mapping\n\n\ngo-fair.org, a practical exercise\n\n\n\n\n\n\n\n\nMar 19, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata for the rest of us\n\n\nFOSS4G Europe Conference, Tartu, Estonia\n\n\n\n\n\n\n\n\nFeb 29, 2024\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\n\n\n\n\n\n\n\n\n\nMay 20, 2024\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\n\n\n\n\n\n\nSDI maintenance DevOps style\n\n\nInspired and facilitated by Open Source\n\n\nAt ISRIC - World Soil Information we increasingly maintain our data services through CI-CD pipelines configured via GIT. Both from the service as well as content perspective. The starting point are metadata records of our datasets being stored on GIT. With every change of a record, the relevant catalogues (pycsw) get updated and any relevant web services (mapserver) are updated. These pipelines are reproducable and there are never inconsistencies between catalogue content and the services. On top of that our users can directly report issues (or even improvement suggestions) through git. The stack is build on proven OSGeo components. A tool pyGeoDataCrawler brings the power of GDAL and pygeometa to CI-CD scripting. It crawls files on a folder and extracts relevant metadata, then prepares a mapserver configuration for that folder, while updating the metadata with the relevant service url’s. Typical use cases for this stack are; a search interface to any file based data repository or a participatory data catalogue for a project. At the conference we hope to hear from you if any of these components could be relevant to your cases or if there are similar initiatives we can contribute to or benefit from. What’s next? At ISRIC we receive and ingest a lot of soil data from partners. To harmonize this data is a huge effort. Via automated pipelines and interaction with the submitters via git comments, we hope to improve also this aspect of the data management cycle.\n\n\n\n\n\nJul 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nSoilWise HE progress report\n\n\nISRIC Fruitfull may 6th 2025\n\n\n\n\n\n\n\n\nMay 6, 2025\n\n\nFenny van Egmond, Thaisa van der Woude, Paul van Genuchten, Jiarong Li\n\n\n\n\n\n\n\n\n\n\n\n\nSoilwise & Metadata\n\n\nMetadata in Horizon Europe projects (Soil Mission)\n\n\n\n\n\n\n\n\nJun 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nDec 6, 2024\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nNo matching items"
+    "text": "A fun way to do spatial cataloguing\n\n\nData discovery using pygeometa and mdme\n\n\n\n\n\n\n\n\nJul 3, 2024\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\n\n\n\n\n\n\n\n\nAbandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects\n\n\nEGU25 ESSI3.2: One decade of FAIR Principles: Data Reusability and Impact in Earth System Sciences\n\n\n\n\n\n\n\n\nApr 30, 2025\n\n\nMickael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR intro for Digital Soil Mapping\n\n\ngo-fair.org, a practical exercise\n\n\n\n\n\n\n\n\nMar 19, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata for the rest of us\n\n\nFOSS4G Europe Conference, Tartu, Estonia\n\n\n\n\n\n\n\n\nFeb 29, 2024\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Source at ISRIC - World Soil Information\n\n\nFOSS4G NL, Wageningen, july 2025\n\n\n\n\n\n\n\n\nJul 3, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\n\n\n\n\n\n\n\n\n\nMay 20, 2024\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\n\n\n\n\n\n\nSDI maintenance DevOps style\n\n\nInspired and facilitated by Open Source\n\n\nAt ISRIC - World Soil Information we increasingly maintain our data services through CI-CD pipelines configured via GIT. Both from the service as well as content perspective. The starting point are metadata records of our datasets being stored on GIT. With every change of a record, the relevant catalogues (pycsw) get updated and any relevant web services (mapserver) are updated. These pipelines are reproducable and there are never inconsistencies between catalogue content and the services. On top of that our users can directly report issues (or even improvement suggestions) through git. The stack is build on proven OSGeo components. A tool pyGeoDataCrawler brings the power of GDAL and pygeometa to CI-CD scripting. It crawls files on a folder and extracts relevant metadata, then prepares a mapserver configuration for that folder, while updating the metadata with the relevant service url’s. Typical use cases for this stack are; a search interface to any file based data repository or a participatory data catalogue for a project. At the conference we hope to hear from you if any of these components could be relevant to your cases or if there are similar initiatives we can contribute to or benefit from. What’s next? At ISRIC we receive and ingest a lot of soil data from partners. To harmonize this data is a huge effort. Via automated pipelines and interaction with the submitters via git comments, we hope to improve also this aspect of the data management cycle.\n\n\n\n\n\nJul 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nSoilWise HE progress report\n\n\nISRIC Fruitfull may 6th 2025\n\n\n\n\n\n\n\n\nMay 6, 2025\n\n\nFenny van Egmond, Thaisa van der Woude, Paul van Genuchten, Jiarong Li\n\n\n\n\n\n\n\n\n\n\n\n\nSoilwise & Metadata\n\n\nMetadata in Horizon Europe projects (Soil Mission)\n\n\n\n\n\n\n\n\nJun 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nDec 6, 2024\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/pygeometa-foss4g-2024.html#participatory-metadata-management",

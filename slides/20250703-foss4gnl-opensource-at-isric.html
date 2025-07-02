@@ -9,9 +9,9 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.32">
 
-  <meta name="author" content="van Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;">
-  <meta name="dcterms.date" content="2024-05-20">
-  <title>some slide decks – Participatory data catalogs to facilitate informed decision-making</title>
+  <meta name="author" content="Paul van Genuchten">
+  <meta name="dcterms.date" content="2025-07-03">
+  <title>some slide decks – Open Source at ISRIC - World Soil Information</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,6 +29,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -128,208 +194,384 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Participatory data catalogs to facilitate informed decision-making</h1>
+  <h1 class="title">Open Source at ISRIC - World Soil Information</h1>
+  <p class="subtitle">FOSS4G NL, Wageningen, july 2025</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-van Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T; 
+Paul van Genuchten 
 </div>
 </div>
 </div>
 
-  <p class="date">2024-05-20</p>
+  <p class="date">2025-07-03</p>
 </section>
-<section id="overview" class="title-slide slide level1 center">
-<h1>Overview</h1>
-<p>Data Standards in the soil domain are quite elaborate, but adoption is low.</p>
+<section id="isric---world-soil-information" class="slide level2">
+<h2>ISRIC - World Soil Information</h2>
 <ul>
-<li class="fragment">metadata</li>
-<li class="fragment">data standardisation</li>
-<li class="fragment">common code lists</li>
-</ul>
-<p>The tools shoud be open source, supporting standards and easy to use.</p>
-</section>
-
-<section id="metadata" class="title-slide slide level1 center">
-<h1>Metadata</h1>
-
-</section>
-
-<section id="which-metadata" class="title-slide slide level1 center">
-<h1>Which metadata?</h1>
-<ul>
-<li class="fragment">Data describing datasets</li>
-<li class="fragment">Title, Author, Usage constraints, Temporal extent, Provenance, Data model, …</li>
+<li>Foundation funded by Dutch Government to maintain a collection of reference soil samples</li>
+<li>Collects and harmonizes soil observation data from around the globe (WOSIS)</li>
+<li>Predect the distribution of soil properties globally (Soilgrids)</li>
+<li>Capacity building on soil data management at soil institutes around the globe</li>
+<li>Participate in research projects to innovate the soil sciences</li>
 </ul>
 </section>
+<section id="soil-museum" class="slide level2">
+<h2>Soil museum</h2>
 
-<section id="metadata-and-the-soil-domain" class="title-slide slide level1 center">
-<h1>Metadata and the soil domain</h1>
+<img data-src="https://tinker.nl/img/cache/media_6828_widen_3840-upscale_90-2349_world-soil-museum01_0.webp" class="r-stretch quarto-figure-center"><p class="caption">Soil museum by <span class="citation" data-cites="tinker.nl">@tinker.nl</span></p></section>
+<section id="typical-use-cases-for-osgeo" class="slide level2">
+<h2>Typical use cases for OSGEO</h2>
 <ul>
-<li class="fragment">Prediction of spatio temporal variation, soil degradation and crop yields require many types of data</li>
-<li class="fragment">Data should be well documented to understand the relevance and the usage constraints of the derived products</li>
-<li class="fragment">Many data products have a spatio temporal aspect, so the standards of the Open GeoSpatial Consortium are most relevant. But compatibility with other standards is relevant also.</li>
+<li></li>
+<li></li>
+<li></li>
 </ul>
 </section>
-
-<section id="metadata-current-situation" class="title-slide slide level1 center">
-<h1>Metadata Current situation</h1>
+<section id="shift-from-open-source-developer-to-customer" class="slide level2">
+<h2>Shift from open source developer to customer</h2>
 <ul>
-<li class="fragment">Not existing</li>
-<li class="fragment">Not standardised; in a report or readme.txt file</li>
-<li class="fragment">Maintained in a catalogue; disconnected from data</li>
+<li></li>
+<li></li>
+<li></li>
 </ul>
 </section>
-
-<section id="pygeometa-metadata-for-the-rest-of-us" class="title-slide slide level1 center">
-<h1>pygeometa, metadata for the rest of us</h1>
+<section id="isric-and-fair" class="slide level2">
+<h2>ISRIC and FAIR</h2>
+</section>
+<section id="principles-on-findability" class="slide level2">
+<h2>Principles on Findability</h2>
 <ul>
-<li class="fragment">A software library of the geopython community</li>
-<li class="fragment">Every data file is accompanied by a structured metadata file</li>
-<li class="fragment">YAML, easy to read by humans and machines</li>
-<li class="fragment">A subset of the ISO19115 standard for metadata</li>
-<li class="fragment">Exportable to variety of metadata standards (iso, dcat, stac)</li>
+<li>Metadata and data should be easy to find for both humans and computers.
+<ul>
+<li>human readable (html)</li>
+<li>machine readible (xml/json/rdf using a standardised model)</li>
+</ul></li>
+<li>Persistent identification
+<ul>
+<li>Use wise names and locations</li>
+<li>Use an identification proxy (doi.org/handle.net)</li>
+</ul></li>
 </ul>
 </section>
+<section id="human-readable" class="slide level2">
+<h2>Human readable</h2>
 
-<section id="tooling-around-the-pygeometa-library-pygeodatacrawler" class="title-slide slide level1 center">
-<h1>Tooling around the pygeometa library; pyGeoDataCrawler</h1>
+<img data-src="./img/dadesobertes.png" class="r-stretch"></section>
+<section id="machine-readable" class="slide level2">
+<h2>Machine readable</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a></a><span class="op">&lt;</span>script type<span class="op">=</span><span class="st">"application/ld+json"</span><span class="op">&gt;</span>  </span>
+<span id="cb1-2"><a></a>{</span>
+<span id="cb1-3"><a></a>    <span class="st">"@context"</span><span class="op">:</span> <span class="st">"http://schema.org"</span><span class="op">,</span></span>
+<span id="cb1-4"><a></a>    <span class="st">"@type"</span><span class="op">:</span> <span class="st">"Dataset"</span><span class="op">,</span></span>
+<span id="cb1-5"><a></a>    <span class="st">"name"</span><span class="op">:</span> <span class="st">"Classificació i qualificació del sòl de les edificacions del topogràfic 1.5.000"</span><span class="op">,</span></span>
+<span id="cb1-6"><a></a>    <span class="st">"description"</span><span class="op">:</span> <span class="st">"Edificacions del topogràfic 1.5.000 (polígons) elaborat per  l’Institut cartogràfic i geològic de Catalunya amb l’assignació de la classificació i qualificació del sòl del Mapa urbanístic de Catalunya versió v2022/07, i amb dades de superfície de l’edificació i del municipi i comarca on pertanyen."</span><span class="op">,</span></span>
+<span id="cb1-7"><a></a>    <span class="st">"keywords"</span><span class="op">:</span> [</span>
+<span id="cb1-8"><a></a>        <span class="st">"urbanisme i infraestructures"</span><span class="op">,</span> <span class="op">...</span></span>
+<span id="cb1-9"><a></a><span class="op">&lt;/</span>script<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="q.-which-uris-are-likely-more-persistent" class="slide level2">
+<h2>Q. Which URI’s are likely more persistent</h2>
 <ul>
-<li class="fragment">Scan a network folder for (meta)data</li>
-<li class="fragment">Store metadata in a git repository</li>
-<li class="fragment">Import metadata from excel or remote sources (harvest)</li>
+<li>https://www.project-marvic.eu/datasets/3265-456-67788?uuid=3265-456-67788</li>
+<li>https://analisi.transparenciacatalunya.cat/Urbanisme-infraestructures/Classificaci-i-qualificaci-del-s-l-de-les-edificac/qgtr-hfva/about_data</li>
+<li>https://134.421.56.113:8080/geoserver/wms</li>
+<li>https://catalegs.ide.cat/geonetwork/srv/dut/catalog.search#/metadata/edafologia-wms</li>
+<li>https://doi.org/10.5281/zenodo.15050634</li>
 </ul>
 </section>
-
-<section id="import-into-a-catalogue-pycsw" class="title-slide slide level1 center">
-<h1>Import into a catalogue; pycsw</h1>
+<section id="q.-how-can-people-cite-a-database-which-is-continuously-updated" class="slide level2">
+<h2>Q. How can people cite a database which is continuously updated?</h2>
+</section>
+<section id="standards-for-metadata-exchange" class="slide level2">
+<h2>Standards for metadata exchange</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Community</th>
+<th>Standard</th>
+<th>Protocol</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Open data/Sematic web</td>
+<td>DCAT</td>
+<td>SPARQL</td>
+</tr>
+<tr class="even">
+<td>Science</td>
+<td>Datacite</td>
+<td>OAI-PMH</td>
+</tr>
+<tr class="odd">
+<td>Geospatial</td>
+<td>iso19115</td>
+<td>CSW</td>
+</tr>
+<tr class="even">
+<td>Earth observation</td>
+<td>STAC</td>
+<td>STAC</td>
+</tr>
+<tr class="odd">
+<td>Search engines</td>
+<td>Schema.org</td>
+<td>json-ld/microdata</td>
+</tr>
+<tr class="even">
+<td>Ecology</td>
+<td>EML</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="catalogues" class="slide level2">
+<h2>Catalogues</h2>
 <ul>
-<li class="fragment">Metadata can be imported into a catalogue</li>
-<li class="fragment">pycsw is a mid-size OGC reference catalog implementation</li>
-<li class="fragment">pycsw uses a database backend (PostGreSQL)</li>
-<li class="fragment">Various standardised API’s (CSW, STAC, OAI-PMH) and models (Dublin Core, iso19115, Datacite)</li>
+<li>Catalogues offer a search functionality on sets of records</li>
+<li>Catalogues exchange records to increase discoverability</li>
+<li>Catalogues cross borders between communities by transforming metadata to relevant standards and protocols</li>
 </ul>
 </section>
-
-<section id="developed-and-used-in-a-series-of-research-projects" class="title-slide slide level1 center">
-<h1>Developed and used in a series of research projects</h1>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><a href="https://ejpsoil.eu">EJP Soil</a><br> <a href="https://soilwise-he.eu">Soilwise</a><br> <a href="https://project-marvic.eu">Marvic</a></p>
-</div><div class="column" style="width:50%;">
-<p><a href="https://lsc-hubs.org">Land Soil Crop Hubs</a> (Desira)<br> <a href="https://ifdc.org/projects/soils-space-to-place/">Space to Place</a><br> <a href="https://www.soils4africa-h2020.eu/">Soils for Africa</a></p>
-</div></div>
+<section id="q.-how-is-google-able-to-locate-datasets" class="slide level2">
+<h2>Q. How is <a href="https://datasetsearch.research.google.com/">google</a> able to locate datasets</h2>
 </section>
-
-<section id="screen-shots" class="title-slide slide level1 center">
-<h1>Screen shots</h1>
-<div class="r-stack">
-<p><img data-src="./img/iuss100/ejpsoil-catalogue.png" class="fragment" width="600"></p>
-<p><img data-src="./img/iuss100/lsc-hubs.png" class="fragment" width="500"></p>
-<p><img data-src="./img/iuss100/marvic.png" class="fragment" width="800"></p>
-</div>
-</section>
-
-<section id="data-standardisation" class="title-slide slide level1 center">
-<h1>Data standardisation</h1>
+<section>
+<section id="accessible" class="title-slide slide level1 center">
+<h1>Accessible</h1>
 
 </section>
-
-<section id="initiatives" class="title-slide slide level1 center">
-<h1>Initiatives</h1>
+<section id="principles-on-accessibility" class="slide level2">
+<h2>Principles on Accessibility</h2>
 <ul>
-<li class="fragment">Various initiatives developed models for interoperable soil observation data.</li>
-<li class="fragment">Globalsoilmap, eSoter, iso28258, INSPIRE, Glosis-ld, SoilThings.</li>
-<li class="fragment">For various reasons adoption has been low.</li>
-<li class="fragment">Many initiatives are actually compatible, because they contain similar concepts.</li>
-<li class="fragment">Standardisation awareness is rising.</li>
+<li>Data are retrievable by their identifier using a standardised communications protocol</li>
+<li>Metadata are accessible, even when the data are no longer available</li>
 </ul>
 </section>
-
-<section id="soilgpkg-a-use-case-of-soil-data-interoperability" class="title-slide slide level1 center">
-<h1>SoilGPKG; A use case of soil data interoperability</h1>
-<p>Challenge:</p>
+<section id="data-sovereignty" class="slide level2">
+<h2>Data sovereignty</h2>
 <ul>
-<li class="fragment">The INSPIRE UML models and their GML serialisation are disconnected from data practices in the soil community, both for data providers and consumers</li>
-</ul>
-<p>Solution:</p>
-<ul>
-<li class="fragment">A relational database model has been developed representing the UML classes of the INSPIRE schema.</li>
+<li>Publish at an acknowledged repository (zenodo, dataverse) provides persistence</li>
+<li>Use local tools to share data provides full control and trust</li>
 </ul>
 </section>
-
-<section id="soilgpkg-usage" class="title-slide slide level1 center">
-<h1>SoilGPKG Usage</h1>
+<section id="q.-which-uris-are-likely-more-trusted" class="slide level2">
+<h2>Q. Which URI’s are likely more trusted</h2>
 <ul>
-<li class="fragment">The Geopackage can be shared as a portable database file.</li>
-<li class="fragment">A transformation solution is provided which can transform the data into the GML serialisation (Hale Studio).</li>
-<li class="fragment">The resulting GML can be validated in the INSPIRE data validator</li>
-<li class="fragment">The Geopackage can be easily displayed in Desktop GIS tools, such as QGIS</li>
+<li>https://www.youtube.com/watch?v=YMsrVpVUyOw</li>
+<li>https://zenodo.org/records/15050634</li>
+<li>https://www.openstreetmap.org/relation/349053</li>
+<li>https://administraciodigital.gencat.cat/ca/dades/dades-obertes/informacio-practica/llicencies/</li>
 </ul>
 </section>
-
-<section id="soilgpkg-in-ejp-soil" class="title-slide slide level1 center">
-<h1>SoilGPKG in EJP Soil</h1>
+<section id="standardised-communications-protocol" class="slide level2">
+<h2>Standardised communications protocol</h2>
 <ul>
-<li class="fragment">Developed by Crea (IT) and Epsilon in the scope of EJPSoil</li>
-<li class="fragment">Crea has loaded 1250 profiles into a GeoPackage</li>
-<li class="fragment">Suggested as a good practice for sharing soil data in INSPIRE</li>
-<li class="fragment">The relational model can also be used in PostGreSQL as a backend for actual applications.</li>
+<li>Generic protocols, http/ftp</li>
+<li>Standardised (OGC) API’s vs tailored REST API’s
+<ul>
+<li>Traditional WMS, WFS, WCS</li>
+<li>OGCAPI-Features / EDR</li>
+<li>SensorThings API (<a href="https://github.com/hylkevds/FROST-Server.SoilThings">SoilThings</a>)</li>
+</ul></li>
 </ul>
 </section>
+<section id="sensorthings" class="slide level2">
+<h2>Sensorthings</h2>
 
-<section id="common-code-lists" class="title-slide slide level1 center">
-<h1>Common code lists</h1>
-
-</section>
-
-<section id="why-endorse-common-code-lists" class="title-slide slide level1 center">
-<h1>Why endorse common code lists?</h1>
+<img data-src="https://user-images.githubusercontent.com/731673/198872280-dcee1a05-91f1-4fa5-8280-69d6d8fbe699.png" class="r-stretch"></section>
+<section id="repository-software" class="slide level2">
+<h2>Repository software</h2>
 <ul>
-<li class="fragment">Common referencable code lists are important, to facilitate interoperability in the soil domain</li>
-<li class="fragment">Different providers can reference a universal definition of an entity</li>
-<li class="fragment">Code lists for soil types, soil properties, soil property classes, soil analyses procedures, …</li>
-<li class="fragment">References can be made from metadata as well as data</li>
+<li>Webdav (or webserver software)</li>
+<li>Zenodo, Dataverse</li>
+<li>Document Management Systems (DMS)</li>
+<li>Cloud storage (Github, Dropbox, Youtube, Amazon, Sharepoint)</li>
 </ul>
 </section>
-
-<section id="challenges-with-current-code-list-repositories" class="title-slide slide level1 center">
-<h1>Challenges with current code list repositories</h1>
+<section id="testing-tools" class="slide level2">
+<h2>Testing tools</h2>
 <ul>
-<li class="fragment">Agrovoc adopted an older version of WRB</li>
-<li class="fragment">WRB itself does not host a code list repository</li>
-<li class="fragment">INSPIRE registry did not populate the soil code lists</li>
-<li class="fragment">Glosis-ld codelists are not widely known and adopted (and not easy to use)</li>
+<li>Automated link checking</li>
+<li>Usage logs</li>
+<li>Google Search Console notifies broken links</li>
+<li>Availability monitoring</li>
+<li>Content validation</li>
+</ul>
+</section></section>
+<section>
+<section id="interoperable" class="title-slide slide level1 center">
+<h1>Interoperable</h1>
+
+</section>
+<section id="principles-on-interoperability" class="slide level2">
+<h2>Principles on Interoperability</h2>
+<ul>
+<li>(Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.</li>
+<li>(Meta)data use vocabularies that follow FAIR principles</li>
+<li>(Meta)data include qualified references to other (meta)data</li>
 </ul>
 </section>
-
-<section id="at-this-conference" class="title-slide slide level1 center">
-<h1>At this conference</h1>
-<p>We hope to speak to you to design mechanisms to establish soil code list repositories which are recognised and easy to use.</p>
+<section id="universal-formats" class="slide level2">
+<h2>Universal formats</h2>
+<p>Facilitates accessing a resource with commonly available tooling</p>
+<ul>
+<li>Proprietary vs Open (eg. ecw vs tiff)</li>
+<li>De facto vs Formalised (eg. YAML vs XML)</li>
+<li>Binary vs text based (eg. shapefile vs GeoJSON)</li>
+<li>Cloud optimised vs Cloud native vs traditional (eg. COG vs GeoZarr vs GeoTiff)</li>
+<li>Embedded metadata</li>
+</ul>
 </section>
-
-<section id="thank-you" class="title-slide slide level1 center">
-<h1>Thank you</h1>
-<p>Questions/comments?</p>
-</section>
-
-<section id="references" class="title-slide slide level1 center">
-<h1>References</h1>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><a href="https://www.iso.org/standard/44595.html">iso28258</a><br> <a href="https://esoter.net/">eSoter</a><br> <a href="https://github.com/glosis-ld/glosis">Glosis-ld</a><br> <a href="https://api4inspire.k8s.ilt-dmz.iosb.fraunhofer.de/servlet/is/203/">Soilthings</a><br> <a href="https://wrb.isric.org/">WRB</a><br><a href="https://agrovoc.fao.org/browse/agrovoc/en/page/c_89f35c33">Agrovoc</a></p>
-</div><div class="column" style="width:50%;">
-<p><a href="https://inspire.ec.europa.eu/registry">INSPIRE Registry</a><br> <a href="https://knowledge-base.inspire.ec.europa.eu/soil_en">INSPIRE Soil</a><br> <a href="https://geopython.github.io/pygeometa/">pygeometa</a><br> <a href="https://pypi.org/project/geodatacrawler/">pygeodatecrawler</a><br> <a href="https://pycsw.org">pycsw</a><br> <a href="https://github.com/ejpsoil/inspire_soil_gpkg_template">SoilGPKG</a></p>
-</div></div>
-
+<section id="adopt-common-vocabularies" class="slide level2">
+<h2>Adopt common vocabularies</h2>
+<p>Adopting a standardised model enables aggregation of data.</p>
+<ul>
+<li>Relational models (<a href="https://github.com/ejpsoil/inspire_soil_gpkg_template">INSPIRE GeoPackage</a>, <a href="https://github.com/ISRICWorldSoil/iso-28258">iso28258asPostGres</a>)</li>
+<li>UML/GML models (<a href="https://www.iso.org/standard/44595.html">ISO28258</a> <a href="https://www.iso.org/standard/59259.html">iso11074</a>)</li>
+<li>Semantic web ontologies (<a href="https://github.com/glosis-ld/glosis">Glosis-ld</a>, <a href="https://vocab.isric.org">vocabs</a>)</li>
+<li>Thesauri (WRB, Gemet, Agrovoc)</li>
+</ul>
+</section></section>
+<section>
+<section id="reusable" class="title-slide slide level1 center">
+<h1>Reusable</h1>
 
 </section>
+<section id="principles-on-re-use" class="slide level2">
+<h2>Principles on Re-use</h2>
+<ul>
+<li>(Meta)data are richly described with a plurality of accurate and relevant attributes</li>
+<li>(Meta)data are released with a clear and accessible data usage license</li>
+<li>(Meta)data are associated with detailed provenance</li>
+<li>(Meta)data meet domain-relevant community standards</li>
+</ul>
+</section>
+<section id="what-if-my-repository-does-not-offer-extended-metadata-options" class="slide level2">
+<h2>What if my repository does not offer extended metadata options?</h2>
+<ul>
+<li>Use keywords from <a href="https://inspire.ec.europa.eu/metadata-codelist/SpatialScope">relevant thesauri</a> to <code>extend</code></li>
+<li>Add a readme.txt file with extended information
+<ul>
+<li>Data model (which property, unit, analysis procedure)</li>
+<li>Lineage (which data were used as a source)</li>
+</ul></li>
+<li>Use a stuctured format for readme.</li>
+</ul>
+</section></section>
+<section>
+<section id="metadata-flows-isric-style" class="title-slide slide level1 center">
+<h1>Metadata flows, ISRIC style</h1>
+
+</section>
+<section id="design-considerations" class="slide level2">
+<h2>Design considerations</h2>
+<ul>
+<li><p>A set of conventions and tools to create and share metadata of datasets</p></li>
+<li><p>Soil scientists know their data, and should prepare the metadata records</p></li>
+<li><p>Integrate in their environment, stay close to the tools they already use: R, Python, Git, Excel…?</p></li>
+<li><p>Focus on spatial standards, because we’re in the spatial domain</p></li>
+</ul>
+</section>
+<section id="use-cases" class="slide level2">
+<h2>3 use cases</h2>
+<ul>
+<li>A team of soil scientists describes their source data, models and data outputs, for tracability and future re-use</li>
+<li>An organisation aims to share a subset of their resources as open access data</li>
+<li>A community aims to collect relevant remote resources in a <a href="https://catalogue.ejpsoil.eu">thematic catalogue</a></li>
+</ul>
+</section>
+<section id="describe-resources-at-their-source" class="slide level2">
+<h2>Describe resources at their source</h2>
+<ul>
+<li>Builds on a convention of placing a README.txt file in a project folder, describing the source, attribution.</li>
+<li>Based on standards, using <a href="https://geopython.github.io/pygeometa/reference/mcf/">Metadata control file</a> (mcf)</li>
+<li>We’ve built a <a href="https://pypi.org/project/geodatacrawler/">crawler tool</a>, which
+<ul>
+<li>extracts embedded metadata from data to create initial mcf</li>
+<li>extracts metadata from a set of project folders into a central index</li>
+</ul></li>
+</ul>
+</section>
+<section id="example-flow" class="slide level2">
+<h2>Example flow</h2>
+<ul>
+<li>Prepare a set of source data and covariates in a folder, import metadata from external sources</li>
+<li>Model generates a distribution prediction based on inputs, model generates some metadata</li>
+<li>Crawler tool combines generated metadata with embedded metadata (projection, bounds, bands)</li>
+<li>Scientists verifies the generated metadata</li>
+<li>Metadata is ingested into central index, quarable by colleagues</li>
+</ul>
+</section>
+<section id="try-it-out" class="slide level2">
+<h2>Try it out</h2>
+<pre><code>docker run -it --rm -v$(pwd):/tmp \
+ pvgenuchten/geodatacrawler:1.3.5 crawl-metadata \
+ --mode=init --dir=/tmp</code></pre>
+</section>
+<section id="share-as-open-access-data" class="slide level2">
+<h2>Share as open access data</h2>
+<ul>
+<li>Import the indexed records in a catalogue</li>
+<li>Use metadata to set up OGC data api’s (WMS, WFS, WCS)</li>
+<li>Add the service endpoint back into the catalogue metadata</li>
+</ul>
+</section>
+<section id="example-flow-1" class="slide level2">
+<h2>Example flow</h2>
+<ul>
+<li>Subset of records and data files from previous flow are exported to an external catalogue</li>
+<li>Datasets are made available through conveniance API</li>
+<li>Users find the data in the catalogue and access it through the conveniance API</li>
+<li>Users can suggest improvements to the (meta)data thourgh Git (or email)</li>
+</ul>
+</section>
+<section id="a-thematic-participatory-data-portal" class="slide level2">
+<h2>A thematic participatory data portal</h2>
+<ul>
+<li>Metadata from external sources is harvested (ingested and harmonised) to the central index</li>
+<li>Harvest definition (url + filter + frequency) is stored on Git</li>
+<li>Havests run at intervals using CI-CD pipelines (Github actions)</li>
+<li>Users can suggest changes to the harvest definition (new url’s)</li>
+</ul>
+</section>
+<section id="example-flow-2" class="slide level2">
+<h2>Example flow</h2>
+<ul>
+<li>A set of relevant records is identified to be harvested</li>
+<li>Definitions are updated in Git</li>
+<li>Users provide feedback on outdated or missing records</li>
+</ul>
+</section>
+<section id="oh-but-this-is-quite-technical" class="slide level2">
+<h2>Oh, but this is quite technical!</h2>
+<ul>
+<li>ISO19139 and DCAT and their tools (GeoNetwork, CKAN, Dataverse) also have their peculiarities</li>
+<li>Alternative to pull request in GIT? Use git issues and let others in the community fix</li>
+<li>YAML has its caveats (indenting, reserved characters), use YAML check in text editor</li>
+<li>We created a web-form for mcf editing, <a href="https://osgeo.github.io/mdme">mdme</a></li>
+</ul>
+</section>
+<section id="read-more" class="slide level2">
+<h2>Read more</h2>
+<ul>
+<li><a href="https://www.go-fair.org/fair-principles/">FAIR principles</a></li>
+<li><a href="https://ejpsoil.github.io/soildata-assimilation-guidance">EJPSoil soil data assimilation cookbook</a></li>
+<li><a href="https://lsc-hubs.github.io/hub-core/docs/developer/tutorial-data-management/">LSC Hubs data workshop</a></li>
+<li><a href="https://geopython.github.io/pygeometa">pygeometa</a></li>
+<li><a href="https://pypi.org/project/geodatacrawler">GeoDataCrawler</a></li>
+</ul>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
-<p><img src="https://centennialiuss2024.org/wp-content/uploads/thegem-logos/logo_5a1b6ef19d24be2d25d0c8de8ee6a108_2x.png" class="slide-logo"></p>
+<p><img src="https://www.isric.org/themes/custom/basic/logo.svg" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>IUSS Centenial, Florence, Italy</p>
+<p>Open Source at ISRIC - World Soil Information - FOSS4G.nl - july 2025</p>
 </div>
 </div></div>
 
