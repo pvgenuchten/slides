@@ -7,7 +7,6 @@ format:
   revealjs: 
     theme: default
     logo: https://www.isric.org/themes/custom/basic/logo.svg
-    footer: "Open Source at ISRIC - World Soil Information - FOSS4G.nl - july 2025"
   pptx:
     slide-level: 2
 ---
@@ -27,13 +26,12 @@ format:
 ## Typical use cases for FOSS(4G) software
 
 - Field data collection (OpenDataKit)
-- Harmonize soil data (Hale, PostGres, Postgraphile, Apache Superset)
+- Harmonize soil data (Hale, PostGres)
 - Predict soil property distribution (R, Terra, GDAL)
 - Cataloguing (pygeometa, pycsw, geonetwork)
 - Data API's (Mapserver, FastAPI, Virtuoso)
 - Content management (Quarto, Drupal)
-- GIS viewers (QGIS, Leaflet, Deck.gl, TerriaJS)
-- DevOps (Kubernetes, Gitlab, Argo)
+- GIS viewers (QGIS, Leaflet, TerriaJS)
 
 ## OSGeo and Open GeoSpatial Consortium
 
@@ -49,54 +47,51 @@ format:
 - GeoPackage (See [INSPIRE Good Practice on GeoPackage](https://github.com/INSPIRE-MIF/gp-geopackage-encodings))
 - Styled Layer Descriptor ([SLD](https://www.ogc.org/standards/sld/))
 - Cloud Optimised GeoTiff ([COG](https://cogeo.org/))
-- OGC API - Records
+- OGC API - Records / STAC
 
 ## OGC and FAIR
 
-- FAIR principles (Findable Accessible Interoperable Reusable) are popular in academia (and beyond)
+- [FAIR principles](https://www.go-fair.org/fair-principles/) are popular in academia (and beyond)
 - FAIR and OGC pursue slightly different goals, however OGC recently started a working group on [open science](https://www.ogc.org/initiatives/open-science/)
-- Academia assumes a dataset as a stable set of records, preferably reviewed and identified with a persistant identifier (DOI)
-- OGC API's facilitate extracting subsets of a dataset, datasets are usually not stable over time
+- Academia assumes a dataset as a stable set of records, identified with a persistant identifier (DOI)
 - Novel data formats allow subsetting via range requests, they may facilitate both uses (GeoParquet, COG)
 - Alignment of vocabularies is relevant for both communities, not many tooling available (SKOS)
 
-## Shift from OSGeo developer to OSGeo user
+## About me; a Shift from OSGeo developer to OSGeo user
 
-- 3yrs ago, I shifted from software development to ISRIC
-- Current tasks are data science, DevOps, software development
-- Some experiences around OSGeo software from a user perspective
+- 3yrs ago, I shifted from software developer to software user
+- Current tasks are Data science, DevOps
+- Next slides present some experiences around OSGeo software from a user perspective
 
-## Mapserver
+## [Mapserver](https://mapserver.org)
 
-- We hire a consultant from the mapserver developer community for expert advice and development
-- Some minor bug fixes on our behalf
-- SLD support, you can now use a SLD file to configure the style of a layer
-- Currently working on Mapserver Homepage, presenting a list of the services available in a server
+- We work with a consultant from the mapserver developer community for expert advice and development
+- SLD support, you can now use a SLD file (from QGIS) to [configure the style of a layer](https://github.com/MapServer/MapServer/pull/7034)
+- Currently working on [Mapserver Homepage](https://mapserver.gis.umn.edu/development/rfc/ms-rfc-140.html), presenting a list of the services available in a server
 - I'm not following the mailinglist as much as needed
 
-## TerriaJS
+## [TerriaJS](https://terria.io)
 
 - We use TerriaJS in 5-10 websites. Mostly to share our data products to potential users and stakeholders.
 - Any frontend application typically has many potential improvements
-- Especcially improvements around OGC interactions best be merged upstream
+- Especially improvements around OGC interactions best be merged upstream
 - The TerriaJS community is not very aware of OGC standards, so it requires quite communication to land a Pull Request
 - We work with a frontend developer not related to the project, because it was difficult to reach out to direct contributors
 
-## CKAN
+## [CKAN](https://ckan.org)
 
-- We asked university-support to deploy a default instance of CKAN (+SOLR), however it does then not include the spatial modules and tailored layout 
-- We consulted a regional company knowledgable on CKAN implementations, they advised us to use the CKAN backend only and build a dedicated fromtend
+- University-support deployed a default instance of CKAN (+SOLR), however it appeared difficult to customise 
+- We consulted a regional company knowledgable on CKAN implementations, they advised us to use the CKAN backend only and build a dedicated frontend
 - The spatial modules of CKAN seem not maintained
 - We decided not to continue with CKAN for now
 
-## pycsw
+## [pycsw](https://pycsw.org)
 
 - A minimalistic catalogue implementation, but very focussed on OGC standards support
-- Since OGC API's pycsw has a (html) user interface
-- We feel it is a good fit for our use cases
-- Sometimes I get complaints that it is not as full featured as CKAN, but it's hard to understand what's actually missing
-- We recently landed Facet filters on OGC API Records and in pycsw
-- A group in norway is implementing a SOLR backend for pycsw
+- From introduction of [OGC API](https://ogcapi.ogc.org)'s, pycsw now has a user interface
+- Sometimes I get complaints that it is not as full featured as CKAN, but it's not easy to understand what's actually missing
+- We contributed to adding facet filters on OGC API Records and in pycsw
+- A group in Norway is implementing a [SOLR](https://solr.apache.org) backend for pycsw, SOLR will improve search experience on large catalogues
 
 ## Cloud Optimised Geotiff / GDAL
 
@@ -109,28 +104,24 @@ format:
 ## [Apache Superset](https://superset.apache.org/)
 
 - I really enjoy creating [diagrams of arbitrary data](https://dashboards.isric.org/superset/dashboard/soilwise/)
-- Unfortunate that it is a complex tool with many dependencies (redis, postgres)
+- Unfortunate that Superset is quite a complex tool with many dependencies (redis, postgres)
 
 ## Humboldt Alignment Editor ([HALE](https://github.com/halestudio/hale))
 
-- Hale is a relevant tool for working with rich UML data models, such as soil observation data
+- Hale is an ETL tool for rich UML data models, such as soil observation data
 - Developers tend to focus on exporting postgres data to INSPIRE GML, but our use case is often vice versa
-- We hired the Wetransform team for a training and Q&A on specific data (20hrs)
-- With the experts available, we were productive in 2 days, I wonder if I would have managed by myself, GML has its peculiarities
+- The [Wetransform team](https://wetransform.to) team supported us with a training and Q&A
+- With the experts available, we were productive in 2 days. It was crucial, GML has its peculiarities
 - I notice our data scientists prefer data migration through R/Python scripts. However I see value in a visual Hale approach.
 
-## Quarto
+## [Quarto](https://www.quarto.org)
 
 - Static Site Generators fit our approach very well, performant, stable, secure
 - Some colleagues have challenges with the markdown in gitlab (and prefer wordpress)
 - Intially we started with [hugo](https://gohugo.io)
-- [Quarto](https://quarto.org) was used by our data scientists for documentation, we aligned with them
-- I do appreciate Quarto now, it is less flexible, but full featured, it generated these slides
-
-## Conclusions
-
--
+- [Quarto](https://quarto.org) was used by our data scientists for documentation
+- Quarto is less flexible, full featured, it generated these slides
 
 ## Questions / Comments
 
--
+Follow the links in the slides for more details...
