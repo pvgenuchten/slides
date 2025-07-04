@@ -515,7 +515,7 @@
     "href": "slides/20250703-foss4gnl-opensource-at-isric.html#typical-use-cases-for-foss4g-software",
     "title": "Open Source at ISRIC - World Soil Information",
     "section": "Typical use cases for FOSS(4G) software",
-    "text": "Typical use cases for FOSS(4G) software\n\nField data collection (OpenDataKit)\nHarmonize soil data (Hale, PostGres, Postgraphile, Apache Superset)\nPredict soil property distribution (R, Terra, GDAL)\nCataloguing (pygeometa, pycsw, geonetwork)\nData API’s (Mapserver, FastAPI, Virtuoso)\nContent management (Quarto, Drupal)\nGIS viewers (QGIS, Leaflet, Deck.gl, TerriaJS)\nDevOps (Kubernetes, Gitlab, Argo)"
+    "text": "Typical use cases for FOSS(4G) software\n\nField data collection (OpenDataKit)\nHarmonize soil data (Hale, PostGres)\nPredict soil property distribution (R, Terra, GDAL)\nCataloguing (pygeometa, pycsw, geonetwork)\nData API’s (Mapserver, FastAPI, Virtuoso)\nContent management (Quarto, Drupal)\nGIS viewers (QGIS, Leaflet, TerriaJS)"
   },
   {
     "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#osgeo-and-open-geospatial-consortium",
@@ -529,49 +529,49 @@
     "href": "slides/20250703-foss4gnl-opensource-at-isric.html#relevant-ogc-standards",
     "title": "Open Source at ISRIC - World Soil Information",
     "section": "Relevant OGC standards",
-    "text": "Relevant OGC standards\n\nWeb Map Service, Web Coverage Service, Web Feature service, Catalogue service for the web\nSensor Observation Service (INSPIRE Soil is based on Observations&Measurements)\nGeoPackage (See INSPIRE Good Practice on GeoPackage)\nStyled Layer Descriptor (SLD)\nCloud Optimised GeoTiff (COG)\nOGC API - Records"
+    "text": "Relevant OGC standards\n\nWeb Map Service, Web Coverage Service, Web Feature service, Catalogue service for the web\nSensor Observation Service (INSPIRE Soil is based on Observations&Measurements)\nGeoPackage (See INSPIRE Good Practice on GeoPackage)\nStyled Layer Descriptor (SLD)\nCloud Optimised GeoTiff (COG)\nOGC API - Records / STAC"
   },
   {
     "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#ogc-and-fair",
     "href": "slides/20250703-foss4gnl-opensource-at-isric.html#ogc-and-fair",
     "title": "Open Source at ISRIC - World Soil Information",
     "section": "OGC and FAIR",
-    "text": "OGC and FAIR\n\nFAIR principles (Findable Accessible Interoperable Reusable) are popular in academia (and beyond)\nFAIR and OGC pursue slightly different goals, however OGC recently started a working group on open science\nAcademia assumes a dataset as a stable set of records, preferably reviewed and identified with a persistant identifier (DOI)\nOGC API’s facilitate extracting subsets of a dataset, datasets are usually not stable over time\nNovel data formats allow subsetting via range requests, they may facilitate both uses (GeoParquet, COG)\nAlignment of vocabularies is relevant for both communities, not many tooling available (SKOS)"
+    "text": "OGC and FAIR\n\nFAIR principles are popular in academia (and beyond)\nFAIR and OGC pursue slightly different goals, however OGC recently started a working group on open science\nAcademia assumes a dataset as a stable set of records, identified with a persistant identifier (DOI)\nNovel data formats allow subsetting via range requests, they may facilitate both uses (GeoParquet, COG)\nAlignment of vocabularies is relevant for both communities, not many tooling available (SKOS)"
   },
   {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#shift-from-osgeo-developer-to-osgeo-user",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#shift-from-osgeo-developer-to-osgeo-user",
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#about-me-a-shift-from-osgeo-developer-to-osgeo-user",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#about-me-a-shift-from-osgeo-developer-to-osgeo-user",
     "title": "Open Source at ISRIC - World Soil Information",
-    "section": "Shift from OSGeo developer to OSGeo user",
-    "text": "Shift from OSGeo developer to OSGeo user\n\n3yrs ago, I shifted from software development to ISRIC\nCurrent tasks are data science, DevOps, software development\nSome experiences around OSGeo software from a user perspective"
+    "section": "About me; a Shift from OSGeo developer to OSGeo user",
+    "text": "About me; a Shift from OSGeo developer to OSGeo user\n\n3yrs ago, I shifted from software developer to software user\nCurrent tasks are Data science, DevOps\nNext slides present some experiences around OSGeo software from a user perspective"
   },
   {
     "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#mapserver",
     "href": "slides/20250703-foss4gnl-opensource-at-isric.html#mapserver",
     "title": "Open Source at ISRIC - World Soil Information",
     "section": "Mapserver",
-    "text": "Mapserver\n\nWe hire a consultant from the mapserver developer community for expert advice and development\nSome minor bug fixes on our behalf\nSLD support, you can now use a SLD file to configure the style of a layer\nCurrently working on Mapserver Homepage, presenting a list of the services available in a server\nI’m not following the mailinglist as much as needed"
+    "text": "Mapserver\n\nWe work with a consultant from the mapserver developer community for expert advice and development\nSLD support, you can now use a SLD file (from QGIS) to configure the style of a layer\nCurrently working on Mapserver Homepage, presenting a list of the services available in a server\nI’m not following the mailinglist as much as needed"
   },
   {
     "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#terriajs",
     "href": "slides/20250703-foss4gnl-opensource-at-isric.html#terriajs",
     "title": "Open Source at ISRIC - World Soil Information",
     "section": "TerriaJS",
-    "text": "TerriaJS\n\nWe use TerriaJS in 5-10 websites. Mostly to share our data products to potential users and stakeholders.\nAny frontend application typically has many potential improvements\nEspeccially improvements around OGC interactions best be merged upstream\nThe TerriaJS community is not very aware of OGC standards, so it requires quite communication to land a Pull Request\nWe work with a frontend developer not related to the project, because it was difficult to reach out to direct contributors"
+    "text": "TerriaJS\n\nWe use TerriaJS in 5-10 websites. Mostly to share our data products to potential users and stakeholders.\nAny frontend application typically has many potential improvements\nEspecially improvements around OGC interactions best be merged upstream\nThe TerriaJS community is not very aware of OGC standards, so it requires quite communication to land a Pull Request\nWe work with a frontend developer not related to the project, because it was difficult to reach out to direct contributors"
   },
   {
     "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#ckan",
     "href": "slides/20250703-foss4gnl-opensource-at-isric.html#ckan",
     "title": "Open Source at ISRIC - World Soil Information",
     "section": "CKAN",
-    "text": "CKAN\n\nWe asked university-support to deploy a default instance of CKAN (+SOLR), however it does then not include the spatial modules and tailored layout\nWe consulted a regional company knowledgable on CKAN implementations, they advised us to use the CKAN backend only and build a dedicated fromtend\nThe spatial modules of CKAN seem not maintained\nWe decided not to continue with CKAN for now"
+    "text": "CKAN\n\nUniversity-support deployed a default instance of CKAN (+SOLR), however it appeared difficult to customise\nWe consulted a regional company knowledgable on CKAN implementations, they advised us to use the CKAN backend only and build a dedicated frontend\nThe spatial modules of CKAN seem not maintained\nWe decided not to continue with CKAN for now"
   },
   {
     "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#pycsw",
     "href": "slides/20250703-foss4gnl-opensource-at-isric.html#pycsw",
     "title": "Open Source at ISRIC - World Soil Information",
     "section": "pycsw",
-    "text": "pycsw\n\nA minimalistic catalogue implementation, but very focussed on OGC standards support\nSince OGC API’s pycsw has a (html) user interface\nWe feel it is a good fit for our use cases\nSometimes I get complaints that it is not as full featured as CKAN, but it’s hard to understand what’s actually missing\nWe recently landed Facet filters on OGC API Records and in pycsw\nA group in norway is implementing a SOLR backend for pycsw"
+    "text": "pycsw\n\nA minimalistic catalogue implementation, but very focussed on OGC standards support\nFrom introduction of OGC API’s, pycsw now has a user interface\nSometimes I get complaints that it is not as full featured as CKAN, but it’s not easy to understand what’s actually missing\nWe contributed to adding facet filters on OGC API Records and in pycsw\nA group in Norway is implementing a SOLR backend for pycsw, SOLR will improve search experience on large catalogues"
   },
   {
     "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#cloud-optimised-geotiff-gdal",
@@ -585,35 +585,28 @@
     "href": "slides/20250703-foss4gnl-opensource-at-isric.html#apache-superset",
     "title": "Open Source at ISRIC - World Soil Information",
     "section": "Apache Superset",
-    "text": "Apache Superset\n\nI really enjoy creating diagrams of arbitrary data\nUnfortunate that it is a complex tool with many dependencies (redis, postgres)"
+    "text": "Apache Superset\n\nI really enjoy creating diagrams of arbitrary data\nUnfortunate that Superset is quite a complex tool with many dependencies (redis, postgres)"
   },
   {
     "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#humboldt-alignment-editor-hale",
     "href": "slides/20250703-foss4gnl-opensource-at-isric.html#humboldt-alignment-editor-hale",
     "title": "Open Source at ISRIC - World Soil Information",
     "section": "Humboldt Alignment Editor (HALE)",
-    "text": "Humboldt Alignment Editor (HALE)\n\nHale is a relevant tool for working with rich UML data models, such as soil observation data\nDevelopers tend to focus on exporting postgres data to INSPIRE GML, but our use case is often vice versa\nWe hired the Wetransform team for a training and Q&A on specific data (20hrs)\nWith the experts available, we were productive in 2 days, I wonder if I would have managed by myself, GML has its peculiarities\nI notice our data scientists prefer data migration through R/Python scripts. However I see value in a visual Hale approach."
+    "text": "Humboldt Alignment Editor (HALE)\n\nHale is an ETL tool for rich UML data models, such as soil observation data\nDevelopers tend to focus on exporting postgres data to INSPIRE GML, but our use case is often vice versa\nThe Wetransform team team supported us with a training and Q&A\nWith the experts available, we were productive in 2 days. It was crucial, GML has its peculiarities\nI notice our data scientists prefer data migration through R/Python scripts. However I see value in a visual Hale approach."
   },
   {
     "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#quarto",
     "href": "slides/20250703-foss4gnl-opensource-at-isric.html#quarto",
     "title": "Open Source at ISRIC - World Soil Information",
     "section": "Quarto",
-    "text": "Quarto\n\nStatic Site Generators fit our approach very well, performant, stable, secure\nSome colleagues have challenges with the markdown in gitlab (and prefer wordpress)\nIntially we started with hugo\nQuarto was used by our data scientists for documentation, we aligned with them\nI do appreciate Quarto now, it is less flexible, but full featured, it generated these slides"
-  },
-  {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#conclusions",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#conclusions",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "Conclusions",
-    "text": "Conclusions"
+    "text": "Quarto\n\nStatic Site Generators fit our approach very well, performant, stable, secure\nSome colleagues have challenges with the markdown in gitlab (and prefer wordpress)\nIntially we started with hugo\nQuarto was used by our data scientists for documentation\nQuarto is less flexible, full featured, it generated these slides"
   },
   {
     "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#questions-comments",
     "href": "slides/20250703-foss4gnl-opensource-at-isric.html#questions-comments",
     "title": "Open Source at ISRIC - World Soil Information",
     "section": "Questions / Comments",
-    "text": "Questions / Comments"
+    "text": "Questions / Comments\nFollow the links in the slides for more details…"
   },
   {
     "objectID": "slides/abandoned-web.html#a-broken-link-from-a-report",

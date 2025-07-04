@@ -159,13 +159,12 @@ Paul van Genuchten
 <h2>Typical use cases for FOSS(4G) software</h2>
 <ul>
 <li>Field data collection (OpenDataKit)</li>
-<li>Harmonize soil data (Hale, PostGres, Postgraphile, Apache Superset)</li>
+<li>Harmonize soil data (Hale, PostGres)</li>
 <li>Predict soil property distribution (R, Terra, GDAL)</li>
 <li>Cataloguing (pygeometa, pycsw, geonetwork)</li>
 <li>Data API’s (Mapserver, FastAPI, Virtuoso)</li>
 <li>Content management (Quarto, Drupal)</li>
-<li>GIS viewers (QGIS, Leaflet, Deck.gl, TerriaJS)</li>
-<li>DevOps (Kubernetes, Gitlab, Argo)</li>
+<li>GIS viewers (QGIS, Leaflet, TerriaJS)</li>
 </ul>
 </section>
 <section id="osgeo-and-open-geospatial-consortium" class="slide level2">
@@ -185,66 +184,63 @@ Paul van Genuchten
 <li>GeoPackage (See <a href="https://github.com/INSPIRE-MIF/gp-geopackage-encodings">INSPIRE Good Practice on GeoPackage</a>)</li>
 <li>Styled Layer Descriptor (<a href="https://www.ogc.org/standards/sld/">SLD</a>)</li>
 <li>Cloud Optimised GeoTiff (<a href="https://cogeo.org/">COG</a>)</li>
-<li>OGC API - Records</li>
+<li>OGC API - Records / STAC</li>
 </ul>
 </section>
 <section id="ogc-and-fair" class="slide level2">
 <h2>OGC and FAIR</h2>
 <ul>
-<li>FAIR principles (Findable Accessible Interoperable Reusable) are popular in academia (and beyond)</li>
+<li><a href="https://www.go-fair.org/fair-principles/">FAIR principles</a> are popular in academia (and beyond)</li>
 <li>FAIR and OGC pursue slightly different goals, however OGC recently started a working group on <a href="https://www.ogc.org/initiatives/open-science/">open science</a></li>
-<li>Academia assumes a dataset as a stable set of records, preferably reviewed and identified with a persistant identifier (DOI)</li>
-<li>OGC API’s facilitate extracting subsets of a dataset, datasets are usually not stable over time</li>
+<li>Academia assumes a dataset as a stable set of records, identified with a persistant identifier (DOI)</li>
 <li>Novel data formats allow subsetting via range requests, they may facilitate both uses (GeoParquet, COG)</li>
 <li>Alignment of vocabularies is relevant for both communities, not many tooling available (SKOS)</li>
 </ul>
 </section>
-<section id="shift-from-osgeo-developer-to-osgeo-user" class="slide level2">
-<h2>Shift from OSGeo developer to OSGeo user</h2>
+<section id="about-me-a-shift-from-osgeo-developer-to-osgeo-user" class="slide level2">
+<h2>About me; a Shift from OSGeo developer to OSGeo user</h2>
 <ul>
-<li>3yrs ago, I shifted from software development to ISRIC</li>
-<li>Current tasks are data science, DevOps, software development</li>
-<li>Some experiences around OSGeo software from a user perspective</li>
+<li>3yrs ago, I shifted from software developer to software user</li>
+<li>Current tasks are Data science, DevOps</li>
+<li>Next slides present some experiences around OSGeo software from a user perspective</li>
 </ul>
 </section>
 <section id="mapserver" class="slide level2">
-<h2>Mapserver</h2>
+<h2><a href="https://mapserver.org">Mapserver</a></h2>
 <ul>
-<li>We hire a consultant from the mapserver developer community for expert advice and development</li>
-<li>Some minor bug fixes on our behalf</li>
-<li>SLD support, you can now use a SLD file to configure the style of a layer</li>
-<li>Currently working on Mapserver Homepage, presenting a list of the services available in a server</li>
+<li>We work with a consultant from the mapserver developer community for expert advice and development</li>
+<li>SLD support, you can now use a SLD file (from QGIS) to <a href="https://github.com/MapServer/MapServer/pull/7034">configure the style of a layer</a></li>
+<li>Currently working on <a href="https://mapserver.gis.umn.edu/development/rfc/ms-rfc-140.html">Mapserver Homepage</a>, presenting a list of the services available in a server</li>
 <li>I’m not following the mailinglist as much as needed</li>
 </ul>
 </section>
 <section id="terriajs" class="slide level2">
-<h2>TerriaJS</h2>
+<h2><a href="https://terria.io">TerriaJS</a></h2>
 <ul>
 <li>We use TerriaJS in 5-10 websites. Mostly to share our data products to potential users and stakeholders.</li>
 <li>Any frontend application typically has many potential improvements</li>
-<li>Especcially improvements around OGC interactions best be merged upstream</li>
+<li>Especially improvements around OGC interactions best be merged upstream</li>
 <li>The TerriaJS community is not very aware of OGC standards, so it requires quite communication to land a Pull Request</li>
 <li>We work with a frontend developer not related to the project, because it was difficult to reach out to direct contributors</li>
 </ul>
 </section>
 <section id="ckan" class="slide level2">
-<h2>CKAN</h2>
+<h2><a href="https://ckan.org">CKAN</a></h2>
 <ul>
-<li>We asked university-support to deploy a default instance of CKAN (+SOLR), however it does then not include the spatial modules and tailored layout</li>
-<li>We consulted a regional company knowledgable on CKAN implementations, they advised us to use the CKAN backend only and build a dedicated fromtend</li>
+<li>University-support deployed a default instance of CKAN (+SOLR), however it appeared difficult to customise</li>
+<li>We consulted a regional company knowledgable on CKAN implementations, they advised us to use the CKAN backend only and build a dedicated frontend</li>
 <li>The spatial modules of CKAN seem not maintained</li>
 <li>We decided not to continue with CKAN for now</li>
 </ul>
 </section>
 <section id="pycsw" class="slide level2">
-<h2>pycsw</h2>
+<h2><a href="https://pycsw.org">pycsw</a></h2>
 <ul>
 <li>A minimalistic catalogue implementation, but very focussed on OGC standards support</li>
-<li>Since OGC API’s pycsw has a (html) user interface</li>
-<li>We feel it is a good fit for our use cases</li>
-<li>Sometimes I get complaints that it is not as full featured as CKAN, but it’s hard to understand what’s actually missing</li>
-<li>We recently landed Facet filters on OGC API Records and in pycsw</li>
-<li>A group in norway is implementing a SOLR backend for pycsw</li>
+<li>From introduction of <a href="https://ogcapi.ogc.org">OGC API</a>’s, pycsw now has a user interface</li>
+<li>Sometimes I get complaints that it is not as full featured as CKAN, but it’s not easy to understand what’s actually missing</li>
+<li>We contributed to adding facet filters on OGC API Records and in pycsw</li>
+<li>A group in Norway is implementing a <a href="https://solr.apache.org">SOLR</a> backend for pycsw, SOLR will improve search experience on large catalogues</li>
 </ul>
 </section>
 <section id="cloud-optimised-geotiff-gdal" class="slide level2">
@@ -261,40 +257,32 @@ Paul van Genuchten
 <h2><a href="https://superset.apache.org/">Apache Superset</a></h2>
 <ul>
 <li>I really enjoy creating <a href="https://dashboards.isric.org/superset/dashboard/soilwise/">diagrams of arbitrary data</a></li>
-<li>Unfortunate that it is a complex tool with many dependencies (redis, postgres)</li>
+<li>Unfortunate that Superset is quite a complex tool with many dependencies (redis, postgres)</li>
 </ul>
 </section>
 <section id="humboldt-alignment-editor-hale" class="slide level2">
 <h2>Humboldt Alignment Editor (<a href="https://github.com/halestudio/hale">HALE</a>)</h2>
 <ul>
-<li>Hale is a relevant tool for working with rich UML data models, such as soil observation data</li>
+<li>Hale is an ETL tool for rich UML data models, such as soil observation data</li>
 <li>Developers tend to focus on exporting postgres data to INSPIRE GML, but our use case is often vice versa</li>
-<li>We hired the Wetransform team for a training and Q&amp;A on specific data (20hrs)</li>
-<li>With the experts available, we were productive in 2 days, I wonder if I would have managed by myself, GML has its peculiarities</li>
+<li>The <a href="https://wetransform.to">Wetransform team</a> team supported us with a training and Q&amp;A</li>
+<li>With the experts available, we were productive in 2 days. It was crucial, GML has its peculiarities</li>
 <li>I notice our data scientists prefer data migration through R/Python scripts. However I see value in a visual Hale approach.</li>
 </ul>
 </section>
 <section id="quarto" class="slide level2">
-<h2>Quarto</h2>
+<h2><a href="https://www.quarto.org">Quarto</a></h2>
 <ul>
 <li>Static Site Generators fit our approach very well, performant, stable, secure</li>
 <li>Some colleagues have challenges with the markdown in gitlab (and prefer wordpress)</li>
 <li>Intially we started with <a href="https://gohugo.io">hugo</a></li>
-<li><a href="https://quarto.org">Quarto</a> was used by our data scientists for documentation, we aligned with them</li>
-<li>I do appreciate Quarto now, it is less flexible, but full featured, it generated these slides</li>
-</ul>
-</section>
-<section id="conclusions" class="slide level2">
-<h2>Conclusions</h2>
-<ul>
-<li></li>
+<li><a href="https://quarto.org">Quarto</a> was used by our data scientists for documentation</li>
+<li>Quarto is less flexible, full featured, it generated these slides</li>
 </ul>
 </section>
 <section id="questions-comments" class="slide level2">
 <h2>Questions / Comments</h2>
-<ul>
-<li></li>
-</ul>
+<p>Follow the links in the slides for more details…</p>
 
 
 </section>
@@ -302,7 +290,7 @@ Paul van Genuchten
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="https://www.isric.org/themes/custom/basic/logo.svg" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>Open Source at ISRIC - World Soil Information - FOSS4G.nl - july 2025</p>
+
 </div>
 </div></div>
 
