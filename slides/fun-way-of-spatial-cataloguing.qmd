@@ -1,14 +1,14 @@
 ---
 title: A fun way to do spatial cataloguing 
-subtitle: Data discovery using pygeometa and mdme
+subtitle: Data discovery using pygeometa
 author: Paul van Genuchten, Tom Kralidis
-date: 2024-07-03
+date: 2025-07-17
 format:
   revealjs:
     incremental: true
     theme: sky
-    logo: ./img/logo-foss4g-tartu.png
-    footer: "FOSS4G Europe 2024, Tartu, Estonia"
+    logo: ./img/logo-foss4g-mostar.png
+    footer: "FOSS4G Europe 2025, Mostar, Bosnia Herzegovina"
 ---
 
 # About us
@@ -47,7 +47,7 @@ format:
 - Not used to YAML syntax and Git CI-CD workflows
 - Enter [mdme](https://github.com/osgeo/mdme), the Model Driven Metadata Editor / web application for geospatial metadata
 
-# MDME, web editor for MCF
+# Web editor for MCF
 
 ![mdme](./img/fun-md/mdme.png){width="800" }
 
@@ -69,19 +69,25 @@ We present 2 use cases to demonstrate the value of this approach:
 
 # Land Soil Crop hubs
 
-- An EU funded research project to improve data sharing in the Land Soil Crop domain in East Africa
-- Share resources which are relevant to agriculture in East Africa
+- Part of an EU funded research project, [DeSIRA](https://capacity4dev.europa.eu/projects/desira_en), to improve data sharing in the Land Soil Crop domain in East Africa
+- Improve data & resources discovery, which are relevant to improve agriculture in East Africa
+
+## pycsw
+
+[![Rwanda LSC Catalogue](./img/fun-md/pycsw.png){width="800"}](https://rwanda.lsc-hubs.org/cat/collections/metadata:main/items?q=wms)
 
 ## Participatory metadata management
 
 - Users initially provided metadata as lists in Microsoft Excel
-- Metadata is hosted in GitHub
+- Excel rows converted to MCF and loaded to pycsw
+- MCF Metadata is hosted in GitHub
 - Users contribute content (or register issues about content)
 
-## Metadata for MapServer configuration
+## MapServer 
 
-- Use the metadata to generate [MapServer](https://mapserver.org) mapfile configuration 
-- Add the generated map endpoint to the metadata
+- Mapserver is used to let users interact with data through WMS/WFS
+- Metadata generates [MapServer](https://mapserver.org) configuration 
+- Map service endpoint is added to metadata
 - MapServer is fully aligned with the catalogue
 
 ## TerriaJS, a web-based GIS
@@ -92,7 +98,7 @@ We present 2 use cases to demonstrate the value of this approach:
 
 ## TerriaJS
 
-![TerriaJS](./img/fun-md/terria.png){width="800" }
+[![TerriaJS](./img/fun-md/terria.png){width="800" }](https://rwanda.lsc-hubs.org/map/)
 
 # WMO Information System (WIS2)
 
