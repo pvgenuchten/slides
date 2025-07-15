@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Paul van Genuchten, Tom Kralidis">
-  <meta name="dcterms.date" content="2024-07-03">
+  <meta name="dcterms.date" content="2025-07-17">
   <title>some slide decks – A fun way to do spatial cataloguing</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -129,7 +129,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">A fun way to do spatial cataloguing</h1>
-  <p class="subtitle">Data discovery using pygeometa and mdme</p>
+  <p class="subtitle">Data discovery using pygeometa</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -139,7 +139,7 @@ Paul van Genuchten, Tom Kralidis
 </div>
 </div>
 
-  <p class="date">2024-07-03</p>
+  <p class="date">2025-07-17</p>
 </section>
 <section id="about-us" class="title-slide slide level1 center">
 <h1>About us</h1>
@@ -188,8 +188,8 @@ Paul van Genuchten, Tom Kralidis
 </ul>
 </section>
 
-<section id="mdme-web-editor-for-mcf" class="title-slide slide level1 center">
-<h1>MDME, web editor for MCF</h1>
+<section id="web-editor-for-mcf" class="title-slide slide level1 center">
+<h1>Web editor for MCF</h1>
 
 <img data-src="./img/fun-md/mdme.png" width="800" class="r-stretch quarto-figure-center"><p class="caption">mdme</p><p><a href="https://osgeo.github.io/mdme">osgeo.github.io/mdme</a></p>
 </section>
@@ -218,23 +218,34 @@ Paul van Genuchten, Tom Kralidis
 <section id="land-soil-crop-hubs" class="title-slide slide level1 center">
 <h1>Land Soil Crop hubs</h1>
 <ul>
-<li class="fragment">An EU funded research project to improve data sharing in the Land Soil Crop domain in East Africa</li>
-<li class="fragment">Share resources which are relevant to agriculture in East Africa</li>
+<li class="fragment">Part of an EU funded research project, <a href="https://capacity4dev.europa.eu/projects/desira_en">DeSIRA</a>, to improve data sharing in the Land Soil Crop domain in East Africa</li>
+<li class="fragment">Improve data &amp; resources discovery, which are relevant to improve agriculture in East Africa</li>
 </ul>
+</section>
+<section id="pycsw" class="slide level2">
+<h2>pycsw</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://rwanda.lsc-hubs.org/cat/collections/metadata:main/items?q=wms"><img data-src="./img/fun-md/pycsw.png" width="800"></a></p>
+<figcaption>Rwanda LSC Catalogue</figcaption>
+</figure>
+</div>
 </section>
 <section id="participatory-metadata-management" class="slide level2">
 <h2>Participatory metadata management</h2>
 <ul>
 <li class="fragment">Users initially provided metadata as lists in Microsoft Excel</li>
-<li class="fragment">Metadata is hosted in GitHub</li>
+<li class="fragment">Excel rows converted to MCF and loaded to pycsw</li>
+<li class="fragment">MCF Metadata is hosted in GitHub</li>
 <li class="fragment">Users contribute content (or register issues about content)</li>
 </ul>
 </section>
-<section id="metadata-for-mapserver-configuration" class="slide level2">
-<h2>Metadata for MapServer configuration</h2>
+<section id="mapserver" class="slide level2">
+<h2>MapServer</h2>
 <ul>
-<li class="fragment">Use the metadata to generate <a href="https://mapserver.org">MapServer</a> mapfile configuration</li>
-<li class="fragment">Add the generated map endpoint to the metadata</li>
+<li class="fragment">Mapserver is used to let users interact with data through WMS/WFS</li>
+<li class="fragment">Metadata generates <a href="https://mapserver.org">MapServer</a> configuration</li>
+<li class="fragment">Map service endpoint is added to metadata</li>
 <li class="fragment">MapServer is fully aligned with the catalogue</li>
 </ul>
 </section>
@@ -248,8 +259,13 @@ Paul van Genuchten, Tom Kralidis
 </section>
 <section id="terriajs" class="slide level2">
 <h2>TerriaJS</h2>
-
-<img data-src="./img/fun-md/terria.png" width="800" class="r-stretch quarto-figure-center"><p class="caption">TerriaJS</p></section></section>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://rwanda.lsc-hubs.org/map/"><img data-src="./img/fun-md/terria.png" width="800"></a></p>
+<figcaption>TerriaJS</figcaption>
+</figure>
+</div>
+</section></section>
 <section>
 <section id="wmo-information-system-wis2" class="title-slide slide level1 center">
 <h1>WMO Information System (WIS2)</h1>
@@ -304,9 +320,9 @@ Paul van Genuchten, Tom Kralidis
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
-<p><img src="./img/logo-foss4g-tartu.png" class="slide-logo"></p>
+<p><img src="./img/logo-foss4g-mostar.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>FOSS4G Europe 2024, Tartu, Estonia</p>
+<p>FOSS4G Europe 2025, Mostar, Bosnia Herzegovina</p>
 </div>
 </div></div>
 
