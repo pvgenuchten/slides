@@ -501,7 +501,7 @@
     "href": "slides/2025-foss4ge-pygeometa-project-update.html#about-us",
     "title": "pygeometa project status",
     "section": "About us",
-    "text": "About us\n\nPaul van Genuchten, SDI specialist at ISRIC - World Soil Information, the Netherlands\nTom Kralidis, Senior Geospatial Architect, Meteorological Service of Canada, OSGeo Board of Directors"
+    "text": "About us\n\nTom Kralidis, Senior Geospatial Architect, Meteorological Service of Canada, OSGeo Board of Directors\nPaul van Genuchten, SDI specialist at ISRIC - World Soil Information, the Netherlands"
   },
   {
     "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#intro-to-pygeometa",
@@ -613,28 +613,7 @@
     "href": "slides/2025-foss4ge-pygeometa-project-update.html#metadata-publication-use-cases",
     "title": "pygeometa project status",
     "section": "Metadata publication use cases",
-    "text": "Metadata publication use cases\nWe present 2 use cases to demonstrate the value of this approach:\n\nEarth Observation Exploitation Platform Common Architecture (EOEPCA)\nWMO Information System (WIS2)\nLand Soil Crop hubs (LSC)"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#wmo-information-system-wis2",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#wmo-information-system-wis2",
-    "title": "pygeometa project status",
-    "section": "WMO Information System (WIS2)",
-    "text": "WMO Information System (WIS2)\n\nWMO WIS2 is a next generation data exchange system for Earth system data (weather/climate/water)\nEvent driven (Pub/Sub, MQTT), driven by OGC API - Records metadata and publication\nSet of tools adopted by regional weather offices to build up a global system"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#workflow-i",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#workflow-i",
-    "title": "pygeometa project status",
-    "section": "Workflow I",
-    "text": "Workflow I\n“No code”: Manage, verify and publish metadata using GitHub as a content management platform.\n\nMetadata files are managed as pygeometa MCF records\nGitHub Actions are used to verify, transform and publish notification messages to an MQTT broker\nFrom here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by pygeoapi) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client."
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#workflow-ii",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#workflow-ii",
-    "title": "pygeometa project status",
-    "section": "Workflow II",
-    "text": "Workflow II"
+    "text": "Metadata publication use cases\nWe present 3 use cases to demonstrate the value of this approach:\n\nLand Soil Crop hubs (LSC)\nEarth Observation Exploitation Platform Common Architecture (EOEPCA)\nWMO Information System (WIS2)"
   },
   {
     "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#land-soil-crop-hubs",
@@ -665,25 +644,32 @@
     "text": "Participatory metadata management\n\nUsers initially provided metadata as lists in Microsoft Excel\nExcel rows converted to MCF and loaded to pycsw\nMCF Metadata is hosted in GitHub\nUsers contribute content (or register issues about content)"
   },
   {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#mapserver",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#mapserver",
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#wmo-information-system-wis2",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#wmo-information-system-wis2",
     "title": "pygeometa project status",
-    "section": "MapServer",
-    "text": "MapServer\n\nMapserver is used to let users interact with data through WMS/WFS\nMetadata generates MapServer configuration\nMap service endpoint is added to metadata\nMapServer is fully aligned with the catalogue"
+    "section": "WMO Information System (WIS2)",
+    "text": "WMO Information System (WIS2)\n\nWMO WIS2 is a next generation data exchange system for Earth system data (weather/climate/water)\nEvent driven (Pub/Sub, MQTT), driven by OGC API - Records metadata and publication\nSet of tools adopted by regional weather offices to build up a global system"
   },
   {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#terriajs-a-web-based-gis",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#terriajs-a-web-based-gis",
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#workflow-i",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#workflow-i",
     "title": "pygeometa project status",
-    "section": "TerriaJS, a web-based GIS",
-    "text": "TerriaJS, a web-based GIS\n\nThe project uses TerriaJS as a data viewer\nTerriaJS includes a CSW Catalogue search and links back to the catalogue via WMS capabilities\nExtra integration via ‘Add data to viewer’ from catalogue page"
+    "section": "Workflow I",
+    "text": "Workflow I\n“No code”: Manage, verify and publish metadata using GitHub as a content management platform.\n\nMetadata files are managed as pygeometa MCF records\nGitHub Actions are used to verify, transform and publish notification messages to an MQTT broker\nFrom here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by pygeoapi) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client."
   },
   {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#terriajs",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#terriajs",
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#workflow-ii",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#workflow-ii",
     "title": "pygeometa project status",
-    "section": "TerriaJS",
-    "text": "TerriaJS\n\n\n\nTerriaJS"
+    "section": "Workflow II",
+    "text": "Workflow II"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#takeaways",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#takeaways",
+    "title": "pygeometa project status",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nMCF is an interesting and useful metadata format for embedded metadata in local file repositories\nGit storage and CI-CD workflows are a traceable, reproducible and participatory approach for metadata management\nOGC API - Records (in for example pycsw) offers a clean machine and human friendly interface to metadata"
   },
   {
     "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#composability",

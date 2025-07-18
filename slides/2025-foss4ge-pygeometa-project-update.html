@@ -143,8 +143,8 @@ Tom Kralidis, Paul van Genuchten
 <section id="about-us" class="slide level2">
 <h2>About us</h2>
 <ul>
-<li class="fragment"><a href="https://github.com/pvgenuchten">Paul van Genuchten</a>, SDI specialist at <code>ISRIC - World Soil Information</code>, the Netherlands</li>
 <li class="fragment"><a href="https://github.com/tomkralidis">Tom Kralidis</a>, Senior Geospatial Architect, Meteorological Service of Canada, OSGeo Board of Directors</li>
+<li class="fragment"><a href="https://github.com/pvgenuchten">Paul van Genuchten</a>, SDI specialist at <code>ISRIC - World Soil Information</code>, the Netherlands</li>
 </ul>
 </section>
 <section id="intro-to-pygeometa" class="slide level2">
@@ -318,11 +318,44 @@ Tom Kralidis, Paul van Genuchten
 </section>
 <section id="metadata-publication-use-cases" class="slide level2">
 <h2>Metadata publication use cases</h2>
-<p>We present 2 use cases to demonstrate the value of this approach:</p>
+<p>We present 3 use cases to demonstrate the value of this approach:</p>
 <ul>
+<li class="fragment">Land Soil Crop hubs (LSC)</li>
 <li class="fragment">Earth Observation Exploitation Platform Common Architecture (EOEPCA)</li>
 <li class="fragment">WMO Information System (WIS2)</li>
-<li class="fragment">Land Soil Crop hubs (LSC)</li>
+</ul>
+</section>
+<section id="land-soil-crop-hubs" class="slide level2">
+<h2>Land Soil Crop hubs</h2>
+<ul>
+<li class="fragment">Part of an EU funded research project, <a href="https://capacity4dev.europa.eu/projects/desira_en">DeSIRA</a>, to improve data sharing in the Land Soil Crop domain in East Africa</li>
+<li class="fragment">Improve data &amp; resources discovery, which are relevant to improve agriculture in East Africa</li>
+</ul>
+</section>
+<section id="participatory-metadata-management" class="slide level2">
+<h2>Participatory metadata management</h2>
+<div class="r-stack">
+<p><img data-src="./img/fun-md/browse.png" class="fragment" width="800"></p>
+<p><img data-src="./img/fun-md/edit.png" class="fragment" width="800"></p>
+<p><img data-src="./img/fun-md/history.png" class="fragment" width="800"></p>
+</div>
+</section>
+<section id="pycsw" class="slide level2">
+<h2>pycsw</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://rwanda.lsc-hubs.org/cat/collections/metadata:main/items?q=wms"><img data-src="./img/fun-md/pycsw.png" width="800"></a></p>
+<figcaption>Rwanda LSC Catalogue</figcaption>
+</figure>
+</div>
+</section>
+<section id="participatory-metadata-management-1" class="slide level2">
+<h2>Participatory metadata management</h2>
+<ul>
+<li class="fragment">Users initially provided metadata as lists in Microsoft Excel</li>
+<li class="fragment">Excel rows converted to MCF and loaded to pycsw</li>
+<li class="fragment">MCF Metadata is hosted in GitHub</li>
+<li class="fragment">Users contribute content (or register issues about content)</li>
 </ul>
 </section>
 <section id="eoepca" class="title-slide slide level1 center">
@@ -376,68 +409,8 @@ Tom Kralidis, Paul van Genuchten
 <p><img data-src="./img/wis2-metadata-github-pubsub-workflow.png" class="fragment" width="1000"></p>
 </div>
 </section>
-<section id="land-soil-crop-hubs" class="slide level2">
-<h2>Land Soil Crop hubs</h2>
-<ul>
-<li class="fragment">Part of an EU funded research project, <a href="https://capacity4dev.europa.eu/projects/desira_en">DeSIRA</a>, to improve data sharing in the Land Soil Crop domain in East Africa</li>
-<li class="fragment">Improve data &amp; resources discovery, which are relevant to improve agriculture in East Africa</li>
-</ul>
-</section>
-<section id="participatory-metadata-management" class="slide level2">
-<h2>Participatory metadata management</h2>
-<div class="r-stack">
-<p><img data-src="./img/fun-md/browse.png" class="fragment" width="800"></p>
-<p><img data-src="./img/fun-md/edit.png" class="fragment" width="800"></p>
-<p><img data-src="./img/fun-md/history.png" class="fragment" width="800"></p>
-</div>
-</section>
-<section id="pycsw" class="slide level2">
-<h2>pycsw</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="https://rwanda.lsc-hubs.org/cat/collections/metadata:main/items?q=wms"><img data-src="./img/fun-md/pycsw.png" width="800"></a></p>
-<figcaption>Rwanda LSC Catalogue</figcaption>
-</figure>
-</div>
-</section>
-<section id="participatory-metadata-management-1" class="slide level2">
-<h2>Participatory metadata management</h2>
-<ul>
-<li class="fragment">Users initially provided metadata as lists in Microsoft Excel</li>
-<li class="fragment">Excel rows converted to MCF and loaded to pycsw</li>
-<li class="fragment">MCF Metadata is hosted in GitHub</li>
-<li class="fragment">Users contribute content (or register issues about content)</li>
-</ul>
-</section>
-<section id="mapserver" class="slide level2">
-<h2>MapServer</h2>
-<ul>
-<li class="fragment">Mapserver is used to let users interact with data through WMS/WFS</li>
-<li class="fragment">Metadata generates <a href="https://mapserver.org">MapServer</a> configuration</li>
-<li class="fragment">Map service endpoint is added to metadata</li>
-<li class="fragment">MapServer is fully aligned with the catalogue</li>
-</ul>
-</section>
-<section id="terriajs-a-web-based-gis" class="slide level2">
-<h2>TerriaJS, a web-based GIS</h2>
-<ul>
-<li class="fragment">The project uses <a href="https://terria.io">TerriaJS</a> as a data viewer</li>
-<li class="fragment">TerriaJS includes a CSW Catalogue search and links back to the catalogue via WMS capabilities</li>
-<li class="fragment">Extra integration via ‘Add data to viewer’ from catalogue page</li>
-</ul>
-</section>
-<section id="terriajs" class="slide level2">
-<h2>TerriaJS</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="https://rwanda.lsc-hubs.org/map/"><img data-src="./img/fun-md/terria.png" width="800"></a></p>
-<figcaption>TerriaJS</figcaption>
-</figure>
-</div>
-</section></section>
-<section>
-<section id="takeaways" class="title-slide slide level1 center">
-<h1>Takeaways</h1>
+<section id="takeaways" class="slide level2">
+<h2>Takeaways</h2>
 <ul>
 <li class="fragment">MCF is an interesting and useful metadata format for embedded metadata in local file repositories</li>
 <li class="fragment">Git storage and CI-CD workflows are a traceable, reproducible and participatory approach for metadata management</li>
