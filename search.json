@@ -564,7 +564,7 @@
     "href": "slides/2025-foss4ge-pygeometa-project-update.html#from-mcf-to-catalogue",
     "title": "pygeometa project status",
     "section": "From MCF to catalogue",
-    "text": "From MCF to catalogue\n\nData scientists maintain MCF as a sidecar to their data\nWorkflows ingest and convert using pygeometa\nMetadata is then loaded on a catalogue\n\npycsw via pycsw-admin.py\nGeonetwork via a file folder harvest\n\nGit backed storage, enables direct feedback and improvement from catalogue"
+    "text": "From MCF to catalogue\n\nData scientists maintain MCF as a sidecar to their data\nWorkflows ingest and convert using pygeometa\nMetadata is then loaded on a catalogue\n\npycsw via pycsw-admin.py\nGeoNetwork via a file folder harvest\n\nGit backed storage, enables direct feedback and improvement from catalogue"
   },
   {
     "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#colleagues-like-mcf",
