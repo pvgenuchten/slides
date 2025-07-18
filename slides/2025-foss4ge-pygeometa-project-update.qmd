@@ -86,9 +86,9 @@ format:
 - Data scientists maintain MCF as a sidecar to their data
 - Workflows ingest and convert using pygeometa
 - Metadata is then loaded on a catalogue
-   - [pycsw](https://pycsw.org) via pycsw-admin.py
-   - [pygeoapi](https://pygeoapi.io) via elastic search or tinydb
-   - [Geonetwork](https://geonetwork-opensource.org) via a file folder harvest
+   - [pycsw](https://pycsw.org) via `pycsw-admin.py`
+   - [pygeoapi](https://pygeoapi.io) via Elasticsearch or TinyDB
+   - [GeOnetwork](https://geonetwork-opensource.org) via file / folder harvest
 
 - Git backed storage, enables direct feedback and improvement from catalogue
 
