@@ -87,7 +87,9 @@ format:
 - Workflows ingest and convert using pygeometa
 - Metadata is then loaded on a catalogue
    - [pycsw](https://pycsw.org) via pycsw-admin.py
-   - [GeoNetwork](https://geonetwork-opensource.org) via a file folder harvest
+   - [pygeoapi](https://pygeoapi.io) via elastic search or tinydb
+   - [Geonetwork](https://geonetwork-opensource.org) via a file folder harvest
+
 - Git backed storage, enables direct feedback and improvement from catalogue
 
 ## Colleagues like MCF?
