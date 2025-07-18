@@ -9,9 +9,9 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.32">
 
-  <meta name="author" content="Paul van Genuchten, Tom Kralidis">
+  <meta name="author" content="Tom Kralidis, Paul van Genuchten">
   <meta name="dcterms.date" content="2025-07-17">
-  <title>some slide decks – A fun way to do spatial cataloguing</title>
+  <title>some slide decks – pygeometa project status</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -128,38 +128,27 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">A fun way to do spatial cataloguing</h1>
-  <p class="subtitle">Data discovery using pygeometa</p>
+  <h1 class="title">pygeometa project status</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Paul van Genuchten, Tom Kralidis 
+Tom Kralidis, Paul van Genuchten 
 </div>
 </div>
 </div>
 
   <p class="date">2025-07-17</p>
 </section>
-<section id="about-us" class="title-slide slide level1 center">
-<h1>About us</h1>
+<section id="about-us" class="slide level2">
+<h2>About us</h2>
 <ul>
 <li class="fragment"><a href="https://github.com/pvgenuchten">Paul van Genuchten</a>, SDI specialist at <code>ISRIC - World Soil Information</code>, the Netherlands</li>
 <li class="fragment"><a href="https://github.com/tomkralidis">Tom Kralidis</a>, Senior Geospatial Architect, Meteorological Service of Canada, OSGeo Board of Directors</li>
 </ul>
 </section>
-
-<section id="what-if" class="title-slide slide level1 center">
-<h1>What if…</h1>
-<div class="r-stack">
-<p><img data-src="./img/fun-md/browse.png" class="fragment" width="800"></p>
-<p><img data-src="./img/fun-md/edit.png" class="fragment" width="800"></p>
-<p><img data-src="./img/fun-md/history.png" class="fragment" width="800"></p>
-</div>
-</section>
-
-<section id="intro-to-pygeometa" class="title-slide slide level1 center">
-<h1>Intro to pygeometa</h1>
+<section id="intro-to-pygeometa-i" class="slide level2">
+<h2>Intro to pygeometa I</h2>
 <ul>
 <li class="fragment"><a href="https://geopython.github.io/pygeometa">pygeometa</a> is a Python package to generate metadata for geospatial datasets</li>
 <li class="fragment"><a href="https://geopython.github.io/pygeometa/reference/mcf">metadata control file (MCF)</a> is a format endorsed by the geopython community, defined and maintained as part of the pygeometa library
@@ -169,33 +158,48 @@ Paul van Genuchten, Tom Kralidis
 </ul></li>
 </ul>
 </section>
-
-<section id="from-mcf-to-catalogue" class="title-slide slide level1 center">
-<h1>From MCF to catalogue</h1>
+<section id="intro-to-pygeometa-ii" class="slide level2">
+<h2>Intro to pygeometa II</h2>
 <ul>
-<li class="fragment">MCF is converted to ISO 19115 using pygeometa and then loaded on a catalogue</li>
-<li class="fragment"><a href="https://pycsw.org">pycsw</a> a standards based catalogue component (PostgreSQL backend)</li>
-<li class="fragment">Supports <a href="https://ogcapi.ogc.org/records">OGC API - Records</a>, nuerous metadata models, faceted search</li>
+<li class="fragment">Created in 2009</li>
+<li class="fragment">Originally named “pygdm” as part of larger internal geospatial data management workflow at Environment Canada</li>
+<li class="fragment">Pulled out as a standalone project (pygeometa) in 2014</li>
+<li class="fragment">Published to GitHub in 2015</li>
 </ul>
 </section>
-
-<section id="colleagues-like-mcf" class="title-slide slide level1 center">
-<h1>Colleagues like MCF?</h1>
+<section id="what-if" class="slide level2">
+<h2>What if…</h2>
+<div class="r-stack">
+<p><img data-src="./img/fun-md/browse.png" class="fragment" width="800"></p>
+<p><img data-src="./img/fun-md/edit.png" class="fragment" width="800"></p>
+<p><img data-src="./img/fun-md/history.png" class="fragment" width="800"></p>
+</div>
+</section>
+<section id="from-mcf-to-catalogue" class="slide level2">
+<h2>From MCF to catalogue</h2>
+<ul>
+<li class="fragment">Data scientists maintain MCF as a sidecar to their data</li>
+<li class="fragment">Workflows ingest and convert using pygeometa</li>
+<li class="fragment">Metadata is then loaded on a catalogue</li>
+<li class="fragment">For example <a href="https://pycsw.org">pycsw</a>, a standards based catalogue component</li>
+<li class="fragment">Git backed storage, enables direct feedback and improvement from catalogue</li>
+</ul>
+</section>
+<section id="colleagues-like-mcf" class="slide level2">
+<h2>Colleagues like MCF?</h2>
 <ul>
 <li class="fragment">Some expect shiny webforms, like LinkedIn/Facebook</li>
-<li class="fragment">Not used to YAML syntax and Git CI-CD workflows</li>
+<li class="fragment">Not used to YAML syntax</li>
 <li class="fragment">Enter <a href="https://github.com/osgeo/mdme">mdme</a>, the Model Driven Metadata Editor / web application for geospatial metadata</li>
 </ul>
 </section>
-
-<section id="web-editor-for-mcf" class="title-slide slide level1 center">
-<h1>Web editor for MCF</h1>
+<section id="web-editor-for-mcf" class="slide level2">
+<h2>Web editor for MCF</h2>
 
 <img data-src="./img/fun-md/mdme.png" width="800" class="r-stretch quarto-figure-center"><p class="caption">mdme</p><p><a href="https://osgeo.github.io/mdme">osgeo.github.io/mdme</a></p>
 </section>
-
-<section id="tech-colleagues-like-mcf" class="title-slide slide level1 center">
-<h1>Tech colleagues like MCF?</h1>
+<section id="tech-colleagues-like-mcf" class="slide level2">
+<h2>Tech colleagues like MCF?</h2>
 <ul>
 <li class="fragment">YAML is an optimal format for Git version control</li>
 <li class="fragment">Git offers a fully traceable catalogue</li>
@@ -204,23 +208,210 @@ Paul van Genuchten, Tom Kralidis
 <li class="fragment">YAML can be composed and published in memory for automated pipelines</li>
 </ul>
 </section>
-
-<section id="metadata-publication-use-cases" class="title-slide slide level1 center">
-<h1>Metadata publication use cases</h1>
+<section id="problem-setting" class="slide level2">
+<h2>Problem setting</h2>
+<p>You will find many (geospatial) metadata standards out there</p>
+<ul>
+<li class="fragment">FGDC CSDGM</li>
+<li class="fragment">NASA DIF</li>
+<li class="fragment">ISO 19115 / 19139</li>
+<li class="fragment">WMO, HNAP, etc.</li>
+<li class="fragment">Dublin Core</li>
+<li class="fragment">DCAT</li>
+<li class="fragment">OGC CSW</li>
+<li class="fragment">OGC API - Records</li>
+<li class="fragment">STAC</li>
+</ul>
+</section>
+<section id="challenges" class="slide level2">
+<h2>Challenges</h2>
+<ul>
+<li class="fragment">Granularity and organization</li>
+<li class="fragment">Datasets</li>
+<li class="fragment">EO domains</li>
+<li class="fragment">collections / sensors / acquisitions</li>
+<li class="fragment">stations, observations</li>
+<li class="fragment">Services</li>
+<li class="fragment">Processes</li>
+<li class="fragment">Anything!</li>
+<li class="fragment">Maintenance Frequency</li>
+</ul>
+</section>
+<section id="workflows" class="slide level2">
+<h2>Workflows</h2>
+<ul>
+<li class="fragment">Data explosion = metadata explosion</li>
+<li class="fragment">Traditional workflow:
+<ul>
+<li class="fragment">static discovery metadata</li>
+</ul></li>
+<li class="fragment">Real-time workflow:
+<ul>
+<li class="fragment">Momentum data</li>
+<li class="fragment">On-the-fly generation</li>
+<li class="fragment">Ship with or without payload</li>
+</ul></li>
+</ul>
+</section>
+<section id="pygeometa-overview" class="slide level2">
+<h2>pygeometa overview</h2>
+<ul>
+<li class="fragment">Original focus on static discovery metadata for ISO 19115</li>
+<li class="fragment">Increased focus on automated workflow and run-time pipelines</li>
+<li class="fragment">CLI or Python API</li>
+<li class="fragment">Support additional formats</li>
+<li class="fragment">Multilingual support</li>
+<li class="fragment">Support for ‘base’ MCF reuse (i.e.&nbsp;contacts)</li>
+<li class="fragment">Schema validation (new!)</li>
+<li class="fragment">Extensible</li>
+<li class="fragment">allows for additional properties</li>
+<li class="fragment">add your own Metadata Formats!!</li>
+</ul>
+</section>
+<section id="architecture" class="slide level2">
+<h2>Architecture</h2>
+<div class="r-stack">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./img/how-pygeometa-works.png" class="fragment" width="800"></p>
+<figcaption>How pygeometa works</figcaption>
+</figure>
+</div>
+</div>
+<ul>
+<li class="fragment">Land Soil Crop Hubs ## The Metadata Control File (MCF)</li>
+</ul>
+<p><img data-src="./img/pygeometa-mcf-file.png" alt="pygeometa MCF">{.fragment width=“100” .fig-align=“left”}</p>
+</section>
+<section id="the-metadata-control-file-mcf" class="slide level2">
+<h2>The Metadata Control File (MCF)</h2>
+<ul>
+<li class="fragment">Agnostic to any metadata format (abstract model)</li>
+<li class="fragment">Plain old YAML</li>
+<li class="fragment">migrated from <code>.ini</code> format in 0.2</li>
+<li class="fragment">Multilingual support for text-based properties</li>
+</ul>
+</section>
+<section id="the-metadata-control-file-mcf-1" class="slide level2">
+<h2>The Metadata Control File (MCF)</h2>
+<ul>
+<li class="fragment">Benefits from YAML features (anchors, references)</li>
+<li class="fragment">Defined by a JSON schema
+<ul>
+<li class="fragment">model driven metadata workflow</li>
+<li class="fragment">UIs</li>
+<li class="fragment">in memory pipelines</li>
+</ul></li>
+<li class="fragment">Optimal for CI/CD and Git workflows (edit/publish)</li>
+</ul>
+</section>
+<section id="supported-formats" class="slide level2">
+<h2>Supported formats</h2>
+<ul>
+<li class="fragment">Dataset metadata
+<ul>
+<li class="fragment">ISO 19115 / 19139 (rw)</li>
+<li class="fragment">ISO 19115-2 (w)</li>
+<li class="fragment">WMO Core Metadata Profile</li>
+<li class="fragment">OGC API - Records (w)</li>
+<li class="fragment">DCAT (w)</li>
+</ul></li>
+<li class="fragment">Granule metadata
+<ul>
+<li class="fragment">STAC (w)</li>
+</ul></li>
+<li class="fragment">Observing Station metadata
+<ul>
+<li class="fragment">WMO WIGOS Metadata Standard (w)</li>
+</ul></li>
+</ul>
+</section>
+<section id="formats-and-extensibility" class="slide level2">
+<h2>Formats and extensibility</h2>
+<ul>
+<li class="fragment">Can be any format/representation</li>
+<li class="fragment">extending <code>pygeometa.schemas.base.BaseOutputSchema</code></li>
+<li class="fragment">Generation is encapsulated
+<ul>
+<li class="fragment">XML: Jinja2</li>
+<li class="fragment">JSON: Python <code>json</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="metadata-publication-use-cases" class="slide level2">
+<h2>Metadata publication use cases</h2>
 <p>We present 2 use cases to demonstrate the value of this approach:</p>
 <ul>
-<li class="fragment">Land Soil Crop Hubs</li>
+<li class="fragment">Earth Observation Exploitation Platform Common Architecture (EOEPCA)</li>
 <li class="fragment">WMO Information System (WIS2)</li>
+<li class="fragment">Land Soil Crop hubs (LSC)</li>
+</ul>
+</section>
+<section id="eoepca" class="title-slide slide level1 center">
+<h1>EOEPCA</h1>
+<ul>
+<li class="fragment">Earth Observation Exploitation Platform Common Architecture (EOEPCA)</li>
+<li class="fragment">Resource Catalogue (publishing, discovery and search)</li>
+<li class="fragment">Metadata publishing pipeline
+<ul>
+<li class="fragment">Collection level metadata</li>
+<li class="fragment">Product level metadata</li>
+<li class="fragment">Process metadata</li>
+</ul></li>
+<li class="fragment">ISO 19115-2</li>
+<li class="fragment">Sentinel scene metadata + INSPIRE =&gt; 19115-2</li>
+<li class="fragment">CWL =&gt; 19115-2</li>
+<li class="fragment">Publishing into pycsw
+<ul>
+<li class="fragment">CSW</li>
+<li class="fragment">OGC API - Records</li>
+<li class="fragment">STAC</li>
+</ul></li>
 </ul>
 </section>
 
 <section>
-<section id="land-soil-crop-hubs" class="title-slide slide level1 center">
-<h1>Land Soil Crop hubs</h1>
+<section id="eoepca-1" class="title-slide slide level1 center">
+<h1>EOEPCA</h1>
+
+<img data-src="./img/eoepca.png" width="400" class="r-stretch quarto-figure-center"><p class="caption">EOEPCA metadata workflows</p></section>
+<section id="wmo-information-system-wis2" class="slide level2">
+<h2>WMO Information System (WIS2)</h2>
+<ul>
+<li class="fragment"><a href="https://community.wmo.int/en/activity-areas/wis/wis2-implementation">WMO WIS2</a> is a next generation data exchange system for Earth system data (weather/climate/water)</li>
+<li class="fragment">Event driven (Pub/Sub, MQTT), driven by OGC API - Records metadata and publication</li>
+<li class="fragment">Set of tools adopted by regional weather offices to build up a global system</li>
+</ul>
+</section>
+<section id="workflow-i" class="slide level2">
+<h2>Workflow I</h2>
+<p>“No code”: Manage, verify and publish metadata using GitHub as a content management platform.</p>
+<ul>
+<li class="fragment">Metadata files are managed as pygeometa MCF records</li>
+<li class="fragment">GitHub Actions are used to verify, transform and publish notification messages to an MQTT broker</li>
+<li class="fragment">From here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by <a href="https://pygeoapi.io">pygeoapi</a>) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client.</li>
+</ul>
+</section>
+<section id="workflow-ii" class="slide level2">
+<h2>Workflow II</h2>
+<div class="r-stack">
+<p><img data-src="./img/wis2-metadata-github-pubsub-workflow.png" class="fragment" width="1000"></p>
+</div>
+</section>
+<section id="land-soil-crop-hubs" class="slide level2">
+<h2>Land Soil Crop hubs</h2>
 <ul>
 <li class="fragment">Part of an EU funded research project, <a href="https://capacity4dev.europa.eu/projects/desira_en">DeSIRA</a>, to improve data sharing in the Land Soil Crop domain in East Africa</li>
 <li class="fragment">Improve data &amp; resources discovery, which are relevant to improve agriculture in East Africa</li>
 </ul>
+</section>
+<section id="participatory-metadata-management" class="slide level2">
+<h2>Participatory metadata management</h2>
+<div class="r-stack">
+<p><img data-src="./img/fun-md/browse.png" class="fragment" width="800"></p>
+<p><img data-src="./img/fun-md/edit.png" class="fragment" width="800"></p>
+<p><img data-src="./img/fun-md/history.png" class="fragment" width="800"></p>
+</div>
 </section>
 <section id="pycsw" class="slide level2">
 <h2>pycsw</h2>
@@ -231,7 +422,7 @@ Paul van Genuchten, Tom Kralidis
 </figure>
 </div>
 </section>
-<section id="participatory-metadata-management" class="slide level2">
+<section id="participatory-metadata-management-1" class="slide level2">
 <h2>Participatory metadata management</h2>
 <ul>
 <li class="fragment">Users initially provided metadata as lists in Microsoft Excel</li>
@@ -264,30 +455,6 @@ Paul van Genuchten, Tom Kralidis
 <p><a href="https://rwanda.lsc-hubs.org/map/"><img data-src="./img/fun-md/terria.png" width="800"></a></p>
 <figcaption>TerriaJS</figcaption>
 </figure>
-</div>
-</section></section>
-<section>
-<section id="wmo-information-system-wis2" class="title-slide slide level1 center">
-<h1>WMO Information System (WIS2)</h1>
-<ul>
-<li class="fragment"><a href="https://community.wmo.int/en/activity-areas/wis/wis2-implementation">WMO WIS2</a> is a next generation data exchange system for Earth system data (weather/climate/water)</li>
-<li class="fragment">Event driven (Pub/Sub, MQTT), driven by OGC API - Records metadata and publication</li>
-<li class="fragment">Set of tools adopted by regional weather offices to build up a global system</li>
-</ul>
-</section>
-<section id="workflow" class="slide level2">
-<h2>Workflow</h2>
-<p>“No code”: Manage, verify and publish metadata using GitHub as a content management platform.</p>
-<ul>
-<li class="fragment">Metadata files are managed as pygeometa MCF records</li>
-<li class="fragment">GitHub Actions are used to verify, transform and publish notification messages to an MQTT broker</li>
-<li class="fragment">From here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by <a href="https://pygeoapi.io">pygeoapi</a>) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client.</li>
-</ul>
-</section>
-<section id="workflow-1" class="slide level2">
-<h2>Workflow</h2>
-<div class="r-stack">
-<p><img data-src="./img/wis2-metadata-github-pubsub-workflow.png" class="fragment" width="1000"></p>
 </div>
 </section></section>
 <section>
