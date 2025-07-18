@@ -147,24 +147,84 @@ Tom Kralidis, Paul van Genuchten
 <li class="fragment"><a href="https://github.com/tomkralidis">Tom Kralidis</a>, Senior Geospatial Architect, Meteorological Service of Canada, OSGeo Board of Directors</li>
 </ul>
 </section>
-<section id="intro-to-pygeometa-i" class="slide level2">
-<h2>Intro to pygeometa I</h2>
+<section id="intro-to-pygeometa" class="slide level2">
+<h2>Intro to pygeometa</h2>
 <ul>
-<li class="fragment"><a href="https://geopython.github.io/pygeometa">pygeometa</a> is a Python package to generate metadata for geospatial datasets</li>
-<li class="fragment"><a href="https://geopython.github.io/pygeometa/reference/mcf">metadata control file (MCF)</a> is a format endorsed by the geopython community, defined and maintained as part of the pygeometa library
-<ul>
-<li class="fragment">YAML encoded subset of ISO 19115</li>
-<li class="fragment">Supports YAML features such as references and includes</li>
-</ul></li>
-</ul>
-</section>
-<section id="intro-to-pygeometa-ii" class="slide level2">
-<h2>Intro to pygeometa II</h2>
-<ul>
+<li class="fragment">Python package to manage metadata for geospatial datasets</li>
 <li class="fragment">Created in 2009</li>
 <li class="fragment">Originally named “pygdm” as part of larger internal geospatial data management workflow at Environment Canada</li>
 <li class="fragment">Pulled out as a standalone project (pygeometa) in 2014</li>
 <li class="fragment">Published to GitHub in 2015</li>
+</ul>
+</section>
+<section id="architecture" class="slide level2">
+<h2>Architecture</h2>
+<div class="r-stack">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./img/how-pygeometa-works.png" class="fragment" width="800"></p>
+<figcaption>How pygeometa works</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="the-metadata-control-file-mcf" class="slide level2">
+<h2>The Metadata Control File (MCF)</h2>
+<p><img data-src="./img/pygeometa-mcf-file.png" alt="pygeometa MCF">{.fragment width=“100” .fig-align=“left”}</p>
+</section>
+<section id="the-metadata-control-file-mcf-1" class="slide level2">
+<h2>The Metadata Control File (MCF)</h2>
+<ul>
+<li class="fragment">agnostic to any metadata format (abstract model)</li>
+<li class="fragment">plain old YAML</li>
+<li class="fragment">migrated from <code>.ini</code> format in 0.2</li>
+<li class="fragment">multilingual support for text-based properties</li>
+</ul>
+</section>
+<section id="the-metadata-control-file-mcf-2" class="slide level2">
+<h2>The Metadata Control File (MCF)</h2>
+<ul>
+<li class="fragment">benefits from YAML features (anchors, references)</li>
+<li class="fragment">defined by a JSON schema
+<ul>
+<li class="fragment">model driven metadata workflow</li>
+<li class="fragment">UIs</li>
+<li class="fragment">in memory pipelines</li>
+</ul></li>
+<li class="fragment">optimal for CI/CD and Git workflows (edit/publish)</li>
+</ul>
+</section>
+<section id="supported-formats" class="slide level2">
+<h2>Supported formats</h2>
+<ul>
+<li class="fragment">Dataset metadata
+<ul>
+<li class="fragment">ISO 19115 / 19139 (rw)</li>
+<li class="fragment">ISO 19115-2 (w)</li>
+<li class="fragment">WMO Core Metadata Profile</li>
+<li class="fragment">OGC API - Records (rw)</li>
+<li class="fragment">DCAT (w)</li>
+</ul></li>
+<li class="fragment">Granule metadata
+<ul>
+<li class="fragment">STAC (w)</li>
+</ul></li>
+<li class="fragment">Observing Station metadata
+<ul>
+<li class="fragment">WMO WIGOS Metadata Standard (w)</li>
+</ul></li>
+</ul>
+</section>
+<section id="formats-and-extensibility" class="slide level2">
+<h2>Formats and extensibility</h2>
+<ul>
+<li class="fragment">Can be any format/representation</li>
+<li class="fragment">extending <code>pygeometa.schemas.base.BaseOutputSchema</code></li>
+<li class="fragment">Generation is encapsulated
+<ul>
+<li class="fragment">XML: Jinja2</li>
+<li class="fragment">JSON: Python <code>json</code></li>
+</ul></li>
 </ul>
 </section>
 <section id="what-if" class="slide level2">
@@ -229,12 +289,15 @@ Tom Kralidis, Paul van Genuchten
 <li class="fragment">Granularity and organization</li>
 <li class="fragment">Datasets</li>
 <li class="fragment">EO domains</li>
+<li class="fragment">types
+<ul>
 <li class="fragment">collections / sensors / acquisitions</li>
 <li class="fragment">stations, observations</li>
-<li class="fragment">Services</li>
-<li class="fragment">Processes</li>
-<li class="fragment">Anything!</li>
-<li class="fragment">Maintenance Frequency</li>
+<li class="fragment">services</li>
+<li class="fragment">processes</li>
+<li class="fragment">anything!</li>
+</ul></li>
+<li class="fragment">lifecycle</li>
 </ul>
 </section>
 <section id="workflows" class="slide level2">
@@ -250,91 +313,6 @@ Tom Kralidis, Paul van Genuchten
 <li class="fragment">Momentum data</li>
 <li class="fragment">On-the-fly generation</li>
 <li class="fragment">Ship with or without payload</li>
-</ul></li>
-</ul>
-</section>
-<section id="pygeometa-overview" class="slide level2">
-<h2>pygeometa overview</h2>
-<ul>
-<li class="fragment">Original focus on static discovery metadata for ISO 19115</li>
-<li class="fragment">Increased focus on automated workflow and run-time pipelines</li>
-<li class="fragment">CLI or Python API</li>
-<li class="fragment">Support additional formats</li>
-<li class="fragment">Multilingual support</li>
-<li class="fragment">Support for ‘base’ MCF reuse (i.e.&nbsp;contacts)</li>
-<li class="fragment">Schema validation (new!)</li>
-<li class="fragment">Extensible</li>
-<li class="fragment">allows for additional properties</li>
-<li class="fragment">add your own Metadata Formats!!</li>
-</ul>
-</section>
-<section id="architecture" class="slide level2">
-<h2>Architecture</h2>
-<div class="r-stack">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="./img/how-pygeometa-works.png" class="fragment" width="800"></p>
-<figcaption>How pygeometa works</figcaption>
-</figure>
-</div>
-</div>
-<ul>
-<li class="fragment">Land Soil Crop Hubs ## The Metadata Control File (MCF)</li>
-</ul>
-<p><img data-src="./img/pygeometa-mcf-file.png" alt="pygeometa MCF">{.fragment width=“100” .fig-align=“left”}</p>
-</section>
-<section id="the-metadata-control-file-mcf" class="slide level2">
-<h2>The Metadata Control File (MCF)</h2>
-<ul>
-<li class="fragment">Agnostic to any metadata format (abstract model)</li>
-<li class="fragment">Plain old YAML</li>
-<li class="fragment">migrated from <code>.ini</code> format in 0.2</li>
-<li class="fragment">Multilingual support for text-based properties</li>
-</ul>
-</section>
-<section id="the-metadata-control-file-mcf-1" class="slide level2">
-<h2>The Metadata Control File (MCF)</h2>
-<ul>
-<li class="fragment">Benefits from YAML features (anchors, references)</li>
-<li class="fragment">Defined by a JSON schema
-<ul>
-<li class="fragment">model driven metadata workflow</li>
-<li class="fragment">UIs</li>
-<li class="fragment">in memory pipelines</li>
-</ul></li>
-<li class="fragment">Optimal for CI/CD and Git workflows (edit/publish)</li>
-</ul>
-</section>
-<section id="supported-formats" class="slide level2">
-<h2>Supported formats</h2>
-<ul>
-<li class="fragment">Dataset metadata
-<ul>
-<li class="fragment">ISO 19115 / 19139 (rw)</li>
-<li class="fragment">ISO 19115-2 (w)</li>
-<li class="fragment">WMO Core Metadata Profile</li>
-<li class="fragment">OGC API - Records (w)</li>
-<li class="fragment">DCAT (w)</li>
-</ul></li>
-<li class="fragment">Granule metadata
-<ul>
-<li class="fragment">STAC (w)</li>
-</ul></li>
-<li class="fragment">Observing Station metadata
-<ul>
-<li class="fragment">WMO WIGOS Metadata Standard (w)</li>
-</ul></li>
-</ul>
-</section>
-<section id="formats-and-extensibility" class="slide level2">
-<h2>Formats and extensibility</h2>
-<ul>
-<li class="fragment">Can be any format/representation</li>
-<li class="fragment">extending <code>pygeometa.schemas.base.BaseOutputSchema</code></li>
-<li class="fragment">Generation is encapsulated
-<ul>
-<li class="fragment">XML: Jinja2</li>
-<li class="fragment">JSON: Python <code>json</code></li>
 </ul></li>
 </ul>
 </section>
@@ -489,7 +467,7 @@ Tom Kralidis, Paul van Genuchten
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="./img/logo-foss4g-mostar.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>FOSS4G Europe 2025, Mostar, Bosnia Herzegovina</p>
+<p>FOSS4G Europe 2025, Mostar, Bosnia and Herzegovina</p>
 </div>
 </div></div>
 

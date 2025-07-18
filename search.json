@@ -504,18 +504,53 @@
     "text": "About us\n\nPaul van Genuchten, SDI specialist at ISRIC - World Soil Information, the Netherlands\nTom Kralidis, Senior Geospatial Architect, Meteorological Service of Canada, OSGeo Board of Directors"
   },
   {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#intro-to-pygeometa-i",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#intro-to-pygeometa-i",
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#intro-to-pygeometa",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#intro-to-pygeometa",
     "title": "pygeometa project status",
-    "section": "Intro to pygeometa I",
-    "text": "Intro to pygeometa I\n\npygeometa is a Python package to generate metadata for geospatial datasets\nmetadata control file (MCF) is a format endorsed by the geopython community, defined and maintained as part of the pygeometa library\n\nYAML encoded subset of ISO 19115\nSupports YAML features such as references and includes"
+    "section": "Intro to pygeometa",
+    "text": "Intro to pygeometa\n\nPython package to manage metadata for geospatial datasets\nCreated in 2009\nOriginally named “pygdm” as part of larger internal geospatial data management workflow at Environment Canada\nPulled out as a standalone project (pygeometa) in 2014\nPublished to GitHub in 2015"
   },
   {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#intro-to-pygeometa-ii",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#intro-to-pygeometa-ii",
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#architecture",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#architecture",
     "title": "pygeometa project status",
-    "section": "Intro to pygeometa II",
-    "text": "Intro to pygeometa II\n\nCreated in 2009\nOriginally named “pygdm” as part of larger internal geospatial data management workflow at Environment Canada\nPulled out as a standalone project (pygeometa) in 2014\nPublished to GitHub in 2015"
+    "section": "Architecture",
+    "text": "Architecture\n\n\n\n\nHow pygeometa works"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#the-metadata-control-file-mcf",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#the-metadata-control-file-mcf",
+    "title": "pygeometa project status",
+    "section": "The Metadata Control File (MCF)",
+    "text": "The Metadata Control File (MCF)\n{.fragment width=“100” .fig-align=“left”}"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#the-metadata-control-file-mcf-1",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#the-metadata-control-file-mcf-1",
+    "title": "pygeometa project status",
+    "section": "The Metadata Control File (MCF)",
+    "text": "The Metadata Control File (MCF)\n\nagnostic to any metadata format (abstract model)\nplain old YAML\nmigrated from .ini format in 0.2\nmultilingual support for text-based properties"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#the-metadata-control-file-mcf-2",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#the-metadata-control-file-mcf-2",
+    "title": "pygeometa project status",
+    "section": "The Metadata Control File (MCF)",
+    "text": "The Metadata Control File (MCF)\n\nbenefits from YAML features (anchors, references)\ndefined by a JSON schema\n\nmodel driven metadata workflow\nUIs\nin memory pipelines\n\noptimal for CI/CD and Git workflows (edit/publish)"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#supported-formats",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#supported-formats",
+    "title": "pygeometa project status",
+    "section": "Supported formats",
+    "text": "Supported formats\n\nDataset metadata\n\nISO 19115 / 19139 (rw)\nISO 19115-2 (w)\nWMO Core Metadata Profile\nOGC API - Records (rw)\nDCAT (w)\n\nGranule metadata\n\nSTAC (w)\n\nObserving Station metadata\n\nWMO WIGOS Metadata Standard (w)"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#formats-and-extensibility",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#formats-and-extensibility",
+    "title": "pygeometa project status",
+    "section": "Formats and extensibility",
+    "text": "Formats and extensibility\n\nCan be any format/representation\nextending pygeometa.schemas.base.BaseOutputSchema\nGeneration is encapsulated\n\nXML: Jinja2\nJSON: Python json"
   },
   {
     "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#what-if",
@@ -564,7 +599,7 @@
     "href": "slides/2025-foss4ge-pygeometa-project-update.html#challenges",
     "title": "pygeometa project status",
     "section": "Challenges",
-    "text": "Challenges\n\nGranularity and organization\nDatasets\nEO domains\ncollections / sensors / acquisitions\nstations, observations\nServices\nProcesses\nAnything!\nMaintenance Frequency"
+    "text": "Challenges\n\nGranularity and organization\nDatasets\nEO domains\ntypes\n\ncollections / sensors / acquisitions\nstations, observations\nservices\nprocesses\nanything!\n\nlifecycle"
   },
   {
     "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#workflows",
@@ -572,48 +607,6 @@
     "title": "pygeometa project status",
     "section": "Workflows",
     "text": "Workflows\n\nData explosion = metadata explosion\nTraditional workflow:\n\nstatic discovery metadata\n\nReal-time workflow:\n\nMomentum data\nOn-the-fly generation\nShip with or without payload"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#pygeometa-overview",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#pygeometa-overview",
-    "title": "pygeometa project status",
-    "section": "pygeometa overview",
-    "text": "pygeometa overview\n\nOriginal focus on static discovery metadata for ISO 19115\nIncreased focus on automated workflow and run-time pipelines\nCLI or Python API\nSupport additional formats\nMultilingual support\nSupport for ‘base’ MCF reuse (i.e. contacts)\nSchema validation (new!)\nExtensible\nallows for additional properties\nadd your own Metadata Formats!!"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#architecture",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#architecture",
-    "title": "pygeometa project status",
-    "section": "Architecture",
-    "text": "Architecture\n\n\n\n\nHow pygeometa works\n\n\n\n\nLand Soil Crop Hubs ## The Metadata Control File (MCF)\n\n{.fragment width=“100” .fig-align=“left”}"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#the-metadata-control-file-mcf",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#the-metadata-control-file-mcf",
-    "title": "pygeometa project status",
-    "section": "The Metadata Control File (MCF)",
-    "text": "The Metadata Control File (MCF)\n\nAgnostic to any metadata format (abstract model)\nPlain old YAML\nmigrated from .ini format in 0.2\nMultilingual support for text-based properties"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#the-metadata-control-file-mcf-1",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#the-metadata-control-file-mcf-1",
-    "title": "pygeometa project status",
-    "section": "The Metadata Control File (MCF)",
-    "text": "The Metadata Control File (MCF)\n\nBenefits from YAML features (anchors, references)\nDefined by a JSON schema\n\nmodel driven metadata workflow\nUIs\nin memory pipelines\n\nOptimal for CI/CD and Git workflows (edit/publish)"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#supported-formats",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#supported-formats",
-    "title": "pygeometa project status",
-    "section": "Supported formats",
-    "text": "Supported formats\n\nDataset metadata\n\nISO 19115 / 19139 (rw)\nISO 19115-2 (w)\nWMO Core Metadata Profile\nOGC API - Records (w)\nDCAT (w)\n\nGranule metadata\n\nSTAC (w)\n\nObserving Station metadata\n\nWMO WIGOS Metadata Standard (w)"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#formats-and-extensibility",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#formats-and-extensibility",
-    "title": "pygeometa project status",
-    "section": "Formats and extensibility",
-    "text": "Formats and extensibility\n\nCan be any format/representation\nextending pygeometa.schemas.base.BaseOutputSchema\nGeneration is encapsulated\n\nXML: Jinja2\nJSON: Python json"
   },
   {
     "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#metadata-publication-use-cases",
