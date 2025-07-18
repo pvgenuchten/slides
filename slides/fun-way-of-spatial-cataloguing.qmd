@@ -1,8 +1,8 @@
 ---
-title: A fun way to do spatial cataloguing 
-subtitle: Data discovery using pygeometa
+title: pygeometa project status 2025
+subtitle: A fun way to do spatial cataloguing
 author: Paul van Genuchten, Tom Kralidis
-date: 2025-07-17
+date: 2025-07-18
 format:
   revealjs:
     incremental: true
