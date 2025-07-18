@@ -7,7 +7,7 @@ format:
     incremental: true
     theme: sky
     logo: ./img/logo-foss4g-mostar.png
-    footer: "FOSS4G Europe 2025, Mostar, Bosnia Herzegovina"
+    footer: "FOSS4G Europe 2025, Mostar, Bosnia and Herzegovina"
 ---
 
 ## About us
@@ -15,19 +15,60 @@ format:
 - [Paul van Genuchten](https://github.com/pvgenuchten), SDI specialist at `ISRIC - World Soil Information`, the Netherlands
 - [Tom Kralidis](https://github.com/tomkralidis), Senior Geospatial Architect, Meteorological Service of Canada, OSGeo Board of Directors
 
-## Intro to pygeometa I
+## Intro to pygeometa
 
-- [pygeometa](https://geopython.github.io/pygeometa) is a Python package to generate metadata for geospatial datasets 
-- [metadata control file (MCF)](https://geopython.github.io/pygeometa/reference/mcf) is a format endorsed by the geopython community, defined and maintained as part of the pygeometa library
-  - YAML encoded subset of ISO 19115
-  - Supports YAML features such as references and includes
-
-## Intro to pygeometa II
-
+- Python package to manage metadata for geospatial datasets
 - Created in 2009
-- Originally named “pygdm” as part of larger internal geospatial data management workflow at Environment Canada
+- Originally named "pygdm" as part of larger internal geospatial data management workflow at Environment Canada
 - Pulled out as a standalone project (pygeometa) in 2014
 - Published to GitHub in 2015
+
+## Architecture
+
+::: {.r-stack}
+![How pygeometa works](./img/how-pygeometa-works.png){.fragment width="800"}
+:::
+
+## The Metadata Control File (MCF)
+
+![pygeometa MCF](./img/pygeometa-mcf-file.png){.fragment width="100" .fig-align="left"}
+
+## The Metadata Control File (MCF)
+
+- agnostic to any metadata format (abstract model)
+- plain old YAML
+- migrated from `.ini` format in 0.2
+- multilingual support for text-based properties
+
+## The Metadata Control File (MCF)
+
+- benefits from YAML features (anchors, references)
+- defined by a JSON schema
+  - model driven metadata workflow
+  - UIs
+  - in memory pipelines
+- optimal for CI/CD and Git workflows (edit/publish)
+
+## Supported formats
+
+- Dataset metadata
+  - ISO 19115 / 19139 (rw)
+  - ISO 19115-2 (w)
+  - WMO Core Metadata Profile
+  - OGC API - Records (rw)
+  - DCAT (w)
+- Granule metadata
+  - STAC (w)
+- Observing Station metadata
+  - WMO WIGOS Metadata Standard (w)
+
+## Formats and extensibility
+
+- Can be any format/representation
+- extending `pygeometa.schemas.base.BaseOutputSchema`
+- Generation is encapsulated
+  - XML: Jinja2
+  - JSON: Python `json`
 
 ## What if...
 
@@ -42,7 +83,7 @@ format:
 ## From MCF to catalogue
 
 - Data scientists maintain MCF as a sidecar to their data
-- Workflows ingest and convert using pygeometa 
+- Workflows ingest and convert using pygeometa
 - Metadata is then loaded on a catalogue
 - For example [pycsw](https://pycsw.org), a standards based catalogue component
 - Git backed storage, enables direct feedback and improvement from catalogue
@@ -50,7 +91,7 @@ format:
 ## Colleagues like MCF?
 
 - Some expect shiny webforms, like LinkedIn/Facebook
-- Not used to YAML syntax 
+- Not used to YAML syntax
 - Enter [mdme](https://github.com/osgeo/mdme), the Model Driven Metadata Editor / web application for geospatial metadata
 
 ## Web editor for MCF
@@ -65,7 +106,6 @@ format:
 - Git offers a fully traceable catalogue
 - File based metadata is easy to update with "search and replace"  
 - YAML can be composed and published in memory for automated pipelines
-
 
 ## Problem setting
 
@@ -86,12 +126,13 @@ You will find many (geospatial) metadata standards out there
 - Granularity and organization
 - Datasets
 - EO domains
-- collections / sensors / acquisitions
-- stations, observations
-- Services
-- Processes
-- Anything!
-- Maintenance Frequency
+- types
+  - collections / sensors / acquisitions
+  - stations, observations
+  - services
+  - processes
+  - anything!
+- lifecycle
 
 ## Workflows
 
@@ -103,66 +144,6 @@ You will find many (geospatial) metadata standards out there
   - On-the-fly generation
   - Ship with or without payload
 
-## pygeometa overview
-
-- Original focus on static discovery metadata for ISO 19115
-- Increased focus on automated workflow and run-time pipelines
-- CLI or Python API
-- Support additional formats
-- Multilingual support
-- Support for ‘base’ MCF reuse (i.e. contacts)
-- Schema validation (new!)
-- Extensible
-- allows for additional properties
-- add your own Metadata Formats!!
-
-## Architecture
-
-::: {.r-stack}
-![How pygeometa works](./img/how-pygeometa-works.png){.fragment width="800"}
-:::
-- Land Soil Crop Hubs
-## The Metadata Control File (MCF)
-
-![pygeometa MCF](./img/pygeometa-mcf-file.png){.fragment width="100" .fig-align="left"}
-
-## The Metadata Control File (MCF)
-
-- Agnostic to any metadata format (abstract model)
-- Plain old YAML
-- migrated from `.ini` format in 0.2
-- Multilingual support for text-based properties
-
-## The Metadata Control File (MCF)
-
-- Benefits from YAML features (anchors, references)
-- Defined by a JSON schema
-  - model driven metadata workflow
-  - UIs
-  - in memory pipelines
-- Optimal for CI/CD and Git workflows (edit/publish)
-
-## Supported formats
-
-- Dataset metadata
-  - ISO 19115 / 19139 (rw)
-  - ISO 19115-2 (w)
-  - WMO Core Metadata Profile
-  - OGC API - Records (w)
-  - DCAT (w)
-- Granule metadata
-  - STAC (w)
-- Observing Station metadata
-  - WMO WIGOS Metadata Standard (w)
-
-## Formats and extensibility
-
-- Can be any format/representation
-- extending `pygeometa.schemas.base.BaseOutputSchema`
-- Generation is encapsulated
-  - XML: Jinja2
-  - JSON: Python `json`
-
 
 ## Metadata publication use cases
 
@@ -170,7 +151,7 @@ We present 2 use cases to demonstrate the value of this approach:
 
 - Earth Observation Exploitation Platform Common Architecture (EOEPCA)
 - WMO Information System (WIS2)
-- Land Soil Crop hubs (LSC) 
+- Land Soil Crop hubs (LSC)
 
 # EOEPCA
 
