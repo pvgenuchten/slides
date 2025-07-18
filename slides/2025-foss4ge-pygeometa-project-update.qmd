@@ -1,7 +1,6 @@
 ---
-title: A fun way to do spatial cataloguing 
-subtitle: Data discovery using pygeometa
-author: Paul van Genuchten, Tom Kralidis
+title: pygeometa project status
+author: Tom Kralidis, Paul van Genuchten
 date: 2025-07-17
 format:
   revealjs:
@@ -11,12 +10,26 @@ format:
     footer: "FOSS4G Europe 2025, Mostar, Bosnia Herzegovina"
 ---
 
-# About us
+## About us
 
 - [Paul van Genuchten](https://github.com/pvgenuchten), SDI specialist at `ISRIC - World Soil Information`, the Netherlands
 - [Tom Kralidis](https://github.com/tomkralidis), Senior Geospatial Architect, Meteorological Service of Canada, OSGeo Board of Directors
 
-# What if...
+## Intro to pygeometa I
+
+- [pygeometa](https://geopython.github.io/pygeometa) is a Python package to generate metadata for geospatial datasets 
+- [metadata control file (MCF)](https://geopython.github.io/pygeometa/reference/mcf) is a format endorsed by the geopython community, defined and maintained as part of the pygeometa library
+  - YAML encoded subset of ISO 19115
+  - Supports YAML features such as references and includes
+
+## Intro to pygeometa II
+
+- Created in 2009
+- Originally named “pygdm” as part of larger internal geospatial data management workflow at Environment Canada
+- Pulled out as a standalone project (pygeometa) in 2014
+- Published to GitHub in 2015
+
+## What if...
 
 ::: {.r-stack}
 ![](./img/fun-md/browse.png){.fragment width="800" }
@@ -26,51 +39,193 @@ format:
 ![](./img/fun-md/history.png){.fragment width="800" }
 :::
 
+## From MCF to catalogue
 
-# Intro to pygeometa
+- Data scientists maintain MCF as a sidecar to their data
+- Workflows ingest and convert using pygeometa 
+- Metadata is then loaded on a catalogue
+- For example [pycsw](https://pycsw.org), a standards based catalogue component
+- Git backed storage, enables direct feedback and improvement from catalogue
 
-- [pygeometa](https://geopython.github.io/pygeometa) is a Python package to generate metadata for geospatial datasets 
-- [metadata control file (MCF)](https://geopython.github.io/pygeometa/reference/mcf) is a format endorsed by the geopython community, defined and maintained as part of the pygeometa library
-  - YAML encoded subset of ISO 19115
-  - Supports YAML features such as references and includes
-
-
-# From MCF to catalogue
-
-- MCF is converted to ISO 19115 using pygeometa and then loaded on a catalogue
-- [pycsw](https://pycsw.org) a standards based catalogue component (PostgreSQL backend)
-- Supports [OGC API - Records](https://ogcapi.ogc.org/records), nuerous metadata models, faceted search  
-
-# Colleagues like MCF?
+## Colleagues like MCF?
 
 - Some expect shiny webforms, like LinkedIn/Facebook
-- Not used to YAML syntax and Git CI-CD workflows
+- Not used to YAML syntax 
 - Enter [mdme](https://github.com/osgeo/mdme), the Model Driven Metadata Editor / web application for geospatial metadata
 
-# Web editor for MCF
+## Web editor for MCF
 
 ![mdme](./img/fun-md/mdme.png){width="800" }
 
 [osgeo.github.io/mdme](https://osgeo.github.io/mdme)
 
-# Tech colleagues like MCF?
+## Tech colleagues like MCF?
 
 - YAML is an optimal format for Git version control 
 - Git offers a fully traceable catalogue
 - File based metadata is easy to update with "search and replace"  
 - YAML can be composed and published in memory for automated pipelines
 
-# Metadata publication use cases
+
+## Problem setting
+
+You will find many (geospatial) metadata standards out there
+
+- FGDC CSDGM
+- NASA DIF
+- ISO 19115 / 19139
+- WMO, HNAP, etc.
+- Dublin Core
+- DCAT
+- OGC CSW
+- OGC API - Records
+- STAC
+
+## Challenges
+
+- Granularity and organization
+- Datasets
+- EO domains
+- collections / sensors / acquisitions
+- stations, observations
+- Services
+- Processes
+- Anything!
+- Maintenance Frequency
+
+## Workflows
+
+- Data explosion = metadata explosion
+- Traditional workflow:
+  - static discovery metadata
+- Real-time workflow:
+  - Momentum data
+  - On-the-fly generation
+  - Ship with or without payload
+
+## pygeometa overview
+
+- Original focus on static discovery metadata for ISO 19115
+- Increased focus on automated workflow and run-time pipelines
+- CLI or Python API
+- Support additional formats
+- Multilingual support
+- Support for ‘base’ MCF reuse (i.e. contacts)
+- Schema validation (new!)
+- Extensible
+- allows for additional properties
+- add your own Metadata Formats!!
+
+## Architecture
+
+::: {.r-stack}
+![How pygeometa works](./img/how-pygeometa-works.png){.fragment width="800"}
+:::
+- Land Soil Crop Hubs
+## The Metadata Control File (MCF)
+
+![pygeometa MCF](./img/pygeometa-mcf-file.png){.fragment width="100" .fig-align="left"}
+
+## The Metadata Control File (MCF)
+
+- Agnostic to any metadata format (abstract model)
+- Plain old YAML
+- migrated from `.ini` format in 0.2
+- Multilingual support for text-based properties
+
+## The Metadata Control File (MCF)
+
+- Benefits from YAML features (anchors, references)
+- Defined by a JSON schema
+  - model driven metadata workflow
+  - UIs
+  - in memory pipelines
+- Optimal for CI/CD and Git workflows (edit/publish)
+
+## Supported formats
+
+- Dataset metadata
+  - ISO 19115 / 19139 (rw)
+  - ISO 19115-2 (w)
+  - WMO Core Metadata Profile
+  - OGC API - Records (w)
+  - DCAT (w)
+- Granule metadata
+  - STAC (w)
+- Observing Station metadata
+  - WMO WIGOS Metadata Standard (w)
+
+## Formats and extensibility
+
+- Can be any format/representation
+- extending `pygeometa.schemas.base.BaseOutputSchema`
+- Generation is encapsulated
+  - XML: Jinja2
+  - JSON: Python `json`
+
+
+## Metadata publication use cases
 
 We present 2 use cases to demonstrate the value of this approach:
 
-- Land Soil Crop Hubs
+- Earth Observation Exploitation Platform Common Architecture (EOEPCA)
 - WMO Information System (WIS2)
+- Land Soil Crop hubs (LSC) 
 
-# Land Soil Crop hubs
+# EOEPCA
+
+- Earth Observation Exploitation Platform Common Architecture (EOEPCA)
+- Resource Catalogue (publishing, discovery and search)
+- Metadata publishing pipeline
+  - Collection level metadata
+  - Product level metadata
+  - Process metadata
+- ISO 19115-2
+- Sentinel scene metadata + INSPIRE => 19115-2
+- CWL => 19115-2
+- Publishing into pycsw
+  - CSW
+  - OGC API - Records
+  - STAC
+
+# EOEPCA
+
+![EOEPCA metadata workflows](./img/eoepca.png){width="400"}
+
+## WMO Information System (WIS2)
+
+- [WMO WIS2](https://community.wmo.int/en/activity-areas/wis/wis2-implementation) is a next generation data exchange system for Earth system data (weather/climate/water)
+- Event driven (Pub/Sub, MQTT), driven by OGC API - Records metadata and publication
+- Set of tools adopted by regional weather offices to build up a global system
+
+## Workflow I
+
+"No code": Manage, verify and publish metadata using GitHub as a content management platform.
+
+- Metadata files are managed as pygeometa MCF records
+- GitHub Actions are used to verify, transform and publish notification messages to an MQTT broker
+- From here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by [pygeoapi](https://pygeoapi.io)) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client.
+
+## Workflow II
+
+::: {.r-stack}
+![](./img/wis2-metadata-github-pubsub-workflow.png){.fragment width="1000" }
+:::
+
+## Land Soil Crop hubs
 
 - Part of an EU funded research project, [DeSIRA](https://capacity4dev.europa.eu/projects/desira_en), to improve data sharing in the Land Soil Crop domain in East Africa
 - Improve data & resources discovery, which are relevant to improve agriculture in East Africa
+
+## Participatory metadata management
+
+::: {.r-stack}
+![](./img/fun-md/browse.png){.fragment width="800" }
+
+![](./img/fun-md/edit.png){.fragment width="800"}
+
+![](./img/fun-md/history.png){.fragment width="800" }
+:::
 
 ## pycsw
 
@@ -99,26 +254,6 @@ We present 2 use cases to demonstrate the value of this approach:
 ## TerriaJS
 
 [![TerriaJS](./img/fun-md/terria.png){width="800" }](https://rwanda.lsc-hubs.org/map/)
-
-# WMO Information System (WIS2)
-
-- [WMO WIS2](https://community.wmo.int/en/activity-areas/wis/wis2-implementation) is a next generation data exchange system for Earth system data (weather/climate/water)
-- Event driven (Pub/Sub, MQTT), driven by OGC API - Records metadata and publication
-- Set of tools adopted by regional weather offices to build up a global system
-
-## Workflow
-
-"No code": Manage, verify and publish metadata using GitHub as a content management platform.
-
-- Metadata files are managed as pygeometa MCF records
-- GitHub Actions are used to verify, transform and publish notification messages to an MQTT broker
-- From here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by [pygeoapi](https://pygeoapi.io)) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client.
-
-## Workflow
-
-::: {.r-stack}
-![](./img/wis2-metadata-github-pubsub-workflow.png){.fragment width="1000" }
-:::
 
 # Takeaways
 
