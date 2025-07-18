@@ -12,8 +12,9 @@ format:
 
 ## About us
 
-- [Paul van Genuchten](https://github.com/pvgenuchten), SDI specialist at `ISRIC - World Soil Information`, the Netherlands
 - [Tom Kralidis](https://github.com/tomkralidis), Senior Geospatial Architect, Meteorological Service of Canada, OSGeo Board of Directors
+- [Paul van Genuchten](https://github.com/pvgenuchten), SDI specialist at `ISRIC - World Soil Information`, the Netherlands
+
 
 ## Intro to pygeometa
 
@@ -147,11 +148,39 @@ You will find many (geospatial) metadata standards out there
 
 ## Metadata publication use cases
 
-We present 2 use cases to demonstrate the value of this approach:
+We present 3 use cases to demonstrate the value of this approach:
 
+- Land Soil Crop hubs (LSC)
 - Earth Observation Exploitation Platform Common Architecture (EOEPCA)
 - WMO Information System (WIS2)
-- Land Soil Crop hubs (LSC)
+
+
+## Land Soil Crop hubs
+
+- Part of an EU funded research project, [DeSIRA](https://capacity4dev.europa.eu/projects/desira_en), to improve data sharing in the Land Soil Crop domain in East Africa
+- Improve data & resources discovery, which are relevant to improve agriculture in East Africa
+
+## Participatory metadata management
+
+::: {.r-stack}
+![](./img/fun-md/browse.png){.fragment width="800" }
+
+![](./img/fun-md/edit.png){.fragment width="800"}
+
+![](./img/fun-md/history.png){.fragment width="800" }
+:::
+
+## pycsw
+
+[![Rwanda LSC Catalogue](./img/fun-md/pycsw.png){width="800"}](https://rwanda.lsc-hubs.org/cat/collections/metadata:main/items?q=wms)
+
+## Participatory metadata management
+
+- Users initially provided metadata as lists in Microsoft Excel
+- Excel rows converted to MCF and loaded to pycsw
+- MCF Metadata is hosted in GitHub
+- Users contribute content (or register issues about content)
+
 
 # EOEPCA
 
@@ -193,50 +222,8 @@ We present 2 use cases to demonstrate the value of this approach:
 ![](./img/wis2-metadata-github-pubsub-workflow.png){.fragment width="1000" }
 :::
 
-## Land Soil Crop hubs
 
-- Part of an EU funded research project, [DeSIRA](https://capacity4dev.europa.eu/projects/desira_en), to improve data sharing in the Land Soil Crop domain in East Africa
-- Improve data & resources discovery, which are relevant to improve agriculture in East Africa
-
-## Participatory metadata management
-
-::: {.r-stack}
-![](./img/fun-md/browse.png){.fragment width="800" }
-
-![](./img/fun-md/edit.png){.fragment width="800"}
-
-![](./img/fun-md/history.png){.fragment width="800" }
-:::
-
-## pycsw
-
-[![Rwanda LSC Catalogue](./img/fun-md/pycsw.png){width="800"}](https://rwanda.lsc-hubs.org/cat/collections/metadata:main/items?q=wms)
-
-## Participatory metadata management
-
-- Users initially provided metadata as lists in Microsoft Excel
-- Excel rows converted to MCF and loaded to pycsw
-- MCF Metadata is hosted in GitHub
-- Users contribute content (or register issues about content)
-
-## MapServer 
-
-- Mapserver is used to let users interact with data through WMS/WFS
-- Metadata generates [MapServer](https://mapserver.org) configuration 
-- Map service endpoint is added to metadata
-- MapServer is fully aligned with the catalogue
-
-## TerriaJS, a web-based GIS
-
-- The project uses [TerriaJS](https://terria.io) as a data viewer
-- TerriaJS includes a CSW Catalogue search and links back to the catalogue via WMS capabilities
-- Extra integration via 'Add data to viewer' from catalogue page
-
-## TerriaJS
-
-[![TerriaJS](./img/fun-md/terria.png){width="800" }](https://rwanda.lsc-hubs.org/map/)
-
-# Takeaways
+## Takeaways
 
 - MCF is an interesting and useful metadata format for embedded metadata in local file repositories
 - Git storage and CI-CD workflows are a traceable, reproducible and participatory approach for metadata management
