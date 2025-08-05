@@ -1008,6 +1008,13 @@
     "text": "Check result\n\nnavigate to https://{username}.github.io/{reponame} (it may take a while)\n\nIf failed, check the logs (probably you have to give write privileges to the ci-cd at user and project level)"
   },
   {
+    "objectID": "slides/lschub-github-page.html#add-some-interesting-content",
+    "href": "slides/lschub-github-page.html#add-some-interesting-content",
+    "title": "A website on Github.io",
+    "section": "Add some interesting content",
+    "text": "Add some interesting content\n\nadd extra pages\nlink between pages using [ title ] ( target.md )\nadd an image using ![ title ] ( image.png )"
+  },
+  {
     "objectID": "slides/pygeometa-foss4g-2024.html#participatory-metadata-management",
     "href": "slides/pygeometa-foss4g-2024.html#participatory-metadata-management",
     "title": "pygeometa project status",
