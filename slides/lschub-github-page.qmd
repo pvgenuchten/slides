@@ -1,0 +1,42 @@
+---
+title: "A website on Github.io"
+author: van Genuchten, P; van der Woude, T;
+date: 2025-08-05
+format:
+  revealjs:
+    incremental: true
+    theme: default
+    logo: https://lsc-hubs.org/images/logo-lsc-hubs.svg
+    footer: LSC-hubs project; DeSiRa
+---
+
+# Introduction
+
+- a website using Github Actions
+- using [quarto.org](https://quarto.org)
+- content is maintained in markdown 
+- markdown is converted to html at every commit
+
+## Fork repository
+
+- Create a github username or login
+- fork repository https://github.com/lsc-hubs/quarto-template (set sensible name)
+- create branch 'gh-pages' (from `branches`)
+- enable actions (from `actions`)
+
+## Trigger an action
+
+- make a change on and md file and commit/push
+
+## Check result
+
+- navigate to https://{username}.github.io/{reponame} (it may take a while)
+
+If failed, check the logs (probably you have to give write privileges to the ci-cd at user and project level)
+
+## Add some interesting content
+
+- add extra pages 
+- link between pages using [ title ] ( target.md )
+- add an image using ![ title ] ( image.png ) 
+
