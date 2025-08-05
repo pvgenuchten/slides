@@ -1,0 +1,66 @@
+---
+title: "LSC-Hub development overview"
+author: van Genuchten, P; van der Woude, T;
+date: 2025-08-05
+format:
+  revealjs:
+    incremental: true
+    theme: default
+    logo: https://lsc-hubs.org/images/logo-lsc-hubs.svg
+    footer: LSC-hubs project; DeSiRa
+---
+
+# Introduction
+
+- Finalisation of project is approaching
+- Prepare final product
+- Understand if parts of the initiative can be adopted in regular work
+- Good moment to look back at the path we walked together 
+
+## Overview
+
+- 2022-2023 WP2 user needs assessment
+- 2022 Initial (meta)data collection
+- 2023 First prototype
+- 2023 First training in Nairobi
+- 2024 Second prototype
+- 2024 Stakeholder workshops
+- 2025 Process of localised deployments
+
+##  WP2 user needs assessment
+
+- Workshops with stakeholders
+- Interviews with key stakeholders
+- Report with user needs
+
+##  Initial (meta)data collection
+
+- Listing in Excel of relevant datasets and documents
+
+##  First prototype
+
+- Identified the 4 main components, cms, catalogue, community engagement and mapserver
+- Identified the need for a flexible, complmentary system
+
+##  First training in Nairobi
+
+- Introduction to docker, github, FAIR principles
+- The workshop did not quite fit the audience
+
+##  Second prototype
+
+- A full redesign of the system
+- More focus on the interactive map viewer
+
+##  Stakeholder workshops
+
+- Interaction with WP4 and WP5 around use cases
+- Valuable input from stakeholders was collected
+- A need for a more regional identity
+- A need for decission support 
+
+##  Process of localised deployments
+
+- In Kenya; the LSC components have been adopted, but using a tailored Docker Compose setup 
+- In Rwanda; a system is being setup based on their ArcGIS server environment
+- In Ethiopia; a system has been build including GeoNode

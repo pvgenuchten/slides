@@ -1,0 +1,54 @@
+---
+title: "LSC-Hub components overview"
+author: van Genuchten, P; van der Woude, T;
+date: 2025-08-05
+format:
+  revealjs:
+    incremental: true
+    theme: default
+    logo: https://lsc-hubs.org/images/logo-lsc-hubs.svg
+    footer: LSC-hubs project; DeSiRa
+---
+
+# Introduction
+
+- An overview of the various hub components
+
+## Overview
+
+- Platform for interaction with stakeholders
+- A hub facilitator, guided by a maintenance board
+- A website 
+- A catalogue
+- Data visualisation
+
+## Platform for interaction with stakeholders
+
+- mailinglist
+- forum
+- issue tracker
+- whatsapp group
+
+## A hub facilitator, guided by a maintenance board
+
+- creates/assesses quality reports
+- maintain the hub software, define roadmap
+
+## A website 
+
+- Introduces stakeholders and funders to the initiative
+- Provides guidance on how to use the system
+- Describe use cases
+
+## A catalogue
+
+- Provides access to relevant resources
+
+## Data access layer
+
+- Enables API access to datasets, for data which is too big or complex to process
+
+## Data visualisation
+
+- Enables the visualisation of data
+
