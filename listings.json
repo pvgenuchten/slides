@@ -1,29 +1,8 @@
 [
   {
-    "listing": "/slides/index.html",
-    "items": [
-      "/slides/abandoned-web.html",
-      "/slides/pitch-battle.html",
-      "/slides/egu-fair-25.html",
-      "/slides/FAIRintro4SoilMapping.html",
-      "/slides/lschub-components.html",
-      "/slides/lschub-historic.html",
-      "/slides/lschub-programme.html",
-      "/slides/intro-crawler-mcf-pycsw.html",
-      "/slides/20250703-foss4gnl-opensource-at-isric.html",
-      "/slides/iuss100metadata.html",
-      "/slides/tartu-devops-sdi.html",
-      "/slides/soilwise-fruifull-may25.html",
-      "/slides/soilwise-metadata.html",
-      "/slides/alliander-2023.html",
-      "/slides/2025-foss4ge-pygeometa-project-update.html",
-      "/slides/pygeometa-foss4g-2024.html",
-      "/slides/fun-way-of-spatial-cataloguing.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
+      "/slides/lschub-github-page.html",
       "/slides/abandoned-web.html",
       "/slides/pitch-battle.html",
       "/slides/egu-fair-25.html",
@@ -42,6 +21,29 @@
       "/slides/pygeometa-foss4g-2024.html",
       "/slides/fun-way-of-spatial-cataloguing.html",
       "/slides/index.html"
+    ]
+  },
+  {
+    "listing": "/slides/index.html",
+    "items": [
+      "/slides/lschub-github-page.html",
+      "/slides/abandoned-web.html",
+      "/slides/pitch-battle.html",
+      "/slides/egu-fair-25.html",
+      "/slides/FAIRintro4SoilMapping.html",
+      "/slides/lschub-components.html",
+      "/slides/lschub-historic.html",
+      "/slides/lschub-programme.html",
+      "/slides/intro-crawler-mcf-pycsw.html",
+      "/slides/20250703-foss4gnl-opensource-at-isric.html",
+      "/slides/iuss100metadata.html",
+      "/slides/tartu-devops-sdi.html",
+      "/slides/soilwise-fruifull-may25.html",
+      "/slides/soilwise-metadata.html",
+      "/slides/alliander-2023.html",
+      "/slides/2025-foss4ge-pygeometa-project-update.html",
+      "/slides/pygeometa-foss4g-2024.html",
+      "/slides/fun-way-of-spatial-cataloguing.html"
     ]
   }
 ]
