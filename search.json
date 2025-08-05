@@ -98,6 +98,55 @@
     "text": "pygeometa, geodatacrawler & pycsw\n\npygeometa’s MCF is a minimal subset of ISO19115, encoded in yaml\ngeodatacrawler extends pygeometa to:\n\nextract metadata from data formats\ninherit metadata from parent folders\nimport metadata from csv and remote sources\ncreate data api’s based on metadata\n\n is a pythonic catalogue web app. Wide standards support enables findability in multiple communities."
   },
   {
+    "objectID": "slides/lschub-components.html#overview",
+    "href": "slides/lschub-components.html#overview",
+    "title": "LSC-Hub components overview",
+    "section": "Overview",
+    "text": "Overview\n\nPlatform for interaction with stakeholders\nA hub facilitator, guided by a maintenance board\nA website\nA catalogue\nData visualisation"
+  },
+  {
+    "objectID": "slides/lschub-components.html#platform-for-interaction-with-stakeholders",
+    "href": "slides/lschub-components.html#platform-for-interaction-with-stakeholders",
+    "title": "LSC-Hub components overview",
+    "section": "Platform for interaction with stakeholders",
+    "text": "Platform for interaction with stakeholders\n\nmailinglist\nforum\nissue tracker\nwhatsapp group"
+  },
+  {
+    "objectID": "slides/lschub-components.html#a-hub-facilitator-guided-by-a-maintenance-board",
+    "href": "slides/lschub-components.html#a-hub-facilitator-guided-by-a-maintenance-board",
+    "title": "LSC-Hub components overview",
+    "section": "A hub facilitator, guided by a maintenance board",
+    "text": "A hub facilitator, guided by a maintenance board\n\ncreates/assesses quality reports\nmaintain the hub software, define roadmap"
+  },
+  {
+    "objectID": "slides/lschub-components.html#a-website",
+    "href": "slides/lschub-components.html#a-website",
+    "title": "LSC-Hub components overview",
+    "section": "A website",
+    "text": "A website\n\nIntroduces stakeholders and funders to the initiative\nProvides guidance on how to use the system\nDescribe use cases"
+  },
+  {
+    "objectID": "slides/lschub-components.html#a-catalogue",
+    "href": "slides/lschub-components.html#a-catalogue",
+    "title": "LSC-Hub components overview",
+    "section": "A catalogue",
+    "text": "A catalogue\n\nProvides access to relevant resources"
+  },
+  {
+    "objectID": "slides/lschub-components.html#data-access-layer",
+    "href": "slides/lschub-components.html#data-access-layer",
+    "title": "LSC-Hub components overview",
+    "section": "Data access layer",
+    "text": "Data access layer\n\nEnables API access to datasets, for data which is too big or complex to process"
+  },
+  {
+    "objectID": "slides/lschub-components.html#data-visualisation",
+    "href": "slides/lschub-components.html#data-visualisation",
+    "title": "LSC-Hub components overview",
+    "section": "Data visualisation",
+    "text": "Data visualisation\n\nEnables the visualisation of data"
+  },
+  {
     "objectID": "slides/intro-crawler-mcf-pycsw.html#what",
     "href": "slides/intro-crawler-mcf-pycsw.html#what",
     "title": "Metadata for the rest of us",
@@ -690,7 +739,7 @@
     "href": "index.html",
     "title": "Select your deck:",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nAbandonded Project Websites -&gt; no\n\n\nPaul van Genuchten\n\n\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\nApr 30, 2025\n\n\nFAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects\n\n\nMickael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten\n\n\n\n\n\n\nMar 19, 2025\n\n\nFAIR intro for Digital Soil Mapping\n\n\nPaul van Genuchten\n\n\n\n\n\n\nFeb 29, 2024\n\n\nMetadata for the rest of us\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\nJul 3, 2025\n\n\nOpen Source at ISRIC - World Soil Information\n\n\nPaul van Genuchten\n\n\n\n\n\n\nMay 20, 2024\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\nJul 3, 2024\n\n\nSDI maintenance DevOps style\n\n\nPaul van Genuchten\n\n\n\n\n\n\nMay 6, 2025\n\n\nSoilWise HE progress report\n\n\nFenny van Egmond, Thaisa van der Woude, Paul van Genuchten, Jiarong Li\n\n\n\n\n\n\nJun 3, 2024\n\n\nSoilwise & Metadata\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNov 13, 2023\n\n\nWorkshop pygeoapi\n\n\nPaul van Genuchten\n\n\n\n\n\n\nJul 18, 2025\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nDec 6, 2024\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nJul 18, 2025\n\n\npygeometa project status 2025\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\n\n\n \n\n\ntype: default\n\n\n \n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nAbandonded Project Websites -&gt; no\n\n\nPaul van Genuchten\n\n\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\nApr 30, 2025\n\n\nFAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects\n\n\nMickael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten\n\n\n\n\n\n\nMar 19, 2025\n\n\nFAIR intro for Digital Soil Mapping\n\n\nPaul van Genuchten\n\n\n\n\n\n\nAug 5, 2025\n\n\nLSC-Hub components overview\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\nAug 5, 2025\n\n\nLSC-Hub development overview\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\nFeb 29, 2024\n\n\nMetadata for the rest of us\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\nJul 3, 2025\n\n\nOpen Source at ISRIC - World Soil Information\n\n\nPaul van Genuchten\n\n\n\n\n\n\nMay 20, 2024\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\nJul 3, 2024\n\n\nSDI maintenance DevOps style\n\n\nPaul van Genuchten\n\n\n\n\n\n\nMay 6, 2025\n\n\nSoilWise HE progress report\n\n\nFenny van Egmond, Thaisa van der Woude, Paul van Genuchten, Jiarong Li\n\n\n\n\n\n\nJun 3, 2024\n\n\nSoilwise & Metadata\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNov 13, 2023\n\n\nWorkshop pygeoapi\n\n\nPaul van Genuchten\n\n\n\n\n\n\nJul 18, 2025\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nDec 6, 2024\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nJul 18, 2025\n\n\npygeometa project status 2025\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\n\n\n \n\n\ntype: default\n\n\n \n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#isric---world-soil-information",
@@ -879,7 +928,63 @@
     "href": "slides/index.html",
     "title": "some slide decks",
     "section": "",
-    "text": "Abandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects\n\n\nEGU25 ESSI3.2: One decade of FAIR Principles: Data Reusability and Impact in Earth System Sciences\n\n\n\n\n\n\n\n\nApr 30, 2025\n\n\nMickael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR intro for Digital Soil Mapping\n\n\ngo-fair.org, a practical exercise\n\n\n\n\n\n\n\n\nMar 19, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata for the rest of us\n\n\nFOSS4G Europe Conference, Tartu, Estonia\n\n\n\n\n\n\n\n\nFeb 29, 2024\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Source at ISRIC - World Soil Information\n\n\nFOSS4G NL, Wageningen\n\n\n\n\n\n\n\n\nJul 3, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\n\n\n\n\n\n\n\n\n\nMay 20, 2024\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\n\n\n\n\n\n\nSDI maintenance DevOps style\n\n\nInspired and facilitated by Open Source\n\n\nAt ISRIC - World Soil Information we increasingly maintain our data services through CI-CD pipelines configured via GIT. Both from the service as well as content perspective. The starting point are metadata records of our datasets being stored on GIT. With every change of a record, the relevant catalogues (pycsw) get updated and any relevant web services (mapserver) are updated. These pipelines are reproducable and there are never inconsistencies between catalogue content and the services. On top of that our users can directly report issues (or even improvement suggestions) through git. The stack is build on proven OSGeo components. A tool pyGeoDataCrawler brings the power of GDAL and pygeometa to CI-CD scripting. It crawls files on a folder and extracts relevant metadata, then prepares a mapserver configuration for that folder, while updating the metadata with the relevant service url’s. Typical use cases for this stack are; a search interface to any file based data repository or a participatory data catalogue for a project. At the conference we hope to hear from you if any of these components could be relevant to your cases or if there are similar initiatives we can contribute to or benefit from. What’s next? At ISRIC we receive and ingest a lot of soil data from partners. To harmonize this data is a huge effort. Via automated pipelines and interaction with the submitters via git comments, we hope to improve also this aspect of the data management cycle.\n\n\n\n\n\nJul 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nSoilWise HE progress report\n\n\nISRIC Fruitfull may 6th 2025\n\n\n\n\n\n\n\n\nMay 6, 2025\n\n\nFenny van Egmond, Thaisa van der Woude, Paul van Genuchten, Jiarong Li\n\n\n\n\n\n\n\n\n\n\n\n\nSoilwise & Metadata\n\n\nMetadata in Horizon Europe projects (Soil Mission)\n\n\n\n\n\n\n\n\nJun 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nJul 18, 2025\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nDec 6, 2024\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status 2025\n\n\nA fun way to do spatial cataloguing\n\n\n\n\n\n\n\n\nJul 18, 2025\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\n\nNo matching items"
+    "text": "Abandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects\n\n\nEGU25 ESSI3.2: One decade of FAIR Principles: Data Reusability and Impact in Earth System Sciences\n\n\n\n\n\n\n\n\nApr 30, 2025\n\n\nMickael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR intro for Digital Soil Mapping\n\n\ngo-fair.org, a practical exercise\n\n\n\n\n\n\n\n\nMar 19, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nLSC-Hub components overview\n\n\n\n\n\n\n\n\n\n\n\nAug 5, 2025\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\n\n\n\n\n\n\nLSC-Hub development overview\n\n\n\n\n\n\n\n\n\n\n\nAug 5, 2025\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata for the rest of us\n\n\nFOSS4G Europe Conference, Tartu, Estonia\n\n\n\n\n\n\n\n\nFeb 29, 2024\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Source at ISRIC - World Soil Information\n\n\nFOSS4G NL, Wageningen\n\n\n\n\n\n\n\n\nJul 3, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\n\n\n\n\n\n\n\n\n\nMay 20, 2024\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\n\n\n\n\n\n\nSDI maintenance DevOps style\n\n\nInspired and facilitated by Open Source\n\n\nAt ISRIC - World Soil Information we increasingly maintain our data services through CI-CD pipelines configured via GIT. Both from the service as well as content perspective. The starting point are metadata records of our datasets being stored on GIT. With every change of a record, the relevant catalogues (pycsw) get updated and any relevant web services (mapserver) are updated. These pipelines are reproducable and there are never inconsistencies between catalogue content and the services. On top of that our users can directly report issues (or even improvement suggestions) through git. The stack is build on proven OSGeo components. A tool pyGeoDataCrawler brings the power of GDAL and pygeometa to CI-CD scripting. It crawls files on a folder and extracts relevant metadata, then prepares a mapserver configuration for that folder, while updating the metadata with the relevant service url’s. Typical use cases for this stack are; a search interface to any file based data repository or a participatory data catalogue for a project. At the conference we hope to hear from you if any of these components could be relevant to your cases or if there are similar initiatives we can contribute to or benefit from. What’s next? At ISRIC we receive and ingest a lot of soil data from partners. To harmonize this data is a huge effort. Via automated pipelines and interaction with the submitters via git comments, we hope to improve also this aspect of the data management cycle.\n\n\n\n\n\nJul 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nSoilWise HE progress report\n\n\nISRIC Fruitfull may 6th 2025\n\n\n\n\n\n\n\n\nMay 6, 2025\n\n\nFenny van Egmond, Thaisa van der Woude, Paul van Genuchten, Jiarong Li\n\n\n\n\n\n\n\n\n\n\n\n\nSoilwise & Metadata\n\n\nMetadata in Horizon Europe projects (Soil Mission)\n\n\n\n\n\n\n\n\nJun 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nJul 18, 2025\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nDec 6, 2024\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status 2025\n\n\nA fun way to do spatial cataloguing\n\n\n\n\n\n\n\n\nJul 18, 2025\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/lschub-historic.html#overview",
+    "href": "slides/lschub-historic.html#overview",
+    "title": "LSC-Hub development overview",
+    "section": "Overview",
+    "text": "Overview\n\n2022-2023 WP2 user needs assessment\n2022 Initial (meta)data collection\n2023 First prototype\n2023 First training in Nairobi\n2024 Second prototype\n2024 Stakeholder workshops\n2025 Process of localised deployments"
+  },
+  {
+    "objectID": "slides/lschub-historic.html#wp2-user-needs-assessment",
+    "href": "slides/lschub-historic.html#wp2-user-needs-assessment",
+    "title": "LSC-Hub development overview",
+    "section": "WP2 user needs assessment",
+    "text": "WP2 user needs assessment\n\nWorkshops with stakeholders\nInterviews with key stakeholders\nReport with user needs"
+  },
+  {
+    "objectID": "slides/lschub-historic.html#initial-metadata-collection",
+    "href": "slides/lschub-historic.html#initial-metadata-collection",
+    "title": "LSC-Hub development overview",
+    "section": "Initial (meta)data collection",
+    "text": "Initial (meta)data collection\n\nListing in Excel of relevant datasets and documents"
+  },
+  {
+    "objectID": "slides/lschub-historic.html#first-prototype",
+    "href": "slides/lschub-historic.html#first-prototype",
+    "title": "LSC-Hub development overview",
+    "section": "First prototype",
+    "text": "First prototype\n\nIdentified the 4 main components, cms, catalogue, community engagement and mapserver\nIdentified the need for a flexible, complmentary system"
+  },
+  {
+    "objectID": "slides/lschub-historic.html#first-training-in-nairobi",
+    "href": "slides/lschub-historic.html#first-training-in-nairobi",
+    "title": "LSC-Hub development overview",
+    "section": "First training in Nairobi",
+    "text": "First training in Nairobi\n\nIntroduction to docker, github, FAIR principles\nThe workshop did not quite fit the audience"
+  },
+  {
+    "objectID": "slides/lschub-historic.html#second-prototype",
+    "href": "slides/lschub-historic.html#second-prototype",
+    "title": "LSC-Hub development overview",
+    "section": "Second prototype",
+    "text": "Second prototype\n\nA full redesign of the system\nMore focus on the interactive map viewer"
+  },
+  {
+    "objectID": "slides/lschub-historic.html#stakeholder-workshops",
+    "href": "slides/lschub-historic.html#stakeholder-workshops",
+    "title": "LSC-Hub development overview",
+    "section": "Stakeholder workshops",
+    "text": "Stakeholder workshops\n\nInteraction with WP4 and WP5 around use cases\nValuable input from stakeholders was collected\nA need for a more regional identity\nA need for decission support"
+  },
+  {
+    "objectID": "slides/lschub-historic.html#process-of-localised-deployments",
+    "href": "slides/lschub-historic.html#process-of-localised-deployments",
+    "title": "LSC-Hub development overview",
+    "section": "Process of localised deployments",
+    "text": "Process of localised deployments\n\nIn Kenya; the LSC components have been adopted, but using a tailored Docker Compose setup\nIn Rwanda; a system is being setup based on their ArcGIS server environment\nIn Ethiopia; a system has been build including GeoNode"
   },
   {
     "objectID": "slides/pygeometa-foss4g-2024.html#participatory-metadata-management",
