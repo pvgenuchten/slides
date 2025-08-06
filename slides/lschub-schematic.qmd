@@ -1,0 +1,149 @@
+
+
+---
+title: "LSC-Hub schematic"
+author: van Genuchten, P; van der Woude, T;
+date: 2025-08-06
+format:
+  revealjs:
+    incremental: true
+    theme: default
+    logo: https://lsc-hubs.org/images/logo-lsc-hubs.svg
+    footer: LSC-hubs project; DeSiRa
+---
+
+# Introduction
+
+Some slides with: 
+
+- advanced topics
+- schematic overviews
+- pending questions
+
+# Advanced topics
+
+## Mapserver
+
+- a spatial data server
+- configured using [map-files](https://mapserver.org/mapfile/)
+- crawler creates map-files from yml metadata
+- crawler places a link to the prepared map service in the yml metadata
+
+## [TerriaJS](https://terria.io)
+
+- a spatial data viewer
+- configured using [context-documents](https://docs.terria.io/guide/connecting-to-data/)
+- facilitates catalogue searches, with option to add search result to map
+
+## [Traefik](https://traefik.io/traefik)
+
+- Traefik is a reverse proxy and ingress controller that makes deploying services and APIs easy
+- Specifically used for:
+    - Manage the Letsencrypt certificate
+    - Route the traffic from folders to containers
+- Also provides a nice User Interface to inspect the orchestration
+
+# Schematic overviews
+
+## CMS flow
+
+```{mermaid}
+flowchart TD
+
+md-->|quarto| gitp[(git cms@pages)]
+gitp -->|git pull| dtm[html repository]
+dtm -->|nginx| website
+```
+
+## Repository flow
+
+```{mermaid}
+flowchart TD
+
+df[data files] -->|webdav| dtd
+dtd[data repository]-->|crawler| dtm[metadata repository]
+dtm -->|pycsw-admin| dbrecords[(database)]
+dbrecords -->|sql| pycsw[pycsw]
+dtd-->|crawler| mapserver
+dtm-->|crawler| mapserver
+mapserver-->|wms| terriajs
+pycsw-->|csw| terriajs
+```
+
+
+## Metadata import/authoring flow
+
+```{mermaid}
+flowchart TD
+
+gf[Google form] -->|download| csv
+csv-->|import-csv| git[(git cat)]
+ext[external source] -->|harvest| git
+man[manual edits] --> git
+git -->|export| gitp[(git cat@pages)]
+gitp -->|git pull| dtm[metadata repository]
+dtm -->|pycsw-admin| dbrecords[(database)]
+dbrecords -->|sql| pycsw[pycsw]
+```
+
+## Introducing Git Submodules
+
+- The rendered CMS and metadata content as iso19139 are placed in the gh-pages branch
+- lschub-docker includes branches as git submodules
+
+```{mermaid}
+flowchart LR
+
+ld[lschub-docker]--> gitp[(git cms@pages)]
+ld--> gitm[(git cat@pages)]
+```
+
+## Github Actions
+
+- trigger at intervals or at events (push)
+- run in a container, either
+    - start a container within that container, or
+    - trigger a github action, such as [crawler](https://github.com/pvgenuchten/crawler-action)
+
+# Pending questions
+
+## How to update VM with GIT changes
+
+- Run script at intervals
+- Let GIT pipeline trigger update
+    - upload via webdav
+    - provide api
+    - using SSH (ansible)
+
+Similar question for uploads via Webdav
+
+## Which certificate to use for test environment
+
+- Introduce the test environment
+- Test is not available from web, which is a requirement for letsencrypt
+- the kalro certificate is available, how to configure it on traefik
+
+## Quality monitoring
+
+- Availability (uptimerobot)
+- Usage
+- Broken links
+
+## Backups
+
+- Postgres does not need to be backed up, because source is in Git
+- Files uploaded through webdav should be backed up
+- Access/Error logs could be backed up
+
+## Supporting services
+
+- OSM/Image backdrop (maptiler, bing maps, ...)
+- 3D canvas (cesium)
+- location search (nominatim?)
+
+## Will the kalro repositories be private?
+
+- the repositories should **not** contain sensitive information
+- open repositories enable users to flag issues
+- especcially the lschub-catalogue would benefit from remote contribution
+- now we use github.com/lsc-hubs/kenya-hub for issues
