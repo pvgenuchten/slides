@@ -10,8 +10,8 @@
   <meta name="generator" content="quarto-1.7.33">
 
   <meta name="author" content="van Genuchten, P; van der Woude, T;">
-  <meta name="dcterms.date" content="2025-08-05">
-  <title>some slide decks – LSC-Hub programme</title>
+  <meta name="dcterms.date" content="2025-08-06">
+  <title>some slide decks – LSC-Hub schematic</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -122,13 +122,16 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">LSC-Hub programme</h1>
+  <h1 class="title">LSC-Hub schematic</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -138,63 +141,218 @@ van Genuchten, P; van der Woude, T;
 </div>
 </div>
 
-  <p class="date">2025-08-05</p>
+  <p class="date">2025-08-06</p>
 </section>
-<section id="tuesday" class="title-slide slide level1 center">
-<h1>Tuesday</h1>
+<section id="introduction" class="title-slide slide level1 center">
+<h1>Introduction</h1>
+<p>Some slides with:</p>
 <ul>
-<li class="fragment">09:00 Opening Remarks Kennedy Were</li>
-<li class="fragment">09:30 Introduction to the LSC Hub Project Kennedy Were</li>
-<li class="fragment">10:00 Goals of the Training &amp; Topic Overview Paul Interactive via menti.com</li>
-<li class="fragment">11:00 Coffee Break</li>
-<li class="fragment">11:15 Components of an LSC Hub</li>
-<li class="fragment">12:30 Lunch</li>
-<li class="fragment">14:00 Intro to GitHub and Docker</li>
-<li class="fragment">16:00 Wrap-up &amp; Q&amp;A All</li>
-<li class="fragment">18:00 Close</li>
+<li class="fragment">advanced topics</li>
+<li class="fragment">schematic overviews</li>
+<li class="fragment">pending questions</li>
 </ul>
 </section>
 
-<section id="wednesday" class="title-slide slide level1 center">
-<h1>Wednesday</h1>
-<ul>
-<li class="fragment">9:00 Metadata Management: Ingest, Harmonize &amp; Search</li>
-<li class="fragment">12:30 Lunch</li>
-<li class="fragment">14:00 The knowledge management team</li>
-<li class="fragment">15:00 Data Publication: FAIR Principles &amp; LSC Standards</li>
-<li class="fragment">16:00 Building the LSC Hub Community: Feedback, Registration &amp; Roadmap</li>
-<li class="fragment">17:30 Close</li>
-</ul>
-</section>
-
-<section id="thursday" class="title-slide slide level1 center">
-<h1>Thursday</h1>
-<ul>
-<li class="fragment">09:00 pycsw via docker compose</li>
-<li class="fragment">10:00 MapServer OGC Services: What, Why &amp; How</li>
-<li class="fragment">11:00 Introduction to TerriaJS</li>
-<li class="fragment">12:30 Lunch</li>
-<li class="fragment">14:00 Automating Maintenance with GitHub Actions &amp; Docker Compose</li>
-<li class="fragment">15:00 QoS Monitoring &amp; Reporting: Uptime, Security, Performance &amp; Usage</li>
-<li class="fragment">16:00 Backup, Restore &amp; Security: SSL, Domains &amp; Email Configuration</li>
-<li class="fragment">17:30 Close</li>
-</ul>
-</section>
-
-<section id="friday" class="title-slide slide level1 center">
-<h1>Friday</h1>
-<ul>
-<li class="fragment">09:00 Managing Releases: Test → Staging → Production</li>
-<li class="fragment">11:00 Use-Case Development &amp; Implementation</li>
-<li class="fragment">12:30 Lunch</li>
-<li class="fragment">14:00 Wrap up &amp; ceremony</li>
-<li class="fragment">16:00 Close</li>
-<li class="fragment">16:00 Workshop Evaluation &amp; Next Steps All Feedback survey &amp; action planning</li>
-<li class="fragment">17:00 Close</li>
-</ul>
-
+<section>
+<section id="advanced-topics" class="title-slide slide level1 center">
+<h1>Advanced topics</h1>
 
 </section>
+<section id="mapserver" class="slide level2">
+<h2>Mapserver</h2>
+<ul>
+<li class="fragment">a spatial data server</li>
+<li class="fragment">configured using <a href="https://mapserver.org/mapfile/">map-files</a></li>
+<li class="fragment">crawler creates map-files from yml metadata</li>
+<li class="fragment">crawler places a link to the prepared map service in the yml metadata</li>
+</ul>
+</section>
+<section id="terriajs" class="slide level2">
+<h2><a href="https://terria.io">TerriaJS</a></h2>
+<ul>
+<li class="fragment">a spatial data viewer</li>
+<li class="fragment">configured using <a href="https://docs.terria.io/guide/connecting-to-data/">context-documents</a></li>
+<li class="fragment">facilitates catalogue searches, with option to add search result to map</li>
+</ul>
+</section>
+<section id="traefik" class="slide level2">
+<h2><a href="https://traefik.io/traefik">Traefik</a></h2>
+<ul>
+<li class="fragment">Traefik is a reverse proxy and ingress controller that makes deploying services and APIs easy</li>
+<li class="fragment">Specifically used for:
+<ul>
+<li class="fragment">Manage the Letsencrypt certificate</li>
+<li class="fragment">Route the traffic from folders to containers</li>
+</ul></li>
+<li class="fragment">Also provides a nice User Interface to inspect the orchestration</li>
+</ul>
+</section></section>
+<section>
+<section id="schematic-overviews" class="title-slide slide level1 center">
+<h1>Schematic overviews</h1>
+
+</section>
+<section id="cms-flow" class="slide level2">
+<h2>CMS flow</h2>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+
+md--&gt;|quarto| gitp[(git cms@pages)]
+gitp --&gt;|git pull| dtm[html repository]
+dtm --&gt;|nginx| website
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="repository-flow" class="slide level2">
+<h2>Repository flow</h2>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+
+df[data files] --&gt;|webdav| dtd
+dtd[data repository]--&gt;|crawler| dtm[metadata repository]
+dtm --&gt;|pycsw-admin| dbrecords[(database)]
+dbrecords --&gt;|sql| pycsw[pycsw]
+dtd--&gt;|crawler| mapserver
+dtm--&gt;|crawler| mapserver
+mapserver--&gt;|wms| terriajs
+pycsw--&gt;|csw| terriajs
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="metadata-importauthoring-flow" class="slide level2">
+<h2>Metadata import/authoring flow</h2>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+
+gf[Google form] --&gt;|download| csv
+csv--&gt;|import-csv| git[(git cat)]
+ext[external source] --&gt;|harvest| git
+man[manual edits] --&gt; git
+git --&gt;|export| gitp[(git cat@pages)]
+gitp --&gt;|git pull| dtm[metadata repository]
+dtm --&gt;|pycsw-admin| dbrecords[(database)]
+dbrecords --&gt;|sql| pycsw[pycsw]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="introducing-git-submodules" class="slide level2">
+<h2>Introducing Git Submodules</h2>
+<ul>
+<li class="fragment">The rendered CMS and metadata content as iso19139 are placed in the gh-pages branch</li>
+<li class="fragment">lschub-docker includes branches as git submodules</li>
+</ul>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+
+ld[lschub-docker]--&gt; gitp[(git cms@pages)]
+ld--&gt; gitm[(git cat@pages)]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="github-actions" class="slide level2">
+<h2>Github Actions</h2>
+<ul>
+<li class="fragment">trigger at intervals or at events (push)</li>
+<li class="fragment">run in a container, either
+<ul>
+<li class="fragment">start a container within that container, or</li>
+<li class="fragment">trigger a github action, such as <a href="https://github.com/pvgenuchten/crawler-action">crawler</a></li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="pending-questions" class="title-slide slide level1 center">
+<h1>Pending questions</h1>
+
+</section>
+<section id="how-to-update-vm-with-git-changes" class="slide level2">
+<h2>How to update VM with GIT changes</h2>
+<ul>
+<li class="fragment">Run script at intervals</li>
+<li class="fragment">Let GIT pipeline trigger update
+<ul>
+<li class="fragment">upload via webdav</li>
+<li class="fragment">provide api</li>
+<li class="fragment">using SSH (ansible)</li>
+</ul></li>
+</ul>
+<p>Similar question for uploads via Webdav</p>
+</section>
+<section id="which-certificate-to-use-for-test-environment" class="slide level2">
+<h2>Which certificate to use for test environment</h2>
+<ul>
+<li class="fragment">Introduce the test environment</li>
+<li class="fragment">Test is not available from web, which is a requirement for letsencrypt</li>
+<li class="fragment">the kalro certificate is available, how to configure it on traefik</li>
+</ul>
+</section>
+<section id="quality-monitoring" class="slide level2">
+<h2>Quality monitoring</h2>
+<ul>
+<li class="fragment">Availability (uptimerobot)</li>
+<li class="fragment">Usage</li>
+<li class="fragment">Broken links</li>
+</ul>
+</section>
+<section id="backups" class="slide level2">
+<h2>Backups</h2>
+<ul>
+<li class="fragment">Postgres does not need to be backed up, because source is in Git</li>
+<li class="fragment">Files uploaded through webdav should be backed up</li>
+<li class="fragment">Access/Error logs could be backed up</li>
+</ul>
+</section>
+<section id="supporting-services" class="slide level2">
+<h2>Supporting services</h2>
+<ul>
+<li class="fragment">OSM/Image backdrop (maptiler, bing maps, …)</li>
+<li class="fragment">3D canvas (cesium)</li>
+<li class="fragment">location search (nominatim?)</li>
+</ul>
+</section>
+<section id="will-the-kalro-repositories-be-private" class="slide level2">
+<h2>Will the kalro repositories be private?</h2>
+<ul>
+<li class="fragment">the repositories should <strong>not</strong> contain sensitive information</li>
+<li class="fragment">open repositories enable users to flag issues</li>
+<li class="fragment">especcially the lschub-catalogue would benefit from remote contribution</li>
+<li class="fragment">now we use github.com/lsc-hubs/kenya-hub for issues</li>
+</ul>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="https://lsc-hubs.org/images/logo-lsc-hubs.svg" class="slide-logo"></p>
