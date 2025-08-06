@@ -1,8 +1,8 @@
 
 
 ---
-title: "LSC-Hub schematic"
-author: van Genuchten, P; van der Woude, T;
+title: "LSC-Hub Kenya; pending topics"
+author: van Genuchten, P. 
 date: 2025-08-06
 format:
   revealjs:
