@@ -98,6 +98,13 @@
     "text": "pygeometa, geodatacrawler & pycsw\n\npygeometa’s MCF is a minimal subset of ISO19115, encoded in yaml\ngeodatacrawler extends pygeometa to:\n\nextract metadata from data formats\ninherit metadata from parent folders\nimport metadata from csv and remote sources\ncreate data api’s based on metadata\n\n is a pythonic catalogue web app. Wide standards support enables findability in multiple communities."
   },
   {
+    "objectID": "slides/lschub-historic.html#introduction",
+    "href": "slides/lschub-historic.html#introduction",
+    "title": "LSC-Hub development overview",
+    "section": "Introduction",
+    "text": "Introduction\n\nFinalisation of project is approaching\nPrepare final product\nUnderstand if parts of the initiative can be adopted in regular work\nGood moment to look back at the path we walked together"
+  },
+  {
     "objectID": "slides/lschub-historic.html#overview",
     "href": "slides/lschub-historic.html#overview",
     "title": "LSC-Hub development overview",
@@ -152,6 +159,13 @@
     "title": "LSC-Hub development overview",
     "section": "Process of localised deployments",
     "text": "Process of localised deployments\n\nIn Kenya; the LSC components have been adopted, but using a tailored Docker Compose setup\nIn Rwanda; a system is being setup based on their ArcGIS server environment\nIn Ethiopia; a system has been build including GeoNode"
+  },
+  {
+    "objectID": "slides/lschub-components.html#introduction",
+    "href": "slides/lschub-components.html#introduction",
+    "title": "LSC-Hub components overview",
+    "section": "Introduction",
+    "text": "Introduction\n\nAn overview of the various hub components"
   },
   {
     "objectID": "slides/lschub-components.html#overview",
@@ -385,6 +399,13 @@
     "text": "pygeoapi\n\nPresentation\ndive.pygeoapi.io"
   },
   {
+    "objectID": "slides/FAIRintro4SoilMapping.html#findable",
+    "href": "slides/FAIRintro4SoilMapping.html#findable",
+    "title": "FAIR intro for Digital Soil Mapping",
+    "section": "Findable",
+    "text": "Findable"
+  },
+  {
     "objectID": "slides/FAIRintro4SoilMapping.html#principles-on-findability",
     "href": "slides/FAIRintro4SoilMapping.html#principles-on-findability",
     "title": "FAIR intro for Digital Soil Mapping",
@@ -441,6 +462,13 @@
     "text": "Q. How is google able to locate datasets"
   },
   {
+    "objectID": "slides/FAIRintro4SoilMapping.html#accessible",
+    "href": "slides/FAIRintro4SoilMapping.html#accessible",
+    "title": "FAIR intro for Digital Soil Mapping",
+    "section": "Accessible",
+    "text": "Accessible"
+  },
+  {
     "objectID": "slides/FAIRintro4SoilMapping.html#principles-on-accessibility",
     "href": "slides/FAIRintro4SoilMapping.html#principles-on-accessibility",
     "title": "FAIR intro for Digital Soil Mapping",
@@ -490,6 +518,13 @@
     "text": "Testing tools\n\nAutomated link checking\nUsage logs\nGoogle Search Console notifies broken links\nAvailability monitoring\nContent validation"
   },
   {
+    "objectID": "slides/FAIRintro4SoilMapping.html#interoperable",
+    "href": "slides/FAIRintro4SoilMapping.html#interoperable",
+    "title": "FAIR intro for Digital Soil Mapping",
+    "section": "Interoperable",
+    "text": "Interoperable"
+  },
+  {
     "objectID": "slides/FAIRintro4SoilMapping.html#principles-on-interoperability",
     "href": "slides/FAIRintro4SoilMapping.html#principles-on-interoperability",
     "title": "FAIR intro for Digital Soil Mapping",
@@ -511,6 +546,13 @@
     "text": "Adopt common vocabularies\nAdopting a standardised model enables aggregation of data.\n\nRelational models (INSPIRE GeoPackage, iso28258asPostGres)\nUML/GML models (ISO28258 iso11074)\nSemantic web ontologies (Glosis-ld, vocabs)\nThesauri (WRB, Gemet, Agrovoc)"
   },
   {
+    "objectID": "slides/FAIRintro4SoilMapping.html#reusable",
+    "href": "slides/FAIRintro4SoilMapping.html#reusable",
+    "title": "FAIR intro for Digital Soil Mapping",
+    "section": "Reusable",
+    "text": "Reusable"
+  },
+  {
     "objectID": "slides/FAIRintro4SoilMapping.html#principles-on-re-use",
     "href": "slides/FAIRintro4SoilMapping.html#principles-on-re-use",
     "title": "FAIR intro for Digital Soil Mapping",
@@ -523,6 +565,13 @@
     "title": "FAIR intro for Digital Soil Mapping",
     "section": "What if my repository does not offer extended metadata options?",
     "text": "What if my repository does not offer extended metadata options?\n\nUse keywords from relevant thesauri to extend\nAdd a readme.txt file with extended information\n\nData model (which property, unit, analysis procedure)\nLineage (which data were used as a source)\n\nUse a stuctured format for readme."
+  },
+  {
+    "objectID": "slides/FAIRintro4SoilMapping.html#metadata-flows-isric-style",
+    "href": "slides/FAIRintro4SoilMapping.html#metadata-flows-isric-style",
+    "title": "FAIR intro for Digital Soil Mapping",
+    "section": "Metadata flows, ISRIC style",
+    "text": "Metadata flows, ISRIC style"
   },
   {
     "objectID": "slides/FAIRintro4SoilMapping.html#design-considerations",
