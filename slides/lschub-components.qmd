@@ -8,9 +8,11 @@ format:
     theme: default
     logo: https://lsc-hubs.org/images/logo-lsc-hubs.svg
     footer: LSC-hubs project; DeSiRa
+  pptx:
+    slide-level: 2
 ---
 
-# Introduction
+## Introduction
 
 - An overview of the various hub components
 

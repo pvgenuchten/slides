@@ -12,7 +12,7 @@ format:
     slide-level: 2
 ---
 
-# Findable
+## Findable
 
 ## Principles on Findability
 
@@ -71,7 +71,7 @@ format:
 
 ## Q. How is [google](https://datasetsearch.research.google.com/) able to locate datasets
 
-# Accessible
+## Accessible
 
 ## Principles on Accessibility
 
@@ -117,7 +117,7 @@ format:
 - Availability monitoring
 - Content validation
 
-# Interoperable
+## Interoperable
 
 ## Principles on Interoperability
 
@@ -144,7 +144,7 @@ Adopting a standardised model enables aggregation of data.
 - Semantic web ontologies ([Glosis-ld](https://github.com/glosis-ld/glosis), [vocabs](https://vocab.isric.org))
 - Thesauri (WRB, Gemet, Agrovoc)
 
-# Reusable
+## Reusable
 
 ## Principles on Re-use
 
@@ -161,7 +161,7 @@ Adopting a standardised model enables aggregation of data.
   - Lineage (which data were used as a source)
 - Use a stuctured format for readme.
 
-# Metadata flows, ISRIC style
+## Metadata flows, ISRIC style
 
 ## Design considerations
 
