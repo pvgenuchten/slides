@@ -63,6 +63,13 @@ format:
 - Observing Station metadata
   - WMO WIGOS Metadata Standard (w)
 
+## pygeoapi plugin
+
+- functions exposed as OGC API - Processes endpoints via [pygeoapi](https://pygeoapi.io)
+- in `pygeometa/pygeoapi_plugin.py`
+
+![pygeometa pygeoapi plugin](./img/pygeometa-pygeoapi-plugin.png){.fragment width="100" .fig-align="left"}
+
 ## Formats and extensibility
 
 - Can be any format/representation
