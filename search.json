@@ -900,7 +900,7 @@
     "href": "slides/2025-foss4g-pygeometa-project-update.html#pygeoapi-plugin",
     "title": "pygeometa project status",
     "section": "pygeoapi plugin",
-    "text": "pygeoapi plugin\n\nfunctions exposed as OGC API - Processes endpoints via pygeoapi\nin pygeometa/pygeoapi_plugin.py\n\n{.fragment width=“100” .fig-align=“left”}"
+    "text": "pygeoapi plugin\n\nfunctions exposed as OGC API - Processes endpoints via pygeoapi\nin pygeometa/pygeoapi_plugin.py\nlive examples on pygeoapi demo server\n\n{.fragment width=“100” .fig-align=“left”}"
   },
   {
     "objectID": "slides/2025-foss4g-pygeometa-project-update.html#formats-and-extensibility",
