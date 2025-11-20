@@ -896,6 +896,13 @@
     "text": "Supported formats\n\nDataset metadata\n\nISO 19115 / 19139 (rw)\nISO 19115-2 (w)\nWMO Core Metadata Profile\nOGC API - Records (rw)\nDCAT (w)\n\nGranule metadata\n\nSTAC (w)\n\nObserving Station metadata\n\nWMO WIGOS Metadata Standard (w)"
   },
   {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#pygeoapi-plugin",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#pygeoapi-plugin",
+    "title": "pygeometa project status",
+    "section": "pygeoapi plugin",
+    "text": "pygeoapi plugin\n\nfunctions exposed as OGC API - Processes endpoints via pygeoapi\nin pygeometa/pygeoapi_plugin.py\n\n{.fragment width=“100” .fig-align=“left”}"
+  },
+  {
     "objectID": "slides/2025-foss4g-pygeometa-project-update.html#formats-and-extensibility",
     "href": "slides/2025-foss4g-pygeometa-project-update.html#formats-and-extensibility",
     "title": "pygeometa project status",
