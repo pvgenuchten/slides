@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.8.26">
 
   <meta name="author" content="Tom Kralidis, Paul van Genuchten">
-  <meta name="dcterms.date" content="2025-07-18">
+  <meta name="dcterms.date" content="2025-11-20">
   <title>some slide decks – pygeometa project status</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -138,7 +138,7 @@ Tom Kralidis, Paul van Genuchten
 </div>
 </div>
 
-  <p class="date">2025-07-18</p>
+  <p class="date">2025-11-20</p>
 </section>
 <section id="about-us" class="slide level2">
 <h2>About us</h2>
@@ -229,43 +229,26 @@ Tom Kralidis, Paul van Genuchten
 </ul></li>
 </ul>
 </section>
-<section id="what-if" class="slide level2">
-<h2>What if…</h2>
-<div class="r-stack">
-<p><img data-src="./img/fun-md/browse.png" class="fragment" width="800"></p>
-<p><img data-src="./img/fun-md/edit.png" class="fragment" width="800"></p>
-<p><img data-src="./img/fun-md/history.png" class="fragment" width="800"></p>
-</div>
-</section>
-<section id="from-mcf-to-catalogue" class="slide level2">
-<h2>From MCF to catalogue</h2>
+<section id="recent-updates" class="slide level2">
+<h2>Recent updates</h2>
 <ul>
-<li class="fragment">Data scientists maintain MCF as a sidecar to their data</li>
-<li class="fragment">Workflows ingest and convert using pygeometa</li>
-<li class="fragment">Metadata is then loaded on a catalogue
+<li class="fragment">0.19.0 (November 2025)
 <ul>
-<li class="fragment"><a href="https://pycsw.org">pycsw</a> via <code>pycsw-admin.py</code></li>
-<li class="fragment"><a href="https://pygeoapi.io">pygeoapi</a> via Elasticsearch or TinyDB</li>
-<li class="fragment"><a href="https://geonetwork-opensource.org">GeOnetwork</a> via file / folder harvest</li>
+<li class="fragment">support for schema.org</li>
+<li class="fragment">update to Python 3.12</li>
 </ul></li>
-<li class="fragment">Git backed storage, enables direct feedback and improvement from catalogue</li>
-</ul>
-</section>
-<section id="colleagues-like-mcf" class="slide level2">
-<h2>Colleagues like MCF?</h2>
+<li class="fragment">0.18.0 (September 2025)
 <ul>
-<li class="fragment">Some expect shiny webforms, like LinkedIn/Facebook</li>
-<li class="fragment">Not used to YAML syntax</li>
-<li class="fragment">Enter <a href="https://github.com/osgeo/mdme">mdme</a>, the Model Driven Metadata Editor / web application for geospatial metadata</li>
+<li class="fragment">support for Common Workflow Language (CWL)</li>
+</ul></li>
+<li class="fragment">0.17.0 (July 2025)
+<ul>
+<li class="fragment">support for metadata autodetection</li>
+</ul></li>
 </ul>
 </section>
-<section id="web-editor-for-mcf" class="slide level2">
-<h2>Web editor for MCF</h2>
-
-<img data-src="./img/fun-md/mdme.png" width="800" class="r-stretch quarto-figure-center"><p class="caption">mdme</p><p><a href="https://osgeo.github.io/mdme">osgeo.github.io/mdme</a></p>
-</section>
-<section id="tech-colleagues-like-mcf" class="slide level2">
-<h2>Tech colleagues like MCF?</h2>
+<section id="value-proposition-for-yaml-based-metadata-management" class="slide level2">
+<h2>Value proposition for YAML based metadata management</h2>
 <ul>
 <li class="fragment">YAML is an optimal format for Git version control</li>
 <li class="fragment">Git offers a fully traceable catalogue</li>
@@ -274,40 +257,8 @@ Tom Kralidis, Paul van Genuchten
 <li class="fragment">YAML can be composed and published in memory for automated pipelines</li>
 </ul>
 </section>
-<section id="problem-setting" class="slide level2">
-<h2>Problem setting</h2>
-<p>You will find many (geospatial) metadata standards out there</p>
-<ul>
-<li class="fragment">FGDC CSDGM</li>
-<li class="fragment">NASA DIF</li>
-<li class="fragment">ISO 19115 / 19139</li>
-<li class="fragment">WMO, HNAP, etc.</li>
-<li class="fragment">Dublin Core</li>
-<li class="fragment">DCAT</li>
-<li class="fragment">OGC CSW</li>
-<li class="fragment">OGC API - Records</li>
-<li class="fragment">STAC</li>
-</ul>
-</section>
-<section id="challenges" class="slide level2">
-<h2>Challenges</h2>
-<ul>
-<li class="fragment">Granularity and organization</li>
-<li class="fragment">Datasets</li>
-<li class="fragment">EO domains</li>
-<li class="fragment">types
-<ul>
-<li class="fragment">collections / sensors / acquisitions</li>
-<li class="fragment">stations, observations</li>
-<li class="fragment">services</li>
-<li class="fragment">processes</li>
-<li class="fragment">anything!</li>
-</ul></li>
-<li class="fragment">lifecycle</li>
-</ul>
-</section>
-<section id="workflows" class="slide level2">
-<h2>Workflows</h2>
+<section id="workflow-examples" class="slide level2">
+<h2>Workflow examples</h2>
 <ul>
 <li class="fragment">Data explosion = metadata explosion</li>
 <li class="fragment">Traditional workflow:
@@ -418,9 +369,15 @@ Tom Kralidis, Paul van Genuchten
 <section id="takeaways" class="slide level2">
 <h2>Takeaways</h2>
 <ul>
+<li class="fragment">pygeometa is a small, ligthweight and composable metadata management utility</li>
 <li class="fragment">MCF is an interesting and useful metadata format for embedded metadata in local file repositories</li>
 <li class="fragment">Git storage and CI-CD workflows are a traceable, reproducible and participatory approach for metadata management</li>
-<li class="fragment">OGC API - Records (in for example pycsw) offers a clean machine and human friendly interface to metadata</li>
+<li class="fragment">OGC API - Records offers a clean machine and human friendly interface to metadata
+<ul>
+<li class="fragment">pycsw</li>
+<li class="fragment">pygeoapi</li>
+<li class="fragment">GeoNetwork Opensource</li>
+</ul></li>
 </ul>
 </section>
 <section id="composability" class="slide level2">
@@ -433,10 +390,10 @@ Tom Kralidis, Paul van Genuchten
 <h2>References</h2>
 <ul>
 <li class="fragment"><a href="https://github.com/geopython/pygeometa">pygeometa</a></li>
-<li class="fragment"><a href="https://pycsw.org">pycsw.org</a> v3.0b</li>
-<li class="fragment"><a href="https://pypi.org/project/geodatacrawler/">pyGeoDataCrawler</a> v1.3</li>
-<li class="fragment"><a href="https://ogcapi.org/#records">OGCAPI - Records</a> v1.0</li>
-<li class="fragment"><a href="https://mapserver.org">mapserver.org</a> v8.2</li>
+<li class="fragment"><a href="https://pycsw.org">pycsw.org</a></li>
+<li class="fragment"><a href="https://pypi.org/project/geodatacrawler/">pyGeoDataCrawler</a></li>
+<li class="fragment"><a href="https://ogcapi.org/#records">OGC API - Records</a></li>
+<li class="fragment"><a href="https://mapserver.org">mapserver.org</a></li>
 <li class="fragment"><a href="https://terria.io">terria.io</a></li>
 </ul>
 
@@ -444,9 +401,9 @@ Tom Kralidis, Paul van Genuchten
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
-<p><img src="./img/logo-foss4g-mostar.png" class="slide-logo"></p>
+<p><img src="./img/logo-foss4g-auckland.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>FOSS4G Europe 2025, Mostar, Bosnia and Herzegovina</p>
+<p>FOSS4G 2025, Auckland, New Zealand</p>
 </div>
 </div></div>
 
