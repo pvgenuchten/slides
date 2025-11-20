@@ -67,6 +67,7 @@ format:
 
 - functions exposed as OGC API - Processes endpoints via [pygeoapi](https://pygeoapi.io)
 - in `pygeometa/pygeoapi_plugin.py`
+- live examples on [pygeoapi demo server](https://demo.pygeoapi.io/master/openapi)
 
 ![pygeometa pygeoapi plugin](./img/pygeometa-pygeoapi-plugin.png){.fragment width="100" .fig-align="left"}
 
