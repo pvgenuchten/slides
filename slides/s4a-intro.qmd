@@ -1,0 +1,60 @@
+---
+title: Soil Information System for Africa 
+subtitle: "Updating soil information for Africa: supporting agriculture and promoting synergies"
+author: Paul van Genuchten
+date: 2025-12-01
+format:
+  revealjs: 
+    theme: default
+    logo: https://www.soils4africa-h2020.eu/serverspecific/soils4africa/images/Template/logo.png?t=2
+    footer: "Soil Information System for Africa"
+  pptx:
+    slide-level: 2
+---
+
+
+
+# 
+
+:::: {.columns}
+
+::: {.column width="60%"}
+[The project](https://doi.org/10.3030/862900)
+
+- 1 June 2020 - 31 May 2025
+- Led by ISRIC - 16 partners
+- Funded by EU Horizon 2020
+- Budget: € 6.7M
+:::
+
+::: {.column width="40%"}
+![S4a partners](./img/s4a-partners.png)
+:::
+
+::::
+
+## Background
+
+- The [AFSIS project](https://isric.org/projects/africa-soil-information-service-afsis) showed the value of a continental map
+- It also showed the challenges of map construction
+  - availability of observation data 
+  - limited description of the data (difficult to harmonize)
+  - unclear usage constraints/ownership
+
+## A continental campaign
+
+- Optimized [sampling design](https://ec.europa.eu/research/participants/documents/downloadPublic?documentIds=080166e5ddc6994a&appId=PPGMS)
+- [Standardised Operating Procedures](https://ec.europa.eu/research/participants/documents/downloadPublic?documentIds=080166e5e535ff43&appId=PPGMS) for Field Survey, Transport and Laboratory
+- Analysis by a [single lab](https://ec.europa.eu/research/participants/documents/downloadPublic?documentIds=080166e50d38a713&appId=PPGMS) 
+- Full [data description and clear licence description](https://doi.org/10.5281/zenodo.17699297)
+- [Dissiminaton of the results](https://africasis.isric.org) for various target audiences
+
+## From observations to maps...
+
+- Link laboratory observations to field sampling locations
+- Harmonize data from various campaigns
+   - Can observations be compared? conversion required?
+   - Field expertise or spatial algorythms to predict distribution (co-variates)
+- Add a legend of classes (high-medium-low)
+- From the map product, attribute the source data
+
