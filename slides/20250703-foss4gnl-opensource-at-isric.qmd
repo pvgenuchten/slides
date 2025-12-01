@@ -23,6 +23,11 @@ format:
 
 ![World Soil Museum by [tinker.nl](https://tinker.nl/en/work/world-soil-museum)](https://tinker.nl/img/cache/media_6828_widen_3840-upscale_90-2349_world-soil-museum01_0.webp)
 
+## [Soilwise](https://www.soilwise.eu)
+
+SoilWise is a current Horizon Europe project to facilitate the [mission soil](https://mission-soil-platform.ec.europa.eu/) with tooling and guidance on soil data and knowledge discovery, usage and publication. 
+Practices from this presentation are endorsed and improved in the scope of this project.
+
 ## Typical use cases for FOSS(4G) software
 
 - Field data collection (OpenDataKit)

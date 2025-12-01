@@ -173,17 +173,18 @@ We present 3 use cases to demonstrate the value of this approach:
 ![](./img/fun-md/history.png){.fragment width="800" }
 :::
 
-## pycsw
+## pycsw in [Soilwise](https://www.soilwise.eu)
 
-[![Rwanda LSC Catalogue](./img/fun-md/pycsw.png){width="800"}](https://rwanda.lsc-hubs.org/cat/collections/metadata:main/items?q=wms)
+SoilWise is a current Horizon Europe project to facilitate the [mission soil](https://mission-soil-platform.ec.europa.eu/) with tooling and guidance on soil data and knowledge discovery, usage and publication. 
 
-## Participatory metadata management
+Practices from this presentation are endorsed and improved in the scope of this project.
 
-- Users initially provided metadata as lists in Microsoft Excel
-- Excel rows converted to MCF and loaded to pycsw
-- MCF Metadata is hosted in GitHub
-- Users contribute content (or register issues about content)
+## Metadata harvesting and alignment
 
+- Harvests from various Geo and Academia repositories
+- Aligns metadata between communities
+- A SOLR backend to improve findability
+- Focus on datamodel metadata
 
 # EOEPCA
 
