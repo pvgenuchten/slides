@@ -77,326 +77,739 @@
     "text": "What’s in it for ISRIC?\n\nThe resource outcomes publication strategy will be a good input to an updated ISRIC strategy\nThe data harmonisation efforts and guidance will be an interesting source for future WOSIS and NSIS developments\nA lot of practical experience in generative AI is collected, which will be of interest to future ISRIC projects\nThe novel catalogue components can be used in subsequent projects (AUSO, LSC)"
   },
   {
-    "objectID": "slides/pitch-battle.html#improving-findability---devops-style",
-    "href": "slides/pitch-battle.html#improving-findability---devops-style",
-    "title": "Document your model data at minimal effort",
-    "section": "Improving findability - devops style",
-    "text": "Improving findability - devops style\n\nWhat: Document your modelling data with minimal effort\nWhy: Better findability and (re)usability of data\nWhat’s next: Adopt the efforts in ongoing projects & extend the user community"
-  },
-  {
-    "objectID": "slides/pitch-battle.html#setting-concept",
-    "href": "slides/pitch-battle.html#setting-concept",
-    "title": "Document your model data at minimal effort",
-    "section": "Setting & Concept",
-    "text": "Setting & Concept\n\nSetting: Data management in predictive modelling\n\nIn soil modelling we handle many data sources\nThese files are stored on a network drive\nMetadata management is complex/dull/****\n\nThe sidecar concept\n\nAdd minimal metadata on a sidecar file\nA crawler extracts metadata from a file repository\nCrawled records are placed in a searchable index"
-  },
-  {
-    "objectID": "slides/pitch-battle.html#pygeometa-geodatacrawler-pycsw",
-    "href": "slides/pitch-battle.html#pygeometa-geodatacrawler-pycsw",
-    "title": "Document your model data at minimal effort",
-    "section": "pygeometa, geodatacrawler & pycsw",
-    "text": "pygeometa, geodatacrawler & pycsw\n\npygeometa’s MCF is a minimal subset of ISO19115, encoded in yaml\ngeodatacrawler extends pygeometa to:\n\nextract metadata from data formats\ninherit metadata from parent folders\nimport metadata from csv and remote sources\ncreate data api’s based on metadata\n\n is a pythonic catalogue web app. Wide standards support enables findability in multiple communities."
-  },
-  {
-    "objectID": "slides/lschub-historic.html#introduction",
-    "href": "slides/lschub-historic.html#introduction",
-    "title": "LSC-Hub development overview",
-    "section": "Introduction",
-    "text": "Introduction\n\nFinalisation of project is approaching\nPrepare final product\nUnderstand if parts of the initiative can be adopted in regular work\nGood moment to look back at the path we walked together"
-  },
-  {
-    "objectID": "slides/lschub-historic.html#overview",
-    "href": "slides/lschub-historic.html#overview",
-    "title": "LSC-Hub development overview",
-    "section": "Overview",
-    "text": "Overview\n\n2022-2023 WP2 user needs assessment\n2022 Initial (meta)data collection\n2023 First prototype\n2023 First training in Nairobi\n2024 Second prototype\n2024 Stakeholder workshops\n2025 Process of localised deployments"
-  },
-  {
-    "objectID": "slides/lschub-historic.html#wp2-user-needs-assessment",
-    "href": "slides/lschub-historic.html#wp2-user-needs-assessment",
-    "title": "LSC-Hub development overview",
-    "section": "WP2 user needs assessment",
-    "text": "WP2 user needs assessment\n\nWorkshops with stakeholders\nInterviews with key stakeholders\nReport with user needs"
-  },
-  {
-    "objectID": "slides/lschub-historic.html#initial-metadata-collection",
-    "href": "slides/lschub-historic.html#initial-metadata-collection",
-    "title": "LSC-Hub development overview",
-    "section": "Initial (meta)data collection",
-    "text": "Initial (meta)data collection\n\nListing in Excel of relevant datasets and documents"
-  },
-  {
-    "objectID": "slides/lschub-historic.html#first-prototype",
-    "href": "slides/lschub-historic.html#first-prototype",
-    "title": "LSC-Hub development overview",
-    "section": "First prototype",
-    "text": "First prototype\n\nIdentified the 4 main components, cms, catalogue, community engagement and mapserver\nIdentified the need for a flexible, complmentary system"
-  },
-  {
-    "objectID": "slides/lschub-historic.html#first-training-in-nairobi",
-    "href": "slides/lschub-historic.html#first-training-in-nairobi",
-    "title": "LSC-Hub development overview",
-    "section": "First training in Nairobi",
-    "text": "First training in Nairobi\n\nIntroduction to docker, github, FAIR principles\nThe workshop did not quite fit the audience"
-  },
-  {
-    "objectID": "slides/lschub-historic.html#second-prototype",
-    "href": "slides/lschub-historic.html#second-prototype",
-    "title": "LSC-Hub development overview",
-    "section": "Second prototype",
-    "text": "Second prototype\n\nA full redesign of the system\nMore focus on the interactive map viewer"
-  },
-  {
-    "objectID": "slides/lschub-historic.html#stakeholder-workshops",
-    "href": "slides/lschub-historic.html#stakeholder-workshops",
-    "title": "LSC-Hub development overview",
-    "section": "Stakeholder workshops",
-    "text": "Stakeholder workshops\n\nInteraction with WP4 and WP5 around use cases\nValuable input from stakeholders was collected\nA need for a more regional identity\nA need for decission support"
-  },
-  {
-    "objectID": "slides/lschub-historic.html#process-of-localised-deployments",
-    "href": "slides/lschub-historic.html#process-of-localised-deployments",
-    "title": "LSC-Hub development overview",
-    "section": "Process of localised deployments",
-    "text": "Process of localised deployments\n\nIn Kenya; the LSC components have been adopted, but using a tailored Docker Compose setup\nIn Rwanda; a system is being setup based on their ArcGIS server environment\nIn Ethiopia; a system has been build including GeoNode"
-  },
-  {
-    "objectID": "slides/lschub-components.html#introduction",
-    "href": "slides/lschub-components.html#introduction",
-    "title": "LSC-Hub components overview",
-    "section": "Introduction",
-    "text": "Introduction\n\nAn overview of the various hub components"
-  },
-  {
-    "objectID": "slides/lschub-components.html#overview",
-    "href": "slides/lschub-components.html#overview",
-    "title": "LSC-Hub components overview",
-    "section": "Overview",
-    "text": "Overview\n\nPlatform for interaction with stakeholders\nA hub facilitator, guided by a maintenance board\nA website\nA catalogue\nData visualisation"
-  },
-  {
-    "objectID": "slides/lschub-components.html#platform-for-interaction-with-stakeholders",
-    "href": "slides/lschub-components.html#platform-for-interaction-with-stakeholders",
-    "title": "LSC-Hub components overview",
-    "section": "Platform for interaction with stakeholders",
-    "text": "Platform for interaction with stakeholders\n\nmailinglist\nforum\nissue tracker\nwhatsapp group"
-  },
-  {
-    "objectID": "slides/lschub-components.html#a-hub-facilitator-guided-by-a-maintenance-board",
-    "href": "slides/lschub-components.html#a-hub-facilitator-guided-by-a-maintenance-board",
-    "title": "LSC-Hub components overview",
-    "section": "A hub facilitator, guided by a maintenance board",
-    "text": "A hub facilitator, guided by a maintenance board\n\ncreates/assesses quality reports\nmaintain the hub software, define roadmap"
-  },
-  {
-    "objectID": "slides/lschub-components.html#a-website",
-    "href": "slides/lschub-components.html#a-website",
-    "title": "LSC-Hub components overview",
-    "section": "A website",
-    "text": "A website\n\nIntroduces stakeholders and funders to the initiative\nProvides guidance on how to use the system\nDescribe use cases"
-  },
-  {
-    "objectID": "slides/lschub-components.html#a-catalogue",
-    "href": "slides/lschub-components.html#a-catalogue",
-    "title": "LSC-Hub components overview",
-    "section": "A catalogue",
-    "text": "A catalogue\n\nProvides access to relevant resources"
-  },
-  {
-    "objectID": "slides/lschub-components.html#data-access-layer",
-    "href": "slides/lschub-components.html#data-access-layer",
-    "title": "LSC-Hub components overview",
-    "section": "Data access layer",
-    "text": "Data access layer\n\nEnables API access to datasets, for data which is too big or complex to process"
-  },
-  {
-    "objectID": "slides/lschub-components.html#data-visualisation",
-    "href": "slides/lschub-components.html#data-visualisation",
-    "title": "LSC-Hub components overview",
-    "section": "Data visualisation",
-    "text": "Data visualisation\n\nEnables the visualisation of data"
-  },
-  {
-    "objectID": "slides/intro-crawler-mcf-pycsw.html#what",
-    "href": "slides/intro-crawler-mcf-pycsw.html#what",
-    "title": "Metadata for the rest of us",
-    "section": "What",
-    "text": "What\n\nA set of conventions and tools to create and share metadata of datasets.\nData scientists should own metadata records, because they are the knowledgeable party.\nSo: integrate in their environment, stay close to the tools they already use: Python, Git, Excel, Zenodo.\nFocus on TC211 and academia standards, because we’re in the academic spatial domain"
-  },
-  {
-    "objectID": "slides/intro-crawler-mcf-pycsw.html#some-principles",
-    "href": "slides/intro-crawler-mcf-pycsw.html#some-principles",
-    "title": "Metadata for the rest of us",
-    "section": "Some principles",
-    "text": "Some principles\n\nbased on existing standards/conventions\n(meta)data at the source\nsimple in maintenance\npersistent/traceable over time\nFixed (extendible) data model for metadata"
-  },
-  {
-    "objectID": "slides/intro-crawler-mcf-pycsw.html#use-cases",
-    "href": "slides/intro-crawler-mcf-pycsw.html#use-cases",
-    "title": "Metadata for the rest of us",
-    "section": "3 use cases",
-    "text": "3 use cases\n\nA team of data scientists understands/describes their source data, models and data outputs, for tracability and future re-use\nAn organisation aims to share a subset of their resources as open access data\nA community aims to collect relevant remote resources in a thematic catalogue"
-  },
-  {
-    "objectID": "slides/intro-crawler-mcf-pycsw.html#describe-resources-at-their-source",
-    "href": "slides/intro-crawler-mcf-pycsw.html#describe-resources-at-their-source",
-    "title": "Metadata for the rest of us",
-    "section": "Describe resources at their source",
-    "text": "Describe resources at their source\n\nBuilds on a convention of placing a README.md file in a project folder, describing the source, attribution.\nSuggestion is to use a structured format, so also machines can understand this information\nMetadata control file (mcf) is a convention of the geopython community (in YAML)\nA crawler tool extracts embedded metadata from data to create initial mcf\nA crawler tool fetches from a set of project folders the metadata and stores it in a central index, pycsw"
-  },
-  {
-    "objectID": "slides/intro-crawler-mcf-pycsw.html#schematic-i",
-    "href": "slides/intro-crawler-mcf-pycsw.html#schematic-i",
-    "title": "Metadata for the rest of us",
-    "section": "Schematic I",
-    "text": "Schematic I\n\n\n\n\n\nflowchart TB\n    P[Project folder] --&gt;|Files| CI{{crawler}}\n    CI --&gt;|Extract metadata| P\n    CI --&gt; G[Git] \n    G --&gt; PYCSW"
-  },
-  {
-    "objectID": "slides/intro-crawler-mcf-pycsw.html#share-as-open-access-data",
-    "href": "slides/intro-crawler-mcf-pycsw.html#share-as-open-access-data",
-    "title": "Metadata for the rest of us",
-    "section": "Share as open access data",
-    "text": "Share as open access data\n\nBuilds on the previous case, data scientists store and describe their data outputs on a central folder, a sharable subset is shared via pycsw.\nFor spatial assets OGC data api’s are created, sharing the data as WMS, WFS, WCS using mapserver\nThe mcf content is used to create the mapserver configuration, the metadata is updated with the relevant OWS endpoints"
-  },
-  {
-    "objectID": "slides/intro-crawler-mcf-pycsw.html#schematic-ii",
-    "href": "slides/intro-crawler-mcf-pycsw.html#schematic-ii",
-    "title": "Metadata for the rest of us",
-    "section": "Schematic II",
-    "text": "Schematic II\n\n\n\n\n\nflowchart TB\n    G[Git] --&gt;|mcf| CI{{crawler}} \n    CI --&gt;|mapfiles| MS[Mapserver]\n    Metadata --&gt; OWS\n    MS --&gt; OWS[WMS/WFS]\n    CI --&gt;|OWS Linkage| G"
-  },
-  {
-    "objectID": "slides/intro-crawler-mcf-pycsw.html#a-thematic-participatory-data-portal",
-    "href": "slides/intro-crawler-mcf-pycsw.html#a-thematic-participatory-data-portal",
-    "title": "Metadata for the rest of us",
-    "section": "A thematic participatory data portal",
-    "text": "A thematic participatory data portal\n\nmetadata from external sources can be harvested to the central index\nby storing MCF in GIT, and add a ‘edit me on git’ link on each metadata page, so users can flag problems in metadata or suggest new content\nalso the harvest definition is stored on git\nImports are managed as CI-CD actions in Git"
-  },
-  {
-    "objectID": "slides/intro-crawler-mcf-pycsw.html#metadata-harvest",
-    "href": "slides/intro-crawler-mcf-pycsw.html#metadata-harvest",
-    "title": "Metadata for the rest of us",
-    "section": "Metadata harvest",
-    "text": "Metadata harvest\n\na generic query to a remote catalogue endpoint (csw, oai-pmh)\na excel sheet of records (each column is a metadata property)\na list of DOI’s"
-  },
-  {
-    "objectID": "slides/intro-crawler-mcf-pycsw.html#schematic-iii",
-    "href": "slides/intro-crawler-mcf-pycsw.html#schematic-iii",
-    "title": "Metadata for the rest of us",
-    "section": "Schematic III",
-    "text": "Schematic III\n\n\n\n\n\nflowchart TB\n    G[Git] --&gt;|mcf| CI{{pygeometa}} \n    CI --&gt;|iso19139| DB[(Database)]\n    DB --&gt; C(Catalogue)\n    C --&gt; G\n    C --&gt; CSW(CSW)\n    C --&gt; OAR(OGCAPI Records)\n    C --&gt; OAI(OAI-PMH)"
-  },
-  {
-    "objectID": "slides/intro-crawler-mcf-pycsw.html#oh-but-this-is-too-technical",
-    "href": "slides/intro-crawler-mcf-pycsw.html#oh-but-this-is-too-technical",
-    "title": "Metadata for the rest of us",
-    "section": "Oh, but this is too technical!",
-    "text": "Oh, but this is too technical!\n\nIs it?\nISO19139 and DCAT and their tools (GeoNetwork, CKAN, Dataverse) also have their peculiarities\nNot everybody will be able to create a pull request in GIT, use git issues instead and let others in the community fix\nYAML has its caveats (indenting, reserved characters), use YAML check in text editor\nWe created a web-form for mcf editing, mdme"
-  },
-  {
-    "objectID": "slides/intro-crawler-mcf-pycsw.html#read-more",
-    "href": "slides/intro-crawler-mcf-pycsw.html#read-more",
-    "title": "Metadata for the rest of us",
-    "section": "Read more?",
-    "text": "Read more?\n\npygeometa in the EJPSoil soil data assimilation cookbook\nLSC Hubs data workshop\npygeometa\nGeoDataCrawler\nSoilwise HE"
-  },
-  {
-    "objectID": "slides/fun-way-of-spatial-cataloguing.html#pycsw",
-    "href": "slides/fun-way-of-spatial-cataloguing.html#pycsw",
-    "title": "pygeometa project status 2025",
-    "section": "pycsw",
-    "text": "pycsw\n\n\n\nRwanda LSC Catalogue"
-  },
-  {
-    "objectID": "slides/fun-way-of-spatial-cataloguing.html#participatory-metadata-management",
-    "href": "slides/fun-way-of-spatial-cataloguing.html#participatory-metadata-management",
-    "title": "pygeometa project status 2025",
+    "objectID": "slides/pygeometa-foss4g-2024.html#participatory-metadata-management",
+    "href": "slides/pygeometa-foss4g-2024.html#participatory-metadata-management",
+    "title": "pygeometa project status",
     "section": "Participatory metadata management",
-    "text": "Participatory metadata management\n\nUsers initially provided metadata as lists in Microsoft Excel\nExcel rows converted to MCF and loaded to pycsw\nMCF Metadata is hosted in GitHub\nUsers contribute content (or register issues about content)"
+    "text": "Participatory metadata management\n\nUsers initially provided metadata as lists in Microsoft Excel\nMetadata is hosted in GitHub\nUsers contribute content (or register issues about content)\nMetadata is published to pycsw\nusers can “edit me” from pycsw/OGC API - Records via GitHub"
   },
   {
-    "objectID": "slides/fun-way-of-spatial-cataloguing.html#mapserver",
-    "href": "slides/fun-way-of-spatial-cataloguing.html#mapserver",
-    "title": "pygeometa project status 2025",
-    "section": "MapServer",
-    "text": "MapServer\n\nMapserver is used to let users interact with data through WMS/WFS\nMetadata generates MapServer configuration\nMap service endpoint is added to metadata\nMapServer is fully aligned with the catalogue"
+    "objectID": "slides/pygeometa-foss4g-2024.html#participatory-metadata-management-1",
+    "href": "slides/pygeometa-foss4g-2024.html#participatory-metadata-management-1",
+    "title": "pygeometa project status",
+    "section": "Participatory metadata management",
+    "text": "Participatory metadata management"
   },
   {
-    "objectID": "slides/fun-way-of-spatial-cataloguing.html#terriajs-a-web-based-gis",
-    "href": "slides/fun-way-of-spatial-cataloguing.html#terriajs-a-web-based-gis",
-    "title": "pygeometa project status 2025",
+    "objectID": "slides/pygeometa-foss4g-2024.html#mcf-for-mapserver-configuration",
+    "href": "slides/pygeometa-foss4g-2024.html#mcf-for-mapserver-configuration",
+    "title": "pygeometa project status",
+    "section": "MCF for MapServer configuration",
+    "text": "MCF for MapServer configuration\n\nUse the metadata to generate MapServer mapfile configuration\nAdd the generated map endpoint to the metadata\nMapServer is fully aligned with the catalogue"
+  },
+  {
+    "objectID": "slides/pygeometa-foss4g-2024.html#terriajs-a-web-based-gis",
+    "href": "slides/pygeometa-foss4g-2024.html#terriajs-a-web-based-gis",
+    "title": "pygeometa project status",
     "section": "TerriaJS, a web-based GIS",
     "text": "TerriaJS, a web-based GIS\n\nThe project uses TerriaJS as a data viewer\nTerriaJS includes a CSW Catalogue search and links back to the catalogue via WMS capabilities\nExtra integration via ‘Add data to viewer’ from catalogue page"
   },
   {
-    "objectID": "slides/fun-way-of-spatial-cataloguing.html#terriajs",
-    "href": "slides/fun-way-of-spatial-cataloguing.html#terriajs",
-    "title": "pygeometa project status 2025",
+    "objectID": "slides/pygeometa-foss4g-2024.html#terriajs",
+    "href": "slides/pygeometa-foss4g-2024.html#terriajs",
+    "title": "pygeometa project status",
     "section": "TerriaJS",
-    "text": "TerriaJS\n\n\n\nTerriaJS"
+    "text": "TerriaJS\n\nTerriaJS"
   },
   {
-    "objectID": "slides/fun-way-of-spatial-cataloguing.html#workflow",
-    "href": "slides/fun-way-of-spatial-cataloguing.html#workflow",
-    "title": "pygeometa project status 2025",
+    "objectID": "slides/pygeometa-foss4g-2024.html#workflow",
+    "href": "slides/pygeometa-foss4g-2024.html#workflow",
+    "title": "pygeometa project status",
     "section": "Workflow",
-    "text": "Workflow\n“No code”: Manage, verify and publish metadata using GitHub as a content management platform.\n\nMetadata files are managed as pygeometa MCF records\nGitHub Actions are used to verify, transform and publish notification messages to an MQTT broker\nFrom here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by pygeoapi) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client."
+    "text": "Workflow\n“No code”: Manage, verify and publish metadata using GitHub as a content management platform.\n\nMetadata files are managed as pygeometa MCF records\nGitHub Actions are used to verify, transform and publish notification messages to an MQTT broker\nFrom here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by pygeoapi) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client"
   },
   {
-    "objectID": "slides/fun-way-of-spatial-cataloguing.html#workflow-1",
-    "href": "slides/fun-way-of-spatial-cataloguing.html#workflow-1",
-    "title": "pygeometa project status 2025",
+    "objectID": "slides/pygeometa-foss4g-2024.html#workflow-1",
+    "href": "slides/pygeometa-foss4g-2024.html#workflow-1",
+    "title": "pygeometa project status",
     "section": "Workflow",
     "text": "Workflow"
   },
   {
-    "objectID": "slides/fun-way-of-spatial-cataloguing.html#composability",
-    "href": "slides/fun-way-of-spatial-cataloguing.html#composability",
-    "title": "pygeometa project status 2025",
+    "objectID": "slides/pygeometa-foss4g-2024.html#composability",
+    "href": "slides/pygeometa-foss4g-2024.html#composability",
+    "title": "pygeometa project status",
     "section": "Composability",
     "text": "Composability"
   },
   {
-    "objectID": "slides/fun-way-of-spatial-cataloguing.html#references",
-    "href": "slides/fun-way-of-spatial-cataloguing.html#references",
-    "title": "pygeometa project status 2025",
+    "objectID": "slides/pygeometa-foss4g-2024.html#references",
+    "href": "slides/pygeometa-foss4g-2024.html#references",
+    "title": "pygeometa project status",
+    "section": "References",
+    "text": "References\n\npygeometa\npycsw\npyGeoDataCrawler\nOGC API - Records\nMapServer\nterria.io"
+  },
+  {
+    "objectID": "slides/lschub-schematic.html#mapserver",
+    "href": "slides/lschub-schematic.html#mapserver",
+    "title": "LSC-Hub Kenya; pending topics",
+    "section": "Mapserver",
+    "text": "Mapserver\n\na spatial data server\nconfigured using map-files\ncrawler creates map-files from yml metadata\ncrawler places a link to the prepared map service in the yml metadata"
+  },
+  {
+    "objectID": "slides/lschub-schematic.html#terriajs",
+    "href": "slides/lschub-schematic.html#terriajs",
+    "title": "LSC-Hub Kenya; pending topics",
+    "section": "TerriaJS",
+    "text": "TerriaJS\n\na spatial data viewer\nconfigured using context-documents\nfacilitates catalogue searches, with option to add search result to map"
+  },
+  {
+    "objectID": "slides/lschub-schematic.html#traefik",
+    "href": "slides/lschub-schematic.html#traefik",
+    "title": "LSC-Hub Kenya; pending topics",
+    "section": "Traefik",
+    "text": "Traefik\n\nTraefik is a reverse proxy and ingress controller that makes deploying services and APIs easy\nSpecifically used for:\n\nManage the Letsencrypt certificate\nRoute the traffic from folders to containers\n\nAlso provides a nice User Interface to inspect the orchestration"
+  },
+  {
+    "objectID": "slides/lschub-schematic.html#cms-flow",
+    "href": "slides/lschub-schematic.html#cms-flow",
+    "title": "LSC-Hub Kenya; pending topics",
+    "section": "CMS flow",
+    "text": "CMS flow\n\n\n\n\n\nflowchart TD\n\nmd--&gt;|quarto| gitp[(git cms@pages)]\ngitp --&gt;|git pull| dtm[html repository]\ndtm --&gt;|nginx| website"
+  },
+  {
+    "objectID": "slides/lschub-schematic.html#repository-flow",
+    "href": "slides/lschub-schematic.html#repository-flow",
+    "title": "LSC-Hub Kenya; pending topics",
+    "section": "Repository flow",
+    "text": "Repository flow\n\n\n\n\n\nflowchart TD\n\ndf[data files] --&gt;|webdav| dtd\ndtd[data repository]--&gt;|crawler| dtm[metadata repository]\ndtm --&gt;|pycsw-admin| dbrecords[(database)]\ndbrecords --&gt;|sql| pycsw[pycsw]\ndtd--&gt;|crawler| mapserver\ndtm--&gt;|crawler| mapserver\nmapserver--&gt;|wms| terriajs\npycsw--&gt;|csw| terriajs"
+  },
+  {
+    "objectID": "slides/lschub-schematic.html#metadata-importauthoring-flow",
+    "href": "slides/lschub-schematic.html#metadata-importauthoring-flow",
+    "title": "LSC-Hub Kenya; pending topics",
+    "section": "Metadata import/authoring flow",
+    "text": "Metadata import/authoring flow\n\n\n\n\n\nflowchart TD\n\ngf[Google form] --&gt;|download| csv\ncsv--&gt;|import-csv| git[(git cat)]\next[external source] --&gt;|harvest| git\nman[manual edits] --&gt; git\ngit --&gt;|export| gitp[(git cat@pages)]\ngitp --&gt;|git pull| dtm[metadata repository]\ndtm --&gt;|pycsw-admin| dbrecords[(database)]\ndbrecords --&gt;|sql| pycsw[pycsw]"
+  },
+  {
+    "objectID": "slides/lschub-schematic.html#introducing-git-submodules",
+    "href": "slides/lschub-schematic.html#introducing-git-submodules",
+    "title": "LSC-Hub Kenya; pending topics",
+    "section": "Introducing Git Submodules",
+    "text": "Introducing Git Submodules\n\nThe rendered CMS and metadata content as iso19139 are placed in the gh-pages branch\nlschub-docker includes branches as git submodules\n\n\n\n\n\n\nflowchart LR\n\nld[lschub-docker]--&gt; gitp[(git cms@pages)]\nld--&gt; gitm[(git cat@pages)]"
+  },
+  {
+    "objectID": "slides/lschub-schematic.html#github-actions",
+    "href": "slides/lschub-schematic.html#github-actions",
+    "title": "LSC-Hub Kenya; pending topics",
+    "section": "Github Actions",
+    "text": "Github Actions\n\ntrigger at intervals or at events (push)\nrun in a container, either\n\nstart a container within that container, or\ntrigger a github action, such as crawler"
+  },
+  {
+    "objectID": "slides/lschub-schematic.html#how-to-update-vm-with-git-changes",
+    "href": "slides/lschub-schematic.html#how-to-update-vm-with-git-changes",
+    "title": "LSC-Hub Kenya; pending topics",
+    "section": "How to update VM with GIT changes",
+    "text": "How to update VM with GIT changes\n\nRun script at intervals\nLet GIT pipeline trigger update\n\nupload via webdav\nprovide api\nusing SSH (ansible)\n\n\nSimilar question for uploads via Webdav"
+  },
+  {
+    "objectID": "slides/lschub-schematic.html#which-certificate-to-use-for-test-environment",
+    "href": "slides/lschub-schematic.html#which-certificate-to-use-for-test-environment",
+    "title": "LSC-Hub Kenya; pending topics",
+    "section": "Which certificate to use for test environment",
+    "text": "Which certificate to use for test environment\n\nIntroduce the test environment\nTest is not available from web, which is a requirement for letsencrypt\nthe kalro certificate is available, how to configure it on traefik"
+  },
+  {
+    "objectID": "slides/lschub-schematic.html#quality-monitoring",
+    "href": "slides/lschub-schematic.html#quality-monitoring",
+    "title": "LSC-Hub Kenya; pending topics",
+    "section": "Quality monitoring",
+    "text": "Quality monitoring\n\nAvailability (uptimerobot)\nUsage\nBroken links"
+  },
+  {
+    "objectID": "slides/lschub-schematic.html#backups",
+    "href": "slides/lschub-schematic.html#backups",
+    "title": "LSC-Hub Kenya; pending topics",
+    "section": "Backups",
+    "text": "Backups\n\nPostgres does not need to be backed up, because source is in Git\nFiles uploaded through webdav should be backed up\nAccess/Error logs could be backed up"
+  },
+  {
+    "objectID": "slides/lschub-schematic.html#supporting-services",
+    "href": "slides/lschub-schematic.html#supporting-services",
+    "title": "LSC-Hub Kenya; pending topics",
+    "section": "Supporting services",
+    "text": "Supporting services\n\nOSM/Image backdrop (maptiler, bing maps, …)\n3D canvas (cesium)\nlocation search (nominatim?)"
+  },
+  {
+    "objectID": "slides/lschub-schematic.html#will-the-kalro-repositories-be-private",
+    "href": "slides/lschub-schematic.html#will-the-kalro-repositories-be-private",
+    "title": "LSC-Hub Kenya; pending topics",
+    "section": "Will the kalro repositories be private?",
+    "text": "Will the kalro repositories be private?\n\nthe repositories should not contain sensitive information\nopen repositories enable users to flag issues\nespeccially the lschub-catalogue would benefit from remote contribution\nnow we use github.com/lsc-hubs/kenya-hub for issues"
+  },
+  {
+    "objectID": "slides/lschub-github-page.html#fork-repository",
+    "href": "slides/lschub-github-page.html#fork-repository",
+    "title": "A website on Github.io",
+    "section": "Fork repository",
+    "text": "Fork repository\n\nCreate a github username or login\nfork repository https://github.com/lsc-hubs/quarto-template (set sensible name)\ncreate branch ‘gh-pages’ (from branches)\nenable actions (from actions)"
+  },
+  {
+    "objectID": "slides/lschub-github-page.html#trigger-an-action",
+    "href": "slides/lschub-github-page.html#trigger-an-action",
+    "title": "A website on Github.io",
+    "section": "Trigger an action",
+    "text": "Trigger an action\n\nmake a change on and md file and commit/push"
+  },
+  {
+    "objectID": "slides/lschub-github-page.html#check-result",
+    "href": "slides/lschub-github-page.html#check-result",
+    "title": "A website on Github.io",
+    "section": "Check result",
+    "text": "Check result\n\nnavigate to https://{username}.github.io/{reponame} (it may take a while)\n\nIf failed, check the logs (probably you have to give write privileges to the ci-cd at user and project level)"
+  },
+  {
+    "objectID": "slides/lschub-github-page.html#add-some-interesting-content",
+    "href": "slides/lschub-github-page.html#add-some-interesting-content",
+    "title": "A website on Github.io",
+    "section": "Add some interesting content",
+    "text": "Add some interesting content\n\nadd extra pages\nlink between pages using [ title ] ( target.md )\nadd an image using ![ title ] ( image.png )"
+  },
+  {
+    "objectID": "slides/index.html",
+    "href": "slides/index.html",
+    "title": "some slide decks",
+    "section": "",
+    "text": "A website on Github.io\n\n\n\n\n\n\n\n\n\n\n\nAug 5, 2025\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\n\n\n\n\n\n\nAbandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects\n\n\nEGU25 ESSI3.2: One decade of FAIR Principles: Data Reusability and Impact in Earth System Sciences\n\n\n\n\n\n\n\n\nApr 30, 2025\n\n\nMickael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR intro for Digital Soil Mapping\n\n\ngo-fair.org, a practical exercise\n\n\n\n\n\n\n\n\nMar 19, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nLSC-Hub Kenya; pending topics\n\n\n\n\n\n\n\n\n\n\n\nAug 6, 2025\n\n\nvan Genuchten, P.\n\n\n\n\n\n\n\n\n\n\n\n\nLSC-Hub components overview\n\n\n\n\n\n\n\n\n\n\n\nAug 5, 2025\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\n\n\n\n\n\n\nLSC-Hub development overview\n\n\n\n\n\n\n\n\n\n\n\nAug 5, 2025\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata for the rest of us\n\n\nFOSS4G Europe Conference, Tartu, Estonia\n\n\n\n\n\n\n\n\nFeb 29, 2024\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Source at ISRIC - World Soil Information\n\n\nFOSS4G NL, Wageningen\n\n\n\n\n\n\n\n\nJul 3, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\n\n\n\n\n\n\n\n\n\nMay 20, 2024\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\n\n\n\n\n\n\nSDI maintenance DevOps style\n\n\nInspired and facilitated by Open Source\n\n\nAt ISRIC - World Soil Information we increasingly maintain our data services through CI-CD pipelines configured via GIT. Both from the service as well as content perspective. The starting point are metadata records of our datasets being stored on GIT. With every change of a record, the relevant catalogues (pycsw) get updated and any relevant web services (mapserver) are updated. These pipelines are reproducable and there are never inconsistencies between catalogue content and the services. On top of that our users can directly report issues (or even improvement suggestions) through git. The stack is build on proven OSGeo components. A tool pyGeoDataCrawler brings the power of GDAL and pygeometa to CI-CD scripting. It crawls files on a folder and extracts relevant metadata, then prepares a mapserver configuration for that folder, while updating the metadata with the relevant service url’s. Typical use cases for this stack are; a search interface to any file based data repository or a participatory data catalogue for a project. At the conference we hope to hear from you if any of these components could be relevant to your cases or if there are similar initiatives we can contribute to or benefit from. What’s next? At ISRIC we receive and ingest a lot of soil data from partners. To harmonize this data is a huge effort. Via automated pipelines and interaction with the submitters via git comments, we hope to improve also this aspect of the data management cycle.\n\n\n\n\n\nJul 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nSoil Information System for Africa\n\n\nUpdating soil information for Africa: supporting agriculture and promoting synergies\n\n\n\n\n\n\n\n\nDec 1, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nSoilWise HE progress report\n\n\nISRIC Fruitfull may 6th 2025\n\n\n\n\n\n\n\n\nMay 6, 2025\n\n\nFenny van Egmond, Thaisa van der Woude, Paul van Genuchten, Jiarong Li\n\n\n\n\n\n\n\n\n\n\n\n\nSoilwise & Metadata\n\n\nMetadata in Horizon Europe projects (Soil Mission)\n\n\n\n\n\n\n\n\nJun 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nNov 20, 2025\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nJul 18, 2025\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nDec 6, 2024\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status 2025\n\n\nA fun way to do spatial cataloguing\n\n\n\n\n\n\n\n\nJul 18, 2025\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/egu-fair-25.html#use-cases",
+    "href": "slides/egu-fair-25.html#use-cases",
+    "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
+    "section": "Use Cases",
+    "text": "Use Cases\n\nWhile publishing a dataset of a field campaign, indicate the properties observed, using which procedure\nUse common vocabularies for indicating the properties and procedures\nIn data model metadata use the same terms to annotate the columns\nObservations are used to create property distribution maps, use the method and property vocabularies to indicate the source data for the map"
+  },
+  {
+    "objectID": "slides/egu-fair-25.html#fair-considerations",
+    "href": "slides/egu-fair-25.html#fair-considerations",
+    "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
+    "section": "FAIR considerations",
+    "text": "FAIR considerations\n\nFindable\n\nRegister vocabulary in a vocab registry (fairsharing.org)\nConcepts and Lists should have persistent identifiers (DOI/W3ID)\n\nAccessible\n\nOpen format (json/xml/ttl/csv)\n\nInteroperable\n\nSKOS ontology\nLinkage to same and similar terms (prevent duplication)\n\nReusable\n\nOpen License (CC-0, CC-by)\nHuman friendly browsing (vocbench, skosmos)"
+  },
+  {
+    "objectID": "slides/egu-fair-25.html#challenges",
+    "href": "slides/egu-fair-25.html#challenges",
+    "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
+    "section": "Challenges",
+    "text": "Challenges\n\nWe have standardisation insitutes (iso, gsp, iuss) but they are quite disconnected from FAIR practices\nHistorically vocabularies were defined as a list with a version number, terms were referenced by the list version. These days terms are identified individually and can occur in multiple lists.\nThe SKOS ontology is highly expressive but tools to work with it are not widely adopted"
+  },
+  {
+    "objectID": "slides/egu-fair-25.html#stakeholders",
+    "href": "slides/egu-fair-25.html#stakeholders",
+    "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
+    "section": "Stakeholders",
+    "text": "Stakeholders\n\nStandardisation bodies (ISO11074:2025)\nLegal texts / EU Soil monitoring law (Gemet/Eurovoc)\nAcademic community (IUSS / WRB)\nUN global community (Agrovoc, GSP, Glosolan)"
+  },
+  {
+    "objectID": "slides/egu-fair-25.html#role-of-research-projects",
+    "href": "slides/egu-fair-25.html#role-of-research-projects",
+    "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
+    "section": "Role of research projects",
+    "text": "Role of research projects\n\nCan setup initial version of a vocabulary\nCan not own a vocabulary, due to the temporary character and lack of authority\nCan proove effectiveness of new approaches\nCan set up and endorse strategy on vocabulary development/adoption"
+  },
+  {
+    "objectID": "slides/egu-fair-25.html#glossary-alignment-a-typical-project-startup-activity",
+    "href": "slides/egu-fair-25.html#glossary-alignment-a-typical-project-startup-activity",
+    "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
+    "section": "Glossary alignment, a typical project startup activity",
+    "text": "Glossary alignment, a typical project startup activity\n\nUnderstand if terms are already listed in other vocabularies\nIf so, adopt their definition, reference them as ‘sameAs’ or ‘closeMatch’\nConsider to report back to the common vocabularies if there is not a full match, maybe a narrower term should be defined"
+  },
+  {
+    "objectID": "slides/egu-fair-25.html#current-initiatives-aiming-to-align-efforts-on-vocabulary-development",
+    "href": "slides/egu-fair-25.html#current-initiatives-aiming-to-align-efforts-on-vocabulary-development",
+    "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
+    "section": "Current initiatives aiming to align efforts on vocabulary development",
+    "text": "Current initiatives aiming to align efforts on vocabulary development\n\nISLANDR\nMarvic\nSoilwise\nEJP Soil"
+  },
+  {
+    "objectID": "slides/abandoned-web.html#a-broken-link-from-a-report",
+    "href": "slides/abandoned-web.html#a-broken-link-from-a-report",
+    "title": "Abandonded Project Websites -> no",
+    "section": "A broken link from a report?",
+    "text": "A broken link from a report?\n\nor worse, arrive in an online casino from a link in a report?\nmany websites are abandoned few years after project finish\nwebsite builders should show ownership of domains they create\nreport writers should not link to dodgy locations (aka project websites)"
+  },
+  {
+    "objectID": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
+    "href": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
+    "title": "Abandonded Project Websites -> no",
+    "section": "An initiative to recover lost content",
+    "text": "An initiative to recover lost content\n\nIdentify which websites with usefull information are lost\nRecover the content from archive.org or organisation backups\nReclaim the domains (restore linkage)\nJoin the efforts at github.com/soil-on-web/abandoned-webs"
+  },
+  {
+    "objectID": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
+    "href": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
+    "title": "Abandonded Project Websites -> no",
+    "section": "Good practices on url persistence of project websites",
+    "text": "Good practices on url persistence of project websites\n\nuse a subdomain of an established organisation\nuse a persistent identifier framework, when linking to external sources\nset up rewrite rules at website cancelation\nuse minimal technology, yes: html; no: wordpress, liferay, …\nkeep the content minimal, link to external (persistent) resources\npre-pay the domain ownership for at least the upcoming 10 years"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#isric---world-soil-information",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#isric---world-soil-information",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "ISRIC - World Soil Information",
+    "text": "ISRIC - World Soil Information\n\nFoundation funded by Dutch Government to maintain a global collection of reference soil samples (ISIS)\nCollect and harmonize soil observation data from around the globe (WOSIS)\nGlobally predict the distribution of soil properties (Soilgrids)\nCapacity building on soil data management at soil institutes around the globe (Academy)\nParticipate in research projects to innovate the soil sciences"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#world-soil-museum",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#world-soil-museum",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "World Soil Museum",
+    "text": "World Soil Museum\n\nWorld Soil Museum by tinker.nl"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#typical-use-cases-for-foss4g-software",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#typical-use-cases-for-foss4g-software",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Typical use cases for FOSS(4G) software",
+    "text": "Typical use cases for FOSS(4G) software\n\nField data collection (OpenDataKit)\nHarmonize soil data (Hale, PostGres)\nPredict soil property distribution (R, Terra, GDAL)\nCataloguing (pygeometa, pycsw, geonetwork)\nData API’s (Mapserver, FastAPI, Virtuoso)\nContent management (Quarto, Drupal)\nGIS viewers (QGIS, Leaflet, TerriaJS)"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#osgeo-and-open-geospatial-consortium",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#osgeo-and-open-geospatial-consortium",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "OSGeo and Open GeoSpatial Consortium",
+    "text": "OSGeo and Open GeoSpatial Consortium\n\nThe OGC community provides standards for data api’s & data formats\nAs independent foundation we aim to be neutral to software vendors, offered by standardised api’s\nOSGeo tools are commonly OGC compliant, many innovations at OGC are driven by open source software\nOpen formats enable future backwards compatibility for today’s datasets"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#relevant-ogc-standards",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#relevant-ogc-standards",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Relevant OGC standards",
+    "text": "Relevant OGC standards\n\nWeb Map Service, Web Coverage Service, Web Feature service, Catalogue service for the web\nSensor Observation Service (INSPIRE Soil is based on Observations&Measurements)\nGeoPackage (See INSPIRE Good Practice on GeoPackage)\nStyled Layer Descriptor (SLD)\nCloud Optimised GeoTiff (COG)\nOGC API - Records / STAC"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#ogc-and-fair",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#ogc-and-fair",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "OGC and FAIR",
+    "text": "OGC and FAIR\n\nFAIR principles are popular in academia (and beyond)\nFAIR and OGC pursue slightly different goals, however OGC recently started a working group on open science\nAcademia assumes a dataset as a stable set of records, identified with a persistant identifier (DOI)\nNovel data formats allow subsetting via range requests, they may facilitate both uses (GeoParquet, COG)\nAlignment of vocabularies is relevant for both communities, not many tooling available (SKOS)"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#about-me-a-shift-from-osgeo-developer-to-osgeo-user",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#about-me-a-shift-from-osgeo-developer-to-osgeo-user",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "About me; a Shift from OSGeo developer to OSGeo user",
+    "text": "About me; a Shift from OSGeo developer to OSGeo user\n\n3yrs ago, I shifted from software developer to software user\nCurrent tasks are Data science, DevOps\nNext slides present some experiences around OSGeo software from a user perspective"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#mapserver",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#mapserver",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Mapserver",
+    "text": "Mapserver\n\nWe work with a consultant from the mapserver developer community for expert advice and development\nSLD support, you can now use a SLD file (from QGIS) to configure the style of a layer\nCurrently working on Mapserver Homepage, presenting a list of the services available in a server\nI’m not following the mailinglist as much as needed"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#terriajs",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#terriajs",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "TerriaJS",
+    "text": "TerriaJS\n\nWe use TerriaJS in 5-10 websites. Mostly to share our data products to potential users and stakeholders.\nAny frontend application typically has many potential improvements\nEspecially improvements around OGC interactions best be merged upstream\nThe TerriaJS community is not very aware of OGC standards, so it requires quite communication to land a Pull Request\nWe work with a frontend developer not related to the project, because it was difficult to reach out to direct contributors"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#ckan",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#ckan",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "CKAN",
+    "text": "CKAN\n\nUniversity-support deployed a default instance of CKAN (+SOLR), however it appeared difficult to customise\nWe consulted a regional company knowledgable on CKAN implementations, they advised us to use the CKAN backend only and build a dedicated frontend\nThe spatial modules of CKAN seem not maintained\nWe decided not to continue with CKAN for now"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#pycsw",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#pycsw",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "pycsw",
+    "text": "pycsw\n\nA minimalistic catalogue implementation, but very focussed on OGC standards support\nFrom introduction of OGC API’s, pycsw now has a user interface\nSometimes I get complaints that it is not as full featured as CKAN, but it’s not easy to understand what’s actually missing\nWe contributed to adding facet filters on OGC API Records and in pycsw\nA group in Norway is implementing a SOLR backend for pycsw, SOLR will improve search experience on large catalogues"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#cloud-optimised-geotiff-gdal",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#cloud-optimised-geotiff-gdal",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Cloud Optimised Geotiff / GDAL",
+    "text": "Cloud Optimised Geotiff / GDAL\n\nTiff is an important format for us, we have 100’s of GB of tiff data\nPreviously we would use tiff image pyramids to store global data, now switching to COG\nMapserver with a COG backend is many times faster then a plain tiff backend\nDirect access from web to COG is not feasible yet, because our tiff data does not use a mercator projection, many repositories do not allow CORS\nWe’re open to suggestions…"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#apache-superset",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#apache-superset",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Apache Superset",
+    "text": "Apache Superset\n\nI really enjoy creating diagrams of arbitrary data\nUnfortunate that Superset is quite a complex tool with many dependencies (redis, postgres)"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#humboldt-alignment-editor-hale",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#humboldt-alignment-editor-hale",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Humboldt Alignment Editor (HALE)",
+    "text": "Humboldt Alignment Editor (HALE)\n\nHale is an ETL tool for rich UML data models, such as soil observation data\nDevelopers tend to focus on exporting postgres data to INSPIRE GML, but our use case is often vice versa\nThe Wetransform team team supported us with a training and Q&A\nWith the experts available, we were productive in 2 days. It was crucial, GML has its peculiarities\nI notice our data scientists prefer data migration through R/Python scripts. However I see value in a visual Hale approach."
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#quarto",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#quarto",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Quarto",
+    "text": "Quarto\n\nStatic Site Generators fit our approach very well, performant, stable, secure\nSome colleagues have challenges with the markdown in gitlab (and prefer wordpress)\nIntially we started with hugo\nQuarto was used by our data scientists for documentation\nQuarto is less flexible, full featured, it generated these slides"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#questions-comments",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#questions-comments",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Questions / Comments",
+    "text": "Questions / Comments\nFollow the links in the slides for more details…"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#about-us",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#about-us",
+    "title": "pygeometa project status",
+    "section": "About us",
+    "text": "About us\n\nTom Kralidis, Senior Geospatial Architect, Meteorological Service of Canada, OSGeo Board of Directors\nPaul van Genuchten, SDI specialist at ISRIC - World Soil Information, the Netherlands"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#intro-to-pygeometa",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#intro-to-pygeometa",
+    "title": "pygeometa project status",
+    "section": "Intro to pygeometa",
+    "text": "Intro to pygeometa\n\nPython package to manage metadata for geospatial datasets\nCreated in 2009\nOriginally named “pygdm” as part of larger internal geospatial data management workflow at Environment Canada\nPulled out as a standalone project (pygeometa) in 2014\nPublished to GitHub in 2015"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#architecture",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#architecture",
+    "title": "pygeometa project status",
+    "section": "Architecture",
+    "text": "Architecture\n\n\n\n\n\nHow pygeometa works"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf",
+    "title": "pygeometa project status",
+    "section": "The Metadata Control File (MCF)",
+    "text": "The Metadata Control File (MCF)\n{.fragment width=“100” .fig-align=“left”}"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf-1",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf-1",
+    "title": "pygeometa project status",
+    "section": "The Metadata Control File (MCF)",
+    "text": "The Metadata Control File (MCF)\n\nagnostic to any metadata format (abstract model)\nplain old YAML\nmigrated from .ini format in 0.2\nmultilingual support for text-based properties"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf-2",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf-2",
+    "title": "pygeometa project status",
+    "section": "The Metadata Control File (MCF)",
+    "text": "The Metadata Control File (MCF)\n\nbenefits from YAML features (anchors, references)\ndefined by a JSON schema\n\nmodel driven metadata workflow\nUIs\nin memory pipelines\n\noptimal for CI/CD and Git workflows (edit/publish)"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#supported-formats",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#supported-formats",
+    "title": "pygeometa project status",
+    "section": "Supported formats",
+    "text": "Supported formats\n\nDataset metadata\n\nISO 19115 / 19139 (rw)\nISO 19115-2 (w)\nWMO Core Metadata Profile\nOGC API - Records (rw)\nDCAT (w)\n\nGranule metadata\n\nSTAC (w)\n\nObserving Station metadata\n\nWMO WIGOS Metadata Standard (w)"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#pygeoapi-plugin",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#pygeoapi-plugin",
+    "title": "pygeometa project status",
+    "section": "pygeoapi plugin",
+    "text": "pygeoapi plugin\n\nfunctions exposed as OGC API - Processes endpoints via pygeoapi\nin pygeometa/pygeoapi_plugin.py\nlive examples on pygeoapi demo server\n\n{.fragment width=“100” .fig-align=“left”}"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#formats-and-extensibility",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#formats-and-extensibility",
+    "title": "pygeometa project status",
+    "section": "Formats and extensibility",
+    "text": "Formats and extensibility\n\nCan be any format/representation\nextending pygeometa.schemas.base.BaseOutputSchema\nGeneration is encapsulated\n\nXML: Jinja2\nJSON: Python json"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#recent-updates",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#recent-updates",
+    "title": "pygeometa project status",
+    "section": "Recent updates",
+    "text": "Recent updates\n\n0.19.0 (November 2025)\n\nsupport for schema.org\nupdate to Python 3.12\n\n0.18.0 (September 2025)\n\nsupport for Common Workflow Language (CWL)\n\n0.17.0 (July 2025)\n\nsupport for metadata autodetection"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#value-proposition-for-yaml-based-metadata-management",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#value-proposition-for-yaml-based-metadata-management",
+    "title": "pygeometa project status",
+    "section": "Value proposition for YAML based metadata management",
+    "text": "Value proposition for YAML based metadata management\n\nYAML is an optimal format for Git version control\nGit offers a fully traceable catalogue\nFile based metadata is easy to update with “search and replace”\n\nYAML can be composed and published in memory for automated pipelines"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#workflow-examples",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#workflow-examples",
+    "title": "pygeometa project status",
+    "section": "Workflow examples",
+    "text": "Workflow examples\n\nData explosion = metadata explosion\nTraditional workflow:\n\nstatic discovery metadata\n\nReal-time workflow:\n\nMomentum data\nOn-the-fly generation\nShip with or without payload"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#metadata-publication-use-cases",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#metadata-publication-use-cases",
+    "title": "pygeometa project status",
+    "section": "Metadata publication use cases",
+    "text": "Metadata publication use cases\nWe present 3 use cases to demonstrate the value of this approach:\n\nLand Soil Crop hubs (LSC)\nEarth Observation Exploitation Platform Common Architecture (EOEPCA)\nWMO Information System (WIS2)"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#land-soil-crop-hubs",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#land-soil-crop-hubs",
+    "title": "pygeometa project status",
+    "section": "Land Soil Crop hubs",
+    "text": "Land Soil Crop hubs\n\nPart of an EU funded research project, DeSIRA, to improve data sharing in the Land Soil Crop domain in East Africa\nImprove data & resources discovery, which are relevant to improve agriculture in East Africa"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#participatory-metadata-management",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#participatory-metadata-management",
+    "title": "pygeometa project status",
+    "section": "Participatory metadata management",
+    "text": "Participatory metadata management"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#pycsw",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#pycsw",
+    "title": "pygeometa project status",
+    "section": "pycsw",
+    "text": "pycsw\n\n\n\nRwanda LSC Catalogue"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#participatory-metadata-management-1",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#participatory-metadata-management-1",
+    "title": "pygeometa project status",
+    "section": "Participatory metadata management",
+    "text": "Participatory metadata management\n\nUsers initially provided metadata as lists in Microsoft Excel\nExcel rows converted to MCF and loaded to pycsw\nMCF Metadata is hosted in GitHub\nUsers contribute content (or register issues about content)"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#wmo-information-system-wis2",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#wmo-information-system-wis2",
+    "title": "pygeometa project status",
+    "section": "WMO Information System (WIS2)",
+    "text": "WMO Information System (WIS2)\n\nWMO WIS2 is a next generation data exchange system for Earth system data (weather/climate/water)\nEvent driven (Pub/Sub, MQTT), driven by OGC API - Records metadata and publication\nSet of tools adopted by regional weather offices to build up a global system"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#workflow-i",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#workflow-i",
+    "title": "pygeometa project status",
+    "section": "Workflow I",
+    "text": "Workflow I\n“No code”: Manage, verify and publish metadata using GitHub as a content management platform.\n\nMetadata files are managed as pygeometa MCF records\nGitHub Actions are used to verify, transform and publish notification messages to an MQTT broker\nFrom here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by pygeoapi) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client."
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#workflow-ii",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#workflow-ii",
+    "title": "pygeometa project status",
+    "section": "Workflow II",
+    "text": "Workflow II"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#takeaways",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#takeaways",
+    "title": "pygeometa project status",
+    "section": "Takeaways",
+    "text": "Takeaways\n\npygeometa is a small, ligthweight and composable metadata management utility\nMCF is an interesting and useful metadata format for embedded metadata in local file repositories\nGit storage and CI-CD workflows are a traceable, reproducible and participatory approach for metadata management\nOGC API - Records offers a clean machine and human friendly interface to metadata\n\npycsw\npygeoapi\nGeoNetwork Opensource"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#composability",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#composability",
+    "title": "pygeometa project status",
+    "section": "Composability",
+    "text": "Composability"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#references",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#references",
+    "title": "pygeometa project status",
+    "section": "References",
+    "text": "References\n\npygeometa\npycsw.org\npyGeoDataCrawler\nOGC API - Records\nmapserver.org\nterria.io"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Select your deck:",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nAug 5, 2025\n\n\nA website on Github.io\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\nNov 4, 2023\n\n\nAbandonded Project Websites -&gt; no\n\n\nPaul van Genuchten\n\n\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\nApr 30, 2025\n\n\nFAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects\n\n\nMickael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten\n\n\n\n\n\n\nMar 19, 2025\n\n\nFAIR intro for Digital Soil Mapping\n\n\nPaul van Genuchten\n\n\n\n\n\n\nAug 6, 2025\n\n\nLSC-Hub Kenya; pending topics\n\n\nvan Genuchten, P.\n\n\n\n\n\n\nAug 5, 2025\n\n\nLSC-Hub components overview\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\nAug 5, 2025\n\n\nLSC-Hub development overview\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\nFeb 29, 2024\n\n\nMetadata for the rest of us\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\nJul 3, 2025\n\n\nOpen Source at ISRIC - World Soil Information\n\n\nPaul van Genuchten\n\n\n\n\n\n\nMay 20, 2024\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\nJul 3, 2024\n\n\nSDI maintenance DevOps style\n\n\nPaul van Genuchten\n\n\n\n\n\n\nDec 1, 2025\n\n\nSoil Information System for Africa\n\n\nPaul van Genuchten\n\n\n\n\n\n\nMay 6, 2025\n\n\nSoilWise HE progress report\n\n\nFenny van Egmond, Thaisa van der Woude, Paul van Genuchten, Jiarong Li\n\n\n\n\n\n\nJun 3, 2024\n\n\nSoilwise & Metadata\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNov 13, 2023\n\n\nWorkshop pygeoapi\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNov 20, 2025\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nJul 18, 2025\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nDec 6, 2024\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nJul 18, 2025\n\n\npygeometa project status 2025\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\n\n\n \n\n\ntype: default\n\n\n \n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#about-us",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#about-us",
+    "title": "pygeometa project status",
+    "section": "About us",
+    "text": "About us\n\nTom Kralidis, Senior Geospatial Architect, Meteorological Service of Canada, OSGeo Board of Directors\nPaul van Genuchten, SDI specialist at ISRIC - World Soil Information, the Netherlands"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#intro-to-pygeometa",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#intro-to-pygeometa",
+    "title": "pygeometa project status",
+    "section": "Intro to pygeometa",
+    "text": "Intro to pygeometa\n\nPython package to manage metadata for geospatial datasets\nCreated in 2009\nOriginally named “pygdm” as part of larger internal geospatial data management workflow at Environment Canada\nPulled out as a standalone project (pygeometa) in 2014\nPublished to GitHub in 2015"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#architecture",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#architecture",
+    "title": "pygeometa project status",
+    "section": "Architecture",
+    "text": "Architecture\n\n\n\n\n\nHow pygeometa works"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#the-metadata-control-file-mcf",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#the-metadata-control-file-mcf",
+    "title": "pygeometa project status",
+    "section": "The Metadata Control File (MCF)",
+    "text": "The Metadata Control File (MCF)\n{.fragment width=“100” .fig-align=“left”}"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#the-metadata-control-file-mcf-1",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#the-metadata-control-file-mcf-1",
+    "title": "pygeometa project status",
+    "section": "The Metadata Control File (MCF)",
+    "text": "The Metadata Control File (MCF)\n\nagnostic to any metadata format (abstract model)\nplain old YAML\nmigrated from .ini format in 0.2\nmultilingual support for text-based properties"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#the-metadata-control-file-mcf-2",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#the-metadata-control-file-mcf-2",
+    "title": "pygeometa project status",
+    "section": "The Metadata Control File (MCF)",
+    "text": "The Metadata Control File (MCF)\n\nbenefits from YAML features (anchors, references)\ndefined by a JSON schema\n\nmodel driven metadata workflow\nUIs\nin memory pipelines\n\noptimal for CI/CD and Git workflows (edit/publish)"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#supported-formats",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#supported-formats",
+    "title": "pygeometa project status",
+    "section": "Supported formats",
+    "text": "Supported formats\n\nDataset metadata\n\nISO 19115 / 19139 (rw)\nISO 19115-2 (w)\nWMO Core Metadata Profile\nOGC API - Records (rw)\nDCAT (w)\n\nGranule metadata\n\nSTAC (w)\n\nObserving Station metadata\n\nWMO WIGOS Metadata Standard (w)"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#formats-and-extensibility",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#formats-and-extensibility",
+    "title": "pygeometa project status",
+    "section": "Formats and extensibility",
+    "text": "Formats and extensibility\n\nCan be any format/representation\nextending pygeometa.schemas.base.BaseOutputSchema\nGeneration is encapsulated\n\nXML: Jinja2\nJSON: Python json"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#what-if",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#what-if",
+    "title": "pygeometa project status",
+    "section": "What if…",
+    "text": "What if…"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#from-mcf-to-catalogue",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#from-mcf-to-catalogue",
+    "title": "pygeometa project status",
+    "section": "From MCF to catalogue",
+    "text": "From MCF to catalogue\n\nData scientists maintain MCF as a sidecar to their data\nWorkflows ingest and convert using pygeometa\nMetadata is then loaded on a catalogue\n\npycsw via pycsw-admin.py\npygeoapi via Elasticsearch or TinyDB\nGeOnetwork via file / folder harvest\n\nGit backed storage, enables direct feedback and improvement from catalogue"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#colleagues-like-mcf",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#colleagues-like-mcf",
+    "title": "pygeometa project status",
+    "section": "Colleagues like MCF?",
+    "text": "Colleagues like MCF?\n\nSome expect shiny webforms, like LinkedIn/Facebook\nNot used to YAML syntax\nEnter mdme, the Model Driven Metadata Editor / web application for geospatial metadata"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#web-editor-for-mcf",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#web-editor-for-mcf",
+    "title": "pygeometa project status",
+    "section": "Web editor for MCF",
+    "text": "Web editor for MCF\n\nmdmeosgeo.github.io/mdme"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#tech-colleagues-like-mcf",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#tech-colleagues-like-mcf",
+    "title": "pygeometa project status",
+    "section": "Tech colleagues like MCF?",
+    "text": "Tech colleagues like MCF?\n\nYAML is an optimal format for Git version control\nGit offers a fully traceable catalogue\nFile based metadata is easy to update with “search and replace”\n\nYAML can be composed and published in memory for automated pipelines"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#problem-setting",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#problem-setting",
+    "title": "pygeometa project status",
+    "section": "Problem setting",
+    "text": "Problem setting\nYou will find many (geospatial) metadata standards out there\n\nFGDC CSDGM\nNASA DIF\nISO 19115 / 19139\nWMO, HNAP, etc.\nDublin Core\nDCAT\nOGC CSW\nOGC API - Records\nSTAC"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#challenges",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#challenges",
+    "title": "pygeometa project status",
+    "section": "Challenges",
+    "text": "Challenges\n\nGranularity and organization\nDatasets\nEO domains\ntypes\n\ncollections / sensors / acquisitions\nstations, observations\nservices\nprocesses\nanything!\n\nlifecycle"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#workflows",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#workflows",
+    "title": "pygeometa project status",
+    "section": "Workflows",
+    "text": "Workflows\n\nData explosion = metadata explosion\nTraditional workflow:\n\nstatic discovery metadata\n\nReal-time workflow:\n\nMomentum data\nOn-the-fly generation\nShip with or without payload"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#metadata-publication-use-cases",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#metadata-publication-use-cases",
+    "title": "pygeometa project status",
+    "section": "Metadata publication use cases",
+    "text": "Metadata publication use cases\nWe present 3 use cases to demonstrate the value of this approach:\n\nLand Soil Crop hubs (LSC)\nEarth Observation Exploitation Platform Common Architecture (EOEPCA)\nWMO Information System (WIS2)"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#land-soil-crop-hubs",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#land-soil-crop-hubs",
+    "title": "pygeometa project status",
+    "section": "Land Soil Crop hubs",
+    "text": "Land Soil Crop hubs\n\nPart of an EU funded research project, DeSIRA, to improve data sharing in the Land Soil Crop domain in East Africa\nImprove data & resources discovery, which are relevant to improve agriculture in East Africa"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#participatory-metadata-management",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#participatory-metadata-management",
+    "title": "pygeometa project status",
+    "section": "Participatory metadata management",
+    "text": "Participatory metadata management"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#pycsw",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#pycsw",
+    "title": "pygeometa project status",
+    "section": "pycsw",
+    "text": "pycsw\n\n\n\nRwanda LSC Catalogue"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#participatory-metadata-management-1",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#participatory-metadata-management-1",
+    "title": "pygeometa project status",
+    "section": "Participatory metadata management",
+    "text": "Participatory metadata management\n\nUsers initially provided metadata as lists in Microsoft Excel\nExcel rows converted to MCF and loaded to pycsw\nMCF Metadata is hosted in GitHub\nUsers contribute content (or register issues about content)"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#wmo-information-system-wis2",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#wmo-information-system-wis2",
+    "title": "pygeometa project status",
+    "section": "WMO Information System (WIS2)",
+    "text": "WMO Information System (WIS2)\n\nWMO WIS2 is a next generation data exchange system for Earth system data (weather/climate/water)\nEvent driven (Pub/Sub, MQTT), driven by OGC API - Records metadata and publication\nSet of tools adopted by regional weather offices to build up a global system"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#workflow-i",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#workflow-i",
+    "title": "pygeometa project status",
+    "section": "Workflow I",
+    "text": "Workflow I\n“No code”: Manage, verify and publish metadata using GitHub as a content management platform.\n\nMetadata files are managed as pygeometa MCF records\nGitHub Actions are used to verify, transform and publish notification messages to an MQTT broker\nFrom here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by pygeoapi) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client."
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#workflow-ii",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#workflow-ii",
+    "title": "pygeometa project status",
+    "section": "Workflow II",
+    "text": "Workflow II"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#takeaways",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#takeaways",
+    "title": "pygeometa project status",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nMCF is an interesting and useful metadata format for embedded metadata in local file repositories\nGit storage and CI-CD workflows are a traceable, reproducible and participatory approach for metadata management\nOGC API - Records (in for example pycsw) offers a clean machine and human friendly interface to metadata"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#composability",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#composability",
+    "title": "pygeometa project status",
+    "section": "Composability",
+    "text": "Composability"
+  },
+  {
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#references",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#references",
+    "title": "pygeometa project status",
     "section": "References",
     "text": "References\n\npygeometa\npycsw.org v3.0b\npyGeoDataCrawler v1.3\nOGCAPI - Records v1.0\nmapserver.org v8.2\nterria.io"
-  },
-  {
-    "objectID": "slides/alliander-2023.html#about",
-    "href": "slides/alliander-2023.html#about",
-    "title": "Workshop pygeoapi",
-    "section": "About",
-    "text": "About\n\n90’s Bodemkunde Wageningen\n00’s Nieuwland GeoInformatie\n\nWebGIS at Alliander (OpenLayers, tilecache, Smallworld)\n\n10’s GeoCat BV, GeoNetwork/GeoServer\n\nProvincie Zeeland\n\n20’s ISRIC - World Soil Information"
-  },
-  {
-    "objectID": "slides/alliander-2023.html#soil-museum",
-    "href": "slides/alliander-2023.html#soil-museum",
-    "title": "Workshop pygeoapi",
-    "section": "Soil Museum",
-    "text": "Soil Museum"
-  },
-  {
-    "objectID": "slides/alliander-2023.html#soilgrids",
-    "href": "slides/alliander-2023.html#soilgrids",
-    "title": "Workshop pygeoapi",
-    "section": "Soilgrids",
-    "text": "Soilgrids"
-  },
-  {
-    "objectID": "slides/alliander-2023.html#section",
-    "href": "slides/alliander-2023.html#section",
-    "title": "Workshop pygeoapi",
-    "section": "",
-    "text": "EU research project met als doel om data rond bodem beter te gebruiken / behouden (FAIR)\nStart met onderzoeken van user stories vanuit 5 werkvelden (landbouw, onderzoek, overheid, breder publiek, business)\n\nsoilwise-he.eu"
-  },
-  {
-    "objectID": "slides/alliander-2023.html#pygeoapi",
-    "href": "slides/alliander-2023.html#pygeoapi",
-    "title": "Workshop pygeoapi",
-    "section": "pygeoapi",
-    "text": "pygeoapi\n\nPresentation\ndive.pygeoapi.io"
   },
   {
     "objectID": "slides/FAIRintro4SoilMapping.html#findable",
@@ -651,739 +1064,347 @@
     "text": "Read more\n\nFAIR principles\nEJPSoil soil data assimilation cookbook\nLSC Hubs data workshop\npygeometa\nGeoDataCrawler"
   },
   {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#about-us",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#about-us",
-    "title": "pygeometa project status",
-    "section": "About us",
-    "text": "About us\n\nTom Kralidis, Senior Geospatial Architect, Meteorological Service of Canada, OSGeo Board of Directors\nPaul van Genuchten, SDI specialist at ISRIC - World Soil Information, the Netherlands"
+    "objectID": "slides/alliander-2023.html#about",
+    "href": "slides/alliander-2023.html#about",
+    "title": "Workshop pygeoapi",
+    "section": "About",
+    "text": "About\n\n90’s Bodemkunde Wageningen\n00’s Nieuwland GeoInformatie\n\nWebGIS at Alliander (OpenLayers, tilecache, Smallworld)\n\n10’s GeoCat BV, GeoNetwork/GeoServer\n\nProvincie Zeeland\n\n20’s ISRIC - World Soil Information"
   },
   {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#intro-to-pygeometa",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#intro-to-pygeometa",
-    "title": "pygeometa project status",
-    "section": "Intro to pygeometa",
-    "text": "Intro to pygeometa\n\nPython package to manage metadata for geospatial datasets\nCreated in 2009\nOriginally named “pygdm” as part of larger internal geospatial data management workflow at Environment Canada\nPulled out as a standalone project (pygeometa) in 2014\nPublished to GitHub in 2015"
+    "objectID": "slides/alliander-2023.html#soil-museum",
+    "href": "slides/alliander-2023.html#soil-museum",
+    "title": "Workshop pygeoapi",
+    "section": "Soil Museum",
+    "text": "Soil Museum"
   },
   {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#architecture",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#architecture",
-    "title": "pygeometa project status",
-    "section": "Architecture",
-    "text": "Architecture\n\n\n\n\n\nHow pygeometa works"
+    "objectID": "slides/alliander-2023.html#soilgrids",
+    "href": "slides/alliander-2023.html#soilgrids",
+    "title": "Workshop pygeoapi",
+    "section": "Soilgrids",
+    "text": "Soilgrids"
   },
   {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#the-metadata-control-file-mcf",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#the-metadata-control-file-mcf",
-    "title": "pygeometa project status",
-    "section": "The Metadata Control File (MCF)",
-    "text": "The Metadata Control File (MCF)\n{.fragment width=“100” .fig-align=“left”}"
+    "objectID": "slides/alliander-2023.html#section",
+    "href": "slides/alliander-2023.html#section",
+    "title": "Workshop pygeoapi",
+    "section": "",
+    "text": "EU research project met als doel om data rond bodem beter te gebruiken / behouden (FAIR)\nStart met onderzoeken van user stories vanuit 5 werkvelden (landbouw, onderzoek, overheid, breder publiek, business)\n\nsoilwise-he.eu"
   },
   {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#the-metadata-control-file-mcf-1",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#the-metadata-control-file-mcf-1",
-    "title": "pygeometa project status",
-    "section": "The Metadata Control File (MCF)",
-    "text": "The Metadata Control File (MCF)\n\nagnostic to any metadata format (abstract model)\nplain old YAML\nmigrated from .ini format in 0.2\nmultilingual support for text-based properties"
+    "objectID": "slides/alliander-2023.html#pygeoapi",
+    "href": "slides/alliander-2023.html#pygeoapi",
+    "title": "Workshop pygeoapi",
+    "section": "pygeoapi",
+    "text": "pygeoapi\n\nPresentation\ndive.pygeoapi.io"
   },
   {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#the-metadata-control-file-mcf-2",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#the-metadata-control-file-mcf-2",
-    "title": "pygeometa project status",
-    "section": "The Metadata Control File (MCF)",
-    "text": "The Metadata Control File (MCF)\n\nbenefits from YAML features (anchors, references)\ndefined by a JSON schema\n\nmodel driven metadata workflow\nUIs\nin memory pipelines\n\noptimal for CI/CD and Git workflows (edit/publish)"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#supported-formats",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#supported-formats",
-    "title": "pygeometa project status",
-    "section": "Supported formats",
-    "text": "Supported formats\n\nDataset metadata\n\nISO 19115 / 19139 (rw)\nISO 19115-2 (w)\nWMO Core Metadata Profile\nOGC API - Records (rw)\nDCAT (w)\n\nGranule metadata\n\nSTAC (w)\n\nObserving Station metadata\n\nWMO WIGOS Metadata Standard (w)"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#formats-and-extensibility",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#formats-and-extensibility",
-    "title": "pygeometa project status",
-    "section": "Formats and extensibility",
-    "text": "Formats and extensibility\n\nCan be any format/representation\nextending pygeometa.schemas.base.BaseOutputSchema\nGeneration is encapsulated\n\nXML: Jinja2\nJSON: Python json"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#what-if",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#what-if",
-    "title": "pygeometa project status",
-    "section": "What if…",
-    "text": "What if…"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#from-mcf-to-catalogue",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#from-mcf-to-catalogue",
-    "title": "pygeometa project status",
-    "section": "From MCF to catalogue",
-    "text": "From MCF to catalogue\n\nData scientists maintain MCF as a sidecar to their data\nWorkflows ingest and convert using pygeometa\nMetadata is then loaded on a catalogue\n\npycsw via pycsw-admin.py\npygeoapi via Elasticsearch or TinyDB\nGeOnetwork via file / folder harvest\n\nGit backed storage, enables direct feedback and improvement from catalogue"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#colleagues-like-mcf",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#colleagues-like-mcf",
-    "title": "pygeometa project status",
-    "section": "Colleagues like MCF?",
-    "text": "Colleagues like MCF?\n\nSome expect shiny webforms, like LinkedIn/Facebook\nNot used to YAML syntax\nEnter mdme, the Model Driven Metadata Editor / web application for geospatial metadata"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#web-editor-for-mcf",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#web-editor-for-mcf",
-    "title": "pygeometa project status",
-    "section": "Web editor for MCF",
-    "text": "Web editor for MCF\n\nmdmeosgeo.github.io/mdme"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#tech-colleagues-like-mcf",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#tech-colleagues-like-mcf",
-    "title": "pygeometa project status",
-    "section": "Tech colleagues like MCF?",
-    "text": "Tech colleagues like MCF?\n\nYAML is an optimal format for Git version control\nGit offers a fully traceable catalogue\nFile based metadata is easy to update with “search and replace”\n\nYAML can be composed and published in memory for automated pipelines"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#problem-setting",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#problem-setting",
-    "title": "pygeometa project status",
-    "section": "Problem setting",
-    "text": "Problem setting\nYou will find many (geospatial) metadata standards out there\n\nFGDC CSDGM\nNASA DIF\nISO 19115 / 19139\nWMO, HNAP, etc.\nDublin Core\nDCAT\nOGC CSW\nOGC API - Records\nSTAC"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#challenges",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#challenges",
-    "title": "pygeometa project status",
-    "section": "Challenges",
-    "text": "Challenges\n\nGranularity and organization\nDatasets\nEO domains\ntypes\n\ncollections / sensors / acquisitions\nstations, observations\nservices\nprocesses\nanything!\n\nlifecycle"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#workflows",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#workflows",
-    "title": "pygeometa project status",
-    "section": "Workflows",
-    "text": "Workflows\n\nData explosion = metadata explosion\nTraditional workflow:\n\nstatic discovery metadata\n\nReal-time workflow:\n\nMomentum data\nOn-the-fly generation\nShip with or without payload"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#metadata-publication-use-cases",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#metadata-publication-use-cases",
-    "title": "pygeometa project status",
-    "section": "Metadata publication use cases",
-    "text": "Metadata publication use cases\nWe present 3 use cases to demonstrate the value of this approach:\n\nLand Soil Crop hubs (LSC)\nEarth Observation Exploitation Platform Common Architecture (EOEPCA)\nWMO Information System (WIS2)"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#land-soil-crop-hubs",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#land-soil-crop-hubs",
-    "title": "pygeometa project status",
-    "section": "Land Soil Crop hubs",
-    "text": "Land Soil Crop hubs\n\nPart of an EU funded research project, DeSIRA, to improve data sharing in the Land Soil Crop domain in East Africa\nImprove data & resources discovery, which are relevant to improve agriculture in East Africa"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#participatory-metadata-management",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#participatory-metadata-management",
-    "title": "pygeometa project status",
-    "section": "Participatory metadata management",
-    "text": "Participatory metadata management"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#pycsw",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#pycsw",
-    "title": "pygeometa project status",
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#pycsw",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#pycsw",
+    "title": "pygeometa project status 2025",
     "section": "pycsw",
     "text": "pycsw\n\n\n\nRwanda LSC Catalogue"
   },
   {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#participatory-metadata-management-1",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#participatory-metadata-management-1",
-    "title": "pygeometa project status",
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#participatory-metadata-management",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#participatory-metadata-management",
+    "title": "pygeometa project status 2025",
     "section": "Participatory metadata management",
     "text": "Participatory metadata management\n\nUsers initially provided metadata as lists in Microsoft Excel\nExcel rows converted to MCF and loaded to pycsw\nMCF Metadata is hosted in GitHub\nUsers contribute content (or register issues about content)"
   },
   {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#wmo-information-system-wis2",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#wmo-information-system-wis2",
-    "title": "pygeometa project status",
-    "section": "WMO Information System (WIS2)",
-    "text": "WMO Information System (WIS2)\n\nWMO WIS2 is a next generation data exchange system for Earth system data (weather/climate/water)\nEvent driven (Pub/Sub, MQTT), driven by OGC API - Records metadata and publication\nSet of tools adopted by regional weather offices to build up a global system"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#workflow-i",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#workflow-i",
-    "title": "pygeometa project status",
-    "section": "Workflow I",
-    "text": "Workflow I\n“No code”: Manage, verify and publish metadata using GitHub as a content management platform.\n\nMetadata files are managed as pygeometa MCF records\nGitHub Actions are used to verify, transform and publish notification messages to an MQTT broker\nFrom here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by pygeoapi) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client."
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#workflow-ii",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#workflow-ii",
-    "title": "pygeometa project status",
-    "section": "Workflow II",
-    "text": "Workflow II"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#takeaways",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#takeaways",
-    "title": "pygeometa project status",
-    "section": "Takeaways",
-    "text": "Takeaways\n\nMCF is an interesting and useful metadata format for embedded metadata in local file repositories\nGit storage and CI-CD workflows are a traceable, reproducible and participatory approach for metadata management\nOGC API - Records (in for example pycsw) offers a clean machine and human friendly interface to metadata"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#composability",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#composability",
-    "title": "pygeometa project status",
-    "section": "Composability",
-    "text": "Composability"
-  },
-  {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#references",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#references",
-    "title": "pygeometa project status",
-    "section": "References",
-    "text": "References\n\npygeometa\npycsw.org v3.0b\npyGeoDataCrawler v1.3\nOGCAPI - Records v1.0\nmapserver.org v8.2\nterria.io"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Select your deck:",
-    "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nAug 5, 2025\n\n\nA website on Github.io\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\nNov 4, 2023\n\n\nAbandonded Project Websites -&gt; no\n\n\nPaul van Genuchten\n\n\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\nApr 30, 2025\n\n\nFAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects\n\n\nMickael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten\n\n\n\n\n\n\nMar 19, 2025\n\n\nFAIR intro for Digital Soil Mapping\n\n\nPaul van Genuchten\n\n\n\n\n\n\nAug 6, 2025\n\n\nLSC-Hub Kenya; pending topics\n\n\nvan Genuchten, P.\n\n\n\n\n\n\nAug 5, 2025\n\n\nLSC-Hub components overview\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\nAug 5, 2025\n\n\nLSC-Hub development overview\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\nFeb 29, 2024\n\n\nMetadata for the rest of us\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\nJul 3, 2025\n\n\nOpen Source at ISRIC - World Soil Information\n\n\nPaul van Genuchten\n\n\n\n\n\n\nMay 20, 2024\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\nJul 3, 2024\n\n\nSDI maintenance DevOps style\n\n\nPaul van Genuchten\n\n\n\n\n\n\nMay 6, 2025\n\n\nSoilWise HE progress report\n\n\nFenny van Egmond, Thaisa van der Woude, Paul van Genuchten, Jiarong Li\n\n\n\n\n\n\nJun 3, 2024\n\n\nSoilwise & Metadata\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNov 13, 2023\n\n\nWorkshop pygeoapi\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNov 20, 2025\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nJul 18, 2025\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nDec 6, 2024\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nJul 18, 2025\n\n\npygeometa project status 2025\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\n\n\n \n\n\ntype: default\n\n\n \n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#about-us",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#about-us",
-    "title": "pygeometa project status",
-    "section": "About us",
-    "text": "About us\n\nTom Kralidis, Senior Geospatial Architect, Meteorological Service of Canada, OSGeo Board of Directors\nPaul van Genuchten, SDI specialist at ISRIC - World Soil Information, the Netherlands"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#intro-to-pygeometa",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#intro-to-pygeometa",
-    "title": "pygeometa project status",
-    "section": "Intro to pygeometa",
-    "text": "Intro to pygeometa\n\nPython package to manage metadata for geospatial datasets\nCreated in 2009\nOriginally named “pygdm” as part of larger internal geospatial data management workflow at Environment Canada\nPulled out as a standalone project (pygeometa) in 2014\nPublished to GitHub in 2015"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#architecture",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#architecture",
-    "title": "pygeometa project status",
-    "section": "Architecture",
-    "text": "Architecture\n\n\n\n\n\nHow pygeometa works"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf",
-    "title": "pygeometa project status",
-    "section": "The Metadata Control File (MCF)",
-    "text": "The Metadata Control File (MCF)\n{.fragment width=“100” .fig-align=“left”}"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf-1",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf-1",
-    "title": "pygeometa project status",
-    "section": "The Metadata Control File (MCF)",
-    "text": "The Metadata Control File (MCF)\n\nagnostic to any metadata format (abstract model)\nplain old YAML\nmigrated from .ini format in 0.2\nmultilingual support for text-based properties"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf-2",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf-2",
-    "title": "pygeometa project status",
-    "section": "The Metadata Control File (MCF)",
-    "text": "The Metadata Control File (MCF)\n\nbenefits from YAML features (anchors, references)\ndefined by a JSON schema\n\nmodel driven metadata workflow\nUIs\nin memory pipelines\n\noptimal for CI/CD and Git workflows (edit/publish)"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#supported-formats",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#supported-formats",
-    "title": "pygeometa project status",
-    "section": "Supported formats",
-    "text": "Supported formats\n\nDataset metadata\n\nISO 19115 / 19139 (rw)\nISO 19115-2 (w)\nWMO Core Metadata Profile\nOGC API - Records (rw)\nDCAT (w)\n\nGranule metadata\n\nSTAC (w)\n\nObserving Station metadata\n\nWMO WIGOS Metadata Standard (w)"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#pygeoapi-plugin",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#pygeoapi-plugin",
-    "title": "pygeometa project status",
-    "section": "pygeoapi plugin",
-    "text": "pygeoapi plugin\n\nfunctions exposed as OGC API - Processes endpoints via pygeoapi\nin pygeometa/pygeoapi_plugin.py\nlive examples on pygeoapi demo server\n\n{.fragment width=“100” .fig-align=“left”}"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#formats-and-extensibility",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#formats-and-extensibility",
-    "title": "pygeometa project status",
-    "section": "Formats and extensibility",
-    "text": "Formats and extensibility\n\nCan be any format/representation\nextending pygeometa.schemas.base.BaseOutputSchema\nGeneration is encapsulated\n\nXML: Jinja2\nJSON: Python json"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#recent-updates",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#recent-updates",
-    "title": "pygeometa project status",
-    "section": "Recent updates",
-    "text": "Recent updates\n\n0.19.0 (November 2025)\n\nsupport for schema.org\nupdate to Python 3.12\n\n0.18.0 (September 2025)\n\nsupport for Common Workflow Language (CWL)\n\n0.17.0 (July 2025)\n\nsupport for metadata autodetection"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#value-proposition-for-yaml-based-metadata-management",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#value-proposition-for-yaml-based-metadata-management",
-    "title": "pygeometa project status",
-    "section": "Value proposition for YAML based metadata management",
-    "text": "Value proposition for YAML based metadata management\n\nYAML is an optimal format for Git version control\nGit offers a fully traceable catalogue\nFile based metadata is easy to update with “search and replace”\n\nYAML can be composed and published in memory for automated pipelines"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#workflow-examples",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#workflow-examples",
-    "title": "pygeometa project status",
-    "section": "Workflow examples",
-    "text": "Workflow examples\n\nData explosion = metadata explosion\nTraditional workflow:\n\nstatic discovery metadata\n\nReal-time workflow:\n\nMomentum data\nOn-the-fly generation\nShip with or without payload"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#metadata-publication-use-cases",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#metadata-publication-use-cases",
-    "title": "pygeometa project status",
-    "section": "Metadata publication use cases",
-    "text": "Metadata publication use cases\nWe present 3 use cases to demonstrate the value of this approach:\n\nLand Soil Crop hubs (LSC)\nEarth Observation Exploitation Platform Common Architecture (EOEPCA)\nWMO Information System (WIS2)"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#land-soil-crop-hubs",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#land-soil-crop-hubs",
-    "title": "pygeometa project status",
-    "section": "Land Soil Crop hubs",
-    "text": "Land Soil Crop hubs\n\nPart of an EU funded research project, DeSIRA, to improve data sharing in the Land Soil Crop domain in East Africa\nImprove data & resources discovery, which are relevant to improve agriculture in East Africa"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#participatory-metadata-management",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#participatory-metadata-management",
-    "title": "pygeometa project status",
-    "section": "Participatory metadata management",
-    "text": "Participatory metadata management"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#pycsw",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#pycsw",
-    "title": "pygeometa project status",
-    "section": "pycsw",
-    "text": "pycsw\n\n\n\nRwanda LSC Catalogue"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#participatory-metadata-management-1",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#participatory-metadata-management-1",
-    "title": "pygeometa project status",
-    "section": "Participatory metadata management",
-    "text": "Participatory metadata management\n\nUsers initially provided metadata as lists in Microsoft Excel\nExcel rows converted to MCF and loaded to pycsw\nMCF Metadata is hosted in GitHub\nUsers contribute content (or register issues about content)"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#wmo-information-system-wis2",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#wmo-information-system-wis2",
-    "title": "pygeometa project status",
-    "section": "WMO Information System (WIS2)",
-    "text": "WMO Information System (WIS2)\n\nWMO WIS2 is a next generation data exchange system for Earth system data (weather/climate/water)\nEvent driven (Pub/Sub, MQTT), driven by OGC API - Records metadata and publication\nSet of tools adopted by regional weather offices to build up a global system"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#workflow-i",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#workflow-i",
-    "title": "pygeometa project status",
-    "section": "Workflow I",
-    "text": "Workflow I\n“No code”: Manage, verify and publish metadata using GitHub as a content management platform.\n\nMetadata files are managed as pygeometa MCF records\nGitHub Actions are used to verify, transform and publish notification messages to an MQTT broker\nFrom here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by pygeoapi) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client."
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#workflow-ii",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#workflow-ii",
-    "title": "pygeometa project status",
-    "section": "Workflow II",
-    "text": "Workflow II"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#takeaways",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#takeaways",
-    "title": "pygeometa project status",
-    "section": "Takeaways",
-    "text": "Takeaways\n\npygeometa is a small, ligthweight and composable metadata management utility\nMCF is an interesting and useful metadata format for embedded metadata in local file repositories\nGit storage and CI-CD workflows are a traceable, reproducible and participatory approach for metadata management\nOGC API - Records offers a clean machine and human friendly interface to metadata\n\npycsw\npygeoapi\nGeoNetwork Opensource"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#composability",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#composability",
-    "title": "pygeometa project status",
-    "section": "Composability",
-    "text": "Composability"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#references",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#references",
-    "title": "pygeometa project status",
-    "section": "References",
-    "text": "References\n\npygeometa\npycsw.org\npyGeoDataCrawler\nOGC API - Records\nmapserver.org\nterria.io"
-  },
-  {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#isric---world-soil-information",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#isric---world-soil-information",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "ISRIC - World Soil Information",
-    "text": "ISRIC - World Soil Information\n\nFoundation funded by Dutch Government to maintain a global collection of reference soil samples (ISIS)\nCollect and harmonize soil observation data from around the globe (WOSIS)\nGlobally predict the distribution of soil properties (Soilgrids)\nCapacity building on soil data management at soil institutes around the globe (Academy)\nParticipate in research projects to innovate the soil sciences"
-  },
-  {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#world-soil-museum",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#world-soil-museum",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "World Soil Museum",
-    "text": "World Soil Museum\n\nWorld Soil Museum by tinker.nl"
-  },
-  {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#typical-use-cases-for-foss4g-software",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#typical-use-cases-for-foss4g-software",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "Typical use cases for FOSS(4G) software",
-    "text": "Typical use cases for FOSS(4G) software\n\nField data collection (OpenDataKit)\nHarmonize soil data (Hale, PostGres)\nPredict soil property distribution (R, Terra, GDAL)\nCataloguing (pygeometa, pycsw, geonetwork)\nData API’s (Mapserver, FastAPI, Virtuoso)\nContent management (Quarto, Drupal)\nGIS viewers (QGIS, Leaflet, TerriaJS)"
-  },
-  {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#osgeo-and-open-geospatial-consortium",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#osgeo-and-open-geospatial-consortium",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "OSGeo and Open GeoSpatial Consortium",
-    "text": "OSGeo and Open GeoSpatial Consortium\n\nThe OGC community provides standards for data api’s & data formats\nAs independent foundation we aim to be neutral to software vendors, offered by standardised api’s\nOSGeo tools are commonly OGC compliant, many innovations at OGC are driven by open source software\nOpen formats enable future backwards compatibility for today’s datasets"
-  },
-  {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#relevant-ogc-standards",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#relevant-ogc-standards",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "Relevant OGC standards",
-    "text": "Relevant OGC standards\n\nWeb Map Service, Web Coverage Service, Web Feature service, Catalogue service for the web\nSensor Observation Service (INSPIRE Soil is based on Observations&Measurements)\nGeoPackage (See INSPIRE Good Practice on GeoPackage)\nStyled Layer Descriptor (SLD)\nCloud Optimised GeoTiff (COG)\nOGC API - Records / STAC"
-  },
-  {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#ogc-and-fair",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#ogc-and-fair",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "OGC and FAIR",
-    "text": "OGC and FAIR\n\nFAIR principles are popular in academia (and beyond)\nFAIR and OGC pursue slightly different goals, however OGC recently started a working group on open science\nAcademia assumes a dataset as a stable set of records, identified with a persistant identifier (DOI)\nNovel data formats allow subsetting via range requests, they may facilitate both uses (GeoParquet, COG)\nAlignment of vocabularies is relevant for both communities, not many tooling available (SKOS)"
-  },
-  {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#about-me-a-shift-from-osgeo-developer-to-osgeo-user",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#about-me-a-shift-from-osgeo-developer-to-osgeo-user",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "About me; a Shift from OSGeo developer to OSGeo user",
-    "text": "About me; a Shift from OSGeo developer to OSGeo user\n\n3yrs ago, I shifted from software developer to software user\nCurrent tasks are Data science, DevOps\nNext slides present some experiences around OSGeo software from a user perspective"
-  },
-  {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#mapserver",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#mapserver",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "Mapserver",
-    "text": "Mapserver\n\nWe work with a consultant from the mapserver developer community for expert advice and development\nSLD support, you can now use a SLD file (from QGIS) to configure the style of a layer\nCurrently working on Mapserver Homepage, presenting a list of the services available in a server\nI’m not following the mailinglist as much as needed"
-  },
-  {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#terriajs",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#terriajs",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "TerriaJS",
-    "text": "TerriaJS\n\nWe use TerriaJS in 5-10 websites. Mostly to share our data products to potential users and stakeholders.\nAny frontend application typically has many potential improvements\nEspecially improvements around OGC interactions best be merged upstream\nThe TerriaJS community is not very aware of OGC standards, so it requires quite communication to land a Pull Request\nWe work with a frontend developer not related to the project, because it was difficult to reach out to direct contributors"
-  },
-  {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#ckan",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#ckan",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "CKAN",
-    "text": "CKAN\n\nUniversity-support deployed a default instance of CKAN (+SOLR), however it appeared difficult to customise\nWe consulted a regional company knowledgable on CKAN implementations, they advised us to use the CKAN backend only and build a dedicated frontend\nThe spatial modules of CKAN seem not maintained\nWe decided not to continue with CKAN for now"
-  },
-  {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#pycsw",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#pycsw",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "pycsw",
-    "text": "pycsw\n\nA minimalistic catalogue implementation, but very focussed on OGC standards support\nFrom introduction of OGC API’s, pycsw now has a user interface\nSometimes I get complaints that it is not as full featured as CKAN, but it’s not easy to understand what’s actually missing\nWe contributed to adding facet filters on OGC API Records and in pycsw\nA group in Norway is implementing a SOLR backend for pycsw, SOLR will improve search experience on large catalogues"
-  },
-  {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#cloud-optimised-geotiff-gdal",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#cloud-optimised-geotiff-gdal",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "Cloud Optimised Geotiff / GDAL",
-    "text": "Cloud Optimised Geotiff / GDAL\n\nTiff is an important format for us, we have 100’s of GB of tiff data\nPreviously we would use tiff image pyramids to store global data, now switching to COG\nMapserver with a COG backend is many times faster then a plain tiff backend\nDirect access from web to COG is not feasible yet, because our tiff data does not use a mercator projection, many repositories do not allow CORS\nWe’re open to suggestions…"
-  },
-  {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#apache-superset",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#apache-superset",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "Apache Superset",
-    "text": "Apache Superset\n\nI really enjoy creating diagrams of arbitrary data\nUnfortunate that Superset is quite a complex tool with many dependencies (redis, postgres)"
-  },
-  {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#humboldt-alignment-editor-hale",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#humboldt-alignment-editor-hale",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "Humboldt Alignment Editor (HALE)",
-    "text": "Humboldt Alignment Editor (HALE)\n\nHale is an ETL tool for rich UML data models, such as soil observation data\nDevelopers tend to focus on exporting postgres data to INSPIRE GML, but our use case is often vice versa\nThe Wetransform team team supported us with a training and Q&A\nWith the experts available, we were productive in 2 days. It was crucial, GML has its peculiarities\nI notice our data scientists prefer data migration through R/Python scripts. However I see value in a visual Hale approach."
-  },
-  {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#quarto",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#quarto",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "Quarto",
-    "text": "Quarto\n\nStatic Site Generators fit our approach very well, performant, stable, secure\nSome colleagues have challenges with the markdown in gitlab (and prefer wordpress)\nIntially we started with hugo\nQuarto was used by our data scientists for documentation\nQuarto is less flexible, full featured, it generated these slides"
-  },
-  {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#questions-comments",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#questions-comments",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "Questions / Comments",
-    "text": "Questions / Comments\nFollow the links in the slides for more details…"
-  },
-  {
-    "objectID": "slides/abandoned-web.html#a-broken-link-from-a-report",
-    "href": "slides/abandoned-web.html#a-broken-link-from-a-report",
-    "title": "Abandonded Project Websites -> no",
-    "section": "A broken link from a report?",
-    "text": "A broken link from a report?\n\nor worse, arrive in an online casino from a link in a report?\nmany websites are abandoned few years after project finish\nwebsite builders should show ownership of domains they create\nreport writers should not link to dodgy locations (aka project websites)"
-  },
-  {
-    "objectID": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
-    "href": "slides/abandoned-web.html#an-initiative-to-recover-lost-content",
-    "title": "Abandonded Project Websites -> no",
-    "section": "An initiative to recover lost content",
-    "text": "An initiative to recover lost content\n\nIdentify which websites with usefull information are lost\nRecover the content from archive.org or organisation backups\nReclaim the domains (restore linkage)\nJoin the efforts at github.com/soil-on-web/abandoned-webs"
-  },
-  {
-    "objectID": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
-    "href": "slides/abandoned-web.html#good-practices-on-url-persistence-of-project-websites",
-    "title": "Abandonded Project Websites -> no",
-    "section": "Good practices on url persistence of project websites",
-    "text": "Good practices on url persistence of project websites\n\nuse a subdomain of an established organisation\nuse a persistent identifier framework, when linking to external sources\nset up rewrite rules at website cancelation\nuse minimal technology, yes: html; no: wordpress, liferay, …\nkeep the content minimal, link to external (persistent) resources\npre-pay the domain ownership for at least the upcoming 10 years"
-  },
-  {
-    "objectID": "slides/egu-fair-25.html#use-cases",
-    "href": "slides/egu-fair-25.html#use-cases",
-    "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
-    "section": "Use Cases",
-    "text": "Use Cases\n\nWhile publishing a dataset of a field campaign, indicate the properties observed, using which procedure\nUse common vocabularies for indicating the properties and procedures\nIn data model metadata use the same terms to annotate the columns\nObservations are used to create property distribution maps, use the method and property vocabularies to indicate the source data for the map"
-  },
-  {
-    "objectID": "slides/egu-fair-25.html#fair-considerations",
-    "href": "slides/egu-fair-25.html#fair-considerations",
-    "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
-    "section": "FAIR considerations",
-    "text": "FAIR considerations\n\nFindable\n\nRegister vocabulary in a vocab registry (fairsharing.org)\nConcepts and Lists should have persistent identifiers (DOI/W3ID)\n\nAccessible\n\nOpen format (json/xml/ttl/csv)\n\nInteroperable\n\nSKOS ontology\nLinkage to same and similar terms (prevent duplication)\n\nReusable\n\nOpen License (CC-0, CC-by)\nHuman friendly browsing (vocbench, skosmos)"
-  },
-  {
-    "objectID": "slides/egu-fair-25.html#challenges",
-    "href": "slides/egu-fair-25.html#challenges",
-    "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
-    "section": "Challenges",
-    "text": "Challenges\n\nWe have standardisation insitutes (iso, gsp, iuss) but they are quite disconnected from FAIR practices\nHistorically vocabularies were defined as a list with a version number, terms were referenced by the list version. These days terms are identified individually and can occur in multiple lists.\nThe SKOS ontology is highly expressive but tools to work with it are not widely adopted"
-  },
-  {
-    "objectID": "slides/egu-fair-25.html#stakeholders",
-    "href": "slides/egu-fair-25.html#stakeholders",
-    "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
-    "section": "Stakeholders",
-    "text": "Stakeholders\n\nStandardisation bodies (ISO11074:2025)\nLegal texts / EU Soil monitoring law (Gemet/Eurovoc)\nAcademic community (IUSS / WRB)\nUN global community (Agrovoc, GSP, Glosolan)"
-  },
-  {
-    "objectID": "slides/egu-fair-25.html#role-of-research-projects",
-    "href": "slides/egu-fair-25.html#role-of-research-projects",
-    "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
-    "section": "Role of research projects",
-    "text": "Role of research projects\n\nCan setup initial version of a vocabulary\nCan not own a vocabulary, due to the temporary character and lack of authority\nCan proove effectiveness of new approaches\nCan set up and endorse strategy on vocabulary development/adoption"
-  },
-  {
-    "objectID": "slides/egu-fair-25.html#glossary-alignment-a-typical-project-startup-activity",
-    "href": "slides/egu-fair-25.html#glossary-alignment-a-typical-project-startup-activity",
-    "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
-    "section": "Glossary alignment, a typical project startup activity",
-    "text": "Glossary alignment, a typical project startup activity\n\nUnderstand if terms are already listed in other vocabularies\nIf so, adopt their definition, reference them as ‘sameAs’ or ‘closeMatch’\nConsider to report back to the common vocabularies if there is not a full match, maybe a narrower term should be defined"
-  },
-  {
-    "objectID": "slides/egu-fair-25.html#current-initiatives-aiming-to-align-efforts-on-vocabulary-development",
-    "href": "slides/egu-fair-25.html#current-initiatives-aiming-to-align-efforts-on-vocabulary-development",
-    "title": "FAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects",
-    "section": "Current initiatives aiming to align efforts on vocabulary development",
-    "text": "Current initiatives aiming to align efforts on vocabulary development\n\nISLANDR\nMarvic\nSoilwise\nEJP Soil"
-  },
-  {
-    "objectID": "slides/index.html",
-    "href": "slides/index.html",
-    "title": "some slide decks",
-    "section": "",
-    "text": "A website on Github.io\n\n\n\n\n\n\n\n\n\n\n\nAug 5, 2025\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\n\n\n\n\n\n\nAbandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects\n\n\nEGU25 ESSI3.2: One decade of FAIR Principles: Data Reusability and Impact in Earth System Sciences\n\n\n\n\n\n\n\n\nApr 30, 2025\n\n\nMickael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR intro for Digital Soil Mapping\n\n\ngo-fair.org, a practical exercise\n\n\n\n\n\n\n\n\nMar 19, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nLSC-Hub Kenya; pending topics\n\n\n\n\n\n\n\n\n\n\n\nAug 6, 2025\n\n\nvan Genuchten, P.\n\n\n\n\n\n\n\n\n\n\n\n\nLSC-Hub components overview\n\n\n\n\n\n\n\n\n\n\n\nAug 5, 2025\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\n\n\n\n\n\n\nLSC-Hub development overview\n\n\n\n\n\n\n\n\n\n\n\nAug 5, 2025\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata for the rest of us\n\n\nFOSS4G Europe Conference, Tartu, Estonia\n\n\n\n\n\n\n\n\nFeb 29, 2024\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Source at ISRIC - World Soil Information\n\n\nFOSS4G NL, Wageningen\n\n\n\n\n\n\n\n\nJul 3, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\n\n\n\n\n\n\n\n\n\nMay 20, 2024\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\n\n\n\n\n\n\nSDI maintenance DevOps style\n\n\nInspired and facilitated by Open Source\n\n\nAt ISRIC - World Soil Information we increasingly maintain our data services through CI-CD pipelines configured via GIT. Both from the service as well as content perspective. The starting point are metadata records of our datasets being stored on GIT. With every change of a record, the relevant catalogues (pycsw) get updated and any relevant web services (mapserver) are updated. These pipelines are reproducable and there are never inconsistencies between catalogue content and the services. On top of that our users can directly report issues (or even improvement suggestions) through git. The stack is build on proven OSGeo components. A tool pyGeoDataCrawler brings the power of GDAL and pygeometa to CI-CD scripting. It crawls files on a folder and extracts relevant metadata, then prepares a mapserver configuration for that folder, while updating the metadata with the relevant service url’s. Typical use cases for this stack are; a search interface to any file based data repository or a participatory data catalogue for a project. At the conference we hope to hear from you if any of these components could be relevant to your cases or if there are similar initiatives we can contribute to or benefit from. What’s next? At ISRIC we receive and ingest a lot of soil data from partners. To harmonize this data is a huge effort. Via automated pipelines and interaction with the submitters via git comments, we hope to improve also this aspect of the data management cycle.\n\n\n\n\n\nJul 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nSoilWise HE progress report\n\n\nISRIC Fruitfull may 6th 2025\n\n\n\n\n\n\n\n\nMay 6, 2025\n\n\nFenny van Egmond, Thaisa van der Woude, Paul van Genuchten, Jiarong Li\n\n\n\n\n\n\n\n\n\n\n\n\nSoilwise & Metadata\n\n\nMetadata in Horizon Europe projects (Soil Mission)\n\n\n\n\n\n\n\n\nJun 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nNov 20, 2025\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nJul 18, 2025\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nDec 6, 2024\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status 2025\n\n\nA fun way to do spatial cataloguing\n\n\n\n\n\n\n\n\nJul 18, 2025\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "slides/lschub-github-page.html#fork-repository",
-    "href": "slides/lschub-github-page.html#fork-repository",
-    "title": "A website on Github.io",
-    "section": "Fork repository",
-    "text": "Fork repository\n\nCreate a github username or login\nfork repository https://github.com/lsc-hubs/quarto-template (set sensible name)\ncreate branch ‘gh-pages’ (from branches)\nenable actions (from actions)"
-  },
-  {
-    "objectID": "slides/lschub-github-page.html#trigger-an-action",
-    "href": "slides/lschub-github-page.html#trigger-an-action",
-    "title": "A website on Github.io",
-    "section": "Trigger an action",
-    "text": "Trigger an action\n\nmake a change on and md file and commit/push"
-  },
-  {
-    "objectID": "slides/lschub-github-page.html#check-result",
-    "href": "slides/lschub-github-page.html#check-result",
-    "title": "A website on Github.io",
-    "section": "Check result",
-    "text": "Check result\n\nnavigate to https://{username}.github.io/{reponame} (it may take a while)\n\nIf failed, check the logs (probably you have to give write privileges to the ci-cd at user and project level)"
-  },
-  {
-    "objectID": "slides/lschub-github-page.html#add-some-interesting-content",
-    "href": "slides/lschub-github-page.html#add-some-interesting-content",
-    "title": "A website on Github.io",
-    "section": "Add some interesting content",
-    "text": "Add some interesting content\n\nadd extra pages\nlink between pages using [ title ] ( target.md )\nadd an image using ![ title ] ( image.png )"
-  },
-  {
-    "objectID": "slides/lschub-schematic.html#mapserver",
-    "href": "slides/lschub-schematic.html#mapserver",
-    "title": "LSC-Hub Kenya; pending topics",
-    "section": "Mapserver",
-    "text": "Mapserver\n\na spatial data server\nconfigured using map-files\ncrawler creates map-files from yml metadata\ncrawler places a link to the prepared map service in the yml metadata"
-  },
-  {
-    "objectID": "slides/lschub-schematic.html#terriajs",
-    "href": "slides/lschub-schematic.html#terriajs",
-    "title": "LSC-Hub Kenya; pending topics",
-    "section": "TerriaJS",
-    "text": "TerriaJS\n\na spatial data viewer\nconfigured using context-documents\nfacilitates catalogue searches, with option to add search result to map"
-  },
-  {
-    "objectID": "slides/lschub-schematic.html#traefik",
-    "href": "slides/lschub-schematic.html#traefik",
-    "title": "LSC-Hub Kenya; pending topics",
-    "section": "Traefik",
-    "text": "Traefik\n\nTraefik is a reverse proxy and ingress controller that makes deploying services and APIs easy\nSpecifically used for:\n\nManage the Letsencrypt certificate\nRoute the traffic from folders to containers\n\nAlso provides a nice User Interface to inspect the orchestration"
-  },
-  {
-    "objectID": "slides/lschub-schematic.html#cms-flow",
-    "href": "slides/lschub-schematic.html#cms-flow",
-    "title": "LSC-Hub Kenya; pending topics",
-    "section": "CMS flow",
-    "text": "CMS flow\n\n\n\n\n\nflowchart TD\n\nmd--&gt;|quarto| gitp[(git cms@pages)]\ngitp --&gt;|git pull| dtm[html repository]\ndtm --&gt;|nginx| website"
-  },
-  {
-    "objectID": "slides/lschub-schematic.html#repository-flow",
-    "href": "slides/lschub-schematic.html#repository-flow",
-    "title": "LSC-Hub Kenya; pending topics",
-    "section": "Repository flow",
-    "text": "Repository flow\n\n\n\n\n\nflowchart TD\n\ndf[data files] --&gt;|webdav| dtd\ndtd[data repository]--&gt;|crawler| dtm[metadata repository]\ndtm --&gt;|pycsw-admin| dbrecords[(database)]\ndbrecords --&gt;|sql| pycsw[pycsw]\ndtd--&gt;|crawler| mapserver\ndtm--&gt;|crawler| mapserver\nmapserver--&gt;|wms| terriajs\npycsw--&gt;|csw| terriajs"
-  },
-  {
-    "objectID": "slides/lschub-schematic.html#metadata-importauthoring-flow",
-    "href": "slides/lschub-schematic.html#metadata-importauthoring-flow",
-    "title": "LSC-Hub Kenya; pending topics",
-    "section": "Metadata import/authoring flow",
-    "text": "Metadata import/authoring flow\n\n\n\n\n\nflowchart TD\n\ngf[Google form] --&gt;|download| csv\ncsv--&gt;|import-csv| git[(git cat)]\next[external source] --&gt;|harvest| git\nman[manual edits] --&gt; git\ngit --&gt;|export| gitp[(git cat@pages)]\ngitp --&gt;|git pull| dtm[metadata repository]\ndtm --&gt;|pycsw-admin| dbrecords[(database)]\ndbrecords --&gt;|sql| pycsw[pycsw]"
-  },
-  {
-    "objectID": "slides/lschub-schematic.html#introducing-git-submodules",
-    "href": "slides/lschub-schematic.html#introducing-git-submodules",
-    "title": "LSC-Hub Kenya; pending topics",
-    "section": "Introducing Git Submodules",
-    "text": "Introducing Git Submodules\n\nThe rendered CMS and metadata content as iso19139 are placed in the gh-pages branch\nlschub-docker includes branches as git submodules\n\n\n\n\n\n\nflowchart LR\n\nld[lschub-docker]--&gt; gitp[(git cms@pages)]\nld--&gt; gitm[(git cat@pages)]"
-  },
-  {
-    "objectID": "slides/lschub-schematic.html#github-actions",
-    "href": "slides/lschub-schematic.html#github-actions",
-    "title": "LSC-Hub Kenya; pending topics",
-    "section": "Github Actions",
-    "text": "Github Actions\n\ntrigger at intervals or at events (push)\nrun in a container, either\n\nstart a container within that container, or\ntrigger a github action, such as crawler"
-  },
-  {
-    "objectID": "slides/lschub-schematic.html#how-to-update-vm-with-git-changes",
-    "href": "slides/lschub-schematic.html#how-to-update-vm-with-git-changes",
-    "title": "LSC-Hub Kenya; pending topics",
-    "section": "How to update VM with GIT changes",
-    "text": "How to update VM with GIT changes\n\nRun script at intervals\nLet GIT pipeline trigger update\n\nupload via webdav\nprovide api\nusing SSH (ansible)\n\n\nSimilar question for uploads via Webdav"
-  },
-  {
-    "objectID": "slides/lschub-schematic.html#which-certificate-to-use-for-test-environment",
-    "href": "slides/lschub-schematic.html#which-certificate-to-use-for-test-environment",
-    "title": "LSC-Hub Kenya; pending topics",
-    "section": "Which certificate to use for test environment",
-    "text": "Which certificate to use for test environment\n\nIntroduce the test environment\nTest is not available from web, which is a requirement for letsencrypt\nthe kalro certificate is available, how to configure it on traefik"
-  },
-  {
-    "objectID": "slides/lschub-schematic.html#quality-monitoring",
-    "href": "slides/lschub-schematic.html#quality-monitoring",
-    "title": "LSC-Hub Kenya; pending topics",
-    "section": "Quality monitoring",
-    "text": "Quality monitoring\n\nAvailability (uptimerobot)\nUsage\nBroken links"
-  },
-  {
-    "objectID": "slides/lschub-schematic.html#backups",
-    "href": "slides/lschub-schematic.html#backups",
-    "title": "LSC-Hub Kenya; pending topics",
-    "section": "Backups",
-    "text": "Backups\n\nPostgres does not need to be backed up, because source is in Git\nFiles uploaded through webdav should be backed up\nAccess/Error logs could be backed up"
-  },
-  {
-    "objectID": "slides/lschub-schematic.html#supporting-services",
-    "href": "slides/lschub-schematic.html#supporting-services",
-    "title": "LSC-Hub Kenya; pending topics",
-    "section": "Supporting services",
-    "text": "Supporting services\n\nOSM/Image backdrop (maptiler, bing maps, …)\n3D canvas (cesium)\nlocation search (nominatim?)"
-  },
-  {
-    "objectID": "slides/lschub-schematic.html#will-the-kalro-repositories-be-private",
-    "href": "slides/lschub-schematic.html#will-the-kalro-repositories-be-private",
-    "title": "LSC-Hub Kenya; pending topics",
-    "section": "Will the kalro repositories be private?",
-    "text": "Will the kalro repositories be private?\n\nthe repositories should not contain sensitive information\nopen repositories enable users to flag issues\nespeccially the lschub-catalogue would benefit from remote contribution\nnow we use github.com/lsc-hubs/kenya-hub for issues"
-  },
-  {
-    "objectID": "slides/pygeometa-foss4g-2024.html#participatory-metadata-management",
-    "href": "slides/pygeometa-foss4g-2024.html#participatory-metadata-management",
-    "title": "pygeometa project status",
-    "section": "Participatory metadata management",
-    "text": "Participatory metadata management\n\nUsers initially provided metadata as lists in Microsoft Excel\nMetadata is hosted in GitHub\nUsers contribute content (or register issues about content)\nMetadata is published to pycsw\nusers can “edit me” from pycsw/OGC API - Records via GitHub"
-  },
-  {
-    "objectID": "slides/pygeometa-foss4g-2024.html#participatory-metadata-management-1",
-    "href": "slides/pygeometa-foss4g-2024.html#participatory-metadata-management-1",
-    "title": "pygeometa project status",
-    "section": "Participatory metadata management",
-    "text": "Participatory metadata management"
-  },
-  {
-    "objectID": "slides/pygeometa-foss4g-2024.html#mcf-for-mapserver-configuration",
-    "href": "slides/pygeometa-foss4g-2024.html#mcf-for-mapserver-configuration",
-    "title": "pygeometa project status",
-    "section": "MCF for MapServer configuration",
-    "text": "MCF for MapServer configuration\n\nUse the metadata to generate MapServer mapfile configuration\nAdd the generated map endpoint to the metadata\nMapServer is fully aligned with the catalogue"
-  },
-  {
-    "objectID": "slides/pygeometa-foss4g-2024.html#terriajs-a-web-based-gis",
-    "href": "slides/pygeometa-foss4g-2024.html#terriajs-a-web-based-gis",
-    "title": "pygeometa project status",
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#mapserver",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#mapserver",
+    "title": "pygeometa project status 2025",
+    "section": "MapServer",
+    "text": "MapServer\n\nMapserver is used to let users interact with data through WMS/WFS\nMetadata generates MapServer configuration\nMap service endpoint is added to metadata\nMapServer is fully aligned with the catalogue"
+  },
+  {
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#terriajs-a-web-based-gis",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#terriajs-a-web-based-gis",
+    "title": "pygeometa project status 2025",
     "section": "TerriaJS, a web-based GIS",
     "text": "TerriaJS, a web-based GIS\n\nThe project uses TerriaJS as a data viewer\nTerriaJS includes a CSW Catalogue search and links back to the catalogue via WMS capabilities\nExtra integration via ‘Add data to viewer’ from catalogue page"
   },
   {
-    "objectID": "slides/pygeometa-foss4g-2024.html#terriajs",
-    "href": "slides/pygeometa-foss4g-2024.html#terriajs",
-    "title": "pygeometa project status",
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#terriajs",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#terriajs",
+    "title": "pygeometa project status 2025",
     "section": "TerriaJS",
-    "text": "TerriaJS\n\nTerriaJS"
+    "text": "TerriaJS\n\n\n\nTerriaJS"
   },
   {
-    "objectID": "slides/pygeometa-foss4g-2024.html#workflow",
-    "href": "slides/pygeometa-foss4g-2024.html#workflow",
-    "title": "pygeometa project status",
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#workflow",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#workflow",
+    "title": "pygeometa project status 2025",
     "section": "Workflow",
-    "text": "Workflow\n“No code”: Manage, verify and publish metadata using GitHub as a content management platform.\n\nMetadata files are managed as pygeometa MCF records\nGitHub Actions are used to verify, transform and publish notification messages to an MQTT broker\nFrom here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by pygeoapi) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client"
+    "text": "Workflow\n“No code”: Manage, verify and publish metadata using GitHub as a content management platform.\n\nMetadata files are managed as pygeometa MCF records\nGitHub Actions are used to verify, transform and publish notification messages to an MQTT broker\nFrom here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by pygeoapi) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client."
   },
   {
-    "objectID": "slides/pygeometa-foss4g-2024.html#workflow-1",
-    "href": "slides/pygeometa-foss4g-2024.html#workflow-1",
-    "title": "pygeometa project status",
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#workflow-1",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#workflow-1",
+    "title": "pygeometa project status 2025",
     "section": "Workflow",
     "text": "Workflow"
   },
   {
-    "objectID": "slides/pygeometa-foss4g-2024.html#composability",
-    "href": "slides/pygeometa-foss4g-2024.html#composability",
-    "title": "pygeometa project status",
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#composability",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#composability",
+    "title": "pygeometa project status 2025",
     "section": "Composability",
     "text": "Composability"
   },
   {
-    "objectID": "slides/pygeometa-foss4g-2024.html#references",
-    "href": "slides/pygeometa-foss4g-2024.html#references",
-    "title": "pygeometa project status",
+    "objectID": "slides/fun-way-of-spatial-cataloguing.html#references",
+    "href": "slides/fun-way-of-spatial-cataloguing.html#references",
+    "title": "pygeometa project status 2025",
     "section": "References",
-    "text": "References\n\npygeometa\npycsw\npyGeoDataCrawler\nOGC API - Records\nMapServer\nterria.io"
+    "text": "References\n\npygeometa\npycsw.org v3.0b\npyGeoDataCrawler v1.3\nOGCAPI - Records v1.0\nmapserver.org v8.2\nterria.io"
+  },
+  {
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#what",
+    "href": "slides/intro-crawler-mcf-pycsw.html#what",
+    "title": "Metadata for the rest of us",
+    "section": "What",
+    "text": "What\n\nA set of conventions and tools to create and share metadata of datasets.\nData scientists should own metadata records, because they are the knowledgeable party.\nSo: integrate in their environment, stay close to the tools they already use: Python, Git, Excel, Zenodo.\nFocus on TC211 and academia standards, because we’re in the academic spatial domain"
+  },
+  {
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#some-principles",
+    "href": "slides/intro-crawler-mcf-pycsw.html#some-principles",
+    "title": "Metadata for the rest of us",
+    "section": "Some principles",
+    "text": "Some principles\n\nbased on existing standards/conventions\n(meta)data at the source\nsimple in maintenance\npersistent/traceable over time\nFixed (extendible) data model for metadata"
+  },
+  {
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#use-cases",
+    "href": "slides/intro-crawler-mcf-pycsw.html#use-cases",
+    "title": "Metadata for the rest of us",
+    "section": "3 use cases",
+    "text": "3 use cases\n\nA team of data scientists understands/describes their source data, models and data outputs, for tracability and future re-use\nAn organisation aims to share a subset of their resources as open access data\nA community aims to collect relevant remote resources in a thematic catalogue"
+  },
+  {
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#describe-resources-at-their-source",
+    "href": "slides/intro-crawler-mcf-pycsw.html#describe-resources-at-their-source",
+    "title": "Metadata for the rest of us",
+    "section": "Describe resources at their source",
+    "text": "Describe resources at their source\n\nBuilds on a convention of placing a README.md file in a project folder, describing the source, attribution.\nSuggestion is to use a structured format, so also machines can understand this information\nMetadata control file (mcf) is a convention of the geopython community (in YAML)\nA crawler tool extracts embedded metadata from data to create initial mcf\nA crawler tool fetches from a set of project folders the metadata and stores it in a central index, pycsw"
+  },
+  {
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#schematic-i",
+    "href": "slides/intro-crawler-mcf-pycsw.html#schematic-i",
+    "title": "Metadata for the rest of us",
+    "section": "Schematic I",
+    "text": "Schematic I\n\n\n\n\n\nflowchart TB\n    P[Project folder] --&gt;|Files| CI{{crawler}}\n    CI --&gt;|Extract metadata| P\n    CI --&gt; G[Git] \n    G --&gt; PYCSW"
+  },
+  {
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#share-as-open-access-data",
+    "href": "slides/intro-crawler-mcf-pycsw.html#share-as-open-access-data",
+    "title": "Metadata for the rest of us",
+    "section": "Share as open access data",
+    "text": "Share as open access data\n\nBuilds on the previous case, data scientists store and describe their data outputs on a central folder, a sharable subset is shared via pycsw.\nFor spatial assets OGC data api’s are created, sharing the data as WMS, WFS, WCS using mapserver\nThe mcf content is used to create the mapserver configuration, the metadata is updated with the relevant OWS endpoints"
+  },
+  {
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#schematic-ii",
+    "href": "slides/intro-crawler-mcf-pycsw.html#schematic-ii",
+    "title": "Metadata for the rest of us",
+    "section": "Schematic II",
+    "text": "Schematic II\n\n\n\n\n\nflowchart TB\n    G[Git] --&gt;|mcf| CI{{crawler}} \n    CI --&gt;|mapfiles| MS[Mapserver]\n    Metadata --&gt; OWS\n    MS --&gt; OWS[WMS/WFS]\n    CI --&gt;|OWS Linkage| G"
+  },
+  {
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#a-thematic-participatory-data-portal",
+    "href": "slides/intro-crawler-mcf-pycsw.html#a-thematic-participatory-data-portal",
+    "title": "Metadata for the rest of us",
+    "section": "A thematic participatory data portal",
+    "text": "A thematic participatory data portal\n\nmetadata from external sources can be harvested to the central index\nby storing MCF in GIT, and add a ‘edit me on git’ link on each metadata page, so users can flag problems in metadata or suggest new content\nalso the harvest definition is stored on git\nImports are managed as CI-CD actions in Git"
+  },
+  {
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#metadata-harvest",
+    "href": "slides/intro-crawler-mcf-pycsw.html#metadata-harvest",
+    "title": "Metadata for the rest of us",
+    "section": "Metadata harvest",
+    "text": "Metadata harvest\n\na generic query to a remote catalogue endpoint (csw, oai-pmh)\na excel sheet of records (each column is a metadata property)\na list of DOI’s"
+  },
+  {
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#schematic-iii",
+    "href": "slides/intro-crawler-mcf-pycsw.html#schematic-iii",
+    "title": "Metadata for the rest of us",
+    "section": "Schematic III",
+    "text": "Schematic III\n\n\n\n\n\nflowchart TB\n    G[Git] --&gt;|mcf| CI{{pygeometa}} \n    CI --&gt;|iso19139| DB[(Database)]\n    DB --&gt; C(Catalogue)\n    C --&gt; G\n    C --&gt; CSW(CSW)\n    C --&gt; OAR(OGCAPI Records)\n    C --&gt; OAI(OAI-PMH)"
+  },
+  {
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#oh-but-this-is-too-technical",
+    "href": "slides/intro-crawler-mcf-pycsw.html#oh-but-this-is-too-technical",
+    "title": "Metadata for the rest of us",
+    "section": "Oh, but this is too technical!",
+    "text": "Oh, but this is too technical!\n\nIs it?\nISO19139 and DCAT and their tools (GeoNetwork, CKAN, Dataverse) also have their peculiarities\nNot everybody will be able to create a pull request in GIT, use git issues instead and let others in the community fix\nYAML has its caveats (indenting, reserved characters), use YAML check in text editor\nWe created a web-form for mcf editing, mdme"
+  },
+  {
+    "objectID": "slides/intro-crawler-mcf-pycsw.html#read-more",
+    "href": "slides/intro-crawler-mcf-pycsw.html#read-more",
+    "title": "Metadata for the rest of us",
+    "section": "Read more?",
+    "text": "Read more?\n\npygeometa in the EJPSoil soil data assimilation cookbook\nLSC Hubs data workshop\npygeometa\nGeoDataCrawler\nSoilwise HE"
+  },
+  {
+    "objectID": "slides/lschub-components.html#introduction",
+    "href": "slides/lschub-components.html#introduction",
+    "title": "LSC-Hub components overview",
+    "section": "Introduction",
+    "text": "Introduction\n\nAn overview of the various hub components"
+  },
+  {
+    "objectID": "slides/lschub-components.html#overview",
+    "href": "slides/lschub-components.html#overview",
+    "title": "LSC-Hub components overview",
+    "section": "Overview",
+    "text": "Overview\n\nPlatform for interaction with stakeholders\nA hub facilitator, guided by a maintenance board\nA website\nA catalogue\nData visualisation"
+  },
+  {
+    "objectID": "slides/lschub-components.html#platform-for-interaction-with-stakeholders",
+    "href": "slides/lschub-components.html#platform-for-interaction-with-stakeholders",
+    "title": "LSC-Hub components overview",
+    "section": "Platform for interaction with stakeholders",
+    "text": "Platform for interaction with stakeholders\n\nmailinglist\nforum\nissue tracker\nwhatsapp group"
+  },
+  {
+    "objectID": "slides/lschub-components.html#a-hub-facilitator-guided-by-a-maintenance-board",
+    "href": "slides/lschub-components.html#a-hub-facilitator-guided-by-a-maintenance-board",
+    "title": "LSC-Hub components overview",
+    "section": "A hub facilitator, guided by a maintenance board",
+    "text": "A hub facilitator, guided by a maintenance board\n\ncreates/assesses quality reports\nmaintain the hub software, define roadmap"
+  },
+  {
+    "objectID": "slides/lschub-components.html#a-website",
+    "href": "slides/lschub-components.html#a-website",
+    "title": "LSC-Hub components overview",
+    "section": "A website",
+    "text": "A website\n\nIntroduces stakeholders and funders to the initiative\nProvides guidance on how to use the system\nDescribe use cases"
+  },
+  {
+    "objectID": "slides/lschub-components.html#a-catalogue",
+    "href": "slides/lschub-components.html#a-catalogue",
+    "title": "LSC-Hub components overview",
+    "section": "A catalogue",
+    "text": "A catalogue\n\nProvides access to relevant resources"
+  },
+  {
+    "objectID": "slides/lschub-components.html#data-access-layer",
+    "href": "slides/lschub-components.html#data-access-layer",
+    "title": "LSC-Hub components overview",
+    "section": "Data access layer",
+    "text": "Data access layer\n\nEnables API access to datasets, for data which is too big or complex to process"
+  },
+  {
+    "objectID": "slides/lschub-components.html#data-visualisation",
+    "href": "slides/lschub-components.html#data-visualisation",
+    "title": "LSC-Hub components overview",
+    "section": "Data visualisation",
+    "text": "Data visualisation\n\nEnables the visualisation of data"
+  },
+  {
+    "objectID": "slides/lschub-historic.html#introduction",
+    "href": "slides/lschub-historic.html#introduction",
+    "title": "LSC-Hub development overview",
+    "section": "Introduction",
+    "text": "Introduction\n\nFinalisation of project is approaching\nPrepare final product\nUnderstand if parts of the initiative can be adopted in regular work\nGood moment to look back at the path we walked together"
+  },
+  {
+    "objectID": "slides/lschub-historic.html#overview",
+    "href": "slides/lschub-historic.html#overview",
+    "title": "LSC-Hub development overview",
+    "section": "Overview",
+    "text": "Overview\n\n2022-2023 WP2 user needs assessment\n2022 Initial (meta)data collection\n2023 First prototype\n2023 First training in Nairobi\n2024 Second prototype\n2024 Stakeholder workshops\n2025 Process of localised deployments"
+  },
+  {
+    "objectID": "slides/lschub-historic.html#wp2-user-needs-assessment",
+    "href": "slides/lschub-historic.html#wp2-user-needs-assessment",
+    "title": "LSC-Hub development overview",
+    "section": "WP2 user needs assessment",
+    "text": "WP2 user needs assessment\n\nWorkshops with stakeholders\nInterviews with key stakeholders\nReport with user needs"
+  },
+  {
+    "objectID": "slides/lschub-historic.html#initial-metadata-collection",
+    "href": "slides/lschub-historic.html#initial-metadata-collection",
+    "title": "LSC-Hub development overview",
+    "section": "Initial (meta)data collection",
+    "text": "Initial (meta)data collection\n\nListing in Excel of relevant datasets and documents"
+  },
+  {
+    "objectID": "slides/lschub-historic.html#first-prototype",
+    "href": "slides/lschub-historic.html#first-prototype",
+    "title": "LSC-Hub development overview",
+    "section": "First prototype",
+    "text": "First prototype\n\nIdentified the 4 main components, cms, catalogue, community engagement and mapserver\nIdentified the need for a flexible, complmentary system"
+  },
+  {
+    "objectID": "slides/lschub-historic.html#first-training-in-nairobi",
+    "href": "slides/lschub-historic.html#first-training-in-nairobi",
+    "title": "LSC-Hub development overview",
+    "section": "First training in Nairobi",
+    "text": "First training in Nairobi\n\nIntroduction to docker, github, FAIR principles\nThe workshop did not quite fit the audience"
+  },
+  {
+    "objectID": "slides/lschub-historic.html#second-prototype",
+    "href": "slides/lschub-historic.html#second-prototype",
+    "title": "LSC-Hub development overview",
+    "section": "Second prototype",
+    "text": "Second prototype\n\nA full redesign of the system\nMore focus on the interactive map viewer"
+  },
+  {
+    "objectID": "slides/lschub-historic.html#stakeholder-workshops",
+    "href": "slides/lschub-historic.html#stakeholder-workshops",
+    "title": "LSC-Hub development overview",
+    "section": "Stakeholder workshops",
+    "text": "Stakeholder workshops\n\nInteraction with WP4 and WP5 around use cases\nValuable input from stakeholders was collected\nA need for a more regional identity\nA need for decission support"
+  },
+  {
+    "objectID": "slides/lschub-historic.html#process-of-localised-deployments",
+    "href": "slides/lschub-historic.html#process-of-localised-deployments",
+    "title": "LSC-Hub development overview",
+    "section": "Process of localised deployments",
+    "text": "Process of localised deployments\n\nIn Kenya; the LSC components have been adopted, but using a tailored Docker Compose setup\nIn Rwanda; a system is being setup based on their ArcGIS server environment\nIn Ethiopia; a system has been build including GeoNode"
+  },
+  {
+    "objectID": "slides/pitch-battle.html#improving-findability---devops-style",
+    "href": "slides/pitch-battle.html#improving-findability---devops-style",
+    "title": "Document your model data at minimal effort",
+    "section": "Improving findability - devops style",
+    "text": "Improving findability - devops style\n\nWhat: Document your modelling data with minimal effort\nWhy: Better findability and (re)usability of data\nWhat’s next: Adopt the efforts in ongoing projects & extend the user community"
+  },
+  {
+    "objectID": "slides/pitch-battle.html#setting-concept",
+    "href": "slides/pitch-battle.html#setting-concept",
+    "title": "Document your model data at minimal effort",
+    "section": "Setting & Concept",
+    "text": "Setting & Concept\n\nSetting: Data management in predictive modelling\n\nIn soil modelling we handle many data sources\nThese files are stored on a network drive\nMetadata management is complex/dull/****\n\nThe sidecar concept\n\nAdd minimal metadata on a sidecar file\nA crawler extracts metadata from a file repository\nCrawled records are placed in a searchable index"
+  },
+  {
+    "objectID": "slides/pitch-battle.html#pygeometa-geodatacrawler-pycsw",
+    "href": "slides/pitch-battle.html#pygeometa-geodatacrawler-pycsw",
+    "title": "Document your model data at minimal effort",
+    "section": "pygeometa, geodatacrawler & pycsw",
+    "text": "pygeometa, geodatacrawler & pycsw\n\npygeometa’s MCF is a minimal subset of ISO19115, encoded in yaml\ngeodatacrawler extends pygeometa to:\n\nextract metadata from data formats\ninherit metadata from parent folders\nimport metadata from csv and remote sources\ncreate data api’s based on metadata\n\n is a pythonic catalogue web app. Wide standards support enables findability in multiple communities."
+  },
+  {
+    "objectID": "slides/s4a-intro.html#background",
+    "href": "slides/s4a-intro.html#background",
+    "title": "Soil Information System for Africa",
+    "section": "Background",
+    "text": "Background\n\nThe AFSIS project showed the value of a continental map\nIt also showed the challenges of map construction\n\navailability of observation data\nlimited description of the data (difficult to harmonize)\nunclear usage constraints/ownership"
+  },
+  {
+    "objectID": "slides/s4a-intro.html#a-continental-campaign",
+    "href": "slides/s4a-intro.html#a-continental-campaign",
+    "title": "Soil Information System for Africa",
+    "section": "A continental campaign",
+    "text": "A continental campaign\n\nOptimized sampling design\nStandardised Operating Procedures for Field Survey, Transport and Laboratory\nAnalysis by a single lab\nFull data description and clear licence description\nDissiminaton of the results for various target audiences"
+  },
+  {
+    "objectID": "slides/s4a-intro.html#from-observations-to-maps",
+    "href": "slides/s4a-intro.html#from-observations-to-maps",
+    "title": "Soil Information System for Africa",
+    "section": "From observations to maps…",
+    "text": "From observations to maps…\n\nLink laboratory observations to field sampling locations\nHarmonize data from various campaigns\n\nCan observations be compared? conversion required?\nField expertise or spatial algorythms to predict distribution (co-variates)\n\nAdd a legend of classes (high-medium-low)\nFrom the map product, attribute the source data"
   },
   {
     "objectID": "slides/soilwise-metadata.html#what-is-metadata",
