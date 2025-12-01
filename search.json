@@ -357,6 +357,13 @@
     "text": "World Soil Museum\n\nWorld Soil Museum by tinker.nl"
   },
   {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#soilwise",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#soilwise",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Soilwise",
+    "text": "Soilwise\nSoilWise is a current Horizon Europe project to facilitate the mission soil with tooling and guidance on soil data and knowledge discovery, usage and publication. Practices from this presentation are endorsed and improved in the scope of this project."
+  },
+  {
     "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#typical-use-cases-for-foss4g-software",
     "href": "slides/20250703-foss4gnl-opensource-at-isric.html#typical-use-cases-for-foss4g-software",
     "title": "Open Source at ISRIC - World Soil Information",
@@ -756,18 +763,18 @@
     "text": "Participatory metadata management"
   },
   {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#pycsw",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#pycsw",
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#pycsw-in-soilwise",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#pycsw-in-soilwise",
     "title": "pygeometa project status",
-    "section": "pycsw",
-    "text": "pycsw\n\n\n\nRwanda LSC Catalogue"
+    "section": "pycsw in Soilwise",
+    "text": "pycsw in Soilwise\nSoilWise is a current Horizon Europe project to facilitate the mission soil with tooling and guidance on soil data and knowledge discovery, usage and publication.\nPractices from this presentation are endorsed and improved in the scope of this project."
   },
   {
-    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#participatory-metadata-management-1",
-    "href": "slides/2025-foss4ge-pygeometa-project-update.html#participatory-metadata-management-1",
+    "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#metadata-harvesting-and-alignment",
+    "href": "slides/2025-foss4ge-pygeometa-project-update.html#metadata-harvesting-and-alignment",
     "title": "pygeometa project status",
-    "section": "Participatory metadata management",
-    "text": "Participatory metadata management\n\nUsers initially provided metadata as lists in Microsoft Excel\nExcel rows converted to MCF and loaded to pycsw\nMCF Metadata is hosted in GitHub\nUsers contribute content (or register issues about content)"
+    "section": "Metadata harvesting and alignment",
+    "text": "Metadata harvesting and alignment\n\nHarvests from various Geo and Academia repositories\nAligns metadata between communities\nA SOLR backend to improve findability\nFocus on datamodel metadata"
   },
   {
     "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#wmo-information-system-wis2",
