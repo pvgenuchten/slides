@@ -1,0 +1,83 @@
+---
+title: GIT flavoured modelling
+subtitle:  WATDEV Toolbox 1st regional training
+author: Paul van Genuchten
+date: 2026-02-05
+format:
+  revealjs: 
+    theme: default
+    logo: https://static.wixstatic.com/media/9d090e_49fe8f50a4324adab5d65434391395d5~mv2.png/v1/fill/w_444,h_108,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/DEF2.png
+    footer: "This work has been created with the <a href='https://capacity4dev.europa.eu/projects/desira/info/watdev_en'>financial support of the European Union</a>."
+---
+
+## Goal of the lecture
+
+- Audience: Cropping experts comfortable in configuring a local SWAT model  
+- Introduction to concepts of running models in the cloud
+- Guidance on setting up and evaluating a cloud run
+
+## Git for version management 
+
+- Git is a version management system to facilitate cooperation in software development
+- The Git system provides mechanisms to prepare model runs (input data, configuration)
+- In this training we use services provided by Github, alternatives are Bitbucket, Gitlab, ...
+
+## Get started with Git
+
+- https://docs.github.com/en/get-started/git-basics
+- Notice that many GIT providers include a Web Based Interface
+- Various Graphical User Interfaces to interact with Git (SmartGit, Visual Studio, R studio)
+
+## Continuous Integration
+
+- Various providers have enriched Git with additional services, such as issue menagement, continuous integration
+- Continuous integration provides opportunities to run automated workflows at intervals or events
+- Models runs are triggered by updates of the configuration
+- The results of a Model Run can be assessed in the Git Webinterface
+
+## Docker
+
+- Docker is a virtualisation technology, which facilitates running models in arbitrary environments
+- Run the model locally, in a Git workflow or a High computing environment
+- Docker creates virtual environments (containers) based on templates (images)
+- A number of images has been prepared for running the model
+
+## Fortran 
+
+- WATDEV model integrates multiple fortran based models; SWAT, Modflow and DSSAT
+- Docker containers are usually based on Linux system
+- The fortran compiler for Unix is more strict than the windows Fortran compiler
+
+## Run locally
+
+``` 
+docker run --rm  -v $(pwd):/swat_data -w /swat_data crazyzlj/swat:alpint-2012.683 swat2012.683.gfort.rel
+```
+
+## A modelling project template
+
+- https://github.com/watdev-eu/watdev-model-template
+- Provides a structure on how to set up a modelling project
+- Each scenario is hosted in a branch
+- A workflow is available which runs the model at changes in the branches
+
+## Set up your project
+
+- Github account?
+- Fork the template repository to your account
+- Upload the model configuration
+- Assess the results (in output branch)
+
+## Upload the results to the Model-UI
+
+- At the moment this is a manual effort
+- In the next version, it will be an automated step at the end of the pipeline
+
+## Questions
+
+- Do you have any questions
+
+## Additional features of interest
+
+- Link a Github repository to Zenodo
+- 
