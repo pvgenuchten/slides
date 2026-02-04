@@ -1253,6 +1253,13 @@
     "text": "Fortran\n\nWATDEV model integrates multiple fortran based models; SWAT, Modflow and DSSAT\nDocker containers are usually based on Linux system\nThe fortran compiler for Unix is more strict than the windows Fortran compiler"
   },
   {
+    "objectID": "slides/git-based-modelling.html#relevant-docker-images",
+    "href": "slides/git-based-modelling.html#relevant-docker-images",
+    "title": "GIT flavoured modelling",
+    "section": "4 relevant Docker images",
+    "text": "4 relevant Docker images\n\ncrazyzlj/swat SWAT only\ncrazyzlj/swatplus SWATplus only\nspark-hydro/SWAT-MODFLOW3 Pending\nWatDev SWAT-DSSAT SWAT + DSSAT"
+  },
+  {
     "objectID": "slides/git-based-modelling.html#run-locally",
     "href": "slides/git-based-modelling.html#run-locally",
     "title": "GIT flavoured modelling",
