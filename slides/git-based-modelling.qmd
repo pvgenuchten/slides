@@ -16,11 +16,28 @@ format:
 - Introduction to concepts of running models in the cloud
 - Guidance on setting up and evaluating a cloud run
 
+## Why in the cloud?
+
+- Scaling (Cloud, HPC)
+- Reproducability (it works on my pc)
+- Local system may not have required specifications
+
+## Contents
+
+- [Git versioning system](#git-for-version-management)
+- [Continuous integration](#continuous-integration)
+- [Docker](#docker)
+- [A project template](#a-modelling-project-template)
+
 ## Git for version management 
 
 - Git is a version management system to facilitate cooperation in software development
 - The Git system provides mechanisms to prepare model runs (input data, configuration)
 - In this training we use services provided by Github, alternatives are Bitbucket, Gitlab, ...
+
+## Git visual
+
+![Git visual](./img/git-intro.png)
 
 ## Get started with Git
 
@@ -35,12 +52,20 @@ format:
 - Models runs are triggered by updates of the configuration
 - The results of a Model Run can be assessed in the Git Webinterface
 
+## CI visual
+
+[![CI visual](./img/watdev/git-actions.png)](https://github.com/watdev-eu/Gezira-SWAT/actions)
+
 ## Docker
 
 - Docker is a virtualisation technology, which facilitates running models in arbitrary environments
 - Run the model locally, in a Git workflow or a High computing environment
 - Docker creates virtual environments (containers) based on templates (images)
 - A number of images has been prepared for running the model
+
+## Docker visual
+
+![Docker visual](./img/docker-intro.png)
 
 ## Fortran 
 
@@ -50,23 +75,31 @@ format:
 
 ## Run locally
 
+- Install Docker (Desktop)
+- Navigate prompt to TxtInOut folder
+- Run the docker
+
 ``` 
 docker run --rm  -v $(pwd):/swat_data -w /swat_data crazyzlj/swat:alpint-2012.683 swat2012.683.gfort.rel
 ```
 
 ## A modelling project template
 
-- https://github.com/watdev-eu/watdev-model-template
+- [github.com/watdev-eu/watdev-model-template](https://github.com/watdev-eu/watdev-model-template)
 - Provides a structure on how to set up a modelling project
 - Each scenario is hosted in a branch
 - A workflow is available which runs the model at changes in the branches
+
+## Template visual
+
+[![Template visual](./img/watdev/model-template.png)](https://github.com/watdev-eu/watdev-model-template)
 
 ## Set up your project
 
 - Github account?
 - Fork the template repository to your account
 - Upload the model configuration
-- Assess the results (in output branch)
+- Assess the results
 
 ## Upload the results to the Model-UI
 
@@ -80,4 +113,4 @@ docker run --rm  -v $(pwd):/swat_data -w /swat_data crazyzlj/swat:alpint-2012.68
 ## Additional features of interest
 
 - Link a Github repository to Zenodo
-- 
+
