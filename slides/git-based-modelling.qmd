@@ -11,16 +11,16 @@ format:
 ---
 
 ## Goal of the lecture
-
-- Audience: Cropping experts comfortable in configuring a local SWAT model  
+ 
 - Introduction to concepts of running models in the cloud
 - Guidance on setting up and evaluating a cloud run
+- Audience: Comfortable with modelling 
 
 ## Why in the cloud?
 
 - Scaling (Cloud, HPC)
-- Reproducability (it works on my pc)
 - Local system may not have required specifications
+- Reproducability
 
 ## Contents
 
@@ -38,6 +38,16 @@ format:
 ## Git visual
 
 ![Git visual](./img/git-intro.png)
+
+## Git concepts
+
+- Repository
+- Clone
+- Commit
+- Push / Pull
+- Conflict
+- Branch
+- Fork / Pull request
 
 ## Get started with Git
 
@@ -62,6 +72,8 @@ format:
 - Run the model locally, in a Git workflow or a High computing environment
 - Docker creates virtual environments (containers) based on templates (images)
 - A number of images has been prepared for running the model
+- Docker images can be shared via a Container Registry ([docker hub](https://hub.docker.com))
+- Docker [get started](https://docs.docker.com/get-started/)
 
 ## Docker visual
 
@@ -108,9 +120,5 @@ docker run --rm  -v $(pwd):/swat_data -w /swat_data crazyzlj/swat:alpint-2012.68
 
 ## Questions
 
-- Do you have any questions
-
-## Additional features of interest
-
-- Link a Github repository to Zenodo
+- Do you have any questions?
 
