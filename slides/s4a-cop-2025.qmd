@@ -58,3 +58,30 @@ format:
 - Add a legend of classes (high-medium-low)
 - From the map product, attribute the source data
 
+## Concepts and Methods of data acquisition and
+sharing
+
+## Concepts of data acquisition
+
+- Sampling design
+- Standard Operating Procedures
+
+## Methods of data acquisition
+
+- The SOP manual
+
+
+## Concepts of sharing
+
+- For each observation describe the soil property, the observation procedure, unit of measure, date
+- In tabular data of a single campaign, this metadata may be stored at column (or dataset) level 
+- Deposit verified data (snapshot) in a repository, collect a DOI for sustainable citation
+- Assign a relevant license (and embargo) to the data
+- Additional publications for dedicated audiences (OGC,)
+
+
+## Methods of sharing
+
+
+
+## Examples of data sharing
