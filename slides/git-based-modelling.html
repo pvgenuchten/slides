@@ -150,6 +150,23 @@ Paul van Genuchten
 <li>Guidance on setting up and evaluating a cloud run</li>
 </ul>
 </section>
+<section id="why-in-the-cloud" class="slide level2">
+<h2>Why in the cloud?</h2>
+<ul>
+<li>Scaling (Cloud, HPC)</li>
+<li>Reproducability (it works on my pc)</li>
+<li>Local system may not have required specifications</li>
+</ul>
+</section>
+<section id="contents" class="slide level2">
+<h2>Contents</h2>
+<ul>
+<li><a href="#/git-for-version-management">Git versioning system</a></li>
+<li><a href="#/continuous-integration">Continuous integration</a></li>
+<li><a href="#/docker">Docker</a></li>
+<li><a href="#/a-modelling-project-template">A project template</a></li>
+</ul>
+</section>
 <section id="git-for-version-management" class="slide level2">
 <h2>Git for version management</h2>
 <ul>
@@ -158,6 +175,10 @@ Paul van Genuchten
 <li>In this training we use services provided by Github, alternatives are Bitbucket, Gitlab, …</li>
 </ul>
 </section>
+<section id="git-visual" class="slide level2">
+<h2>Git visual</h2>
+
+<img data-src="./img/git-intro.png" class="r-stretch quarto-figure-center"><p class="caption">Git visual</p></section>
 <section id="get-started-with-git" class="slide level2">
 <h2>Get started with Git</h2>
 <ul>
@@ -175,6 +196,15 @@ Paul van Genuchten
 <li>The results of a Model Run can be assessed in the Git Webinterface</li>
 </ul>
 </section>
+<section id="ci-visual" class="slide level2">
+<h2>CI visual</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://github.com/watdev-eu/Gezira-SWAT/actions"><img data-src="./img/watdev/git-actions.png"></a></p>
+<figcaption>CI visual</figcaption>
+</figure>
+</div>
+</section>
 <section id="docker" class="slide level2">
 <h2>Docker</h2>
 <ul>
@@ -184,6 +214,10 @@ Paul van Genuchten
 <li>A number of images has been prepared for running the model</li>
 </ul>
 </section>
+<section id="docker-visual" class="slide level2">
+<h2>Docker visual</h2>
+
+<img data-src="./img/docker-intro.png" class="r-stretch quarto-figure-center"><p class="caption">Docker visual</p></section>
 <section id="fortran" class="slide level2">
 <h2>Fortran</h2>
 <ul>
@@ -194,16 +228,30 @@ Paul van Genuchten
 </section>
 <section id="run-locally" class="slide level2">
 <h2>Run locally</h2>
+<ul>
+<li>Install Docker (Desktop)</li>
+<li>Navigate prompt to TxtInOut folder</li>
+<li>Run the docker</li>
+</ul>
 <pre><code>docker run --rm  -v $(pwd):/swat_data -w /swat_data crazyzlj/swat:alpint-2012.683 swat2012.683.gfort.rel</code></pre>
 </section>
 <section id="a-modelling-project-template" class="slide level2">
 <h2>A modelling project template</h2>
 <ul>
-<li>https://github.com/watdev-eu/watdev-model-template</li>
+<li><a href="https://github.com/watdev-eu/watdev-model-template">github.com/watdev-eu/watdev-model-template</a></li>
 <li>Provides a structure on how to set up a modelling project</li>
 <li>Each scenario is hosted in a branch</li>
 <li>A workflow is available which runs the model at changes in the branches</li>
 </ul>
+</section>
+<section id="template-visual" class="slide level2">
+<h2>Template visual</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://github.com/watdev-eu/watdev-model-template"><img data-src="./img/watdev/model-template.png"></a></p>
+<figcaption>Template visual</figcaption>
+</figure>
+</div>
 </section>
 <section id="set-up-your-project" class="slide level2">
 <h2>Set up your project</h2>
@@ -211,7 +259,7 @@ Paul van Genuchten
 <li>Github account?</li>
 <li>Fork the template repository to your account</li>
 <li>Upload the model configuration</li>
-<li>Assess the results (in output branch)</li>
+<li>Assess the results</li>
 </ul>
 </section>
 <section id="upload-the-results-to-the-model-ui" class="slide level2">
@@ -231,7 +279,6 @@ Paul van Genuchten
 <h2>Additional features of interest</h2>
 <ul>
 <li>Link a Github repository to Zenodo</li>
-<li></li>
 </ul>
 
 

@@ -1176,11 +1176,32 @@
     "text": "Goal of the lecture\n\nAudience: Cropping experts comfortable in configuring a local SWAT model\n\nIntroduction to concepts of running models in the cloud\nGuidance on setting up and evaluating a cloud run"
   },
   {
+    "objectID": "slides/git-based-modelling.html#why-in-the-cloud",
+    "href": "slides/git-based-modelling.html#why-in-the-cloud",
+    "title": "GIT flavoured modelling",
+    "section": "Why in the cloud?",
+    "text": "Why in the cloud?\n\nScaling (Cloud, HPC)\nReproducability (it works on my pc)\nLocal system may not have required specifications"
+  },
+  {
+    "objectID": "slides/git-based-modelling.html#contents",
+    "href": "slides/git-based-modelling.html#contents",
+    "title": "GIT flavoured modelling",
+    "section": "Contents",
+    "text": "Contents\n\nGit versioning system\nContinuous integration\nDocker\nA project template"
+  },
+  {
     "objectID": "slides/git-based-modelling.html#git-for-version-management",
     "href": "slides/git-based-modelling.html#git-for-version-management",
     "title": "GIT flavoured modelling",
     "section": "Git for version management",
     "text": "Git for version management\n\nGit is a version management system to facilitate cooperation in software development\nThe Git system provides mechanisms to prepare model runs (input data, configuration)\nIn this training we use services provided by Github, alternatives are Bitbucket, Gitlab, …"
+  },
+  {
+    "objectID": "slides/git-based-modelling.html#git-visual",
+    "href": "slides/git-based-modelling.html#git-visual",
+    "title": "GIT flavoured modelling",
+    "section": "Git visual",
+    "text": "Git visual\n\nGit visual"
   },
   {
     "objectID": "slides/git-based-modelling.html#get-started-with-git",
@@ -1197,11 +1218,25 @@
     "text": "Continuous Integration\n\nVarious providers have enriched Git with additional services, such as issue menagement, continuous integration\nContinuous integration provides opportunities to run automated workflows at intervals or events\nModels runs are triggered by updates of the configuration\nThe results of a Model Run can be assessed in the Git Webinterface"
   },
   {
+    "objectID": "slides/git-based-modelling.html#ci-visual",
+    "href": "slides/git-based-modelling.html#ci-visual",
+    "title": "GIT flavoured modelling",
+    "section": "CI visual",
+    "text": "CI visual\n\n\n\nCI visual"
+  },
+  {
     "objectID": "slides/git-based-modelling.html#docker",
     "href": "slides/git-based-modelling.html#docker",
     "title": "GIT flavoured modelling",
     "section": "Docker",
     "text": "Docker\n\nDocker is a virtualisation technology, which facilitates running models in arbitrary environments\nRun the model locally, in a Git workflow or a High computing environment\nDocker creates virtual environments (containers) based on templates (images)\nA number of images has been prepared for running the model"
+  },
+  {
+    "objectID": "slides/git-based-modelling.html#docker-visual",
+    "href": "slides/git-based-modelling.html#docker-visual",
+    "title": "GIT flavoured modelling",
+    "section": "Docker visual",
+    "text": "Docker visual\n\nDocker visual"
   },
   {
     "objectID": "slides/git-based-modelling.html#fortran",
@@ -1215,21 +1250,28 @@
     "href": "slides/git-based-modelling.html#run-locally",
     "title": "GIT flavoured modelling",
     "section": "Run locally",
-    "text": "Run locally\ndocker run --rm  -v $(pwd):/swat_data -w /swat_data crazyzlj/swat:alpint-2012.683 swat2012.683.gfort.rel"
+    "text": "Run locally\n\nInstall Docker (Desktop)\nNavigate prompt to TxtInOut folder\nRun the docker\n\ndocker run --rm  -v $(pwd):/swat_data -w /swat_data crazyzlj/swat:alpint-2012.683 swat2012.683.gfort.rel"
   },
   {
     "objectID": "slides/git-based-modelling.html#a-modelling-project-template",
     "href": "slides/git-based-modelling.html#a-modelling-project-template",
     "title": "GIT flavoured modelling",
     "section": "A modelling project template",
-    "text": "A modelling project template\n\nhttps://github.com/watdev-eu/watdev-model-template\nProvides a structure on how to set up a modelling project\nEach scenario is hosted in a branch\nA workflow is available which runs the model at changes in the branches"
+    "text": "A modelling project template\n\ngithub.com/watdev-eu/watdev-model-template\nProvides a structure on how to set up a modelling project\nEach scenario is hosted in a branch\nA workflow is available which runs the model at changes in the branches"
+  },
+  {
+    "objectID": "slides/git-based-modelling.html#template-visual",
+    "href": "slides/git-based-modelling.html#template-visual",
+    "title": "GIT flavoured modelling",
+    "section": "Template visual",
+    "text": "Template visual\n\n\n\nTemplate visual"
   },
   {
     "objectID": "slides/git-based-modelling.html#set-up-your-project",
     "href": "slides/git-based-modelling.html#set-up-your-project",
     "title": "GIT flavoured modelling",
     "section": "Set up your project",
-    "text": "Set up your project\n\nGithub account?\nFork the template repository to your account\nUpload the model configuration\nAssess the results (in output branch)"
+    "text": "Set up your project\n\nGithub account?\nFork the template repository to your account\nUpload the model configuration\nAssess the results"
   },
   {
     "objectID": "slides/git-based-modelling.html#upload-the-results-to-the-model-ui",
