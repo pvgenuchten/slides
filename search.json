@@ -1173,14 +1173,14 @@
     "href": "slides/git-based-modelling.html#goal-of-the-lecture",
     "title": "GIT flavoured modelling",
     "section": "Goal of the lecture",
-    "text": "Goal of the lecture\n\nAudience: Cropping experts comfortable in configuring a local SWAT model\n\nIntroduction to concepts of running models in the cloud\nGuidance on setting up and evaluating a cloud run"
+    "text": "Goal of the lecture\n\nIntroduction to concepts of running models in the cloud\nGuidance on setting up and evaluating a cloud run\nAudience: Comfortable with modelling"
   },
   {
     "objectID": "slides/git-based-modelling.html#why-in-the-cloud",
     "href": "slides/git-based-modelling.html#why-in-the-cloud",
     "title": "GIT flavoured modelling",
     "section": "Why in the cloud?",
-    "text": "Why in the cloud?\n\nScaling (Cloud, HPC)\nReproducability (it works on my pc)\nLocal system may not have required specifications"
+    "text": "Why in the cloud?\n\nScaling (Cloud, HPC)\nLocal system may not have required specifications\nReproducability"
   },
   {
     "objectID": "slides/git-based-modelling.html#contents",
@@ -1202,6 +1202,13 @@
     "title": "GIT flavoured modelling",
     "section": "Git visual",
     "text": "Git visual\n\nGit visual"
+  },
+  {
+    "objectID": "slides/git-based-modelling.html#git-concepts",
+    "href": "slides/git-based-modelling.html#git-concepts",
+    "title": "GIT flavoured modelling",
+    "section": "Git concepts",
+    "text": "Git concepts\n\nRepository\nClone\nCommit\nPush / Pull\nConflict\nBranch\nFork / Pull request"
   },
   {
     "objectID": "slides/git-based-modelling.html#get-started-with-git",
@@ -1229,7 +1236,7 @@
     "href": "slides/git-based-modelling.html#docker",
     "title": "GIT flavoured modelling",
     "section": "Docker",
-    "text": "Docker\n\nDocker is a virtualisation technology, which facilitates running models in arbitrary environments\nRun the model locally, in a Git workflow or a High computing environment\nDocker creates virtual environments (containers) based on templates (images)\nA number of images has been prepared for running the model"
+    "text": "Docker\n\nDocker is a virtualisation technology, which facilitates running models in arbitrary environments\nRun the model locally, in a Git workflow or a High computing environment\nDocker creates virtual environments (containers) based on templates (images)\nA number of images has been prepared for running the model\nDocker images can be shared via a Container Registry (docker hub)\nDocker get started"
   },
   {
     "objectID": "slides/git-based-modelling.html#docker-visual",
@@ -1285,14 +1292,7 @@
     "href": "slides/git-based-modelling.html#questions",
     "title": "GIT flavoured modelling",
     "section": "Questions",
-    "text": "Questions\n\nDo you have any questions"
-  },
-  {
-    "objectID": "slides/git-based-modelling.html#additional-features-of-interest",
-    "href": "slides/git-based-modelling.html#additional-features-of-interest",
-    "title": "GIT flavoured modelling",
-    "section": "Additional features of interest",
-    "text": "Additional features of interest\n\nLink a Github repository to Zenodo"
+    "text": "Questions\n\nDo you have any questions?"
   },
   {
     "objectID": "slides/intro-crawler-mcf-pycsw.html#what",
