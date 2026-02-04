@@ -85,6 +85,13 @@ format:
 - Docker containers are usually based on Linux system
 - The fortran compiler for Unix is more strict than the windows Fortran compiler
 
+## 4 relevant Docker images
+
+- [crazyzlj/swat](https://github.com/crazyzlj/SWAT/pkgs/container/swat) SWAT only
+- [crazyzlj/swatplus](https://github.com/crazyzlj/SWATplus/pkgs/container/swatplus) SWATplus only
+- [spark-hydro/SWAT-MODFLOW3](https://github.com/spark-hydro/SWAT-MODFLOW3/pull/6) Pending 
+- [WatDev SWAT-DSSAT](https://github.com/watdev-eu/integrated_models/pkgs/container/integrated_models) SWAT + DSSAT 
+
 ## Run locally
 
 - Install Docker (Desktop)
