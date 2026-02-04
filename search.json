@@ -1519,25 +1519,67 @@
     "text": "pygeometa, geodatacrawler & pycsw\n\npygeometa’s MCF is a minimal subset of ISO19115, encoded in yaml\ngeodatacrawler extends pygeometa to:\n\nextract metadata from data formats\ninherit metadata from parent folders\nimport metadata from csv and remote sources\ncreate data api’s based on metadata\n\n is a pythonic catalogue web app. Wide standards support enables findability in multiple communities."
   },
   {
-    "objectID": "slides/s4a-intro.html#background",
-    "href": "slides/s4a-intro.html#background",
+    "objectID": "slides/s4a-cop-2025.html#background",
+    "href": "slides/s4a-cop-2025.html#background",
     "title": "Soil Information System for Africa",
     "section": "Background",
     "text": "Background\n\nThe AFSIS project showed the value of a continental map\nIt also showed the challenges of map construction\n\navailability of observation data\nlimited description of the data (difficult to harmonize)\nunclear usage constraints/ownership"
   },
   {
-    "objectID": "slides/s4a-intro.html#a-continental-campaign",
-    "href": "slides/s4a-intro.html#a-continental-campaign",
+    "objectID": "slides/s4a-cop-2025.html#a-continental-campaign",
+    "href": "slides/s4a-cop-2025.html#a-continental-campaign",
     "title": "Soil Information System for Africa",
     "section": "A continental campaign",
     "text": "A continental campaign\n\nOptimized sampling design\nStandardised Operating Procedures for Field Survey, Transport and Laboratory\nAnalysis by a single lab\nFull data description and clear licence description\nDissiminaton of the results for various target audiences"
   },
   {
-    "objectID": "slides/s4a-intro.html#from-observations-to-maps",
-    "href": "slides/s4a-intro.html#from-observations-to-maps",
+    "objectID": "slides/s4a-cop-2025.html#from-observations-to-maps",
+    "href": "slides/s4a-cop-2025.html#from-observations-to-maps",
     "title": "Soil Information System for Africa",
     "section": "From observations to maps…",
     "text": "From observations to maps…\n\nLink laboratory observations to field sampling locations\nHarmonize data from various campaigns\n\nCan observations be compared? conversion required?\nField expertise or spatial algorythms to predict distribution (co-variates)\n\nAdd a legend of classes (high-medium-low)\nFrom the map product, attribute the source data"
+  },
+  {
+    "objectID": "slides/s4a-cop-2025.html#concepts-and-methods-of-data-acquisition-and",
+    "href": "slides/s4a-cop-2025.html#concepts-and-methods-of-data-acquisition-and",
+    "title": "Soil Information System for Africa",
+    "section": "Concepts and Methods of data acquisition and",
+    "text": "Concepts and Methods of data acquisition and\nsharing"
+  },
+  {
+    "objectID": "slides/s4a-cop-2025.html#concepts-of-data-acquisition",
+    "href": "slides/s4a-cop-2025.html#concepts-of-data-acquisition",
+    "title": "Soil Information System for Africa",
+    "section": "Concepts of data acquisition",
+    "text": "Concepts of data acquisition\n\nSampling design\nStandard Operating Procedures"
+  },
+  {
+    "objectID": "slides/s4a-cop-2025.html#methods-of-data-acquisition",
+    "href": "slides/s4a-cop-2025.html#methods-of-data-acquisition",
+    "title": "Soil Information System for Africa",
+    "section": "Methods of data acquisition",
+    "text": "Methods of data acquisition\n\nThe SOP manual"
+  },
+  {
+    "objectID": "slides/s4a-cop-2025.html#concepts-of-sharing",
+    "href": "slides/s4a-cop-2025.html#concepts-of-sharing",
+    "title": "Soil Information System for Africa",
+    "section": "Concepts of sharing",
+    "text": "Concepts of sharing\n\nFor each observation describe the soil property, the observation procedure, unit of measure, date\nIn tabular data of a single campaign, this metadata may be stored at column (or dataset) level\nDeposit verified data (snapshot) in a repository, collect a DOI for sustainable citation\nAssign a relevant license (and embargo) to the data\nAdditional publications for dedicated audiences (OGC,)"
+  },
+  {
+    "objectID": "slides/s4a-cop-2025.html#methods-of-sharing",
+    "href": "slides/s4a-cop-2025.html#methods-of-sharing",
+    "title": "Soil Information System for Africa",
+    "section": "Methods of sharing",
+    "text": "Methods of sharing"
+  },
+  {
+    "objectID": "slides/s4a-cop-2025.html#examples-of-data-sharing",
+    "href": "slides/s4a-cop-2025.html#examples-of-data-sharing",
+    "title": "Soil Information System for Africa",
+    "section": "Examples of data sharing",
+    "text": "Examples of data sharing"
   },
   {
     "objectID": "slides/soilwise-metadata.html#what-is-metadata",
