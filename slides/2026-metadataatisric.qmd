@@ -1,0 +1,94 @@
+---
+title: (Meta)Data management at ISRIC - World Soil Information
+subtitle: Discovery & Metadata Expert Group with the Digital Research Alliance of Canada
+author: Paul van Genuchten
+date: 2026-03-24
+format:
+  revealjs: 
+    theme: default
+    logo: https://www.isric.org/themes/custom/basic/logo.svg
+  pptx:
+    slide-level: 2
+---
+
+## ISRIC - World Soil Information
+
+- Foundation funded by Dutch Government to maintain a global collection of reference soil samples ([ISIS](https://isis.isric.org))
+- Collect and harmonize soil observation data from around the globe ([WOSIS](https://www.isric.org/explore/wosis))
+- Globally predict the distribution of soil properties ([Soilgrids](https://www.isric.org/explore/soilgrids))
+- Capacity building on soil data management at soil institutes around the globe ([Academy](https://resources.isric.org))
+- Participate in [research projects](https://www.isric.org/projects) to innovate the soil sciences
+
+## World Soil Museum
+
+![World Soil Museum by [tinker.nl](https://tinker.nl/en/work/world-soil-museum)](https://tinker.nl/img/cache/media_6828_widen_3840-upscale_90-2349_world-soil-museum01_0.webp)
+
+## (meta)data flows at isric
+
+- Museum exhibits and collection management
+- Participation in research projects (consortia)
+- Global soil products
+- Capacity building at national soil insititutes
+- Meta studies on availability of works about a topic
+
+## ISRIC & academia
+
+- Foundation embedded in Wageningen University
+- Advance the soil sciences through research activities
+- Research deliverables are advertised in the academic domain through Citations and DOI
+
+## ISRIC & Open GeoSpatial Consortium
+
+- Spatial distribution of soils explains our interest in spatial standards
+- Standardised formats and protocols facilitate long term access to data
+- National soil institutes are exchanging soil data through OGC protocols
+
+## ISRIC & Open Source Software
+
+- Tracability of research outputs is facilitated by Open Source Software 
+- OSGeo tools are commonly OGC compliant, many innovations at OGC are driven by open source software
+- Open formats enable future backwards compatibility for today's datasets
+- Sustainability of contributions to Open Source Software 
+- Open Source software is often cost effective
+- R - GDAL - GRASS - QGIS - Mapserver - pycsw - TerriaJS
+
+## Creation of Soil Maps 
+
+- Prediction of Soil Property Distribution is a random forest model with many covariates (geology, hydrology, DEM, satelite imagery)
+- Data is organised and procuded in folders on a shared file system
+- Effective metadata management is crucial for reproducability
+
+## Embedded metadata or Sidecar
+
+- Metadata is automatically embedded in model outputs
+- Or a sidecar metadata file is placed alongside each data file (readme.txt)
+- Which model to adopt (MS Excel, GeoTiff, GeoPackage)
+
+## A set of tools to work with sidecar files
+
+- [pygeometa](https://pygeometa.org) converts sidecar files between models (mcf, iso, dcat, schema.org)
+- [geodatacrawler](https://pypi.org/project/geodatacrawler/) crawls a (network) drive for sidecar files, as input for a catalogue
+- [MDME](https://osgeo.github.io/mdme) provides user friendly model driven metadata editing
+- [Git](https://catalogue.ejpsoil.eu) as a storage for sidecar files facilitates rich history and remote contributions 
+
+## Data model metadata
+
+- In soil sciences, a lot of observation data is collected
+- Observation data is 75% metadata and 25% data (where, what, when, who, how)
+- We endorse soil institutes to capture metadata as part of dataset metadata
+- The data model metadata is important information when harmonizing multuiple datasets
+- But also to filter datasets by measured property in a catalogue
+
+## CSVW approach for observation data
+
+- in the Soilwise project we're experimenting with users on annotating their observation data 
+- CSVW is a standard of W3C to annotate CSV columns so the data can be converted to a knowledge graph
+- Average soil scientiests experience the CSVW syntax as complex, we're setting up tools to facilitate the conversion
+- Other tools convert the Knowledge Graph data to GeoPackage
+
+## Open challenges
+
+- Limited metadata model in popular repositories such as Dataverse.nl, Zenodo.org, Pangea.de
+- How to use sidecar metadata when publishing data in repositories
+
+
