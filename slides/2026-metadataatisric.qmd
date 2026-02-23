@@ -6,7 +6,7 @@ date: 2026-03-24
 format:
   revealjs: 
     theme: default
-    logo: https://www.isric.org/themes/custom/basic/logo.svg
+    logo: https://isric.euwest01.umbraco.io//media/sbeastdv/logo.svg?quality=75&rxy=0.5%2C0.5
   pptx:
     slide-level: 2
 ---
