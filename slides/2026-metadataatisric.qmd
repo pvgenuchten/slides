@@ -23,6 +23,10 @@ format:
 
 ![World Soil Museum by [tinker.nl](https://tinker.nl/en/work/world-soil-museum)](https://tinker.nl/img/cache/media_6828_widen_3840-upscale_90-2349_world-soil-museum01_0.webp)
 
+## Collection of reference profiles
+
+![Samples of reference profiles](https://isric.euwest01.umbraco.io//media/dpbdg2ib/color-pot.jpg)
+
 ## (meta)data flows at isric
 
 - Museum exhibits and collection management
@@ -54,15 +58,17 @@ format:
 
 ## Creation of Soil Maps 
 
-- Prediction of Soil Property Distribution is a random forest model with many covariates (geology, hydrology, DEM, satelite imagery)
-- Data is organised and procuded in folders on a shared file system
-- Effective metadata management is crucial for reproducability
+- Soil Property Distribution is predicted by a random forest model on sampling data and covariates (geology, hydrology, satelite imagery)
+- Data is organised and produced in folders on a shared file system
+- Effective metadata management is crucial for reproducability (and attribution)
 
 ## Embedded metadata or Sidecar
 
 - Metadata is automatically embedded in model outputs
-- Or a sidecar metadata file is placed alongside each data file (readme.txt)
-- Which model to adopt (MS Excel, GeoTiff, GeoPackage)
+- Or a sidecar metadata file is placed alongside a data file (readme.txt)
+- Which model to adopt? 
+  - Facilitated by the format (MS Excel, GeoTiff, GeoPackage)
+  - Common in the community (iso19115, DCAT, Datacite, schema.org)
 
 ## A set of tools to work with sidecar files
 
@@ -75,8 +81,8 @@ format:
 
 - In soil sciences, a lot of observation data is collected
 - Observation data is 75% metadata and 25% data (where, what, when, who, how)
-- We endorse soil institutes to capture metadata as part of dataset metadata
-- The data model metadata is important information when harmonizing multuiple datasets
+- Soil institutes are endorsed to capture metadata as part of dataset metadata
+- The data model metadata is important information when harmonizing multiple datasets
 - But also to filter datasets by measured property in a catalogue
 
 ## CSVW approach for observation data
@@ -90,5 +96,7 @@ format:
 
 - Limited metadata model in popular repositories such as Dataverse.nl, Zenodo.org, Pangea.de
 - How to use sidecar metadata when publishing data in repositories
+- Commonly accepted vocabularies to reference observed soil properties and observation procedures
+- 
 
 
