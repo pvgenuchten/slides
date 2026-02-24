@@ -97,6 +97,9 @@ format:
 - Limited metadata model in popular repositories such as Dataverse.nl, Zenodo.org, Pangea.de
 - How to use sidecar metadata when publishing data in repositories
 - Commonly accepted vocabularies to reference observed soil properties and observation procedures
-- 
+
+## Questions / Comments?
+
+
 
 
