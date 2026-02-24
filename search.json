@@ -1113,6 +1113,13 @@
     "text": "World Soil Museum\n\nWorld Soil Museum by tinker.nl"
   },
   {
+    "objectID": "slides/2026-metadataatisric.html#collection-of-reference-profiles",
+    "href": "slides/2026-metadataatisric.html#collection-of-reference-profiles",
+    "title": "(Meta)Data management at ISRIC - World Soil Information",
+    "section": "Collection of reference profiles",
+    "text": "Collection of reference profiles\n\nSamples of reference profiles"
+  },
+  {
     "objectID": "slides/2026-metadataatisric.html#metadata-flows-at-isric",
     "href": "slides/2026-metadataatisric.html#metadata-flows-at-isric",
     "title": "(Meta)Data management at ISRIC - World Soil Information",
@@ -1145,14 +1152,14 @@
     "href": "slides/2026-metadataatisric.html#creation-of-soil-maps",
     "title": "(Meta)Data management at ISRIC - World Soil Information",
     "section": "Creation of Soil Maps",
-    "text": "Creation of Soil Maps\n\nPrediction of Soil Property Distribution is a random forest model with many covariates (geology, hydrology, DEM, satelite imagery)\nData is organised and procuded in folders on a shared file system\nEffective metadata management is crucial for reproducability"
+    "text": "Creation of Soil Maps\n\nSoil Property Distribution is predicted by a random forest model on sampling data and covariates (geology, hydrology, satelite imagery)\nData is organised and produced in folders on a shared file system\nEffective metadata management is crucial for reproducability (and attribution)"
   },
   {
     "objectID": "slides/2026-metadataatisric.html#embedded-metadata-or-sidecar",
     "href": "slides/2026-metadataatisric.html#embedded-metadata-or-sidecar",
     "title": "(Meta)Data management at ISRIC - World Soil Information",
     "section": "Embedded metadata or Sidecar",
-    "text": "Embedded metadata or Sidecar\n\nMetadata is automatically embedded in model outputs\nOr a sidecar metadata file is placed alongside each data file (readme.txt)\nWhich model to adopt (MS Excel, GeoTiff, GeoPackage)"
+    "text": "Embedded metadata or Sidecar\n\nMetadata is automatically embedded in model outputs\nOr a sidecar metadata file is placed alongside a data file (readme.txt)\nWhich model to adopt?\n\nFacilitated by the format (MS Excel, GeoTiff, GeoPackage)\nCommon in the community (iso19115, DCAT, Datacite, schema.org)"
   },
   {
     "objectID": "slides/2026-metadataatisric.html#a-set-of-tools-to-work-with-sidecar-files",
@@ -1166,7 +1173,7 @@
     "href": "slides/2026-metadataatisric.html#data-model-metadata",
     "title": "(Meta)Data management at ISRIC - World Soil Information",
     "section": "Data model metadata",
-    "text": "Data model metadata\n\nIn soil sciences, a lot of observation data is collected\nObservation data is 75% metadata and 25% data (where, what, when, who, how)\nWe endorse soil institutes to capture metadata as part of dataset metadata\nThe data model metadata is important information when harmonizing multuiple datasets\nBut also to filter datasets by measured property in a catalogue"
+    "text": "Data model metadata\n\nIn soil sciences, a lot of observation data is collected\nObservation data is 75% metadata and 25% data (where, what, when, who, how)\nSoil institutes are endorsed to capture metadata as part of dataset metadata\nThe data model metadata is important information when harmonizing multiple datasets\nBut also to filter datasets by measured property in a catalogue"
   },
   {
     "objectID": "slides/2026-metadataatisric.html#csvw-approach-for-observation-data",
@@ -1180,7 +1187,7 @@
     "href": "slides/2026-metadataatisric.html#open-challenges",
     "title": "(Meta)Data management at ISRIC - World Soil Information",
     "section": "Open challenges",
-    "text": "Open challenges\n\nLimited metadata model in popular repositories such as Dataverse.nl, Zenodo.org, Pangea.de\nHow to use sidecar metadata when publishing data in repositories"
+    "text": "Open challenges\n\nLimited metadata model in popular repositories such as Dataverse.nl, Zenodo.org, Pangea.de\nHow to use sidecar metadata when publishing data in repositories\nCommonly accepted vocabularies to reference observed soil properties and observation procedures"
   },
   {
     "objectID": "slides/abandoned-web.html#a-broken-link-from-a-report",

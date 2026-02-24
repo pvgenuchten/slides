@@ -155,6 +155,10 @@ Paul van Genuchten
 <h2>World Soil Museum</h2>
 
 <img data-src="https://tinker.nl/img/cache/media_6828_widen_3840-upscale_90-2349_world-soil-museum01_0.webp" class="r-stretch quarto-figure-center"><p class="caption">World Soil Museum by <a href="https://tinker.nl/en/work/world-soil-museum">tinker.nl</a></p></section>
+<section id="collection-of-reference-profiles" class="slide level2">
+<h2>Collection of reference profiles</h2>
+
+<img data-src="https://isric.euwest01.umbraco.io//media/dpbdg2ib/color-pot.jpg" class="r-stretch quarto-figure-center"><p class="caption">Samples of reference profiles</p></section>
 <section id="metadata-flows-at-isric" class="slide level2">
 <h2>(meta)data flows at isric</h2>
 <ul>
@@ -195,17 +199,21 @@ Paul van Genuchten
 <section id="creation-of-soil-maps" class="slide level2">
 <h2>Creation of Soil Maps</h2>
 <ul>
-<li>Prediction of Soil Property Distribution is a random forest model with many covariates (geology, hydrology, DEM, satelite imagery)</li>
-<li>Data is organised and procuded in folders on a shared file system</li>
-<li>Effective metadata management is crucial for reproducability</li>
+<li>Soil Property Distribution is predicted by a random forest model on sampling data and covariates (geology, hydrology, satelite imagery)</li>
+<li>Data is organised and produced in folders on a shared file system</li>
+<li>Effective metadata management is crucial for reproducability (and attribution)</li>
 </ul>
 </section>
 <section id="embedded-metadata-or-sidecar" class="slide level2">
 <h2>Embedded metadata or Sidecar</h2>
 <ul>
 <li>Metadata is automatically embedded in model outputs</li>
-<li>Or a sidecar metadata file is placed alongside each data file (readme.txt)</li>
-<li>Which model to adopt (MS Excel, GeoTiff, GeoPackage)</li>
+<li>Or a sidecar metadata file is placed alongside a data file (readme.txt)</li>
+<li>Which model to adopt?
+<ul>
+<li>Facilitated by the format (MS Excel, GeoTiff, GeoPackage)</li>
+<li>Common in the community (iso19115, DCAT, Datacite, schema.org)</li>
+</ul></li>
 </ul>
 </section>
 <section id="a-set-of-tools-to-work-with-sidecar-files" class="slide level2">
@@ -222,8 +230,8 @@ Paul van Genuchten
 <ul>
 <li>In soil sciences, a lot of observation data is collected</li>
 <li>Observation data is 75% metadata and 25% data (where, what, when, who, how)</li>
-<li>We endorse soil institutes to capture metadata as part of dataset metadata</li>
-<li>The data model metadata is important information when harmonizing multuiple datasets</li>
+<li>Soil institutes are endorsed to capture metadata as part of dataset metadata</li>
+<li>The data model metadata is important information when harmonizing multiple datasets</li>
 <li>But also to filter datasets by measured property in a catalogue</li>
 </ul>
 </section>
@@ -241,6 +249,8 @@ Paul van Genuchten
 <ul>
 <li>Limited metadata model in popular repositories such as Dataverse.nl, Zenodo.org, Pangea.de</li>
 <li>How to use sidecar metadata when publishing data in repositories</li>
+<li>Commonly accepted vocabularies to reference observed soil properties and observation procedures</li>
+<li></li>
 </ul>
 
 
