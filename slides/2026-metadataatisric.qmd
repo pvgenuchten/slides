@@ -13,8 +13,8 @@ format:
 
 ## ISRIC - World Soil Information
 
-- Foundation funded by Dutch Government to maintain a global collection of reference soil samples ([ISIS](https://isis.isric.org))
-- Collect and harmonize soil observation data from around the globe ([WOSIS](https://www.isric.org/explore/wosis))
+- Foundation funded by Dutch Government on promoting soil awareness and advancing the use of soil information to help build a more sustainable future.
+- Maintain a global collection of reference soil samples ([ISIS](https://isis.isric.org))
 - Globally predict the distribution of soil properties ([Soilgrids](https://www.isric.org/explore/soilgrids))
 - Capacity building on soil data management at soil institutes around the globe ([Academy](https://resources.isric.org))
 - Participate in [research projects](https://www.isric.org/projects) to innovate the soil sciences
