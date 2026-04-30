@@ -1,0 +1,104 @@
+---
+title: AUSO - Training on FAIR Soil Data
+author: Paul van Genuchten 
+date: 2026-04-30
+format:
+  revealjs:
+    incremental: true
+    theme: sky
+    logo: https://auso.faraafrica.org/wp-content/uploads/2025/08/AUSO-Logo-Final-1.png
+    footer: "African Union Soil Observatory"
+---
+
+## About
+
+The value of soil data is often limited by inconsistent documentation, poor accessibility, and lack of interoperability. The FAIR principles—
+Findable, Accessible, Interoperable, and Reusable—provide a framework to enhance the usability and impact of soil data. 
+
+This training is organised in the scope of the African Union Soil Observatory (AUSO) project. This training aims to 
+equip participants with practical knowledge and hands-on experience in applying FAIR principles specifically within the context of soil data. 
+
+The AUSO project project has received funding from the EU Horizon 2020, under Grant Agreement, 101218840
+ 
+## Objectives 
+
+- Understand the FAIR principles and their relevance to soil data. 
+- Recognize common challenges in soil data management. 
+- Explore and evaluate soil-related datasets and publications in open repositories. 
+- Apply basic FAIR practices to improve data sharing and reuse. 
+- Identify suitable repositories for publishing soil data. 
+- Understand the role of controlled vocabularies in improving data discoverability and interoperability. 
+ 
+## Audience 
+
+- Researchers and students working with soil data 
+- Data stewards and research support staff 
+- Environmental scientists and practitioners 
+- Anyone interested in open science and data management 
+
+## the FAIR principles 
+
+- Findable
+- Accessible
+- Interoperable
+- Reusable
+
+## FAIR relevance to soil data. 
+
+be aware of FAIR principles for optimal archiving and sharing of your works
+- as a scientist to make your you can easily & sustainably cite your work
+- as a user to use the principles to optimize your search and reuse of exising work (including citation)
+- as a funder, your funding will have sustainable impact
+ 
+- Which vocabularies
+- Which data models & processing steps
+
+- For which types of works:
+   - soil observation data (inventory and experimental)
+   - derived soil maps/products (aggregations, predictions)
+
+## Common challenges in data management. 
+
+- unawareness if data on a certain topic, region or time frame is available
+- incidentally information gets lost at project/funding finalisation
+- vocabularies are not organised to provide persistent identification to individual terms
+
+## Common challenges in **soil** data management. 
+
+- unexpected gaps for observed soil properties, due to different or unknown observation procedures
+- difficulties in applying a derived soil map due to unclarity on how it was produced
+- limited institutionalisation in producing derived soil data products
+
+## Explore and evaluate existing works
+
+- soil-related datasets 
+- publications 
+- in portals (not ok)
+- in open repositories. (ok-ish)
+- interoperable (ok)
+
+## Apply basic FAIR practices
+
+- improve data sharing 
+- reuse. 
+
+## Identify suitable repositories  
+
+- Verify the DMP of the project/organisation to understand if there are any recommendations
+- Is the repository sustainable (institutionlisation)
+- Does the repository provide persistent identifiers (DOI, handle)
+- Is the repository connected to common aggregators (openaire, openalex, crossref, web of science, google scholar)
+- Can the 
+
+## Controlled vocabularies 
+
+- improving data discoverability 
+- interoperability. 
+
+- Orcid, ROR
+- Agrovoc, Gemet, GCMD, CAB, GACS
+- Geospatial: United Nations Statistics Division classifications, FAO geospatial units, GADM
+- Agriculture economics: World Bank, Food and Agriculture Organization, United Nations
+- Policy: FAOLEX, OECD policy classifications
+
+Policies are highly country-specific, so controlled vocabularies don’t scale well globally.
