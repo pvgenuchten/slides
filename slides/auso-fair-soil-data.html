@@ -10,8 +10,8 @@
   <meta name="generator" content="quarto-1.9.37">
 
   <meta name="author" content="Paul van Genuchten">
-  <meta name="dcterms.date" content="2026-02-05">
-  <title>some slide decks – GIT flavoured modelling</title>
+  <meta name="dcterms.date" content="2026-04-30">
+  <title>some slide decks – AUSO - Training on FAIR Soil Data</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -33,7 +33,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-2740581606dc327e82f18f789b69d8a0.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-b5231298e24bf61ce18e9358c9f8c47f.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -131,8 +131,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">GIT flavoured modelling</h1>
-  <p class="subtitle">WATDEV Toolbox 1st regional training</p>
+  <h1 class="title">AUSO - Training on FAIR Soil Data</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -142,171 +141,119 @@ Paul van Genuchten
 </div>
 </div>
 
-  <p class="date">2026-02-05</p>
+  <p class="date">2026-04-30</p>
 </section>
-<section id="goal-of-the-lecture" class="slide level2">
-<h2>Goal of the lecture</h2>
+<section id="about" class="slide level2">
+<h2>About</h2>
+<p>The value of soil data is often limited by inconsistent documentation, poor accessibility, and lack of interoperability. The FAIR principles— Findable, Accessible, Interoperable, and Reusable—provide a framework to enhance the usability and impact of soil data.</p>
+<p>This training is organised in the scope of the African Union Soil Observatory (AUSO) project. This training aims to equip participants with practical knowledge and hands-on experience in applying FAIR principles specifically within the context of soil data.</p>
+<p>The AUSO project project has received funding from the EU Horizon 2020, under Grant Agreement, 101218840</p>
+</section>
+<section id="objectives" class="slide level2">
+<h2>Objectives</h2>
 <ul>
-<li>Introduction to concepts of running models in the cloud</li>
-<li>Guidance on setting up and evaluating a cloud run</li>
-<li>Audience: Comfortable with modelling</li>
+<li class="fragment">Understand the FAIR principles and their relevance to soil data.</li>
+<li class="fragment">Recognize common challenges in soil data management.</li>
+<li class="fragment">Explore and evaluate soil-related datasets and publications in open repositories.</li>
+<li class="fragment">Apply basic FAIR practices to improve data sharing and reuse.</li>
+<li class="fragment">Identify suitable repositories for publishing soil data.</li>
+<li class="fragment">Understand the role of controlled vocabularies in improving data discoverability and interoperability.</li>
 </ul>
 </section>
-<section id="why-in-the-cloud" class="slide level2">
-<h2>Why in the cloud?</h2>
+<section id="audience" class="slide level2">
+<h2>Audience</h2>
 <ul>
-<li>Scaling (Cloud, HPC)</li>
-<li>Local system may not have required specifications</li>
-<li>Reproducability</li>
+<li class="fragment">Researchers and students working with soil data</li>
+<li class="fragment">Data stewards and research support staff</li>
+<li class="fragment">Environmental scientists and practitioners</li>
+<li class="fragment">Anyone interested in open science and data management</li>
 </ul>
 </section>
-<section id="contents" class="slide level2">
-<h2>Contents</h2>
+<section id="the-fair-principles" class="slide level2">
+<h2>the FAIR principles</h2>
 <ul>
-<li><a href="#/git-for-version-management">Git versioning system</a></li>
-<li><a href="#/continuous-integration">Continuous integration</a></li>
-<li><a href="#/docker">Docker</a></li>
-<li><a href="#/a-modelling-project-template">A project template</a></li>
+<li class="fragment">Findable</li>
+<li class="fragment">Accessible</li>
+<li class="fragment">Interoperable</li>
+<li class="fragment">Reusable</li>
 </ul>
 </section>
-<section id="git-for-version-management" class="slide level2">
-<h2>Git for version management</h2>
+<section id="fair-relevance-to-soil-data." class="slide level2">
+<h2>FAIR relevance to soil data.</h2>
+<p>be aware of FAIR principles for optimal archiving and sharing of your works - as a scientist to make your you can easily &amp; sustainably cite your work - as a user to use the principles to optimize your search and reuse of exising work (including citation) - as a funder, your funding will have sustainable impact</p>
 <ul>
-<li>Git is a version management system to facilitate cooperation in software development</li>
-<li>The Git system provides mechanisms to prepare model runs (input data, configuration)</li>
-<li>In this training we use services provided by Github, alternatives are Bitbucket, Gitlab, …</li>
+<li class="fragment"><p>Which vocabularies</p></li>
+<li class="fragment"><p>Which data models &amp; processing steps</p></li>
+<li class="fragment"><p>For which types of works:</p>
+<ul>
+<li class="fragment">soil observation data (inventory and experimental)</li>
+<li class="fragment">derived soil maps/products (aggregations, predictions)</li>
+</ul></li>
 </ul>
 </section>
-<section id="git-visual" class="slide level2">
-<h2>Git visual</h2>
-
-<img data-src="./img/git-intro.png" class="r-stretch quarto-figure-center"><p class="caption">Git visual</p></section>
-<section id="git-concepts" class="slide level2">
-<h2>Git concepts</h2>
+<section id="common-challenges-in-data-management." class="slide level2">
+<h2>Common challenges in data management.</h2>
 <ul>
-<li>Repository</li>
-<li>Clone</li>
-<li>Commit</li>
-<li>Push / Pull</li>
-<li>Conflict</li>
-<li>Branch</li>
-<li>Fork / Pull request</li>
+<li class="fragment">unawareness if data on a certain topic, region or time frame is available</li>
+<li class="fragment">incidentally information gets lost at project/funding finalisation</li>
+<li class="fragment">vocabularies are not organised to provide persistent identification to individual terms</li>
 </ul>
 </section>
-<section id="get-started-with-git" class="slide level2">
-<h2>Get started with Git</h2>
+<section id="common-challenges-in-soil-data-management." class="slide level2">
+<h2>Common challenges in <strong>soil</strong> data management.</h2>
 <ul>
-<li>https://docs.github.com/en/get-started/git-basics</li>
-<li>Notice that many GIT providers include a Web Based Interface</li>
-<li>Various Graphical User Interfaces to interact with Git (SmartGit, Visual Studio, R studio)</li>
+<li class="fragment">unexpected gaps for observed soil properties, due to different or unknown observation procedures</li>
+<li class="fragment">difficulties in applying a derived soil map due to unclarity on how it was produced</li>
+<li class="fragment">limited institutionalisation in producing derived soil data products</li>
 </ul>
 </section>
-<section id="continuous-integration" class="slide level2">
-<h2>Continuous Integration</h2>
+<section id="explore-and-evaluate-existing-works" class="slide level2">
+<h2>Explore and evaluate existing works</h2>
 <ul>
-<li>Various providers have enriched Git with additional services, such as issue menagement, continuous integration</li>
-<li>Continuous integration provides opportunities to run automated workflows at intervals or events</li>
-<li>Models runs are triggered by updates of the configuration</li>
-<li>The results of a Model Run can be assessed in the Git Webinterface</li>
+<li class="fragment">soil-related datasets</li>
+<li class="fragment">publications</li>
+<li class="fragment">in portals (not ok)</li>
+<li class="fragment">in open repositories. (ok-ish)</li>
+<li class="fragment">interoperable (ok)</li>
 </ul>
 </section>
-<section id="ci-visual" class="slide level2">
-<h2>CI visual</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="https://github.com/watdev-eu/Gezira-SWAT/actions"><img data-src="./img/watdev/git-actions.png"></a></p>
-<figcaption>CI visual</figcaption>
-</figure>
-</div>
-</section>
-<section id="docker" class="slide level2">
-<h2>Docker</h2>
+<section id="apply-basic-fair-practices" class="slide level2">
+<h2>Apply basic FAIR practices</h2>
 <ul>
-<li>Docker is a virtualisation technology, which facilitates running models in arbitrary environments</li>
-<li>Run the model locally, in a Git workflow or a High computing environment</li>
-<li>Docker creates virtual environments (containers) based on templates (images)</li>
-<li>A number of images has been prepared for running the model</li>
-<li>Docker images can be shared via a Container Registry (<a href="https://hub.docker.com">docker hub</a>)</li>
-<li>Docker <a href="https://docs.docker.com/get-started/">get started</a></li>
+<li class="fragment">improve data sharing</li>
+<li class="fragment">reuse.</li>
 </ul>
 </section>
-<section id="docker-visual" class="slide level2">
-<h2>Docker visual</h2>
-
-<img data-src="./img/docker-intro.png" class="r-stretch quarto-figure-center"><p class="caption">Docker visual</p></section>
-<section id="fortran" class="slide level2">
-<h2>Fortran</h2>
+<section id="identify-suitable-repositories" class="slide level2">
+<h2>Identify suitable repositories</h2>
 <ul>
-<li>WATDEV model integrates multiple fortran based models; SWAT, Modflow and DSSAT</li>
-<li>Docker containers are usually based on Linux system</li>
-<li>The fortran compiler for Unix is more strict than the windows Fortran compiler</li>
+<li class="fragment">Verify the DMP of the project/organisation to understand if there are any recommendations</li>
+<li class="fragment">Is the repository sustainable (institutionlisation)</li>
+<li class="fragment">Does the repository provide persistent identifiers (DOI, handle)</li>
+<li class="fragment">Is the repository connected to common aggregators (openaire, openalex, crossref, web of science, google scholar)</li>
+<li class="fragment">Can the</li>
 </ul>
 </section>
-<section id="relevant-docker-images" class="slide level2">
-<h2>4 relevant Docker images</h2>
+<section id="controlled-vocabularies" class="slide level2">
+<h2>Controlled vocabularies</h2>
 <ul>
-<li><a href="https://github.com/crazyzlj/SWAT/pkgs/container/swat">crazyzlj/swat</a> SWAT only</li>
-<li><a href="https://github.com/crazyzlj/SWATplus/pkgs/container/swatplus">crazyzlj/swatplus</a> SWATplus only</li>
-<li><a href="https://github.com/spark-hydro/SWAT-MODFLOW3/pull/6">spark-hydro/SWAT-MODFLOW3</a> Pending</li>
-<li><a href="https://github.com/watdev-eu/integrated_models/pkgs/container/integrated_models">WatDev SWAT-DSSAT</a> SWAT + DSSAT</li>
+<li class="fragment"><p>improving data discoverability</p></li>
+<li class="fragment"><p>interoperability.</p></li>
+<li class="fragment"><p>Orcid, ROR</p></li>
+<li class="fragment"><p>Agrovoc, Gemet, GCMD, CAB, GACS</p></li>
+<li class="fragment"><p>Geospatial: United Nations Statistics Division classifications, FAO geospatial units, GADM</p></li>
+<li class="fragment"><p>Agriculture economics: World Bank, Food and Agriculture Organization, United Nations</p></li>
+<li class="fragment"><p>Policy: FAOLEX, OECD policy classifications</p></li>
 </ul>
-</section>
-<section id="run-locally" class="slide level2">
-<h2>Run locally</h2>
-<ul>
-<li>Install Docker (Desktop)</li>
-<li>Navigate prompt to TxtInOut folder</li>
-<li>Run the docker</li>
-</ul>
-<pre><code>docker run --rm  -v $(pwd):/swat_data -w /swat_data crazyzlj/swat:alpint-2012.683 swat2012.683.gfort.rel</code></pre>
-</section>
-<section id="a-modelling-project-template" class="slide level2">
-<h2>A modelling project template</h2>
-<ul>
-<li><a href="https://github.com/watdev-eu/watdev-model-template">github.com/watdev-eu/watdev-model-template</a></li>
-<li>Provides a structure on how to set up a modelling project</li>
-<li>Each scenario is hosted in a branch</li>
-<li>A workflow is available which runs the model at changes in the branches</li>
-</ul>
-</section>
-<section id="template-visual" class="slide level2">
-<h2>Template visual</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="https://github.com/watdev-eu/watdev-model-template"><img data-src="./img/watdev/model-template.png"></a></p>
-<figcaption>Template visual</figcaption>
-</figure>
-</div>
-</section>
-<section id="set-up-your-project" class="slide level2">
-<h2>Set up your project</h2>
-<ul>
-<li>Github account?</li>
-<li>Fork the template repository to your account</li>
-<li>Upload the model configuration</li>
-<li>Assess the results</li>
-</ul>
-</section>
-<section id="upload-the-results-to-the-model-ui" class="slide level2">
-<h2>Upload the results to the Model-UI</h2>
-<ul>
-<li>At the moment this is a manual effort</li>
-<li>In the next version, it will be an automated step at the end of the pipeline</li>
-</ul>
-</section>
-<section id="questions" class="slide level2">
-<h2>Questions</h2>
-<ul>
-<li>Do you have any questions?</li>
-</ul>
+<p>Policies are highly country-specific, so controlled vocabularies don’t scale well globally.</p>
 
 
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
-<p><img src="https://static.wixstatic.com/media/9d090e_49fe8f50a4324adab5d65434391395d5~mv2.png/v1/fill/w_444,h_108,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/DEF2.png" class="slide-logo"></p>
+<p><img src="https://auso.faraafrica.org/wp-content/uploads/2025/08/AUSO-Logo-Final-1.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>This work has been created with the <a href="https://capacity4dev.europa.eu/projects/desira/info/watdev_en">financial support of the European Union</a>.</p>
+<p>African Union Soil Observatory</p>
 </div>
 </div></div>
 
