@@ -126,13 +126,14 @@ machine-actionability and "as open as possible, as closed as necessary"
 
 ## List of commonly used repositories
 
-- [Aaspace](https://aaspace.org) 
+- [Aaspace](https://aaspace.org) - Fara
 - [Kalro erepository](https://kalroerepository.kalro.org/)
-- [Zenodo](https://zenodo.org/) 
+- [Zenodo](https://zenodo.org/) - CERN EU
 - [Pangaea](https://www.pangaea.de/) 
 - [Open science foundation](https://osf.io) 
 - [Harvard Dataverse platform](https://dataverse.harvard.edu/) 
 - [Data dryad](https://datadryad.org/) 
+- [Figshare](https://figshare.com/)
 - [Gates open research](https://gatesopenresearch.org/) 
 
 
@@ -145,14 +146,14 @@ machine-actionability and "as open as possible, as closed as necessary"
 - Interoperability
   - shared understanding of concepts (soil properties, observation procedures, units of measure)
 
-## Examples of controlled vocabularies
+## Examples of controlled vocabularies or PID systems
 
-- Orcid and ROR for people and organisations
+- [DOI](https://doi.org/10.5771/9783748951230-749) and Handle for publications
+- [ORCID](https://orcid.org/0000-0002-4789-174X) and [ROR](https://ror.org/03prz6j20) (and not [this](https://ror.org/04edgdk70)) for people and organisations
 - Agrovoc, Gemet, GCMD, CAB, GACS for agronomical terms
-- United Nations Statistics Division classifications, FAO geospatial units, GADM for spatial units
-- World Bank, Food and Agriculture Organization, United Nations for Agriculture economics
-- FAOLEX, OECD policy classifications on policy terms
-- QUDT, OM or UCUM for units of measure
+- QUDT for units of measure
+- [EUSoilVoc](https://w3id.org/eusoilvoc/) for soil properties, observation procedures, etc.
+
 
 ## Common datamodel for observation data
 
@@ -168,8 +169,25 @@ machine-actionability and "as open as possible, as closed as necessary"
 - The CSV on the Web (CSVW) standard provides a way to annotate tabular data with metadata, 
 - Use of controlled vocabularies while annotating the data can further enhance interoperability and findability.
 
+## Annotate a CSV
+
+![annotate a csv](./img/tabbular_annotated.png)
+
+## Upload CSVW metadata with data
+
+![Upload CSVW metadata with data](./img/tabbular_csvw.png)
+
+## Let's try it out!
+
+- Prepare a csv in [raw2ready](https://raw2ready.streamlit.app/)
+- Annotate a csv with a CSVW metadata file, using the [CSVW metadata editor](https://dataannotator-swr.streamlit.app/)
+- Convert annotated csv to OMS using the [Soil Data Streamer](https://api.soilwise.wetransform.eu/csvw/docs)
+
+See a sample in [Kenyan SIS](https://www.github.com/kalro-ict/kensis-data/) 
+
+
 ## Summary 
- 
+
 - The FAIR principles provide a framework to enhance the usability and impact of soil data.
 - Common challenges in soil data management include unawareness of available data, loss of information, and lack of institutionalization in producing derived soil data products.
 - Repositories and aggregators play a crucial role in making data findable and accessible.  
