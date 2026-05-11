@@ -347,14 +347,14 @@
     "href": "slides/auso-fair-soil-data.html#about",
     "title": "AUSO - Training on FAIR Soil Data",
     "section": "About",
-    "text": "About\nThe value of soil data is often limited by inconsistent documentation, poor accessibility, and lack of interoperability.\nThe FAIR principles provide a framework to enhance the usability and impact of soil data."
+    "text": "About\n\nThe value of soil data is often limited by inconsistent documentation, poor accessibility, and lack of interoperability.\nThe FAIR principles provide a framework to enhance the usability and impact of soil data."
   },
   {
     "objectID": "slides/auso-fair-soil-data.html#the-auso-project",
     "href": "slides/auso-fair-soil-data.html#the-auso-project",
     "title": "AUSO - Training on FAIR Soil Data",
-    "section": "the AUSO project",
-    "text": "the AUSO project\n\nEfforts to reverse soil degradation in Africa are held back by a lack of reliable, accessible soil data.\nThe project (running from 2025 - 2030) aims to establish a African Union Soil Observatory, including a Soil Data Centre and Soil Health Dashboard to support the management of African soils.\nBy consolidating data and helping 12 countries shape soil strategies, AUSO will equip decision-makers with the tools needed to promote sustainable land use."
+    "section": "The AUSO project",
+    "text": "The AUSO project\n\nEfforts to reverse soil degradation in Africa are held back by a lack of reliable, accessible soil data.\nThe project (running from 2025 - 2030) aims to establish a African Union Soil Observatory, including a Soil Data Centre and Soil Health Dashboard to support the management of African soils.\nBy consolidating data and helping 12 countries shape soil strategies, AUSO will equip decision-makers with the tools needed to promote sustainable land use."
   },
   {
     "objectID": "slides/auso-fair-soil-data.html#training-objectives",
@@ -374,57 +374,57 @@
     "objectID": "slides/auso-fair-soil-data.html#the-fair-principles",
     "href": "slides/auso-fair-soil-data.html#the-fair-principles",
     "title": "AUSO - Training on FAIR Soil Data",
-    "section": "the FAIR principles",
-    "text": "the FAIR principles\nConceived in 2014 at a Lorentz Center, they address the need for better data sharing, with a focus on machine-actionability and “as open as possible, as closed as necessary”\n\nFindable\nAccessible\nInteroperable\nReusable"
+    "section": "The FAIR principles",
+    "text": "The FAIR principles\nConceived in 2014 at a Lorentz Center workshop, they address the need for better data sharing, with a focus on machine-actionability and “as open as possible, as closed as necessary”\n\nFindable\nAccessible\nInteroperable\nReusable"
   },
   {
     "objectID": "slides/auso-fair-soil-data.html#findable",
     "href": "slides/auso-fair-soil-data.html#findable",
     "title": "AUSO - Training on FAIR Soil Data",
     "section": "Findable",
-    "text": "Findable\n\ndata and metadata should be easy to find for both humans and computers.\nThis includes assigning a unique and persistent identifier to the data.\nproviding rich metadata that describes the data and its context."
+    "text": "Findable\n\nData and metadata should be easy to find for both humans and computers.\nThis includes assigning a unique and persistent identifier to the data.\nProviding rich metadata that describes the data and its context."
   },
   {
     "objectID": "slides/auso-fair-soil-data.html#accessible",
     "href": "slides/auso-fair-soil-data.html#accessible",
     "title": "AUSO - Training on FAIR Soil Data",
     "section": "Accessible",
-    "text": "Accessible\n\ndata should be retrievable by their identifier using a standardized communications protocol.\nThe protocol should be open, free, and universally implementable."
+    "text": "Accessible\n\nData should be retrievable by their identifier using a standardized communications protocol.\nThe protocol should be open, free, and universally implementable."
   },
   {
     "objectID": "slides/auso-fair-soil-data.html#interoperable",
     "href": "slides/auso-fair-soil-data.html#interoperable",
     "title": "AUSO - Training on FAIR Soil Data",
     "section": "Interoperable",
-    "text": "Interoperable\n\ndata should use a formal, accessible, shared, and broadly applicable language for knowledge representation.\ndata should use vocabularies that follow FAIR principles.\ndata should include qualified references to other data."
+    "text": "Interoperable\n\nUse a formal, accessible, shared, and broadly applicable language for knowledge representation.\nUse vocabularies that follow FAIR principles.\nInclude qualified references to other data."
   },
   {
     "objectID": "slides/auso-fair-soil-data.html#reusable",
     "href": "slides/auso-fair-soil-data.html#reusable",
     "title": "AUSO - Training on FAIR Soil Data",
     "section": "Reusable",
-    "text": "Reusable\n\ndata should be richly described with a plurality of accurate and relevant attributes.\ndata should be released with a clear and accessible data usage license.\ndata should be associated with detailed provenance.\ndata should meet domain-relevant community standards."
+    "text": "Reusable\n\nRichly described with a plurality of accurate and relevant attributes.\nReleased with a clear and accessible data usage license.\nAssociated with detailed provenance.\nMeet domain-relevant community standards."
   },
   {
-    "objectID": "slides/auso-fair-soil-data.html#fair-relevance-to-soil-data.",
-    "href": "slides/auso-fair-soil-data.html#fair-relevance-to-soil-data.",
+    "objectID": "slides/auso-fair-soil-data.html#cabi-fair-process-framework",
+    "href": "slides/auso-fair-soil-data.html#cabi-fair-process-framework",
     "title": "AUSO - Training on FAIR Soil Data",
-    "section": "FAIR, relevance to soil data.",
-    "text": "FAIR, relevance to soil data.\n\nas a scientist to make your you can easily & sustainably cite your work\nas a user to use the principles to optimize your search and reuse of exising work (including citation)\nas a funder, your funding will have sustainable impact\nWhich vocabularies\nWhich data models & processing steps"
+    "section": "CABI FAIR process framework",
+    "text": "CABI FAIR process framework\nUse this framework to generate the necessary data management and access plan for a successful project"
   },
   {
     "objectID": "slides/auso-fair-soil-data.html#data-products-in-soil-science",
     "href": "slides/auso-fair-soil-data.html#data-products-in-soil-science",
     "title": "AUSO - Training on FAIR Soil Data",
     "section": "Data products in soil science",
-    "text": "Data products in soil science\n\nsoil & land observation data (inventory and experimental)\n\ntabular data at a given geolocation and time\n\nderived soil maps/products (aggregations, predictions)\n\nspatial data (raster, polygon vector)"
+    "text": "Data products in soil science\n\nSoil & land observation data\n\nSoil & land inventory at a given geolocation and time\nData from controlled (field or lab experiments)\n\nDerived maps/products\n\nAggregated harmonised datasets\nPredicted distribution of soil properties\nOptimization of soil health, erosion, yield, etc.\n\nOther data products (covariates)\n\ngeology, sattelite data, land use, climate, etc."
   },
   {
     "objectID": "slides/auso-fair-soil-data.html#common-challenges-in-data-management.",
     "href": "slides/auso-fair-soil-data.html#common-challenges-in-data-management.",
     "title": "AUSO - Training on FAIR Soil Data",
     "section": "Common challenges in data management.",
-    "text": "Common challenges in data management.\n\nUnawareness if data on a certain topic, region or time is available\nIncidentally information gets lost at project/funding finalisation\nVocabularies are not organised to provide persistent identification to individual terms"
+    "text": "Common challenges in data management.\n\nUnawareness if data on a certain topic, region or time is available\nInformation loss at project/funding finalisation\nVocabularies are not well organised for reuse"
   },
   {
     "objectID": "slides/auso-fair-soil-data.html#common-challenges-in-soil-data-management.",
@@ -434,11 +434,18 @@
     "text": "Common challenges in soil data management.\n\nUnexpected gaps for observed soil properties, due to different or unknown observation procedures\nDifficulties in applying a derived soil map due to unclarity on how it was produced\nLimited institutionalisation in producing derived soil data products"
   },
   {
-    "objectID": "slides/auso-fair-soil-data.html#publication-and-aggregators",
-    "href": "slides/auso-fair-soil-data.html#publication-and-aggregators",
+    "objectID": "slides/auso-fair-soil-data.html#repositories-and-aggregators",
+    "href": "slides/auso-fair-soil-data.html#repositories-and-aggregators",
     "title": "AUSO - Training on FAIR Soil Data",
-    "section": "Publication and aggregators",
-    "text": "Publication and aggregators\n\nRepositories are the primary place to publish data, they store the data under a unique identification with metadata\nData can be publicly accessible or restricted (e.g. by request, or with an embargo period)\nRepositories are not always the first place to look for data.\nAggregators (e.g. OpenAIRE, OpenAlex, Google Scholar, Web of Science) index data from multiple repositories and provide search interfaces to find data across repositories.\nRepositories that are indexed by aggregators are more likely to be found and cited."
+    "section": "Repositories and aggregators",
+    "text": "Repositories and aggregators\n\nRepositories are the primary place to publish data, they store the data under a unique identification with metadata\nData can be publicly accessible or restricted (e.g. by request, or with an embargo period)\nRepositories are not always the first place to look for data.\nAggregators (e.g. OpenAIRE, OpenAlex, Google Scholar, Web of Science) index data from multiple repositories and provide search interfaces to find data across repositories.\nRepositories that are indexed by aggregators are more likely to be found and cited."
+  },
+  {
+    "objectID": "slides/auso-fair-soil-data.html#lets-give-it-a-try",
+    "href": "slides/auso-fair-soil-data.html#lets-give-it-a-try",
+    "title": "AUSO - Training on FAIR Soil Data",
+    "section": "Let’s give it a try!",
+    "text": "Let’s give it a try!\n\nUse openalex.org to find soil data and maps for a given region, time period, or soil property.\nUse the metadata to understand the data and its context, and to find related data and publications\nCan you identify some existing data which is not findable in OpenAlex? Can you find it by searching in google or chatgpt? Can you consider why it is not indexed by OpenAlex or Google?\nConsider you would write a report using some data, how would you cite the data? Would your readers be able to find the data again in the future?"
   },
   {
     "objectID": "slides/auso-fair-soil-data.html#identify-suitable-repositories",
@@ -459,7 +466,7 @@
     "href": "slides/auso-fair-soil-data.html#controlled-vocabularies",
     "title": "AUSO - Training on FAIR Soil Data",
     "section": "Controlled vocabularies",
-    "text": "Controlled vocabularies\n\nImprove findability\n\npersistent identifiers for terms\nhierarchical relationships between terms\nclustering of records based on shared terms\n\nInteroperability\n\nshared understanding of concepts (soil properties, observation procedures, units of measure)"
+    "text": "Controlled vocabularies\n\nImprove findability\n\nPersistent identifiers for terms\nHierarchical relationships between terms\nClustering of records based on shared terms\n\nInteroperability\n\nShared understanding of concepts (soil properties, observation procedures, units of measure)"
   },
   {
     "objectID": "slides/auso-fair-soil-data.html#examples-of-controlled-vocabularies-or-pid-systems",
