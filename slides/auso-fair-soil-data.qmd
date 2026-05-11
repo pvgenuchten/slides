@@ -1,51 +1,87 @@
 ---
 title: AUSO - Training on FAIR Soil Data
 author: Paul van Genuchten 
-date: 2026-04-30
+date: 2026-05-16
 format:
   revealjs:
     incremental: true
-    theme: sky
+    theme: serif
     logo: https://auso.faraafrica.org/wp-content/uploads/2025/08/AUSO-Logo-Final-1.png
-    footer: "African Union Soil Observatory"
+    footer: AU Soil Observatory 2026 - <a href="https://cordis.europa.eu/project/id/101218840">EU Horizon Grant 101218840</a>
 ---
+
+## A training on FAIR soil data
+
+Organized in the scope of the African Union Soil Observatory (AUSO) project.
+
+- Christisan Thine Omuto (Fara)
+- Chipo Msengezi (Cabi)
+- Paul van Genuchten (ISRIC)
 
 ## About
 
-The value of soil data is often limited by inconsistent documentation, poor accessibility, and lack of interoperability. The FAIR principles—
-Findable, Accessible, Interoperable, and Reusable—provide a framework to enhance the usability and impact of soil data. 
+The value of soil data is often limited by inconsistent documentation, poor accessibility, and lack of interoperability. 
 
-This training is organised in the scope of the African Union Soil Observatory (AUSO) project. This training aims to 
-equip participants with practical knowledge and hands-on experience in applying FAIR principles specifically within the context of soil data. 
+The FAIR principles provide a framework to enhance the usability and impact of soil data. 
 
-The AUSO project project has received funding from the EU Horizon 2020, under Grant Agreement, 101218840
- 
-## Objectives 
+## the AUSO project
 
-- Understand the FAIR principles and their relevance to soil data. 
-- Recognize common challenges in soil data management. 
-- Explore and evaluate soil-related datasets and publications in open repositories. 
-- Apply basic FAIR practices to improve data sharing and reuse. 
-- Identify suitable repositories for publishing soil data. 
-- Understand the role of controlled vocabularies in improving data discoverability and interoperability. 
- 
+- Efforts to reverse soil degradation in Africa are held back by a lack of reliable, accessible soil data.
+- The project (running from 2025 - 2030) aims to establish a African Union Soil Observatory, including a 
+  Soil Data Centre and Soil Health Dashboard to support the management of African soils.
+- By consolidating data and helping 12 countries shape soil strategies, 
+  AUSO will equip decision-makers with the tools needed to promote sustainable land use.
+
+
+## Training objectives 
+
+- Recognize common challenges in soil data management
+- Understand the FAIR principles and their relevance to soil data
+- Identify suitable repositories for publishing soil data
+- Understand the role of controlled vocabularies 
+
 ## Audience 
 
 - Researchers and students working with soil data 
-- Data stewards and research support staff 
+- Data stewards and support staff 
 - Environmental scientists and practitioners 
 - Anyone interested in open science and data management 
 
 ## the FAIR principles 
+
+Conceived in 2014 at a Lorentz Center, they address the need for better data sharing, with a focus on 
+machine-actionability and "as open as possible, as closed as necessary"
 
 - Findable
 - Accessible
 - Interoperable
 - Reusable
 
-## FAIR relevance to soil data. 
+## Findable
 
-be aware of FAIR principles for optimal archiving and sharing of your works
+- data and metadata should be easy to find for both humans and computers. 
+- This includes assigning a unique and persistent identifier to the data.
+- providing rich metadata that describes the data and its context.
+
+## Accessible 
+
+- data should be retrievable by their identifier using a standardized communications protocol.
+- The protocol should be open, free, and universally implementable.
+
+## Interoperable
+
+- data should use a formal, accessible, shared, and broadly applicable language for knowledge representation.
+- data should use vocabularies that follow FAIR principles.
+- data should include qualified references to other data. 
+
+## Reusable
+- data should be richly described with a plurality of accurate and relevant attributes.
+- data should be released with a clear and accessible data usage license.
+- data should be associated with detailed provenance.
+- data should meet domain-relevant community standards.
+
+## FAIR, relevance to soil data. 
+
 - as a scientist to make your you can easily & sustainably cite your work
 - as a user to use the principles to optimize your search and reuse of exising work (including citation)
 - as a funder, your funding will have sustainable impact
@@ -53,52 +89,89 @@ be aware of FAIR principles for optimal archiving and sharing of your works
 - Which vocabularies
 - Which data models & processing steps
 
-- For which types of works:
-   - soil observation data (inventory and experimental)
-   - derived soil maps/products (aggregations, predictions)
+## Data products in soil science
+
+- soil & land observation data (inventory and experimental)
+  - tabular data at a given geolocation and time 
+- derived soil maps/products (aggregations, predictions)
+  - spatial data (raster, polygon vector) 
 
 ## Common challenges in data management. 
 
-- unawareness if data on a certain topic, region or time frame is available
-- incidentally information gets lost at project/funding finalisation
-- vocabularies are not organised to provide persistent identification to individual terms
+- Unawareness if data on a certain topic, region or time is available
+- Incidentally information gets lost at project/funding finalisation
+- Vocabularies are not organised to provide persistent identification to individual terms
 
 ## Common challenges in **soil** data management. 
 
-- unexpected gaps for observed soil properties, due to different or unknown observation procedures
-- difficulties in applying a derived soil map due to unclarity on how it was produced
-- limited institutionalisation in producing derived soil data products
+- Unexpected gaps for observed soil properties, due to different or unknown observation procedures
+- Difficulties in applying a derived soil map due to unclarity on how it was produced
+- Limited institutionalisation in producing derived soil data products
 
-## Explore and evaluate existing works
+## Publication and aggregators
 
-- soil-related datasets 
-- publications 
-- in portals (not ok)
-- in open repositories. (ok-ish)
-- interoperable (ok)
-
-## Apply basic FAIR practices
-
-- improve data sharing 
-- reuse. 
+- Repositories are the primary place to publish data, they store the data under a unique identification with metadata 
+- Data can be publicly accessible or restricted (e.g. by request, or with an embargo period) 
+- Repositories are not always the first place to look for data.
+- Aggregators (e.g. OpenAIRE, OpenAlex, Google Scholar, Web of Science) index data from multiple repositories and provide search interfaces to find data across repositories.
+- Repositories that are indexed by aggregators are more likely to be found and cited.
 
 ## Identify suitable repositories  
 
-- Verify the DMP of the project/organisation to understand if there are any recommendations
+- Verify project/funder obligations
 - Is the repository sustainable (institutionlisation)
 - Does the repository provide persistent identifiers (DOI, handle)
 - Is the repository connected to common aggregators (openaire, openalex, crossref, web of science, google scholar)
-- Can the 
+- Completeness of the metadata model, can the funder be indicated in the metadata? 
+
+## List of commonly used repositories
+
+- [Aaspace](https://aaspace.org) 
+- [Kalro erepository](https://kalroerepository.kalro.org/)
+- [Zenodo](https://zenodo.org/) 
+- [Pangaea](https://www.pangaea.de/) 
+- [Open science foundation](https://osf.io) 
+- [Harvard Dataverse platform](https://dataverse.harvard.edu/) 
+- [Data dryad](https://datadryad.org/) 
+- [Gates open research](https://gatesopenresearch.org/) 
+
 
 ## Controlled vocabularies 
 
-- improving data discoverability 
-- interoperability. 
+- Improve findability 
+  - persistent identifiers for terms
+  - hierarchical relationships between terms 
+  - clustering of records based on shared terms
+- Interoperability
+  - shared understanding of concepts (soil properties, observation procedures, units of measure)
 
-- Orcid, ROR
-- Agrovoc, Gemet, GCMD, CAB, GACS
-- Geospatial: United Nations Statistics Division classifications, FAO geospatial units, GADM
-- Agriculture economics: World Bank, Food and Agriculture Organization, United Nations
-- Policy: FAOLEX, OECD policy classifications
+## Examples of controlled vocabularies
 
-Policies are highly country-specific, so controlled vocabularies don’t scale well globally.
+- Orcid and ROR for people and organisations
+- Agrovoc, Gemet, GCMD, CAB, GACS for agronomical terms
+- United Nations Statistics Division classifications, FAO geospatial units, GADM for spatial units
+- World Bank, Food and Agriculture Organization, United Nations for Agriculture economics
+- FAOLEX, OECD policy classifications on policy terms
+- QUDT, OM or UCUM for units of measure
+
+## Common datamodel for observation data
+
+- The Observations, Measurements, Samples (OMS) working group of the Open Geospatial Consortium (OGC) has developed a common data model for representing observation data
+- The OMS model is the basis of iso28258, INSPIRE Soil, FAO GLosis
+- IN OMS each observation result is annotated with the observed property, the procedure, the feature of interest (e.g. soil sample), the time and location of the observation, and the unit of measure.
+
+## Annotate tabular data for interoperability
+
+- Soil observation data is often stored in tabular format (e.g. CSV, Excel)
+- The tabular format is combined with a readme or report to indicate the meaning of the columns
+- This approach is not machine-actionable, and the documentation can easily get lost.
+- The CSV on the Web (CSVW) standard provides a way to annotate tabular data with metadata, 
+- Use of controlled vocabularies while annotating the data can further enhance interoperability and findability.
+
+## Summary 
+ 
+- The FAIR principles provide a framework to enhance the usability and impact of soil data.
+- Common challenges in soil data management include unawareness of available data, loss of information, and lack of institutionalization in producing derived soil data products.
+- Repositories and aggregators play a crucial role in making data findable and accessible.  
+- Controlled vocabularies improve findability and interoperability of data.
+- The Observations, Measurements, Samples (OMS) data model provides a common framework for representing observation data, and standards like CSVW can be used to annotate tabular data for machine-actionability.
