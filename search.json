@@ -452,7 +452,7 @@
     "href": "slides/auso-fair-soil-data.html#list-of-commonly-used-repositories",
     "title": "AUSO - Training on FAIR Soil Data",
     "section": "List of commonly used repositories",
-    "text": "List of commonly used repositories\n\nAaspace\nKalro erepository\nZenodo\nPangaea\nOpen science foundation\nHarvard Dataverse platform\nData dryad\nGates open research"
+    "text": "List of commonly used repositories\n\nAaspace - Fara\nKalro erepository\nZenodo - CERN EU\nPangaea\nOpen science foundation\nHarvard Dataverse platform\nData dryad\nFigshare\nGates open research"
   },
   {
     "objectID": "slides/auso-fair-soil-data.html#controlled-vocabularies",
@@ -462,11 +462,11 @@
     "text": "Controlled vocabularies\n\nImprove findability\n\npersistent identifiers for terms\nhierarchical relationships between terms\nclustering of records based on shared terms\n\nInteroperability\n\nshared understanding of concepts (soil properties, observation procedures, units of measure)"
   },
   {
-    "objectID": "slides/auso-fair-soil-data.html#examples-of-controlled-vocabularies",
-    "href": "slides/auso-fair-soil-data.html#examples-of-controlled-vocabularies",
+    "objectID": "slides/auso-fair-soil-data.html#examples-of-controlled-vocabularies-or-pid-systems",
+    "href": "slides/auso-fair-soil-data.html#examples-of-controlled-vocabularies-or-pid-systems",
     "title": "AUSO - Training on FAIR Soil Data",
-    "section": "Examples of controlled vocabularies",
-    "text": "Examples of controlled vocabularies\n\nOrcid and ROR for people and organisations\nAgrovoc, Gemet, GCMD, CAB, GACS for agronomical terms\nUnited Nations Statistics Division classifications, FAO geospatial units, GADM for spatial units\nWorld Bank, Food and Agriculture Organization, United Nations for Agriculture economics\nFAOLEX, OECD policy classifications on policy terms\nQUDT, OM or UCUM for units of measure"
+    "section": "Examples of controlled vocabularies or PID systems",
+    "text": "Examples of controlled vocabularies or PID systems\n\nDOI and Handle for publications\nORCID and ROR (and not this) for people and organisations\nAgrovoc, Gemet, GCMD, CAB, GACS for agronomical terms\nQUDT for units of measure\nEUSoilVoc for soil properties, observation procedures, etc."
   },
   {
     "objectID": "slides/auso-fair-soil-data.html#common-datamodel-for-observation-data",
@@ -481,6 +481,27 @@
     "title": "AUSO - Training on FAIR Soil Data",
     "section": "Annotate tabular data for interoperability",
     "text": "Annotate tabular data for interoperability\n\nSoil observation data is often stored in tabular format (e.g. CSV, Excel)\nThe tabular format is combined with a readme or report to indicate the meaning of the columns\nThis approach is not machine-actionable, and the documentation can easily get lost.\nThe CSV on the Web (CSVW) standard provides a way to annotate tabular data with metadata,\nUse of controlled vocabularies while annotating the data can further enhance interoperability and findability."
+  },
+  {
+    "objectID": "slides/auso-fair-soil-data.html#annotate-a-csv",
+    "href": "slides/auso-fair-soil-data.html#annotate-a-csv",
+    "title": "AUSO - Training on FAIR Soil Data",
+    "section": "Annotate a CSV",
+    "text": "Annotate a CSV\n\nannotate a csv"
+  },
+  {
+    "objectID": "slides/auso-fair-soil-data.html#upload-csvw-metadata-with-data",
+    "href": "slides/auso-fair-soil-data.html#upload-csvw-metadata-with-data",
+    "title": "AUSO - Training on FAIR Soil Data",
+    "section": "Upload CSVW metadata with data",
+    "text": "Upload CSVW metadata with data\n\nUpload CSVW metadata with data"
+  },
+  {
+    "objectID": "slides/auso-fair-soil-data.html#lets-try-it-out",
+    "href": "slides/auso-fair-soil-data.html#lets-try-it-out",
+    "title": "AUSO - Training on FAIR Soil Data",
+    "section": "Let’s try it out!",
+    "text": "Let’s try it out!\n\nPrepare a csv in raw2ready\nAnnotate a csv with a CSVW metadata file, using the CSVW metadata editor\nConvert annotated csv to OMS using the Soil Data Streamer\n\nSee a sample in Kenyan SIS"
   },
   {
     "objectID": "slides/auso-fair-soil-data.html#summary",

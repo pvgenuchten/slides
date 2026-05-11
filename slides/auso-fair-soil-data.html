@@ -287,13 +287,14 @@ Paul van Genuchten
 <section id="list-of-commonly-used-repositories" class="slide level2">
 <h2>List of commonly used repositories</h2>
 <ul>
-<li class="fragment"><a href="https://aaspace.org">Aaspace</a></li>
+<li class="fragment"><a href="https://aaspace.org">Aaspace</a> - Fara</li>
 <li class="fragment"><a href="https://kalroerepository.kalro.org/">Kalro erepository</a></li>
-<li class="fragment"><a href="https://zenodo.org/">Zenodo</a></li>
+<li class="fragment"><a href="https://zenodo.org/">Zenodo</a> - CERN EU</li>
 <li class="fragment"><a href="https://www.pangaea.de/">Pangaea</a></li>
 <li class="fragment"><a href="https://osf.io">Open science foundation</a></li>
 <li class="fragment"><a href="https://dataverse.harvard.edu/">Harvard Dataverse platform</a></li>
 <li class="fragment"><a href="https://datadryad.org/">Data dryad</a></li>
+<li class="fragment"><a href="https://figshare.com/">Figshare</a></li>
 <li class="fragment"><a href="https://gatesopenresearch.org/">Gates open research</a></li>
 </ul>
 </section>
@@ -312,15 +313,14 @@ Paul van Genuchten
 </ul></li>
 </ul>
 </section>
-<section id="examples-of-controlled-vocabularies" class="slide level2">
-<h2>Examples of controlled vocabularies</h2>
+<section id="examples-of-controlled-vocabularies-or-pid-systems" class="slide level2">
+<h2>Examples of controlled vocabularies or PID systems</h2>
 <ul>
-<li class="fragment">Orcid and ROR for people and organisations</li>
+<li class="fragment"><a href="https://doi.org/10.5771/9783748951230-749">DOI</a> and Handle for publications</li>
+<li class="fragment"><a href="https://orcid.org/0000-0002-4789-174X">ORCID</a> and <a href="https://ror.org/03prz6j20">ROR</a> (and not <a href="https://ror.org/04edgdk70">this</a>) for people and organisations</li>
 <li class="fragment">Agrovoc, Gemet, GCMD, CAB, GACS for agronomical terms</li>
-<li class="fragment">United Nations Statistics Division classifications, FAO geospatial units, GADM for spatial units</li>
-<li class="fragment">World Bank, Food and Agriculture Organization, United Nations for Agriculture economics</li>
-<li class="fragment">FAOLEX, OECD policy classifications on policy terms</li>
-<li class="fragment">QUDT, OM or UCUM for units of measure</li>
+<li class="fragment">QUDT for units of measure</li>
+<li class="fragment"><a href="https://w3id.org/eusoilvoc/">EUSoilVoc</a> for soil properties, observation procedures, etc.</li>
 </ul>
 </section>
 <section id="common-datamodel-for-observation-data" class="slide level2">
@@ -340,6 +340,23 @@ Paul van Genuchten
 <li class="fragment">The CSV on the Web (CSVW) standard provides a way to annotate tabular data with metadata,</li>
 <li class="fragment">Use of controlled vocabularies while annotating the data can further enhance interoperability and findability.</li>
 </ul>
+</section>
+<section id="annotate-a-csv" class="slide level2">
+<h2>Annotate a CSV</h2>
+
+<img data-src="./img/tabbular_annotated.png" class="r-stretch quarto-figure-center"><p class="caption">annotate a csv</p></section>
+<section id="upload-csvw-metadata-with-data" class="slide level2">
+<h2>Upload CSVW metadata with data</h2>
+
+<img data-src="./img/tabbular_csvw.png" class="r-stretch quarto-figure-center"><p class="caption">Upload CSVW metadata with data</p></section>
+<section id="lets-try-it-out" class="slide level2">
+<h2>Let’s try it out!</h2>
+<ul>
+<li class="fragment">Prepare a csv in <a href="https://raw2ready.streamlit.app/">raw2ready</a></li>
+<li class="fragment">Annotate a csv with a CSVW metadata file, using the <a href="https://dataannotator-swr.streamlit.app/">CSVW metadata editor</a></li>
+<li class="fragment">Convert annotated csv to OMS using the <a href="https://api.soilwise.wetransform.eu/csvw/docs">Soil Data Streamer</a></li>
+</ul>
+<p>See a sample in <a href="https://www.github.com/kalro-ict/kensis-data/">Kenyan SIS</a></p>
 </section>
 <section id="summary" class="slide level2">
 <h2>Summary</h2>
