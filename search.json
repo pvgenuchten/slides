@@ -340,7 +340,14 @@
     "href": "slides/auso-fair-soil-data.html#a-training-on-fair-soil-data",
     "title": "AUSO - Training on FAIR Soil Data",
     "section": "A training on FAIR soil data",
-    "text": "A training on FAIR soil data\nOrganized in the scope of the African Union Soil Observatory (AUSO) project.\n\nChristisan Thine Omuto (Fara)\nChipo Msengezi (Cabi)\nPaul van Genuchten (ISRIC)"
+    "text": "A training on FAIR soil data\nOrganized in the scope of the African Union Soil Observatory (AUSO) project.\n\nChristisan Thine Omuto (Fara)\nChipo Cosford (Cabi)\nPaul van Genuchten (ISRIC)"
+  },
+  {
+    "objectID": "slides/auso-fair-soil-data.html#programme",
+    "href": "slides/auso-fair-soil-data.html#programme",
+    "title": "AUSO - Training on FAIR Soil Data",
+    "section": "Programme",
+    "text": "Programme\n10.00 Introductions Menti 11.30 Intro FAIR 12.00 Intro CABI FAIR Break 13.00 FAIR and Soil 14.00 Q&A"
   },
   {
     "objectID": "slides/auso-fair-soil-data.html#about",
@@ -369,6 +376,13 @@
     "title": "AUSO - Training on FAIR Soil Data",
     "section": "Audience",
     "text": "Audience\n\nResearchers and students working with soil data\nData stewards and support staff\nEnvironmental scientists and practitioners\nAnyone interested in open science and data management"
+  },
+  {
+    "objectID": "slides/auso-fair-soil-data.html#introduction-via-menti",
+    "href": "slides/auso-fair-soil-data.html#introduction-via-menti",
+    "title": "AUSO - Training on FAIR Soil Data",
+    "section": "Introduction via Menti",
+    "text": "Introduction via Menti\nJoin via menti.com 3720 5391"
   },
   {
     "objectID": "slides/auso-fair-soil-data.html#the-fair-principles",
@@ -508,7 +522,7 @@
     "href": "slides/auso-fair-soil-data.html#lets-try-it-out",
     "title": "AUSO - Training on FAIR Soil Data",
     "section": "Let’s try it out!",
-    "text": "Let’s try it out!\n\nPrepare a csv in raw2ready\nAnnotate a csv with a CSVW metadata file, using the CSVW metadata editor\nConvert annotated csv to OMS using the Soil Data Streamer\n\nSee a sample in Kenyan SIS"
+    "text": "Let’s try it out!\n\nPrepare a csv in raw2ready\nAnnotate a csv with a CSVW metadata file, using the CSVW metadata editor\nConvert annotated csv to OMS using the Soil Data Streamer"
   },
   {
     "objectID": "slides/auso-fair-soil-data.html#summary",
@@ -516,6 +530,13 @@
     "title": "AUSO - Training on FAIR Soil Data",
     "section": "Summary",
     "text": "Summary\n\nThe FAIR principles provide a framework to enhance the usability and impact of soil data.\nCommon challenges in soil data management include unawareness of available data, loss of information, and lack of institutionalization in producing derived soil data products.\nRepositories and aggregators play a crucial role in making data findable and accessible.\n\nControlled vocabularies improve findability and interoperability of data.\nThe Observations, Measurements, Samples (OMS) data model provides a common framework for representing observation data, and standards like CSVW can be used to annotate tabular data for machine-actionability."
+  },
+  {
+    "objectID": "slides/auso-fair-soil-data.html#qa",
+    "href": "slides/auso-fair-soil-data.html#qa",
+    "title": "AUSO - Training on FAIR Soil Data",
+    "section": "Q&A",
+    "text": "Q&A"
   },
   {
     "objectID": "slides/abandoned-web.html#a-broken-link-from-a-report",
