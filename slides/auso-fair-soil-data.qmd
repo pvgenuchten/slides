@@ -14,7 +14,7 @@ format:
 
 Organized in the scope of the African Union Soil Observatory (AUSO) project.
 
-- Christisan Thine Omuto (Fara)
+- Christian Thine Omuto (Fara)
 - Chipo Cosford (Cabi)
 - Paul van Genuchten (ISRIC)
 
