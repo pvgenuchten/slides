@@ -15,8 +15,17 @@ format:
 Organized in the scope of the African Union Soil Observatory (AUSO) project.
 
 - Christisan Thine Omuto (Fara)
-- Chipo Msengezi (Cabi)
+- Chipo Cosford (Cabi)
 - Paul van Genuchten (ISRIC)
+
+## Programme
+
+10.00 Introductions Menti
+11.30 Intro FAIR
+12.00 Intro CABI FAIR
+Break
+13.00 FAIR and Soil
+14.00 Q&A
 
 ## About
 
@@ -31,7 +40,6 @@ Organized in the scope of the African Union Soil Observatory (AUSO) project.
 - By consolidating data and helping 12 countries shape soil strategies, 
   AUSO will equip decision-makers with the tools needed to promote sustainable land use.
 
-
 ## Training objectives 
 
 - Recognize common challenges in soil data management
@@ -45,6 +53,10 @@ Organized in the scope of the African Union Soil Observatory (AUSO) project.
 - Data stewards and support staff 
 - Environmental scientists and practitioners 
 - Anyone interested in open science and data management 
+
+## Introduction via Menti
+
+Join via menti.com `3720 5391`
 
 ## The FAIR principles 
 
@@ -193,8 +205,6 @@ and access plan for a successful project
 - Annotate a csv with a CSVW metadata file, using the [CSVW metadata editor](https://dataannotator-swr.streamlit.app/)
 - Convert annotated csv to OMS using the [Soil Data Streamer](https://api.soilwise.wetransform.eu/csvw/docs)
 
-See a sample in [Kenyan SIS](https://www.github.com/kalro-ict/kensis-data/) 
-
 
 ## Summary 
 
@@ -203,3 +213,5 @@ See a sample in [Kenyan SIS](https://www.github.com/kalro-ict/kensis-data/)
 - Repositories and aggregators play a crucial role in making data findable and accessible.  
 - Controlled vocabularies improve findability and interoperability of data.
 - The Observations, Measurements, Samples (OMS) data model provides a common framework for representing observation data, and standards like CSVW can be used to annotate tabular data for machine-actionability.
+
+## Q&A
