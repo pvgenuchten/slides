@@ -14,18 +14,19 @@ format:
 
 Organized in the scope of the African Union Soil Observatory (AUSO) project.
 
-- Christian Thine Omuto (Fara)
-- Chipo Cosford (Cabi)
+- Thaisa van der Woude (ISRIC)
+- Christian Thine Omuto (FARA)
+- Chipo Cosford (CABI)
 - Paul van Genuchten (ISRIC)
 
 ## Programme
 
-10.00 Introductions Menti
-11.30 Intro FAIR
-12.00 Intro CABI FAIR
-Break
-13.00 FAIR and Soil
-14.00 Q&A
+- 10.00 Introductions Menti
+- 11.30 Intro FAIR
+- 12.00 Intro CABI FAIR
+- Break
+- 13.00 FAIR and Soil
+- 14.00 Q&A
 
 ## About
 
