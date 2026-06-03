@@ -11,7 +11,7 @@
 
   <meta name="author" content="Paul van Genuchten, Keiji Jindo, Monne Weghorst">
   <meta name="dcterms.date" content="2026-06-04">
-  <title>some slide decks – Document your model data at minimal effort</title>
+  <title>some slide decks – Interoperable Soil Data</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -32,72 +32,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    html { -webkit-text-size-adjust: 100%; }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-2abc1c5b7b5c7eecd6137558e106e4c3.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -197,7 +131,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Document your model data at minimal effort</h1>
+  <h1 class="title">Interoperable Soil Data</h1>
   <p class="subtitle">WUR SOIL DAY 2026</p>
 
 <div class="quarto-title-authors">
@@ -210,50 +144,48 @@ Paul van Genuchten, Keiji Jindo, Monne Weghorst
 
   <p class="date">2026-06-04</p>
 </section>
-<section id="workshop-on-interoperability-in-fair-for-soil-data" class="slide level2">
-<h2>Workshop on Interoperability in FAIR for soil data</h2>
-</section>
 <section id="program-of-this-workshop" class="slide level2">
 <h2>Program of this workshop</h2>
 <ul>
 <li>Introduction to interoperability in soil data</li>
 <li>2 case studies of soil data in practice
 <ul>
-<li>Monne Weghorst: effects of microplastics on soil structure</li>
-<li>Keiji Jindo: soil carbon dynamics in paddy soils</li>
+<li>Monne Weghorst: Effects of microplastics on soil structure</li>
+<li>Keiji Jindo: Soil Carbon Dynamics</li>
 </ul></li>
 <li>SoilWise suggestions to enhance interoperability</li>
-<li>Hands-on session: documenting your data (+menti)</li>
+<li>Q&amp;A / Hands-on session (+menti)</li>
 </ul>
 </section>
 <section id="interoperability-in-fair" class="slide level2">
 <h2>Interoperability in FAIR</h2>
 <ul>
-<li>use a formal, accessible, shared language for knowledge representation</li>
-<li>use vocabularies that follow the FAIR principles</li>
-<li>include qualified references to other (meta)data</li>
+<li>Use a formal, accessible, shared language for knowledge representation</li>
+<li>Use vocabularies that follow the FAIR principles</li>
+<li>Include qualified references to other (meta)data</li>
 </ul>
 </section>
 <section id="what-formal-languages-are-we-using-in-soil" class="slide level2">
 <h2>What formal languages are we using in soil?</h2>
 <ul>
 <li>Harmonised World Soil Database / eSOTER</li>
-<li>ISO28258 / OGC Observations, Measurements and Samples (OMS) / INSPIRE Soil</li>
+<li>ISO28258:2013 / Observations, Measurements and Samples (OMS) / INSPIRE Soil</li>
 <li>GLOSIS LD / SOSA</li>
+<li>…</li>
 </ul>
 </section>
 <section id="so" class="slide level2">
 <h2>So…</h2>
+<p>Limited adoption, due to:</p>
 <ul>
-<li>Limited adoption, due to</li>
 <li>Complexity and lack of tools</li>
-<li>Lack of awareness and incentives.</li>
+<li>Lack of awareness and incentives</li>
 </ul>
 </section>
 <section id="which-vocabularies-are-we-using-in-soil" class="slide level2">
 <h2>Which vocabularies are we using in soil?</h2>
 <ul>
-<li>World Refernce Base, USDA Soil Taxonomy, Dutch Soil Classification, etc.</li>
+<li>World Reference Base, USDA Soil Taxonomy, Dutch Soil Classification, etc.</li>
 <li>FAO Guidelines for Soil Description</li>
 <li>Agrovoc, Gemet, INRAE thesaurus</li>
 <li>GBIF vocabularies, NCBI Taxonomy, etc.</li>
@@ -262,8 +194,8 @@ Paul van Genuchten, Keiji Jindo, Monne Weghorst
 <section id="so-1" class="slide level2">
 <h2>So…</h2>
 <ul>
-<li>Slight adoption, but often not in a machine-readable format, and often not used in a consistent way.</li>
-<li>No concensus on vocabularies for soil properties and sampling/lab procedures.</li>
+<li>Slight adoption, but often not in a machine-readable format, and often not used in a consistent way</li>
+<li>No concensus on vocabularies for soil properties and sampling/lab procedures</li>
 </ul>
 </section>
 <section id="what-are-qualified-references" class="slide level2">
@@ -275,8 +207,8 @@ Paul van Genuchten, Keiji Jindo, Monne Weghorst
 </section>
 <section id="is-the-soil-domain-special" class="slide level2">
 <h2>Is the soil domain special?</h2>
+<p>In general, <strong>no</strong>, all science domain struggle with interoperability, however:</p>
 <ul>
-<li>In general, <strong>no</strong>, all science domain struggle with interoperability, however:</li>
 <li>Changes in soil are slow, so legacy data is often used, and require long term experiments (IT trends change faster than soil)</li>
 <li>We have a long history of standardization efforts, at the time of writing FAIR was not a topic</li>
 </ul>
@@ -284,30 +216,30 @@ Paul van Genuchten, Keiji Jindo, Monne Weghorst
 <section id="some-examples" class="slide level2">
 <h2>Some examples</h2>
 <ul>
-<li>https://doi.org/10.5281/zenodo.17422778</li>
-<li>https://doi.org/10.5281/zenodo.20067150</li>
-<li>https://doi.org/10.5281/zenodo.20508989</li>
-<li>https://doi.org/10.5281/zenodo.15040664</li>
-<li>https://doi.org/10.18167/DVN1/PWM9WW</li>
-<li>https://doi.org/10.4121/f0539cee-c288-42ff-872d-af11320e183c</li>
-<li>https://doi.org/10.4121/21632186</li>
+<li><a href="https://doi.org/10.5281/zenodo.17422778">10.5281/zenodo.17422778</a></li>
+<li><a href="https://doi.org/10.5281/zenodo.20067150">10.5281/zenodo.20067150</a></li>
+<li><a href="https://doi.org/10.5281/zenodo.20508989">10.5281/zenodo.20508989</a></li>
+<li><a href="https://doi.org/10.5281/zenodo.15040664">10.5281/zenodo.15040664</a></li>
+<li><a href="https://doi.org/10.18167/DVN1/PWM9WW">10.18167/DVN1/PWM9WW</a></li>
+<li><a href="https://doi.org/10.4121/f0539cee-c288-42ff-872d-af11320e183c">10.4121/f0539cee-c288-42ff-872d-af11320e183c</a></li>
+<li><a href="https://doi.org/10.4121/21632186">10.4121/21632186</a></li>
 </ul>
 </section>
 <section id="the-soilwise-project" class="slide level2">
-<h2>The SoilWise project</h2>
+<h2>The <a href="https://www.soilwise-he.eu">SoilWise project</a></h2>
 <ul>
 <li>Aims to increase reusability of soil data and knowledge within the European Union Soil Observatory</li>
-<li>Builds a catalog for soil data and knowledge, a soil vocabulary and guidances around data publication</li>
-<li>Funded by the EU Horizon program,</li>
+<li>Builds a <a href="https://catalogue.soilwise-he.eu">catalog for soil data and knowledge</a>, a <a href="https://w3id.org/eusoilvoc">soil vocabulary</a> and <a href="https://soilwise-he.github.io/soilwise-fair-strategy/use-cases/">guidances around data publication</a></li>
+<li>Funded by the EU Horizon program</li>
 <li>Running from 2024 - 2028</li>
-<li>ISRIC, WENR Earth Informatics and Wageningen University in a consortium with 10 other partners across Europe.</li>
+<li>ISRIC, WENR Earth Informatics and Wageningen University in a consortium with 10 other partners across Europe</li>
 </ul>
 </section>
 <section id="the-soilharmony-project" class="slide level2">
 <h2>The Soilharmony project</h2>
 <ul>
 <li>The 4 year project kicked off this week.</li>
-<li>aims to develop transfer functions to support the implementation of the soil monitoring law</li>
+<li>Aims to develop transfer functions to support the implementation of the soil monitoring law</li>
 <li>WENR is one of 13 consortium partners</li>
 <li>The envisioned system builds on existing standardisation efforts</li>
 </ul>
@@ -315,10 +247,10 @@ Paul van Genuchten, Keiji Jindo, Monne Weghorst
 <section id="lets-get-started" class="slide level2">
 <h2>Let’s get started</h2>
 <ul>
-<li><p>2 soil scientists from different corners of soil</p></li>
-<li><p>how do you publish your data, and what challenges do you face?</p></li>
-<li><p>do the soilwise suggestions make sense?</p></li>
-<li><p>I invite you to reflect on your own experiences based on their stories</p></li>
+<li>2 soil scientists from different corners of soil</li>
+<li>How do you publish your data, and what challenges do you face?</li>
+<li>Do the soilwise suggestions make sense?</li>
+<li>I invite you to reflect on your own experiences based on their stories</li>
 </ul>
 </section>
 <section id="monne-weghorst-effects-of-microplastics-on-soil-structure" class="slide level2">
@@ -327,9 +259,9 @@ Paul van Genuchten, Keiji Jindo, Monne Weghorst
 <section id="keiji-jindo-soil-carbon-dynamics-in-paddy-soils" class="slide level2">
 <h2>Keiji Jindo: soil carbon dynamics in paddy soils</h2>
 </section>
-<section id="soilwise-suggestions-to-enhance-interoperability" class="slide level2">
-<h2>SoilWise suggestions to enhance interoperability</h2>
-<p>We identified 3 approaches based on the different use cases</p>
+<section id="soilwise-suggestions-to-enhance-data-interoperability" class="slide level2">
+<h2>SoilWise suggestions to enhance data interoperability</h2>
+<p>We identified 3 approaches based on different use cases</p>
 <ul>
 <li>A basic annotation of tabular data (excel, csv)</li>
 <li>A relational database approach including annotations (geopackage)</li>
@@ -359,41 +291,25 @@ Paul van Genuchten, Keiji Jindo, Monne Weghorst
 <section id="and-then" class="slide level2">
 <h2>And then…?</h2>
 <ul>
-<li>How to use a common model for observation data and qualified references?</li>
+<li>Which common model for observation data and qualified referencesto use?</li>
 <li>The <a href="https://www.w3.org/TR/vocab-ssn/">SOSA ontology</a> provides annotation options for measurement and observation data</li>
 <li><a href="https://w3id.org/eusoilvoc">EU SoilVoc</a> provides identifiers of common soil properties and procedures</li>
 </ul>
 </section>
 <section id="sosa" class="slide level2">
 <h2>SOSA</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource mermaid number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a></a>graph LR</span>
-<span id="cb1-2"><a></a></span>
-<span id="cb1-3"><a></a>    O[Observation]</span>
-<span id="cb1-4"><a></a>    FOI[Feature of Interest]</span>
-<span id="cb1-5"><a></a></span>
-<span id="cb1-6"><a></a>    OP[Observed Property]</span>
-<span id="cb1-7"><a></a>    R[Result]</span>
-<span id="cb1-8"><a></a>    P[Procedure]</span>
-<span id="cb1-9"><a></a>  </span>
-<span id="cb1-10"><a></a>    O --&gt;|sosa:hasFeatureOfInterest| FOI</span>
-<span id="cb1-11"><a></a>    O --&gt;|sosa:observedProperty| OP</span>
-<span id="cb1-12"><a></a>    O --&gt;|sosa:hasResult| R</span>
-<span id="cb1-13"><a></a>    O --&gt;|sosa:usedProcedure| P</span>
-<span id="cb1-14"><a></a></span>
-<span id="cb1-15"><a></a>    R --&gt;|qudt:value| VAL[Numeric Value]</span>
-<span id="cb1-16"><a></a>    R --&gt;|qudt:hasUnit| UNIT[Unit]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
+
+<img data-src="img/sosa.png" class="r-stretch quarto-figure-center"><p class="caption">SOSA structure</p></section>
 <section id="and-then-1" class="slide level2">
 <h2>And then…?</h2>
 <ul>
-<li>Upload the product onto Zenodo/4TU, referencing the approach used</li>
-<li>Convert the dataset to RDF/Geopackage before uploading to Zenodo</li>
+<li>Upload the dataset onto Zenodo/4TU, referencing the approach used</li>
+<li><a href="https://api.soilwise.wetransform.eu/csvw/docs">Convert the dataset</a> to RDF/Geopackage before uploading to Zenodo</li>
 <li>Use <a href="https://www.f-uji.net/">F-UJI tool</a> to understand the FAIR-ness of your publication</li>
 </ul>
 </section>
-<section id="qa" class="slide level2">
-<h2>Q&amp;A</h2>
-<p>Thank you.</p>
+<section id="qa---hands-on" class="slide level2">
+<h2>Q&amp;A - Hands on…</h2>
 <p>Join our menti.com <a href="https://www.mentimeter.com/app/presentation/alq4rfmkfxfr9smqmp55dbowo68jdnif/present?question=6itu18q8816x">3862 7420</a></p>
 
 
