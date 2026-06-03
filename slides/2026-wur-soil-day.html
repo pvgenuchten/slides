@@ -9,8 +9,8 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
-  <meta name="author" content="Paul van Genuchten, Giulio Genova">
-  <meta name="dcterms.date" content="2023-10-19">
+  <meta name="author" content="Paul van Genuchten, Keiji Jindo, Monne Weghorst">
+  <meta name="dcterms.date" content="2026-06-04">
   <title>some slide decks – Document your model data at minimal effort</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -33,7 +33,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-2740581606dc327e82f18f789b69d8a0.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-2abc1c5b7b5c7eecd6137558e106e4c3.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -132,63 +132,149 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Document your model data at minimal effort</h1>
-  <p class="subtitle">A pitch battle at digital innovation expo <span class="citation" data-cites="WUR">@WUR</span></p>
+  <p class="subtitle">WUR SOIL DAY 2026</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Paul van Genuchten, Giulio Genova 
+Paul van Genuchten, Keiji Jindo, Monne Weghorst 
 </div>
 </div>
 </div>
 
-  <p class="date">2023-10-19</p>
+  <p class="date">2026-06-04</p>
 </section>
-<section id="improving-findability---devops-style" class="slide level2">
-<h2>Improving findability - devops style</h2>
+<section id="workshop-on-interoperability-in-fair-for-soil-data" class="slide level2">
+<h2>Workshop on Interoperability in FAIR for soil data</h2>
+</section>
+<section id="program-of-this-workshop" class="slide level2">
+<h2>Program of this workshop</h2>
 <ul>
-<li>What: Document your modelling data with minimal effort</li>
-<li>Why: Better findability and (re)usability of data</li>
-<li>What’s next: Adopt the efforts in ongoing projects &amp; extend the user community</li>
+<li>Introduction to interoperability in soil data</li>
+<li>2 case studies of soil data in practice
+<ul>
+<li>Monne Weghorst: effects of microplastics on soil structure</li>
+<li>Keiji Jindo: soil carbon dynamics in paddy soils</li>
+</ul></li>
+<li>SoilWise suggestions to enhance interoperability</li>
+<li>Hands-on session: documenting your data (+menti)</li>
 </ul>
 </section>
-<section id="setting-concept" class="slide level2">
-<h2>Setting &amp; Concept</h2>
+<section id="interoperability-in-fair" class="slide level2">
+<h2>Interoperability in FAIR</h2>
 <ul>
-<li>Setting: Data management in predictive modelling
-<ul>
-<li>In <code>soil modelling</code> we handle many data sources</li>
-<li>These files are stored on a network drive</li>
-<li>Metadata management is <code>complex/dull/****</code></li>
-</ul></li>
-<li>The sidecar concept
-<ul>
-<li>Add minimal metadata on a sidecar file</li>
-<li>A crawler extracts metadata from a file repository</li>
-<li>Crawled records are placed in a searchable index</li>
-</ul></li>
+<li>use a formal, accessible, shared language for knowledge representation</li>
+<li>use vocabularies that follow the FAIR principles</li>
+<li>include qualified references to other (meta)data</li>
 </ul>
 </section>
-<section id="pygeometa-geodatacrawler-pycsw" class="slide level2">
-<h2>pygeometa, geodatacrawler &amp; pycsw</h2>
+<section id="what-formal-languages-are-we-using-in-soil" class="slide level2">
+<h2>What formal languages are we using in soil?</h2>
 <ul>
-<li><a href="https://github.com/geopython/pygeometa">pygeometa</a>’s MCF is a minimal subset of ISO19115, encoded in yaml</li>
-<li><a href="https://pypi.org/project/geodatacrawler/">geodatacrawler</a> extends pygeometa to:
-<ul>
-<li>extract metadata from data formats</li>
-<li>inherit metadata from parent folders</li>
-<li>import metadata from csv and remote sources</li>
-<li>create data api’s based on metadata</li>
-</ul></li>
-<li><a href="https://pycsw.org"><img data-src="https://demo.pycsw.org/gisdata/static/logo-horizontal.png" style="vertical-align:middle" height="50"></a> is a pythonic catalogue web app. Wide standards support enables findability in multiple communities.</li>
+<li>Harmonised World Soil Database / eSOTER</li>
+<li>ISO28258 / OGC Observations, Measurements and Samples (OMS) / INSPIRE Soil</li>
+<li>GLOSIS LD</li>
 </ul>
+</section>
+<section id="so" class="slide level2">
+<h2>So…</h2>
+<ul>
+<li>Limited adoption, due to</li>
+<li>Complexity and lack of tools</li>
+<li>Lack of awareness and incentives.</li>
+</ul>
+</section>
+<section id="which-vocabularies-are-we-using-in-soil" class="slide level2">
+<h2>Which vocabularies are we using in soil?</h2>
+<ul>
+<li>World Refernce Base, USDA Soil Taxonomy, Dutch Soil Classification, etc.</li>
+<li>FAO Guidelines for Soil Description</li>
+<li>Agrovoc, Gemet, INRAE thesaurus</li>
+<li>GBIF vocabularies, NCBI Taxonomy, etc.</li>
+</ul>
+</section>
+<section id="so-1" class="slide level2">
+<h2>So…</h2>
+<ul>
+<li>Slight adoption, but often not in a machine-readable format, and often not used in a consistent way.</li>
+<li>No concensus on vocabularies for soil properties and sampling/lab procedures.</li>
+</ul>
+</section>
+<section id="what-are-qualified-references" class="slide level2">
+<h2>What are qualified references?</h2>
+<ul>
+<li>A cross-reference that explains its intent</li>
+<li>For example, Magnesium content is measured using Mehlich-3 is a more qualified reference than Magnesium is related to Mehlich-3.</li>
+</ul>
+</section>
+<section id="is-the-soil-domain-special" class="slide level2">
+<h2>Is the soil domain special?</h2>
+<ul>
+<li>In general, <strong>no</strong>, all science domain struggle with interoperability, however:</li>
+<li>Changes in soil are slow, so legacy data is often used, and require long term experiments (IT trends change faster than soil)</li>
+<li>We have a long history of standardization efforts, at the time of writing FAIR was not a topic</li>
+</ul>
+</section>
+<section id="some-examples" class="slide level2">
+<h2>Some examples</h2>
+<ul>
+<li>…</li>
+</ul>
+</section>
+<section id="the-soilwise-project" class="slide level2">
+<h2>The SoilWise project</h2>
+<ul>
+<li>Aims to increase reusability of soil data and knowledge within the European Union Soil Observatory</li>
+<li>Builds a catalog for soil data and knowledge, a soil vocabulary and guidances around data publication</li>
+<li>Funded by the EU Horizon program,</li>
+<li>Running from 2024 - 2028</li>
+<li>ISRIC, WENR Earth Informatics and Wageningen University in a consortium with 10 other partners across Europe.</li>
+</ul>
+</section>
+<section id="the-soilharmony-project" class="slide level2">
+<h2>The Soilharmony project</h2>
+<ul>
+<li>The 4 year project kicked off this week.</li>
+<li>aims to develop transfer functions to support the implementation of the soil monitoring law</li>
+<li>WENR is one of 13 consortium partners</li>
+<li>The envisioned system builds on existing standardisation efforts</li>
+</ul>
+</section>
+<section id="lets-get-started" class="slide level2">
+<h2>Let’s get started</h2>
+<ul>
+<li><p>2 soil scientists from different corners of soil</p></li>
+<li><p>how do you publish your data, and what challenges do you face?</p></li>
+<li><p>do the soilwise suggestions make sense?</p></li>
+<li><p>I invite you to reflect on your own experiences based on their stories</p></li>
+</ul>
+</section>
+<section id="monne-weghorst-effects-of-microplastics-on-soil-structure" class="slide level2">
+<h2>Monne Weghorst: effects of microplastics on soil structure</h2>
+</section>
+<section id="keiji-jindo-soil-carbon-dynamics-in-paddy-soils" class="slide level2">
+<h2>Keiji Jindo: soil carbon dynamics in paddy soils</h2>
+</section>
+<section id="soilwise-suggestions-to-enhance-interoperability" class="slide level2">
+<h2>SoilWise suggestions to enhance interoperability</h2>
+<p>we identified 3 approaches based on the different use cases</p>
+<ul>
+<li>A basic annotation of tabular data (excel, csv)</li>
+<li>A relational database approach including annotations (geopackage)</li>
+<li>A semantic web approach using RDF and ontologies</li>
+</ul>
+</section>
+<section id="tabular-data-annotation" class="slide level2">
+<h2>Tabular data annotation</h2>
 
 
-</section>
+
+<img data-src="./img/tabbular_annotated.png" class="r-stretch quarto-figure-center"><p class="caption">annotate a csv</p></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="https://omgeving.vlaanderen.be/sites/default/files/2025-10/SWlogocolor.svg" class="slide-logo"></p>
 <div class="footer footer-default">
-
+<p>Soil@WUR day - Soilwise HE - <a href="https://cordis.europa.eu/project/id/101112838">EU Horizon Grant 101112838</a></p>
 </div>
 </div></div>
 

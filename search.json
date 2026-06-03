@@ -270,7 +270,7 @@
     "href": "slides/index.html",
     "title": "some slide decks",
     "section": "",
-    "text": "(Meta)Data management at ISRIC - World Soil Information\n\n\nDiscovery & Metadata Expert Group with the Digital Research Alliance of Canada\n\n\n\n\n\n\n\n\nMar 24, 2026\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nA website on Github.io\n\n\n\n\n\n\n\n\n\n\n\nAug 5, 2025\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\n\n\n\n\n\n\nAUSO - Training on FAIR Soil Data\n\n\n\n\n\n\n\n\n\n\n\nMay 16, 2026\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nAbandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects\n\n\nEGU25 ESSI3.2: One decade of FAIR Principles: Data Reusability and Impact in Earth System Sciences\n\n\n\n\n\n\n\n\nApr 30, 2025\n\n\nMickael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR intro for Digital Soil Mapping\n\n\ngo-fair.org, a practical exercise\n\n\n\n\n\n\n\n\nMar 19, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nGIT flavoured modelling\n\n\nWATDEV Toolbox 1st regional training\n\n\n\n\n\n\n\n\nFeb 5, 2026\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nLSC-Hub Kenya; pending topics\n\n\n\n\n\n\n\n\n\n\n\nAug 6, 2025\n\n\nvan Genuchten, P.\n\n\n\n\n\n\n\n\n\n\n\n\nLSC-Hub components overview\n\n\n\n\n\n\n\n\n\n\n\nAug 5, 2025\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\n\n\n\n\n\n\nLSC-Hub development overview\n\n\n\n\n\n\n\n\n\n\n\nAug 5, 2025\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata for the rest of us\n\n\nFOSS4G Europe Conference, Tartu, Estonia\n\n\n\n\n\n\n\n\nFeb 29, 2024\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Source at ISRIC - World Soil Information\n\n\nFOSS4G NL, Wageningen\n\n\n\n\n\n\n\n\nJul 3, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\n\n\n\n\n\n\n\n\n\nMay 20, 2024\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\n\n\n\n\n\n\nSDI maintenance DevOps style\n\n\nInspired and facilitated by Open Source\n\n\nAt ISRIC - World Soil Information we increasingly maintain our data services through CI-CD pipelines configured via GIT. Both from the service as well as content perspective. The starting point are metadata records of our datasets being stored on GIT. With every change of a record, the relevant catalogues (pycsw) get updated and any relevant web services (mapserver) are updated. These pipelines are reproducable and there are never inconsistencies between catalogue content and the services. On top of that our users can directly report issues (or even improvement suggestions) through git. The stack is build on proven OSGeo components. A tool pyGeoDataCrawler brings the power of GDAL and pygeometa to CI-CD scripting. It crawls files on a folder and extracts relevant metadata, then prepares a mapserver configuration for that folder, while updating the metadata with the relevant service url’s. Typical use cases for this stack are; a search interface to any file based data repository or a participatory data catalogue for a project. At the conference we hope to hear from you if any of these components could be relevant to your cases or if there are similar initiatives we can contribute to or benefit from. What’s next? At ISRIC we receive and ingest a lot of soil data from partners. To harmonize this data is a huge effort. Via automated pipelines and interaction with the submitters via git comments, we hope to improve also this aspect of the data management cycle.\n\n\n\n\n\nJul 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nSoil Information System for Africa\n\n\nUpdating soil information for Africa: supporting agriculture and promoting synergies\n\n\n\n\n\n\n\n\nDec 1, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nSoilWise HE progress report\n\n\nISRIC Fruitfull may 6th 2025\n\n\n\n\n\n\n\n\nMay 6, 2025\n\n\nFenny van Egmond, Thaisa van der Woude, Paul van Genuchten, Jiarong Li\n\n\n\n\n\n\n\n\n\n\n\n\nSoilwise & Metadata\n\n\nMetadata in Horizon Europe projects (Soil Mission)\n\n\n\n\n\n\n\n\nJun 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nNov 20, 2025\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nJul 18, 2025\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nDec 6, 2024\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status 2025\n\n\nA fun way to do spatial cataloguing\n\n\n\n\n\n\n\n\nJul 18, 2025\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\n\nNo matching items"
+    "text": "(Meta)Data management at ISRIC - World Soil Information\n\n\nDiscovery & Metadata Expert Group with the Digital Research Alliance of Canada\n\n\n\n\n\n\n\n\nMar 24, 2026\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nA website on Github.io\n\n\n\n\n\n\n\n\n\n\n\nAug 5, 2025\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\n\n\n\n\n\n\nAUSO - Training on FAIR Soil Data\n\n\n\n\n\n\n\n\n\n\n\nMay 16, 2026\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nAbandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nWUR SOIL DAY 2026\n\n\n\n\n\n\n\n\nJun 4, 2026\n\n\nPaul van Genuchten, Keiji Jindo, Monne Weghorst\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects\n\n\nEGU25 ESSI3.2: One decade of FAIR Principles: Data Reusability and Impact in Earth System Sciences\n\n\n\n\n\n\n\n\nApr 30, 2025\n\n\nMickael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR intro for Digital Soil Mapping\n\n\ngo-fair.org, a practical exercise\n\n\n\n\n\n\n\n\nMar 19, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nGIT flavoured modelling\n\n\nWATDEV Toolbox 1st regional training\n\n\n\n\n\n\n\n\nFeb 5, 2026\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nLSC-Hub Kenya; pending topics\n\n\n\n\n\n\n\n\n\n\n\nAug 6, 2025\n\n\nvan Genuchten, P.\n\n\n\n\n\n\n\n\n\n\n\n\nLSC-Hub components overview\n\n\n\n\n\n\n\n\n\n\n\nAug 5, 2025\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\n\n\n\n\n\n\nLSC-Hub development overview\n\n\n\n\n\n\n\n\n\n\n\nAug 5, 2025\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata for the rest of us\n\n\nFOSS4G Europe Conference, Tartu, Estonia\n\n\n\n\n\n\n\n\nFeb 29, 2024\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Source at ISRIC - World Soil Information\n\n\nFOSS4G NL, Wageningen\n\n\n\n\n\n\n\n\nJul 3, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\n\n\n\n\n\n\n\n\n\nMay 20, 2024\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\n\n\n\n\n\n\nSDI maintenance DevOps style\n\n\nInspired and facilitated by Open Source\n\n\nAt ISRIC - World Soil Information we increasingly maintain our data services through CI-CD pipelines configured via GIT. Both from the service as well as content perspective. The starting point are metadata records of our datasets being stored on GIT. With every change of a record, the relevant catalogues (pycsw) get updated and any relevant web services (mapserver) are updated. These pipelines are reproducable and there are never inconsistencies between catalogue content and the services. On top of that our users can directly report issues (or even improvement suggestions) through git. The stack is build on proven OSGeo components. A tool pyGeoDataCrawler brings the power of GDAL and pygeometa to CI-CD scripting. It crawls files on a folder and extracts relevant metadata, then prepares a mapserver configuration for that folder, while updating the metadata with the relevant service url’s. Typical use cases for this stack are; a search interface to any file based data repository or a participatory data catalogue for a project. At the conference we hope to hear from you if any of these components could be relevant to your cases or if there are similar initiatives we can contribute to or benefit from. What’s next? At ISRIC we receive and ingest a lot of soil data from partners. To harmonize this data is a huge effort. Via automated pipelines and interaction with the submitters via git comments, we hope to improve also this aspect of the data management cycle.\n\n\n\n\n\nJul 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nSoil Information System for Africa\n\n\nUpdating soil information for Africa: supporting agriculture and promoting synergies\n\n\n\n\n\n\n\n\nDec 1, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nSoilWise HE progress report\n\n\nISRIC Fruitfull may 6th 2025\n\n\n\n\n\n\n\n\nMay 6, 2025\n\n\nFenny van Egmond, Thaisa van der Woude, Paul van Genuchten, Jiarong Li\n\n\n\n\n\n\n\n\n\n\n\n\nSoilwise & Metadata\n\n\nMetadata in Horizon Europe projects (Soil Mission)\n\n\n\n\n\n\n\n\nJun 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nNov 20, 2025\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nJul 18, 2025\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nDec 6, 2024\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status 2025\n\n\nA fun way to do spatial cataloguing\n\n\n\n\n\n\n\n\nJul 18, 2025\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/fun-way-of-spatial-cataloguing.html#pycsw",
@@ -560,25 +560,123 @@
     "text": "Good practices on url persistence of project websites\n\nuse a subdomain of an established organisation\nuse a persistent identifier framework, when linking to external sources\nset up rewrite rules at website cancelation\nuse minimal technology, yes: html; no: wordpress, liferay, …\nkeep the content minimal, link to external (persistent) resources\npre-pay the domain ownership for at least the upcoming 10 years"
   },
   {
-    "objectID": "slides/2026-wur-soil-day.html#improving-findability---devops-style",
-    "href": "slides/2026-wur-soil-day.html#improving-findability---devops-style",
+    "objectID": "slides/2026-wur-soil-day.html#workshop-on-interoperability-in-fair-for-soil-data",
+    "href": "slides/2026-wur-soil-day.html#workshop-on-interoperability-in-fair-for-soil-data",
     "title": "Document your model data at minimal effort",
-    "section": "Improving findability - devops style",
-    "text": "Improving findability - devops style\n\nWhat: Document your modelling data with minimal effort\nWhy: Better findability and (re)usability of data\nWhat’s next: Adopt the efforts in ongoing projects & extend the user community"
+    "section": "Workshop on Interoperability in FAIR for soil data",
+    "text": "Workshop on Interoperability in FAIR for soil data"
   },
   {
-    "objectID": "slides/2026-wur-soil-day.html#setting-concept",
-    "href": "slides/2026-wur-soil-day.html#setting-concept",
+    "objectID": "slides/2026-wur-soil-day.html#program-of-this-workshop",
+    "href": "slides/2026-wur-soil-day.html#program-of-this-workshop",
     "title": "Document your model data at minimal effort",
-    "section": "Setting & Concept",
-    "text": "Setting & Concept\n\nSetting: Data management in predictive modelling\n\nIn soil modelling we handle many data sources\nThese files are stored on a network drive\nMetadata management is complex/dull/****\n\nThe sidecar concept\n\nAdd minimal metadata on a sidecar file\nA crawler extracts metadata from a file repository\nCrawled records are placed in a searchable index"
+    "section": "Program of this workshop",
+    "text": "Program of this workshop\n\nIntroduction to interoperability in soil data\n2 case studies of soil data in practice\n\nMonne Weghorst: effects of microplastics on soil structure\nKeiji Jindo: soil carbon dynamics in paddy soils\n\nSoilWise suggestions to enhance interoperability\nHands-on session: documenting your data (+menti)"
   },
   {
-    "objectID": "slides/2026-wur-soil-day.html#pygeometa-geodatacrawler-pycsw",
-    "href": "slides/2026-wur-soil-day.html#pygeometa-geodatacrawler-pycsw",
+    "objectID": "slides/2026-wur-soil-day.html#interoperability-in-fair",
+    "href": "slides/2026-wur-soil-day.html#interoperability-in-fair",
     "title": "Document your model data at minimal effort",
-    "section": "pygeometa, geodatacrawler & pycsw",
-    "text": "pygeometa, geodatacrawler & pycsw\n\npygeometa’s MCF is a minimal subset of ISO19115, encoded in yaml\ngeodatacrawler extends pygeometa to:\n\nextract metadata from data formats\ninherit metadata from parent folders\nimport metadata from csv and remote sources\ncreate data api’s based on metadata\n\n is a pythonic catalogue web app. Wide standards support enables findability in multiple communities."
+    "section": "Interoperability in FAIR",
+    "text": "Interoperability in FAIR\n\nuse a formal, accessible, shared language for knowledge representation\nuse vocabularies that follow the FAIR principles\ninclude qualified references to other (meta)data"
+  },
+  {
+    "objectID": "slides/2026-wur-soil-day.html#what-formal-languages-are-we-using-in-soil",
+    "href": "slides/2026-wur-soil-day.html#what-formal-languages-are-we-using-in-soil",
+    "title": "Document your model data at minimal effort",
+    "section": "What formal languages are we using in soil?",
+    "text": "What formal languages are we using in soil?\n\nHarmonised World Soil Database / eSOTER\nISO28258 / OGC Observations, Measurements and Samples (OMS) / INSPIRE Soil\nGLOSIS LD"
+  },
+  {
+    "objectID": "slides/2026-wur-soil-day.html#so",
+    "href": "slides/2026-wur-soil-day.html#so",
+    "title": "Document your model data at minimal effort",
+    "section": "So…",
+    "text": "So…\n\nLimited adoption, due to\nComplexity and lack of tools\nLack of awareness and incentives."
+  },
+  {
+    "objectID": "slides/2026-wur-soil-day.html#which-vocabularies-are-we-using-in-soil",
+    "href": "slides/2026-wur-soil-day.html#which-vocabularies-are-we-using-in-soil",
+    "title": "Document your model data at minimal effort",
+    "section": "Which vocabularies are we using in soil?",
+    "text": "Which vocabularies are we using in soil?\n\nWorld Refernce Base, USDA Soil Taxonomy, Dutch Soil Classification, etc.\nFAO Guidelines for Soil Description\nAgrovoc, Gemet, INRAE thesaurus\nGBIF vocabularies, NCBI Taxonomy, etc."
+  },
+  {
+    "objectID": "slides/2026-wur-soil-day.html#so-1",
+    "href": "slides/2026-wur-soil-day.html#so-1",
+    "title": "Document your model data at minimal effort",
+    "section": "So…",
+    "text": "So…\n\nSlight adoption, but often not in a machine-readable format, and often not used in a consistent way.\nNo concensus on vocabularies for soil properties and sampling/lab procedures."
+  },
+  {
+    "objectID": "slides/2026-wur-soil-day.html#what-are-qualified-references",
+    "href": "slides/2026-wur-soil-day.html#what-are-qualified-references",
+    "title": "Document your model data at minimal effort",
+    "section": "What are qualified references?",
+    "text": "What are qualified references?\n\nA cross-reference that explains its intent\nFor example, Magnesium content is measured using Mehlich-3 is a more qualified reference than Magnesium is related to Mehlich-3."
+  },
+  {
+    "objectID": "slides/2026-wur-soil-day.html#is-the-soil-domain-special",
+    "href": "slides/2026-wur-soil-day.html#is-the-soil-domain-special",
+    "title": "Document your model data at minimal effort",
+    "section": "Is the soil domain special?",
+    "text": "Is the soil domain special?\n\nIn general, no, all science domain struggle with interoperability, however:\nChanges in soil are slow, so legacy data is often used, and require long term experiments (IT trends change faster than soil)\nWe have a long history of standardization efforts, at the time of writing FAIR was not a topic"
+  },
+  {
+    "objectID": "slides/2026-wur-soil-day.html#some-examples",
+    "href": "slides/2026-wur-soil-day.html#some-examples",
+    "title": "Document your model data at minimal effort",
+    "section": "Some examples",
+    "text": "Some examples\n\n…"
+  },
+  {
+    "objectID": "slides/2026-wur-soil-day.html#the-soilwise-project",
+    "href": "slides/2026-wur-soil-day.html#the-soilwise-project",
+    "title": "Document your model data at minimal effort",
+    "section": "The SoilWise project",
+    "text": "The SoilWise project\n\nAims to increase reusability of soil data and knowledge within the European Union Soil Observatory\nBuilds a catalog for soil data and knowledge, a soil vocabulary and guidances around data publication\nFunded by the EU Horizon program,\nRunning from 2024 - 2028\nISRIC, WENR Earth Informatics and Wageningen University in a consortium with 10 other partners across Europe."
+  },
+  {
+    "objectID": "slides/2026-wur-soil-day.html#the-soilharmony-project",
+    "href": "slides/2026-wur-soil-day.html#the-soilharmony-project",
+    "title": "Document your model data at minimal effort",
+    "section": "The Soilharmony project",
+    "text": "The Soilharmony project\n\nThe 4 year project kicked off this week.\naims to develop transfer functions to support the implementation of the soil monitoring law\nWENR is one of 13 consortium partners\nThe envisioned system builds on existing standardisation efforts"
+  },
+  {
+    "objectID": "slides/2026-wur-soil-day.html#lets-get-started",
+    "href": "slides/2026-wur-soil-day.html#lets-get-started",
+    "title": "Document your model data at minimal effort",
+    "section": "Let’s get started",
+    "text": "Let’s get started\n\n2 soil scientists from different corners of soil\nhow do you publish your data, and what challenges do you face?\ndo the soilwise suggestions make sense?\nI invite you to reflect on your own experiences based on their stories"
+  },
+  {
+    "objectID": "slides/2026-wur-soil-day.html#monne-weghorst-effects-of-microplastics-on-soil-structure",
+    "href": "slides/2026-wur-soil-day.html#monne-weghorst-effects-of-microplastics-on-soil-structure",
+    "title": "Document your model data at minimal effort",
+    "section": "Monne Weghorst: effects of microplastics on soil structure",
+    "text": "Monne Weghorst: effects of microplastics on soil structure"
+  },
+  {
+    "objectID": "slides/2026-wur-soil-day.html#keiji-jindo-soil-carbon-dynamics-in-paddy-soils",
+    "href": "slides/2026-wur-soil-day.html#keiji-jindo-soil-carbon-dynamics-in-paddy-soils",
+    "title": "Document your model data at minimal effort",
+    "section": "Keiji Jindo: soil carbon dynamics in paddy soils",
+    "text": "Keiji Jindo: soil carbon dynamics in paddy soils"
+  },
+  {
+    "objectID": "slides/2026-wur-soil-day.html#soilwise-suggestions-to-enhance-interoperability",
+    "href": "slides/2026-wur-soil-day.html#soilwise-suggestions-to-enhance-interoperability",
+    "title": "Document your model data at minimal effort",
+    "section": "SoilWise suggestions to enhance interoperability",
+    "text": "SoilWise suggestions to enhance interoperability\nwe identified 3 approaches based on the different use cases\n\nA basic annotation of tabular data (excel, csv)\nA relational database approach including annotations (geopackage)\nA semantic web approach using RDF and ontologies"
+  },
+  {
+    "objectID": "slides/2026-wur-soil-day.html#tabular-data-annotation",
+    "href": "slides/2026-wur-soil-day.html#tabular-data-annotation",
+    "title": "Document your model data at minimal effort",
+    "section": "Tabular data annotation",
+    "text": "Tabular data annotation\n\n\n\nannotate a csv"
   },
   {
     "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#isric---world-soil-information",
@@ -865,7 +963,7 @@
     "href": "index.html",
     "title": "Select your deck:",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nMar 24, 2026\n\n\n(Meta)Data management at ISRIC - World Soil Information\n\n\nPaul van Genuchten\n\n\n\n\n\n\nAug 5, 2025\n\n\nA website on Github.io\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\nMay 16, 2026\n\n\nAUSO - Training on FAIR Soil Data\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNov 4, 2023\n\n\nAbandonded Project Websites -&gt; no\n\n\nPaul van Genuchten\n\n\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\nApr 30, 2025\n\n\nFAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects\n\n\nMickael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten\n\n\n\n\n\n\nMar 19, 2025\n\n\nFAIR intro for Digital Soil Mapping\n\n\nPaul van Genuchten\n\n\n\n\n\n\nFeb 5, 2026\n\n\nGIT flavoured modelling\n\n\nPaul van Genuchten\n\n\n\n\n\n\nAug 6, 2025\n\n\nLSC-Hub Kenya; pending topics\n\n\nvan Genuchten, P.\n\n\n\n\n\n\nAug 5, 2025\n\n\nLSC-Hub components overview\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\nAug 5, 2025\n\n\nLSC-Hub development overview\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\nFeb 29, 2024\n\n\nMetadata for the rest of us\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\nJul 3, 2025\n\n\nOpen Source at ISRIC - World Soil Information\n\n\nPaul van Genuchten\n\n\n\n\n\n\nMay 20, 2024\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\nJul 3, 2024\n\n\nSDI maintenance DevOps style\n\n\nPaul van Genuchten\n\n\n\n\n\n\nDec 1, 2025\n\n\nSoil Information System for Africa\n\n\nPaul van Genuchten\n\n\n\n\n\n\nMay 6, 2025\n\n\nSoilWise HE progress report\n\n\nFenny van Egmond, Thaisa van der Woude, Paul van Genuchten, Jiarong Li\n\n\n\n\n\n\nJun 3, 2024\n\n\nSoilwise & Metadata\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNov 13, 2023\n\n\nWorkshop pygeoapi\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNov 20, 2025\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nJul 18, 2025\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nDec 6, 2024\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nJul 18, 2025\n\n\npygeometa project status 2025\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\n\n\n \n\n\ntype: default\n\n\n \n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nMar 24, 2026\n\n\n(Meta)Data management at ISRIC - World Soil Information\n\n\nPaul van Genuchten\n\n\n\n\n\n\nAug 5, 2025\n\n\nA website on Github.io\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\nMay 16, 2026\n\n\nAUSO - Training on FAIR Soil Data\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNov 4, 2023\n\n\nAbandonded Project Websites -&gt; no\n\n\nPaul van Genuchten\n\n\n\n\n\n\nJun 4, 2026\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Keiji Jindo, Monne Weghorst\n\n\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\nApr 30, 2025\n\n\nFAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects\n\n\nMickael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten\n\n\n\n\n\n\nMar 19, 2025\n\n\nFAIR intro for Digital Soil Mapping\n\n\nPaul van Genuchten\n\n\n\n\n\n\nFeb 5, 2026\n\n\nGIT flavoured modelling\n\n\nPaul van Genuchten\n\n\n\n\n\n\nAug 6, 2025\n\n\nLSC-Hub Kenya; pending topics\n\n\nvan Genuchten, P.\n\n\n\n\n\n\nAug 5, 2025\n\n\nLSC-Hub components overview\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\nAug 5, 2025\n\n\nLSC-Hub development overview\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\nFeb 29, 2024\n\n\nMetadata for the rest of us\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\nJul 3, 2025\n\n\nOpen Source at ISRIC - World Soil Information\n\n\nPaul van Genuchten\n\n\n\n\n\n\nMay 20, 2024\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\nJul 3, 2024\n\n\nSDI maintenance DevOps style\n\n\nPaul van Genuchten\n\n\n\n\n\n\nDec 1, 2025\n\n\nSoil Information System for Africa\n\n\nPaul van Genuchten\n\n\n\n\n\n\nMay 6, 2025\n\n\nSoilWise HE progress report\n\n\nFenny van Egmond, Thaisa van der Woude, Paul van Genuchten, Jiarong Li\n\n\n\n\n\n\nJun 3, 2024\n\n\nSoilwise & Metadata\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNov 13, 2023\n\n\nWorkshop pygeoapi\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNov 20, 2025\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nJul 18, 2025\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nDec 6, 2024\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nJul 18, 2025\n\n\npygeometa project status 2025\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\n\n\n \n\n\ntype: default\n\n\n \n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#about-us",
