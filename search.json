@@ -585,7 +585,7 @@
     "href": "slides/2026-wur-soil-day.html#what-formal-languages-are-we-using-in-soil",
     "title": "Document your model data at minimal effort",
     "section": "What formal languages are we using in soil?",
-    "text": "What formal languages are we using in soil?\n\nHarmonised World Soil Database / eSOTER\nISO28258 / OGC Observations, Measurements and Samples (OMS) / INSPIRE Soil\nGLOSIS LD"
+    "text": "What formal languages are we using in soil?\n\nHarmonised World Soil Database / eSOTER\nISO28258 / OGC Observations, Measurements and Samples (OMS) / INSPIRE Soil\nGLOSIS LD / SOSA"
   },
   {
     "objectID": "slides/2026-wur-soil-day.html#so",
@@ -627,7 +627,7 @@
     "href": "slides/2026-wur-soil-day.html#some-examples",
     "title": "Document your model data at minimal effort",
     "section": "Some examples",
-    "text": "Some examples\n\n…"
+    "text": "Some examples\n\nhttps://doi.org/10.5281/zenodo.17422778\nhttps://doi.org/10.5281/zenodo.20067150\nhttps://doi.org/10.5281/zenodo.20508989\nhttps://doi.org/10.5281/zenodo.15040664\nhttps://doi.org/10.18167/DVN1/PWM9WW\nhttps://doi.org/10.4121/f0539cee-c288-42ff-872d-af11320e183c\nhttps://doi.org/10.4121/21632186"
   },
   {
     "objectID": "slides/2026-wur-soil-day.html#the-soilwise-project",
@@ -669,14 +669,56 @@
     "href": "slides/2026-wur-soil-day.html#soilwise-suggestions-to-enhance-interoperability",
     "title": "Document your model data at minimal effort",
     "section": "SoilWise suggestions to enhance interoperability",
-    "text": "SoilWise suggestions to enhance interoperability\nwe identified 3 approaches based on the different use cases\n\nA basic annotation of tabular data (excel, csv)\nA relational database approach including annotations (geopackage)\nA semantic web approach using RDF and ontologies"
+    "text": "SoilWise suggestions to enhance interoperability\nWe identified 3 approaches based on the different use cases\n\nA basic annotation of tabular data (excel, csv)\nA relational database approach including annotations (geopackage)\nA semantic web approach using RDF and ontologies"
   },
   {
     "objectID": "slides/2026-wur-soil-day.html#tabular-data-annotation",
     "href": "slides/2026-wur-soil-day.html#tabular-data-annotation",
     "title": "Document your model data at minimal effort",
     "section": "Tabular data annotation",
-    "text": "Tabular data annotation\n\n\n\nannotate a csv"
+    "text": "Tabular data annotation\n\nannotate a csv"
+  },
+  {
+    "objectID": "slides/2026-wur-soil-day.html#howto",
+    "href": "slides/2026-wur-soil-day.html#howto",
+    "title": "Document your model data at minimal effort",
+    "section": "HowTo…?",
+    "text": "HowTo…?\n\nA Excel Template\nA basic CSV approach (embargo)\nThe full CSV-W approach"
+  },
+  {
+    "objectID": "slides/2026-wur-soil-day.html#csv-on-the-web",
+    "href": "slides/2026-wur-soil-day.html#csv-on-the-web",
+    "title": "Document your model data at minimal effort",
+    "section": "CSV on the Web",
+    "text": "CSV on the Web\n\nCSVW is a W3C standard\nColumns of a tabular dataser are annotated in a sidecar file\nRDF tooling can serialize the CSV+CSVW to RDF formats (ttl, json-ld, …)"
+  },
+  {
+    "objectID": "slides/2026-wur-soil-day.html#and-then",
+    "href": "slides/2026-wur-soil-day.html#and-then",
+    "title": "Document your model data at minimal effort",
+    "section": "And then…?",
+    "text": "And then…?\n\nHow to use a common model for observation data and qualified references?\nThe SOSA ontology provides annotation options for measurement and observation data\nEU SoilVoc provides identifiers of common soil properties and procedures"
+  },
+  {
+    "objectID": "slides/2026-wur-soil-day.html#sosa",
+    "href": "slides/2026-wur-soil-day.html#sosa",
+    "title": "Document your model data at minimal effort",
+    "section": "SOSA",
+    "text": "SOSA\ngraph LR\n\n    O[Observation]\n    FOI[Feature of Interest]\n\n    OP[Observed Property]\n    R[Result]\n    P[Procedure]\n  \n    O --&gt;|sosa:hasFeatureOfInterest| FOI\n    O --&gt;|sosa:observedProperty| OP\n    O --&gt;|sosa:hasResult| R\n    O --&gt;|sosa:usedProcedure| P\n\n    R --&gt;|qudt:value| VAL[Numeric Value]\n    R --&gt;|qudt:hasUnit| UNIT[Unit]"
+  },
+  {
+    "objectID": "slides/2026-wur-soil-day.html#and-then-1",
+    "href": "slides/2026-wur-soil-day.html#and-then-1",
+    "title": "Document your model data at minimal effort",
+    "section": "And then…?",
+    "text": "And then…?\n\nUpload the product onto Zenodo/4TU, referencing the approach used\nConvert the dataset to RDF/Geopackage before uploading to Zenodo\nUse F-UJI tool to understand the FAIR-ness of your publication"
+  },
+  {
+    "objectID": "slides/2026-wur-soil-day.html#qa",
+    "href": "slides/2026-wur-soil-day.html#qa",
+    "title": "Document your model data at minimal effort",
+    "section": "Q&A",
+    "text": "Q&A\nThank you.\nJoin our menti.com 3862 7420"
   },
   {
     "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#isric---world-soil-information",
