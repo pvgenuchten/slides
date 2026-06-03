@@ -1,36 +1,146 @@
 ---
-title: Document your model data at minimal effort
-subtitle: "A pitch battle at digital innovation expo @WUR"
-author: Paul van Genuchten, Giulio Genova 
-date: 2023-10-19
+title: Interoperable Soil Data
+subtitle: "WUR SOIL DAY 2026"
+author: Paul van Genuchten, Keiji Jindo, Monne Weghorst
+date: 2026-06-04
 format:
   revealjs: 
-    theme: default
+    theme: serif
+    logo: https://omgeving.vlaanderen.be/sites/default/files/2025-10/SWlogocolor.svg
+    footer: Soil@WUR day - Soilwise HE - <a href="https://cordis.europa.eu/project/id/101112838">EU Horizon Grant 101112838</a>
 ---
 
-## Improving findability - devops style 
 
-- What: Document your modelling data with minimal effort
-- Why: Better findability and (re)usability of data
-- What's next: Adopt the efforts in ongoing projects & extend the user community
+## Program of this workshop
 
-## Setting & Concept
+- Introduction to interoperability in soil data
+- 2 case studies of soil data in practice
+   - Monne Weghorst: Effects of microplastics on soil structure
+   - Keiji Jindo: Soil Carbon Dynamics
+- SoilWise suggestions to enhance interoperability
+- Q&A / Hands-on session (+menti)
 
-- Setting: Data management in predictive modelling
-    - In `soil modelling` we handle many data sources
-    - These files are stored on a network drive
-    - Metadata management is `complex/dull/****`
-- The sidecar concept
-    - Add minimal metadata on a sidecar file
-    - A crawler extracts metadata from a file repository
-    - Crawled records are placed in a searchable index
+## Interoperability in FAIR
 
-## pygeometa, geodatacrawler & pycsw
+- Use a formal, accessible, shared language for knowledge representation
+- Use vocabularies that follow the FAIR principles
+- Include qualified references to other (meta)data
 
-- [pygeometa](https://github.com/geopython/pygeometa)'s MCF is a minimal subset of ISO19115, encoded in yaml 
-- [geodatacrawler](https://pypi.org/project/geodatacrawler/) extends pygeometa to: 
-    - extract metadata from data formats
-    - inherit metadata from parent folders
-    - import metadata from csv and remote sources
-    - create data api's based on metadata
-- [![](https://demo.pycsw.org/gisdata/static/logo-horizontal.png){height="50" style="vertical-align:middle"}](https://pycsw.org) is a pythonic catalogue web app. Wide standards support enables findability in multiple communities.
+## What formal languages are we using in soil?
+
+- Harmonised World Soil Database / eSOTER
+- ISO28258:2013 / Observations, Measurements and Samples (OMS) / INSPIRE Soil
+- GLOSIS LD / SOSA
+- ...
+
+## So...
+
+Limited adoption, due to: 
+
+- Complexity and lack of tools
+- Lack of awareness and incentives
+
+## Which vocabularies are we using in soil?
+
+- World Reference Base, USDA Soil Taxonomy, Dutch Soil Classification, etc.
+- FAO Guidelines for Soil Description
+- Agrovoc, Gemet, INRAE thesaurus
+- GBIF vocabularies, NCBI Taxonomy, etc.
+
+## So...
+
+- Slight adoption, but often not in a machine-readable format, and often not used in a consistent way
+- No concensus on vocabularies for soil properties and sampling/lab procedures 
+
+## What are qualified references?
+
+- A cross-reference that explains its intent
+- For example, Magnesium content is measured using Mehlich-3 is a more qualified reference than Magnesium is related to Mehlich-3.
+
+## Is the soil domain special?
+
+In general, **no**, all science domain struggle with interoperability, however:
+
+- Changes in soil are slow, so legacy data is often used, and require long term experiments (IT trends change faster than soil)
+- We have a long history of standardization efforts, at the time of writing FAIR was not a topic
+
+## Some examples
+
+- [10.5281/zenodo.17422778](https://doi.org/10.5281/zenodo.17422778)
+- [10.5281/zenodo.20067150](https://doi.org/10.5281/zenodo.20067150)
+- [10.5281/zenodo.20508989](https://doi.org/10.5281/zenodo.20508989)
+- [10.5281/zenodo.15040664](https://doi.org/10.5281/zenodo.15040664)
+- [10.18167/DVN1/PWM9WW](https://doi.org/10.18167/DVN1/PWM9WW)
+- [10.4121/f0539cee-c288-42ff-872d-af11320e183c](https://doi.org/10.4121/f0539cee-c288-42ff-872d-af11320e183c)
+- [10.4121/21632186](https://doi.org/10.4121/21632186)
+
+## The [SoilWise project](https://www.soilwise-he.eu)
+
+- Aims to increase reusability of soil data and knowledge within the European Union Soil Observatory
+- Builds a [catalog for soil data and knowledge](https://catalogue.soilwise-he.eu), a [soil vocabulary](https://w3id.org/eusoilvoc) and [guidances around data publication](https://soilwise-he.github.io/soilwise-fair-strategy/use-cases/)
+- Funded by the EU Horizon program
+- Running from 2024 - 2028
+- ISRIC, WENR Earth Informatics and Wageningen University in a consortium with 10 other partners across Europe
+
+## The Soilharmony project
+
+- The 4 year project kicked off this week.
+- Aims to develop transfer functions to support the implementation of the soil monitoring law
+- WENR is one of 13 consortium partners
+- The envisioned system builds on existing standardisation efforts
+
+## Let's get started
+
+- 2 soil scientists from different corners of soil
+- How do you publish your data, and what challenges do you face?
+- Do the soilwise suggestions make sense?
+- I invite you to reflect on your own experiences based on their stories
+
+## Monne Weghorst: effects of microplastics on soil structure
+
+## Keiji Jindo: soil carbon dynamics in paddy soils
+
+## SoilWise suggestions to enhance data interoperability
+
+We identified 3 approaches based on different use cases
+
+- A basic annotation of tabular data (excel, csv)
+- A relational database approach including annotations (geopackage)
+- A semantic web approach using RDF and ontologies
+
+## Tabular data annotation
+
+![annotate a csv](./img/tabbular_annotated.png)
+
+## HowTo...?
+
+- A [Excel Template](https://github.com/soilwise-he/soil-observation-data-encodings/)
+- A basic [CSV approach](https://github.com/KALRO-ICT/kensis-data/tree/main/data) (embargo)
+- The full [CSV-W approach](https://github.com/soilwise-he/soil-observation-data-encodings/)
+
+## CSV on the Web
+
+- [CSVW](https://www.w3.org/TR/tabular-data-primer/) is a W3C standard
+- Columns of a tabular dataser are annotated in a sidecar file 
+- [RDF tooling](https://pypi.org/project/csvwlib/) can serialize the CSV+CSVW to RDF formats (ttl, json-ld, ...)
+
+## And then...?
+
+- Which common model for observation data and qualified referencesto use? 
+- The [SOSA ontology](https://www.w3.org/TR/vocab-ssn/) provides annotation options for measurement and observation data
+- [EU SoilVoc](https://w3id.org/eusoilvoc) provides identifiers of common soil properties and procedures
+
+## SOSA
+
+![SOSA structure](img/sosa.png)
+
+## And then...?
+
+- Upload the dataset onto Zenodo/4TU, referencing the approach used
+- [Convert the dataset](https://api.soilwise.wetransform.eu/csvw/docs) to RDF/Geopackage before uploading to Zenodo
+- Use [F-UJI tool](https://www.f-uji.net/) to understand the FAIR-ness of your publication
+
+## Q&A - Hands on...
+
+Join our menti.com [3862 7420](https://www.mentimeter.com/app/presentation/alq4rfmkfxfr9smqmp55dbowo68jdnif/present?question=6itu18q8816x)
+
