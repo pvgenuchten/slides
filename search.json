@@ -564,7 +564,7 @@
     "href": "slides/2026-wur-soil-day.html#program-of-this-workshop",
     "title": "Interoperable Soil Data",
     "section": "Program of this workshop",
-    "text": "Program of this workshop\n\nIntroduction to interoperability in soil data\n2 case studies of soil data in practice\n\nMonne Weghorst: Effects of microplastics on soil structure\nKeiji Jindo: Soil Carbon Dynamics\n\nSoilWise suggestions to enhance interoperability\nQ&A / Hands-on session (+menti)"
+    "text": "Program of this workshop\n\nIntroduction to interoperability in soil data\n2 case studies of soil data in practice\n\nMonne Weghorst: personal experiences with structuring data\nKeiji Jindo: 3 use-cases related to soil sampling and soil analysis.\n\nSoilWise suggestions to enhance interoperability\nQ&A / Hands-on session (+menti)"
   },
   {
     "objectID": "slides/2026-wur-soil-day.html#interoperability-in-fair",
@@ -627,7 +627,7 @@
     "href": "slides/2026-wur-soil-day.html#the-soilwise-project",
     "title": "Interoperable Soil Data",
     "section": "The SoilWise project",
-    "text": "The SoilWise project\n\nAims to increase reusability of soil data and knowledge within the European Union Soil Observatory\nBuilds a catalog for soil data and knowledge, a soil vocabulary and guidances around data publication\nFunded by the EU Horizon program\nRunning from 2024 - 2028\nISRIC, WENR Earth Informatics and Wageningen University in a consortium with 10 other partners across Europe"
+    "text": "The SoilWise project\n\nAims to increase reusability of soil data and knowledge within the European Union Soil Observatory\nBuilds a catalog for soil data and knowledge, a soil vocabulary and guidances around data publication\nFunded by the EU Horizon program\nRunning from 2024 - 2027\nISRIC, WENR Earth Informatics and Wageningen University in a consortium with 10 other partners across Europe"
   },
   {
     "objectID": "slides/2026-wur-soil-day.html#the-soilharmony-project",
@@ -644,18 +644,18 @@
     "text": "Let’s get started\n\n2 soil scientists from different corners of soil\nHow do you publish your data, and what challenges do you face?\nDo the soilwise suggestions make sense?\nI invite you to reflect on your own experiences based on their stories"
   },
   {
-    "objectID": "slides/2026-wur-soil-day.html#monne-weghorst-effects-of-microplastics-on-soil-structure",
-    "href": "slides/2026-wur-soil-day.html#monne-weghorst-effects-of-microplastics-on-soil-structure",
+    "objectID": "slides/2026-wur-soil-day.html#monne-weghorst-personal-experiences-with-structuring-data",
+    "href": "slides/2026-wur-soil-day.html#monne-weghorst-personal-experiences-with-structuring-data",
     "title": "Interoperable Soil Data",
-    "section": "Monne Weghorst: effects of microplastics on soil structure",
-    "text": "Monne Weghorst: effects of microplastics on soil structure"
+    "section": "Monne Weghorst: personal experiences with structuring data",
+    "text": "Monne Weghorst: personal experiences with structuring data"
   },
   {
-    "objectID": "slides/2026-wur-soil-day.html#keiji-jindo-soil-carbon-dynamics-in-paddy-soils",
-    "href": "slides/2026-wur-soil-day.html#keiji-jindo-soil-carbon-dynamics-in-paddy-soils",
+    "objectID": "slides/2026-wur-soil-day.html#keiji-jindo-3-use-cases-related-to-soil-sampling-and-soil-analysis.",
+    "href": "slides/2026-wur-soil-day.html#keiji-jindo-3-use-cases-related-to-soil-sampling-and-soil-analysis.",
     "title": "Interoperable Soil Data",
-    "section": "Keiji Jindo: soil carbon dynamics in paddy soils",
-    "text": "Keiji Jindo: soil carbon dynamics in paddy soils"
+    "section": "Keiji Jindo: 3 use-cases related to soil sampling and soil analysis.",
+    "text": "Keiji Jindo: 3 use-cases related to soil sampling and soil analysis."
   },
   {
     "objectID": "slides/2026-wur-soil-day.html#soilwise-suggestions-to-enhance-data-interoperability",
