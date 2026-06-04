@@ -15,8 +15,8 @@ format:
 
 - Introduction to interoperability in soil data
 - 2 case studies of soil data in practice
-   - Monne Weghorst: Effects of microplastics on soil structure
-   - Keiji Jindo: Soil Carbon Dynamics
+   - Monne Weghorst: personal experiences with structuring data
+   - Keiji Jindo:  3 use-cases related to soil sampling and soil analysis.
 - SoilWise suggestions to enhance interoperability
 - Q&A / Hands-on session (+menti)
 
@@ -79,10 +79,10 @@ In general, **no**, all science domain struggle with interoperability, however:
 - Aims to increase reusability of soil data and knowledge within the European Union Soil Observatory
 - Builds a [catalog for soil data and knowledge](https://catalogue.soilwise-he.eu), a [soil vocabulary](https://w3id.org/eusoilvoc) and [guidances around data publication](https://soilwise-he.github.io/soilwise-fair-strategy/use-cases/)
 - Funded by the EU Horizon program
-- Running from 2024 - 2028
+- Running from 2024 - 2027
 - ISRIC, WENR Earth Informatics and Wageningen University in a consortium with 10 other partners across Europe
 
-## The Soilharmony project
+## The [Soilharmony project](https://doi.org/10.5194/egusphere-egu26-22403)
 
 - The 4 year project kicked off this week.
 - Aims to develop transfer functions to support the implementation of the soil monitoring law
@@ -96,9 +96,9 @@ In general, **no**, all science domain struggle with interoperability, however:
 - Do the soilwise suggestions make sense?
 - I invite you to reflect on your own experiences based on their stories
 
-## Monne Weghorst: effects of microplastics on soil structure
+## Monne Weghorst: personal experiences with structuring data
 
-## Keiji Jindo: soil carbon dynamics in paddy soils
+## Keiji Jindo:  3 use-cases related to soil sampling and soil analysis.
 
 ## SoilWise suggestions to enhance data interoperability
 
