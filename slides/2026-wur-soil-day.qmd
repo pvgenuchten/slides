@@ -13,12 +13,12 @@ format:
 
 ## Program of this workshop
 
-- Introduction to interoperability in soil data
+- Introduction to interoperability in soil data (13.45)
 - 2 case studies of soil data in practice
-   - Monne Weghorst: personal experiences with structuring data
-   - Keiji Jindo:  3 use-cases related to soil sampling and soil analysis.
-- SoilWise suggestions to enhance interoperability
-- Q&A / Hands-on session (+menti)
+   - Monne Weghorst: personal experiences with structuring data (14.00)
+   - Keiji Jindo:  3 use-cases related to soil sampling and soil analysis (14.15)
+- SoilWise suggestions to enhance interoperability (14.30)
+- Q&A / Hands-on session (+menti) (14.45)
 
 ## Interoperability in FAIR
 
