@@ -18,7 +18,7 @@ format:
    - Monne Weghorst: personal experiences with structuring data (14.00)
    - Keiji Jindo:  3 use-cases related to soil sampling and soil analysis (14.15)
 - SoilWise suggestions to enhance interoperability (14.30)
-- Q&A / Hands-on session (+menti) (14.45)
+- Q&A / Hands-on session  (14.45)
 
 ## Interoperability in FAIR
 
@@ -142,5 +142,4 @@ We identified 3 approaches based on different use cases
 
 ## Q&A - Hands on...
 
-Join our menti.com [3862 7420](https://www.mentimeter.com/app/presentation/alq4rfmkfxfr9smqmp55dbowo68jdnif/present?question=6itu18q8816x)
 

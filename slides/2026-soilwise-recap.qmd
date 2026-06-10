@@ -1,0 +1,159 @@
+---
+title: SoilWise HE recap
+subtitle: "ISRIC - World Soil Information"
+author: Paul van Genuchten
+date: 2026-06-10
+format:
+  revealjs: 
+    theme: serif
+    logo: https://omgeving.vlaanderen.be/sites/default/files/2025-10/SWlogocolor.svg
+    footer: Soilwise HE - <a href="https://cordis.europa.eu/project/id/101112838">EU Horizon Grant 101112838</a>
+---
+
+
+## SoilWise-HE in Context
+
+A Horizon Europe - Mission Soil - project (2024-2027)
+
+* SoilWise aims to become a long-term European catalogue for soil knowledge and data.
+* Focus on discoverability rather than replacing existing repositories.
+* Harvests metadata from distributed sources.
+* Intended as a future building block for the European Soil Observatory (EUSO).
+
+## Core challenge
+
+Europe's soil information is fragmented across:
+
+* Academic repositories
+* Project websites / portals / knowledge hubs
+* Governmental data catalogues
+* 3rd party platforms (youtube, linkedin, github)
+
+Goal: provide one integrated access point while respecting ownership and governance. Encourage sustainable publication, instead of refactoring existing publications.
+
+## SoilWise Technical Components
+
+1. Metadata harvesting
+3. Catalogue
+4. Metadata validation
+5. Metadata authoring
+6. Metadata transformation & harmonisation
+7. Metadata augmentation
+8. Knowledge graph
+9. Natural language querying
+10. Data publication guidance
+11. Data harmonisation
+
+## Diagram
+
+```{mermaid}
+flowchart LR
+    S1[Source 1] -->|harvest| h[(Ingested)]
+    S2[Source 2] -->|harvest| h[(Ingested)]
+    h --> HM{harmonise}
+    HM --> h2[(Harmonised)]
+    h2 --> AU{augment}
+    shkg[(Knowledge Graph)] --> AU
+    AU --> h3[(Search index)]
+```
+
+## EUSO will not store (harmonized) data
+
+SoilWise primarily indexes metadata rather than replicating datasets.
+
+* lower storage requirements
+* respect data ownership
+* support distributed repositories
+* easier integration of heterogeneous sources
+
+## Typical harvested sources
+
+* Government (INSPIRE / data.europa.eu)
+* Academia (CORDIS / OpenAire)
+* EO portals (Copernicus)
+* Meta repositories / knowledge hubs
+
+
+## Harmonising heterogeneous sources
+
+Repositories expose different schemas:
+
+* Dublin Core / DCAT
+* ISO 19139 / INSPIRE metadata
+* DataCite / ARC / RO-Crate
+* Repository-specific profiles
+
+## Metadata Augmentation
+
+SoilWise enriches records using:
+
+* NLP
+* scripts
+* rule engines
+* LLM-assisted approaches
+
+Increase FAIRness without modifying the original source record.
+
+## Example augmentations
+
+* inferred keywords
+* inferred spatial scope
+* ontology mappings
+* thematic classifications
+
+## Linking metadata to shared vocabularies
+
+Metadata augmentation connects records to:
+
+* AGROVOC
+* GEMET
+* Soil terminology resources (GLOSIS/Glosolan/WRB)
+
+## Benefits
+
+* multilingual discovery
+* synonym handling
+* semantic search
+* cross-repository interoperability
+
+## SoilWise SHKG
+
+* Derived from selected documents using llm
+* SKOS-centred
+* linked to external vocabularies
+* connected to soil-health indicators
+
+### Enables
+
+* semantic navigation
+* reasoning
+* concept expansion
+* advanced discovery
+
+## Data harmonisation
+
+- Exploring annotations of tabular data using RO-Crate / CSVW
+- Geopackage format to snapshot soil observation systems
+- Flows to transform between formats (csv, rdf, geopackage, gml)
+- Vizualise the possibilities of creating and using integrated datasets, by linking soil data to other domains 
+
+## Tabular data annotation
+
+![annotate a csv](img/tabbular_annotated.png)
+
+## SOSA
+
+![SOSA structure](img/sosa.png)
+
+## Remaining challenges
+
+- Aggregated repositories offer vast amount of records, ingesting them is a challenge, requires specific filters
+- Ontology alignment / Soil terminology harmonisation
+- Post project institutionalisation
+
+## Outlook
+
+* Richer metadata augmentation
+* Expanded knowledge graph
+* AI-assisted discovery and reasoning
+
