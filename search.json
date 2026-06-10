@@ -1299,7 +1299,7 @@
     "href": "slides/2026-soilwise-recap.html#core-challenge",
     "title": "SoilWise HE recap",
     "section": "Core challenge",
-    "text": "Core challenge\nEurope’s soil information is fragmented across:\n\nrepositories\nproject portals\ndata catalogues\npublications\nservices\nknowledge hubs\n\nGoal: provide one integrated access point while respecting ownership and governance. Encourage sustainable publication, instead of refactoring existing publications."
+    "text": "Core challenge\nEurope’s soil information is fragmented across:\n\nAcademic repositories\nProject websites / portals / knowledge hubs\nGovernmental data catalogues\n3rd party platforms (youtube, linkedin, github)\n\nGoal: provide one integrated access point while respecting ownership and governance. Encourage sustainable publication, instead of refactoring existing publications."
   },
   {
     "objectID": "slides/2026-soilwise-recap.html#soilwise-technical-components",
@@ -1313,7 +1313,7 @@
     "href": "slides/2026-soilwise-recap.html#diagram",
     "title": "SoilWise HE recap",
     "section": "Diagram",
-    "text": "Diagram\n\n\n\n\n\nflowchart LR\n    S1[Source 1] --&gt;|harvest| h[(Ingested)]\n    S2[Source 2] --&gt;|harvest| h[(Ingested)]\n    h --&gt; HM{harmonise}\n    HM --&gt; h2[(Harmonised)]\n    h2 --&gt; AU{augment}\n    AU --&gt; h3[(Search index)]"
+    "text": "Diagram\n\n\n\n\n\nflowchart LR\n    S1[Source 1] --&gt;|harvest| h[(Ingested)]\n    S2[Source 2] --&gt;|harvest| h[(Ingested)]\n    h --&gt; HM{harmonise}\n    HM --&gt; h2[(Harmonised)]\n    h2 --&gt; AU{augment}\n    shkg[(Knowledge Graph)] --&gt; AU\n    AU --&gt; h3[(Search index)]"
   },
   {
     "objectID": "slides/2026-soilwise-recap.html#euso-will-not-store-harmonized-data",
