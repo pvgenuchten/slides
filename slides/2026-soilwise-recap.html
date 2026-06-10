@@ -9,9 +9,9 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
-  <meta name="author" content="Paul van Genuchten, Keiji Jindo, Monne Weghorst">
-  <meta name="dcterms.date" content="2026-06-04">
-  <title>some slide decks – Interoperable Soil Data</title>
+  <meta name="author" content="Paul van Genuchten">
+  <meta name="dcterms.date" content="2026-06-10">
+  <title>some slide decks – SoilWise HE recap</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -125,191 +125,202 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Interoperable Soil Data</h1>
-  <p class="subtitle">WUR SOIL DAY 2026</p>
+  <h1 class="title">SoilWise HE recap</h1>
+  <p class="subtitle">ISRIC - World Soil Information</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Paul van Genuchten, Keiji Jindo, Monne Weghorst 
+Paul van Genuchten 
 </div>
 </div>
 </div>
 
-  <p class="date">2026-06-04</p>
+  <p class="date">2026-06-10</p>
 </section>
-<section id="program-of-this-workshop" class="slide level2">
-<h2>Program of this workshop</h2>
+<section id="soilwise-he-in-context" class="slide level2">
+<h2>SoilWise-HE in Context</h2>
+<p>A Horizon Europe - Mission Soil - project (2024-2027)</p>
 <ul>
-<li>Introduction to interoperability in soil data (13.45)</li>
-<li>2 case studies of soil data in practice
-<ul>
-<li>Monne Weghorst: personal experiences with structuring data (14.00)</li>
-<li>Keiji Jindo: 3 use-cases related to soil sampling and soil analysis (14.15)</li>
-</ul></li>
-<li>SoilWise suggestions to enhance interoperability (14.30)</li>
-<li>Q&amp;A / Hands-on session (14.45)</li>
+<li>SoilWise aims to become a long-term European catalogue for soil knowledge and data.</li>
+<li>Focus on discoverability rather than replacing existing repositories.</li>
+<li>Harvests metadata from distributed sources.</li>
+<li>Intended as a future building block for the European Soil Observatory (EUSO).</li>
 </ul>
 </section>
-<section id="interoperability-in-fair" class="slide level2">
-<h2>Interoperability in FAIR</h2>
+<section id="core-challenge" class="slide level2">
+<h2>Core challenge</h2>
+<p>Europe’s soil information is fragmented across:</p>
 <ul>
-<li>Use a formal, accessible, shared language for knowledge representation</li>
-<li>Use vocabularies that follow the FAIR principles</li>
-<li>Include qualified references to other (meta)data</li>
+<li>repositories</li>
+<li>project portals</li>
+<li>data catalogues</li>
+<li>publications</li>
+<li>services</li>
+<li>knowledge hubs</li>
+</ul>
+<p>Goal: provide one integrated access point while respecting ownership and governance. Encourage sustainable publication, instead of refactoring existing publications.</p>
+</section>
+<section id="soilwise-technical-components" class="slide level2">
+<h2>SoilWise Technical Components</h2>
+<ol type="1">
+<li>Metadata harvesting</li>
+<li>Catalogue</li>
+<li>Metadata validation</li>
+<li>Metadata authoring</li>
+<li>Metadata transformation &amp; harmonisation</li>
+<li>Metadata augmentation</li>
+<li>Knowledge graph</li>
+<li>Natural language querying</li>
+<li>Data publication guidance</li>
+<li>Data harmonisation</li>
+</ol>
+</section>
+<section id="diagram" class="slide level2">
+<h2>Diagram</h2>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    S1[Source 1] --&gt;|harvest| h[(Ingested)]
+    S2[Source 2] --&gt;|harvest| h[(Ingested)]
+    h --&gt; HM{harmonise}
+    HM --&gt; h2[(Harmonised)]
+    h2 --&gt; AU{augment}
+    AU --&gt; h3[(Search index)]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="euso-will-not-store-harmonized-data" class="slide level2">
+<h2>EUSO will not store (harmonized) data</h2>
+<p>SoilWise primarily indexes metadata rather than replicating datasets.</p>
+<ul>
+<li>lower storage requirements</li>
+<li>respect data ownership</li>
+<li>support distributed repositories</li>
+<li>easier integration of heterogeneous sources</li>
 </ul>
 </section>
-<section id="what-formal-languages-are-we-using-in-soil" class="slide level2">
-<h2>What formal languages are we using in soil?</h2>
+<section id="typical-harvested-sources" class="slide level2">
+<h2>Typical harvested sources</h2>
 <ul>
-<li>Harmonised World Soil Database / eSOTER</li>
-<li>ISO28258:2013 / Observations, Measurements and Samples (OMS) / INSPIRE Soil</li>
-<li>GLOSIS LD / SOSA</li>
-<li>…</li>
+<li>Government (INSPIRE / data.europa.eu)</li>
+<li>Academia (CORDIS / OpenAire)</li>
+<li>EO portals (Copernicus)</li>
+<li>Meta repositories / knowledge hubs</li>
 </ul>
 </section>
-<section id="so" class="slide level2">
-<h2>So…</h2>
-<p>Limited adoption, due to:</p>
+<section id="harmonising-heterogeneous-sources" class="slide level2">
+<h2>Harmonising heterogeneous sources</h2>
+<p>Repositories expose different schemas:</p>
 <ul>
-<li>Complexity and lack of tools</li>
-<li>Lack of awareness and incentives</li>
+<li>Dublin Core / DCAT</li>
+<li>ISO 19139 / INSPIRE metadata</li>
+<li>DataCite / ARC / RO-Crate</li>
+<li>Repository-specific profiles</li>
 </ul>
 </section>
-<section id="which-vocabularies-are-we-using-in-soil" class="slide level2">
-<h2>Which vocabularies are we using in soil?</h2>
+<section id="metadata-augmentation" class="slide level2">
+<h2>Metadata Augmentation</h2>
+<p>SoilWise enriches records using:</p>
 <ul>
-<li>World Reference Base, USDA Soil Taxonomy, Dutch Soil Classification, etc.</li>
-<li>FAO Guidelines for Soil Description</li>
-<li>Agrovoc, Gemet, INRAE thesaurus</li>
-<li>GBIF vocabularies, NCBI Taxonomy, etc.</li>
+<li>NLP</li>
+<li>scripts</li>
+<li>rule engines</li>
+<li>LLM-assisted approaches</li>
+</ul>
+<p>Increase FAIRness without modifying the original source record.</p>
+</section>
+<section id="example-augmentations" class="slide level2">
+<h2>Example augmentations</h2>
+<ul>
+<li>inferred keywords</li>
+<li>inferred spatial scope</li>
+<li>ontology mappings</li>
+<li>thematic classifications</li>
 </ul>
 </section>
-<section id="so-1" class="slide level2">
-<h2>So…</h2>
+<section id="linking-metadata-to-shared-vocabularies" class="slide level2">
+<h2>Linking metadata to shared vocabularies</h2>
+<p>Metadata augmentation connects records to:</p>
 <ul>
-<li>Slight adoption, but often not in a machine-readable format, and often not used in a consistent way</li>
-<li>No concensus on vocabularies for soil properties and sampling/lab procedures</li>
+<li>AGROVOC</li>
+<li>GEMET</li>
+<li>Soil terminology resources (GLOSIS/Glosolan/WRB)</li>
 </ul>
 </section>
-<section id="what-are-qualified-references" class="slide level2">
-<h2>What are qualified references?</h2>
+<section id="benefits" class="slide level2">
+<h2>Benefits</h2>
 <ul>
-<li>A cross-reference that explains its intent</li>
-<li>For example, Magnesium content is measured using Mehlich-3 is a more qualified reference than Magnesium is related to Mehlich-3.</li>
+<li>multilingual discovery</li>
+<li>synonym handling</li>
+<li>semantic search</li>
+<li>cross-repository interoperability</li>
 </ul>
 </section>
-<section id="is-the-soil-domain-special" class="slide level2">
-<h2>Is the soil domain special?</h2>
-<p>In general, <strong>no</strong>, all science domain struggle with interoperability, however:</p>
+<section id="soilwise-shkg" class="slide level2">
+<h2>SoilWise SHKG</h2>
 <ul>
-<li>Changes in soil are slow, so legacy data is often used, and require long term experiments (IT trends change faster than soil)</li>
-<li>We have a long history of standardization efforts, at the time of writing FAIR was not a topic</li>
+<li>Derived from selected documents using llm</li>
+<li>SKOS-centred</li>
+<li>linked to external vocabularies</li>
+<li>connected to soil-health indicators</li>
+</ul>
+<h3 id="enables">Enables</h3>
+<ul>
+<li>semantic navigation</li>
+<li>reasoning</li>
+<li>concept expansion</li>
+<li>advanced discovery</li>
 </ul>
 </section>
-<section id="some-examples" class="slide level2">
-<h2>Some examples</h2>
+<section id="data-harmonisation" class="slide level2">
+<h2>Data harmonisation</h2>
 <ul>
-<li><a href="https://doi.org/10.5281/zenodo.17422778">10.5281/zenodo.17422778</a></li>
-<li><a href="https://doi.org/10.5281/zenodo.20067150">10.5281/zenodo.20067150</a></li>
-<li><a href="https://doi.org/10.5281/zenodo.20508989">10.5281/zenodo.20508989</a></li>
-<li><a href="https://doi.org/10.5281/zenodo.15040664">10.5281/zenodo.15040664</a></li>
-<li><a href="https://doi.org/10.18167/DVN1/PWM9WW">10.18167/DVN1/PWM9WW</a></li>
-<li><a href="https://doi.org/10.4121/f0539cee-c288-42ff-872d-af11320e183c">10.4121/f0539cee-c288-42ff-872d-af11320e183c</a></li>
-<li><a href="https://doi.org/10.4121/21632186">10.4121/21632186</a></li>
-</ul>
-</section>
-<section id="the-soilwise-project" class="slide level2">
-<h2>The <a href="https://www.soilwise-he.eu">SoilWise project</a></h2>
-<ul>
-<li>Aims to increase reusability of soil data and knowledge within the European Union Soil Observatory</li>
-<li>Builds a <a href="https://catalogue.soilwise-he.eu">catalog for soil data and knowledge</a>, a <a href="https://w3id.org/eusoilvoc">soil vocabulary</a> and <a href="https://soilwise-he.github.io/soilwise-fair-strategy/use-cases/">guidances around data publication</a></li>
-<li>Funded by the EU Horizon program</li>
-<li>Running from 2024 - 2027</li>
-<li>ISRIC, WENR Earth Informatics and Wageningen University in a consortium with 10 other partners across Europe</li>
-</ul>
-</section>
-<section id="the-soilharmony-project" class="slide level2">
-<h2>The <a href="https://doi.org/10.5194/egusphere-egu26-22403">Soilharmony project</a></h2>
-<ul>
-<li>The 4 year project kicked off this week.</li>
-<li>Aims to develop transfer functions to support the implementation of the soil monitoring law</li>
-<li>WENR is one of 13 consortium partners</li>
-<li>The envisioned system builds on existing standardisation efforts</li>
-</ul>
-</section>
-<section id="lets-get-started" class="slide level2">
-<h2>Let’s get started</h2>
-<ul>
-<li>2 soil scientists from different corners of soil</li>
-<li>How do you publish your data, and what challenges do you face?</li>
-<li>Do the soilwise suggestions make sense?</li>
-<li>I invite you to reflect on your own experiences based on their stories</li>
-</ul>
-</section>
-<section id="monne-weghorst-personal-experiences-with-structuring-data" class="slide level2">
-<h2>Monne Weghorst: personal experiences with structuring data</h2>
-</section>
-<section id="keiji-jindo-3-use-cases-related-to-soil-sampling-and-soil-analysis." class="slide level2">
-<h2>Keiji Jindo: 3 use-cases related to soil sampling and soil analysis.</h2>
-</section>
-<section id="soilwise-suggestions-to-enhance-data-interoperability" class="slide level2">
-<h2>SoilWise suggestions to enhance data interoperability</h2>
-<p>We identified 3 approaches based on different use cases</p>
-<ul>
-<li>A basic annotation of tabular data (excel, csv)</li>
-<li>A relational database approach including annotations (geopackage)</li>
-<li>A semantic web approach using RDF and ontologies</li>
+<li>Exploring annotations of tabular data using RO-Crate / CSVW</li>
+<li>Geopackage format to snapshot soil observation systems</li>
+<li>Flows to transform between formats (csv, rdf, geopackage, gml)</li>
+<li>Vizualise the possibilities of creating and using integrated datasets, by linking soil data to other domains</li>
 </ul>
 </section>
 <section id="tabular-data-annotation" class="slide level2">
 <h2>Tabular data annotation</h2>
 
-<img data-src="./img/tabbular_annotated.png" class="r-stretch quarto-figure-center"><p class="caption">annotate a csv</p></section>
-<section id="howto" class="slide level2">
-<h2>HowTo…?</h2>
-<ul>
-<li>A <a href="https://github.com/soilwise-he/soil-observation-data-encodings/">Excel Template</a></li>
-<li>A basic <a href="https://github.com/KALRO-ICT/kensis-data/tree/main/data">CSV approach</a> (embargo)</li>
-<li>The full <a href="https://github.com/soilwise-he/soil-observation-data-encodings/">CSV-W approach</a></li>
-</ul>
-</section>
-<section id="csv-on-the-web" class="slide level2">
-<h2>CSV on the Web</h2>
-<ul>
-<li><a href="https://www.w3.org/TR/tabular-data-primer/">CSVW</a> is a W3C standard</li>
-<li>Columns of a tabular dataser are annotated in a sidecar file</li>
-<li><a href="https://pypi.org/project/csvwlib/">RDF tooling</a> can serialize the CSV+CSVW to RDF formats (ttl, json-ld, …)</li>
-</ul>
-</section>
-<section id="and-then" class="slide level2">
-<h2>And then…?</h2>
-<ul>
-<li>Which common model for observation data and qualified referencesto use?</li>
-<li>The <a href="https://www.w3.org/TR/vocab-ssn/">SOSA ontology</a> provides annotation options for measurement and observation data</li>
-<li><a href="https://w3id.org/eusoilvoc">EU SoilVoc</a> provides identifiers of common soil properties and procedures</li>
-</ul>
-</section>
+<img data-src="img/tabbular_annotated.png" class="r-stretch quarto-figure-center"><p class="caption">annotate a csv</p></section>
 <section id="sosa" class="slide level2">
 <h2>SOSA</h2>
 
 <img data-src="img/sosa.png" class="r-stretch quarto-figure-center"><p class="caption">SOSA structure</p></section>
-<section id="and-then-1" class="slide level2">
-<h2>And then…?</h2>
+<section id="remaining-challenges" class="slide level2">
+<h2>Remaining challenges</h2>
 <ul>
-<li>Upload the dataset onto Zenodo/4TU, referencing the approach used</li>
-<li><a href="https://api.soilwise.wetransform.eu/csvw/docs">Convert the dataset</a> to RDF/Geopackage before uploading to Zenodo</li>
-<li>Use <a href="https://www.f-uji.net/">F-UJI tool</a> to understand the FAIR-ness of your publication</li>
+<li>Aggregated repositories offer vast amount of records, ingesting them is a challenge, requires specific filters</li>
+<li>Ontology alignment / Soil terminology harmonisation</li>
+<li>Post project institutionalisation</li>
 </ul>
 </section>
-<section id="qa---hands-on" class="slide level2">
-<h2>Q&amp;A - Hands on…</h2>
+<section id="outlook" class="slide level2">
+<h2>Outlook</h2>
+<ul>
+<li>Richer metadata augmentation</li>
+<li>Expanded knowledge graph</li>
+<li>AI-assisted discovery and reasoning</li>
+</ul>
 
 
 </section>
@@ -317,7 +328,7 @@ Paul van Genuchten, Keiji Jindo, Monne Weghorst
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="https://omgeving.vlaanderen.be/sites/default/files/2025-10/SWlogocolor.svg" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>Soil@WUR day - Soilwise HE - <a href="https://cordis.europa.eu/project/id/101112838">EU Horizon Grant 101112838</a></p>
+<p>Soilwise HE - <a href="https://cordis.europa.eu/project/id/101112838">EU Horizon Grant 101112838</a></p>
 </div>
 </div></div>
 
