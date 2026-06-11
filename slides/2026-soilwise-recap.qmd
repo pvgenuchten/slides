@@ -123,12 +123,12 @@ Metadata augmentation connects records to:
 * linked to external vocabularies
 * connected to soil-health indicators
 
-### Enables
+## [w3id.org/EUSoilVoc](https://w3id.org/eusoilvoc)
 
-* semantic navigation
-* reasoning
-* concept expansion
-* advanced discovery
+- A vocabulary to facilitate data harmonization
+- A hierarchy of soil properties and observation procedures
+- Inspired by Ansis Field and lab guide vocabulary
+- Challenges on how to improve the content
 
 ## Data harmonisation
 
@@ -141,13 +141,27 @@ Metadata augmentation connects records to:
 
 ![annotate a csv](img/tabbular_annotated.png)
 
+## Tabular data annotation technologies
+
+- schema.org
+- CSVW
+- RO-crate
+- Frictionless data
+- ISO19110 Feature cataloguing
+
 ## SOSA
 
 ![SOSA structure](img/sosa.png)
 
+## GeoPackage as a soil data exchange format
+
+- A relational database model oriented on the ISO28258/INSPIRE Soil database model
+- For operational soil information systems, a dump of the database at intervals could be facilitated using geopackage
+- The geopackage can act as a backend for an offline surveying app
+
 ## Remaining challenges
 
-- Aggregated repositories offer vast amount of records, ingesting them is a challenge, requires specific filters
+- Aggregated repositories offer vast amount of records, ingesting relevant items is a challenge, requires specific filters / user suggestions
 - Ontology alignment / Soil terminology harmonisation
 - Post project institutionalisation
 
