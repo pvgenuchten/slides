@@ -1369,7 +1369,14 @@
     "href": "slides/2026-soilwise-recap.html#soilwise-shkg",
     "title": "SoilWise HE recap",
     "section": "SoilWise SHKG",
-    "text": "SoilWise SHKG\n\nDerived from selected documents using llm\nSKOS-centred\nlinked to external vocabularies\nconnected to soil-health indicators\n\nEnables\n\nsemantic navigation\nreasoning\nconcept expansion\nadvanced discovery"
+    "text": "SoilWise SHKG\n\nDerived from selected documents using llm\nSKOS-centred\nlinked to external vocabularies\nconnected to soil-health indicators"
+  },
+  {
+    "objectID": "slides/2026-soilwise-recap.html#w3id.orgeusoilvoc",
+    "href": "slides/2026-soilwise-recap.html#w3id.orgeusoilvoc",
+    "title": "SoilWise HE recap",
+    "section": "w3id.org/EUSoilVoc",
+    "text": "w3id.org/EUSoilVoc\n\nA vocabulary to facilitate data harmonization\nA hierarchy of soil properties and observation procedures\nInspired by Ansis Field and lab guide vocabulary\nChallenges on how to improve the content"
   },
   {
     "objectID": "slides/2026-soilwise-recap.html#data-harmonisation",
@@ -1386,6 +1393,13 @@
     "text": "Tabular data annotation\n\nannotate a csv"
   },
   {
+    "objectID": "slides/2026-soilwise-recap.html#tabular-data-annotation-technologies",
+    "href": "slides/2026-soilwise-recap.html#tabular-data-annotation-technologies",
+    "title": "SoilWise HE recap",
+    "section": "Tabular data annotation technologies",
+    "text": "Tabular data annotation technologies\n\nschema.org\nCSVW\nRO-crate\nFrictionless data\nISO19110 Feature cataloguing"
+  },
+  {
     "objectID": "slides/2026-soilwise-recap.html#sosa",
     "href": "slides/2026-soilwise-recap.html#sosa",
     "title": "SoilWise HE recap",
@@ -1393,11 +1407,18 @@
     "text": "SOSA\n\nSOSA structure"
   },
   {
+    "objectID": "slides/2026-soilwise-recap.html#geopackage-as-a-soil-data-exchange-format",
+    "href": "slides/2026-soilwise-recap.html#geopackage-as-a-soil-data-exchange-format",
+    "title": "SoilWise HE recap",
+    "section": "GeoPackage as a soil data exchange format",
+    "text": "GeoPackage as a soil data exchange format\n\nA relational database model oriented on the ISO28258/INSPIRE Soil database model\nFor operational soil information systems, a dump of the database at intervals could be facilitated using geopackage\nThe geopackage can act as a backend for an offline surveying app"
+  },
+  {
     "objectID": "slides/2026-soilwise-recap.html#remaining-challenges",
     "href": "slides/2026-soilwise-recap.html#remaining-challenges",
     "title": "SoilWise HE recap",
     "section": "Remaining challenges",
-    "text": "Remaining challenges\n\nAggregated repositories offer vast amount of records, ingesting them is a challenge, requires specific filters\nOntology alignment / Soil terminology harmonisation\nPost project institutionalisation"
+    "text": "Remaining challenges\n\nAggregated repositories offer vast amount of records, ingesting relevant items is a challenge, requires specific filters / user suggestions\nOntology alignment / Soil terminology harmonisation\nPost project institutionalisation"
   },
   {
     "objectID": "slides/2026-soilwise-recap.html#outlook",
