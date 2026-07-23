@@ -75,29 +75,23 @@ The intent is to address metadata comparability, reliability, standardization an
 
 ## rich metadata to annotate a dataset
 
+## identification is an aspect of findability
+
+- what is a dataset?
+
 ## Role of common vocabularies
+
+
 
 ## tiered access
 
 User | Level of access
 ---| ---
 General public | Aggregated statistics, maps, open datasets
-
-Researchers
-
-Detailed but anonymized observations under a data-sharing agreement
-
-Government agencies
-
-Full datasets needed for regulatory or policy purposes
-
-Data stewards
-
-Ability to edit, correct, and approve records
-
-System administrators
-
-Technical access to the platform, but not necessarily permission to use the data analytically
+Researchers | Detailed but anonymized observations under a data-sharing agreement
+Government agencies | Full datasets needed for regulatory or policy purposes
+Data stewards | Ability to edit, correct, and approve records
+System administrators | Technical access to the platform, but not necessarily permission to use the data analytically
 
 ## governmental objectives
 
