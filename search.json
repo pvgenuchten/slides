@@ -2282,6 +2282,13 @@
     "text": "rich metadata to annotate a dataset"
   },
   {
+    "objectID": "slides/soil-information-systems-for-decision-making-in-africa.html#identification-is-an-aspect-of-findability",
+    "href": "slides/soil-information-systems-for-decision-making-in-africa.html#identification-is-an-aspect-of-findability",
+    "title": "Interoperability and data governance",
+    "section": "identification is an aspect of findability",
+    "text": "identification is an aspect of findability\n\nwhat is a dataset?"
+  },
+  {
     "objectID": "slides/soil-information-systems-for-decision-making-in-africa.html#role-of-common-vocabularies",
     "href": "slides/soil-information-systems-for-decision-making-in-africa.html#role-of-common-vocabularies",
     "title": "Interoperability and data governance",
@@ -2293,7 +2300,7 @@
     "href": "slides/soil-information-systems-for-decision-making-in-africa.html#tiered-access",
     "title": "Interoperability and data governance",
     "section": "tiered access",
-    "text": "tiered access\n\n\n\nUser\nLevel of access\n\n\n\n\nGeneral public\nAggregated statistics, maps, open datasets\n\n\n\nResearchers\nDetailed but anonymized observations under a data-sharing agreement\nGovernment agencies\nFull datasets needed for regulatory or policy purposes\nData stewards\nAbility to edit, correct, and approve records\nSystem administrators\nTechnical access to the platform, but not necessarily permission to use the data analytically"
+    "text": "tiered access\n\n\n\n\n\n\n\nUser\nLevel of access\n\n\n\n\nGeneral public\nAggregated statistics, maps, open datasets\n\n\nResearchers\nDetailed but anonymized observations under a data-sharing agreement\n\n\nGovernment agencies\nFull datasets needed for regulatory or policy purposes\n\n\nData stewards\nAbility to edit, correct, and approve records\n\n\nSystem administrators\nTechnical access to the platform, but not necessarily permission to use the data analytically"
   },
   {
     "objectID": "slides/soil-information-systems-for-decision-making-in-africa.html#governmental-objectives",
