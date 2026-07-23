@@ -1,0 +1,110 @@
+---
+subtitle: Soil information systems for decision making in Africa
+title: Interoperability and data governance
+author: Paul van Genuchten
+date: 2026-08-05
+format:
+  revealjs: 
+    theme: default
+    logo: https://www.isric.org/themes/custom/basic/logo.svg
+    footer: "Soil information systems for decision making in Africa"
+  pptx:
+    slide-level: 2
+---
+
+## Data governance
+
+- Roles, Responsibilities, and Accountability
+- Data Quality and Lifecycle Management
+- Policies, Standards, and Interoperability
+- Security, Privacy, and Legal Compliance
+- Data Sharing, Access, and Value Creation
+
+## Roles, Responsibilities, and Accountability
+    
+* Define who owns, stewards, custodians, and uses data.
+* Establish decision-making bodies (e.g. data governance boards).
+* Clarify responsibilities across ministries, agencies, and local governments.
+
+## Data Quality and Lifecycle Management
+    
+* Ensure data is accurate, complete, consistent, timely, and fit for purpose.
+* Define standards for data collection, validation, maintenance, archival, and disposal.
+* Monitor and improve data quality through metrics and audits.
+
+## Policies, Standards, and Interoperability
+    
+* Develop common data standards, metadata, reference data, and vocabularies.
+* Promote interoperability between government systems.
+* Standardize formats, identifiers, APIs, and data models to enable data sharing
+
+## Security, Privacy, and Legal Compliance
+  
+* Protect sensitive and personal information.
+* Comply with relevant legislation (e.g. GDPR, freedom of information laws, records management requirements).
+* Define access controls, classification schemes, and procedures for handling breaches.
+
+## Data Sharing, Access, and Value Creation
+    
+* Establish policies and agreements for sharing data within government and with external stakeholders.
+* Balance openness with confidentiality through open data, licensing, and access controls.
+* Promote reuse of data for evidence-based policymaking, service delivery, transparency, and research.
+
+## These five aspects are often supported by cross-cutting activities such as:
+
+* Metadata management
+* Master and reference data management
+* Risk management
+* Training and capacity building
+* Monitoring, compliance, and continuous improvement
+
+
+## Interoperability and data governance 
+
+## Approaches to metadata, identifiers, and web services 
+
+## Tiered access and governance models that enable sharing while maintaining national stewardship. 
+
+The intent is to address metadata comparability, reliability, standardization and governance frameworks.
+
+## Metadata, identifiers, web services 
+
+## Tiered access and governance models
+
+## process of standardisation
+
+## rich metadata to annotate a dataset
+
+## Role of common vocabularies
+
+## tiered access
+
+User | Level of access
+---| ---
+General public | Aggregated statistics, maps, open datasets
+
+Researchers
+
+Detailed but anonymized observations under a data-sharing agreement
+
+Government agencies
+
+Full datasets needed for regulatory or policy purposes
+
+Data stewards
+
+Ability to edit, correct, and approve records
+
+System administrators
+
+Technical access to the platform, but not necessarily permission to use the data analytically
+
+## governmental objectives
+
+Tiered access supports several governance objectives:
+
+* Privacy and confidentiality: Protects personal, commercially sensitive, or nationally sensitive information.
+* Legal compliance: Helps meet obligations under regulations such as GDPR, freedom of information laws, or sector-specific legislation.
+* Data integrity: Limits editing rights to authorized users, reducing the risk of accidental or unauthorized changes.
+* Need-to-know principle: Users receive only the information necessary for their role.
+* Encouraging openness: Governments can publish as much data as possible while still protecting restricted information.
