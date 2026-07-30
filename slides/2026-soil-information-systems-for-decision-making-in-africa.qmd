@@ -1,0 +1,189 @@
+---
+subtitle: Soil information systems for decision making in Africa
+title: Interoperability and data governance
+author: Paul van Genuchten
+date: 2026-08-05
+format:
+  revealjs: 
+    theme: default
+    logo: https://www.isric.org/themes/custom/basic/logo.svg
+    footer: "Soil information systems for decision making in Africa"
+  pptx:
+    slide-level: 2
+---
+
+## ISRIC
+
+- ISRIC - World Soil Information has been founded in 1966 after 
+designation to the Netherlands by Unesco, in close cooperation with FAO and IUSS
+- The institute with its unique global soil monolith collection is hosted at Wageningen University
+- ISRIC contributes to data collection and standardization efforts globally, with a special focus on Africa
+- ISRIC hosted the recent Soils for Africa project and contributes to the current African Soil Observartory project
+
+## Paul van Genuchten
+
+- Trained as a soil scientist (Wageningen University, 1999)
+- Extensive experience in spatial data and IT
+- Joined ISRIC four years ago as a Data Infrastructure Specialist
+- Maintains ISRIC's data infrastructure and contributes to soil data management projects, 
+with a focus on metadata and interoperability
+
+## Interoperability and data governance
+
+- I was asked to present about these 2 topics
+- Interoperability is a pillar of data governance
+- Both are large topics...
+
+## Data governance
+
+- Roles, Responsibilities, and Accountability
+- Data Quality and Lifecycle Management
+- Policies, Standards, and Interoperability
+- Security, Privacy, and Legal Compliance
+- Data Sharing, Access, and Value Creation
+
+## FAIR principles
+
+The [FAIR principles](https://www.go-fair.org/fair-principles/) provides a governance framework for data, from a reuse perspective 
+
+- Findable
+- Accessible
+- Interoperable
+- Reusable
+
+Cabi and Gates foundation prepared a [framework to put the FAIR principles in action](https://fairprocessframework.org/) in the environmental domain.
+
+## Soil data specifics
+
+- legacy data and formats
+- interaction with many other domains (agriculture, pollution, carbon sequestration, build environment, hydrology)
+- Management practices & LTE
+- large number of soil indicators
+- long history of (local) practices
+
+## Findable data
+
+
+rich metadata to annotate a dataset
+
+- easy to find and reference
+
+## What is a dataset?
+  - civil cervant: a databse which is continuously updated
+  - academic: a validated collection of records at a given point in time, which I can uniquely reference in my publication
+
+## Persistent Identification is an aspect of findability (identifiers)
+
+- datasets should be uniquely identified (uuid)
+- Strong push to adopt identification platforms such as DOI and Handle.net
+- Proper identification facilitates citation from reports/scientific articles
+
+## Accessible data
+
+- data is best made available as a file package in a repository
+- For large data, or specific use cases (map vizualisation), data can also be shared using an api or web service.
+- metadata should still exist, even if the data itself is discarded
+
+## Tiered access and governance models that enable sharing while maintaining national stewardship. 
+
+The intent is to address metadata comparability, reliability, standardization and governance frameworks.
+
+## Interoperable data
+
+- Use a rich data representation, so the contents is universally understood
+
+## Process of standardisation
+
+- Standardised Operating procedure (Field and Laboratory)
+  - GSP Glosolan
+  - Soils for Africa project
+- Describe existing practices
+- referring to common vocabularies
+
+## Role of common vocabularies
+
+- The use of common multi-lingual vocabularies provide a mechanism to describe 
+data using universal definitions
+- Common vocabularies such as Agrovoc, GLOSIS, ISO11074, GEMET 
+- Use Agrovoc terms as keywords in metadata
+- Describe columns in a dataset using terms from GLOSIS
+- Express unit of measure using QUDT concepts
+
+## Reusable data
+
+## Describe a dataset using rich metadata for findability and resuability
+
+- Common repositories offer compatible metadata models (and interfaces for harvesting)
+- Metadata model can be extended by adding a metadata sidecar file (RO-Crate approach)
+
+
+
+## Conclusions
+
+
+
+
+## Questions?
+
+## More details on data governance
+
+The extra slides provide some details on the topic of data governance
+
+## Roles, Responsibilities, and Accountability
+    
+* Define who owns, stewards, custodians, and uses data.
+* Establish decision-making bodies (e.g. data governance boards).
+* Clarify responsibilities across ministries, agencies, and local governments.
+
+## Data Quality and Lifecycle Management
+    
+* Ensure data is accurate, complete, consistent, timely, and fit for purpose.
+* Define standards for data collection, validation, maintenance, archival, and disposal.
+* Monitor and improve data quality through metrics and audits.
+
+## Policies, Standards, and Interoperability
+    
+* Develop common data standards, metadata, reference data, and vocabularies.
+* Promote interoperability between government systems.
+* Standardize formats, identifiers, APIs, and data models to enable data sharing
+
+## Security, Privacy, and Legal Compliance
+  
+* Protect sensitive and personal information.
+* Comply with relevant legislation (e.g. GDPR, freedom of information laws, records management requirements).
+* Define access controls, classification schemes, and procedures for handling breaches.
+
+## Tiered access
+
+| User | Level of access |
+| ---| --- |
+| General public | Aggregated statistics, maps, open datasets |
+| Researchers | Detailed but anonymized observations under a data-sharing agreement |
+| Government agencies | Full datasets needed for regulatory or policy purposes |
+| Data stewards | Ability to edit, correct, and approve records |
+| System administrators | Technical access to the platform, but not necessarily permission to use the data analytically |
+
+## Tiered access supports governance objectives
+
+* Privacy and confidentiality: Protects personal, commercially sensitive, or nationally sensitive information.
+* Legal compliance: Helps meet obligations under regulations such as GDPR, freedom of information laws, or sector-specific legislation.
+* Data integrity: Limits editing rights to authorized users, reducing the risk of accidental or unauthorized changes.
+* Need-to-know principle: Users receive only the information necessary for their role.
+* Encouraging openness: Governments can publish as much data as possible while still protecting restricted information.
+
+## Data Sharing, Access, and Value Creation
+    
+* Establish policies and agreements for sharing data within government and with external stakeholders.
+* Balance openness with confidentiality through open data, licensing, and access controls.
+* Promote reuse of data for evidence-based policymaking, service delivery, transparency, and research.
+
+## These five aspects are often supported by cross-cutting activities such as:
+
+* Metadata management
+* Master and reference data management
+* Risk management
+* Training and capacity building
+* Monitoring, compliance, and continuous improvement
+
+
+
