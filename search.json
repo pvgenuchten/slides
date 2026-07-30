@@ -718,7 +718,7 @@
     "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#isric",
     "title": "Interoperability and data governance",
     "section": "ISRIC",
-    "text": "ISRIC\n\nISRIC - World Soil Information has been founded in 1966 after designation to the Netherlands by Unesco, in close cooperation with FAO and IUSS\nThe institute with its unique global soil monolith collection is hosted at Wageningen University\nISRIC contributes to data collection and standardization efforts globally, with a special focus on Africa\nISRIC hosted the recent Soils for Africa project and contributes to the current African Soil Observartory project"
+    "text": "ISRIC\n\nISRIC - World Soil Information has been founded in 1966 after designation to the Netherlands by Unesco, in close cooperation with FAO and IUSS\nThe institute with its unique global soil monolith collection is hosted at Wageningen University\nISRIC contributes to data collection and standardization efforts globally, with a special focus on Africa\nISRIC hosted the recent Soils for Africa project and contributes to the current African Soil Observatory project"
   },
   {
     "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#paul-van-genuchten",
@@ -746,7 +746,7 @@
     "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#fair-principles",
     "title": "Interoperability and data governance",
     "section": "FAIR principles",
-    "text": "FAIR principles\nThe FAIR principles provides a governance framework for data, from a reuse perspective\n\nFindable\nAccessible\nInteroperable\nReusable\n\nCabi and Gates foundation prepared a framework to put the FAIR principles in action in the environmental domain."
+    "text": "FAIR principles\nThe FAIR principles provide a governance framework for data, from a reuse perspective:\n\nFindable\nAccessible\nInteroperable\nReusable\n\nCabi and Gates foundation prepared a framework to put the FAIR principles in action in the environmental domain."
   },
   {
     "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#soil-data-specifics",
@@ -760,14 +760,28 @@
     "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#findable-data",
     "title": "Interoperability and data governance",
     "section": "Findable data",
-    "text": "Findable data\nrich metadata to annotate a dataset\n\neasy to find and reference"
+    "text": "Findable data\nRich metadata searchable via a catalogue"
   },
   {
     "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#what-is-a-dataset",
     "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#what-is-a-dataset",
     "title": "Interoperability and data governance",
     "section": "What is a dataset?",
-    "text": "What is a dataset?\n\ncivil cervant: a databse which is continuously updated\nacademic: a validated collection of records at a given point in time, which I can uniquely reference in my publication"
+    "text": "What is a dataset?\n\ncivil cervant: a database which is continuously updated, exposed via an API\nacademic: a validated collection of records at a given point in time, which I can uniquely reference in my publication"
+  },
+  {
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#use-of-repositories",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#use-of-repositories",
+    "title": "Interoperability and data governance",
+    "section": "Use of repositories",
+    "text": "Use of repositories\n\nEasy to find and reference\nFind today, find in 10 years time\nCommon data and knowledge repositories offer persitent storage over time\nAggregators (openaire, google) harvest from repositories to optimize findability"
+  },
+  {
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#datasets-as-a-source-for-digital-soil-mapping-dsm",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#datasets-as-a-source-for-digital-soil-mapping-dsm",
+    "title": "Interoperability and data governance",
+    "section": "Datasets as a source for digital soil mapping (DSM)",
+    "text": "Datasets as a source for digital soil mapping (DSM)\n\nDSM is the process of prediction soil property distribution in space and time\nDSM efforts happen irragularly, based on latest snapshots of source data and covariates\ndata from the own organisation as well as remote sources\nthe academic view on dataset is more appropriate for DSM"
   },
   {
     "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#persistent-identification-is-an-aspect-of-findability-identifiers",
@@ -781,7 +795,7 @@
     "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#accessible-data",
     "title": "Interoperability and data governance",
     "section": "Accessible data",
-    "text": "Accessible data\n\ndata is best made available as a file package in a repository\nFor large data, or specific use cases (map vizualisation), data can also be shared using an api or web service.\nmetadata should still exist, even if the data itself is discarded"
+    "text": "Accessible data\n\nData is best made available as a file package in a repository\nFor large data, or specific use cases (map vizualisation), data can also be shared using an api or web service.\nMetadata should still exist, even if the data itself is discarded\nMetadata Public; Data public, protected or internal"
   },
   {
     "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#tiered-access-and-governance-models-that-enable-sharing-while-maintaining-national-stewardship.",
