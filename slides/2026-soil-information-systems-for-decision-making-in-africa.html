@@ -6,8 +6,8 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.38">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.18">
 
   <meta name="author" content="Paul van Genuchten">
   <meta name="dcterms.date" content="2026-08-05">
@@ -21,10 +21,13 @@
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
     */
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -137,12 +140,38 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Paul van Genuchten 
+Paul van Genuchten
 </div>
 </div>
 </div>
 
   <p class="date">2026-08-05</p>
+</section>
+<section id="isric" class="slide level2">
+<h2>ISRIC</h2>
+<ul>
+<li>ISRIC - World Soil Information has been founded in 1966 after designation to the Netherlands by Unesco, in close cooperation with FAO and IUSS</li>
+<li>The institute with its unique global soil monolith collection is hosted at Wageningen University</li>
+<li>ISRIC contributes to data collection and standardization efforts globally, with a special focus on Africa</li>
+<li>ISRIC hosted the recent Soils for Africa project and contributes to the current African Soil Observartory project</li>
+</ul>
+</section>
+<section id="paul-van-genuchten" class="slide level2">
+<h2>Paul van Genuchten</h2>
+<ul>
+<li>Trained as a soil scientist (Wageningen University, 1999)</li>
+<li>Extensive experience in spatial data and IT</li>
+<li>Joined ISRIC four years ago as a Data Infrastructure Specialist</li>
+<li>Maintains ISRIC’s data infrastructure and contributes to soil data management projects, with a focus on metadata and interoperability</li>
+</ul>
+</section>
+<section id="interoperability-and-data-governance" class="slide level2">
+<h2>Interoperability and data governance</h2>
+<ul>
+<li>I was asked to present about these 2 topics</li>
+<li>Interoperability is a pillar of data governance</li>
+<li>Both are large topics…</li>
+</ul>
 </section>
 <section id="data-governance" class="slide level2">
 <h2>Data governance</h2>
@@ -153,6 +182,109 @@ Paul van Genuchten
 <li>Security, Privacy, and Legal Compliance</li>
 <li>Data Sharing, Access, and Value Creation</li>
 </ul>
+</section>
+<section id="fair-principles" class="slide level2">
+<h2>FAIR principles</h2>
+<p>The <a href="https://www.go-fair.org/fair-principles/">FAIR principles</a> provides a governance framework for data, from a reuse perspective</p>
+<ul>
+<li>Findable</li>
+<li>Accessible</li>
+<li>Interoperable</li>
+<li>Reusable</li>
+</ul>
+<p>Cabi and Gates foundation prepared a <a href="https://fairprocessframework.org/">framework to put the FAIR principles in action</a> in the environmental domain.</p>
+</section>
+<section id="soil-data-specifics" class="slide level2">
+<h2>Soil data specifics</h2>
+<ul>
+<li>legacy data and formats</li>
+<li>interaction with many other domains (agriculture, pollution, carbon sequestration, build environment, hydrology)</li>
+<li>Management practices &amp; LTE</li>
+<li>large number of soil indicators</li>
+<li>long history of (local) practices</li>
+</ul>
+</section>
+<section id="findable-data" class="slide level2">
+<h2>Findable data</h2>
+<p>rich metadata to annotate a dataset</p>
+<ul>
+<li>easy to find and reference</li>
+</ul>
+</section>
+<section id="what-is-a-dataset" class="slide level2">
+<h2>What is a dataset?</h2>
+<ul>
+<li>civil cervant: a databse which is continuously updated</li>
+<li>academic: a validated collection of records at a given point in time, which I can uniquely reference in my publication</li>
+</ul>
+</section>
+<section id="persistent-identification-is-an-aspect-of-findability-identifiers" class="slide level2">
+<h2>Persistent Identification is an aspect of findability (identifiers)</h2>
+<ul>
+<li>datasets should be uniquely identified (uuid)</li>
+<li>Strong push to adopt identification platforms such as DOI and Handle.net</li>
+<li>Proper identification facilitates citation from reports/scientific articles</li>
+</ul>
+</section>
+<section id="accessible-data" class="slide level2">
+<h2>Accessible data</h2>
+<ul>
+<li>data is best made available as a file package in a repository</li>
+<li>For large data, or specific use cases (map vizualisation), data can also be shared using an api or web service.</li>
+<li>metadata should still exist, even if the data itself is discarded</li>
+</ul>
+</section>
+<section id="tiered-access-and-governance-models-that-enable-sharing-while-maintaining-national-stewardship." class="slide level2">
+<h2>Tiered access and governance models that enable sharing while maintaining national stewardship.</h2>
+<p>The intent is to address metadata comparability, reliability, standardization and governance frameworks.</p>
+</section>
+<section id="interoperable-data" class="slide level2">
+<h2>Interoperable data</h2>
+<ul>
+<li>Use a rich data representation, so the contents is universally understood</li>
+</ul>
+</section>
+<section id="process-of-standardisation" class="slide level2">
+<h2>Process of standardisation</h2>
+<ul>
+<li>Standardised Operating procedure (Field and Laboratory)
+<ul>
+<li>GSP Glosolan</li>
+<li>Soils for Africa project</li>
+</ul></li>
+<li>Describe existing practices</li>
+<li>referring to common vocabularies</li>
+</ul>
+</section>
+<section id="role-of-common-vocabularies" class="slide level2">
+<h2>Role of common vocabularies</h2>
+<ul>
+<li>The use of common multi-lingual vocabularies provide a mechanism to describe data using universal definitions</li>
+<li>Common vocabularies such as Agrovoc, GLOSIS, ISO11074, GEMET</li>
+<li>Use Agrovoc terms as keywords in metadata</li>
+<li>Describe columns in a dataset using terms from GLOSIS</li>
+<li>Express unit of measure using QUDT concepts</li>
+</ul>
+</section>
+<section id="reusable-data" class="slide level2">
+<h2>Reusable data</h2>
+</section>
+<section id="describe-a-dataset-using-rich-metadata-for-findability-and-resuability" class="slide level2">
+<h2>Describe a dataset using rich metadata for findability and resuability</h2>
+<ul>
+<li>Common repositories offer compatible metadata models (and interfaces for harvesting)</li>
+<li>Metadata model can be extended by adding a metadata sidecar file (RO-Crate approach)</li>
+</ul>
+</section>
+<section id="conclusions" class="slide level2">
+<h2>Conclusions</h2>
+</section>
+<section id="questions" class="slide level2">
+<h2>Questions?</h2>
+</section>
+<section id="more-details-on-data-governance" class="slide level2">
+<h2>More details on data governance</h2>
+<p>The extra slides provide some details on the topic of data governance</p>
 </section>
 <section id="roles-responsibilities-and-accountability" class="slide level2">
 <h2>Roles, Responsibilities, and Accountability</h2>
@@ -186,57 +318,8 @@ Paul van Genuchten
 <li>Define access controls, classification schemes, and procedures for handling breaches.</li>
 </ul>
 </section>
-<section id="data-sharing-access-and-value-creation" class="slide level2">
-<h2>Data Sharing, Access, and Value Creation</h2>
-<ul>
-<li>Establish policies and agreements for sharing data within government and with external stakeholders.</li>
-<li>Balance openness with confidentiality through open data, licensing, and access controls.</li>
-<li>Promote reuse of data for evidence-based policymaking, service delivery, transparency, and research.</li>
-</ul>
-</section>
-<section id="these-five-aspects-are-often-supported-by-cross-cutting-activities-such-as" class="slide level2">
-<h2>These five aspects are often supported by cross-cutting activities such as:</h2>
-<ul>
-<li>Metadata management</li>
-<li>Master and reference data management</li>
-<li>Risk management</li>
-<li>Training and capacity building</li>
-<li>Monitoring, compliance, and continuous improvement</li>
-</ul>
-</section>
-<section id="interoperability-and-data-governance" class="slide level2">
-<h2>Interoperability and data governance</h2>
-</section>
-<section id="approaches-to-metadata-identifiers-and-web-services" class="slide level2">
-<h2>Approaches to metadata, identifiers, and web services</h2>
-</section>
-<section id="tiered-access-and-governance-models-that-enable-sharing-while-maintaining-national-stewardship." class="slide level2">
-<h2>Tiered access and governance models that enable sharing while maintaining national stewardship.</h2>
-<p>The intent is to address metadata comparability, reliability, standardization and governance frameworks.</p>
-</section>
-<section id="metadata-identifiers-web-services" class="slide level2">
-<h2>Metadata, identifiers, web services</h2>
-</section>
-<section id="tiered-access-and-governance-models" class="slide level2">
-<h2>Tiered access and governance models</h2>
-</section>
-<section id="process-of-standardisation" class="slide level2">
-<h2>process of standardisation</h2>
-</section>
-<section id="rich-metadata-to-annotate-a-dataset" class="slide level2">
-<h2>rich metadata to annotate a dataset</h2>
-</section>
-<section id="identification-is-an-aspect-of-findability" class="slide level2">
-<h2>identification is an aspect of findability</h2>
-<ul>
-<li>what is a dataset?</li>
-</ul>
-</section>
-<section id="role-of-common-vocabularies" class="slide level2">
-<h2>Role of common vocabularies</h2>
-</section>
 <section id="tiered-access" class="slide level2">
-<h2>tiered access</h2>
+<h2>Tiered access</h2>
 <table class="caption-top">
 <colgroup>
 <col style="width: 50%">
@@ -272,15 +355,32 @@ Paul van Genuchten
 </tbody>
 </table>
 </section>
-<section id="governmental-objectives" class="slide level2">
-<h2>governmental objectives</h2>
-<p>Tiered access supports several governance objectives:</p>
+<section id="tiered-access-supports-governance-objectives" class="slide level2">
+<h2>Tiered access supports governance objectives</h2>
 <ul>
 <li>Privacy and confidentiality: Protects personal, commercially sensitive, or nationally sensitive information.</li>
 <li>Legal compliance: Helps meet obligations under regulations such as GDPR, freedom of information laws, or sector-specific legislation.</li>
 <li>Data integrity: Limits editing rights to authorized users, reducing the risk of accidental or unauthorized changes.</li>
 <li>Need-to-know principle: Users receive only the information necessary for their role.</li>
 <li>Encouraging openness: Governments can publish as much data as possible while still protecting restricted information.</li>
+</ul>
+</section>
+<section id="data-sharing-access-and-value-creation" class="slide level2">
+<h2>Data Sharing, Access, and Value Creation</h2>
+<ul>
+<li>Establish policies and agreements for sharing data within government and with external stakeholders.</li>
+<li>Balance openness with confidentiality through open data, licensing, and access controls.</li>
+<li>Promote reuse of data for evidence-based policymaking, service delivery, transparency, and research.</li>
+</ul>
+</section>
+<section id="these-five-aspects-are-often-supported-by-cross-cutting-activities-such-as" class="slide level2">
+<h2>These five aspects are often supported by cross-cutting activities such as:</h2>
+<ul>
+<li>Metadata management</li>
+<li>Master and reference data management</li>
+<li>Risk management</li>
+<li>Training and capacity building</li>
+<li>Monitoring, compliance, and continuous improvement</li>
 </ul>
 
 
