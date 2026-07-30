@@ -18,7 +18,7 @@ format:
 designation to the Netherlands by Unesco, in close cooperation with FAO and IUSS
 - The institute with its unique global soil monolith collection is hosted at Wageningen University
 - ISRIC contributes to data collection and standardization efforts globally, with a special focus on Africa
-- ISRIC hosted the recent Soils for Africa project and contributes to the current African Soil Observartory project
+- ISRIC hosted the recent Soils for Africa project and contributes to the current African Soil Observatory project
 
 ## Paul van Genuchten
 
@@ -44,7 +44,8 @@ with a focus on metadata and interoperability
 
 ## FAIR principles
 
-The [FAIR principles](https://www.go-fair.org/fair-principles/) provides a governance framework for data, from a reuse perspective 
+The [FAIR principles](https://www.go-fair.org/fair-principles/) provide a governance 
+framework for data, from a reuse perspective: 
 
 - Findable
 - Accessible
@@ -63,14 +64,26 @@ Cabi and Gates foundation prepared a [framework to put the FAIR principles in ac
 
 ## Findable data
 
-
-rich metadata to annotate a dataset
-
-- easy to find and reference
+Rich metadata searchable via a catalogue
 
 ## What is a dataset?
-  - civil cervant: a databse which is continuously updated
+  - civil cervant: a database which is continuously updated, exposed via an API
   - academic: a validated collection of records at a given point in time, which I can uniquely reference in my publication
+
+## Use of repositories
+
+- Easy to find and reference
+- Find today, find in 10 years time
+- Common data and knowledge repositories offer persitent storage over time
+- Aggregators (openaire, [google](datasetsearch)) harvest from repositories to optimize findability
+
+
+## Datasets as a source for digital soil mapping (DSM)
+
+- DSM is the process of prediction soil property distribution in space and time
+- DSM efforts happen irragularly, based on latest snapshots of source data and covariates
+- data from the own organisation as well as remote sources
+- the academic view on dataset is more appropriate for DSM
 
 ## Persistent Identification is an aspect of findability (identifiers)
 
@@ -80,9 +93,10 @@ rich metadata to annotate a dataset
 
 ## Accessible data
 
-- data is best made available as a file package in a repository
+- Data is best made available as a file package in a repository
 - For large data, or specific use cases (map vizualisation), data can also be shared using an api or web service.
-- metadata should still exist, even if the data itself is discarded
+- Metadata should still exist, even if the data itself is discarded
+- Metadata Public; Data public, protected or internal
 
 ## Tiered access and governance models that enable sharing while maintaining national stewardship. 
 
@@ -115,8 +129,6 @@ data using universal definitions
 
 - Common repositories offer compatible metadata models (and interfaces for harvesting)
 - Metadata model can be extended by adding a metadata sidecar file (RO-Crate approach)
-
-
 
 ## Conclusions
 
