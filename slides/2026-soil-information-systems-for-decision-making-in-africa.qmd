@@ -20,6 +20,14 @@ designation to the Netherlands by Unesco, in close cooperation with FAO and IUSS
 - The institute with its unique global soil monolith collection is hosted at Wageningen University
 - ISRIC contributes to data collection and standardization efforts globally, with a special focus on Africa
 
+## World Soil Museum
+
+![World Soil Museum by [tinker.nl](https://tinker.nl/en/work/world-soil-museum)](https://tinker.nl/img/cache/media_6828_widen_3840-upscale_90-2349_world-soil-museum01_0.webp)
+
+## Collection of reference profiles
+
+![Samples of reference profiles](https://isric.euwest01.umbraco.io/media/dpbdg2ib/color-pot.jpg)
+
 ## Interoperability projects 
 
 - participated in the Global Soil Map project (2009-2013)
@@ -33,14 +41,15 @@ designation to the Netherlands by Unesco, in close cooperation with FAO and IUSS
 - Trained as a soil scientist (Wageningen University, 1999)
 - Extensive experience in spatial data and IT
 - Joined ISRIC four years ago as a Data Infrastructure Specialist
-- Maintains ISRIC's data infrastructure and contributes to soil data management projects, 
+- Team maintains ISRIC's data infrastructure 
+- contributes to soil data management projects, 
 with a focus on metadata and interoperability
 
 ## Interoperability and data governance
 
 - I was asked to present about these 2 topics
-- Interoperability is a pillar of data governance
 - Both are large topics...
+- Interoperability is a pillar of data governance
 
 ## Data governance
 
@@ -49,6 +58,13 @@ with a focus on metadata and interoperability
 - Policies, Standards, and Interoperability
 - Security, Privacy, and Legal Compliance
 - Data Sharing, Access, and Value Creation
+
+## Soil data specifics
+
+- Interaction with many other domains (agriculture, pollution, carbon sequestration, build environment, hydrology)
+- Property distribution data is predicted, not observed 
+- Long history of (local) practices and standardisation efforts
+- Legacy data and formats
 
 ## FAIR principles
 
@@ -60,30 +76,24 @@ framework for data, from a reuse perspective:
 - Interoperable
 - Reusable
 
-## Soil data specifics
-
-- legacy data and formats
-- interaction with many other domains (agriculture, pollution, carbon sequestration, build environment, hydrology)
-- Management practices & LTE
-- large number of soil indicators
-- long history of (local) practices
-
 ## Findable data
 
 Rich metadata searchable via a catalogue
+
+[Let's try](https://datasetsearch.research.google.com/search?src=0&query=soil%20data%20carbon%20content%20zimbabwe)
 
 ## What is a dataset?
 
 - civil cervant: a database which is continuously updated, exposed via an API
 - academic: a validated collection of records at a given point in time, 
-which I can uniquely reference in my publication
+which I can reference from my publication
 
 ## Datasets as a source for digital soil mapping (DSM)
 
 - DSM is the process of prediction of soil property distribution in space and time
 - DSM efforts happen irragularly, based on latest snapshots of source data and covariates
-- data from the own organisation as well as remote sources
-- the academic view on dataset is more appropriate for DSM
+- Data from the own organisation as well as remote sources
+- The academic view on dataset is more appropriate for DSM
 
 ## Use of repositories
 
@@ -95,7 +105,7 @@ harvest from repositories to optimize findability
 
 ## Persistent Identification is an aspect of findability (identifiers)
 
-- datasets should be uniquely identified (uuid)
+- Datasets should be uniquely identified (uuid)
 - Strong push to adopt identification platforms such as DOI and Handle.net
 - Proper identification facilitates citation from reports/scientific articles
 
@@ -106,8 +116,9 @@ but it complicates identification
 ## Accessible data
 
 - Data is made available through an open protocol (http)
-- Metadata should still exist, even if the data itself is discarded
+- Metadata should still exist, even if the data itself is no longer available
 - Metadata Public; Data public, protected or internal
+- Use an Open Format
 
 ## Tiered access and national stewardship
 
@@ -123,10 +134,11 @@ enable data exchange and reuse across tools and disciplines
 
 ## Process of standardisation
 
+- If you standardise upfront, you don't need to harmonize later
 - Standardised Operating procedure (Field and Laboratory)
   - [GSP Glosolan](https://www.fao.org/global-soil-partnership/glosolan/en/)
   - [Soils for Africa project](https://doi.org/10.5281/zenodo.20814311)
-- Describe existing practices
+- Describe the procedure used to collect or process the data
 - Refer to common vocabularies
 
 ## Tabular annotated
@@ -189,9 +201,13 @@ offer many of the FAIR principles by default
 - Data governance is a wide topic, interoperability is an important pillar
 - FAIR principles provide a framework for governance focussed on reuse
 - Soil data is special for its specific use cases, interaction with many domains and long time span
-- Harmonization is important, but do not replace the source data 
+- Harmonization is important, but do not replace the source data  
 
 ## Questions?
+
+Else I thank you very much for your interest.
+I hope I have been able to trigger some ideas.
+Let's continue the conversation soon.
 
 ## More details on data governance
 
