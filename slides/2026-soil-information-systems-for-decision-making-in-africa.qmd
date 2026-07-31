@@ -5,7 +5,8 @@ author: Paul van Genuchten
 date: 2026-08-05
 format:
   revealjs: 
-    theme: default
+    incremental: true
+    theme: serif
     logo: https://www.isric.org/themes/custom/basic/logo.svg
     footer: "Soil information systems for decision making in Africa"
   pptx:
@@ -18,7 +19,14 @@ format:
 designation to the Netherlands by Unesco, in close cooperation with FAO and IUSS
 - The institute with its unique global soil monolith collection is hosted at Wageningen University
 - ISRIC contributes to data collection and standardization efforts globally, with a special focus on Africa
-- ISRIC hosted the recent Soils for Africa project and contributes to the current African Soil Observatory project
+
+## Interoperability projects 
+
+- participated in the Global Soil Map project (2009-2013)
+- participated in the Africa Soil Information Service project (2009-2016)
+- hosted the recent Soils for Africa project (2021-2025)
+- contributes to the African Soil Observatory project (2025-2029)
+- hosts the WOSIS profiles database and the SoilGrids Global Soil Map (250m)
 
 ## Paul van Genuchten
 
@@ -52,8 +60,6 @@ framework for data, from a reuse perspective:
 - Interoperable
 - Reusable
 
-Cabi and Gates foundation prepared a [framework to put the FAIR principles in action](https://fairprocessframework.org/) in the environmental domain.
-
 ## Soil data specifics
 
 - legacy data and formats
@@ -67,23 +73,25 @@ Cabi and Gates foundation prepared a [framework to put the FAIR principles in ac
 Rich metadata searchable via a catalogue
 
 ## What is a dataset?
-  - civil cervant: a database which is continuously updated, exposed via an API
-  - academic: a validated collection of records at a given point in time, which I can uniquely reference in my publication
+
+- civil cervant: a database which is continuously updated, exposed via an API
+- academic: a validated collection of records at a given point in time, 
+which I can uniquely reference in my publication
+
+## Datasets as a source for digital soil mapping (DSM)
+
+- DSM is the process of prediction of soil property distribution in space and time
+- DSM efforts happen irragularly, based on latest snapshots of source data and covariates
+- data from the own organisation as well as remote sources
+- the academic view on dataset is more appropriate for DSM
 
 ## Use of repositories
 
 - Easy to find and reference
 - Find today, find in 10 years time
 - Common data and knowledge repositories offer persitent storage over time
-- Aggregators (openaire, [google](datasetsearch)) harvest from repositories to optimize findability
-
-
-## Datasets as a source for digital soil mapping (DSM)
-
-- DSM is the process of prediction soil property distribution in space and time
-- DSM efforts happen irragularly, based on latest snapshots of source data and covariates
-- data from the own organisation as well as remote sources
-- the academic view on dataset is more appropriate for DSM
+- Aggregators ([openaire](https://explore.openaire.eu/), [google](https://datasetsearch.research.google.com/)) 
+harvest from repositories to optimize findability
 
 ## Persistent Identification is an aspect of findability (identifiers)
 
@@ -91,49 +99,97 @@ Rich metadata searchable via a catalogue
 - Strong push to adopt identification platforms such as DOI and Handle.net
 - Proper identification facilitates citation from reports/scientific articles
 
+- For large data, or specific use cases (map vizualisation), 
+data can also be shared using an api or web service, 
+but it complicates identification
+
 ## Accessible data
 
-- Data is best made available as a file package in a repository
-- For large data, or specific use cases (map vizualisation), data can also be shared using an api or web service.
+- Data is made available through an open protocol (http)
 - Metadata should still exist, even if the data itself is discarded
 - Metadata Public; Data public, protected or internal
 
-## Tiered access and governance models that enable sharing while maintaining national stewardship. 
+## Tiered access and national stewardship
 
-The intent is to address metadata comparability, reliability, standardization and governance frameworks.
+- As open as possible, as closed as necessary
+- As data steward you should have control on access to the data, even when handed over to a secondary hosting provider (repository)
+- Alternatively author the DOI of the data, arbitrary where the data is hosted 
+- Ultimately the enclosed metadata indicates the usage restrictions of the data
 
 ## Interoperable data
 
-- Use a rich data representation, so the contents is universally understood
+Use standardized data formats and controlled vocabularies to 
+enable data exchange and reuse across tools and disciplines
 
 ## Process of standardisation
 
 - Standardised Operating procedure (Field and Laboratory)
-  - GSP Glosolan
-  - Soils for Africa project
+  - [GSP Glosolan](https://www.fao.org/global-soil-partnership/glosolan/en/)
+  - [Soils for Africa project](https://doi.org/10.5281/zenodo.20814311)
 - Describe existing practices
-- referring to common vocabularies
+- Refer to common vocabularies
+
+## Tabular annotated
+
+![interoperable](./img/tabbular_annotated)
 
 ## Role of common vocabularies
 
 - The use of common multi-lingual vocabularies provide a mechanism to describe 
 data using universal definitions
-- Common vocabularies such as Agrovoc, GLOSIS, ISO11074, GEMET 
+- Common vocabularies such as Agrovoc, WRB, GLOSIS, ISO11074, GEMET 
 - Use Agrovoc terms as keywords in metadata
 - Describe columns in a dataset using terms from GLOSIS
 - Express unit of measure using QUDT concepts
 
 ## Reusable data
 
+- Describe the provenance of the data, so potential users understand if and how they can use the data.
+- Apply a relevant license; as open as possible, as closed as necessary
+
 ## Describe a dataset using rich metadata for findability and resuability
 
-- Common repositories offer compatible metadata models (and interfaces for harvesting)
+- Generic properties are covered in most metadata models 
 - Metadata model can be extended by adding a metadata sidecar file (RO-Crate approach)
+
+## Use of common repositories
+
+- Common repositories, such as Zenodo, OSF, Pangaea, Dataverse, 
+offer many of the FAIR principles by default
+- As a contributor you are owner of the data 
+- Data can be published with tiered access
+
+- Funders may endorse the use of a certain repository
+- Understand the jurisdiction of the country where the repository is hosted
+- Consider the reliability of the repository (timespan 20-50 years)
+
+## Some data publication samples
+
+- [Soils for Africa](https://doi.org/10.5281/zenodo.17699297)
+- [Tanzania SIS](https://doi.org/10.17605/OSF.IO/4NGAU)
+- [Kenya SIS](https://github.com/KALRO-ICT/kensis-data/tree/main/data)
+
+## Data aggregators are not a good fit for publishing your data
+
+- Various soil data aggregators exist, which harmonize and clean soil data
+- Examples such as ISRIC, ISDA, Varda
+- The aggregators are able to make good soil maps 
+- Data contributed to an aggregator is out of your control
+- Instead publish the data in a repository and share the DOI with the aggregator
+- The feedback from the aggregator about your data is actually very useful, make sure to retrieve it
+
+## Frameworks to support implementation
+
+- Cabi and Gates foundation prepared a [framework to put the FAIR principles in action](https://fairprocessframework.org/) in the environmental domain.
+- Cabi, ISRIC and Gates foundation also prepared a [framework for Soil Information System design](https://resources.isric.org/sis-framework/).
+- The SIS framwork includes some [case studies](https://resources.isric.org/sis-framework/case-studies.html) from various African countries.
 
 ## Conclusions
 
-
-
+- Data governance is a wide topic, interoperability is an important pillar
+- FAIR principles provide a framework for governance focussed on reuse
+- Soil data is special for its specific use cases, interaction with many domains and long time span
+- Harmonization is important, but do not replace the source data 
 
 ## Questions?
 
