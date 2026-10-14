@@ -1705,7 +1705,7 @@
     "href": "slides/2026-soilwise-wddc-fair.html#soilwise",
     "title": "How to best annotate csv data for interoperability",
     "section": "SoilWise",
-    "text": "SoilWise\n\nStrengthen the Mission Soil knowledge base by making soil research, data and solutions easier to find, access, combine and reuse\nBudget and duration: €6 million EU contribution under Horizon Europe; runs from September 2023 to August 2027.\nWageningen University, WENR and ISRIC are 3 out of 14 partners (coordination at ILVO Flanders)"
+    "text": "SoilWise\n\nStrengthen the Mission Soil knowledge base by making soil research, data and solutions easier to find, access, combine and reuse\nBudget: €6 million EU contribution under Horizon Europe\nWageningen University, WENR and ISRIC are 3 out of 14 partners (coordination at ILVO Flanders, 2023-2027)"
   },
   {
     "objectID": "slides/2026-soilwise-wddc-fair.html#interoperable-soil-data-sharing",
@@ -1726,7 +1726,14 @@
     "href": "slides/2026-soilwise-wddc-fair.html#global-soil-map-and-soter",
     "title": "How to best annotate csv data for interoperability",
     "section": "Global Soil Map and SOTER",
-    "text": "Global Soil Map and SOTER\nVarious efforts in the community to set up a standardised data model for soil data:\n\nGlobal Soil Map\nSOil and TERrain database\n\nThese initiatives are still relevant today"
+    "text": "Global Soil Map and SOTER\nHistoric efforts to set up a standardised data model for soil data:\n\nGlobal Soil Map\nSOil and TERrain database\n\nThese initiatives are still relevant today"
+  },
+  {
+    "objectID": "slides/2026-soilwise-wddc-fair.html#soter-model",
+    "href": "slides/2026-soilwise-wddc-fair.html#soter-model",
+    "title": "How to best annotate csv data for interoperability",
+    "section": "SOTER Model",
+    "text": "SOTER Model\n\nSOTER model"
   },
   {
     "objectID": "slides/2026-soilwise-wddc-fair.html#inspire-regulation-and-iso-standards",
@@ -1747,7 +1754,7 @@
     "href": "slides/2026-soilwise-wddc-fair.html#fair-practices",
     "title": "How to best annotate csv data for interoperability",
     "section": "FAIR practices",
-    "text": "FAIR practices\n\nUse of repositories and registration of DOI’s\nRO-Crate describes date files within a repository deposit, in combination with schema.org and/or frictionless datapackage\nInvestigation, Study, Assay (ISA) describes the context of an experiment\ni-Adopt unpacks (soil) properties, into its components"
+    "text": "FAIR practices\n\nUse of repositories and registration of DOI’s\nReference concepts from FAIR vocabularies\nRO-Crate describes date files within a repository deposit, in combination with schema.org and/or frictionless datapackage\nInvestigation, Study, Assay (ISA) describes the context of an experiment\ni-Adopt unpacks (soil) properties, into its components"
   },
   {
     "objectID": "slides/2026-soilwise-wddc-fair.html#observation-standards-in-other-communities",
@@ -1782,7 +1789,7 @@
     "href": "slides/2026-soilwise-wddc-fair.html#our-approach",
     "title": "How to best annotate csv data for interoperability",
     "section": "Our approach",
-    "text": "Our approach\nTest various approaches on 10 tabular sample datasets, going from CSV to RDF and back from RDF to Tabular:\n\nCSV on the Web\nR2RML\nISA-tab\nINSPIRE GeoPackage / Hale Studio"
+    "text": "Our approach\nTest various approaches on 10 tabular sample datasets, going from CSV to RDF and back from RDF to Tabular:\n\nCSV on the Web\nR2RML\nISA-tab\nINSPIRE GeoPackage / Hale Studio\n\nResults in Github"
   },
   {
     "objectID": "slides/2026-soilwise-wddc-fair.html#where-we-got-stuck",
@@ -1803,7 +1810,7 @@
     "href": "slides/2026-soilwise-wddc-fair.html#suggestions-from-the-audience",
     "title": "How to best annotate csv data for interoperability",
     "section": "Suggestions from the audience",
-    "text": "Suggestions from the audience\n…"
+    "text": "Suggestions from the audience\nWe welcome your feedback, for example through Github Discussions"
   },
   {
     "objectID": "slides/FAIRintro4SoilMapping.html#findable",
