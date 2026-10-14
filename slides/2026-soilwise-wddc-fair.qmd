@@ -29,8 +29,8 @@ format:
 ## SoilWise 
 
 - Strengthen the Mission Soil knowledge base by making soil research, data and solutions easier to find, access, combine and reuse
-- Budget and duration: €6 million EU contribution under Horizon Europe; runs from September 2023 to August 2027. 
-- Wageningen University, WENR and ISRIC are 3 out of 14 partners (coordination at ILVO Flanders)
+- Budget: €6 million EU contribution under Horizon Europe 
+- Wageningen University, WENR and ISRIC are 3 out of 14 partners (coordination at ILVO Flanders, 2023-2027)
 
 ## Interoperable soil data sharing
 
@@ -44,12 +44,16 @@ format:
 
 ## Global Soil Map and SOTER
 
-Various efforts in the community to set up a standardised data model for soil data:
+Historic efforts to set up a standardised data model for soil data:
 
 - [Global Soil Map](https://isric.org/projects/globalsoilmapnet)
 - [SOil and TERrain database](https://isric.org/explore/soter)
 
 These initiatives are still relevant today
+
+## SOTER Model
+
+![SOTER model](img/soter.png)
 
 ## INSPIRE regulation and ISO standards
 
@@ -64,6 +68,7 @@ These initiatives are still relevant today
 ## FAIR practices
 
 - Use of repositories and registration of DOI's
+- Reference concepts from [FAIR vocabularies](https://w3id.org/EUSoilvoc)
 - [RO-Crate](https://www.researchobject.org/ro-crate/) describes date files within a repository deposit, in combination with schema.org and/or [frictionless datapackage](https://datapackage.org/)
 - Investigation, Study, Assay ([ISA](https://isa-specs.readthedocs.io/)) describes the context of an experiment
 - [i-Adopt](https://i-adopt.github.io/) unpacks (soil) properties, into its components 
@@ -106,6 +111,8 @@ Test various approaches on 10 tabular sample datasets, going from CSV to RDF and
 - ISA-tab
 - INSPIRE GeoPackage / Hale Studio
 
+Results in [Github](https://github.com/soilwise-he/soil-observation-data-encodings)
+
 ## Where we got stuck
 
 - CSV-W is a good fit for literature reviews and vocabularies
@@ -122,4 +129,6 @@ Test various approaches on 10 tabular sample datasets, going from CSV to RDF and
 
 ## Suggestions from the audience
 
-...
+We welcome your feedback, for example through [Github Discussions](https://github.com/soilwise-he/soil-observation-data-encodings/discussions)
+
+
