@@ -270,7 +270,7 @@
     "href": "slides/index.html",
     "title": "some slide decks",
     "section": "",
-    "text": "(Meta)Data management at ISRIC - World Soil Information\n\n\nDiscovery & Metadata Expert Group with the Digital Research Alliance of Canada\n\n\n\n\n\n\n\n\nMar 24, 2026\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nA website on Github.io\n\n\n\n\n\n\n\n\n\n\n\nAug 5, 2025\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\n\n\n\n\n\n\nAUSO - Training on FAIR Soil Data\n\n\n\n\n\n\n\n\n\n\n\nMay 16, 2026\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nAbandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects\n\n\nEGU25 ESSI3.2: One decade of FAIR Principles: Data Reusability and Impact in Earth System Sciences\n\n\n\n\n\n\n\n\nApr 30, 2025\n\n\nMickael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR intro for Digital Soil Mapping\n\n\ngo-fair.org, a practical exercise\n\n\n\n\n\n\n\n\nMar 19, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nGIT flavoured modelling\n\n\nWATDEV Toolbox 1st regional training\n\n\n\n\n\n\n\n\nFeb 5, 2026\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nInteroperability and data governance\n\n\nSoil information systems for decision making in Africa\n\n\n\n\n\n\n\n\nAug 5, 2026\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nInteroperable Soil Data\n\n\nWUR SOIL DAY 2026\n\n\n\n\n\n\n\n\nJun 4, 2026\n\n\nPaul van Genuchten, Keiji Jindo, Monne Weghorst\n\n\n\n\n\n\n\n\n\n\n\n\nLSC-Hub Kenya; pending topics\n\n\n\n\n\n\n\n\n\n\n\nAug 6, 2025\n\n\nvan Genuchten, P.\n\n\n\n\n\n\n\n\n\n\n\n\nLSC-Hub components overview\n\n\n\n\n\n\n\n\n\n\n\nAug 5, 2025\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\n\n\n\n\n\n\nLSC-Hub development overview\n\n\n\n\n\n\n\n\n\n\n\nAug 5, 2025\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata for the rest of us\n\n\nFOSS4G Europe Conference, Tartu, Estonia\n\n\n\n\n\n\n\n\nFeb 29, 2024\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Source at ISRIC - World Soil Information\n\n\nFOSS4G NL, Wageningen\n\n\n\n\n\n\n\n\nJul 3, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\n\n\n\n\n\n\n\n\n\nMay 20, 2024\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\n\n\n\n\n\n\nSDI maintenance DevOps style\n\n\nInspired and facilitated by Open Source\n\n\nAt ISRIC - World Soil Information we increasingly maintain our data services through CI-CD pipelines configured via GIT. Both from the service as well as content perspective. The starting point are metadata records of our datasets being stored on GIT. With every change of a record, the relevant catalogues (pycsw) get updated and any relevant web services (mapserver) are updated. These pipelines are reproducable and there are never inconsistencies between catalogue content and the services. On top of that our users can directly report issues (or even improvement suggestions) through git. The stack is build on proven OSGeo components. A tool pyGeoDataCrawler brings the power of GDAL and pygeometa to CI-CD scripting. It crawls files on a folder and extracts relevant metadata, then prepares a mapserver configuration for that folder, while updating the metadata with the relevant service url’s. Typical use cases for this stack are; a search interface to any file based data repository or a participatory data catalogue for a project. At the conference we hope to hear from you if any of these components could be relevant to your cases or if there are similar initiatives we can contribute to or benefit from. What’s next? At ISRIC we receive and ingest a lot of soil data from partners. To harmonize this data is a huge effort. Via automated pipelines and interaction with the submitters via git comments, we hope to improve also this aspect of the data management cycle.\n\n\n\n\n\nJul 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nSoil Information System for Africa\n\n\nUpdating soil information for Africa: supporting agriculture and promoting synergies\n\n\n\n\n\n\n\n\nDec 1, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nSoilWise HE progress report\n\n\nISRIC Fruitfull may 6th 2025\n\n\n\n\n\n\n\n\nMay 6, 2025\n\n\nFenny van Egmond, Thaisa van der Woude, Paul van Genuchten, Jiarong Li\n\n\n\n\n\n\n\n\n\n\n\n\nSoilWise HE recap\n\n\nISRIC - World Soil Information\n\n\n\n\n\n\n\n\nJun 10, 2026\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nSoilwise & Metadata\n\n\nMetadata in Horizon Europe projects (Soil Mission)\n\n\n\n\n\n\n\n\nJun 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nNov 20, 2025\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nJul 18, 2025\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nDec 6, 2024\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status 2025\n\n\nA fun way to do spatial cataloguing\n\n\n\n\n\n\n\n\nJul 18, 2025\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\n\nNo matching items"
+    "text": "(Meta)Data management at ISRIC - World Soil Information\n\n\nDiscovery & Metadata Expert Group with the Digital Research Alliance of Canada\n\n\n\n\n\n\n\n\nMar 24, 2026\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nA website on Github.io\n\n\n\n\n\n\n\n\n\n\n\nAug 5, 2025\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\n\n\n\n\n\n\nAUSO - Training on FAIR Soil Data\n\n\n\n\n\n\n\n\n\n\n\nMay 16, 2026\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nAbandonded Project Websites -&gt; no\n\n\nan initiative to increase awareness on (not) abandoning websites at project finish\n\n\n\n\n\n\n\n\nNov 4, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nDocument your model data at minimal effort\n\n\nA pitch battle at digital innovation expo @WUR\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects\n\n\nEGU25 ESSI3.2: One decade of FAIR Principles: Data Reusability and Impact in Earth System Sciences\n\n\n\n\n\n\n\n\nApr 30, 2025\n\n\nMickael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR intro for Digital Soil Mapping\n\n\ngo-fair.org, a practical exercise\n\n\n\n\n\n\n\n\nMar 19, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nGIT flavoured modelling\n\n\nWATDEV Toolbox 1st regional training\n\n\n\n\n\n\n\n\nFeb 5, 2026\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nHow to best annotate csv data for interoperability\n\n\nWageningen Model and Data Day\n\n\n\n\n\n\n\n\nOct 15, 2026\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nInteroperability and data governance\n\n\nSoil information systems for decision making in Africa\n\n\n\n\n\n\n\n\nAug 5, 2026\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nInteroperable Soil Data\n\n\nWUR SOIL DAY 2026\n\n\n\n\n\n\n\n\nJun 4, 2026\n\n\nPaul van Genuchten, Keiji Jindo, Monne Weghorst\n\n\n\n\n\n\n\n\n\n\n\n\nLSC-Hub Kenya; pending topics\n\n\n\n\n\n\n\n\n\n\n\nAug 6, 2025\n\n\nvan Genuchten, P.\n\n\n\n\n\n\n\n\n\n\n\n\nLSC-Hub components overview\n\n\n\n\n\n\n\n\n\n\n\nAug 5, 2025\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\n\n\n\n\n\n\nLSC-Hub development overview\n\n\n\n\n\n\n\n\n\n\n\nAug 5, 2025\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\n\n\n\n\n\n\nMetadata for the rest of us\n\n\nFOSS4G Europe Conference, Tartu, Estonia\n\n\n\n\n\n\n\n\nFeb 29, 2024\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Source at ISRIC - World Soil Information\n\n\nFOSS4G NL, Wageningen\n\n\n\n\n\n\n\n\nJul 3, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\n\n\n\n\n\n\n\n\n\nMay 20, 2024\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\n\n\n\n\n\n\nSDI maintenance DevOps style\n\n\nInspired and facilitated by Open Source\n\n\nAt ISRIC - World Soil Information we increasingly maintain our data services through CI-CD pipelines configured via GIT. Both from the service as well as content perspective. The starting point are metadata records of our datasets being stored on GIT. With every change of a record, the relevant catalogues (pycsw) get updated and any relevant web services (mapserver) are updated. These pipelines are reproducable and there are never inconsistencies between catalogue content and the services. On top of that our users can directly report issues (or even improvement suggestions) through git. The stack is build on proven OSGeo components. A tool pyGeoDataCrawler brings the power of GDAL and pygeometa to CI-CD scripting. It crawls files on a folder and extracts relevant metadata, then prepares a mapserver configuration for that folder, while updating the metadata with the relevant service url’s. Typical use cases for this stack are; a search interface to any file based data repository or a participatory data catalogue for a project. At the conference we hope to hear from you if any of these components could be relevant to your cases or if there are similar initiatives we can contribute to or benefit from. What’s next? At ISRIC we receive and ingest a lot of soil data from partners. To harmonize this data is a huge effort. Via automated pipelines and interaction with the submitters via git comments, we hope to improve also this aspect of the data management cycle.\n\n\n\n\n\nJul 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nSoil Information System for Africa\n\n\nUpdating soil information for Africa: supporting agriculture and promoting synergies\n\n\n\n\n\n\n\n\nDec 1, 2025\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nSoilWise HE progress report\n\n\nISRIC Fruitfull may 6th 2025\n\n\n\n\n\n\n\n\nMay 6, 2025\n\n\nFenny van Egmond, Thaisa van der Woude, Paul van Genuchten, Jiarong Li\n\n\n\n\n\n\n\n\n\n\n\n\nSoilWise HE recap\n\n\nISRIC - World Soil Information\n\n\n\n\n\n\n\n\nJun 10, 2026\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nSoilwise & Metadata\n\n\nMetadata in Horizon Europe projects (Soil Mission)\n\n\n\n\n\n\n\n\nJun 3, 2024\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop pygeoapi\n\n\nAlliander OS Event\n\n\n\n\n\n\n\n\nNov 13, 2023\n\n\nPaul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nNov 20, 2025\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nJul 18, 2025\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status\n\n\n\n\n\n\n\n\n\n\n\nDec 6, 2024\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\n\n\n\n\n\n\npygeometa project status 2025\n\n\nA fun way to do spatial cataloguing\n\n\n\n\n\n\n\n\nJul 18, 2025\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/fun-way-of-spatial-cataloguing.html#pycsw",
@@ -714,536 +714,242 @@
     "text": "Q&A - Hands on…"
   },
   {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#isric",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#isric",
-    "title": "Interoperability and data governance",
-    "section": "ISRIC",
-    "text": "ISRIC\n\nISRIC - World Soil Information has been founded in 1966 after designation to the Netherlands by Unesco, in close cooperation with FAO and IUSS\nThe institute with its unique global soil monolith collection is hosted at Wageningen University\nISRIC contributes to data collection and standardization efforts globally, with a special focus on Africa"
+    "objectID": "slides/2026-soilwise-recap.html#soilwise-he-in-context",
+    "href": "slides/2026-soilwise-recap.html#soilwise-he-in-context",
+    "title": "SoilWise HE recap",
+    "section": "SoilWise-HE in Context",
+    "text": "SoilWise-HE in Context\nA Horizon Europe - Mission Soil - project (2024-2027)\n\nSoilWise aims to become a long-term European catalogue for soil knowledge and data.\nFocus on discoverability rather than replacing existing repositories.\nHarvests metadata from distributed sources.\nIntended as a future building block for the European Soil Observatory (EUSO)."
   },
   {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#interoperability-projects",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#interoperability-projects",
-    "title": "Interoperability and data governance",
-    "section": "Interoperability projects",
-    "text": "Interoperability projects\n\nparticipated in the Global Soil Map project (2009-2013)\nparticipated in the Africa Soil Information Service project (2009-2016)\nhosted the recent Soils for Africa project (2021-2025)\ncontributes to the African Soil Observatory project (2025-2029)\nhosts the WOSIS profiles database and the SoilGrids Global Soil Map (250m)"
+    "objectID": "slides/2026-soilwise-recap.html#core-challenge",
+    "href": "slides/2026-soilwise-recap.html#core-challenge",
+    "title": "SoilWise HE recap",
+    "section": "Core challenge",
+    "text": "Core challenge\nEurope’s soil information is fragmented across:\n\nAcademic repositories\nProject websites / portals / knowledge hubs\nGovernmental data catalogues\n3rd party platforms (youtube, linkedin, github)\n\nGoal: provide one integrated access point while respecting ownership and governance. Encourage sustainable publication, instead of refactoring existing publications."
   },
   {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#paul-van-genuchten",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#paul-van-genuchten",
-    "title": "Interoperability and data governance",
-    "section": "Paul van Genuchten",
-    "text": "Paul van Genuchten\n\nTrained as a soil scientist (Wageningen University, 1999)\nExtensive experience in spatial data and IT\nJoined ISRIC four years ago as a Data Infrastructure Specialist\nMaintains ISRIC’s data infrastructure and contributes to soil data management projects, with a focus on metadata and interoperability"
+    "objectID": "slides/2026-soilwise-recap.html#soilwise-technical-components",
+    "href": "slides/2026-soilwise-recap.html#soilwise-technical-components",
+    "title": "SoilWise HE recap",
+    "section": "SoilWise Technical Components",
+    "text": "SoilWise Technical Components\n\nMetadata harvesting\nCatalogue\nMetadata validation\nMetadata authoring\nMetadata transformation & harmonisation\nMetadata augmentation\nKnowledge graph\nNatural language querying\nData publication guidance\nData harmonisation"
   },
   {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#interoperability-and-data-governance",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#interoperability-and-data-governance",
-    "title": "Interoperability and data governance",
-    "section": "Interoperability and data governance",
-    "text": "Interoperability and data governance\n\nI was asked to present about these 2 topics\nInteroperability is a pillar of data governance\nBoth are large topics…"
+    "objectID": "slides/2026-soilwise-recap.html#diagram",
+    "href": "slides/2026-soilwise-recap.html#diagram",
+    "title": "SoilWise HE recap",
+    "section": "Diagram",
+    "text": "Diagram\n\n\n\n\n\nflowchart LR\n    S1[Source 1] --&gt;|harvest| h[(Ingested)]\n    S2[Source 2] --&gt;|harvest| h[(Ingested)]\n    h --&gt; HM{harmonise}\n    HM --&gt; h2[(Harmonised)]\n    h2 --&gt; AU{augment}\n    shkg[(Knowledge Graph)] --&gt; AU\n    AU --&gt; h3[(Search index)]"
   },
   {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#data-governance",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#data-governance",
-    "title": "Interoperability and data governance",
-    "section": "Data governance",
-    "text": "Data governance\n\nRoles, Responsibilities, and Accountability\nData Quality and Lifecycle Management\nPolicies, Standards, and Interoperability\nSecurity, Privacy, and Legal Compliance\nData Sharing, Access, and Value Creation"
+    "objectID": "slides/2026-soilwise-recap.html#euso-will-not-store-harmonized-data",
+    "href": "slides/2026-soilwise-recap.html#euso-will-not-store-harmonized-data",
+    "title": "SoilWise HE recap",
+    "section": "EUSO will not store (harmonized) data",
+    "text": "EUSO will not store (harmonized) data\nSoilWise primarily indexes metadata rather than replicating datasets.\n\nlower storage requirements\nrespect data ownership\nsupport distributed repositories\neasier integration of heterogeneous sources"
   },
   {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#fair-principles",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#fair-principles",
-    "title": "Interoperability and data governance",
-    "section": "FAIR principles",
-    "text": "FAIR principles\nThe FAIR principles provide a governance framework for data, from a reuse perspective:\n\nFindable\nAccessible\nInteroperable\nReusable"
+    "objectID": "slides/2026-soilwise-recap.html#typical-harvested-sources",
+    "href": "slides/2026-soilwise-recap.html#typical-harvested-sources",
+    "title": "SoilWise HE recap",
+    "section": "Typical harvested sources",
+    "text": "Typical harvested sources\n\nGovernment (INSPIRE / data.europa.eu)\nAcademia (CORDIS / OpenAire)\nEO portals (Copernicus)\nMeta repositories / knowledge hubs"
   },
   {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#soil-data-specifics",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#soil-data-specifics",
-    "title": "Interoperability and data governance",
-    "section": "Soil data specifics",
-    "text": "Soil data specifics\n\nlegacy data and formats\ninteraction with many other domains (agriculture, pollution, carbon sequestration, build environment, hydrology)\nManagement practices & LTE\nlarge number of soil indicators\nlong history of (local) practices"
+    "objectID": "slides/2026-soilwise-recap.html#harmonising-heterogeneous-sources",
+    "href": "slides/2026-soilwise-recap.html#harmonising-heterogeneous-sources",
+    "title": "SoilWise HE recap",
+    "section": "Harmonising heterogeneous sources",
+    "text": "Harmonising heterogeneous sources\nRepositories expose different schemas:\n\nDublin Core / DCAT\nISO 19139 / INSPIRE metadata\nDataCite / ARC / RO-Crate\nRepository-specific profiles"
   },
   {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#findable-data",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#findable-data",
-    "title": "Interoperability and data governance",
-    "section": "Findable data",
-    "text": "Findable data\nRich metadata searchable via a catalogue"
+    "objectID": "slides/2026-soilwise-recap.html#metadata-augmentation",
+    "href": "slides/2026-soilwise-recap.html#metadata-augmentation",
+    "title": "SoilWise HE recap",
+    "section": "Metadata Augmentation",
+    "text": "Metadata Augmentation\nSoilWise enriches records using:\n\nNLP\nscripts\nrule engines\nLLM-assisted approaches\n\nIncrease FAIRness without modifying the original source record."
   },
   {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#what-is-a-dataset",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#what-is-a-dataset",
-    "title": "Interoperability and data governance",
-    "section": "What is a dataset?",
-    "text": "What is a dataset?\n\ncivil cervant: a database which is continuously updated, exposed via an API\nacademic: a validated collection of records at a given point in time, which I can uniquely reference in my publication"
+    "objectID": "slides/2026-soilwise-recap.html#example-augmentations",
+    "href": "slides/2026-soilwise-recap.html#example-augmentations",
+    "title": "SoilWise HE recap",
+    "section": "Example augmentations",
+    "text": "Example augmentations\n\ninferred keywords\ninferred spatial scope\nontology mappings\nthematic classifications"
   },
   {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#datasets-as-a-source-for-digital-soil-mapping-dsm",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#datasets-as-a-source-for-digital-soil-mapping-dsm",
-    "title": "Interoperability and data governance",
-    "section": "Datasets as a source for digital soil mapping (DSM)",
-    "text": "Datasets as a source for digital soil mapping (DSM)\n\nDSM is the process of prediction of soil property distribution in space and time\nDSM efforts happen irragularly, based on latest snapshots of source data and covariates\ndata from the own organisation as well as remote sources\nthe academic view on dataset is more appropriate for DSM"
+    "objectID": "slides/2026-soilwise-recap.html#linking-metadata-to-shared-vocabularies",
+    "href": "slides/2026-soilwise-recap.html#linking-metadata-to-shared-vocabularies",
+    "title": "SoilWise HE recap",
+    "section": "Linking metadata to shared vocabularies",
+    "text": "Linking metadata to shared vocabularies\nMetadata augmentation connects records to:\n\nAGROVOC\nGEMET\nSoil terminology resources (GLOSIS/Glosolan/WRB)"
   },
   {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#use-of-repositories",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#use-of-repositories",
-    "title": "Interoperability and data governance",
-    "section": "Use of repositories",
-    "text": "Use of repositories\n\nEasy to find and reference\nFind today, find in 10 years time\nCommon data and knowledge repositories offer persitent storage over time\nAggregators (openaire, google) harvest from repositories to optimize findability"
+    "objectID": "slides/2026-soilwise-recap.html#benefits",
+    "href": "slides/2026-soilwise-recap.html#benefits",
+    "title": "SoilWise HE recap",
+    "section": "Benefits",
+    "text": "Benefits\n\nmultilingual discovery\nsynonym handling\nsemantic search\ncross-repository interoperability"
   },
   {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#persistent-identification-is-an-aspect-of-findability-identifiers",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#persistent-identification-is-an-aspect-of-findability-identifiers",
-    "title": "Interoperability and data governance",
-    "section": "Persistent Identification is an aspect of findability (identifiers)",
-    "text": "Persistent Identification is an aspect of findability (identifiers)\n\ndatasets should be uniquely identified (uuid)\nStrong push to adopt identification platforms such as DOI and Handle.net\nProper identification facilitates citation from reports/scientific articles\nFor large data, or specific use cases (map vizualisation), data can also be shared using an api or web service, but it complicates identification"
+    "objectID": "slides/2026-soilwise-recap.html#soilwise-shkg",
+    "href": "slides/2026-soilwise-recap.html#soilwise-shkg",
+    "title": "SoilWise HE recap",
+    "section": "SoilWise SHKG",
+    "text": "SoilWise SHKG\n\nDerived from selected documents using llm\nSKOS-centred\nlinked to external vocabularies\nconnected to soil-health indicators"
   },
   {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#accessible-data",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#accessible-data",
-    "title": "Interoperability and data governance",
-    "section": "Accessible data",
-    "text": "Accessible data\n\nData is made available through an open protocol (http)\nMetadata should still exist, even if the data itself is discarded\nMetadata Public; Data public, protected or internal"
+    "objectID": "slides/2026-soilwise-recap.html#w3id.orgeusoilvoc",
+    "href": "slides/2026-soilwise-recap.html#w3id.orgeusoilvoc",
+    "title": "SoilWise HE recap",
+    "section": "w3id.org/EUSoilVoc",
+    "text": "w3id.org/EUSoilVoc\n\nA vocabulary to facilitate data harmonization\nA hierarchy of soil properties and observation procedures\nInspired by Ansis Field and lab guide vocabulary\nChallenges on how to improve the content"
   },
   {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#tiered-access-and-national-stewardship",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#tiered-access-and-national-stewardship",
-    "title": "Interoperability and data governance",
-    "section": "Tiered access and national stewardship",
-    "text": "Tiered access and national stewardship\n\nAs open as possible, as closed as necessary\nAs data steward you should have control on access to the data, even when handed over to a secondary hosting provider (repository)\nAlternatively author the DOI of the data, arbitrary where the data is hosted\nUltimately the enclosed metadata indicates the usage restrictions of the data"
+    "objectID": "slides/2026-soilwise-recap.html#data-harmonisation",
+    "href": "slides/2026-soilwise-recap.html#data-harmonisation",
+    "title": "SoilWise HE recap",
+    "section": "Data harmonisation",
+    "text": "Data harmonisation\n\nExploring annotations of tabular data using RO-Crate / CSVW\nGeopackage format to snapshot soil observation systems\nFlows to transform between formats (csv, rdf, geopackage, gml)\nVizualise the possibilities of creating and using integrated datasets, by linking soil data to other domains"
   },
   {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#interoperable-data",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#interoperable-data",
-    "title": "Interoperability and data governance",
-    "section": "Interoperable data",
-    "text": "Interoperable data\nUse standardized data formats and controlled vocabularies to enable data exchange and reuse across tools and disciplines"
+    "objectID": "slides/2026-soilwise-recap.html#tabular-data-annotation",
+    "href": "slides/2026-soilwise-recap.html#tabular-data-annotation",
+    "title": "SoilWise HE recap",
+    "section": "Tabular data annotation",
+    "text": "Tabular data annotation\n\nannotate a csv"
   },
   {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#process-of-standardisation",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#process-of-standardisation",
-    "title": "Interoperability and data governance",
-    "section": "Process of standardisation",
-    "text": "Process of standardisation\n\nStandardised Operating procedure (Field and Laboratory)\n\nGSP Glosolan\nSoils for Africa project\n\nDescribe existing practices\nRefer to common vocabularies"
+    "objectID": "slides/2026-soilwise-recap.html#tabular-data-annotation-technologies",
+    "href": "slides/2026-soilwise-recap.html#tabular-data-annotation-technologies",
+    "title": "SoilWise HE recap",
+    "section": "Tabular data annotation technologies",
+    "text": "Tabular data annotation technologies\n\nschema.org\nCSVW\nRO-crate\nFrictionless data\nISO19110 Feature cataloguing"
   },
   {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#tabular-annotated",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#tabular-annotated",
-    "title": "Interoperability and data governance",
-    "section": "Tabular annotated",
-    "text": "Tabular annotated\n\ninteroperable"
+    "objectID": "slides/2026-soilwise-recap.html#sosa",
+    "href": "slides/2026-soilwise-recap.html#sosa",
+    "title": "SoilWise HE recap",
+    "section": "SOSA",
+    "text": "SOSA\n\nSOSA structure"
   },
   {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#role-of-common-vocabularies",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#role-of-common-vocabularies",
-    "title": "Interoperability and data governance",
-    "section": "Role of common vocabularies",
-    "text": "Role of common vocabularies\n\nThe use of common multi-lingual vocabularies provide a mechanism to describe data using universal definitions\nCommon vocabularies such as Agrovoc, WRB, GLOSIS, ISO11074, GEMET\nUse Agrovoc terms as keywords in metadata\nDescribe columns in a dataset using terms from GLOSIS\nExpress unit of measure using QUDT concepts"
+    "objectID": "slides/2026-soilwise-recap.html#geopackage-as-a-soil-data-exchange-format",
+    "href": "slides/2026-soilwise-recap.html#geopackage-as-a-soil-data-exchange-format",
+    "title": "SoilWise HE recap",
+    "section": "GeoPackage as a soil data exchange format",
+    "text": "GeoPackage as a soil data exchange format\n\nA relational database model oriented on the ISO28258/INSPIRE Soil database model\nFor operational soil information systems, a dump of the database at intervals could be facilitated using geopackage\nThe geopackage can act as a backend for an offline surveying app"
   },
   {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#reusable-data",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#reusable-data",
-    "title": "Interoperability and data governance",
-    "section": "Reusable data",
-    "text": "Reusable data\n\nDescribe the provenance of the data, so potential users understand if and how they can use the data.\nApply a relevant license; as open as possible, as closed as necessary"
+    "objectID": "slides/2026-soilwise-recap.html#remaining-challenges",
+    "href": "slides/2026-soilwise-recap.html#remaining-challenges",
+    "title": "SoilWise HE recap",
+    "section": "Remaining challenges",
+    "text": "Remaining challenges\n\nAggregated repositories offer vast amount of records, ingesting relevant items is a challenge, requires specific filters / user suggestions\nOntology alignment / Soil terminology harmonisation\nPost project institutionalisation"
   },
   {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#describe-a-dataset-using-rich-metadata-for-findability-and-resuability",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#describe-a-dataset-using-rich-metadata-for-findability-and-resuability",
-    "title": "Interoperability and data governance",
-    "section": "Describe a dataset using rich metadata for findability and resuability",
-    "text": "Describe a dataset using rich metadata for findability and resuability\n\nGeneric properties are covered in most metadata models\nMetadata model can be extended by adding a metadata sidecar file (RO-Crate approach)"
+    "objectID": "slides/2026-soilwise-recap.html#outlook",
+    "href": "slides/2026-soilwise-recap.html#outlook",
+    "title": "SoilWise HE recap",
+    "section": "Outlook",
+    "text": "Outlook\n\nRicher metadata augmentation\nExpanded knowledge graph\nAI-assisted discovery and reasoning"
   },
   {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#use-of-common-repositories",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#use-of-common-repositories",
-    "title": "Interoperability and data governance",
-    "section": "Use of common repositories",
-    "text": "Use of common repositories\n\nCommon repositories, such as Zenodo, OSF, Pangaea, Dataverse, offer many of the FAIR principles by default\nAs a contributor you are owner of the data\nData can be published with tiered access\nFunders may endorse the use of a certain repository\nUnderstand the jurisdiction of the country where the repository is hosted\nConsider the reliability of the repository (timespan 20-50 years)"
-  },
-  {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#some-data-publication-samples",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#some-data-publication-samples",
-    "title": "Interoperability and data governance",
-    "section": "Some data publication samples",
-    "text": "Some data publication samples\n\nSoils for Africa\nTanzania SIS\nKenya SIS"
-  },
-  {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#data-aggregators-are-not-a-good-fit-for-publishing-your-data",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#data-aggregators-are-not-a-good-fit-for-publishing-your-data",
-    "title": "Interoperability and data governance",
-    "section": "Data aggregators are not a good fit for publishing your data",
-    "text": "Data aggregators are not a good fit for publishing your data\n\nVarious soil data aggregators exist, which harmonize and clean soil data\nExamples such as ISRIC, ISDA, Varda\nThe aggregators are able to make good soil maps\nData contributed to an aggregator is out of your control\nInstead publish the data in a repository and share the DOI with the aggregator\nThe feedback from the aggregator about your data is actually very useful, make sure to retrieve it"
-  },
-  {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#frameworks-to-support-implementation",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#frameworks-to-support-implementation",
-    "title": "Interoperability and data governance",
-    "section": "Frameworks to support implementation",
-    "text": "Frameworks to support implementation\n\nCabi and Gates foundation prepared a framework to put the FAIR principles in action in the environmental domain.\nCabi, ISRIC and Gates foundation also prepared a framework for Soil Information System design.\nThe SIS framwork includes some case studies from various African countries."
-  },
-  {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#conclusions",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#conclusions",
-    "title": "Interoperability and data governance",
-    "section": "Conclusions",
-    "text": "Conclusions\n\nData governance is a wide topic, interoperability is an important pillar\nFAIR principles provide a framework for governance focussed on reuse\nSoil data is special for its specific use cases, interaction with many domains and long time span\nHarmonization is important, but do not replace the source data"
-  },
-  {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#questions",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#questions",
-    "title": "Interoperability and data governance",
-    "section": "Questions?",
-    "text": "Questions?"
-  },
-  {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#more-details-on-data-governance",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#more-details-on-data-governance",
-    "title": "Interoperability and data governance",
-    "section": "More details on data governance",
-    "text": "More details on data governance\nThe extra slides provide some details on the topic of data governance"
-  },
-  {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#roles-responsibilities-and-accountability",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#roles-responsibilities-and-accountability",
-    "title": "Interoperability and data governance",
-    "section": "Roles, Responsibilities, and Accountability",
-    "text": "Roles, Responsibilities, and Accountability\n\nDefine who owns, stewards, custodians, and uses data.\nEstablish decision-making bodies (e.g. data governance boards).\nClarify responsibilities across ministries, agencies, and local governments."
-  },
-  {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#data-quality-and-lifecycle-management",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#data-quality-and-lifecycle-management",
-    "title": "Interoperability and data governance",
-    "section": "Data Quality and Lifecycle Management",
-    "text": "Data Quality and Lifecycle Management\n\nEnsure data is accurate, complete, consistent, timely, and fit for purpose.\nDefine standards for data collection, validation, maintenance, archival, and disposal.\nMonitor and improve data quality through metrics and audits."
-  },
-  {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#policies-standards-and-interoperability",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#policies-standards-and-interoperability",
-    "title": "Interoperability and data governance",
-    "section": "Policies, Standards, and Interoperability",
-    "text": "Policies, Standards, and Interoperability\n\nDevelop common data standards, metadata, reference data, and vocabularies.\nPromote interoperability between government systems.\nStandardize formats, identifiers, APIs, and data models to enable data sharing"
-  },
-  {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#security-privacy-and-legal-compliance",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#security-privacy-and-legal-compliance",
-    "title": "Interoperability and data governance",
-    "section": "Security, Privacy, and Legal Compliance",
-    "text": "Security, Privacy, and Legal Compliance\n\nProtect sensitive and personal information.\nComply with relevant legislation (e.g. GDPR, freedom of information laws, records management requirements).\nDefine access controls, classification schemes, and procedures for handling breaches."
-  },
-  {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#tiered-access",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#tiered-access",
-    "title": "Interoperability and data governance",
-    "section": "Tiered access",
-    "text": "Tiered access\n\n\n\n\n\n\n\nUser\nLevel of access\n\n\n\n\nGeneral public\nAggregated statistics, maps, open datasets\n\n\nResearchers\nDetailed but anonymized observations under a data-sharing agreement\n\n\nGovernment agencies\nFull datasets needed for regulatory or policy purposes\n\n\nData stewards\nAbility to edit, correct, and approve records\n\n\nSystem administrators\nTechnical access to the platform, but not necessarily permission to use the data analytically"
-  },
-  {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#tiered-access-supports-governance-objectives",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#tiered-access-supports-governance-objectives",
-    "title": "Interoperability and data governance",
-    "section": "Tiered access supports governance objectives",
-    "text": "Tiered access supports governance objectives\n\nPrivacy and confidentiality: Protects personal, commercially sensitive, or nationally sensitive information.\nLegal compliance: Helps meet obligations under regulations such as GDPR, freedom of information laws, or sector-specific legislation.\nData integrity: Limits editing rights to authorized users, reducing the risk of accidental or unauthorized changes.\nNeed-to-know principle: Users receive only the information necessary for their role.\nEncouraging openness: Governments can publish as much data as possible while still protecting restricted information."
-  },
-  {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#data-sharing-access-and-value-creation",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#data-sharing-access-and-value-creation",
-    "title": "Interoperability and data governance",
-    "section": "Data Sharing, Access, and Value Creation",
-    "text": "Data Sharing, Access, and Value Creation\n\nEstablish policies and agreements for sharing data within government and with external stakeholders.\nBalance openness with confidentiality through open data, licensing, and access controls.\nPromote reuse of data for evidence-based policymaking, service delivery, transparency, and research."
-  },
-  {
-    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#these-five-aspects-are-often-supported-by-cross-cutting-activities-such-as",
-    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#these-five-aspects-are-often-supported-by-cross-cutting-activities-such-as",
-    "title": "Interoperability and data governance",
-    "section": "These five aspects are often supported by cross-cutting activities such as:",
-    "text": "These five aspects are often supported by cross-cutting activities such as:\n\nMetadata management\nMaster and reference data management\nRisk management\nTraining and capacity building\nMonitoring, compliance, and continuous improvement"
-  },
-  {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#isric---world-soil-information",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#isric---world-soil-information",
-    "title": "Open Source at ISRIC - World Soil Information",
+    "objectID": "slides/2026-metadataatisric.html#isric---world-soil-information",
+    "href": "slides/2026-metadataatisric.html#isric---world-soil-information",
+    "title": "(Meta)Data management at ISRIC - World Soil Information",
     "section": "ISRIC - World Soil Information",
-    "text": "ISRIC - World Soil Information\n\nFoundation funded by Dutch Government to maintain a global collection of reference soil samples (ISIS)\nCollect and harmonize soil observation data from around the globe (WOSIS)\nGlobally predict the distribution of soil properties (Soilgrids)\nCapacity building on soil data management at soil institutes around the globe (Academy)\nParticipate in research projects to innovate the soil sciences"
+    "text": "ISRIC - World Soil Information\n\nFoundation funded by Dutch Government on promoting soil awareness and advancing the use of soil information to help build a more sustainable future.\nMaintain a global collection of reference soil samples (ISIS)\nGlobally predict the distribution of soil properties (Soilgrids)\nCapacity building on soil data management at soil institutes around the globe (Academy)\nParticipate in research projects to innovate the soil sciences"
   },
   {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#world-soil-museum",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#world-soil-museum",
-    "title": "Open Source at ISRIC - World Soil Information",
+    "objectID": "slides/2026-metadataatisric.html#world-soil-museum",
+    "href": "slides/2026-metadataatisric.html#world-soil-museum",
+    "title": "(Meta)Data management at ISRIC - World Soil Information",
     "section": "World Soil Museum",
     "text": "World Soil Museum\n\nWorld Soil Museum by tinker.nl"
   },
   {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#soilwise",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#soilwise",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "Soilwise",
-    "text": "Soilwise\nSoilWise is a current Horizon Europe project to facilitate the mission soil with tooling and guidance on soil data and knowledge discovery, usage and publication. Practices from this presentation are endorsed and improved in the scope of this project."
+    "objectID": "slides/2026-metadataatisric.html#collection-of-reference-profiles",
+    "href": "slides/2026-metadataatisric.html#collection-of-reference-profiles",
+    "title": "(Meta)Data management at ISRIC - World Soil Information",
+    "section": "Collection of reference profiles",
+    "text": "Collection of reference profiles\n\nSamples of reference profiles"
   },
   {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#typical-use-cases-for-foss4g-software",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#typical-use-cases-for-foss4g-software",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "Typical use cases for FOSS(4G) software",
-    "text": "Typical use cases for FOSS(4G) software\n\nField data collection (OpenDataKit)\nHarmonize soil data (Hale, PostGres)\nPredict soil property distribution (R, Terra, GDAL)\nCataloguing (pygeometa, pycsw, geonetwork)\nData API’s (Mapserver, FastAPI, Virtuoso)\nContent management (Quarto, Drupal)\nGIS viewers (QGIS, Leaflet, TerriaJS)"
+    "objectID": "slides/2026-metadataatisric.html#metadata-flows-at-isric",
+    "href": "slides/2026-metadataatisric.html#metadata-flows-at-isric",
+    "title": "(Meta)Data management at ISRIC - World Soil Information",
+    "section": "(meta)data flows at isric",
+    "text": "(meta)data flows at isric\n\nMuseum exhibits and collection management\nParticipation in research projects (consortia)\nGlobal soil products\nCapacity building at national soil insititutes\nMeta studies on availability of works about a topic"
   },
   {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#osgeo-and-open-geospatial-consortium",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#osgeo-and-open-geospatial-consortium",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "OSGeo and Open GeoSpatial Consortium",
-    "text": "OSGeo and Open GeoSpatial Consortium\n\nThe OGC community provides standards for data api’s & data formats\nAs independent foundation we aim to be neutral to software vendors, offered by standardised api’s\nOSGeo tools are commonly OGC compliant, many innovations at OGC are driven by open source software\nOpen formats enable future backwards compatibility for today’s datasets"
+    "objectID": "slides/2026-metadataatisric.html#isric-academia",
+    "href": "slides/2026-metadataatisric.html#isric-academia",
+    "title": "(Meta)Data management at ISRIC - World Soil Information",
+    "section": "ISRIC & academia",
+    "text": "ISRIC & academia\n\nFoundation embedded in Wageningen University\nAdvance the soil sciences through research activities\nResearch deliverables are advertised in the academic domain through Citations and DOI"
   },
   {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#relevant-ogc-standards",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#relevant-ogc-standards",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "Relevant OGC standards",
-    "text": "Relevant OGC standards\n\nWeb Map Service, Web Coverage Service, Web Feature service, Catalogue service for the web\nSensor Observation Service (INSPIRE Soil is based on Observations&Measurements)\nGeoPackage (See INSPIRE Good Practice on GeoPackage)\nStyled Layer Descriptor (SLD)\nCloud Optimised GeoTiff (COG)\nOGC API - Records / STAC"
+    "objectID": "slides/2026-metadataatisric.html#isric-open-geospatial-consortium",
+    "href": "slides/2026-metadataatisric.html#isric-open-geospatial-consortium",
+    "title": "(Meta)Data management at ISRIC - World Soil Information",
+    "section": "ISRIC & Open GeoSpatial Consortium",
+    "text": "ISRIC & Open GeoSpatial Consortium\n\nSpatial distribution of soils explains our interest in spatial standards\nStandardised formats and protocols facilitate long term access to data\nNational soil institutes are exchanging soil data through OGC protocols"
   },
   {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#ogc-and-fair",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#ogc-and-fair",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "OGC and FAIR",
-    "text": "OGC and FAIR\n\nFAIR principles are popular in academia (and beyond)\nFAIR and OGC pursue slightly different goals, however OGC recently started a working group on open science\nAcademia assumes a dataset as a stable set of records, identified with a persistant identifier (DOI)\nNovel data formats allow subsetting via range requests, they may facilitate both uses (GeoParquet, COG)\nAlignment of vocabularies is relevant for both communities, not many tooling available (SKOS)"
+    "objectID": "slides/2026-metadataatisric.html#isric-open-source-software",
+    "href": "slides/2026-metadataatisric.html#isric-open-source-software",
+    "title": "(Meta)Data management at ISRIC - World Soil Information",
+    "section": "ISRIC & Open Source Software",
+    "text": "ISRIC & Open Source Software\n\nTracability of research outputs is facilitated by Open Source Software\nOSGeo tools are commonly OGC compliant, many innovations at OGC are driven by open source software\nOpen formats enable future backwards compatibility for today’s datasets\nSustainability of contributions to Open Source Software\nOpen Source software is often cost effective\nR - GDAL - GRASS - QGIS - Mapserver - pycsw - TerriaJS"
   },
   {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#about-me-a-shift-from-osgeo-developer-to-osgeo-user",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#about-me-a-shift-from-osgeo-developer-to-osgeo-user",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "About me; a Shift from OSGeo developer to OSGeo user",
-    "text": "About me; a Shift from OSGeo developer to OSGeo user\n\n3yrs ago, I shifted from software developer to software user\nCurrent tasks are Data science, DevOps\nNext slides present some experiences around OSGeo software from a user perspective"
+    "objectID": "slides/2026-metadataatisric.html#creation-of-soil-maps",
+    "href": "slides/2026-metadataatisric.html#creation-of-soil-maps",
+    "title": "(Meta)Data management at ISRIC - World Soil Information",
+    "section": "Creation of Soil Maps",
+    "text": "Creation of Soil Maps\n\nSoil Property Distribution is predicted by a random forest model on sampling data and covariates (geology, hydrology, satelite imagery)\nData is organised and produced in folders on a shared file system\nEffective metadata management is crucial for reproducability (and attribution)"
   },
   {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#mapserver",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#mapserver",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "Mapserver",
-    "text": "Mapserver\n\nWe work with a consultant from the mapserver developer community for expert advice and development\nSLD support, you can now use a SLD file (from QGIS) to configure the style of a layer\nCurrently working on Mapserver Homepage, presenting a list of the services available in a server\nI’m not following the mailinglist as much as needed"
+    "objectID": "slides/2026-metadataatisric.html#embedded-metadata-or-sidecar",
+    "href": "slides/2026-metadataatisric.html#embedded-metadata-or-sidecar",
+    "title": "(Meta)Data management at ISRIC - World Soil Information",
+    "section": "Embedded metadata or Sidecar",
+    "text": "Embedded metadata or Sidecar\n\nMetadata is automatically embedded in model outputs\nOr a sidecar metadata file is placed alongside a data file (readme.txt)\nWhich model to adopt?\n\nFacilitated by the format (MS Excel, GeoTiff, GeoPackage)\nCommon in the community (iso19115, DCAT, Datacite, schema.org)"
   },
   {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#terriajs",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#terriajs",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "TerriaJS",
-    "text": "TerriaJS\n\nWe use TerriaJS in 5-10 websites. Mostly to share our data products to potential users and stakeholders.\nAny frontend application typically has many potential improvements\nEspecially improvements around OGC interactions best be merged upstream\nThe TerriaJS community is not very aware of OGC standards, so it requires quite communication to land a Pull Request\nWe work with a frontend developer not related to the project, because it was difficult to reach out to direct contributors"
+    "objectID": "slides/2026-metadataatisric.html#a-set-of-tools-to-work-with-sidecar-files",
+    "href": "slides/2026-metadataatisric.html#a-set-of-tools-to-work-with-sidecar-files",
+    "title": "(Meta)Data management at ISRIC - World Soil Information",
+    "section": "A set of tools to work with sidecar files",
+    "text": "A set of tools to work with sidecar files\n\npygeometa converts sidecar files between models (mcf, iso, dcat, schema.org)\ngeodatacrawler crawls a (network) drive for sidecar files, as input for a catalogue\nMDME provides user friendly model driven metadata editing\nGit as a storage for sidecar files facilitates rich history and remote contributions"
   },
   {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#ckan",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#ckan",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "CKAN",
-    "text": "CKAN\n\nUniversity-support deployed a default instance of CKAN (+SOLR), however it appeared difficult to customise\nWe consulted a regional company knowledgable on CKAN implementations, they advised us to use the CKAN backend only and build a dedicated frontend\nThe spatial modules of CKAN seem not maintained\nWe decided not to continue with CKAN for now"
+    "objectID": "slides/2026-metadataatisric.html#data-model-metadata",
+    "href": "slides/2026-metadataatisric.html#data-model-metadata",
+    "title": "(Meta)Data management at ISRIC - World Soil Information",
+    "section": "Data model metadata",
+    "text": "Data model metadata\n\nIn soil sciences, a lot of observation data is collected\nObservation data is 75% metadata and 25% data (where, what, when, who, how)\nSoil institutes are endorsed to capture metadata as part of dataset metadata\nThe data model metadata is important information when harmonizing multiple datasets\nBut also to filter datasets by measured property in a catalogue"
   },
   {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#pycsw",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#pycsw",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "pycsw",
-    "text": "pycsw\n\nA minimalistic catalogue implementation, but very focussed on OGC standards support\nFrom introduction of OGC API’s, pycsw now has a user interface\nSometimes I get complaints that it is not as full featured as CKAN, but it’s not easy to understand what’s actually missing\nWe contributed to adding facet filters on OGC API Records and in pycsw\nA group in Norway is implementing a SOLR backend for pycsw, SOLR will improve search experience on large catalogues"
+    "objectID": "slides/2026-metadataatisric.html#csvw-approach-for-observation-data",
+    "href": "slides/2026-metadataatisric.html#csvw-approach-for-observation-data",
+    "title": "(Meta)Data management at ISRIC - World Soil Information",
+    "section": "CSVW approach for observation data",
+    "text": "CSVW approach for observation data\n\nin the Soilwise project we’re experimenting with users on annotating their observation data\nCSVW is a standard of W3C to annotate CSV columns so the data can be converted to a knowledge graph\nAverage soil scientiests experience the CSVW syntax as complex, we’re setting up tools to facilitate the conversion\nOther tools convert the Knowledge Graph data to GeoPackage"
   },
   {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#cloud-optimised-geotiff-gdal",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#cloud-optimised-geotiff-gdal",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "Cloud Optimised Geotiff / GDAL",
-    "text": "Cloud Optimised Geotiff / GDAL\n\nTiff is an important format for us, we have 100’s of GB of tiff data\nPreviously we would use tiff image pyramids to store global data, now switching to COG\nMapserver with a COG backend is many times faster then a plain tiff backend\nDirect access from web to COG is not feasible yet, because our tiff data does not use a mercator projection, many repositories do not allow CORS\nWe’re open to suggestions…"
+    "objectID": "slides/2026-metadataatisric.html#open-challenges",
+    "href": "slides/2026-metadataatisric.html#open-challenges",
+    "title": "(Meta)Data management at ISRIC - World Soil Information",
+    "section": "Open challenges",
+    "text": "Open challenges\n\nLimited metadata model in popular repositories such as Dataverse.nl, Zenodo.org, Pangea.de\nHow to use sidecar metadata when publishing data in repositories\nCommonly accepted vocabularies to reference observed soil properties and observation procedures"
   },
   {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#apache-superset",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#apache-superset",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "Apache Superset",
-    "text": "Apache Superset\n\nI really enjoy creating diagrams of arbitrary data\nUnfortunate that Superset is quite a complex tool with many dependencies (redis, postgres)"
-  },
-  {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#humboldt-alignment-editor-hale",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#humboldt-alignment-editor-hale",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "Humboldt Alignment Editor (HALE)",
-    "text": "Humboldt Alignment Editor (HALE)\n\nHale is an ETL tool for rich UML data models, such as soil observation data\nDevelopers tend to focus on exporting postgres data to INSPIRE GML, but our use case is often vice versa\nThe Wetransform team team supported us with a training and Q&A\nWith the experts available, we were productive in 2 days. It was crucial, GML has its peculiarities\nI notice our data scientists prefer data migration through R/Python scripts. However I see value in a visual Hale approach."
-  },
-  {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#quarto",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#quarto",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "Quarto",
-    "text": "Quarto\n\nStatic Site Generators fit our approach very well, performant, stable, secure\nSome colleagues have challenges with the markdown in gitlab (and prefer wordpress)\nIntially we started with hugo\nQuarto was used by our data scientists for documentation\nQuarto is less flexible, full featured, it generated these slides"
-  },
-  {
-    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#questions-comments",
-    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#questions-comments",
-    "title": "Open Source at ISRIC - World Soil Information",
-    "section": "Questions / Comments",
-    "text": "Questions / Comments\nFollow the links in the slides for more details…"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#about-us",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#about-us",
-    "title": "pygeometa project status",
-    "section": "About us",
-    "text": "About us\n\nTom Kralidis, Senior Geospatial Architect, Meteorological Service of Canada, OSGeo Board of Directors\nPaul van Genuchten, SDI specialist at ISRIC - World Soil Information, the Netherlands"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#intro-to-pygeometa",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#intro-to-pygeometa",
-    "title": "pygeometa project status",
-    "section": "Intro to pygeometa",
-    "text": "Intro to pygeometa\n\nPython package to manage metadata for geospatial datasets\nCreated in 2009\nOriginally named “pygdm” as part of larger internal geospatial data management workflow at Environment Canada\nPulled out as a standalone project (pygeometa) in 2014\nPublished to GitHub in 2015"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#architecture",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#architecture",
-    "title": "pygeometa project status",
-    "section": "Architecture",
-    "text": "Architecture\n\n\n\n\n\nHow pygeometa works"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf",
-    "title": "pygeometa project status",
-    "section": "The Metadata Control File (MCF)",
-    "text": "The Metadata Control File (MCF)\n{.fragment width=“100” .fig-align=“left”}"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf-1",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf-1",
-    "title": "pygeometa project status",
-    "section": "The Metadata Control File (MCF)",
-    "text": "The Metadata Control File (MCF)\n\nagnostic to any metadata format (abstract model)\nplain old YAML\nmigrated from .ini format in 0.2\nmultilingual support for text-based properties"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf-2",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf-2",
-    "title": "pygeometa project status",
-    "section": "The Metadata Control File (MCF)",
-    "text": "The Metadata Control File (MCF)\n\nbenefits from YAML features (anchors, references)\ndefined by a JSON schema\n\nmodel driven metadata workflow\nUIs\nin memory pipelines\n\noptimal for CI/CD and Git workflows (edit/publish)"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#supported-formats",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#supported-formats",
-    "title": "pygeometa project status",
-    "section": "Supported formats",
-    "text": "Supported formats\n\nDataset metadata\n\nISO 19115 / 19139 (rw)\nISO 19115-2 (w)\nWMO Core Metadata Profile\nOGC API - Records (rw)\nDCAT (w)\n\nGranule metadata\n\nSTAC (w)\n\nObserving Station metadata\n\nWMO WIGOS Metadata Standard (w)"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#pygeoapi-plugin",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#pygeoapi-plugin",
-    "title": "pygeometa project status",
-    "section": "pygeoapi plugin",
-    "text": "pygeoapi plugin\n\nfunctions exposed as OGC API - Processes endpoints via pygeoapi\nin pygeometa/pygeoapi_plugin.py\nlive examples on pygeoapi demo server\n\n{.fragment width=“100” .fig-align=“left”}"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#formats-and-extensibility",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#formats-and-extensibility",
-    "title": "pygeometa project status",
-    "section": "Formats and extensibility",
-    "text": "Formats and extensibility\n\nCan be any format/representation\nextending pygeometa.schemas.base.BaseOutputSchema\nGeneration is encapsulated\n\nXML: Jinja2\nJSON: Python json"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#recent-updates",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#recent-updates",
-    "title": "pygeometa project status",
-    "section": "Recent updates",
-    "text": "Recent updates\n\n0.19.0 (November 2025)\n\nsupport for schema.org\nupdate to Python 3.12\n\n0.18.0 (September 2025)\n\nsupport for Common Workflow Language (CWL)\n\n0.17.0 (July 2025)\n\nsupport for metadata autodetection"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#value-proposition-for-yaml-based-metadata-management",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#value-proposition-for-yaml-based-metadata-management",
-    "title": "pygeometa project status",
-    "section": "Value proposition for YAML based metadata management",
-    "text": "Value proposition for YAML based metadata management\n\nYAML is an optimal format for Git version control\nGit offers a fully traceable catalogue\nFile based metadata is easy to update with “search and replace”\n\nYAML can be composed and published in memory for automated pipelines"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#workflow-examples",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#workflow-examples",
-    "title": "pygeometa project status",
-    "section": "Workflow examples",
-    "text": "Workflow examples\n\nData explosion = metadata explosion\nTraditional workflow:\n\nstatic discovery metadata\n\nReal-time workflow:\n\nMomentum data\nOn-the-fly generation\nShip with or without payload"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#metadata-publication-use-cases",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#metadata-publication-use-cases",
-    "title": "pygeometa project status",
-    "section": "Metadata publication use cases",
-    "text": "Metadata publication use cases\nWe present 3 use cases to demonstrate the value of this approach:\n\nLand Soil Crop hubs (LSC)\nEarth Observation Exploitation Platform Common Architecture (EOEPCA)\nWMO Information System (WIS2)"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#land-soil-crop-hubs",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#land-soil-crop-hubs",
-    "title": "pygeometa project status",
-    "section": "Land Soil Crop hubs",
-    "text": "Land Soil Crop hubs\n\nPart of an EU funded research project, DeSIRA, to improve data sharing in the Land Soil Crop domain in East Africa\nImprove data & resources discovery, which are relevant to improve agriculture in East Africa"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#participatory-metadata-management",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#participatory-metadata-management",
-    "title": "pygeometa project status",
-    "section": "Participatory metadata management",
-    "text": "Participatory metadata management"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#pycsw",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#pycsw",
-    "title": "pygeometa project status",
-    "section": "pycsw",
-    "text": "pycsw\n\n\n\nRwanda LSC Catalogue"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#participatory-metadata-management-1",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#participatory-metadata-management-1",
-    "title": "pygeometa project status",
-    "section": "Participatory metadata management",
-    "text": "Participatory metadata management\n\nUsers initially provided metadata as lists in Microsoft Excel\nExcel rows converted to MCF and loaded to pycsw\nMCF Metadata is hosted in GitHub\nUsers contribute content (or register issues about content)"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#wmo-information-system-wis2",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#wmo-information-system-wis2",
-    "title": "pygeometa project status",
-    "section": "WMO Information System (WIS2)",
-    "text": "WMO Information System (WIS2)\n\nWMO WIS2 is a next generation data exchange system for Earth system data (weather/climate/water)\nEvent driven (Pub/Sub, MQTT), driven by OGC API - Records metadata and publication\nSet of tools adopted by regional weather offices to build up a global system"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#workflow-i",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#workflow-i",
-    "title": "pygeometa project status",
-    "section": "Workflow I",
-    "text": "Workflow I\n“No code”: Manage, verify and publish metadata using GitHub as a content management platform.\n\nMetadata files are managed as pygeometa MCF records\nGitHub Actions are used to verify, transform and publish notification messages to an MQTT broker\nFrom here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by pygeoapi) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client."
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#workflow-ii",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#workflow-ii",
-    "title": "pygeometa project status",
-    "section": "Workflow II",
-    "text": "Workflow II"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#takeaways",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#takeaways",
-    "title": "pygeometa project status",
-    "section": "Takeaways",
-    "text": "Takeaways\n\npygeometa is a small, ligthweight and composable metadata management utility\nMCF is an interesting and useful metadata format for embedded metadata in local file repositories\nGit storage and CI-CD workflows are a traceable, reproducible and participatory approach for metadata management\nOGC API - Records offers a clean machine and human friendly interface to metadata\n\npycsw\npygeoapi\nGeoNetwork Opensource"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#composability",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#composability",
-    "title": "pygeometa project status",
-    "section": "Composability",
-    "text": "Composability"
-  },
-  {
-    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#references",
-    "href": "slides/2025-foss4g-pygeometa-project-update.html#references",
-    "title": "pygeometa project status",
-    "section": "References",
-    "text": "References\n\npygeometa\npycsw.org\npyGeoDataCrawler\nOGC API - Records\nmapserver.org\nterria.io"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Select your deck:",
-    "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nMar 24, 2026\n\n\n(Meta)Data management at ISRIC - World Soil Information\n\n\nPaul van Genuchten\n\n\n\n\n\n\nAug 5, 2025\n\n\nA website on Github.io\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\nMay 16, 2026\n\n\nAUSO - Training on FAIR Soil Data\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNov 4, 2023\n\n\nAbandonded Project Websites -&gt; no\n\n\nPaul van Genuchten\n\n\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\nApr 30, 2025\n\n\nFAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects\n\n\nMickael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten\n\n\n\n\n\n\nMar 19, 2025\n\n\nFAIR intro for Digital Soil Mapping\n\n\nPaul van Genuchten\n\n\n\n\n\n\nFeb 5, 2026\n\n\nGIT flavoured modelling\n\n\nPaul van Genuchten\n\n\n\n\n\n\nAug 5, 2026\n\n\nInteroperability and data governance\n\n\nPaul van Genuchten\n\n\n\n\n\n\nJun 4, 2026\n\n\nInteroperable Soil Data\n\n\nPaul van Genuchten, Keiji Jindo, Monne Weghorst\n\n\n\n\n\n\nAug 6, 2025\n\n\nLSC-Hub Kenya; pending topics\n\n\nvan Genuchten, P.\n\n\n\n\n\n\nAug 5, 2025\n\n\nLSC-Hub components overview\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\nAug 5, 2025\n\n\nLSC-Hub development overview\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\nFeb 29, 2024\n\n\nMetadata for the rest of us\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\nJul 3, 2025\n\n\nOpen Source at ISRIC - World Soil Information\n\n\nPaul van Genuchten\n\n\n\n\n\n\nMay 20, 2024\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\nJul 3, 2024\n\n\nSDI maintenance DevOps style\n\n\nPaul van Genuchten\n\n\n\n\n\n\nDec 1, 2025\n\n\nSoil Information System for Africa\n\n\nPaul van Genuchten\n\n\n\n\n\n\nMay 6, 2025\n\n\nSoilWise HE progress report\n\n\nFenny van Egmond, Thaisa van der Woude, Paul van Genuchten, Jiarong Li\n\n\n\n\n\n\nJun 10, 2026\n\n\nSoilWise HE recap\n\n\nPaul van Genuchten\n\n\n\n\n\n\nJun 3, 2024\n\n\nSoilwise & Metadata\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNov 13, 2023\n\n\nWorkshop pygeoapi\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNov 20, 2025\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nJul 18, 2025\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nDec 6, 2024\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nJul 18, 2025\n\n\npygeometa project status 2025\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\n\n\n \n\n\ntype: default\n\n\n \n\n\n\n\n\n\nNo matching items"
+    "objectID": "slides/2026-metadataatisric.html#questions-comments",
+    "href": "slides/2026-metadataatisric.html#questions-comments",
+    "title": "(Meta)Data management at ISRIC - World Soil Information",
+    "section": "Questions / Comments?",
+    "text": "Questions / Comments?"
   },
   {
     "objectID": "slides/2025-foss4ge-pygeometa-project-update.html#about-us",
@@ -1435,242 +1141,669 @@
     "text": "References\n\npygeometa\npycsw.org v3.0b\npyGeoDataCrawler v1.3\nOGCAPI - Records v1.0\nmapserver.org v8.2\nterria.io"
   },
   {
-    "objectID": "slides/2026-metadataatisric.html#isric---world-soil-information",
-    "href": "slides/2026-metadataatisric.html#isric---world-soil-information",
-    "title": "(Meta)Data management at ISRIC - World Soil Information",
-    "section": "ISRIC - World Soil Information",
-    "text": "ISRIC - World Soil Information\n\nFoundation funded by Dutch Government on promoting soil awareness and advancing the use of soil information to help build a more sustainable future.\nMaintain a global collection of reference soil samples (ISIS)\nGlobally predict the distribution of soil properties (Soilgrids)\nCapacity building on soil data management at soil institutes around the globe (Academy)\nParticipate in research projects to innovate the soil sciences"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Select your deck:",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nMar 24, 2026\n\n\n(Meta)Data management at ISRIC - World Soil Information\n\n\nPaul van Genuchten\n\n\n\n\n\n\nAug 5, 2025\n\n\nA website on Github.io\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\nMay 16, 2026\n\n\nAUSO - Training on FAIR Soil Data\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNov 4, 2023\n\n\nAbandonded Project Websites -&gt; no\n\n\nPaul van Genuchten\n\n\n\n\n\n\nOct 19, 2023\n\n\nDocument your model data at minimal effort\n\n\nPaul van Genuchten, Giulio Genova\n\n\n\n\n\n\nApr 30, 2025\n\n\nFAIR EU soil vocabularies: an overview of joint efforts from some EU Soil Mission projects\n\n\nMickael Beaufils, Kathi Schleidt, Fenny van Egmond, Paul van Genuchten\n\n\n\n\n\n\nMar 19, 2025\n\n\nFAIR intro for Digital Soil Mapping\n\n\nPaul van Genuchten\n\n\n\n\n\n\nFeb 5, 2026\n\n\nGIT flavoured modelling\n\n\nPaul van Genuchten\n\n\n\n\n\n\nOct 15, 2026\n\n\nHow to best annotate csv data for interoperability\n\n\nPaul van Genuchten\n\n\n\n\n\n\nAug 5, 2026\n\n\nInteroperability and data governance\n\n\nPaul van Genuchten\n\n\n\n\n\n\nJun 4, 2026\n\n\nInteroperable Soil Data\n\n\nPaul van Genuchten, Keiji Jindo, Monne Weghorst\n\n\n\n\n\n\nAug 6, 2025\n\n\nLSC-Hub Kenya; pending topics\n\n\nvan Genuchten, P.\n\n\n\n\n\n\nAug 5, 2025\n\n\nLSC-Hub components overview\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\nAug 5, 2025\n\n\nLSC-Hub development overview\n\n\nvan Genuchten, P; van der Woude, T;\n\n\n\n\n\n\nFeb 29, 2024\n\n\nMetadata for the rest of us\n\n\nPaul van Genuchten, Tom Kralidis, Giulio Genova\n\n\n\n\n\n\nJul 3, 2025\n\n\nOpen Source at ISRIC - World Soil Information\n\n\nPaul van Genuchten\n\n\n\n\n\n\nMay 20, 2024\n\n\nParticipatory data catalogs to facilitate informed decision-making\n\n\nvan Genuchten, P; Genova, G; van der Woude, T; van Egmond, F; Fantappiè, M; Kempen, B; Kralidis, T;\n\n\n\n\n\n\nJul 3, 2024\n\n\nSDI maintenance DevOps style\n\n\nPaul van Genuchten\n\n\n\n\n\n\nDec 1, 2025\n\n\nSoil Information System for Africa\n\n\nPaul van Genuchten\n\n\n\n\n\n\nMay 6, 2025\n\n\nSoilWise HE progress report\n\n\nFenny van Egmond, Thaisa van der Woude, Paul van Genuchten, Jiarong Li\n\n\n\n\n\n\nJun 10, 2026\n\n\nSoilWise HE recap\n\n\nPaul van Genuchten\n\n\n\n\n\n\nJun 3, 2024\n\n\nSoilwise & Metadata\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNov 13, 2023\n\n\nWorkshop pygeoapi\n\n\nPaul van Genuchten\n\n\n\n\n\n\nNov 20, 2025\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nJul 18, 2025\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nDec 6, 2024\n\n\npygeometa project status\n\n\nTom Kralidis, Paul van Genuchten\n\n\n\n\n\n\nJul 18, 2025\n\n\npygeometa project status 2025\n\n\nPaul van Genuchten, Tom Kralidis\n\n\n\n\n\n\n \n\n\ntype: default\n\n\n \n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "slides/2026-metadataatisric.html#world-soil-museum",
-    "href": "slides/2026-metadataatisric.html#world-soil-museum",
-    "title": "(Meta)Data management at ISRIC - World Soil Information",
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#about-us",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#about-us",
+    "title": "pygeometa project status",
+    "section": "About us",
+    "text": "About us\n\nTom Kralidis, Senior Geospatial Architect, Meteorological Service of Canada, OSGeo Board of Directors\nPaul van Genuchten, SDI specialist at ISRIC - World Soil Information, the Netherlands"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#intro-to-pygeometa",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#intro-to-pygeometa",
+    "title": "pygeometa project status",
+    "section": "Intro to pygeometa",
+    "text": "Intro to pygeometa\n\nPython package to manage metadata for geospatial datasets\nCreated in 2009\nOriginally named “pygdm” as part of larger internal geospatial data management workflow at Environment Canada\nPulled out as a standalone project (pygeometa) in 2014\nPublished to GitHub in 2015"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#architecture",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#architecture",
+    "title": "pygeometa project status",
+    "section": "Architecture",
+    "text": "Architecture\n\n\n\n\n\nHow pygeometa works"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf",
+    "title": "pygeometa project status",
+    "section": "The Metadata Control File (MCF)",
+    "text": "The Metadata Control File (MCF)\n{.fragment width=“100” .fig-align=“left”}"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf-1",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf-1",
+    "title": "pygeometa project status",
+    "section": "The Metadata Control File (MCF)",
+    "text": "The Metadata Control File (MCF)\n\nagnostic to any metadata format (abstract model)\nplain old YAML\nmigrated from .ini format in 0.2\nmultilingual support for text-based properties"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf-2",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#the-metadata-control-file-mcf-2",
+    "title": "pygeometa project status",
+    "section": "The Metadata Control File (MCF)",
+    "text": "The Metadata Control File (MCF)\n\nbenefits from YAML features (anchors, references)\ndefined by a JSON schema\n\nmodel driven metadata workflow\nUIs\nin memory pipelines\n\noptimal for CI/CD and Git workflows (edit/publish)"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#supported-formats",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#supported-formats",
+    "title": "pygeometa project status",
+    "section": "Supported formats",
+    "text": "Supported formats\n\nDataset metadata\n\nISO 19115 / 19139 (rw)\nISO 19115-2 (w)\nWMO Core Metadata Profile\nOGC API - Records (rw)\nDCAT (w)\n\nGranule metadata\n\nSTAC (w)\n\nObserving Station metadata\n\nWMO WIGOS Metadata Standard (w)"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#pygeoapi-plugin",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#pygeoapi-plugin",
+    "title": "pygeometa project status",
+    "section": "pygeoapi plugin",
+    "text": "pygeoapi plugin\n\nfunctions exposed as OGC API - Processes endpoints via pygeoapi\nin pygeometa/pygeoapi_plugin.py\nlive examples on pygeoapi demo server\n\n{.fragment width=“100” .fig-align=“left”}"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#formats-and-extensibility",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#formats-and-extensibility",
+    "title": "pygeometa project status",
+    "section": "Formats and extensibility",
+    "text": "Formats and extensibility\n\nCan be any format/representation\nextending pygeometa.schemas.base.BaseOutputSchema\nGeneration is encapsulated\n\nXML: Jinja2\nJSON: Python json"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#recent-updates",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#recent-updates",
+    "title": "pygeometa project status",
+    "section": "Recent updates",
+    "text": "Recent updates\n\n0.19.0 (November 2025)\n\nsupport for schema.org\nupdate to Python 3.12\n\n0.18.0 (September 2025)\n\nsupport for Common Workflow Language (CWL)\n\n0.17.0 (July 2025)\n\nsupport for metadata autodetection"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#value-proposition-for-yaml-based-metadata-management",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#value-proposition-for-yaml-based-metadata-management",
+    "title": "pygeometa project status",
+    "section": "Value proposition for YAML based metadata management",
+    "text": "Value proposition for YAML based metadata management\n\nYAML is an optimal format for Git version control\nGit offers a fully traceable catalogue\nFile based metadata is easy to update with “search and replace”\n\nYAML can be composed and published in memory for automated pipelines"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#workflow-examples",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#workflow-examples",
+    "title": "pygeometa project status",
+    "section": "Workflow examples",
+    "text": "Workflow examples\n\nData explosion = metadata explosion\nTraditional workflow:\n\nstatic discovery metadata\n\nReal-time workflow:\n\nMomentum data\nOn-the-fly generation\nShip with or without payload"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#metadata-publication-use-cases",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#metadata-publication-use-cases",
+    "title": "pygeometa project status",
+    "section": "Metadata publication use cases",
+    "text": "Metadata publication use cases\nWe present 3 use cases to demonstrate the value of this approach:\n\nLand Soil Crop hubs (LSC)\nEarth Observation Exploitation Platform Common Architecture (EOEPCA)\nWMO Information System (WIS2)"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#land-soil-crop-hubs",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#land-soil-crop-hubs",
+    "title": "pygeometa project status",
+    "section": "Land Soil Crop hubs",
+    "text": "Land Soil Crop hubs\n\nPart of an EU funded research project, DeSIRA, to improve data sharing in the Land Soil Crop domain in East Africa\nImprove data & resources discovery, which are relevant to improve agriculture in East Africa"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#participatory-metadata-management",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#participatory-metadata-management",
+    "title": "pygeometa project status",
+    "section": "Participatory metadata management",
+    "text": "Participatory metadata management"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#pycsw",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#pycsw",
+    "title": "pygeometa project status",
+    "section": "pycsw",
+    "text": "pycsw\n\n\n\nRwanda LSC Catalogue"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#participatory-metadata-management-1",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#participatory-metadata-management-1",
+    "title": "pygeometa project status",
+    "section": "Participatory metadata management",
+    "text": "Participatory metadata management\n\nUsers initially provided metadata as lists in Microsoft Excel\nExcel rows converted to MCF and loaded to pycsw\nMCF Metadata is hosted in GitHub\nUsers contribute content (or register issues about content)"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#wmo-information-system-wis2",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#wmo-information-system-wis2",
+    "title": "pygeometa project status",
+    "section": "WMO Information System (WIS2)",
+    "text": "WMO Information System (WIS2)\n\nWMO WIS2 is a next generation data exchange system for Earth system data (weather/climate/water)\nEvent driven (Pub/Sub, MQTT), driven by OGC API - Records metadata and publication\nSet of tools adopted by regional weather offices to build up a global system"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#workflow-i",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#workflow-i",
+    "title": "pygeometa project status",
+    "section": "Workflow I",
+    "text": "Workflow I\n“No code”: Manage, verify and publish metadata using GitHub as a content management platform.\n\nMetadata files are managed as pygeometa MCF records\nGitHub Actions are used to verify, transform and publish notification messages to an MQTT broker\nFrom here, a metadata registrar is subscribed to the same MQTT broker and, on notification, verifies new/updated metadata and publishes to an OGC API - Records endpoint (powered by pygeoapi) using OGC API - Features - Part 4. The QGIS desktop application is then used to query the OGC API - Records endpoint using its MetaSearch search client."
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#workflow-ii",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#workflow-ii",
+    "title": "pygeometa project status",
+    "section": "Workflow II",
+    "text": "Workflow II"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#takeaways",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#takeaways",
+    "title": "pygeometa project status",
+    "section": "Takeaways",
+    "text": "Takeaways\n\npygeometa is a small, ligthweight and composable metadata management utility\nMCF is an interesting and useful metadata format for embedded metadata in local file repositories\nGit storage and CI-CD workflows are a traceable, reproducible and participatory approach for metadata management\nOGC API - Records offers a clean machine and human friendly interface to metadata\n\npycsw\npygeoapi\nGeoNetwork Opensource"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#composability",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#composability",
+    "title": "pygeometa project status",
+    "section": "Composability",
+    "text": "Composability"
+  },
+  {
+    "objectID": "slides/2025-foss4g-pygeometa-project-update.html#references",
+    "href": "slides/2025-foss4g-pygeometa-project-update.html#references",
+    "title": "pygeometa project status",
+    "section": "References",
+    "text": "References\n\npygeometa\npycsw.org\npyGeoDataCrawler\nOGC API - Records\nmapserver.org\nterria.io"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#isric---world-soil-information",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#isric---world-soil-information",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "ISRIC - World Soil Information",
+    "text": "ISRIC - World Soil Information\n\nFoundation funded by Dutch Government to maintain a global collection of reference soil samples (ISIS)\nCollect and harmonize soil observation data from around the globe (WOSIS)\nGlobally predict the distribution of soil properties (Soilgrids)\nCapacity building on soil data management at soil institutes around the globe (Academy)\nParticipate in research projects to innovate the soil sciences"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#world-soil-museum",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#world-soil-museum",
+    "title": "Open Source at ISRIC - World Soil Information",
     "section": "World Soil Museum",
     "text": "World Soil Museum\n\nWorld Soil Museum by tinker.nl"
   },
   {
-    "objectID": "slides/2026-metadataatisric.html#collection-of-reference-profiles",
-    "href": "slides/2026-metadataatisric.html#collection-of-reference-profiles",
-    "title": "(Meta)Data management at ISRIC - World Soil Information",
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#soilwise",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#soilwise",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Soilwise",
+    "text": "Soilwise\nSoilWise is a current Horizon Europe project to facilitate the mission soil with tooling and guidance on soil data and knowledge discovery, usage and publication. Practices from this presentation are endorsed and improved in the scope of this project."
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#typical-use-cases-for-foss4g-software",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#typical-use-cases-for-foss4g-software",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Typical use cases for FOSS(4G) software",
+    "text": "Typical use cases for FOSS(4G) software\n\nField data collection (OpenDataKit)\nHarmonize soil data (Hale, PostGres)\nPredict soil property distribution (R, Terra, GDAL)\nCataloguing (pygeometa, pycsw, geonetwork)\nData API’s (Mapserver, FastAPI, Virtuoso)\nContent management (Quarto, Drupal)\nGIS viewers (QGIS, Leaflet, TerriaJS)"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#osgeo-and-open-geospatial-consortium",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#osgeo-and-open-geospatial-consortium",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "OSGeo and Open GeoSpatial Consortium",
+    "text": "OSGeo and Open GeoSpatial Consortium\n\nThe OGC community provides standards for data api’s & data formats\nAs independent foundation we aim to be neutral to software vendors, offered by standardised api’s\nOSGeo tools are commonly OGC compliant, many innovations at OGC are driven by open source software\nOpen formats enable future backwards compatibility for today’s datasets"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#relevant-ogc-standards",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#relevant-ogc-standards",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Relevant OGC standards",
+    "text": "Relevant OGC standards\n\nWeb Map Service, Web Coverage Service, Web Feature service, Catalogue service for the web\nSensor Observation Service (INSPIRE Soil is based on Observations&Measurements)\nGeoPackage (See INSPIRE Good Practice on GeoPackage)\nStyled Layer Descriptor (SLD)\nCloud Optimised GeoTiff (COG)\nOGC API - Records / STAC"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#ogc-and-fair",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#ogc-and-fair",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "OGC and FAIR",
+    "text": "OGC and FAIR\n\nFAIR principles are popular in academia (and beyond)\nFAIR and OGC pursue slightly different goals, however OGC recently started a working group on open science\nAcademia assumes a dataset as a stable set of records, identified with a persistant identifier (DOI)\nNovel data formats allow subsetting via range requests, they may facilitate both uses (GeoParquet, COG)\nAlignment of vocabularies is relevant for both communities, not many tooling available (SKOS)"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#about-me-a-shift-from-osgeo-developer-to-osgeo-user",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#about-me-a-shift-from-osgeo-developer-to-osgeo-user",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "About me; a Shift from OSGeo developer to OSGeo user",
+    "text": "About me; a Shift from OSGeo developer to OSGeo user\n\n3yrs ago, I shifted from software developer to software user\nCurrent tasks are Data science, DevOps\nNext slides present some experiences around OSGeo software from a user perspective"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#mapserver",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#mapserver",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Mapserver",
+    "text": "Mapserver\n\nWe work with a consultant from the mapserver developer community for expert advice and development\nSLD support, you can now use a SLD file (from QGIS) to configure the style of a layer\nCurrently working on Mapserver Homepage, presenting a list of the services available in a server\nI’m not following the mailinglist as much as needed"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#terriajs",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#terriajs",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "TerriaJS",
+    "text": "TerriaJS\n\nWe use TerriaJS in 5-10 websites. Mostly to share our data products to potential users and stakeholders.\nAny frontend application typically has many potential improvements\nEspecially improvements around OGC interactions best be merged upstream\nThe TerriaJS community is not very aware of OGC standards, so it requires quite communication to land a Pull Request\nWe work with a frontend developer not related to the project, because it was difficult to reach out to direct contributors"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#ckan",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#ckan",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "CKAN",
+    "text": "CKAN\n\nUniversity-support deployed a default instance of CKAN (+SOLR), however it appeared difficult to customise\nWe consulted a regional company knowledgable on CKAN implementations, they advised us to use the CKAN backend only and build a dedicated frontend\nThe spatial modules of CKAN seem not maintained\nWe decided not to continue with CKAN for now"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#pycsw",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#pycsw",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "pycsw",
+    "text": "pycsw\n\nA minimalistic catalogue implementation, but very focussed on OGC standards support\nFrom introduction of OGC API’s, pycsw now has a user interface\nSometimes I get complaints that it is not as full featured as CKAN, but it’s not easy to understand what’s actually missing\nWe contributed to adding facet filters on OGC API Records and in pycsw\nA group in Norway is implementing a SOLR backend for pycsw, SOLR will improve search experience on large catalogues"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#cloud-optimised-geotiff-gdal",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#cloud-optimised-geotiff-gdal",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Cloud Optimised Geotiff / GDAL",
+    "text": "Cloud Optimised Geotiff / GDAL\n\nTiff is an important format for us, we have 100’s of GB of tiff data\nPreviously we would use tiff image pyramids to store global data, now switching to COG\nMapserver with a COG backend is many times faster then a plain tiff backend\nDirect access from web to COG is not feasible yet, because our tiff data does not use a mercator projection, many repositories do not allow CORS\nWe’re open to suggestions…"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#apache-superset",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#apache-superset",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Apache Superset",
+    "text": "Apache Superset\n\nI really enjoy creating diagrams of arbitrary data\nUnfortunate that Superset is quite a complex tool with many dependencies (redis, postgres)"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#humboldt-alignment-editor-hale",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#humboldt-alignment-editor-hale",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Humboldt Alignment Editor (HALE)",
+    "text": "Humboldt Alignment Editor (HALE)\n\nHale is an ETL tool for rich UML data models, such as soil observation data\nDevelopers tend to focus on exporting postgres data to INSPIRE GML, but our use case is often vice versa\nThe Wetransform team team supported us with a training and Q&A\nWith the experts available, we were productive in 2 days. It was crucial, GML has its peculiarities\nI notice our data scientists prefer data migration through R/Python scripts. However I see value in a visual Hale approach."
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#quarto",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#quarto",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Quarto",
+    "text": "Quarto\n\nStatic Site Generators fit our approach very well, performant, stable, secure\nSome colleagues have challenges with the markdown in gitlab (and prefer wordpress)\nIntially we started with hugo\nQuarto was used by our data scientists for documentation\nQuarto is less flexible, full featured, it generated these slides"
+  },
+  {
+    "objectID": "slides/20250703-foss4gnl-opensource-at-isric.html#questions-comments",
+    "href": "slides/20250703-foss4gnl-opensource-at-isric.html#questions-comments",
+    "title": "Open Source at ISRIC - World Soil Information",
+    "section": "Questions / Comments",
+    "text": "Questions / Comments\nFollow the links in the slides for more details…"
+  },
+  {
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#isric",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#isric",
+    "title": "Interoperability and data governance",
+    "section": "ISRIC",
+    "text": "ISRIC\n\nISRIC - World Soil Information has been founded in 1966 after designation to the Netherlands by Unesco, in close cooperation with FAO and IUSS\nThe institute with its unique global soil monolith collection is hosted at Wageningen University\nISRIC contributes to data collection and standardization efforts globally, with a special focus on Africa"
+  },
+  {
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#world-soil-museum",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#world-soil-museum",
+    "title": "Interoperability and data governance",
+    "section": "World Soil Museum",
+    "text": "World Soil Museum\n\nWorld Soil Museum by tinker.nl"
+  },
+  {
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#collection-of-reference-profiles",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#collection-of-reference-profiles",
+    "title": "Interoperability and data governance",
     "section": "Collection of reference profiles",
     "text": "Collection of reference profiles\n\nSamples of reference profiles"
   },
   {
-    "objectID": "slides/2026-metadataatisric.html#metadata-flows-at-isric",
-    "href": "slides/2026-metadataatisric.html#metadata-flows-at-isric",
-    "title": "(Meta)Data management at ISRIC - World Soil Information",
-    "section": "(meta)data flows at isric",
-    "text": "(meta)data flows at isric\n\nMuseum exhibits and collection management\nParticipation in research projects (consortia)\nGlobal soil products\nCapacity building at national soil insititutes\nMeta studies on availability of works about a topic"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#interoperability-projects",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#interoperability-projects",
+    "title": "Interoperability and data governance",
+    "section": "Interoperability projects",
+    "text": "Interoperability projects\n\nparticipated in the Global Soil Map project (2009-2013)\nparticipated in the Africa Soil Information Service project (2009-2016)\nhosted the recent Soils for Africa project (2021-2025)\ncontributes to the African Soil Observatory project (2025-2029)\nhosts the WOSIS profiles database and the SoilGrids Global Soil Map (250m)"
   },
   {
-    "objectID": "slides/2026-metadataatisric.html#isric-academia",
-    "href": "slides/2026-metadataatisric.html#isric-academia",
-    "title": "(Meta)Data management at ISRIC - World Soil Information",
-    "section": "ISRIC & academia",
-    "text": "ISRIC & academia\n\nFoundation embedded in Wageningen University\nAdvance the soil sciences through research activities\nResearch deliverables are advertised in the academic domain through Citations and DOI"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#paul-van-genuchten",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#paul-van-genuchten",
+    "title": "Interoperability and data governance",
+    "section": "Paul van Genuchten",
+    "text": "Paul van Genuchten\n\nTrained as a soil scientist (Wageningen University, 1999)\nExtensive experience in spatial data and IT\nJoined ISRIC four years ago as a Data Infrastructure Specialist\nTeam maintains ISRIC’s data infrastructure\ncontributes to soil data management projects, with a focus on metadata and interoperability"
   },
   {
-    "objectID": "slides/2026-metadataatisric.html#isric-open-geospatial-consortium",
-    "href": "slides/2026-metadataatisric.html#isric-open-geospatial-consortium",
-    "title": "(Meta)Data management at ISRIC - World Soil Information",
-    "section": "ISRIC & Open GeoSpatial Consortium",
-    "text": "ISRIC & Open GeoSpatial Consortium\n\nSpatial distribution of soils explains our interest in spatial standards\nStandardised formats and protocols facilitate long term access to data\nNational soil institutes are exchanging soil data through OGC protocols"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#interoperability-and-data-governance",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#interoperability-and-data-governance",
+    "title": "Interoperability and data governance",
+    "section": "Interoperability and data governance",
+    "text": "Interoperability and data governance\n\nI was asked to present about these 2 topics\nBoth are large topics…\nInteroperability is a pillar of data governance"
   },
   {
-    "objectID": "slides/2026-metadataatisric.html#isric-open-source-software",
-    "href": "slides/2026-metadataatisric.html#isric-open-source-software",
-    "title": "(Meta)Data management at ISRIC - World Soil Information",
-    "section": "ISRIC & Open Source Software",
-    "text": "ISRIC & Open Source Software\n\nTracability of research outputs is facilitated by Open Source Software\nOSGeo tools are commonly OGC compliant, many innovations at OGC are driven by open source software\nOpen formats enable future backwards compatibility for today’s datasets\nSustainability of contributions to Open Source Software\nOpen Source software is often cost effective\nR - GDAL - GRASS - QGIS - Mapserver - pycsw - TerriaJS"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#data-governance",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#data-governance",
+    "title": "Interoperability and data governance",
+    "section": "Data governance",
+    "text": "Data governance\n\nRoles, Responsibilities, and Accountability\nData Quality and Lifecycle Management\nPolicies, Standards, and Interoperability\nSecurity, Privacy, and Legal Compliance\nData Sharing, Access, and Value Creation"
   },
   {
-    "objectID": "slides/2026-metadataatisric.html#creation-of-soil-maps",
-    "href": "slides/2026-metadataatisric.html#creation-of-soil-maps",
-    "title": "(Meta)Data management at ISRIC - World Soil Information",
-    "section": "Creation of Soil Maps",
-    "text": "Creation of Soil Maps\n\nSoil Property Distribution is predicted by a random forest model on sampling data and covariates (geology, hydrology, satelite imagery)\nData is organised and produced in folders on a shared file system\nEffective metadata management is crucial for reproducability (and attribution)"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#soil-data-specifics",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#soil-data-specifics",
+    "title": "Interoperability and data governance",
+    "section": "Soil data specifics",
+    "text": "Soil data specifics\n\nInteraction with many other domains (agriculture, pollution, carbon sequestration, build environment, hydrology)\nProperty distribution data is predicted, not observed\nLong history of (local) practices and standardisation efforts\nLegacy data and formats"
   },
   {
-    "objectID": "slides/2026-metadataatisric.html#embedded-metadata-or-sidecar",
-    "href": "slides/2026-metadataatisric.html#embedded-metadata-or-sidecar",
-    "title": "(Meta)Data management at ISRIC - World Soil Information",
-    "section": "Embedded metadata or Sidecar",
-    "text": "Embedded metadata or Sidecar\n\nMetadata is automatically embedded in model outputs\nOr a sidecar metadata file is placed alongside a data file (readme.txt)\nWhich model to adopt?\n\nFacilitated by the format (MS Excel, GeoTiff, GeoPackage)\nCommon in the community (iso19115, DCAT, Datacite, schema.org)"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#fair-principles",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#fair-principles",
+    "title": "Interoperability and data governance",
+    "section": "FAIR principles",
+    "text": "FAIR principles\nThe FAIR principles provide a governance framework for data, from a reuse perspective:\n\nFindable\nAccessible\nInteroperable\nReusable"
   },
   {
-    "objectID": "slides/2026-metadataatisric.html#a-set-of-tools-to-work-with-sidecar-files",
-    "href": "slides/2026-metadataatisric.html#a-set-of-tools-to-work-with-sidecar-files",
-    "title": "(Meta)Data management at ISRIC - World Soil Information",
-    "section": "A set of tools to work with sidecar files",
-    "text": "A set of tools to work with sidecar files\n\npygeometa converts sidecar files between models (mcf, iso, dcat, schema.org)\ngeodatacrawler crawls a (network) drive for sidecar files, as input for a catalogue\nMDME provides user friendly model driven metadata editing\nGit as a storage for sidecar files facilitates rich history and remote contributions"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#findable-data",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#findable-data",
+    "title": "Interoperability and data governance",
+    "section": "Findable data",
+    "text": "Findable data\nRich metadata searchable via a catalogue\nLet’s try"
   },
   {
-    "objectID": "slides/2026-metadataatisric.html#data-model-metadata",
-    "href": "slides/2026-metadataatisric.html#data-model-metadata",
-    "title": "(Meta)Data management at ISRIC - World Soil Information",
-    "section": "Data model metadata",
-    "text": "Data model metadata\n\nIn soil sciences, a lot of observation data is collected\nObservation data is 75% metadata and 25% data (where, what, when, who, how)\nSoil institutes are endorsed to capture metadata as part of dataset metadata\nThe data model metadata is important information when harmonizing multiple datasets\nBut also to filter datasets by measured property in a catalogue"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#what-is-a-dataset",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#what-is-a-dataset",
+    "title": "Interoperability and data governance",
+    "section": "What is a dataset?",
+    "text": "What is a dataset?\n\ncivil cervant: a database which is continuously updated, exposed via an API\nacademic: a validated collection of records at a given point in time, which I can reference from my publication"
   },
   {
-    "objectID": "slides/2026-metadataatisric.html#csvw-approach-for-observation-data",
-    "href": "slides/2026-metadataatisric.html#csvw-approach-for-observation-data",
-    "title": "(Meta)Data management at ISRIC - World Soil Information",
-    "section": "CSVW approach for observation data",
-    "text": "CSVW approach for observation data\n\nin the Soilwise project we’re experimenting with users on annotating their observation data\nCSVW is a standard of W3C to annotate CSV columns so the data can be converted to a knowledge graph\nAverage soil scientiests experience the CSVW syntax as complex, we’re setting up tools to facilitate the conversion\nOther tools convert the Knowledge Graph data to GeoPackage"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#datasets-as-a-source-for-digital-soil-mapping-dsm",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#datasets-as-a-source-for-digital-soil-mapping-dsm",
+    "title": "Interoperability and data governance",
+    "section": "Datasets as a source for digital soil mapping (DSM)",
+    "text": "Datasets as a source for digital soil mapping (DSM)\n\nDSM is the process of prediction of soil property distribution in space and time\nDSM efforts happen irragularly, based on latest snapshots of source data and covariates\nData from the own organisation as well as remote sources\nThe academic view on dataset is more appropriate for DSM"
   },
   {
-    "objectID": "slides/2026-metadataatisric.html#open-challenges",
-    "href": "slides/2026-metadataatisric.html#open-challenges",
-    "title": "(Meta)Data management at ISRIC - World Soil Information",
-    "section": "Open challenges",
-    "text": "Open challenges\n\nLimited metadata model in popular repositories such as Dataverse.nl, Zenodo.org, Pangea.de\nHow to use sidecar metadata when publishing data in repositories\nCommonly accepted vocabularies to reference observed soil properties and observation procedures"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#use-of-repositories",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#use-of-repositories",
+    "title": "Interoperability and data governance",
+    "section": "Use of repositories",
+    "text": "Use of repositories\n\nEasy to find and reference\nFind today, find in 10 years time\nCommon data and knowledge repositories offer persitent storage over time\nAggregators (openaire, google) harvest from repositories to optimize findability"
   },
   {
-    "objectID": "slides/2026-metadataatisric.html#questions-comments",
-    "href": "slides/2026-metadataatisric.html#questions-comments",
-    "title": "(Meta)Data management at ISRIC - World Soil Information",
-    "section": "Questions / Comments?",
-    "text": "Questions / Comments?"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#persistent-identification-is-an-aspect-of-findability-identifiers",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#persistent-identification-is-an-aspect-of-findability-identifiers",
+    "title": "Interoperability and data governance",
+    "section": "Persistent Identification is an aspect of findability (identifiers)",
+    "text": "Persistent Identification is an aspect of findability (identifiers)\n\nDatasets should be uniquely identified (uuid)\nStrong push to adopt identification platforms such as DOI and Handle.net\nProper identification facilitates citation from reports/scientific articles\nFor large data, or specific use cases (map vizualisation), data can also be shared using an api or web service, but it complicates identification"
   },
   {
-    "objectID": "slides/2026-soilwise-recap.html#soilwise-he-in-context",
-    "href": "slides/2026-soilwise-recap.html#soilwise-he-in-context",
-    "title": "SoilWise HE recap",
-    "section": "SoilWise-HE in Context",
-    "text": "SoilWise-HE in Context\nA Horizon Europe - Mission Soil - project (2024-2027)\n\nSoilWise aims to become a long-term European catalogue for soil knowledge and data.\nFocus on discoverability rather than replacing existing repositories.\nHarvests metadata from distributed sources.\nIntended as a future building block for the European Soil Observatory (EUSO)."
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#accessible-data",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#accessible-data",
+    "title": "Interoperability and data governance",
+    "section": "Accessible data",
+    "text": "Accessible data\n\nData is made available through an open protocol (http)\nMetadata should still exist, even if the data itself is no longer available\nMetadata Public; Data public, protected or internal\nUse an Open Format"
   },
   {
-    "objectID": "slides/2026-soilwise-recap.html#core-challenge",
-    "href": "slides/2026-soilwise-recap.html#core-challenge",
-    "title": "SoilWise HE recap",
-    "section": "Core challenge",
-    "text": "Core challenge\nEurope’s soil information is fragmented across:\n\nAcademic repositories\nProject websites / portals / knowledge hubs\nGovernmental data catalogues\n3rd party platforms (youtube, linkedin, github)\n\nGoal: provide one integrated access point while respecting ownership and governance. Encourage sustainable publication, instead of refactoring existing publications."
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#tiered-access-and-national-stewardship",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#tiered-access-and-national-stewardship",
+    "title": "Interoperability and data governance",
+    "section": "Tiered access and national stewardship",
+    "text": "Tiered access and national stewardship\n\nAs open as possible, as closed as necessary\nAs data steward you should have control on access to the data, even when handed over to a secondary hosting provider (repository)\nAlternatively author the DOI of the data, arbitrary where the data is hosted\nUltimately the enclosed metadata indicates the usage restrictions of the data"
   },
   {
-    "objectID": "slides/2026-soilwise-recap.html#soilwise-technical-components",
-    "href": "slides/2026-soilwise-recap.html#soilwise-technical-components",
-    "title": "SoilWise HE recap",
-    "section": "SoilWise Technical Components",
-    "text": "SoilWise Technical Components\n\nMetadata harvesting\nCatalogue\nMetadata validation\nMetadata authoring\nMetadata transformation & harmonisation\nMetadata augmentation\nKnowledge graph\nNatural language querying\nData publication guidance\nData harmonisation"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#interoperable-data",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#interoperable-data",
+    "title": "Interoperability and data governance",
+    "section": "Interoperable data",
+    "text": "Interoperable data\nUse standardized data formats and controlled vocabularies to enable data exchange and reuse across tools and disciplines"
   },
   {
-    "objectID": "slides/2026-soilwise-recap.html#diagram",
-    "href": "slides/2026-soilwise-recap.html#diagram",
-    "title": "SoilWise HE recap",
-    "section": "Diagram",
-    "text": "Diagram\n\n\n\n\n\nflowchart LR\n    S1[Source 1] --&gt;|harvest| h[(Ingested)]\n    S2[Source 2] --&gt;|harvest| h[(Ingested)]\n    h --&gt; HM{harmonise}\n    HM --&gt; h2[(Harmonised)]\n    h2 --&gt; AU{augment}\n    shkg[(Knowledge Graph)] --&gt; AU\n    AU --&gt; h3[(Search index)]"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#process-of-standardisation",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#process-of-standardisation",
+    "title": "Interoperability and data governance",
+    "section": "Process of standardisation",
+    "text": "Process of standardisation\n\nIf you standardise upfront, you don’t need to harmonize later\nStandardised Operating procedure (Field and Laboratory)\n\nGSP Glosolan\nSoils for Africa project\n\nDescribe the procedure used to collect or process the data\nRefer to common vocabularies"
   },
   {
-    "objectID": "slides/2026-soilwise-recap.html#euso-will-not-store-harmonized-data",
-    "href": "slides/2026-soilwise-recap.html#euso-will-not-store-harmonized-data",
-    "title": "SoilWise HE recap",
-    "section": "EUSO will not store (harmonized) data",
-    "text": "EUSO will not store (harmonized) data\nSoilWise primarily indexes metadata rather than replicating datasets.\n\nlower storage requirements\nrespect data ownership\nsupport distributed repositories\neasier integration of heterogeneous sources"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#tabular-annotated",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#tabular-annotated",
+    "title": "Interoperability and data governance",
+    "section": "Tabular annotated",
+    "text": "Tabular annotated\n\ninteroperable"
   },
   {
-    "objectID": "slides/2026-soilwise-recap.html#typical-harvested-sources",
-    "href": "slides/2026-soilwise-recap.html#typical-harvested-sources",
-    "title": "SoilWise HE recap",
-    "section": "Typical harvested sources",
-    "text": "Typical harvested sources\n\nGovernment (INSPIRE / data.europa.eu)\nAcademia (CORDIS / OpenAire)\nEO portals (Copernicus)\nMeta repositories / knowledge hubs"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#role-of-common-vocabularies",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#role-of-common-vocabularies",
+    "title": "Interoperability and data governance",
+    "section": "Role of common vocabularies",
+    "text": "Role of common vocabularies\n\nThe use of common multi-lingual vocabularies provide a mechanism to describe data using universal definitions\nCommon vocabularies such as Agrovoc, WRB, GLOSIS, ISO11074, GEMET\nUse Agrovoc terms as keywords in metadata\nDescribe columns in a dataset using terms from GLOSIS\nExpress unit of measure using QUDT concepts"
   },
   {
-    "objectID": "slides/2026-soilwise-recap.html#harmonising-heterogeneous-sources",
-    "href": "slides/2026-soilwise-recap.html#harmonising-heterogeneous-sources",
-    "title": "SoilWise HE recap",
-    "section": "Harmonising heterogeneous sources",
-    "text": "Harmonising heterogeneous sources\nRepositories expose different schemas:\n\nDublin Core / DCAT\nISO 19139 / INSPIRE metadata\nDataCite / ARC / RO-Crate\nRepository-specific profiles"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#reusable-data",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#reusable-data",
+    "title": "Interoperability and data governance",
+    "section": "Reusable data",
+    "text": "Reusable data\n\nDescribe the provenance of the data, so potential users understand if and how they can use the data.\nApply a relevant license; as open as possible, as closed as necessary"
   },
   {
-    "objectID": "slides/2026-soilwise-recap.html#metadata-augmentation",
-    "href": "slides/2026-soilwise-recap.html#metadata-augmentation",
-    "title": "SoilWise HE recap",
-    "section": "Metadata Augmentation",
-    "text": "Metadata Augmentation\nSoilWise enriches records using:\n\nNLP\nscripts\nrule engines\nLLM-assisted approaches\n\nIncrease FAIRness without modifying the original source record."
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#describe-a-dataset-using-rich-metadata-for-findability-and-resuability",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#describe-a-dataset-using-rich-metadata-for-findability-and-resuability",
+    "title": "Interoperability and data governance",
+    "section": "Describe a dataset using rich metadata for findability and resuability",
+    "text": "Describe a dataset using rich metadata for findability and resuability\n\nGeneric properties are covered in most metadata models\nMetadata model can be extended by adding a metadata sidecar file (RO-Crate approach)"
   },
   {
-    "objectID": "slides/2026-soilwise-recap.html#example-augmentations",
-    "href": "slides/2026-soilwise-recap.html#example-augmentations",
-    "title": "SoilWise HE recap",
-    "section": "Example augmentations",
-    "text": "Example augmentations\n\ninferred keywords\ninferred spatial scope\nontology mappings\nthematic classifications"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#use-of-common-repositories",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#use-of-common-repositories",
+    "title": "Interoperability and data governance",
+    "section": "Use of common repositories",
+    "text": "Use of common repositories\n\nCommon repositories, such as Zenodo, OSF, Pangaea, Dataverse, offer many of the FAIR principles by default\nAs a contributor you are owner of the data\nData can be published with tiered access\nFunders may endorse the use of a certain repository\nUnderstand the jurisdiction of the country where the repository is hosted\nConsider the reliability of the repository (timespan 20-50 years)"
   },
   {
-    "objectID": "slides/2026-soilwise-recap.html#linking-metadata-to-shared-vocabularies",
-    "href": "slides/2026-soilwise-recap.html#linking-metadata-to-shared-vocabularies",
-    "title": "SoilWise HE recap",
-    "section": "Linking metadata to shared vocabularies",
-    "text": "Linking metadata to shared vocabularies\nMetadata augmentation connects records to:\n\nAGROVOC\nGEMET\nSoil terminology resources (GLOSIS/Glosolan/WRB)"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#some-data-publication-samples",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#some-data-publication-samples",
+    "title": "Interoperability and data governance",
+    "section": "Some data publication samples",
+    "text": "Some data publication samples\n\nSoils for Africa\nTanzania SIS\nKenya SIS"
   },
   {
-    "objectID": "slides/2026-soilwise-recap.html#benefits",
-    "href": "slides/2026-soilwise-recap.html#benefits",
-    "title": "SoilWise HE recap",
-    "section": "Benefits",
-    "text": "Benefits\n\nmultilingual discovery\nsynonym handling\nsemantic search\ncross-repository interoperability"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#data-aggregators-are-not-a-good-fit-for-publishing-your-data",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#data-aggregators-are-not-a-good-fit-for-publishing-your-data",
+    "title": "Interoperability and data governance",
+    "section": "Data aggregators are not a good fit for publishing your data",
+    "text": "Data aggregators are not a good fit for publishing your data\n\nVarious soil data aggregators exist, which harmonize and clean soil data\nExamples such as ISRIC, ISDA, Varda\nThe aggregators are able to make good soil maps\nData contributed to an aggregator is out of your control\nInstead publish the data in a repository and share the DOI with the aggregator\nThe feedback from the aggregator about your data is actually very useful, make sure to retrieve it"
   },
   {
-    "objectID": "slides/2026-soilwise-recap.html#soilwise-shkg",
-    "href": "slides/2026-soilwise-recap.html#soilwise-shkg",
-    "title": "SoilWise HE recap",
-    "section": "SoilWise SHKG",
-    "text": "SoilWise SHKG\n\nDerived from selected documents using llm\nSKOS-centred\nlinked to external vocabularies\nconnected to soil-health indicators"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#frameworks-to-support-implementation",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#frameworks-to-support-implementation",
+    "title": "Interoperability and data governance",
+    "section": "Frameworks to support implementation",
+    "text": "Frameworks to support implementation\n\nCabi and Gates foundation prepared a framework to put the FAIR principles in action in the environmental domain.\nCabi, ISRIC and Gates foundation also prepared a framework for Soil Information System design.\nThe SIS framwork includes some case studies from various African countries."
   },
   {
-    "objectID": "slides/2026-soilwise-recap.html#w3id.orgeusoilvoc",
-    "href": "slides/2026-soilwise-recap.html#w3id.orgeusoilvoc",
-    "title": "SoilWise HE recap",
-    "section": "w3id.org/EUSoilVoc",
-    "text": "w3id.org/EUSoilVoc\n\nA vocabulary to facilitate data harmonization\nA hierarchy of soil properties and observation procedures\nInspired by Ansis Field and lab guide vocabulary\nChallenges on how to improve the content"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#conclusions",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#conclusions",
+    "title": "Interoperability and data governance",
+    "section": "Conclusions",
+    "text": "Conclusions\n\nData governance is a wide topic, interoperability is an important pillar\nFAIR principles provide a framework for governance focussed on reuse\nSoil data is special for its specific use cases, interaction with many domains and long time span\nHarmonization is important, but do not replace the source data"
   },
   {
-    "objectID": "slides/2026-soilwise-recap.html#data-harmonisation",
-    "href": "slides/2026-soilwise-recap.html#data-harmonisation",
-    "title": "SoilWise HE recap",
-    "section": "Data harmonisation",
-    "text": "Data harmonisation\n\nExploring annotations of tabular data using RO-Crate / CSVW\nGeopackage format to snapshot soil observation systems\nFlows to transform between formats (csv, rdf, geopackage, gml)\nVizualise the possibilities of creating and using integrated datasets, by linking soil data to other domains"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#questions",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#questions",
+    "title": "Interoperability and data governance",
+    "section": "Questions?",
+    "text": "Questions?\nElse I thank you very much for your interest. I hope I have been able to trigger some ideas. Let’s continue the conversation soon."
   },
   {
-    "objectID": "slides/2026-soilwise-recap.html#tabular-data-annotation",
-    "href": "slides/2026-soilwise-recap.html#tabular-data-annotation",
-    "title": "SoilWise HE recap",
-    "section": "Tabular data annotation",
-    "text": "Tabular data annotation\n\nannotate a csv"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#more-details-on-data-governance",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#more-details-on-data-governance",
+    "title": "Interoperability and data governance",
+    "section": "More details on data governance",
+    "text": "More details on data governance\nThe extra slides provide some details on the topic of data governance"
   },
   {
-    "objectID": "slides/2026-soilwise-recap.html#tabular-data-annotation-technologies",
-    "href": "slides/2026-soilwise-recap.html#tabular-data-annotation-technologies",
-    "title": "SoilWise HE recap",
-    "section": "Tabular data annotation technologies",
-    "text": "Tabular data annotation technologies\n\nschema.org\nCSVW\nRO-crate\nFrictionless data\nISO19110 Feature cataloguing"
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#roles-responsibilities-and-accountability",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#roles-responsibilities-and-accountability",
+    "title": "Interoperability and data governance",
+    "section": "Roles, Responsibilities, and Accountability",
+    "text": "Roles, Responsibilities, and Accountability\n\nDefine who owns, stewards, custodians, and uses data.\nEstablish decision-making bodies (e.g. data governance boards).\nClarify responsibilities across ministries, agencies, and local governments."
   },
   {
-    "objectID": "slides/2026-soilwise-recap.html#sosa",
-    "href": "slides/2026-soilwise-recap.html#sosa",
-    "title": "SoilWise HE recap",
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#data-quality-and-lifecycle-management",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#data-quality-and-lifecycle-management",
+    "title": "Interoperability and data governance",
+    "section": "Data Quality and Lifecycle Management",
+    "text": "Data Quality and Lifecycle Management\n\nEnsure data is accurate, complete, consistent, timely, and fit for purpose.\nDefine standards for data collection, validation, maintenance, archival, and disposal.\nMonitor and improve data quality through metrics and audits."
+  },
+  {
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#policies-standards-and-interoperability",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#policies-standards-and-interoperability",
+    "title": "Interoperability and data governance",
+    "section": "Policies, Standards, and Interoperability",
+    "text": "Policies, Standards, and Interoperability\n\nDevelop common data standards, metadata, reference data, and vocabularies.\nPromote interoperability between government systems.\nStandardize formats, identifiers, APIs, and data models to enable data sharing"
+  },
+  {
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#security-privacy-and-legal-compliance",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#security-privacy-and-legal-compliance",
+    "title": "Interoperability and data governance",
+    "section": "Security, Privacy, and Legal Compliance",
+    "text": "Security, Privacy, and Legal Compliance\n\nProtect sensitive and personal information.\nComply with relevant legislation (e.g. GDPR, freedom of information laws, records management requirements).\nDefine access controls, classification schemes, and procedures for handling breaches."
+  },
+  {
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#tiered-access",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#tiered-access",
+    "title": "Interoperability and data governance",
+    "section": "Tiered access",
+    "text": "Tiered access\n\n\n\n\n\n\n\nUser\nLevel of access\n\n\n\n\nGeneral public\nAggregated statistics, maps, open datasets\n\n\nResearchers\nDetailed but anonymized observations under a data-sharing agreement\n\n\nGovernment agencies\nFull datasets needed for regulatory or policy purposes\n\n\nData stewards\nAbility to edit, correct, and approve records\n\n\nSystem administrators\nTechnical access to the platform, but not necessarily permission to use the data analytically"
+  },
+  {
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#tiered-access-supports-governance-objectives",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#tiered-access-supports-governance-objectives",
+    "title": "Interoperability and data governance",
+    "section": "Tiered access supports governance objectives",
+    "text": "Tiered access supports governance objectives\n\nPrivacy and confidentiality: Protects personal, commercially sensitive, or nationally sensitive information.\nLegal compliance: Helps meet obligations under regulations such as GDPR, freedom of information laws, or sector-specific legislation.\nData integrity: Limits editing rights to authorized users, reducing the risk of accidental or unauthorized changes.\nNeed-to-know principle: Users receive only the information necessary for their role.\nEncouraging openness: Governments can publish as much data as possible while still protecting restricted information."
+  },
+  {
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#data-sharing-access-and-value-creation",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#data-sharing-access-and-value-creation",
+    "title": "Interoperability and data governance",
+    "section": "Data Sharing, Access, and Value Creation",
+    "text": "Data Sharing, Access, and Value Creation\n\nEstablish policies and agreements for sharing data within government and with external stakeholders.\nBalance openness with confidentiality through open data, licensing, and access controls.\nPromote reuse of data for evidence-based policymaking, service delivery, transparency, and research."
+  },
+  {
+    "objectID": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#these-five-aspects-are-often-supported-by-cross-cutting-activities-such-as",
+    "href": "slides/2026-soil-information-systems-for-decision-making-in-africa.html#these-five-aspects-are-often-supported-by-cross-cutting-activities-such-as",
+    "title": "Interoperability and data governance",
+    "section": "These five aspects are often supported by cross-cutting activities such as:",
+    "text": "These five aspects are often supported by cross-cutting activities such as:\n\nMetadata management\nMaster and reference data management\nRisk management\nTraining and capacity building\nMonitoring, compliance, and continuous improvement"
+  },
+  {
+    "objectID": "slides/2026-soilwise-wddc-fair.html#contents",
+    "href": "slides/2026-soilwise-wddc-fair.html#contents",
+    "title": "How to best annotate csv data for interoperability",
+    "section": "Contents",
+    "text": "Contents\n\nMission Soil & SOILWISE\nInteroperable soil data sharing\nBit of History\nWhere we got stuck\nHow we (likely) proceed\nSuggestions from the audience"
+  },
+  {
+    "objectID": "slides/2026-soilwise-wddc-fair.html#mission-soil",
+    "href": "slides/2026-soilwise-wddc-fair.html#mission-soil",
+    "title": "How to best annotate csv data for interoperability",
+    "section": "Mission Soil",
+    "text": "Mission Soil\n\nProtect and restore soil health across Europe by 2030 (2021–2027)\nConnects research, innovation and practice to accelerate the transition towards healthy soils\nBudget: €542 million in Horizon Europe funding committed to 75 Mission Soil projects"
+  },
+  {
+    "objectID": "slides/2026-soilwise-wddc-fair.html#soilwise",
+    "href": "slides/2026-soilwise-wddc-fair.html#soilwise",
+    "title": "How to best annotate csv data for interoperability",
+    "section": "SoilWise",
+    "text": "SoilWise\n\nStrengthen the Mission Soil knowledge base by making soil research, data and solutions easier to find, access, combine and reuse\nBudget and duration: €6 million EU contribution under Horizon Europe; runs from September 2023 to August 2027.\nWageningen University, WENR and ISRIC are 3 out of 14 partners (coordination at ILVO Flanders)"
+  },
+  {
+    "objectID": "slides/2026-soilwise-wddc-fair.html#interoperable-soil-data-sharing",
+    "href": "slides/2026-soilwise-wddc-fair.html#interoperable-soil-data-sharing",
+    "title": "How to best annotate csv data for interoperability",
+    "section": "Interoperable soil data sharing",
+    "text": "Interoperable soil data sharing\n\nInstitutes and memberstates have tailored practices, goals and legislation to collect and store soil observation data\nBringing the data together to have a pan-european view on soil health is a challenge\nFAIR principles have increased findability considerably, let’s move to interoperability"
+  },
+  {
+    "objectID": "slides/2026-soilwise-wddc-fair.html#bit-of-history",
+    "href": "slides/2026-soilwise-wddc-fair.html#bit-of-history",
+    "title": "How to best annotate csv data for interoperability",
+    "section": "Bit of History",
+    "text": "Bit of History\n\nFarmers using mechanical planter (tobacco). Chatham County, North Carolina. The New York Public Library Digital Collections. 1940."
+  },
+  {
+    "objectID": "slides/2026-soilwise-wddc-fair.html#global-soil-map-and-soter",
+    "href": "slides/2026-soilwise-wddc-fair.html#global-soil-map-and-soter",
+    "title": "How to best annotate csv data for interoperability",
+    "section": "Global Soil Map and SOTER",
+    "text": "Global Soil Map and SOTER\nVarious efforts in the community to set up a standardised data model for soil data:\n\nGlobal Soil Map\nSOil and TERrain database\n\nThese initiatives are still relevant today"
+  },
+  {
+    "objectID": "slides/2026-soilwise-wddc-fair.html#inspire-regulation-and-iso-standards",
+    "href": "slides/2026-soilwise-wddc-fair.html#inspire-regulation-and-iso-standards",
+    "title": "How to best annotate csv data for interoperability",
+    "section": "INSPIRE regulation and ISO standards",
+    "text": "INSPIRE regulation and ISO standards\n\nThe ISO28258 standard and INSPIRE community developed their standard for soil data synchronously around 2010.\nBoth standards are based on the OGC Observations & Measurements standard\nSSN/SOSA is a semantic implementation of OMS"
+  },
+  {
+    "objectID": "slides/2026-soilwise-wddc-fair.html#sosa",
+    "href": "slides/2026-soilwise-wddc-fair.html#sosa",
+    "title": "How to best annotate csv data for interoperability",
     "section": "SOSA",
     "text": "SOSA\n\nSOSA structure"
   },
   {
-    "objectID": "slides/2026-soilwise-recap.html#geopackage-as-a-soil-data-exchange-format",
-    "href": "slides/2026-soilwise-recap.html#geopackage-as-a-soil-data-exchange-format",
-    "title": "SoilWise HE recap",
-    "section": "GeoPackage as a soil data exchange format",
-    "text": "GeoPackage as a soil data exchange format\n\nA relational database model oriented on the ISO28258/INSPIRE Soil database model\nFor operational soil information systems, a dump of the database at intervals could be facilitated using geopackage\nThe geopackage can act as a backend for an offline surveying app"
+    "objectID": "slides/2026-soilwise-wddc-fair.html#fair-practices",
+    "href": "slides/2026-soilwise-wddc-fair.html#fair-practices",
+    "title": "How to best annotate csv data for interoperability",
+    "section": "FAIR practices",
+    "text": "FAIR practices\n\nUse of repositories and registration of DOI’s\nRO-Crate describes date files within a repository deposit, in combination with schema.org and/or frictionless datapackage\nInvestigation, Study, Assay (ISA) describes the context of an experiment\ni-Adopt unpacks (soil) properties, into its components"
   },
   {
-    "objectID": "slides/2026-soilwise-recap.html#remaining-challenges",
-    "href": "slides/2026-soilwise-recap.html#remaining-challenges",
-    "title": "SoilWise HE recap",
-    "section": "Remaining challenges",
-    "text": "Remaining challenges\n\nAggregated repositories offer vast amount of records, ingesting relevant items is a challenge, requires specific filters / user suggestions\nOntology alignment / Soil terminology harmonisation\nPost project institutionalisation"
+    "objectID": "slides/2026-soilwise-wddc-fair.html#observation-standards-in-other-communities",
+    "href": "slides/2026-soilwise-wddc-fair.html#observation-standards-in-other-communities",
+    "title": "How to best annotate csv data for interoperability",
+    "section": "Observation standards in other communities",
+    "text": "Observation standards in other communities\n\nNature observations (GBIF EML)\nPlant Phenotyping Experiments (MIAPPE)\nStatistics (DDI-CDI)\nGeology GeoSciML"
   },
   {
-    "objectID": "slides/2026-soilwise-recap.html#outlook",
-    "href": "slides/2026-soilwise-recap.html#outlook",
-    "title": "SoilWise HE recap",
-    "section": "Outlook",
-    "text": "Outlook\n\nRicher metadata augmentation\nExpanded knowledge graph\nAI-assisted discovery and reasoning"
+    "objectID": "slides/2026-soilwise-wddc-fair.html#our-ambitions",
+    "href": "slides/2026-soilwise-wddc-fair.html#our-ambitions",
+    "title": "How to best annotate csv data for interoperability",
+    "section": "Our ambitions",
+    "text": "Our ambitions\n\nA metadata approach oriented around tabular data\nEasy and flexible\nUsing, or based on existing standards"
+  },
+  {
+    "objectID": "slides/2026-soilwise-wddc-fair.html#the-data-dictionary",
+    "href": "slides/2026-soilwise-wddc-fair.html#the-data-dictionary",
+    "title": "How to best annotate csv data for interoperability",
+    "section": "The data dictionary",
+    "text": "The data dictionary\n\nData dictionaries that describe a dataset are quite common\nNot many initiatives exist to standardise these data dictionaries\n\nSamples\n\ndata.gouv.fr\nUKDataService\nosf.io\nFAIR2"
+  },
+  {
+    "objectID": "slides/2026-soilwise-wddc-fair.html#a-sample",
+    "href": "slides/2026-soilwise-wddc-fair.html#a-sample",
+    "title": "How to best annotate csv data for interoperability",
+    "section": "A sample",
+    "text": "A sample\n\nAnnotated tabular data"
+  },
+  {
+    "objectID": "slides/2026-soilwise-wddc-fair.html#our-approach",
+    "href": "slides/2026-soilwise-wddc-fair.html#our-approach",
+    "title": "How to best annotate csv data for interoperability",
+    "section": "Our approach",
+    "text": "Our approach\nTest various approaches on 10 tabular sample datasets, going from CSV to RDF and back from RDF to Tabular:\n\nCSV on the Web\nR2RML\nISA-tab\nINSPIRE GeoPackage / Hale Studio"
+  },
+  {
+    "objectID": "slides/2026-soilwise-wddc-fair.html#where-we-got-stuck",
+    "href": "slides/2026-soilwise-wddc-fair.html#where-we-got-stuck",
+    "title": "How to best annotate csv data for interoperability",
+    "section": "Where we got stuck",
+    "text": "Where we got stuck\n\nCSV-W is a good fit for literature reviews and vocabularies\nRML is powerfull for software developers\nISA-tab & INSPIRE GeoPackage interesting for certain use cases"
+  },
+  {
+    "objectID": "slides/2026-soilwise-wddc-fair.html#how-we-likely-proceed",
+    "href": "slides/2026-soilwise-wddc-fair.html#how-we-likely-proceed",
+    "title": "How to best annotate csv data for interoperability",
+    "section": "How we (likely) proceed",
+    "text": "How we (likely) proceed\n\nDefine a new microformat for Observation Data; OMS-tab\nWebbased tool to create OMS-tab from CSV\nSoftware package to transform OMS-tab to RML\nAPI to transform csv+rml to RDF\nRDF to CSV utility for SSN-SOSA"
+  },
+  {
+    "objectID": "slides/2026-soilwise-wddc-fair.html#suggestions-from-the-audience",
+    "href": "slides/2026-soilwise-wddc-fair.html#suggestions-from-the-audience",
+    "title": "How to best annotate csv data for interoperability",
+    "section": "Suggestions from the audience",
+    "text": "Suggestions from the audience\n…"
   },
   {
     "objectID": "slides/FAIRintro4SoilMapping.html#findable",

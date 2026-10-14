@@ -6,8 +6,8 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.10.18">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.19">
 
   <meta name="author" content="Paul van Genuchten">
   <meta name="dcterms.date" content="2026-08-05">
@@ -155,6 +155,14 @@ Paul van Genuchten
 <li class="fragment">ISRIC contributes to data collection and standardization efforts globally, with a special focus on Africa</li>
 </ul>
 </section>
+<section id="world-soil-museum" class="slide level2">
+<h2>World Soil Museum</h2>
+
+<img data-src="https://tinker.nl/img/cache/media_6828_widen_3840-upscale_90-2349_world-soil-museum01_0.webp" class="r-stretch quarto-figure-center"><p class="caption">World Soil Museum by <a href="https://tinker.nl/en/work/world-soil-museum">tinker.nl</a></p></section>
+<section id="collection-of-reference-profiles" class="slide level2">
+<h2>Collection of reference profiles</h2>
+
+<img data-src="https://isric.euwest01.umbraco.io/media/dpbdg2ib/color-pot.jpg" class="r-stretch quarto-figure-center"><p class="caption">Samples of reference profiles</p></section>
 <section id="interoperability-projects" class="slide level2">
 <h2>Interoperability projects</h2>
 <ul>
@@ -171,15 +179,16 @@ Paul van Genuchten
 <li class="fragment">Trained as a soil scientist (Wageningen University, 1999)</li>
 <li class="fragment">Extensive experience in spatial data and IT</li>
 <li class="fragment">Joined ISRIC four years ago as a Data Infrastructure Specialist</li>
-<li class="fragment">Maintains ISRIC’s data infrastructure and contributes to soil data management projects, with a focus on metadata and interoperability</li>
+<li class="fragment">Team maintains ISRIC’s data infrastructure</li>
+<li class="fragment">contributes to soil data management projects, with a focus on metadata and interoperability</li>
 </ul>
 </section>
 <section id="interoperability-and-data-governance" class="slide level2">
 <h2>Interoperability and data governance</h2>
 <ul>
 <li class="fragment">I was asked to present about these 2 topics</li>
-<li class="fragment">Interoperability is a pillar of data governance</li>
 <li class="fragment">Both are large topics…</li>
+<li class="fragment">Interoperability is a pillar of data governance</li>
 </ul>
 </section>
 <section id="data-governance" class="slide level2">
@@ -192,6 +201,15 @@ Paul van Genuchten
 <li class="fragment">Data Sharing, Access, and Value Creation</li>
 </ul>
 </section>
+<section id="soil-data-specifics" class="slide level2">
+<h2>Soil data specifics</h2>
+<ul>
+<li class="fragment">Interaction with many other domains (agriculture, pollution, carbon sequestration, build environment, hydrology)</li>
+<li class="fragment">Property distribution data is predicted, not observed</li>
+<li class="fragment">Long history of (local) practices and standardisation efforts</li>
+<li class="fragment">Legacy data and formats</li>
+</ul>
+</section>
 <section id="fair-principles" class="slide level2">
 <h2>FAIR principles</h2>
 <p>The <a href="https://www.go-fair.org/fair-principles/">FAIR principles</a> provide a governance framework for data, from a reuse perspective:</p>
@@ -202,25 +220,16 @@ Paul van Genuchten
 <li class="fragment">Reusable</li>
 </ul>
 </section>
-<section id="soil-data-specifics" class="slide level2">
-<h2>Soil data specifics</h2>
-<ul>
-<li class="fragment">legacy data and formats</li>
-<li class="fragment">interaction with many other domains (agriculture, pollution, carbon sequestration, build environment, hydrology)</li>
-<li class="fragment">Management practices &amp; LTE</li>
-<li class="fragment">large number of soil indicators</li>
-<li class="fragment">long history of (local) practices</li>
-</ul>
-</section>
 <section id="findable-data" class="slide level2">
 <h2>Findable data</h2>
 <p>Rich metadata searchable via a catalogue</p>
+<p><a href="https://datasetsearch.research.google.com/search?src=0&amp;query=soil%20data%20carbon%20content%20zimbabwe">Let’s try</a></p>
 </section>
 <section id="what-is-a-dataset" class="slide level2">
 <h2>What is a dataset?</h2>
 <ul>
 <li class="fragment">civil cervant: a database which is continuously updated, exposed via an API</li>
-<li class="fragment">academic: a validated collection of records at a given point in time, which I can uniquely reference in my publication</li>
+<li class="fragment">academic: a validated collection of records at a given point in time, which I can reference from my publication</li>
 </ul>
 </section>
 <section id="datasets-as-a-source-for-digital-soil-mapping-dsm" class="slide level2">
@@ -228,8 +237,8 @@ Paul van Genuchten
 <ul>
 <li class="fragment">DSM is the process of prediction of soil property distribution in space and time</li>
 <li class="fragment">DSM efforts happen irragularly, based on latest snapshots of source data and covariates</li>
-<li class="fragment">data from the own organisation as well as remote sources</li>
-<li class="fragment">the academic view on dataset is more appropriate for DSM</li>
+<li class="fragment">Data from the own organisation as well as remote sources</li>
+<li class="fragment">The academic view on dataset is more appropriate for DSM</li>
 </ul>
 </section>
 <section id="use-of-repositories" class="slide level2">
@@ -244,7 +253,7 @@ Paul van Genuchten
 <section id="persistent-identification-is-an-aspect-of-findability-identifiers" class="slide level2">
 <h2>Persistent Identification is an aspect of findability (identifiers)</h2>
 <ul>
-<li class="fragment"><p>datasets should be uniquely identified (uuid)</p></li>
+<li class="fragment"><p>Datasets should be uniquely identified (uuid)</p></li>
 <li class="fragment"><p>Strong push to adopt identification platforms such as DOI and Handle.net</p></li>
 <li class="fragment"><p>Proper identification facilitates citation from reports/scientific articles</p></li>
 <li class="fragment"><p>For large data, or specific use cases (map vizualisation), data can also be shared using an api or web service, but it complicates identification</p></li>
@@ -254,8 +263,9 @@ Paul van Genuchten
 <h2>Accessible data</h2>
 <ul>
 <li class="fragment">Data is made available through an open protocol (http)</li>
-<li class="fragment">Metadata should still exist, even if the data itself is discarded</li>
+<li class="fragment">Metadata should still exist, even if the data itself is no longer available</li>
 <li class="fragment">Metadata Public; Data public, protected or internal</li>
+<li class="fragment">Use an Open Format</li>
 </ul>
 </section>
 <section id="tiered-access-and-national-stewardship" class="slide level2">
@@ -274,12 +284,13 @@ Paul van Genuchten
 <section id="process-of-standardisation" class="slide level2">
 <h2>Process of standardisation</h2>
 <ul>
+<li class="fragment">If you standardise upfront, you don’t need to harmonize later</li>
 <li class="fragment">Standardised Operating procedure (Field and Laboratory)
 <ul>
 <li class="fragment"><a href="https://www.fao.org/global-soil-partnership/glosolan/en/">GSP Glosolan</a></li>
 <li class="fragment"><a href="https://doi.org/10.5281/zenodo.20814311">Soils for Africa project</a></li>
 </ul></li>
-<li class="fragment">Describe existing practices</li>
+<li class="fragment">Describe the procedure used to collect or process the data</li>
 <li class="fragment">Refer to common vocabularies</li>
 </ul>
 </section>
@@ -360,6 +371,7 @@ Paul van Genuchten
 </section>
 <section id="questions" class="slide level2">
 <h2>Questions?</h2>
+<p>Else I thank you very much for your interest. I hope I have been able to trigger some ideas. Let’s continue the conversation soon.</p>
 </section>
 <section id="more-details-on-data-governance" class="slide level2">
 <h2>More details on data governance</h2>
