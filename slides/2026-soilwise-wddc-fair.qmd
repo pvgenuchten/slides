@@ -36,6 +36,11 @@ format:
 - Budget: €6 million EU contribution under Horizon Europe 
 - Wageningen University, WENR and ISRIC are 3 out of 14 partners (coordination at ILVO Flanders, 2023-2027)
 
+## Soil observation data
+
+![Farmers using mechanical planter (tobacco). Chatham County, North Carolina. The New York Public Library Digital Collections. 1940.](img/photo-1759408174381-8a12208ae5ed.jpg)
+
+
 ## Interoperable soil data sharing
 
 - Institutes and memberstates have tailored practices, goals and legislation to collect and store soil observation data 
@@ -73,7 +78,7 @@ These initiatives are still relevant today
 
 - Use of repositories and registration of DOI's
 - Reference concepts from [FAIR vocabularies](https://w3id.org/EUSoilvoc)
-- [RO-Crate](https://www.researchobject.org/ro-crate/) describes date files within a repository deposit
+- [RO-Crate](https://www.researchobject.org/ro-crate/) describes date files within a [repository](https://data.4tu.nl/articles/_/21304308/1) deposit
 - Investigation, Study, Assay ([ISA](https://isa-specs.readthedocs.io/)) describes the context of an experiment
 - [i-Adopt](https://i-adopt.github.io/) unpacks (soil) properties, into its components 
 
