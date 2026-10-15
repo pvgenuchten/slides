@@ -1,7 +1,10 @@
 ---
 title: How to best annotate csv data for interoperability
 subtitle: "Wageningen Model and Data Day"
-author: Paul van Genuchten
+authors: 
+  - Paul van Genuchten (ISRIC)
+  - Kathi Schleidt (Datacove)
+  - Max Vercruyssen (Flanders)
 date: 2026-10-15
 format:
   revealjs: 
@@ -15,7 +18,8 @@ format:
 
 - Mission Soil & SOILWISE 
 - Interoperable soil data sharing
-- Bit of History
+- Setting the scene
+- Ambitions and experiments
 - Where we got stuck
 - How we (likely) proceed
 - Suggestions from the audience
@@ -38,9 +42,9 @@ format:
 - Bringing the data together to have a pan-european view on soil health is a challenge
 - FAIR principles have increased findability considerably, let's move to interoperability 
 
-## Bit of History
+## Inventarisation
 
-![Farmers using mechanical planter (tobacco). Chatham County, North Carolina. The New York Public Library Digital Collections. 1940.](img/photo-1759408174381-8a12208ae5ed.jpg)
+- Which standards and conventions are available
 
 ## Global Soil Map and SOTER
 
@@ -61,15 +65,15 @@ These initiatives are still relevant today
 - Both standards are based on the OGC Observations & Measurements standard
 - SSN/SOSA is a semantic implementation of OMS
 
-## SOSA
+## SSN/SOSA
 
-![SOSA structure](img/sosa.png)
+![SSN/SOSA highlight](img/sosa.png)
 
 ## FAIR practices
 
 - Use of repositories and registration of DOI's
 - Reference concepts from [FAIR vocabularies](https://w3id.org/EUSoilvoc)
-- [RO-Crate](https://www.researchobject.org/ro-crate/) describes date files within a repository deposit, in combination with schema.org and/or [frictionless datapackage](https://datapackage.org/)
+- [RO-Crate](https://www.researchobject.org/ro-crate/) describes date files within a repository deposit
 - Investigation, Study, Assay ([ISA](https://isa-specs.readthedocs.io/)) describes the context of an experiment
 - [i-Adopt](https://i-adopt.github.io/) unpacks (soil) properties, into its components 
 
@@ -126,6 +130,10 @@ Results in [Github](https://github.com/soilwise-he/soil-observation-data-encodin
 - Software package to transform OMS-tab to RML
 - [API](https://api.soilwise-he.eu/csvw/docs) to transform csv+rml to RDF
 - RDF to CSV utility for SSN-SOSA 
+
+## OMS-TAB
+
+![OMS-TAB snapshot](img/oms-tab.png)
 
 ## Suggestions from the audience
 
