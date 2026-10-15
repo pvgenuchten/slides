@@ -9,7 +9,6 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.10.19">
 
-  <meta name="author" content="Paul van Genuchten">
   <meta name="dcterms.date" content="2026-10-15">
   <title>some slide decks – How to best annotate csv data for interoperability</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -140,7 +139,17 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Paul van Genuchten
+Paul van Genuchten (ISRIC)
+</div>
+</div>
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Kathi Schleidt (Datacove)
+</div>
+</div>
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Max Vercruyssen (Flanders)
 </div>
 </div>
 </div>
@@ -152,7 +161,8 @@ Paul van Genuchten
 <ul>
 <li>Mission Soil &amp; SOILWISE</li>
 <li>Interoperable soil data sharing</li>
-<li>Bit of History</li>
+<li>Setting the scene</li>
+<li>Ambitions and experiments</li>
 <li>Where we got stuck</li>
 <li>How we (likely) proceed</li>
 <li>Suggestions from the audience</li>
@@ -182,10 +192,12 @@ Paul van Genuchten
 <li>FAIR principles have increased findability considerably, let’s move to interoperability</li>
 </ul>
 </section>
-<section id="bit-of-history" class="slide level2">
-<h2>Bit of History</h2>
-
-<img data-src="img/photo-1759408174381-8a12208ae5ed.jpg" class="r-stretch quarto-figure-center"><p class="caption">Farmers using mechanical planter (tobacco). Chatham County, North Carolina. The New York Public Library Digital Collections. 1940.</p></section>
+<section id="inventarisation" class="slide level2">
+<h2>Inventarisation</h2>
+<ul>
+<li>Which standards and conventions are available</li>
+</ul>
+</section>
 <section id="global-soil-map-and-soter" class="slide level2">
 <h2>Global Soil Map and SOTER</h2>
 <p>Historic efforts to set up a standardised data model for soil data:</p>
@@ -207,16 +219,16 @@ Paul van Genuchten
 <li>SSN/SOSA is a semantic implementation of OMS</li>
 </ul>
 </section>
-<section id="sosa" class="slide level2">
-<h2>SOSA</h2>
+<section id="ssnsosa" class="slide level2">
+<h2>SSN/SOSA</h2>
 
-<img data-src="img/sosa.png" class="r-stretch quarto-figure-center"><p class="caption">SOSA structure</p></section>
+<img data-src="img/sosa.png" class="r-stretch quarto-figure-center"><p class="caption">SSN/SOSA highlight</p></section>
 <section id="fair-practices" class="slide level2">
 <h2>FAIR practices</h2>
 <ul>
 <li>Use of repositories and registration of DOI’s</li>
 <li>Reference concepts from <a href="https://w3id.org/EUSoilvoc">FAIR vocabularies</a></li>
-<li><a href="https://www.researchobject.org/ro-crate/">RO-Crate</a> describes date files within a repository deposit, in combination with schema.org and/or <a href="https://datapackage.org/">frictionless datapackage</a></li>
+<li><a href="https://www.researchobject.org/ro-crate/">RO-Crate</a> describes date files within a repository deposit</li>
 <li>Investigation, Study, Assay (<a href="https://isa-specs.readthedocs.io/">ISA</a>) describes the context of an experiment</li>
 <li><a href="https://i-adopt.github.io/">i-Adopt</a> unpacks (soil) properties, into its components</li>
 </ul>
@@ -285,6 +297,10 @@ Paul van Genuchten
 <li>RDF to CSV utility for SSN-SOSA</li>
 </ul>
 </section>
+<section id="oms-tab" class="slide level2">
+<h2>OMS-TAB</h2>
+
+<img data-src="img/oms-tab.png" class="r-stretch quarto-figure-center"><p class="caption">OMS-TAB snapshot</p></section>
 <section id="suggestions-from-the-audience" class="slide level2">
 <h2>Suggestions from the audience</h2>
 <p>We welcome your feedback, for example through <a href="https://github.com/soilwise-he/soil-observation-data-encodings/discussions">Github Discussions</a></p>
